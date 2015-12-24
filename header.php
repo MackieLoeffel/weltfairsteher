@@ -99,6 +99,7 @@
              function toggleMe(a){
                  $("#" + a).toggle(500);
                  return true;
+             }
             </script>
 
             <!--
