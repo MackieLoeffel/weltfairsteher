@@ -4,36 +4,23 @@
 <br>
 
 <?php
-$categories = ["food", "energy", "culture", "climate-change", "production"]
+$categories = ["food" => 'ERNÄHRUNG',
+               "energy" => "WASSER & ENERGIE",
+               "culture" => "KULTURELLE VIELFALT",
+               "climate-change" => "KLIMAWANDEL",
+               "production" => "WARENPRODUKTION"];
+foreach($categories as $category => $desc) {
 ?>
-
-<div class=".abstand challenge-header food">
-    ERNÄHRUNG
-</div>
-
-<div class=".abstand challenge-header energy">
-    WASSER & ENERGIE
-</div>
-
-<div class=".abstand challenge-header culture">
-    KULTURELLE VIELFALT
-</div>
-
-<div class=".abstand challenge-header climate-change" >
-    KLIMAWANDEL
-</div>
-
-<div class=".abstand challenge-header production">
-    WARENPRODUKTION
-</div>
-
+    <div class=".abstand challenge-header <?= $category ?>">
+        <?= $desc ?>
+    </div>
 <?php
+}
 // TODO: error handling
 $db = new PDO('mysql:host=localhost;dbname=website;charset=utf8', 'root', '', array(PDO::ATTR_EMULATE_PREPARES => false,
                                                                                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 $challengeStmt = $db->prepare("SELECT * FROM challenge WHERE category=:category");
-$first = true;
-foreach($categories as $category) {
+foreach($categories as $category => $desc) {
 ?>
     <div class=".abstand" style="background-color:#1BAB3F;
                              z-index: 1;
