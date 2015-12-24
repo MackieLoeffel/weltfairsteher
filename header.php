@@ -51,18 +51,24 @@
 
                 <div id="navbar" class="navbar">
                     <nav id="site-navigation" class="navigation main-navigation" role="navigation" style="margin-top: -33px">
-                        <a class="home-link" href="link/" title="Nachhaltigkeitschallenge" rel="home">
+                        <a class="home-link" href="index.php" title="Nachhaltigkeitschallenge" rel="home">
                             <h1 class="site-title">
                                 <img src="http://www.virtuelles-geschenk-fuer.de/img/150/Baum.png" alt="Nachhaltigkeitschallenge" title="Nachhaltigkeitschallenge" style="width:20%; margin-left: 7px">
                             </h1>
                         </a>
                         <h3 class="menu-toggle">Menü</h3>
                         <a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
-                        <div class="menu-menu-left-container" style="margin-left: -90px; float: left"><ul id="menu-menu-left" class="nav-menus nav-menu"><li id="menu-item-247875" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-247875"><a href="http://link/tabelle">Tabelle</a></li>
-                            <li id="menu-item-247876" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-247876"><a href="http://link/challenges">Challenges</a></li>
-                            <li id="menu-item-247878" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-247878"><a href="http://link/leckerwissen">Leckerwissen</a></li>
-                            <li id="menu-item-247879" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-247879"><a href="http://link/lehrer-login">Lehrer-Login</a></li>
-                            <li id="menu-item-247880" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-247880"><a href="http://link/impressum">Impressum</a></li>
+                        <div class="menu-menu-left-container" style="margin-left: -90px; float: left"><ul id="menu-menu-left" class="nav-menus nav-menu">
+                            <?php
+                            $sites = ["Tabelle" => "table.php",
+                                      "Challenges" => "challenges.php",
+                                      "Leckerwissen" => 'leckerwissen.php',
+                                      'Lehrer-Bereich' => "teacher.php",
+                                      'Impressum' => 'impressum.php'];
+                            foreach ($sites as $site => $link) {
+                            ?>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?=$link?>"><?=$site?></a></li>
+                            <?php } ?>
                         </ul></div>
 
                         <span style="margin-right: 10px; margin-left: 10px; margin-bottom: 10px; margin-top: 9px; float: left; font-size:13px; color: #0F9C2E"><form method="POST">
