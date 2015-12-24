@@ -21,6 +21,8 @@
                 <link rel='stylesheet' id='twentythirteen-fonts-css' href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700%7COpen+Sans+Condensed%3A300%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all'/>
                 <link rel='stylesheet' id='genericons-css' href='http://de.ubergizmo.com/wp-content/themes/ubergizmo/fonts/genericons.css?ver=2.09' type='text/css' media='all'/>
                 <link rel='stylesheet' id='twentythirteen-style-css' href='http://de.ubergizmo.com/wp-content/themes/ubergizmo/style.css?ver=1447668848' type='text/css' media='all'/>
+                <link rel='stylesheet' href='styles.css' type='text/css' />
+                <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
                 <!--[if lt IE 9]>
 
                      <![endif]-->
@@ -94,18 +96,14 @@
             </style>
 
             <script type="text/javascript" language="JavaScript">
-
-             function toggleMe(a){ var e=document.getElementById(a);
-                 if(!e)return true;
-                 if(e.style.display=="none"){
-                     e.style.display="block"
-                 }
-                 else { e.style.display="none" }
-                 return true; }
+             function toggleMe(a){
+                 $("#" + a).toggle(500);
+                 return true;
             </script>
 
             <!--
                  Wenn auf der Seite "Challenges" eine Klasse gewaehlt wird, dann sollen alle Challenge-Titel derjenigen Challenges, die die gewaehlte Klasse bereits erfolgreich abgeschlossen hat, in der Farbe (#0B6C2E) angezeigt werden (dunkelgrün). So kann sich jede Klasse einen Ueberblick davon verschaffen, welche Challenges andere Teams schon geschafft haben.
                -->
 
-            <body style="background-color:#0F9C2E"> <!--onLoad="popup('http://nachhaltigkeitschallenge.de/lehrer-login/popup/','lehrer-login','320','240','center','front');"-->
+            <body style="background-color:#0F9C2E;">
+                  <!-- onLoad="popup('http://nachhaltigkeitschallenge.de/lehrer-login/popup/','lehrer-login','320','240','center','front');" -->

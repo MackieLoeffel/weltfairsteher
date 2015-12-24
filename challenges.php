@@ -3,89 +3,24 @@
 <br>
 <br>
 
-<div class=".abstand" style="background-color:#FCC156;
-
-                             width: 18%;
-                             height: 20px;
-                             border-radius: 5px;
-                             margin-top: 35px;
-                             margin-right: 0px;
-                             margin-bottom: 10px;
-                             margin-left: 7px;
-                             text-align:center;
-                             color: white;
-                             font-size: 14px;
-                             float: left;
-                             ">
+<div class=".abstand challenge-header food">
     ERNÄHRUNG
 </div>
 
-<div class=".abstand" style="background-color:#3A7EFC;
-
-                             width: 18%;
-                             height: 20px;
-                             border-radius: 5px;
-                             margin-top: 35px;
-                             margin-right: 0px;
-                             margin-bottom: 10px;
-                             margin-left: 13px;
-                             text-align:center;
-                             color: white;
-                             font-size: 14px;
-                             float: left;
-                             ">
+<div class=".abstand challenge-header energy">
     WASSER & ENERGIE
 </div>
 
 
-<div class=".abstand" style="background-color:#7761C5;
-
-                             width: 18%;
-                             height: 20px;
-                             border-radius: 5px;
-                             margin-top: 35px;
-                             margin-right: 0px;
-                             margin-bottom: 10px;
-                             margin-left: 15px;
-                             text-align:center;
-                             color: white;
-                             font-size: 13px;
-                             float: left;
-                             ">
+<div class=".abstand challenge-header culture">
     KULTURELLE VIELFALT
 </div>
 
-<div class=".abstand" style="background-color:#1B5A0A;
-
-                             width: 18%;
-                             height: 20px;
-                             border-radius: 5px;
-                             margin-top: 35px;
-                             margin-right: 0px;
-                             margin-bottom: 10px;
-                             margin-left: 14px;
-                             text-align:center;
-                             color: white;
-                             font-size: 14px;
-                             float: left;
-                             ">
+<div class=".abstand challenge-header climate-change" >
     KLIMAWANDEL
 </div>
 
-<div class=".abstand" style="background-color:#CC4321;
-                             z-index: 2;
-                             width: 18%;
-                             height: 20px;
-                             border-radius: 5px;
-                             margin-top: 35px;
-                             margin-right: 0px;
-                             margin-bottom: 10px;
-                             margin-left: 14px;
-                             text-align:center;
-                             color: white;
-                             font-size: 13px;
-                             float: left;
-                             ">
+<div class=".abstand challenge-header production">
     WARENPRODUKTION
 </div>
 
