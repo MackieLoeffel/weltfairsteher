@@ -97,8 +97,17 @@
 
             <script type="text/javascript" language="JavaScript">
              function toggleMe(a){
-                 $("#" + a).toggle(500);
-                 return true;
+                 if(window.$) {
+                     $("#" + a).toggle(500);
+                     return true;
+                 }
+                 e = document.getElementById(a);
+                 if(!e)return true;
+                 if(e.style.display=="none"){
+                     e.style.display="block"
+                 }
+                 else { e.style.display="none" }
+
              }
             </script>
 

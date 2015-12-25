@@ -10,8 +10,95 @@
     color: white;
     font-size: 14px;
     float: left;
-
 }
+
+.challenge-box {
+    background-color:#1BAB3F;
+    z-index: 1;
+    width: 18%;
+    height: auto;
+    float: left;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+    text-align:center;
+    color: white;
+    font-size: 11px;
+}
+.challenge-points {
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    border-radius:20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+    margin-left: 93%;
+    text-align:center;
+    color: black;
+    font-size: 14px;
+    font-width: bold;
+    float: left;
+}
+
+.selfmade-whole {
+    background-color:#54CC72;
+    z-index: 1;
+    width: 97%;
+    height: 30px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 7px;
+    text-align:center;
+    color: white;
+    font-size: 18px;
+}
+.selfmade-box {
+    background-color:#1BAB3F;
+    z-index: 1;
+    width: 97%;
+    height: auto;
+    float: left;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+    text-align:center;
+    color: white;
+    font-size: 11px;
+}
+.selfmade-col {
+    z-index: 1;
+    width: 18%;
+    float: left;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-align:center;
+    color: white;
+    font-size: 11px;
+}
+.selfmade-points {
+    background-color: white;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    border-radius:20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+    margin-left: 93%;
+    text-align:center;
+    color: black;
+    font-size: 14px;
+    font-width: bold;
+    float: left;
+}
+
 
 .food {
     background-color:#FCC156;
