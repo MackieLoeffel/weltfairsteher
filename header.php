@@ -1,3 +1,8 @@
+<?php
+$db = new PDO('mysql:host=localhost;dbname=website;charset=utf8', 'root', '', array(PDO::ATTR_EMULATE_PREPARES => false,
+                                                                                    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+?>
+
 <!DOCTYPE html>
 <!--[if IE 7]>
 <html class="ie ie7" lang="de-DE">
@@ -75,10 +80,15 @@
 
                         <span style="margin-right: 10px; margin-left: 10px; margin-bottom: 10px; margin-top: 9px; float: left; font-size:13px; color: #0F9C2E"><form method="POST">
                             <b>Wähle deine Klasse:</b>
+
                             <select name="klasse" size="1">
-                                <option id="#">Die Sojapatronen</option>
-                                <option id="#">Elektrokürbis</option>
-                                <option id="#">Mc Do Not</option>
+                                <?php
+                                $classStmt = $db->prepare("SELECT name FROM class");
+                                $classStmt->execute();
+                                foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
+                                ?>
+                                    <option><?= $row->name ?></option>
+                                <?php } ?>
                             </select>
                         </form></span>
                         <form role="search" method="get" class="search-form" action="http://link/">

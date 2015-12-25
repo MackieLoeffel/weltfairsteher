@@ -17,8 +17,6 @@ foreach($categories as $category => $desc) {
 <?php
 }
 // TODO: error handling
-$db = new PDO('mysql:host=localhost;dbname=website;charset=utf8', 'root', '', array(PDO::ATTR_EMULATE_PREPARES => false,
-                                                                                    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 $challengeStmt = $db->prepare("SELECT * FROM challenge WHERE category=:category");
 foreach($categories as $category => $desc) {
 ?>
