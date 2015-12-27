@@ -81,13 +81,13 @@ $db = new PDO('mysql:host=localhost;dbname=website;charset=utf8', 'root', '', ar
                         <span style="margin-right: 10px; margin-left: 10px; margin-bottom: 10px; margin-top: 9px; float: left; font-size:13px; color: #0F9C2E"><form method="POST">
                             <b>Wähle deine Klasse:</b>
 
-                            <select name="klasse" size="1">
+                            <select id="class-select" name="klasse" size="1">
                                 <?php
-                                $classStmt = $db->prepare("SELECT name FROM class");
+                                $classStmt = $db->prepare("SELECT id, name FROM class");
                                 $classStmt->execute();
                                 foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
                                 ?>
-                                    <option><?= $row->name ?></option>
+                                    <option value="<?= $row->id ?>"><?= $row->name ?></option>
                                 <?php } ?>
                             </select>
                         </form></span>
