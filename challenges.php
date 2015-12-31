@@ -49,7 +49,10 @@ foreach($categories as $category => $desc) {
 <?php
 }
 // TODO: error handling
-$challengeStmt = $db->prepare("SELECT * FROM challenge WHERE category=:category");
+$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, cl.name AS author
+FROM challenge as c
+LEFT JOIN class as cl ON cl.id = c.author
+WHERE category=:category");
 foreach($categories as $category => $desc) {
 ?>
     <div class=".abstand challenge-box">
