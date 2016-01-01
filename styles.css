@@ -113,3 +113,32 @@
 .challenge-title:not(.class-selected) {
     color: white
 }
+
+.table-box {
+    width: 20px;
+    height: 20px;
+    border-radius:20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    text-align:center;
+    color: black;
+    font-size: 12px;
+    font-width: bold;
+    float: left;
+}
+.table-number {
+    width: 20px;
+    height: 20px;
+    border-radius:20px;
+    margin-top: -24px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    text-align:center;
+    color: black;
+    font-size: 12px;
+    font-width: bold;
+    float: left;
+}
