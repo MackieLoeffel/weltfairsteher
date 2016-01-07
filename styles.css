@@ -142,3 +142,6 @@
     font-width: bold;
     float: left;
 }
+.table-row.class-selected {
+    background-color: #0B6C2E;
+}

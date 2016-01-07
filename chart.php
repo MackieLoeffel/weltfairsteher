@@ -33,8 +33,9 @@ ORDER BY at
         $creativity += $ch["creativity"] * 0.2;
     }
     array_push($classes, ["name" => $class->name,
-                      "points" => $history,
-                      "id" => $class->id]);
+                          "points" => $history,
+                          "creativity" => $creativity,
+                          "id" => $class->id]);
 }
 ?>
 <script type="text/javascript">

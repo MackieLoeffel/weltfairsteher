@@ -11,13 +11,19 @@ include "chart.php";
 <table class=".abstand" style="margin-left: 7px; color= white; margin-right= 14px;" cellspacing="0" cellpadding="20"> <thead style="color: white;"><tr> <th  style="text-align: center">Rang</th> <th style="text-align: center">Klassenname</th> <th style="text-align: center">Challenges</th> <th style="text-align: center">Kreativität</th> <th style="text-align: center">Punkte</th> </tr></thead>
     <tbody>
         <?php
-        $classStmt = $db->prepare("SELECT id, name FROM class");
-        $classStmt->execute();
-        foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
+        function getCurrentPoints($c) {
+            return end(array_values($c["points"]));
+        }
+        usort($classes, function($a, $b) {
+            return getCurrentPoints($b) - getCurrentPoints($a);
+        });
+        $rank = 0;
+        foreach($classes as $class) {
+            $rank += 1;
         ?>
-        <tr>
-            <td  style="color: white; text-align: center"><b>1</b></td>
-            <td style="text-align: center"><?= $row->name ?></td>
+        <tr class="table-row class-<?= $class["id"]?>">
+            <td style="color: white; text-align: center"><b><?= $rank ?></b></td>
+            <td style="text-align: center"><?= $class["name"] ?></td>
             <td style="text-align: center">
                 <div class="table-box" style="background-color:#FCC156;">
                     <b>2</b>
@@ -51,8 +57,8 @@ include "chart.php";
                     </span>
 
                     <!--Anzahl bestandener Challenges pro Kategorie--></td>
-            <td style="text-align: center"><!--1+(0,2*anzahlSelfmade-Challenges)-->1,4</td>
-            <td style="text-align: center"><b><!--Punkte der bestandenen Challenges * Kreativität-->16,8</b></td> </tr>
+            <td style="text-align: center"><?= $class["creativity"] ?></td>
+            <td style="text-align: center"><b><?= getCurrentPoints($class)?></b></td> </tr>
         <?php } ?>
     </tbody>
 </table>

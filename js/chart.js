@@ -83,7 +83,6 @@ LineChart = (function() {
         return results1;
       }).call(this)
     };
-    console.log(line);
     this.chart = new Chart(canvas.getContext("2d")).Line(line, {
       bezierCurveTension: 0.2,
       pointDot: false,
