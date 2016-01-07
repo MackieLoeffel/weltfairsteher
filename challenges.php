@@ -36,15 +36,10 @@ WHERE c.id = :id");
 <br>
 
 <?php
-$categories = ["food" => 'ERNÄHRUNG',
-               "energy" => "WASSER & ENERGIE",
-               "culture" => "KULTURELLE VIELFALT",
-               "climate-change" => "KLIMAWANDEL",
-               "production" => "WARENPRODUKTION"];
-foreach($categories as $category => $desc) {
+foreach($categories as $c) {
 ?>
-    <div class=".abstand challenge-header <?= $category ?>">
-        <?= $desc ?>
+    <div class=".abstand challenge-header <?= $c->name ?>">
+        <?= $c->title ?>
     </div>
 <?php
 }
@@ -53,11 +48,11 @@ $challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.c
 FROM challenge as c
 LEFT JOIN class as cl ON cl.id = c.author
 WHERE category=:category");
-foreach($categories as $category => $desc) {
+foreach($categories as $c) {
 ?>
     <div class=".abstand challenge-box">
         <?php
-        $challengeStmt->execute(['category' => $category]);
+        $challengeStmt->execute(['category' => $c->name]);
         foreach($challengeStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
             printChallenge($row);
         }
