@@ -120,9 +120,5 @@ include "config.php";
              }
             </script>
 
-            <!--
-                 Wenn auf der Seite "Challenges" eine Klasse gewaehlt wird, dann sollen alle Challenge-Titel derjenigen Challenges, die die gewaehlte Klasse bereits erfolgreich abgeschlossen hat, in der Farbe (#0B6C2E) angezeigt werden (dunkelgrün). So kann sich jede Klasse einen Ueberblick davon verschaffen, welche Challenges andere Teams schon geschafft haben.
-               -->
-
             <body style="background-color:#0F9C2E;">
                   <!-- onLoad="popup('http://nachhaltigkeitschallenge.de/lehrer-login/popup/','lehrer-login','320','240','center','front');" -->
