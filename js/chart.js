@@ -63,7 +63,9 @@ LineChart = (function() {
         for (var j = ref = -numdays; ref <= 0 ? j <= 0 : j >= 0; ref <= 0 ? j++ : j--){ results.push(j); }
         return results;
       }).apply(this).map(function(i) {
-        return days[new Date(Date.now() + i * milliPerDay).getUTCDay()];
+        var date;
+        date = new Date(Date.now() + i * milliPerDay);
+        return (date.getUTCDate()) + "." + (date.getUTCMonth() + 1) + ".";
       }),
       datasets: (function() {
         var k, len, ref1, results1;
@@ -81,6 +83,7 @@ LineChart = (function() {
         return results1;
       }).call(this)
     };
+    console.log(line);
     this.chart = new Chart(canvas.getContext("2d")).Line(line, {
       bezierCurveTension: 0.2,
       pointDot: false,

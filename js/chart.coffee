@@ -31,7 +31,10 @@ class LineChart
     milliPerDay = 24 * 3600 * 1000
     days = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"]
     line = {
-      labels: [-numdays..0].map (i) -> days[new Date(Date.now() + i * milliPerDay).getUTCDay()]
+      labels: [-numdays..0].map (i) ->
+        #days[new Date(Date.now() + i * milliPerDay).getUTCDay()]
+        date = new Date(Date.now() + i * milliPerDay)
+        return "#{date.getUTCDate()}.#{date.getUTCMonth()+1}."
       datasets: for c in @classes
         {
           label: c.name
