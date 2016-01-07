@@ -23,13 +23,14 @@ ORDER BY at
     $creativity = 1;
     $curday = $startTime;
     foreach(array_merge($challengeStmt->fetchAll(PDO::FETCH_ASSOC),
-                        [["points" => 0, "at" => date("Y-m-d H:i:s", time())]])
+                        [["points" => 0, "creativity" => 0, "at" => date("Y-m-d H:i:s", time())]])
                             as $ch) {
         while(strtotime($ch["at"]) >= $curday) {
             array_push($history, $points * $creativity);
             $curday += $secondsPerDay;
         }
         $points += $ch["points"];
+        $creativity += $ch["creativity"] * 0.2;
     }
     array_push($classes, ["name" => $class->name,
                       "points" => $history,
