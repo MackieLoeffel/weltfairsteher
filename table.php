@@ -1,4 +1,7 @@
-<?php include "header.php"?>
+<?php
+include "header.php";
+include "chart.php";
+?>
 
 <br>
 <br>
@@ -54,7 +57,10 @@
     </tbody>
 </table>
 
-
+<canvas id="chart" ></canvas>
+<script type="text/javascript">
+ var chart = new LineChart(classes, document.getElementById("chart"));
+</script>
 <!--Liniendiagramm einfügen, das die gewählte Klasse highlighted: abszisse: 1. Tag bis heute  --  ordinate: punkte (0 bis max) -->
 
 <?php include "footer.php"?>
