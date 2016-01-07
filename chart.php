@@ -7,21 +7,26 @@ $classStmt->execute();
 $classes = array();
 foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $class) {
     $challengeStmt = $db->prepare("
-SELECT c.points, sc.at FROM solved_challenge AS sc
+SELECT c.points, sc.at, 0 AS creativity FROM solved_challenge AS sc
 JOIN challenge AS c ON c.id = sc.challenge
 WHERE sc.class = :id
-ORDER BY sc.at
+UNION
+SELECT 0 AS points, author_time AS at, 1 AS creativity FROM challenge
+WHERE author = :id2
+ORDER BY at
 ");
-    $challengeStmt->execute(['id' => $class->id]);
+    // php is strange, can't use param multiple times
+    $challengeStmt->execute(['id' => $class->id, 'id2' => $class->id]);
 
     $history = array();
     $points = 0;
+    $creativity = 1;
     $curday = $startTime;
     foreach(array_merge($challengeStmt->fetchAll(PDO::FETCH_ASSOC),
                         [["points" => 0, "at" => date("Y-m-d H:i:s", time())]])
                             as $ch) {
         while(strtotime($ch["at"]) >= $curday) {
-            array_push($history, $points);
+            array_push($history, $points * $creativity);
             $curday += $secondsPerDay;
         }
         $points += $ch["points"];
