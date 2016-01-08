@@ -14,6 +14,7 @@ include "chart.php";
         function getCurrentPoints($c) {
             return end(array_values($c["points"]));
         }
+        // classes is from chart.php
         usort($classes, function($a, $b) {
             return getCurrentPoints($b) - getCurrentPoints($a);
         });

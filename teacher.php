@@ -1,4 +1,8 @@
-<?php include "header.php"?>
+<?php
+include "access.php";
+check_access(TEACHER);
+include "header.php";
+?>
 <!--Liniendiagramm
    -->
 <div style="margin-left: 14px; width: 400px; height: 221px; background-color: white; margin-top: 40px; float: left; position: absolute;">Hier die grafische Darstellung der Punkte über die Zeit anzeigen.</div>
