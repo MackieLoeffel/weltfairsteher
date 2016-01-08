@@ -49,76 +49,35 @@ include "include/chart.php";
         </div>
 </div>
 
-<div class=".abstand" style="background-color:#1BAB3F;
-                             z-index: 1;
-                             width: 223px;
-                             height: 220px;
-                             float: right;
-                             margin-top: 40px;
-                             margin-right: 40px;
-                             margin-bottom: 50px;
-                             margin-left: ;
-                             text-align:center;
-                             color: black;
-                             font-size: 13px;
-                             ">
+<div class=".abstand teacher-challenge-box">
     <section class="container">
+        <form action="logout.php" method="get">
+            <input type="submit" value="Logout" style="background-color: #52150D; font-size: 11px;">
+        </form>
             <!--Klasse wechseln, Logout
                -->
-            <div style="background-color:#1BAB3F;
-                        z-index: 1;
-                        width:223px;
-                        height: auto;
-                        margin-top: 50px;
-                        margin-right: 50px;
-                        margin-bottom: 10px;
-                        margin-left: auto;
-                        text-align:center;
-                        color: black;
-                        font-size: 13px;
-                        position: relative;
-                        ">
-                <b>Angemeldet als:</b><span style="color: white"> Klassenname</span><br>
-                <span style="margin-bottom: 4px; margin-top: 9px; font-size:13px; color: black"><form method="POST">
-                    <b>Klasse wechseln:</b>
-                    <select name="klasse" size="1">
-                        <option id="#">Die Sojapatronen</option>
-                        <option id="#">Mc Do Not</option>
-                    </select>
-                </form></span>
-                <input type="submit" value="Logout" style="background-color: #52150D; font-size: 11px;">
+            <div class="teacher-challenge-box-inner">
+                <b>Challenge eintragen:</b><br>
+                <span style="margin-bottom: 4px; margin-top: 9px; font-size:13px; color: black">
+                    <form method="post">
+                        <b>Klasse:</b>
+                        <select name="klasse" size="1">
+                            <option id="#">Die Sojapatronen</option>
+                            <option id="#">Mc Do Not</option>
+                        </select><br>
+                        <b>Challenge:</b>
+                        <select name="abschluss" size="1">
+                            <option id="#">Bio-Frühstück</option>
+                            <option id="#">Mc Do Not</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="eintragen" style="background-color: green"><br><br>
+                    </form>
+                </span>
                 <!--"Klasse wechseln" nur anzeigen, wenn ein Lehrer für mehrere Klassen verantwortlich ist. In der Auswahlliste nur die Klassen anzeigen, die mit dem Konto des Lehrers verbunden sind -->
             </div>
 
 
-            <!--Abgeschlossene Challenge eintragen
-               -->
-            <div style="background-color:#1BAB3F;
-                        z-index: 1;
-                        width:223px;
-                        height: auto;
-                        margin-top: 20px;
-                        margin-right: 50px;
-                        margin-bottom: 10px;
-                        margin-left: auto;
-                        text-align:center;
-                        color: black;
-                        font-size: 13px;
-                        position: relative;
-                        ">
-                <b>Abgeschlossene Challenge</b><br>
-                <span style="margin-bottom: 4px; margin-top: 9px; font-size:13px; color: black"><form method="POST">
+</div>
 
-                    <select name="abschluss" size="1">
-                        <option id="#">Bio-Frühstück</option>
-                        <option id="#">Mc Do Not</option>
-                    </select>
-                </form></span>
-                <input type="submit" value="eintragen" style="background-color: green"><br><br>
-
-                <input type="submit" value="Letzten Eintrag entfernen" style="background-color: #52150D; font-size: 11px;">
-
-                <!--"Klasse wechseln" nur anzeigen, wenn ein Lehrer für mehrere Klassen verantwortlich ist. In der Auswahlliste nur die Klassen anzeigen, die mit dem Konto des Lehrers verbunden sind -->
-            </div>
-
-            <?php include "include/footer.php"?>
+<?php include "include/footer.php"?>
