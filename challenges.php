@@ -1,4 +1,4 @@
-<?php include "header.php";
+<?php include "include/header.php";
 
 function printChallenge($row) {
     global $db;
@@ -93,4 +93,4 @@ foreach($categories as $c) {
     <?php } ?>
 </div>
 
-<?php include "footer.php"?>
+<?php include "include/footer.php"?>

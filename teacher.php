@@ -1,7 +1,7 @@
 <?php
-include "access.php";
+include "include/access.php";
 check_access(TEACHER);
-include "header.php";
+include "include/header.php";
 ?>
 <!--Liniendiagramm
    -->
@@ -129,4 +129,4 @@ include "header.php";
                 <!--"Klasse wechseln" nur anzeigen, wenn ein Lehrer für mehrere Klassen verantwortlich ist. In der Auswahlliste nur die Klassen anzeigen, die mit dem Konto des Lehrers verbunden sind -->
             </div>
 
-            <?php include "footer.php"?>
+            <?php include "include/footer.php"?>

@@ -1,5 +1,5 @@
 <?php
-include "header.php";
+include "include/header.php";
 
 $showForm = true;
 if(isset($_SESSION["role"])) {
@@ -29,5 +29,5 @@ if($showForm) {
 }
 ?>
 <?php
-include "footer.php";
+include "include/footer.php";
 ?>

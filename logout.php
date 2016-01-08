@@ -1,8 +1,8 @@
 <?php
-include "header.php";
+include "include/header.php";
 
 unset($_SESSION["role"]);
 
 echo "logged out!";
-include "footer.php";
+include "include/footer.php";
 ?>

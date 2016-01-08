@@ -1,6 +1,6 @@
 <?php
-include "header.php";
-include "chart.php";
+include "include/header.php";
+include "include/chart.php";
 ?>
 
 <br>
@@ -70,4 +70,4 @@ include "chart.php";
 </script>
 <!--Liniendiagramm einfügen, das die gewählte Klasse highlighted: abszisse: 1. Tag bis heute  --  ordinate: punkte (0 bis max) -->
 
-<?php include "footer.php"?>
+<?php include "include/footer.php"?>

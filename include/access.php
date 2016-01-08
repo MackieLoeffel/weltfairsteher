@@ -1,5 +1,5 @@
 <?php
-include "config.php";
+include "include/config.php";
 
 define("TEACHER", 1);
 define("ADMIN", 2);

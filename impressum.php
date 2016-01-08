@@ -1,4 +1,4 @@
-<?php include "header.php"?>
+<?php include "include/header.php"?>
 <br>
 <br>
 <br>
@@ -42,4 +42,4 @@
     Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Nummern 1. bis 4. abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.<br><br>
     Quelle: Disclaimer von <a href="http://www.juraforum.de/">Juraforum.de</a><br>
 </div>
-<?php include "footer.php"?>
+<?php include "include/footer.php"?>

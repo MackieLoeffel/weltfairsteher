@@ -1,8 +1,8 @@
 <?php
-include "access.php";
+include "include/access.php";
 
 #check_access(ADMIN);
-include "header.php";
+include "include/header.php";
 
 # from http://www.php-einfach.de/experte/php-codebeispiele/loginscript/
 $showFormular = true;
@@ -39,7 +39,6 @@ if(isset($_POST['email'])) {
 
     //Keine Fehler, wir können den Nutzer registrieren
     if(!$error) {
-        echo $password . "<br>";
         $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
         $statement = $db->prepare("INSERT INTO user (email, password, role) VALUES (:email, :password, :role)");
@@ -73,5 +72,5 @@ if($showFormular) {
 
 <?php
 }
-include "footer.php";
+include "include/footer.php";
 ?>

@@ -1,4 +1,4 @@
-<?php include "header.php"?>
+<?php include "include/header.php"?>
 
 <br>
 <br>
@@ -365,4 +365,4 @@
 
             <br><input type="submit" value="Hinzufügen" style="background-color: green; font-size: 12px"><input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()">
     </form></div>
-<?php include "footer.php"?>
+<?php include "include/footer.php"?>
