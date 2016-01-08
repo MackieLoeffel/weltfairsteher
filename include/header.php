@@ -60,13 +60,13 @@ include "include/config.php";
                     <nav id="site-navigation" class="navigation main-navigation" role="navigation" style="margin-top: -33px">
                         <a class="home-link" href="index.php" title="Nachhaltigkeitschallenge" rel="home">
                             <h1 class="site-title">
-                                <img src="http://www.virtuelles-geschenk-fuer.de/img/150/Baum.png" alt="Nachhaltigkeitschallenge" title="Nachhaltigkeitschallenge" style="width:20%; margin-left: 7px">
+                              <img src="Logo_BGtransparent.png" alt="Weltfairsteher" title="Nachhaltigkeitschallenge" style="height: 32px; margin-left: -50px">
                             </h1>
                         </a>
                         <h3 class="menu-toggle">Menü</h3>
                         <a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
-                        <div class="menu-menu-left-container" style="margin-left: -90px; float: left"><ul id="menu-menu-left" class="nav-menus nav-menu">
-                            <?php
+                        <div class="menu-menu-left-container" style="margin-left: -10px; float: left"><ul id="menu-menu-left" class="nav-menus nav-menu">
+                           <?php
                             $sites = ["Tabelle" => "table.php",
                                       "Challenges" => "challenges.php",
                                       "Leckerwissen" => 'leckerwissen.php',
@@ -93,7 +93,8 @@ include "include/config.php";
                         </form></span>
                         <form role="search" method="get" class="search-form" action="http://link/">
                             <label>
-
+<!--eventuell die Suchfunktion, die bisher ohnehin noch nicht funktioniert, aus dem Header löschen, da sie nicht mehr nutzt, als die Suche über Strg+F
+-->
                                 <span class="screen-reader-text">Suche nach:</span>
                                 <input type="search" class="search-field" placeholder="Suche&#160;&hellip;" value="" name="s" title="Suche nach:"/>
                             </label>

@@ -26,10 +26,16 @@ include "include/chart.php";
             <td style="color: white; text-align: center"><b><?= e($rank) ?></b></td>
             <td style="text-align: center"><?= e($class["name"]) ?></td>
             <td style="text-align: center">
-                <div class="table-box" style="background-color:#FCC156;">
+                <div class="table-box">
+                  <br>
+                  <span class="table-number"
+                  style="background-color:#FCC156;
+                  margin-left: 0px;">
                     <b>2</b>
+                  </span>
                     <span class="table-number"
-                          style="background-color:#3A7EFC;">
+                          style="background-color:#3A7EFC;
+                          margin-left: 25px;">
                         <b>1</b>
                     </span>
                     <span class="table-number"
@@ -55,7 +61,7 @@ include "include/chart.php";
                                  margin-left: 125px;
                                  ">
                         <b>1</b>
-                    </span>
+                    </span></div>
 
                     <!--Anzahl bestandener Challenges pro Kategorie--></td>
             <td style="text-align: center"><?= e($class["creativity"]) ?></td>
