@@ -10,6 +10,5 @@
             <a href="http://www.chancengestalten.de.com" title="CHANGE">Über CHANGE e.V.</a> </div>
 </footer>-->
     </div>
-    <script src="js/classSelect.js" ></script>
     </body>
     </html>

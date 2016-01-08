@@ -33,4 +33,4 @@ init = function() {
   });
 };
 
-init();
+setTimeout(init, 0);

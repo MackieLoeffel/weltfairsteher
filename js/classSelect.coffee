@@ -25,4 +25,4 @@ init = ->
     setClass @value
     return
 
-init()
+setTimeout init, 0
