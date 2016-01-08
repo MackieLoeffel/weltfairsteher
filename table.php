@@ -11,6 +11,8 @@ include "include/chart.php";
 <table class=".abstand" style="margin-left: 7px; color= white; margin-right= 14px;" cellspacing="0" cellpadding="20"> <thead style="color: white;"><tr> <th  style="text-align: center">Rang</th> <th style="text-align: center">Klassenname</th> <th style="text-align: center">Challenges</th> <th style="text-align: center">Kreativität</th> <th style="text-align: center">Punkte</th> </tr></thead>
     <tbody>
         <?php
+        array_push($categories, new Category("selfmade", ""));
+
         function getCurrentPoints($c) {
             return end(array_values($c["points"]));
         }
@@ -19,6 +21,10 @@ include "include/chart.php";
             return getCurrentPoints($b) - getCurrentPoints($a);
         });
         $rank = 0;
+        $numStmt = $db->prepare("SELECT COALESCE(SUM(c.points), 0) AS count
+FROM challenge as c
+JOIN solved_challenge AS sc ON c.id = sc.challenge
+WHERE c.category = :category AND sc.class = :class");
         foreach($classes as $class) {
             $rank += 1;
         ?>
@@ -27,41 +33,19 @@ include "include/chart.php";
             <td style="text-align: center"><?= e($class["name"]) ?></td>
             <td style="text-align: center">
                 <div class="table-box">
-                  <br>
-                  <span class="table-number"
-                  style="background-color:#FCC156;
-                  margin-left: 0px;">
-                    <b>2</b>
-                  </span>
-                    <span class="table-number"
-                          style="background-color:#3A7EFC;
-                          margin-left: 25px;">
-                        <b>1</b>
+                    <br>
+                    <?php
+                    $index = 0;
+                    foreach($categories as $c) {
+                        $numStmt->execute(["category" => $c->name,
+                                           "class" => $class["id"]]);
+                    ?>
+                    <span class="table-number <?= e($c->name) ?>"
+                          style="margin-left: <?= $index * 25 ?>px;">
+                        <b><?= $numStmt->fetch(PDO::FETCH_OBJ)->count ?></b>
                     </span>
-                    <span class="table-number"
-                          style="background-color:#7761C5;
-                                 margin-left: 50px;
-                                 ">
-                        <b>1</b>
-                    </span>
-                    <span class="table-number"
-                          style="background-color:#1B5A0A;
-                                 margin-left: 75px;
-                                 ">
-                        <b>1</b>
-                    </span>
-                    <span class="table-number"
-                          style="background-color:#CC4321;
-                                 margin-left: 100px;
-                                 ">
-                        <b>0</b>
-                    </span>
-                    <span class="table-number"
-                          style="background-color:white;
-                                 margin-left: 125px;
-                                 ">
-                        <b>1</b>
-                    </span></div>
+                  <?php $index += 1; } ?>
+                </div>
 
                     <!--Anzahl bestandener Challenges pro Kategorie--></td>
             <td style="text-align: center"><?= e($class["creativity"]) ?></td>
