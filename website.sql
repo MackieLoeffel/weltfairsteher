@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 08, 2016 at 01:33 PM
+-- Generation Time: Jan 08, 2016 at 03:41 PM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -31,7 +31,7 @@ CREATE TABLE `challenge` (
   `name` varchar(100) COLLATE utf8_bin NOT NULL,
   `description` varchar(2000) COLLATE utf8_bin NOT NULL,
   `points` int(11) NOT NULL,
-  `category` varchar(100) COLLATE utf8_bin NOT NULL,
+  `category` enum('food','energy','culture','climate-change','production','selfmade') COLLATE utf8_bin NOT NULL,
   `author` int(11) DEFAULT NULL,
   `author_time` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -73,6 +73,37 @@ INSERT INTO `class` (`id`, `name`) VALUES
 (1, 'Die Sojapatronen'),
 (2, 'Elektrokürbis'),
 (3, 'Mc Do Not');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `leckerwissen`
+--
+
+CREATE TABLE `leckerwissen` (
+  `id` int(11) NOT NULL,
+  `link` text COLLATE utf8_bin NOT NULL,
+  `title` text COLLATE utf8_bin NOT NULL,
+  `category` enum('food','energy','culture','climate-change','production','other') COLLATE utf8_bin NOT NULL,
+  `type` enum('article','video','other') COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `leckerwissen`
+--
+
+INSERT INTO `leckerwissen` (`id`, `link`, `title`, `category`, `type`) VALUES
+(1, 'http://www.example.com', 'Food Video', 'food', 'video'),
+(2, 'http://www.example.com', 'other article', 'other', 'article'),
+(3, 'http://www.example.com', 'energy other', 'energy', 'other'),
+(4, 'http://www.example.com', 'other other', 'other', 'other'),
+(5, 'http://www.example.com', 'production video', 'production', 'video'),
+(6, 'http://www.example.com', 'Food Video', 'food', 'video'),
+(7, 'http://www.example.com', 'other article', 'other', 'article'),
+(8, 'http://www.example.com', 'energy other', 'energy', 'other'),
+(9, 'http://www.example.com', 'other other', 'other', 'other'),
+(10, 'http://www.example.com', 'production video', 'production', 'video'),
+(11, 'https://www.youtube.com/watch?v=iiDCNdsU4vI', 'Hagen Rether über Fleisch, Milch & Co [Kabarett]', 'food', 'video');
 
 -- --------------------------------------------------------
 
@@ -134,6 +165,12 @@ ALTER TABLE `class`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `leckerwissen`
+--
+ALTER TABLE `leckerwissen`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `solved_challenge`
 --
 ALTER TABLE `solved_challenge`
@@ -159,6 +196,11 @@ ALTER TABLE `challenge`
 --
 ALTER TABLE `class`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `leckerwissen`
+--
+ALTER TABLE `leckerwissen`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `solved_challenge`
 --
