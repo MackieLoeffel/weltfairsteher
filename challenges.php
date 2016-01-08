@@ -9,8 +9,8 @@ JOIN class as cl ON cl.id = sc.class
 WHERE c.id = :id");
     $classStmt->execute(['id' => $row->id]);
 ?>
-    <div class="<?= $row->category ?> challenge-points">
-        <b><?= $row->points?></b>
+    <div class="<?= e($row->category) ?> challenge-points">
+        <b><?= e($row->points)?></b>
     </div>
     <b><u><a class="<?php
                     foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $classRow) {
@@ -18,13 +18,13 @@ WHERE c.id = :id");
                     }
                     ?>
                     challenge-title"
-             onclick="return toggleMe('challenge-<?=$row->id?>')"
-             href="javascript:void(0)" ><?=$row->name?></a></u></b><br>
-    <div style="display:none;" class="dbox" id="challenge-<?=$row->id?>">
-        <?= $row->description ?>
+             onclick="return toggleMe('challenge-<?=e($row->id)?>')"
+             href="javascript:void(0)" ><?=e($row->name)?></a></u></b><br>
+    <div style="display:none;" class="dbox" id="challenge-<?=e($row->id)?>">
+        <?= e($row->description) ?>
         <br>
         <?php if($row->author) { ?>
-            <div style="color: black;">Von:<b><?=$row->author?></b></div>
+            <div style="color: black;">Von:<b><?=e($row->author)?></b></div>
         <?php } ?>
     </div><br><br>
 <?php
@@ -38,8 +38,8 @@ WHERE c.id = :id");
 <?php
 foreach($categories as $c) {
 ?>
-    <div class=".abstand challenge-header <?= $c->name ?>">
-        <?= $c->title ?>
+    <div class=".abstand challenge-header <?= e($c->name) ?>">
+        <?= e($c->title) ?>
     </div>
 <?php
 }

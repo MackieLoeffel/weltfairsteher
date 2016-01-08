@@ -22,9 +22,9 @@ include "include/chart.php";
         foreach($classes as $class) {
             $rank += 1;
         ?>
-        <tr class="table-row class-<?= $class["id"]?>">
-            <td style="color: white; text-align: center"><b><?= $rank ?></b></td>
-            <td style="text-align: center"><?= $class["name"] ?></td>
+        <tr class="table-row class-<?= e($class["id"])?>">
+            <td style="color: white; text-align: center"><b><?= e($rank) ?></b></td>
+            <td style="text-align: center"><?= e($class["name"]) ?></td>
             <td style="text-align: center">
                 <div class="table-box" style="background-color:#FCC156;">
                     <b>2</b>
@@ -58,8 +58,8 @@ include "include/chart.php";
                     </span>
 
                     <!--Anzahl bestandener Challenges pro Kategorie--></td>
-            <td style="text-align: center"><?= $class["creativity"] ?></td>
-            <td style="text-align: center"><b><?= getCurrentPoints($class)?></b></td> </tr>
+            <td style="text-align: center"><?= e($class["creativity"]) ?></td>
+            <td style="text-align: center"><b><?= e(getCurrentPoints($class))?></b></td> </tr>
         <?php } ?>
     </tbody>
 </table>

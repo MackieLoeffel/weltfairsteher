@@ -14,8 +14,8 @@ $leckerStmt = $db->prepare("SELECT link, title FROM leckerwissen
 WHERE category = :category AND type = :type");
 foreach($categories as $c) {
 ?>
-    <div class=".abstand leckerwissen-header <?= $c->name ?>">
-        <?= $c->title ?>
+    <div class=".abstand leckerwissen-header <?= e($c->name) ?>">
+        <?= e($c->title) ?>
     </div>
 <?php
 }
@@ -34,10 +34,10 @@ foreach($categories as $c) {
                 echo "<br>";
             }
         ?>
-        <b><?= $t["desc"] ?>:</b><br>
+        <b><?= e($t["desc"]) ?>:</b><br>
         <?php foreach($leckerStmt->fetchAll(PDO::FETCH_OBJ) as $entry) {?>
-            <a href="<?= $entry->link ?>">
-                <font color="#00301B"><?= $entry->title ?></font>
+            <a href="<?= e($entry->link) ?>">
+                <font color="#00301B"><?= e($entry->title) ?></font>
             </a><br>
         <?php } ?>
 <?php } ?>

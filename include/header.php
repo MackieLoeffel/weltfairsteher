@@ -86,7 +86,7 @@ include "include/config.php";
                                 $classStmt->execute();
                                 foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
                                 ?>
-                                    <option value="<?= $row->id ?>"><?= $row->name ?></option>
+                                    <option value="<?= e($row->id) ?>"><?= e($row->name) ?></option>
                                 <?php } ?>
                             </select>
                         </form></span>

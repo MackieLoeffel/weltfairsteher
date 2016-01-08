@@ -54,6 +54,11 @@ if(!defined('CONFIG_PHP')) {
         /* absolute URL is ready! */
         return $scheme.'://'.$abs;
     }
+
+    # escape
+    function e($str) {
+        return htmlspecialchars($str);
+    }
 }
 
 ?>
