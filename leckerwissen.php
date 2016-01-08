@@ -3,6 +3,23 @@
 <br>
 <br>
 <?php
+
+if(isset($_POST["link"])) {
+    $link = $_POST["link"];
+    $title = $_POST["title"];
+    $type = $_POST["type"];
+    $cat = $_POST["category"];
+    $addStmt = $db->prepare("INSERT INTO leckerwissen (link, title, type, category) VALUES (:link, :title, :type, :category)");
+    try {
+        $addStmt->execute(["link" => $link,
+                           "title" => $title,
+                           "type" => $type,
+                           "category" => $cat]);
+    } catch(Exception $ex) {
+        echo "Ungültige Daten!<br>";
+    }
+}
+
 $types = [
     ['name' => 'article', "desc" => "Artikel"],
     ['name' => 'video', "desc" => "Videos"],
@@ -45,43 +62,38 @@ foreach($categories as $c) {
 <?php } ?>
 
 <!--
-     NEUES LECKERWISSEN HINZUFUEGEN
+     ADD NEW LECKERWISSEN
    -->
 
 
 <div style="float: left; margin-top: 15px; background-color:#1BAB3F; font-size: 15px; margin-left: 7px; color: white; width: auto"><b>Neues Leckerwissen hinzufügen:</b>
-
-
-
     <form method="POST">
         <label for="bezeichnung" style="color: black;font-size: 13px;">Bezeichnung:
-            <input type="text" id="bezeichnung" name="bezeichnung" size="20" max="200">
+            <input type="text" name="title" size="20" max="200">
         </label>
         <br>
         <label for="link" style="color: black; font-size: 13px;">Link:
-            <input type="url" id="link" name="link" style="margin-left: 47px;" size="20" max="200">
+            <input type="url" name="link" style="margin-left: 47px;" size="20" max="200">
         </label><br>
         <span style="font-size: 13px; margin-right: 52px"><b>Art:</b></span>
         <select name="type" size="1">
-            <option id="#" value="a">Artikel</option>
-            <option id="#">Video</option>
-            <option id="#">Sonstiges</option>
+            <?php foreach($types as $t) { ?>
+                <option value="<?=e($t["name"])?>"><?= e($t["desc"]) ?></option>
+            <?php } ?>
         </select>
         </span>
         <br>
         <span style="font-size: 13px; margin-right: 13px"><b>Kategorie:</b></span>
-                <select name="lwkategorie" size="1">
-                    <option id="#">Ernährung</option>
-                    <option id="#">Wasser&Energie</option>
-                    <option id="#">Kulturelle Vielfalt</option>
-                    <option id="#">Klimawandel</option>
-                    <option id="#">Warenproduktion</option>
-                    <option id="#">Weiteres</option>
+                <select name="category" size="1">
+                    <?php foreach($categories as $c) { ?>
+                        <option value="<?=e($c->name)?>"><?=e($c->title)?></option>
+                    <?php } ?>
                 </select>
         </span>
 
 
 
-            <br><input type="submit" value="Hinzufügen" style="background-color: green; font-size: 12px"><input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()">
+        <br><input type="submit" value="Hinzufügen" style="background-color: green; font-size: 12px">
+        <!--<input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()"> -->
     </form></div>
 <?php include "include/footer.php"?>
