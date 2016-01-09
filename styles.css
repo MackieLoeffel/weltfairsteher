@@ -83,15 +83,7 @@
     font-size: 11px;
 }
 
-.footer {
-width: 100%;
-margin-bottom: 0px:
-text-align: center;
-background-color: #FCC156;
-font-size: 11px;
-height: 40px;
 
-}
 
 .food {
     background-color:#FCC156;
@@ -191,3 +183,35 @@ height: 40px;
     color: white;
     font-size: 11px;
 }
+<<<<<<< HEAD
+=======
+
+.teacher-challenge-box {
+    background-color:#1BAB3F;
+    z-index: 1;
+    width: 223px;
+    height: 220px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    margin-left: ;
+    text-align:center;
+    color: black;
+    font-size: 13px;
+}
+.teacher-challenge-box-inner {
+    background-color:#1BAB3F;
+    z-index: 1;
+    width:223px;
+    height: auto;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    text-align:center;
+    color: black;
+    font-size: 13px;
+    position: relative;
+}
+>>>>>>> b0897aa4d02422ceb974e01528c6a134af9b90a6

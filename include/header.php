@@ -91,15 +91,7 @@ include "include/config.php";
                                 <?php } ?>
                             </select>
                         </form></span>
-                        <form role="search" method="get" class="search-form" action="http://link/">
-                            <label>
-<!--eventuell die Suchfunktion, die bisher ohnehin noch nicht funktioniert, aus dem Header löschen, da sie nicht mehr nutzt, als die Suche über Strg+F
--->
-                                <span class="screen-reader-text">Suche nach:</span>
-                                <input type="search" class="search-field" placeholder="Suche&#160;&hellip;" value="" name="s" title="Suche nach:"/>
-                            </label>
-                            <input type="submit" class="search-submit" value="Suche"/>
-                        </form> </nav>
+                        </nav>
                 </div>
             </header>
             <style>
