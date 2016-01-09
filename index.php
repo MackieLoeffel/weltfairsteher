@@ -3,62 +3,100 @@
 <br>
 <br>
 <br>
-
-<span class="abstand" ><a href="#was" style="color: #ffffff">Was ist das?</a>
-    <br></span>
-    <span class="abstand" ><a href="#worum" style="color: #ffffff">Worum geht´s?</a>
-        <br></span>
-        <span class="abstand" ><a href="#wer" style="color: #ffffff">Wer kann mitmachen?</a>
-            <br></span>
-            <span class="abstand"><a href="#wie" style="color: #ffffff">Wie meldet man sich an?</a>
-                <br></span>
-                <span class="abstand"><a href="#ablauf" style="color: #ffffff">Wie läuft´s ab?</a>
-                    <br></span>
-                    <span class="abstand"><a href="#gewinn" style="color: #ffffff">Was kann man gewinnen?</a>
-                        <br></span>
-                        <span class="abstand"><a href="#wir" style="color: #ffffff">Über uns</a></span>
-                        <br>
-
+<ul>
+<li><span class="abstand" ><a href="#was" style="color: #C5F2B6">Was ist das?</a>
+    <br></span></li>
+  <li>  <span class="abstand" ><a href="#worum" style="color: #C5F2B6">Worum geht´s?</a>
+        <br></span></li>
+      <li>  <span class="abstand" ><a href="#wer" style="color: #C5F2B6">Wer kann mitmachen?</a>
+            <br></span></li>
+              <li>  <span class="abstand"><a href="#ablauf" style="color: #C5F2B6">Wie läuft´s ab?</a>
+                    <br></span></li>
+                  <li>  <span class="abstand"><a href="#gewinn" style="color: #C5F2B6">Was kann man gewinnen?</a>
+                        <br></span></li>
+                        <li>    <span class="abstand"><a href="#wie" style="color: #C5F2B6">Wie meldet man sich an?</a>
+                                <br></span></li>
+                    <li>    <span class="abstand"><a href="#wir" style="color: #C5F2B6">Über uns</a></span>
+                        <br></li>
+</ul>
 
                         <br>
                         <!-- image
                            -->
                         <br>
-                        <b><div id="was"  style="margin-right: 140px; margin-left: 30px;">Was ist das?</div></b>
-                        <br>
-                        <div  style="margin-right: 140px; margin-left: 30px;">
-                            Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </div><br>
-                        <b><div id="worum"  style="margin-right: 140px; margin-left: 30px;">Worum geht´s?</div></b>
-                        <br>
-                        <div  style="margin-right: 140px; margin-left: 30px;">
-                            Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </div><br>
-                        <b><div id="wer"  style="margin-right: 140px; margin-left: 30px;">Wer kann mitmachen?</div></b>
-                        <br>
-                        <div  style="margin-right: 140px; margin-left: 30px;">
-                            Teilnehmen können alle 6. Klassen einer öffentlichen oder privaten Schule im deutschsprachigen Raum. Die beiden, darüber hinausgehenden Voraussetzungen sind einerseits eine motivierte Klasse, andererseits aber vor allem eine motivierte Lehrkraft, die aus eigenem Antrieb das Thema Nachhaltigkeit in den Unterricht integrieren möchte. Eine Klasse kann natürlich auch mit der Unterstützung mehrerer Lehrkräfte teilnehmen - das erhöht außerdem die Möglichkeiten, Unterrichtszeiten für etwaige Organisationen etc. zu gewinnen. Anmelden könnt ihr euch von 15. Juli bis 15. Oktober (Zeitfenster noch diskutieren!)
-                        </div><br>
-                        <b><div id="wie"  style="margin-right: 140px; margin-left: 30px;">Wie meldet man sich an?</div></b>
-                        <br>
-                        <div  style="margin-right: 140px; margin-left: 30px;">
-                            Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an (noch eine extra mail-adresse erstellen?). Darin enthalten sollte der kreative Name der Klasse, Schule und Ort, Anzahl der Schülerinnen und Schüler der Klasse sowie Name der Lehrkraft sein. Keine Sorge, die einzige Information, die online veröffentlicht wird, ist der kreative Name, den sich jede Klasse geben kann.<br><br> Jene Lehrkraft erhält maximal zwei Werktage später eine E-Mail mit den Zugangsdaten. Die Klasse ist dann bereits in die Tabelle eingetragen. Über den Reiter "Lehrer-Login" kann die jeweilige Lehrkraft bestandene Challenges der Klasse eintragen und Selfmade-Challenges, die in der Klasse ausgedacht wurden, vorschlagen. Übrigens: Eine Lehrerin beziehungsweise ein Lehrer kann auch die Verantwortung für zwei Klassen übernehmen.
-                        </div><br>
-                        <b><div id="ablauf"  style="margin-right: 140px; margin-left: 30px;">Wie läuft´s ab?</div></b>
-                        <br>
-                        <div  style="margin-right: 140px; margin-left: 30px;">
+                        <b><div id="was"  style="margin-right: 30%; margin-left: 80px;"><h3>Was ist das?</h3></div></b>
 
-                            klasse kann (am besten in kleinen teams) jede challenge einmal absolvieren, bei erfolg kann sich der lehrer anmelden und die challenge als bestanden eintragen. lehrer muss natürlich gewissenhaft sein. in der tabelle lässt sich der jeweilige zwischenstand jederzeit nachvollziehen, unter challenges kann man sehen was man noch tun könnte. wer eigene ideen für challenges hat, die er gerne absolvieren würde, kann uns diese möglichst ausführlich mitteilen. wir entscheiden darüber, ob sie den nachhaltigkeitskriterien entspricht und von den anforderungen passt. dann wird das projekt unter selfmade-challenges eingetragen und die jeweilige klasse, die die idee hatte, erhält einen kreativitätsbonus. Ein erster Kreativitätsbonus bedeutet, dass die erreichte Punktzahl mit dem Faktor 1,2 multipliziert wird. Für jede erfolgreich eingerichte Selfmade-Challenge erhöht sich der Faktor um 0,2. Wer also zwei Ideen für nachhaltige Challenges hat, die wir akzeptieren, dessen Punktzahl wird mit 1,4 malgenommen!
+                        <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
+                          text
+                            </div><br>
+                        <b><div id="worum"  style="margin-right: 30%; margin-left: 80px;"><h3>Worum geht´s?</h3></div></b>
 
-                            Falls ihr auf Ideensuche seid oder einfach mehr über das vielseitige Thema Nachhaltigkeit erfahren wollt, findet ihr im Leckerwissen viele hilfreiche Informationen und Links zu themenverwandten Seiten.
+                        <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
+                            text
+                              </div><br>
+                        <b><div id="wer"  style="margin-right: 30%; margin-left: 80px;"><h3>Wer kann mitmachen?</h3></div></b>
+
+                        <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
+                            Teilnehmen kann jede 6. Klasse einer öffentlichen oder privaten Schule im deutschsprachigen Raum.
+Besonders vorteilhaft ist es natürlich, eine motivierte Lehrkraft zu haben, mit der man an <i>WeltFAIRsteher</i> teilnimmt.
+Wenn ihr eine Lehrkraft mit einem Korb Äpfeln oder einem Sack Kartoffeln bestechen wollt, ist das also vielleicht nicht die beste Voraussetzung -
+sofern die Lehrerin beziehungsweise der Lehrer nicht nur zu <s>faul</s> beschäftigt war und sich eigentlich für Nachhaltigkeit interessiert.
+Übrigens: Eine Klasse kann natürlich auch mit der Unterstützung mehrerer Lehrkräfte teilnehmen, etwa um sowohl im Erdkunde-, als auch im Biologie-Unterricht an Challenges zu arbeiten.
+Anmelden kann euch aber nur eine Lehrkraft.
+                        </div><br>
+
+                        <b><div id="ablauf"  style="margin-right: 30%; margin-left: 80px;"><h3>Wie läuft´s ab?</h3></div></b>
+
+                        <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
+Jede Klasse kann sich an den Aufgaben, die ihr unter dem Reiter <i>Challenges</i> findet, versuchen. Mit welcher Challenge ihr dabei beginnt ist
+genauso gleichgültig wie die Anzahl der Schülerinnen und Schüler, die sich an einer Challenge beteiligen. Manchmal ist es sogar am besten,
+wenn nur wenige Schülerinnen und Schüler eine Aufgabe verfolgen.
+Wie viele Personen wir für eine Aufgabe empfehlen, könnt ihr auch bei jeder einzelnen Challenge nachlesen. <br><br>
+Sobald ihr eine Challenge erfolgreich abgeschlossen habt, kann eure Lehrkraft die Challenge im <i>Lehrer-Login</i> eintragen.
+Euren aktuellen Punktestand seht ihr in der <i>Tabelle</i>.
+Die darunter stehende Grafik zeigt den zeitlichen Verlauf aller Klassen. Die Klasse, die ihr oben (in der Kopfzeile) gewählt habt, wird dabei Rot angezeigt.
+<br><br>
+Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr etwa eine Idee für eine neue Challenge habt,
+so könnt ihr sie von eurer verantwortlichen Lehrkraft online im <i>Lehrer-Login</i> vorschlagen lassen. Wenn die vorgeschlagene Challenge den nachhaltigen
+Kriterien entspricht, so schalten wir sie als sogenannte <i>Selfmade-Challenge</i> frei und jede Klasse kann versuchen, die Challenge zu absolvieren.
+Was habt ihr als kreative Köpfe hinter der neuen Challenge davon? Einen Kreativitätsbonus! Für jede erfolgreich vorgeschlagene Challenge wird euer
+Kreativitätsbonus vom Anfangswert 1 um 0,2 erhöht. Der neue Wert wird dann mit euren Punkten multipliziert. Ein kleines Rechenbeispiel verdeutlicht am besten, wie wertvoll dieser Bonus für euch sein kann:
+ Angenommen euer Konto weist einen Wert von 30 Punkten auf. Eine erfolgreich eingebrachte Selfmade-Challenge erhöht euren Kreativitätsbonus auf 1,2.
+ Euer Punktestand beträgt sodann 30 mal 1,2 = 36 Punkte. Habt ihr stattdessen sogar zwei Selfmade-Challenges erfolgreich eingreicht, so erhöht sich
+ euer Punktestand auf 30 mal 1,4 = 42 Punkte. Das lohnt sich!
+ <br><br>
+ Falls ihr auf Ideensuche seid oder einfach mehr über das Thema Nachhaltigkeit erfahren wollt,
+ findet ihr im Reiter <i>Leckerwissen</i> viele hilfreiche Informationen und Links zu themenverwandten Seiten. Stoßt ihr im Internet selbst auf Artikel, Videos oder
+ sonstiges, was in das <i>Leckerwissen</i> passen würde, so könnt ihr es dort einfach hinzufügen. Dadurch profitieren alle Teilnehmer voneinander und bilden
+ sozusagen eine "Schwarmintelligenz".
+
+
 
                         </div><br>
-                        <b><div id="gewinn"  style="margin-right: 140px; margin-left: 30px;">Was kann man gewinnen?</div></b>
-                        <br>
-                        <div  style="margin-right: 140px; margin-left: 30px;">Klar, eigentlich sind die Erfahrungen und der Spaß, den ihr im Rahmen der Nachhaltigkeits-Challenge bestimmt haben werdet, schon Gewinn genug. Trotzdem gibt´s für die ersten beiden Plätze am Ende des Schuljahres noch je einen Preis obendrauf. Die Siegerklasse darf für ein ganzes Wochenende in den Wald und drei tolle erlebnispädagogische Tage verbringen, die man nie wieder vergisst. Wenn ihr den zweiten Platz schafft, werdet ihr mit einem kostenlosen Klassenfrühstück beschenkt. Na, Blut geleckt?</div><br>
-                        <b><div id="wir" class="abstand">Über uns</div></b>
-                        <br>
-                        <div style="margin-right: 140px; margin-left: 30px;">Diese Nachhaltigkeitschallenge ist ein gruppenübergreifendes Projekt von Mitgliedern des Max-Weber-Programms (Eliteförderung in Bayern) sowie CHANGE - Chancen.Nachhaltig.Gestalten (Gemeinnütziger Verein in Bamberg). ....</div><br>
+                        <b><div id="gewinn"  style="margin-right: 30%; margin-left: 80px;"><h3>Was kann man gewinnen?</h3></div></b>
+
+                        <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
+Der Siegerklasse winkt ein erlebnispädagogisches Wochenende, also drei Tage fernab der Eltern Natur erleben, kostenlose Verpflegung genießen und spannende Entdeckungen machen.
+Ach so, den größten Gewinn können natürlich alle Teilnehmer absahnen: Nützliches Wissen und hilfreiche Erfahrungen, die euch euer Leben lang begleiten. Worauf warten? Mitmachen!
+</div><br>
+<b><div id="wie"  style="margin-right: 30%; margin-left: 80px;"><h3>Wie meldet man sich an?</h3></div></b>
+
+<div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F">
+    Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an weltfairsteher@chancengestalten.de und teilt uns den kreativen Klassennamen mit,
+    den ihr euch selbst ausdenken könnt.
+    Wenn ihr uns verratet, von welcher Schule ihr kommt, würden wir uns natürlich sehr freuen. Keine Sorge: Eure Schuldaten werden nicht veröffentlicht.
+    Wir sind nur neugierig und wollen wissen, welche Schulen mitmachen.
+    <br><br>
+Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
+Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Login</i> gewissenhaft bestandene Challenges eintragen oder eine Selfmade-Challenge vorschlagen.
+
+    Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
+</div><br>
+
+                        <b><div id="wir" class="abstand" style="margin-right: 30%; margin-left: 80px;"><h3>Über uns</h3></div></b>
+
+                        <div style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
+Wir sind ein Team aus Mitgliedern des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg sowie des Max-Weber-Programms. Ein Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>. Ob an der Planung, den Themen, der Website oder der Kommunikation - alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
 
 
 

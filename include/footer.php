@@ -9,6 +9,27 @@
 
             <a href="http://www.chancengestalten.de.com" title="CHANGE">Über CHANGE e.V.</a> </div>
 </footer>-->
+
+  <div>
+    <footer style="
+    z-index: 5;
+    width: 100%;
+    height: 60px;
+    background-color: #027018;
+  color: #CACCCA;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 60em;
+  border-top: 2px solid black;
+position: static;
+bottom: 0px;
+
+  ">
+
+  <br>
+   &copy; 2016 WeltFAIRsteher <br> Kontakt: weltfairsteher@chancengestalten.de
+  </footer> </div>
+
     </div>
     </body>
     </html>

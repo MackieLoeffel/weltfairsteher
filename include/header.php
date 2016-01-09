@@ -60,7 +60,7 @@ include "include/config.php";
                     <nav id="site-navigation" class="navigation main-navigation" role="navigation" style="margin-top: -33px">
                         <a class="home-link" href="index.php" title="Nachhaltigkeitschallenge" rel="home">
                             <h1 class="site-title">
-                              <img src="Logo_BGtransparent.png" alt="Weltfairsteher" title="Nachhaltigkeitschallenge" style="height: 32px; margin-left: -50px">
+                              <img src="Logo_BGtransparent.png" alt="Weltfairsteher" title="Nachhaltigkeitschallenge" style="height: 32px; margin-left: 10px">
                             </h1>
                         </a>
                         <h3 class="menu-toggle">Menü</h3>
