@@ -14,7 +14,13 @@ if(isset($_SESSION["user"])) {
     } else {
         $_SESSION["role"] = $user->role;
         $_SESSION["user"] = $user->id;
-        echo "logged in!";
+?>
+    <b> logged in, redirecting in 3 seconds... </b>
+    <script type="text/javascript">
+     setTimeout(function() {window.location = "teacher.php"}, 3*1000);
+    </script>
+
+    <?php
         $showForm = false;
     }
 }
