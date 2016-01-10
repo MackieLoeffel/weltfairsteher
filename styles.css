@@ -36,10 +36,13 @@
     margin-bottom: -20px;
     margin-left: 93%;
     text-align:center;
-    color: black;
     font-size: 14px;
     font-width: bold;
     float: left;
+    color: white;
+}
+.challenge-points.selfmade {
+    color: black;
 }
 
 .selfmade-whole {
@@ -184,8 +187,6 @@
     color: white;
     font-size: 11px;
 }
-<<<<<<< HEAD
-=======
 
 .teacher-challenge-box {
     background-color:#1BAB3F;
@@ -215,4 +216,3 @@
     font-size: 13px;
     position: relative;
 }
->>>>>>> b0897aa4d02422ceb974e01528c6a134af9b90a6
