@@ -2,7 +2,7 @@
 include "include/header.php";
 
 $showForm = true;
-if(isset($_SESSION["role"])) {
+if(isset($_SESSION["user"])) {
     echo "already logged in!";
     $showForm = false;
 } else if(isset($_POST["email"]) && isset($_POST["password"])) {
@@ -13,6 +13,7 @@ if(isset($_SESSION["role"])) {
         echo "invalid email or password! <br>";
     } else {
         $_SESSION["role"] = $user->role;
+        $_SESSION["user"] = $user->id;
         echo "logged in!";
         $showForm = false;
     }

@@ -1,7 +1,7 @@
 <?php
 include "include/access.php";
 
-#check_access(ADMIN);
+check_access(ADMIN);
 include "include/header.php";
 
 # from http://www.php-einfach.de/experte/php-codebeispiele/loginscript/
