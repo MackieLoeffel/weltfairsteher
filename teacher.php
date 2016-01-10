@@ -72,16 +72,17 @@ include "include/chart.php";
         <form action="logout.php" method="get">
             <input type="submit" value="Logout" style="background-color: #52150D; font-size: 11px;">
         </form>
-            <!--Klasse wechseln, Logout
-               -->
-            <div class="teacher-challenge-box-inner">
-                <b>Challenge eintragen:</b><br>
-                <span style="margin-bottom: 4px; margin-top: 9px; font-size:13px; color: black">
-                    <form method="post">
-                        <b>Klasse:</b>
-                        <select name="class" id="class" size="1">
-                            <?php
-                                $challengeStmt = $db->prepare("
+        <!--Klasse wechseln, Logout
+           -->
+        <div class="teacher-challenge-box-inner">
+            <b>Challenge eintragen:</b><br>
+            <span style="margin-bottom: 4px; margin-top: 9px; font-size:13px; color: black">
+                <form method="post">
+                    <b>Klasse:</b>
+                    <select name="class" id="class" size="1">
+                        <?php
+                        // select all unsolved challenges by this class
+                        $challengeStmt = $db->prepare("
 SELECT id, name FROM challenge
 WHERE id NOT IN (
 SELECT c.id
@@ -89,33 +90,34 @@ FROM challenge AS c
 JOIN solved_challenge AS sc ON c.id = sc.challenge
 WHERE sc.class = :class
 GROUP BY c.id)");
-                            $challenges = [];
-                            if($_SESSION['role'] < 2) {
-                                $classStmt = $db->prepare("SELECT id, name FROM class WHERE teacher = :teacher ");
-                                $classStmt->execute(["teacher" => $_SESSION['user']]);
-                            } else {
-                                $classStmt = $db->prepare("SELECT id, name FROM class");
-                                $classStmt->execute();
-                            }
-                            foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $class) {
-                                $challengeStmt->execute(["class" => $class->id]);
-                                $challenges[$class->id] = $challengeStmt->fetchAll(PDO::FETCH_ASSOC);
-                            ?>
-                                <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
-                            <?php } ?>
-                        </select><br>
-                        <b>Challenge:</b>
-                        <select name="challenge" id="challenges" size="1"> </select>
-                        <br>
-                        <input type="submit" value="eintragen" style="background-color: green"><br><br>
-                    </form>
-                    <script type="text/javascript">
-                     var challenges = <?= json_encode($challenges); ?>;
-                    </script>
-                    <script src="js/teacher.js"></script>
-                </span>
-                <!--"Klasse wechseln" nur anzeigen, wenn ein Lehrer für mehrere Klassen verantwortlich ist. In der Auswahlliste nur die Klassen anzeigen, die mit dem Konto des Lehrers verbunden sind -->
-            </div>
+                        $challenges = [];
+                        if($_SESSION['role'] < 2) {
+                            $classStmt = $db->prepare("SELECT id, name FROM class WHERE teacher = :teacher ");
+                            $classStmt->execute(["teacher" => $_SESSION['user']]);
+                        } else {
+                            // admins are allowed to change everything
+                            $classStmt = $db->prepare("SELECT id, name FROM class");
+                            $classStmt->execute();
+                        }
+                        foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $class) {
+                            $challengeStmt->execute(["class" => $class->id]);
+                            $challenges[$class->id] = $challengeStmt->fetchAll(PDO::FETCH_ASSOC);
+                        ?>
+                            <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
+                        <?php } ?>
+                    </select><br>
+                    <b>Challenge:</b>
+                    <select name="challenge" id="challenges" size="1"> </select>
+                    <br>
+                    <input type="submit" value="eintragen" style="background-color: green"><br><br>
+                </form>
+                <script type="text/javascript">
+                 var challenges = <?= json_encode($challenges); ?>;
+                </script>
+                <script src="js/teacher.js"></script>
+            </span>
+            <!--"Klasse wechseln" nur anzeigen, wenn ein Lehrer für mehrere Klassen verantwortlich ist. In der Auswahlliste nur die Klassen anzeigen, die mit dem Konto des Lehrers verbunden sind -->
+        </div>
 
 
 </div>
