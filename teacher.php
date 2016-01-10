@@ -5,12 +5,18 @@ include "include/header.php";
 
 
 if(isset($_POST["class"]) && isset($_POST["challenge"])) {
-    $scStmt = $db->prepare("SELECT * FROM solved_challenge WHERE class = :class AND challenge = :challenge");
-    $scStmt->execute(["class" => $_POST["class"], "challenge" => $_POST["challenge"]]);
-    if($scStmt->fetch() === false) {
-        // race condition here
-        $insertStmt = $db->prepare("INSERT INTO solved_challenge (class, challenge, at) VALUES (:class, :challenge, NOW())");
-        $insertStmt->execute(["class" => $_POST["class"], "challenge" => $_POST["challenge"]]);
+    $checkStmt = $db->prepare("SELECT * FROM class WHERE id = :id AND teacher = :teacher");
+    $checkStmt->execute(["id" => $_POST["class"], "teacher" => $_SESSION["user"]]);
+
+    if($_SESSION["role"] > 1 || $checkStmt->fetch() !== false) {
+        $scStmt = $db->prepare("SELECT * FROM solved_challenge WHERE class = :class AND challenge = :challenge");
+        $scStmt->execute(["class" => $_POST["class"], "challenge" => $_POST["challenge"]]);
+
+        if($scStmt->fetch() === false) {
+            // race condition here
+            $insertStmt = $db->prepare("INSERT INTO solved_challenge (class, challenge, at) VALUES (:class, :challenge, NOW())");
+            $insertStmt->execute(["class" => $_POST["class"], "challenge" => $_POST["challenge"]]);
+        }
     }
 }
 
