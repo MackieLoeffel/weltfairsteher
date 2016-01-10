@@ -14,7 +14,7 @@ WHERE c.id = :id");
     </div>
     <b><u><a class="<?php
                     foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $classRow) {
-                        echo "class-" . $classRow->id;
+                        echo " class-" . $classRow->id;
                     }
                     ?>
                     challenge-title"
