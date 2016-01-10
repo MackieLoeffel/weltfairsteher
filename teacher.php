@@ -4,22 +4,42 @@ check_access(TEACHER);
 include "include/header.php";
 
 
-if(isset($_POST["class"]) && isset($_POST["challenge"])) {
+if(isset($_POST["class"])) {
     $checkStmt = $db->prepare("SELECT * FROM class WHERE id = :id AND teacher = :teacher");
     $checkStmt->execute(["id" => $_POST["class"], "teacher" => $_SESSION["user"]]);
 
     if($_SESSION["role"] > 1 || $checkStmt->fetch() !== false) {
-        $scStmt = $db->prepare("SELECT * FROM solved_challenge WHERE class = :class AND challenge = :challenge");
-        $scStmt->execute(["class" => $_POST["class"], "challenge" => $_POST["challenge"]]);
+        if(isset($_POST["challenge"])) {
+            $scStmt = $db->prepare("SELECT * FROM solved_challenge WHERE class = :class AND challenge = :challenge");
+            $scStmt->execute(["class" => $_POST["class"], "challenge" => $_POST["challenge"]]);
 
-        if($scStmt->fetch() === false) {
-            // race condition here
-            $insertStmt = $db->prepare("INSERT INTO solved_challenge (class, challenge, at) VALUES (:class, :challenge, NOW())");
-            $insertStmt->execute(["class" => $_POST["class"], "challenge" => $_POST["challenge"]]);
+            if($scStmt->fetch() === false) {
+                // race condition here
+                $insertStmt = $db->prepare("INSERT INTO solved_challenge (class, challenge, at) VALUES (:class, :challenge, NOW())");
+                $insertStmt->execute(["class" => $_POST["class"], "challenge" => $_POST["challenge"]]);
+            }
+        }
+        if(isset($_POST["title"]) && isset($_POST["desc"]) && isset($_POST["points"])) {
+            $insertStmt = $db->prepare("INSERT INTO suggested (title, description, class, points) VALUES (:title, :desc, :class, :points)");
+            $insertStmt->execute(["title" => $_POST["title"],
+                                  "desc" => $_POST["desc"],
+                                  "class" => $_POST["class"],
+                                  "points" => $_POST["points"]]);
         }
     }
 }
 
+
+
+if($_SESSION['role'] < 2) {
+    $classStmt = $db->prepare("SELECT id, name FROM class WHERE teacher = :teacher ");
+    $classStmt->execute(["teacher" => $_SESSION['user']]);
+} else {
+    // admins are allowed to change everything
+    $classStmt = $db->prepare("SELECT id, name FROM class");
+    $classStmt->execute();
+}
+$allowed_classes = $classStmt->fetchAll(PDO::FETCH_OBJ);
 include "include/chart.php";
 ?>
 <!--Liniendiagramm
@@ -43,28 +63,48 @@ include "include/chart.php";
            height: auto;">
 
     <span style="margin-left: 14px;">
-        <b>Selfmade-Challenge vorschlagen</b></span><br>
-        <div style="margin-left: 14px">
-            <textarea cols="50" row="1">Challenge-Titel</textarea>
-        </div>
-        <br>
-        <div style="color: white; margin-left: 14px">
-            <textarea cols="50" row=8";>Challenge-Beschreibung</textarea>
+        <form method="post">
+            <b>Selfmade-Challenge vorschlagen</b></span><br>
+            <div style="margin-left: 14px">
+                <b>Von:</b>
+                <select name="class" size="1">
+                    <?php
+                    foreach($allowed_classes as $class) {
+                    ?>
+                        <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
+                    <?php } ?>
+                </select>
+                <b>Punkte:</b>
+                <select name="points" size="1">
+                    <?php for($i = 1; $i <= 9; $i++) {?>
+                        <option value="<?= $i?>"><?= $i?></option>
+                    <?php } ?>
+                </select>
+            </div>
 
-            <span style="font-size: 13px; color: black"><br>
-                <b>Hilfestellung:</b>
-            </span>
-            <span style="font-size: 13px; color: white">Die Challenge-Beschreibung sollte --lorem ipsum dolor sit atmet und so weiter etc pp (Beschreibung der notwendigen Inhalte und evtl der Länge einer Challenge-Beschreibung) beinhalten.
-            </span><br>
+            <div style="margin-left: 14px">
+                <b>Titel:</b>
+                <input type="text" name="title" size="20" max="200">
+            </div>
+            <br>
+            <div style="color: white; margin-left: 14px">
+                <textarea cols="50" row=8" name="desc">Challenge-Beschreibung</textarea>
 
-            <span style="font-size: 13px; color: black"><br>
-                <b>Hinweis:</b>
-            </span>
-            <span style="font-size: 13px; color: white">
-                Die vorgeschlagene Challenge wird nicht sofort hinzugefügt, sondern erst zur Prüfung an eine beauftragte Person geschickt.
-            </span><br>
-            <input type="submit" value="Abschicken" style="background-color:  green; margin-left: 258px;">
-        </div>
+                <span style="font-size: 13px; color: black"><br>
+                    <b>Hilfestellung:</b>
+                </span>
+                <span style="font-size: 13px; color: white">Die Challenge-Beschreibung sollte --lorem ipsum dolor sit atmet und so weiter etc pp (Beschreibung der notwendigen Inhalte und evtl der Länge einer Challenge-Beschreibung) beinhalten.
+                </span><br>
+
+                <span style="font-size: 13px; color: black"><br>
+                    <b>Hinweis:</b>
+                </span>
+                <span style="font-size: 13px; color: white">
+                    Die vorgeschlagene Challenge wird nicht sofort hinzugefügt, sondern erst zur Prüfung an eine beauftragte Person geschickt.
+                </span><br>
+                <input type="submit" value="Abschicken" style="background-color:  green; margin-left: 258px;">
+            </div>
+        </form>
 </div>
 
 <div class=".abstand teacher-challenge-box">
@@ -91,15 +131,7 @@ JOIN solved_challenge AS sc ON c.id = sc.challenge
 WHERE sc.class = :class
 GROUP BY c.id)");
                         $challenges = [];
-                        if($_SESSION['role'] < 2) {
-                            $classStmt = $db->prepare("SELECT id, name FROM class WHERE teacher = :teacher ");
-                            $classStmt->execute(["teacher" => $_SESSION['user']]);
-                        } else {
-                            // admins are allowed to change everything
-                            $classStmt = $db->prepare("SELECT id, name FROM class");
-                            $classStmt->execute();
-                        }
-                        foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $class) {
+                        foreach($allowed_classes as $class) {
                             $challengeStmt->execute(["class" => $class->id]);
                             $challenges[$class->id] = $challengeStmt->fetchAll(PDO::FETCH_ASSOC);
                         ?>

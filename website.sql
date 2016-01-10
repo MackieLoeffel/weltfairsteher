@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 10, 2016 at 04:24 PM
+-- Generation Time: Jan 10, 2016 at 05:51 PM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -136,6 +136,27 @@ INSERT INTO `solved_challenge` (`id`, `at`, `class`, `challenge`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `suggested`
+--
+
+CREATE TABLE `suggested` (
+  `id` int(11) NOT NULL,
+  `title` text COLLATE utf8_bin NOT NULL,
+  `description` text COLLATE utf8_bin NOT NULL,
+  `class` int(11) NOT NULL,
+  `points` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `suggested`
+--
+
+INSERT INTO `suggested` (`id`, `title`, `description`, `class`, `points`) VALUES
+(2, 'dd', 'Challenge-Beschreibung', 1, 6);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -183,6 +204,12 @@ ALTER TABLE `solved_challenge`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `suggested`
+--
+ALTER TABLE `suggested`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -211,7 +238,12 @@ ALTER TABLE `leckerwissen`
 -- AUTO_INCREMENT for table `solved_challenge`
 --
 ALTER TABLE `solved_challenge`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+--
+-- AUTO_INCREMENT for table `suggested`
+--
+ALTER TABLE `suggested`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `user`
 --
