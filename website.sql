@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 08, 2016 at 03:41 PM
+-- Generation Time: Jan 10, 2016 at 04:24 PM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -62,17 +62,18 @@ INSERT INTO `challenge` (`id`, `name`, `description`, `points`, `category`, `aut
 
 CREATE TABLE `class` (
   `id` int(11) NOT NULL,
-  `name` varchar(100) COLLATE utf8_bin NOT NULL
+  `name` varchar(100) COLLATE utf8_bin NOT NULL,
+  `teacher` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `class`
 --
 
-INSERT INTO `class` (`id`, `name`) VALUES
-(1, 'Die Sojapatronen'),
-(2, 'Elektrokürbis'),
-(3, 'Mc Do Not');
+INSERT INTO `class` (`id`, `name`, `teacher`) VALUES
+(1, 'Die Sojapatronen', 3),
+(2, 'Elektrokürbis', 4),
+(3, 'Mc Do Not', 4);
 
 -- --------------------------------------------------------
 
@@ -93,7 +94,7 @@ CREATE TABLE `leckerwissen` (
 --
 
 INSERT INTO `leckerwissen` (`id`, `link`, `title`, `category`, `type`) VALUES
-(1, 'http://www.example.com', 'Food Video', 'food', 'video'),
+(1, 'http://www.example.com ">aaaaa', 'Food Video', 'food', 'video'),
 (2, 'http://www.example.com', 'other article', 'other', 'article'),
 (3, 'http://www.example.com', 'energy other', 'energy', 'other'),
 (4, 'http://www.example.com', 'other other', 'other', 'other'),
@@ -103,7 +104,11 @@ INSERT INTO `leckerwissen` (`id`, `link`, `title`, `category`, `type`) VALUES
 (8, 'http://www.example.com', 'energy other', 'energy', 'other'),
 (9, 'http://www.example.com', 'other other', 'other', 'other'),
 (10, 'http://www.example.com', 'production video', 'production', 'video'),
-(11, 'https://www.youtube.com/watch?v=iiDCNdsU4vI', 'Hagen Rether über Fleisch, Milch & Co [Kabarett]', 'food', 'video');
+(11, 'https://www.youtube.com/watch?v=iiDCNdsU4vI', 'Hagen Rether über Fleisch, Milch & Co [Kabarett]', 'food', 'video'),
+(12, 'http://a.de', 'aaa', 'food', 'article'),
+(13, 'http://a.de', 'aaaa', 'climate-change', 'video'),
+(14, 'http://a.de', 'aaaa', 'climate-change', 'video'),
+(15, 'http://a.de', 'aaaa', 'climate-change', 'video');
 
 -- --------------------------------------------------------
 
@@ -146,7 +151,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `password`, `email`, `role`) VALUES
-(3, '$2y$10$u6F8pbGlu8.VQ2lcBwH4XeYKp1tsO.81Tj511n91Nat6.R.tsPZOO', 'a@b.de', 2);
+(3, '$2y$10$u6F8pbGlu8.VQ2lcBwH4XeYKp1tsO.81Tj511n91Nat6.R.tsPZOO', 'a@b.de', 2),
+(4, '$2y$10$VD8rg18PgyjWI8kuluGUJucrPrK85DtNGgpjW3IYVda1mjEPt765K', 'teacher@test.de', 1);
 
 --
 -- Indexes for dumped tables
@@ -200,17 +206,17 @@ ALTER TABLE `class`
 -- AUTO_INCREMENT for table `leckerwissen`
 --
 ALTER TABLE `leckerwissen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `solved_challenge`
 --
 ALTER TABLE `solved_challenge`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
