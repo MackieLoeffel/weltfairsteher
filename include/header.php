@@ -67,15 +67,18 @@ include "include/config.php";
                         <a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
                         <div class="menu-menu-left-container" style="margin-left: -10px; float: left"><ul id="menu-menu-left" class="nav-menus nav-menu">
                            <?php
-                            $sites = ["Tabelle" => "table.php",
-                                      "Challenges" => "challenges.php",
-                                      "Leckerwissen" => 'leckerwissen.php',
-                                      'Lehrer-Bereich' => "teacher.php",
-                                      'Impressum' => 'impressum.php'];
-                            foreach ($sites as $site => $link) {
-                            ?>
-                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?=$link?>"><?=$site?></a></li>
-                            <?php } ?>
+                           $sites = ["Tabelle" => "table.php",
+                                     "Challenges" => "challenges.php",
+                                     "Leckerwissen" => 'leckerwissen.php',
+                                     'Lehrer-Bereich' => "teacher.php",
+                                     'Impressum' => 'impressum.php'];
+                           if(isset($_SESSION["role"]) && $_SESSION["role"] > 1) {
+                               $sites["Admin"] = "admin.php";
+                           }
+                           foreach ($sites as $site => $link) {
+                           ?>
+                               <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?=$link?>"><?=$site?></a></li>
+                           <?php } ?>
                         </ul></div>
 
                         <span style="margin-right: 10px; margin-left: 10px; margin-bottom: 10px; margin-top: 9px; float: left; font-size:13px; color: #0F9C2E"><form method="POST">
