@@ -1,3 +1,5 @@
+
+
 .challenge-header {
     width: 18%;
     height: 20px;
@@ -190,29 +192,30 @@
 
 .teacher-challenge-box {
     background-color:#1BAB3F;
-    z-index: 1;
-    width: 223px;
-    height: 220px;
-    float: right;
-    margin-top: 40px;
-    margin-right: 40px;
-    margin-bottom: 50px;
-    margin-left: ;
+    width: 300px;
+    height: auto;
+    float: left;
+    margin-top: 905px;
+    margin-right: 14px;
+    margin-bottom: ;
+    margin-left: 14px;
     text-align:center;
     color: black;
     font-size: 13px;
+    position: absolute;
+
 }
 .teacher-challenge-box-inner {
     background-color:#1BAB3F;
     z-index: 1;
-    width:223px;
+    width:300px;
     height: auto;
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-bottom: 10px;
-    margin-left: auto;
+    margin-top: 40px;
+    margin-right: 14px;
+    margin-bottom: ;
+    margin-left: 14px;
     text-align:center;
     color: black;
     font-size: 13px;
-    position: relative;
+    position: absolute;
 }

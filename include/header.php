@@ -14,7 +14,7 @@ include "include/config.php";
             <!--<![endif]-->
             <head>
                 <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width">
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
                 <title>WeltFAIRsteher</title>
 
                 <meta name="description" content="Die Nachhaltigkeitschallenge"/>
@@ -44,9 +44,9 @@ include "include/config.php";
 
                 <style id='wp-polls-inline-css' type='text/css'>.wp-polls .pollbar{margin:1px;font-size:8px;line-height:10px;height:10px; border:1px solid #1874CD}</style>
                 <link rel='stylesheet' id='twentythirteen-fonts-css' href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700%7COpen+Sans+Condensed%3A300%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all'/>
-                <link rel='stylesheet' id='genericons-css' href='http://de.ubergizmo.com/wp-content/themes/ubergizmo/fonts/genericons.css?ver=2.09' type='text/css' media='all'/>
+             <link rel='stylesheet' id='genericons-css' href='http://de.ubergizmo.com/wp-content/themes/ubergizmo/fonts/genericons.css?ver=2.09' type='text/css' media='all'/>
                 <link rel='stylesheet' id='twentythirteen-style-css' href='http://de.ubergizmo.com/wp-content/themes/ubergizmo/style.css?ver=1447668848' type='text/css' media='all'/>
-                <link rel='stylesheet' href='styles.css' type='text/css' />
+              <link rel='stylesheet' href='styles.css' type='text/css' />
                 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
                 <script src="js/classSelect.js" ></script>
                 <!--[if lt IE 9]>
@@ -77,47 +77,64 @@ include "include/config.php";
 
 
 
-                <div id="navbar" class="navbar">
-                    <nav id="site-navigation" class="navigation main-navigation" role="navigation" style="margin-top: -33px">
-                        <a class="home-link" href="index.php" title="Nachhaltigkeitschallenge" rel="home">
-                            <h1 class="site-title">
-                              <img src="Logo_BGtransparent.png" alt="Weltfairsteher" title="Nachhaltigkeitschallenge" style="height: 32px; margin-left: 10px">
-                            </h1>
-                        </a>
-                        <h3 class="menu-toggle">Menü</h3>
-                        <a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
-                        <div class="menu-menu-left-container" style="margin-left: -10px; float: left"><ul id="menu-menu-left" class="nav-menus nav-menu">
-                           <?php
-                           $sites = ["Tabelle" => "table.php",
-                                     "Challenges" => "challenges.php",
-                                     "Leckerwissen" => 'leckerwissen.php',
-                                     'Lehrer-Bereich' => "teacher.php",
-                                     'Impressum' => 'impressum.php'];
-                           if(isset($_SESSION["role"]) && $_SESSION["role"] > 1) {
-                               $sites["Admin"] = "admin.php";
-                           }
-                           foreach ($sites as $site => $link) {
-                           ?>
-                               <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?=$link?>"><?=$site?></a></li>
-                           <?php } ?>
-                        </ul></div>
+                          <div id="navbar" class="navbar">
+                              <nav id="site-navigation" class="navigation main-navigation" role="navigation" style="margin-top: -33px">
+                                  <a class="home-link" href="index.php" title="Weltfairsteher" rel="home">
+                                      <h1 class="site-title">
+                                        <img src="Logo_BGtransparent.png" alt="Weltfairsteher" title="Weltfairsteher" style="height: 32px; margin-left: 10px">
+                                      </h1>
+                                  </a>
 
-                        <span style="margin-right: 10px; margin-left: 10px; margin-bottom: 10px; margin-top: 9px; float: left; font-size:13px; color: #0F9C2E"><form method="POST">
-                            <b>Wähle deine Klasse:</b>
+<!--
+                                  <a class="menu-toggle"
+                                         href="#" style="color: white;" title="menu">Menü</a>
+-->
 
-                            <select id="class-select" name="klasse" size="1">
-                                <?php
-                                $classStmt = $db->prepare("SELECT id, name FROM class");
-                                $classStmt->execute();
-                                foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
-                                ?>
-                                    <option value="<?= e($row->id) ?>"><?= e($row->name) ?></option>
-                                <?php } ?>
-                            </select>
-                        </form></span>
-                        </nav>
-                </div>
-            </header>
+
+
+                                  <div class="menu-menu-left-container" style="margin-left: -10px; float: left"><ul id="menu-menu-left" class="nav-menus nav-menu">
+
+                                     <?php
+                                     $sites = ["Tabelle" => "table.php",
+                                               "Challenges" => "challenges.php",
+                                               "Leckerwissen" => 'leckerwissen.php',
+                                               'Lehrer-Bereich' => "teacher.php",
+                                               'Impressum' => 'impressum.php'];
+                                     if(isset($_SESSION["role"]) && $_SESSION["role"] > 1) {
+                                         $sites["Admin"] = "admin.php";
+                                     }
+                                     foreach ($sites as $site => $link) {
+                                     ?>
+
+                                         <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?=$link?>"><?=$site?></a></li>
+
+                                     <?php } ?>
+                                  </ul></div>
+
+                                  <span style="margin-right: 10px; margin-left: 10px; margin-bottom: 10px; margin-top: 9px; float: left; font-size:13px; color: #0F9C2E">
+                                    <form method="POST">
+                                      <b>Wähle deine Klasse:</b>
+
+                                      <select id="class-select" name="klasse" size="1">
+                                          <?php
+                                          $classStmt = $db->prepare("SELECT id, name FROM class");
+                                          $classStmt->execute();
+                                          foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
+                                          ?>
+                                              <option value="<?= e($row->id) ?>"><?= e($row->name) ?></option>
+                                          <?php } ?>
+                                      </select>
+                                  </form></span>
+                                  </nav>
+                          </div>
+
+
+
+
+
+
+          </header>
+
             <style>
              .abstand { margin: 0cm 1cm 0cm 1cm;}
             </style>

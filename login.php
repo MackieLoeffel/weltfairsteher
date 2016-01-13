@@ -26,11 +26,19 @@ if(isset($_SESSION["user"])) {
 }
 if($showForm) {
 ?>
-        <div class="login">
+        <div class="login" style="width: 30%; margin-left: 35%; margin-right: 35%;
+        margin-top: 50px; height: auto; background-color: #6EDB95;">
             <form method="post">
-                <p><input type="text" name="email" value="" placeholder="E-Mail-Adresse"></p>
-                <p><input type="password" name="password" value="" placeholder="Passwort"></p>
-                <p class="submit"><input type="submit" name="commit" value="Login" style="background-color: green";></p>
+                <p><input type="text" name="email" style="width: 100%;
+                  text-align: center; margin-top: 5px;" value=""
+                  placeholder="E-Mail-Adresse"></p>
+                <p><input type="password" name="password" style="width: 100%;
+                  text-align: center;" value=""
+                  placeholder="Passwort"></p>
+                <p class="submit" style="width: 34%;
+                  margin-bottom: 5px; margin-left: 33%; margin-right: 33%;
+                  text-align: center;"><input type="submit" name="commit"
+                  value="Login"></p>
             </form></div>
 <?php
 }
