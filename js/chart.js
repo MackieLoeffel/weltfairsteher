@@ -76,7 +76,7 @@ LineChart = (function() {
           results1.push({
             label: c.name,
             strokeColor: normalColor,
-            fillColor: "rgba(7,108,240,1)",
+            fillColor: "rgba(7,108,240,0.6)",
             data: c.points
           });
         }
