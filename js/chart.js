@@ -3,7 +3,7 @@ var BarChart, LineChart, highlightColor, normalColor;
 
 normalColor = "rgba(0,70,224,0.6)";
 
-highlightColor = "rgba(139,0,112,1)";
+highlightColor = "rgba(255,0,85,1)";
 
 BarChart = (function() {
   function BarChart(classes, canvas) {
@@ -76,7 +76,7 @@ LineChart = (function() {
           results1.push({
             label: c.name,
             strokeColor: normalColor,
-            fillColor: "rgba(7,108,240,0.6)",
+            fillColor: "rgba(7,108,240,1)",
             data: c.points
           });
         }

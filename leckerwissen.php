@@ -66,34 +66,44 @@ foreach($categories as $c) {
    -->
 
 
-<div style="float: left; margin-top: 15px; background-color:#1BAB3F; font-size: 15px; margin-left: 7px; color: white; width: auto"><b>Neues Leckerwissen hinzufügen:</b>
+<div style="float: left; margin-top: 15px; background-color:#1BAB3F;
+font-size: 15px; margin-left: 7px; color: white; width: auto">
+<b>Neues Leckerwissen hinzufügen:</b>
     <form method="POST">
-        <label for="bezeichnung" style="color: black;font-size: 13px;">Bezeichnung:
+        <label for="bezeichnung" style="color: black;font-size: 13px;">
+          Bezeichnung:
             <input type="text" name="title" size="20" max="200">
         </label>
         <br>
-        <label for="link" style="color: black; font-size: 13px;">Link:
-            <input type="url" name="link" style="margin-left: 47px;" size="20" max="200">
+        <label for="link" style="color: black; font-size: 13px;">
+          Link:
+            <input type="url" name="link" style="margin-left: 47px;"
+            size="20" max="200">
         </label><br>
-        <span style="font-size: 13px; margin-right: 52px"><b>Art:</b></span>
+        <span style="font-size: 13px; margin-right: 52px"><b>
+          Art:</b></span>
         <select name="type" size="1">
             <?php foreach($types as $t) { ?>
-                <option value="<?=e($t["name"])?>"><?= e($t["desc"]) ?></option>
+                <option value="<?=e($t["name"])?>"><?= e($t["desc"]) ?>
+                </option>
             <?php } ?>
         </select>
         </span>
         <br>
-        <span style="font-size: 13px; margin-right: 13px"><b>Kategorie:</b></span>
+        <span style="font-size: 13px; margin-right: 13px"><b>
+          Kategorie:</b></span>
                 <select name="category" size="1">
                     <?php foreach($categories as $c) { ?>
-                        <option value="<?=e($c->name)?>"><?=e($c->title)?></option>
+                        <option value="<?=e($c->name)?>">
+                          <?=e($c->title)?></option>
                     <?php } ?>
                 </select>
         </span>
 
 
 
-        <br><input type="submit" value="Hinzufügen" style="background-color: green; font-size: 12px">
+        <br><input type="submit" value="Hinzufügen"
+        style="background-color: green; font-size: 12px">
         <!--<input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()"> -->
     </form></div>
 <?php include "include/footer.php"?>

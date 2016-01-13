@@ -54,7 +54,7 @@ WHERE c.category = :category AND sc.class = :class");
     </tbody>
 </table>
 
-<canvas id="chart" ></canvas>
+<canvas id="chart" style="width: 70%; margin-left: 15%; margin-right: 15%; margin-top: 25px; position: relative;"></canvas>
 <script type="text/javascript">
  var chart = new LineChart(classes, document.getElementById("chart"));
 </script>

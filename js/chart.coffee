@@ -1,5 +1,5 @@
 normalColor = "rgba(0,70,224,0.6)"
-highlightColor = "rgba(139,0,112,1)"
+highlightColor = "rgba(255,0,85,1)"
 
 class BarChart
   constructor: (@classes, canvas) ->
@@ -47,6 +47,7 @@ class LineChart
       bezierCurveTension: 0.2
       pointDot: false
       datasetFill: false
+
 
   setClass: (id) ->
     for c, i in @classes

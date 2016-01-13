@@ -15,10 +15,31 @@ include "include/config.php";
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width">
-                <title>Die Nachhaltigkeitschallenge</title>
+                <title>WeltFAIRsteher</title>
 
                 <meta name="description" content="Die Nachhaltigkeitschallenge"/>
                 <link rel="canonical" href="http://link"/>
+
+<!-- Favicon einbinden
+-->
+<link rel="apple-touch-icon" sizes="57x57" type="image/x-icon" href="favi/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" type="image/x-icon" href="favi/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" type="image/x-icon" href="favi/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" type="image/x-icon" href="favi/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" type="image/x-icon" href="favi/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" type="image/x-icon" href="favi/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="favi/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" type="image/x-icon" href="favi/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" type="image/x-icon" href="favi/apple-icon-180x180.png">
+<link rel="icon" type="image/x-icon" sizes="192x192"  href="favi/android-icon-192x192.png">
+<link rel="icon"  sizes="32x32" type="image/x-icon" href="favi/favicon-32x32.png">
+<link rel="icon" type="image/x-icon" sizes="96x96" href="favi/favicon-96x96.png">
+<link rel="icon" sizes="16x16" type="image/x-icon" href="favi/favicon-16x16.png">
+<link rel="manifest" href="favi/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favi/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
 
 
                 <style id='wp-polls-inline-css' type='text/css'>.wp-polls .pollbar{margin:1px;font-size:8px;line-height:10px;height:10px; border:1px solid #1874CD}</style>
