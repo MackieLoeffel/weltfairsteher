@@ -134,7 +134,10 @@ include "include/config.php";
 
 
           </header>
-
+<div style="margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 20px;
+width: 40%; text-align: center; color: black; background-color: yellow;">
+  Homepage noch in Bearbeitung.
+</div>
             <style>
              .abstand { margin: 0cm 1cm 0cm 1cm;}
             </style>

@@ -24,15 +24,31 @@
                         <!-- image
                            -->
                         <br>
-                        <b><div id="was"  style="margin-right: 30%; margin-left: 80px;"><h3>Was ist das?</h3></div></b>
+                        <b><div id="was"  style="margin-right: 30%; margin-left: 80px;">
+                        <h3>Was ist das?</h3>
+                        </div></b>
 
                         <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
-                          text
+                          WeltFAIRsteher ist eine Nachhaltigkeitschallenge für Schulklassen, also ein Wettbewerb, bei dem es darum geht,
+                        gemeinsam als Klasse Aufgaben zu bewältigen, die mit Nachhaltigkeit zu tun haben. Das kann von kleinen handwerklichen Projekten über
+                        die Organisation und Verspeisung eines ökologisch nachhaltigen Frühstücks bis hin zu unterhaltsamen Spielen, spannenden Referaten und sozialem Engagement reichen.
+
                             </div><br>
                         <b><div id="worum"  style="margin-right: 30%; margin-left: 80px;"><h3>Worum geht´s?</h3></div></b>
 
                         <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
-                            text
+                        Nachhaltigkeit ist ein sehr vielseitiges Thema, das in fast jeden Lebensbereich dringt. Die wichtigsten Aspekte von Nachhaltigkeit
+                        sind <b>Ökologie</b>, also die Beziehungen von Organismen wie Menschen, Tieren oder Pflanzen zu ihrer Umwelt,
+                        <b>Soziales</b>, also die Art und Weise, wie Menschen
+                        in der Gesellschaft zusammenleben, sowie <b>Wirtschaft</b>, also Bereiche wie Warenproduktion, Einkauf und Verkauf. <br><br>
+                        Mit all diesen Dingen
+                        habt ihr tagtäglich zu tun, doch hinter allen kleinen Handlungen steckt häufig ein riesiger Prozess, der zuvor stattfand. Wusstet ihr zum Beispiel, das
+                        vor dem Kauf einer einfachen elektrischen Zahnbürste viele Rohstoffe wie Metalle oder Öl über mehrere Kontinente transportiert werden? Schiffe, Züge
+                        und Lastwägen legen also tausende Kilometer zurück, damit so eine elektrische Zahnbürste für einen möglichst niedrigen Preis im Geschäft steht.
+                        <br><br>
+                        Das bringt aber viele Probleme mit sich. Nur eines davon sind die vielen Treibhausgase, die die Schiffe und Lastwägen ausstoßen. Das ist schlecht für die Umwelt
+                        und beschleunigt die Erderwärmung. Solche Probleme gibt es an vielen Orten unserer Welt. Als Teilnehmer an WeltFAIRsteher lernt ihr einige davon kennen und
+                        erfahrt viele Lösungsvorschläge, wie die Probleme beseitigt werden könnten. Gestaltet die Welt von morgen - jetzt!
                               </div><br>
                         <b><div id="wer"  style="margin-right: 30%; margin-left: 80px;"><h3>Wer kann mitmachen?</h3></div></b>
 
@@ -77,6 +93,7 @@ Kreativitätsbonus vom Anfangswert 1 um 0,2 erhöht. Der neue Wert wird dann mit
 
                         <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
 Der Siegerklasse winkt ein erlebnispädagogisches Wochenende, also drei Tage fernab der Eltern Natur erleben, kostenlose Verpflegung genießen und spannende Entdeckungen machen.
+
 Ach so, den größten Gewinn können natürlich alle Teilnehmer absahnen: Nützliches Wissen und hilfreiche Erfahrungen, die euch euer Leben lang begleiten. Worauf warten? Mitmachen!
 </div><br>
 <b><div id="wie"  style="margin-right: 30%; margin-left: 80px;"><h3>Wie meldet man sich an?</h3></div></b>

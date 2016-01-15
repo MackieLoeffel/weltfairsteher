@@ -60,6 +60,67 @@ foreach($categories as $c) {
     </div>
 <?php } ?>
 
+<!--
+NeuStrukturierung test anfang
+
+
+<div class="<?= e($row->category) ?> challenge-points2">
+    <b><?= e($row->points)?></b>
+</div>
+<b><u><a class="<?php
+                foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $classRow) {
+                    echo " class-" . $classRow->id;
+                }
+                ?>
+                challenge-title2"
+         onclick="return toggleMe('challenge-<?=e($row->id)?>')"
+         href="javascript:void(0)" ><?=e($row->name)?></a></u></b><br>
+<div style="display:none;" class="dbox" id="challenge-<?=e($row->id)?>">
+    <?= e($row->description) ?>
+    <br>
+    <?php if($row->author) { ?>
+        <div style="color: black;">Von:<b><?=e($row->author)?></b></div>
+    <?php } ?>
+</div><br><br>
+<?php
+
+
+?>
+
+<br>
+<br>
+
+<?php
+foreach($categories as $c) {
+?>
+<div class=".abstand challenge-header2 <?= e($c->name) ?>">
+    <?= e($c->title) ?>
+</div>
+<?php
+}
+// TODO: error handling
+$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, cl.name AS author
+FROM challenge as c
+LEFT JOIN class as cl ON cl.id = c.author
+WHERE category=:category");
+foreach($categories as $c) {
+?>
+<div class=".abstand challenge-box2">
+    <?php
+    $challengeStmt->execute(['category' => $c->name]);
+    foreach($challengeStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
+        printChallenge($row);
+    }
+    ?>
+</div>
+<?php } ?>
+
+
+
+
+
+NeuStrukturierung test ende
+-->
 
 <div class="selfmade-whole">
     Selfmade-Challenges

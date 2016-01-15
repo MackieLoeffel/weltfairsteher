@@ -66,9 +66,9 @@ foreach($categories as $c) {
    -->
 
 
-<div style="float: left; margin-top: 15px; background-color:#1BAB3F;
-font-size: 15px; margin-left: 7px; color: white; width: auto">
-<b>Neues Leckerwissen hinzufügen:</b>
+<div style="float: left; background-color:#1BAB3F;
+font-size: 15px; margin-left: 7px; color: white; width: 33%">
+<h4>Neues Leckerwissen hinzufügen:</h4>
     <form method="POST">
         <label for="bezeichnung" style="color: black;font-size: 13px;">
           Bezeichnung:
@@ -102,8 +102,8 @@ font-size: 15px; margin-left: 7px; color: white; width: auto">
 
 
 
-        <br><input type="submit" value="Hinzufügen"
-        style="background-color: green; font-size: 12px">
+        <input type="submit" value="Hinzufügen"
+        style="background-color: green; font-size: 12px; float: right; width: 50px;">
         <!--<input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()"> -->
     </form></div>
 <?php include "include/footer.php"?>
