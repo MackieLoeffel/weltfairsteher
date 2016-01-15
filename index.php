@@ -75,17 +75,18 @@ Die darunter stehende Grafik zeigt den zeitlichen Verlauf aller Klassen. Die Kla
 
 <br><br>
 Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr etwa eine Idee für eine neue Challenge habt,
-so könnt ihr sie von eurer verantwortlichen Lehrkraft online im <i>Lehrer-Login</i> vorschlagen lassen. Wenn die vorgeschlagene Challenge den nachhaltigen
+so könnt ihr sie von eurer verantwortlichen Lehrkraft online im <i>Lehrer-Bereich</i> vorschlagen lassen. Wenn die vorgeschlagene Challenge den nachhaltigen
 Kriterien entspricht, so schalten wir sie als sogenannte <i>Selfmade-Challenge</i> frei und jede Klasse kann versuchen, die Challenge zu absolvieren.
-Was habt ihr als kreative Köpfe hinter der neuen Challenge davon? Einen Kreativitätsbonus! Für jede erfolgreich vorgeschlagene Challenge wird euer
+Was habt ihr als kreative Köpfe hinter der neuen Challenge davon? Zweierlei! Erstens habt ihr einen Beitrag zum Gelingen für alle Klassen geleistet, weil
+sie um eine Idee bereichert wurden. Und zweitens erhaltet ihr darüber hinaus einen Kreativitätsbonus! Für jede erfolgreich vorgeschlagene Challenge wird euer
 Kreativitätsbonus vom Anfangswert 1 um 0,2 erhöht. Der neue Wert wird dann mit euren Punkten multipliziert. Ein kleines Rechenbeispiel verdeutlicht am besten, wie wertvoll dieser Bonus für euch sein kann:
  Angenommen euer Konto weist einen Wert von 30 Punkten auf. Eine erfolgreich eingebrachte Selfmade-Challenge erhöht euren Kreativitätsbonus auf 1,2.
  Euer Punktestand beträgt sodann 30 mal 1,2 = 36 Punkte. Habt ihr stattdessen sogar zwei Selfmade-Challenges erfolgreich eingreicht, so erhöht sich
- euer Punktestand auf 30 mal 1,4 = 42 Punkte. Das lohnt sich!
+ euer Punktestand auf 30 mal 1,4 = 42 Punkte. Und <i>WeltFAIRsteher</i> ist um zwei tolle Aufgaben reicher geworden. Das lohnt sich!
  <br><br>
- Falls ihr auf Ideensuche seid oder einfach mehr über das Thema Nachhaltigkeit erfahren wollt,
+ Falls ihr dafür auf Ideensuche seid oder einfach mehr über das Thema Nachhaltigkeit erfahren wollt,
  findet ihr im Reiter <i>Leckerwissen</i> viele hilfreiche Informationen und Links zu themenverwandten Seiten. Stoßt ihr im Internet selbst auf Artikel, Videos oder
- sonstiges, was in das <i>Leckerwissen</i> passen würde, so könnt ihr es dort einfach hinzufügen. Dadurch profitieren alle Teilnehmer voneinander und bilden
+ sonstiges, was in das <i>Leckerwissen</i> passen würde, so könnt ihr es dort einfach hinzufügen. Auch dadurch profitieren alle Teilnehmer voneinander und bilden
  sozusagen eine "Schwarmintelligenz".
 
 
@@ -102,17 +103,19 @@ danach aussieht.
 Na gut, ein paar Überraschungen haben wir für die Klassen mit den meisten Punkten trotzdem parat - als zusätzlicher
 Ansporn sozusagen. Der Siegerklasse winkt zum Beispiel ein erlebnispädagogisches Wochenende, also drei Tage fernab der Eltern Natur erleben,
 kostenlose Verpflegung genießen und spannende Entdeckungen machen. Insgesamt aber gilt ganz klar: Dabei zu sein ist ein Gewinn.
+Und auch wer am Tabellenende steht ist deshalb nicht "un-nachhaltig" beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit! Am wichtigsten ist
+der erste Schritt. Und dafür müsst ihr euch anmelden.
 </div><br>
 <b><div id="wie"  style="margin-right: 30%; margin-left: 80px;"><h3>Wie meldet man sich an?</h3></div></b>
 
 <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F">
     Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an weltfairsteher@chancengestalten.de und teilt uns den kreativen Klassennamen mit,
-    den ihr euch selbst ausdenken könnt.
+    den ihr euch selbst ausdenken könnt. Das kann so etwas wie "Die Sojapatronen" sein, oder "Warme Kürbissuppen".
     Wenn ihr uns verratet, von welcher Schule ihr kommt, würden wir uns natürlich sehr freuen - schon alleine deshalb, weil wir euch am Ende eine Urkunde zuschicken möchten.
     Keine Sorge: Eure Schuldaten werden nicht veröffentlicht.
     <br><br>
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
-Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Login</i> gewissenhaft bestandene Challenges eintragen oder eine Selfmade-Challenge vorschlagen.
+Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Bereich</i> gewissenhaft bestandene Challenges eintragen oder eine Selfmade-Challenge vorschlagen.
 
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
 </div><br>
@@ -120,7 +123,7 @@ Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Lo
                         <b><div id="wir" class="abstand" style="margin-right: 30%; margin-left: 80px;"><h3>Über uns</h3></div></b>
 
                         <div style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
-Wir sind ein Team aus Mitgliedern des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg sowie des Max-Weber-Programms. Ein Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>. Ob an der Planung, den Themen, der Website oder der Kommunikation - alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
+Wir sind ein Team aus Mitgliedern des Max-Weber-Programms sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg. Ein Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>. Ob an der Planung, den Themen, der Website oder der Kommunikation - alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
 
 
 
