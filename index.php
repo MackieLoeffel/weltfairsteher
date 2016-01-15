@@ -31,7 +31,8 @@
                         <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
                           WeltFAIRsteher ist eine Nachhaltigkeitschallenge für Schulklassen, also ein Wettbewerb, bei dem es darum geht,
                         gemeinsam als Klasse Aufgaben zu bewältigen, die mit Nachhaltigkeit zu tun haben. Das kann von kleinen handwerklichen Projekten über
-                        die Organisation und Verspeisung eines ökologisch nachhaltigen Frühstücks bis hin zu unterhaltsamen Spielen, spannenden Referaten und sozialem Engagement reichen.
+                        die Organisation und Verspeisung eines ökologisch nachhaltigen Frühstücks bis hin zu unterhaltsamen Spielen,
+                        spannenden Referaten und sozialem Engagement reichen.
 
                             </div><br>
                         <b><div id="worum"  style="margin-right: 30%; margin-left: 80px;"><h3>Worum geht´s?</h3></div></b>
@@ -48,7 +49,7 @@
                         <br><br>
                         Das bringt aber viele Probleme mit sich. Nur eines davon sind die vielen Treibhausgase, die die Schiffe und Lastwägen ausstoßen. Das ist schlecht für die Umwelt
                         und beschleunigt die Erderwärmung. Solche Probleme gibt es an vielen Orten unserer Welt. Als Teilnehmer an WeltFAIRsteher lernt ihr einige davon kennen und
-                        erfahrt viele Lösungsvorschläge, wie die Probleme beseitigt werden könnten. Gestaltet die Welt von morgen - jetzt!
+                        erfahrt viele Lösungsvorschläge, wie die Probleme beseitigt werden könnten. Nachhaltigkeit kann nämlich eigentlich jeder. Man muss es nur wollen und tun.
                               </div><br>
                         <b><div id="wer"  style="margin-right: 30%; margin-left: 80px;"><h3>Wer kann mitmachen?</h3></div></b>
 
@@ -68,9 +69,10 @@ Jede Klasse kann sich an den Aufgaben, die ihr unter dem Reiter <i>Challenges</i
 genauso gleichgültig wie die Anzahl der Schülerinnen und Schüler, die sich an einer Challenge beteiligen. Manchmal ist es sogar am besten,
 wenn nur wenige Schülerinnen und Schüler eine Aufgabe verfolgen.
 Wie viele Personen wir für eine Aufgabe empfehlen, könnt ihr auch bei jeder einzelnen Challenge nachlesen. <br><br>
-Sobald ihr eine Challenge erfolgreich abgeschlossen habt, kann eure Lehrkraft die Challenge im <i>Lehrer-Login</i> eintragen.
+Sobald ihr eine Challenge erfolgreich abgeschlossen habt, kann eure Lehrkraft die Challenge im <i>Lehrer-Bereich</i> eintragen.
 Euren aktuellen Punktestand seht ihr in der <i>Tabelle</i>.
 Die darunter stehende Grafik zeigt den zeitlichen Verlauf aller Klassen. Die Klasse, die ihr oben (in der Kopfzeile) gewählt habt, wird dabei Rot angezeigt.
+
 <br><br>
 Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr etwa eine Idee für eine neue Challenge habt,
 so könnt ihr sie von eurer verantwortlichen Lehrkraft online im <i>Lehrer-Login</i> vorschlagen lassen. Wenn die vorgeschlagene Challenge den nachhaltigen
@@ -92,17 +94,22 @@ Kreativitätsbonus vom Anfangswert 1 um 0,2 erhöht. Der neue Wert wird dann mit
                         <b><div id="gewinn"  style="margin-right: 30%; margin-left: 80px;"><h3>Was kann man gewinnen?</h3></div></b>
 
                         <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
-Der Siegerklasse winkt ein erlebnispädagogisches Wochenende, also drei Tage fernab der Eltern Natur erleben, kostenlose Verpflegung genießen und spannende Entdeckungen machen.
 
-Ach so, den größten Gewinn können natürlich alle Teilnehmer absahnen: Nützliches Wissen und hilfreiche Erfahrungen, die euch euer Leben lang begleiten. Worauf warten? Mitmachen!
+Keine Sorge, mit leeren Händen geht am Ende keine Klasse nach Hause. Im Laufe des Schuljahres werdet ihr so manche Errungenschaft feiern, die
+wortwörtlich nachhaltig ist. Ob ihr in der Tabelle also unten oder oben steht, ist nur zweitrangig.
+In Wahrheit spielen nämlich alle Klassen gemeinsam für eine lebenswerte Zukunft, die fair, also gerecht, gestaltet ist - auch wenn es manchmal
+danach aussieht.
+Na gut, ein paar Überraschungen haben wir für die Klassen mit den meisten Punkten trotzdem parat - als zusätzlicher
+Ansporn sozusagen. Der Siegerklasse winkt zum Beispiel ein erlebnispädagogisches Wochenende, also drei Tage fernab der Eltern Natur erleben,
+kostenlose Verpflegung genießen und spannende Entdeckungen machen. Insgesamt aber gilt ganz klar: Dabei zu sein ist ein Gewinn.
 </div><br>
 <b><div id="wie"  style="margin-right: 30%; margin-left: 80px;"><h3>Wie meldet man sich an?</h3></div></b>
 
 <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F">
     Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an weltfairsteher@chancengestalten.de und teilt uns den kreativen Klassennamen mit,
     den ihr euch selbst ausdenken könnt.
-    Wenn ihr uns verratet, von welcher Schule ihr kommt, würden wir uns natürlich sehr freuen. Keine Sorge: Eure Schuldaten werden nicht veröffentlicht.
-    Wir sind nur neugierig und wollen wissen, welche Schulen mitmachen.
+    Wenn ihr uns verratet, von welcher Schule ihr kommt, würden wir uns natürlich sehr freuen - schon alleine deshalb, weil wir euch am Ende eine Urkunde zuschicken möchten.
+    Keine Sorge: Eure Schuldaten werden nicht veröffentlicht.
     <br><br>
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
 Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Login</i> gewissenhaft bestandene Challenges eintragen oder eine Selfmade-Challenge vorschlagen.
