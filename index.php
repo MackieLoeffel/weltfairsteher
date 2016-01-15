@@ -97,7 +97,7 @@ Kreativitätsbonus vom Anfangswert 1 um 0,2 erhöht. Der neue Wert wird dann mit
 
 Keine Sorge, mit leeren Händen geht am Ende keine Klasse nach Hause. Im Laufe des Schuljahres werdet ihr so manche Errungenschaft feiern, die
 wortwörtlich nachhaltig ist. Ob ihr in der Tabelle also unten oder oben steht, ist nur zweitrangig.
-In Wahrheit spielen nämlich alle Klassen gemeinsam für eine lebenswerte Zukunft, die fair, also gerecht, gestaltet ist - auch wenn es manchmal
+In Wahrheit spielen nämlich alle Klassen gemeinsam für eine lebenswerte Zukunft, die fair, also gerecht, gestaltet ist - auch wenn es manchmal nicht
 danach aussieht.
 Na gut, ein paar Überraschungen haben wir für die Klassen mit den meisten Punkten trotzdem parat - als zusätzlicher
 Ansporn sozusagen. Der Siegerklasse winkt zum Beispiel ein erlebnispädagogisches Wochenende, also drei Tage fernab der Eltern Natur erleben,
