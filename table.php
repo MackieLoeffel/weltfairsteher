@@ -54,10 +54,17 @@ WHERE c.category = :category AND sc.class = :class");
     </tbody>
 </table>
 
-<canvas id="chart" style="width: 70%; margin-left: 15%; margin-right: 15%; margin-top: 25px; position: relative;"></canvas>
+<canvas id="chart" style="width: 50%; margin-left: 11%; margin-top: 25px; position: relative;"></canvas>
 <script type="text/javascript">
  var chart = new LineChart(classes, document.getElementById("chart"));
 </script>
 <!--Liniendiagramm einfügen, das die gewählte Klasse highlighted: abszisse: 1. Tag bis heute  --  ordinate: punkte (0 bis max) -->
+<div style="margin-left: 5px; margin-top: 25px; margin-right: 11%;
+ color: white; font-size: 16px; width: auto; height: auto;
+  float: right; background-color: #1BAB3F; text-align: center; position: relative;">
+  <b style="color: black;">Punkte bis zum<br> nächsten Etappenziel:</b>
+
+  <h1 style="color: black; ">19</h1>
+</div>
 
 <?php include "include/footer.php"?>
