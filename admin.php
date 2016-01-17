@@ -4,9 +4,27 @@ include "include/access.php";
 check_access(ADMIN);
 include "include/header.php";
 ?>
+<script src="js/admin.js" ></script>
 <br>
 
 
+<br>
+
+<form id="register" class="admin-box" action="javascript:void(0);" onsubmit="sendForm('register')">
+    <b style="color: black;">Neue Lehrkraft hinzufügen:</b><br>
+    E-Mail-Adresse:  <input type="text" name="email" value="">
+    </input><br>
+
+    Passwort:<input type="text" name="password" value="">
+    </input>
+    <br>
+    Passwort wiederholen:<input type="text" name="password2" value="">
+    </input>
+
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;">
+
+    </input>
+</form>
 <br>
 
 <div class="admin-box">
@@ -20,25 +38,6 @@ include "include/header.php";
     </input>
 </div>
 <br>
-
-<div class="admin-box">
-    <b style="color: black;">Neue Lehrkraft hinzufügen:</b><br>
-    E-Mail-Adresse:  <input type="text" name=newteacher value="E-Mail-Adresse">
-    </input><br>
-
-    Passwort:<input type="text" name=newteacherpw value="Achtstelliges Passwort">
-    </input>
-    <br>
-    Passwort wiederholen:<input type="text" name=newteacherpw value="">
-    </input>
-
-    <input type="button" value="Bestätigen" style="background-color: green; float: right;">
-
-    </input>
-</div>
-<br>
-
-
 
 <div class="admin-box">
 
