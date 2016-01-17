@@ -49,22 +49,40 @@ WHERE c.category = :category AND sc.class = :class");
 
                     <!--Anzahl bestandener Challenges pro Kategorie--></td>
             <td style="text-align: center"><?= e($class["creativity"]) ?></td>
+          <!-- PUNKTE BIS ZUR NÄCHSTEN ETAPPE (wie könnte man das kürzer umschreiben? "nächste Etappe in"? "Etappenabstand"?)
+          <td  class="etappe-box" style="color: white; background-color: #3A44C9; width: 20px; height: auto;
+    border-radius:20px; font-size: 16px; font-width: bold; text-align: center;"><?= e($class["etappe"])?></td>
+
+          -->
             <td style="text-align: center"><b><?= e(getCurrentPoints($class))?></b></td> </tr>
         <?php } ?>
     </tbody>
 </table>
 
-<canvas id="chart" style="width: 50%; margin-left: 11%; margin-top: 25px; position: relative;"></canvas>
+<div style="margin-left: 14px; margin-top: 25px; margin-right: 25px;
+ color: white; font-size: 16px; width: auto; height: auto;
+  float: left; background-color: #1BAB3F; text-align: center; position: relative;">
+  <h3 style="color: black;">Erklärung des <br> Diagramms:</h3>
+
+  <b style="color: black;">X-Achse:</b>
+  <br>
+   Zeitlicher Verlauf <br>
+   von 04. Oktober 2016 <br>
+   (Beginn von WeltFAIRsteher) <br>
+   bis heute.<br>
+    <b style="color: black;">Y-Achse:</b> <br>
+    Anzahl der erreichten Punkte.<br>
+      <b style="color: black;">Farben:</b> <br>
+  Die Klasse, die du <br>
+  ganz oben rechts auswählst, <br>
+  wird in Rot angezeigt.
+</div>
+
+<canvas id="chart" style="width: 50%; margin-top: 25px; position: relative;"></canvas>
 <script type="text/javascript">
  var chart = new LineChart(classes, document.getElementById("chart"));
 </script>
 <!--Liniendiagramm einfügen, das die gewählte Klasse highlighted: abszisse: 1. Tag bis heute  --  ordinate: punkte (0 bis max) -->
-<div style="margin-left: 5px; margin-top: 25px; margin-right: 11%;
- color: white; font-size: 16px; width: auto; height: auto;
-  float: right; background-color: #1BAB3F; text-align: center; position: relative;">
-  <b style="color: black;">Punkte bis zum<br> nächsten Etappenziel:</b>
 
-  <h1 style="color: black; ">19</h1>
-</div>
 
 <?php include "include/footer.php"?>
