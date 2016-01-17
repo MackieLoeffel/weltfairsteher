@@ -86,7 +86,9 @@ LineChart = (function() {
     this.chart = new Chart(canvas.getContext("2d")).Line(line, {
       bezierCurveTension: 0.2,
       pointDot: false,
-      datasetFill: false
+      datasetFill: false,
+      scaleFontColor: "#FFFFFF",
+      showTooltips: false
     });
   }
 

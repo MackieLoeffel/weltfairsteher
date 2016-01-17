@@ -254,3 +254,16 @@ z-index: 4;
     font-size: 13px;
     position: absolute;
 }
+
+.admin-box {
+    margin-left: 15%;
+    margin-top: 30px;
+    margin-right: 20px;
+    color: white;
+    font-size: 16px;
+    width: 50%;
+    height: auto;
+    float: left;
+    background-color: #1BAB3F;
+    position: relative;
+}
