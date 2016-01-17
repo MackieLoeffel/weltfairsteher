@@ -4,6 +4,10 @@ include __DIR__."/../include/access.php";
 check_access(ADMIN);
 
 $errors = [];
+if(!isset($_POST['email']) || !isset($_POST['password'] || !isset($_POST['password2'])) {
+    echo json_encode(["Falsche Parameter!"]);
+    exit();
+}
 $email = $_POST['email'];
 $password = $_POST['password'];
 $password2 = $_POST['password2'];
@@ -42,3 +46,4 @@ $statement = $db->prepare("INSERT INTO user (email, password, role) VALUES (:ema
 $result = $statement->execute(['email' => $email,
                                'password' => $password_hash,
                                'role' => TEACHER]);
+?>

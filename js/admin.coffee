@@ -8,9 +8,10 @@ entityMap =
 
 escapeHtml = (string) -> String(string).replace /[&<>"'\/]/g, (s) -> entityMap[s]
 
-sendForm = (dest) ->
-  console.log dest
+sendForm = (form) ->
+  dest = $(form).attr("id")
   $.post("admin/#{dest}.php", $("##{dest}").serialize()).done (errors) ->
+    console.log errors
     errors = JSON.parse(errors)
     resultDiv = $("##{dest} > .result")
     if !resultDiv.length

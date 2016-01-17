@@ -16,10 +16,12 @@ escapeHtml = function(string) {
   });
 };
 
-sendForm = function(dest) {
-  console.log(dest);
+sendForm = function(form) {
+  var dest;
+  dest = $(form).attr("id");
   $.post("admin/" + dest + ".php", $("#" + dest).serialize()).done(function(errors) {
     var error, i, len, list, resultDiv;
+    console.log(errors);
     errors = JSON.parse(errors);
     resultDiv = $("#" + dest + " > .result");
     if (!resultDiv.length) {
