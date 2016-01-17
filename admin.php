@@ -39,89 +39,37 @@ include "include/header.php";
 </form>
 <br>
 
-<div class="admin-box">
-
-    <b style="color: black;">Lehrkraft mit Klasse verknüpfen:</b>
-    <br>
-    Lehrkraft: <select name="teacherlist">
-        <option>Lehrkraft 1</option>
-        <option>Lehrkraft 2</option>
-        <option>Lehrkraft 3</option>
-    </select>
-    <br>
-    Klasse: <select name="classlist">
-        <option>Die Sojapatronen</option>
-        <option>Elektrokürbis</option>
-        <option>Mc Do Not</option>
-    </select>
-
-    <input type="button" value="Bestätigen" style="background-color: green; float: right;">
-
-    </input>
-</div>
-
-<br>
-<div class="admin-box">
-
+<form id="changeClass" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
     <b style="color: black;">Bestehende Klasse bearbeiten:</b>
     <br>
-    Klasse: <select name="classlist">
-        <option>Die Sojapatronen</option>
-        <option>Elektrokürbis</option>
-        <option>Mc Do Not</option>
+    Klasse: <select name="class">
+        <?php foreach(fetchAll("SELECT id, name FROM class") as $class) {?>
+        <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
+        <?php } ?>
     </select>
     <br>
-    Namensänderung: <input type="text" value="" size=40>
+    Namensänderung: <input type="text" value="" name="name" size=40>
     <br>(nur marignale Korrektur)
-    </input><br><br>
-    Bestandene Challenge entfernen: <select name="challengedelete">
-        <option>Keine Auswahl</option>
-        <option>Challenge 1</option>
-        <option>Challenge 2</option>
-    </select>
-    <br>
-    Vorgeschlagene Selfmade-Challenge entfernen: <select name="selfmadechallengedelete">
-        <option>Keine Auswahl</option>
-        <option>Challenge 1</option>
-        <option>Challenge 2</option>
-    </select>
-    <!--
-         wird eine hier entfernte Selfmade-Challenge noch unter "Challenges" angezeigt?
-         Oder reduziert diese Änderung nur den Kreativitätsbonus der Klasse?
-       -->
-    <br><br>
-    Bestandene Challenge hinzufügen: <select name="challengeadd">
-        <option>Keine Auswahl</option>
-        <option>Challenge 1</option>
-        <option>Challenge 2</option>
-    </select>
-    <br>
-    Vorgeschlagene Selfmade-Challenge hinzufügen: <select name="selfmadechallengeadd">
-        <option>Keine Auswahl</option>
-        <option>Challenge 1</option>
-        <option>Challenge 2</option>
-    </select>
-    <br><br>
-    Lehrkraft ändern: <select name="teacherlist">
-        <option>Aktuelle Lehrkraft</option>
-        <option>Lehrkraft B</option>
-        <option>Lehrkraft C</option>
-    </select>
-    <br><br>
-    <b style="color: red;">Klasse löschen:</b>
-    <br>
+    </input><br>
+    Lehrkraft ändern:
+    <select name="teacher" size="1">
+        <option value="-1"> Aktueller Lehrer </option>
+        <?php foreach(fetchAll("SELECT id, email FROM user") as $teacher) {?>
+        <option value="<?=e($teacher->id)?>"><?=e($teacher->email)?></option>
+        <?php } ?>
+    </select><br/>
+    <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
+</form>
 
-    <input type="radio" value="classstay" name="loeschen" checked="checked">Nein
-    </input>
-    <br>
-    <input type="radio" value="classdelete" name="loeschen">Ja
-    </input>
-
-
-    <input type="button" value="Gesamteingabe bestätigen" style="background-color: green; float: right;">
-
-    </input>
-</div>
+<form id="deleteClass" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: red;">Klasse löschen</b><br/>
+    <select name="class">
+        <?php foreach(fetchAll("SELECT id, name FROM class") as $class) {?>
+        <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
+        <?php } ?>
+    </select><br/>
+    <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
+</form>
 
 <div class="admin-box">
 
