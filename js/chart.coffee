@@ -47,6 +47,8 @@ class LineChart
       bezierCurveTension: 0.2
       pointDot: false
       datasetFill: false
+      scaleFontColor: "#FFFFFF"
+      showTooltips: false
 
 
   setClass: (id) ->
