@@ -10,7 +10,7 @@ include "include/header.php";
 
 <br>
 
-<form id="register" class="admin-box" action="javascript:void(0);" onsubmit="sendForm('register')">
+<form id="register" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
     <b style="color: black;">Neue Lehrkraft hinzufügen:</b><br>
     E-Mail-Adresse:  <input type="text" name="email" value="">
     </input><br>
@@ -27,16 +27,16 @@ include "include/header.php";
 </form>
 <br>
 
-<div class="admin-box">
+<form id="addClass" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
     <b style="color: black;">Neue Klasse hinzufügen:</b><br>
-    <input type="text" name=newclass value="Name">
-
-</input>
-
-<input type="button" value="Bestätigen" style="background-color: green; float: right;">
-
-    </input>
-</div>
+    Name: <input type="text" name="name" value=""></input> <br/>
+    Lehrer: <select name="teacher" size="1">
+        <?php foreach(fetchAll("SELECT id, email FROM user") as $teacher) {?>
+        <option value="<?=e($teacher->id)?>"><?=e($teacher->email)?></option>
+        <?php } ?>
+    </select> <br/>
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
+</form>
 <br>
 
 <div class="admin-box">

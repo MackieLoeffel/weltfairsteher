@@ -59,6 +59,13 @@ if(!defined('CONFIG_PHP')) {
     function e($str) {
         return htmlspecialchars($str);
     }
+
+    function fetchAll($query, $params = []) {
+        global $db;
+        $stmt = $db->prepare($query);
+        $stmt->execute($params);
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
 }
 
 ?>
