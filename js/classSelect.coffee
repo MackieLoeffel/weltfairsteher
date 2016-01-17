@@ -9,7 +9,7 @@ setClass = (newClass) ->
   chart?.setClass(selectedClass)
   return
 
-init = ->
+$('document').ready ->
   selectedClass = localStorage.getItem('selectedClass')
 
   classes = []
@@ -24,5 +24,3 @@ init = ->
   classSelect.on 'change', ->
     setClass @value
     return
-
-setTimeout init, 0
