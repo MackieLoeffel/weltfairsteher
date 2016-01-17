@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 10, 2016 at 05:51 PM
+-- Generation Time: Jan 17, 2016 at 02:12 PM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -94,21 +94,27 @@ CREATE TABLE `leckerwissen` (
 --
 
 INSERT INTO `leckerwissen` (`id`, `link`, `title`, `category`, `type`) VALUES
-(1, 'http://www.example.com ">aaaaa', 'Food Video', 'food', 'video'),
-(2, 'http://www.example.com', 'other article', 'other', 'article'),
-(3, 'http://www.example.com', 'energy other', 'energy', 'other'),
-(4, 'http://www.example.com', 'other other', 'other', 'other'),
-(5, 'http://www.example.com', 'production video', 'production', 'video'),
-(6, 'http://www.example.com', 'Food Video', 'food', 'video'),
-(7, 'http://www.example.com', 'other article', 'other', 'article'),
-(8, 'http://www.example.com', 'energy other', 'energy', 'other'),
-(9, 'http://www.example.com', 'other other', 'other', 'other'),
-(10, 'http://www.example.com', 'production video', 'production', 'video'),
 (11, 'https://www.youtube.com/watch?v=iiDCNdsU4vI', 'Hagen Rether über Fleisch, Milch & Co [Kabarett]', 'food', 'video'),
-(12, 'http://a.de', 'aaa', 'food', 'article'),
-(13, 'http://a.de', 'aaaa', 'climate-change', 'video'),
-(14, 'http://a.de', 'aaaa', 'climate-change', 'video'),
-(15, 'http://a.de', 'aaaa', 'climate-change', 'video');
+(17, 'https://www.youtube.com/watch?v=zOAIOr18FFo', 'Freihandelsabkommen zwischen EU und Afrika', 'production', 'video'),
+(18, 'https://news.utopia.de/ratgeber/diese-gruene-filme-sollte-jeder-gesehen-haben/?utm_source=Interessenten&utm_campaign=d3c906d3e5-Newsletter_Mo_15KW52_Interessenten&utm_medium=email&utm_term=0_af58dac727-d3c906d3e5-262279765', '15 Dokumentarfilme zu Nachhaltigkeit', 'food', 'article'),
+(19, 'http://www.feelgreen.de/diese-seekuh-frisst-plastikmuell/id_76539278/index', 'Müllschiff soll Plastikmüll aus den Meeren fischen', 'climate-change', 'article'),
+(20, 'https://www.facebook.com/gary.yourofsky/videos/886039734784609/', 'Methan - schlimmer als CO²?', 'climate-change', 'video'),
+(21, 'http://www.klimaretter.info/forschung/nachricht/18133-landwirtschaft-ist-zweitgroesster-emittent', 'Landwirtschaft auf Rang 2 der größten Treibhausgasemittenten', 'climate-change', 'article'),
+(22, 'https://news.utopia.de/ratgeber/12-bilder-die-zeigen-dass-mit-unserer-konsumkultur-etwas-nicht-stimmt/', '12 Bilder, die zeigen, dass mit unserer Konsumkultur etwas nicht stimmt', 'production', 'article'),
+(23, 'http://www.feelgreen.de/klimawandel-anstieg-des-meeresspiegels-koennte-megastaedte-ueberfluten/id_76030018/index', 'Anstieg des Meeresspiegels könnte Megastädte überfluten', 'climate-change', 'article'),
+(24, 'http://www.zdf.de/ZDFmediathek#/beitrag/video/2514628/Flucht-vor-dem-Klimawandel', 'Flucht vor dem Klimawandel (ZDF)', 'climate-change', 'video'),
+(25, 'http://www.palettenbett.com/', 'Palettenmöbel selber bauen', 'production', 'other'),
+(26, 'https://www.youtube.com/watch?v=lI0Xc2CWPjM', 'Konsum, Glück und Zeitknappheit', 'other', 'video'),
+(27, 'http://de.yallahdeutschland.de/', 'Yallah Deutschland - Videoportal zu Flüchtlingen', 'culture', 'other'),
+(28, 'http://www.erneuerbareenergien.de/erneuerbaren-anteil-steigt-2015-voraussichtlich-auf-33-prozent/150/434/91426/', 'Ökostrom-Anteil in Deutschland', 'energy', 'article'),
+(29, 'https://www.youtube.com/watch?v=lmXAwTisSd0', 'Gründe, sich vegan zu ernähren', 'food', 'video'),
+(30, 'http://www.vegan.eu/index.php/was_ist_vegan.html', 'Was ist vegan?', 'food', 'article'),
+(31, 'http://www.wwf.de/2012/maerz/kampf-gegen-globale-wasserkrise/', 'Weltweite Wasserknappheit sorgt für Konflikte', 'energy', 'article'),
+(32, 'http://www.globalisierung-fakten.de/folgen-der-globalisierung/krisen/wasserknappheit/', 'Fakten zu Wasserknappheit', 'energy', 'article'),
+(33, 'http://ec.europa.eu/environment/pubs/pdf/factsheets/water_scarcity/de.pdf', 'Dürre in der EU', 'energy', 'article'),
+(34, 'http://www.biorama.eu/', 'Biorama - Magazin für nachhaltigen Lebensstil', 'other', 'other'),
+(35, 'http://www.degrowth.de/de/?', 'Degrowth - Antiwachstumsbewegung', 'culture', 'other'),
+(36, 'http://www.klimaretter.info/', 'Klimaretter - Magazin zur Klima- und Energiewende', 'other', 'other');
 
 -- --------------------------------------------------------
 
@@ -233,12 +239,12 @@ ALTER TABLE `class`
 -- AUTO_INCREMENT for table `leckerwissen`
 --
 ALTER TABLE `leckerwissen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 --
 -- AUTO_INCREMENT for table `solved_challenge`
 --
 ALTER TABLE `solved_challenge`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `suggested`
 --
