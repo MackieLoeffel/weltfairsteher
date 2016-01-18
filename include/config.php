@@ -66,6 +66,19 @@ if(!defined('CONFIG_PHP')) {
         $stmt->execute($params);
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
+
+    function dbExists($query, $params = []) {
+        global $db;
+        $stmt = $db->prepare($query);
+        $stmt->execute($params);
+        return $stmt->fetch() !== false;
+    }
+
+    function dbExecute($query, $params = []) {
+        global $db;
+        $stmt = $db->prepare($query);
+        $stmt->execute($params);
+    }
 }
 
 ?>
