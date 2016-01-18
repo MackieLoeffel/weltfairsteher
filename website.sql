@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2016 at 02:12 PM
+-- Generation Time: Jan 18, 2016 at 08:56 AM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -149,7 +149,7 @@ CREATE TABLE `suggested` (
   `id` int(11) NOT NULL,
   `title` text COLLATE utf8_bin NOT NULL,
   `description` text COLLATE utf8_bin NOT NULL,
-  `class` int(11) NOT NULL,
+  `class` int(11) DEFAULT NULL,
   `points` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -189,13 +189,15 @@ INSERT INTO `user` (`id`, `password`, `email`, `role`) VALUES
 -- Indexes for table `challenge`
 --
 ALTER TABLE `challenge`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `author` (`author`);
 
 --
 -- Indexes for table `class`
 --
 ALTER TABLE `class`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `teacher` (`teacher`);
 
 --
 -- Indexes for table `leckerwissen`
@@ -207,13 +209,16 @@ ALTER TABLE `leckerwissen`
 -- Indexes for table `solved_challenge`
 --
 ALTER TABLE `solved_challenge`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `class` (`class`),
+  ADD KEY `challenge` (`challenge`);
 
 --
 -- Indexes for table `suggested`
 --
 ALTER TABLE `suggested`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `class` (`class`);
 
 --
 -- Indexes for table `user`
@@ -234,7 +239,7 @@ ALTER TABLE `challenge`
 -- AUTO_INCREMENT for table `class`
 --
 ALTER TABLE `class`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `leckerwissen`
 --
@@ -254,7 +259,36 @@ ALTER TABLE `suggested`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `challenge`
+--
+ALTER TABLE `challenge`
+  ADD CONSTRAINT `challenge_ibfk_1` FOREIGN KEY (`author`) REFERENCES `class` (`id`) ON DELETE SET NULL;
+
+--
+-- Constraints for table `class`
+--
+ALTER TABLE `class`
+  ADD CONSTRAINT `class_ibfk_1` FOREIGN KEY (`teacher`) REFERENCES `user` (`id`);
+
+--
+-- Constraints for table `solved_challenge`
+--
+ALTER TABLE `solved_challenge`
+  ADD CONSTRAINT `solved_challenge_ibfk_1` FOREIGN KEY (`class`) REFERENCES `class` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `solved_challenge_ibfk_2` FOREIGN KEY (`challenge`) REFERENCES `challenge` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `suggested`
+--
+ALTER TABLE `suggested`
+  ADD CONSTRAINT `suggested_ibfk_1` FOREIGN KEY (`class`) REFERENCES `class` (`id`) ON DELETE SET NULL;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
