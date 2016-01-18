@@ -49,7 +49,7 @@ include "include/header.php";
     </select>
     <br>
     Namensänderung: <input type="text" value="" name="name" size=40>
-    <br>(nur marignale Korrektur)
+    <br>(nur marginale Korrektur)
     </input><br>
     Lehrkraft ändern:
     <select name="teacher" size="1">
