@@ -68,7 +68,7 @@ include "include/header.php";
         <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
         <?php } ?>
     </select><br/>
-    <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 
 <div class="admin-box">
@@ -100,21 +100,29 @@ include "include/header.php";
         <option>Elektrokürbis</option>
         <option>Mc Do Not</option>
     </select>
-    <br><br>
-    <b style="color: red;">Lehrkraft löschen:</b>
-    <br>
-
-    <input type="radio" value="classstay" name="loeschen2" checked="checked">Nein
-    </input>
-    <br>
-    <input type="radio" value="classdelete" name="loeschen2">Ja
-    </input>
-
 
     <input type="button" value="Gesamteingabe bestätigen" style="background-color: green; float: right;">
 
     </input>
 </div>
+
+
+
+<form id="deleteTeacher" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: red;">Lehrkraft löschen</b><br/>
+    <select name="teacher">
+        <?php foreach(fetchAll("SELECT id, name FROM teacher") as $teacher) {?>
+        <option value="<?=e($teacher->id)?>"><?=e($teacher->name)?></option>
+        <?php } ?>
+    </select><br/>
+
+        <input type="button" value="Bestätigen" style="background-color: green; float: right;">
+
+        </input>
+</form>
+
+
+<div class="admin-box">
 
 
 
@@ -234,21 +242,23 @@ include "include/header.php";
         <option>Elektrokürbis</option>
         <option>Mc Do Not</option>
     </select>
-    <br><br>
-    <b style="color: red;">Challenge löschen:</b>
-    <br>
 
-    <input type="radio" value="challengestay" name="loeschen3" checked="checked">Nein
-    </input>
-    <br>
-    <input type="radio" value="challengedelete" name="loeschen3">Ja
-    </input>
     <br>
     <input type="button" value="Gesamteingabe bestätigen" style="background-color: green; float: right;">
 
     </input>
 </div>
 
+
+<form id="deleteChallenge" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: red;">Challenge löschen</b><br/>
+    <select name="challenge">
+        <?php foreach(fetchAll("SELECT id, name FROM challenge") as $challenge) {?>
+        <option value="<?=e($challenge->id)?>"><?=e($challenge->name)?></option>
+        <?php } ?>
+    </select><br/>
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
+</form>
 
 <div class="admin-box">
 
@@ -282,20 +292,23 @@ include "include/header.php";
         <option>Video</option>
         <option>Sonstiges</option>
     </select>
-    <br><br>
-    <b style="color: red;">Leckerwissen löschen:</b>
-    <br>
 
-    <input type="radio" value="leckerstay" name="loeschen4" checked="checked">Nein
-    </input>
-    <br>
-    <input type="radio" value="leckerdelete" name="loeschen4">Ja
-    </input>
     <br>
     <input type="button" value="Gesamteingabe bestätigen" style="background-color: green; float: right;">
 
     </input>
 </div>
+
+
+<form id="deleteLeckerwissen" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: red;">Leckerwissen löschen</b><br/>
+    <select name="leckerwissen">
+        <?php foreach(fetchAll("SELECT id, name FROM leckerwissen") as $leckerwissen) {?>
+        <option value="<?=e($leckerwissen->id)?>"><?=e($leckerwissen->name)?></option>
+        <?php } ?>
+    </select><br/>
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
+</form>
 
 
 <div class="admin-box">
@@ -335,6 +348,7 @@ include "include/header.php";
                                                    float: left;">
     </form>
 </div>
+<br>
 <br>
 <br>
 <br>
