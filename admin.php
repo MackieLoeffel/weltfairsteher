@@ -32,7 +32,7 @@ include "include/header.php";
     Name: <input type="text" name="name" value=""></input> <br/>
     Lehrer: <select name="teacher" size="1">
         <?php foreach(fetchAll("SELECT id, email FROM user") as $teacher) {?>
-        <option value="<?=e($teacher->id)?>"><?=e($teacher->email)?></option>
+            <option value="<?=e($teacher->id)?>"><?=e($teacher->email)?></option>
         <?php } ?>
     </select> <br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
@@ -44,7 +44,7 @@ include "include/header.php";
     <br>
     Klasse: <select name="class">
         <?php foreach(fetchAll("SELECT id, name FROM class") as $class) {?>
-        <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
+            <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
         <?php } ?>
     </select>
     <br>
@@ -55,7 +55,7 @@ include "include/header.php";
     <select name="teacher" size="1">
         <option value="-1"> Aktueller Lehrer </option>
         <?php foreach(fetchAll("SELECT id, email FROM user") as $teacher) {?>
-        <option value="<?=e($teacher->id)?>"><?=e($teacher->email)?></option>
+            <option value="<?=e($teacher->id)?>"><?=e($teacher->email)?></option>
         <?php } ?>
     </select><br/>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
@@ -65,7 +65,7 @@ include "include/header.php";
     <b style="color: red;">Klasse löschen</b><br/>
     <select name="class">
         <?php foreach(fetchAll("SELECT id, name FROM class") as $class) {?>
-        <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
+            <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
         <?php } ?>
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
@@ -75,11 +75,15 @@ include "include/header.php";
     <b style="color: red;">Lehrer löschen</b><br/>
     <select name="teacher">
         <?php foreach(fetchAll("SELECT id, email FROM user") as $class) {?>
-        <option value="<?=e($class->id)?>"><?=e($class->email)?></option>
+            <option value="<?=e($class->id)?>"><?=e($class->email)?></option>
         <?php } ?>
     </select><br/>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
+
+<div class="admin-box">
+    <b>FUNKTIONIERT BIS HIER!</b>
+</div>
 
 <div class="admin-box">
 
@@ -115,26 +119,6 @@ include "include/header.php";
 
     </input>
 </div>
-
-
-
-<form id="deleteTeacher" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: red;">Lehrkraft löschen</b><br/>
-    <select name="teacher">
-        <?php foreach(fetchAll("SELECT id, name FROM teacher") as $teacher) {?>
-        <option value="<?=e($teacher->id)?>"><?=e($teacher->name)?></option>
-        <?php } ?>
-    </select><br/>
-
-        <input type="button" value="Bestätigen" style="background-color: green; float: right;">
-
-        </input>
-</form>
-
-
-<div class="admin-box">
-
-
 
 <div class="admin-box">
 
@@ -195,9 +179,6 @@ include "include/header.php";
 
     </input>
 </div>
-
-
-
 
 <div class="admin-box">
 
@@ -264,7 +245,7 @@ include "include/header.php";
     <b style="color: red;">Challenge löschen</b><br/>
     <select name="challenge">
         <?php foreach(fetchAll("SELECT id, name FROM challenge") as $challenge) {?>
-        <option value="<?=e($challenge->id)?>"><?=e($challenge->name)?></option>
+            <option value="<?=e($challenge->id)?>"><?=e($challenge->name)?></option>
         <?php } ?>
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
@@ -314,7 +295,7 @@ include "include/header.php";
     <b style="color: red;">Leckerwissen löschen</b><br/>
     <select name="leckerwissen">
         <?php foreach(fetchAll("SELECT id, name FROM leckerwissen") as $leckerwissen) {?>
-        <option value="<?=e($leckerwissen->id)?>"><?=e($leckerwissen->name)?></option>
+            <option value="<?=e($leckerwissen->id)?>"><?=e($leckerwissen->name)?></option>
         <?php } ?>
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
