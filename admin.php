@@ -71,6 +71,16 @@ include "include/header.php";
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 
+<form id="deleteTeacher" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: red;">Lehrer löschen</b><br/>
+    <select name="teacher">
+        <?php foreach(fetchAll("SELECT id, email FROM user") as $class) {?>
+        <option value="<?=e($class->id)?>"><?=e($class->email)?></option>
+        <?php } ?>
+    </select><br/>
+    <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
+</form>
+
 <div class="admin-box">
 
     <b style="color: black;">Bestehende Lehrkraft bearbeiten:</b>
