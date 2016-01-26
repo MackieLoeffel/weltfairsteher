@@ -41,5 +41,5 @@ ORDER BY at
 <script type="text/javascript">
  classes = <?= json_encode($classes) ?>;
 </script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
 <script src="js/chart.js"></script>
