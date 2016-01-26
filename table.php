@@ -78,9 +78,11 @@ WHERE c.category = :category AND sc.class = :class");
   wird in Rot angezeigt.
 </div>
 
-<canvas id="chart" style="width: 50%; margin-top: 25px; position: relative;"></canvas>
+<div id="chart" style="width: 50%; margin-top: 25px; position: relative;"></canvas>
 <script type="text/javascript">
- var chart = new LineChart(classes, document.getElementById("chart"));
+ $('document').ready(function() {
+     var chart = new LineChart("chart");
+ });
 </script>
 <!--Liniendiagramm einfügen, das die gewählte Klasse highlighted: abszisse: 1. Tag bis heute  --  ordinate: punkte (0 bis max) -->
 

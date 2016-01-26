@@ -24,34 +24,45 @@ class BarChart
 
 
 class LineChart
-  constructor: (@classes, canvas) ->
-    console.assert @classes.length > 0, "there must be classes!"
+  constructor: (canvas) ->
+    console.assert classes.length > 0, "there must be classes!"
     # - 1 for current date
-    numdays = @classes[0].points.length - 1
+    numdays = classes[0].points.length - 1
     milliPerDay = 24 * 3600 * 1000
     days = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"]
-    line = {
-      labels: [-numdays..0].map (i) ->
-        #days[new Date(Date.now() + i * milliPerDay).getUTCDay()]
-        date = new Date(Date.now() + i * milliPerDay)
-        return "#{date.getUTCDate()}.#{date.getUTCMonth()+1}."
-      datasets: for c in @classes
+
+    chartConfig =
+      chart:
+        type: "line"
+        renderTo: canvas
+      title:
+        text: "Punkte über Zeit"
+      xAxis:
+        categories: [-numdays..0].map (i) ->
+          #days[new Date(Date.now() + i * milliPerDay).getUTCDay()]
+          date = new Date(Date.now() + i * milliPerDay)
+          return "#{date.getUTCDate()}.#{date.getUTCMonth()+1}."
+      yAxis:
+        title:
+          text: "Punkte"
+      legend:
+        layout: 'vertical'
+        align: "right"
+        verticalAlign: "middle"
+        borderWidth: 0
+      series: for c in classes
         {
-          label: c.name
-          strokeColor: normalColor
-          fillColor: "rgba(7,108,240,0.6)"
+          name: c.name
           data: c.points
+          color: normalColor
         }
-    }
-    @chart = new Chart(canvas.getContext("2d")).Line line,
-      bezierCurveTension: 0.2
-      pointDot: false
-      datasetFill: false
-      scaleFontColor: "#FFFFFF"
-      showTooltips: false
+    # console.log JSON.stringify chartConfig, true, 4
+    @chart = new Highcharts.Chart(chartConfig);
+    onClassSelectChanged @setClass
+    return
 
-
-  setClass: (id) ->
-    for c, i in @classes
-      @chart.datasets[i].strokeColor = if c.id == +id then highlightColor else normalColor
-      @chart.update()
+  setClass: (id) =>
+    return unless id?
+    for c, i in classes
+      @chart.series[i].update({color: if c.id == +id then highlightColor else normalColor}, false)
+    @chart.redraw()

@@ -93,12 +93,14 @@ GROUP BY c.id)");
 <!--Liniendiagramm
    -->
 <div>
-    <canvas id="chart" style="margin-left: 14px; width: 300px; height: auto;
+    <div id="chart" style="margin-left: 14px; width: 300px; height: auto;
     background-color: #1BAB3F; margin-top: 255px; float: left; position: absolute;">
-  </canvas>
+  </div>
 </div>
 <script type="text/javascript">
- var chart = new LineChart(classes, document.getElementById("chart"));
+ $('document').ready(function(){
+     var chart = new LineChart("chart");
+ })
 </script>
 
 <!-- Selfmade-Challenge vorschlagen
