@@ -5,10 +5,12 @@ normalColor = "rgba(0,70,224,0.6)";
 
 highlightColor = "rgba(255,0,85,1)";
 
+
 BarChart = (function() {
   function BarChart(classes, canvas) {
     var bar, c;
     this.classes = classes;
+
     bar = {
       labels: ["Punkte"],
       datasets: (function() {
@@ -40,6 +42,7 @@ BarChart = (function() {
       c = ref[i];
       console.log(this.chart.datasets[i]);
       this.chart.datasets[i].fillColor = c.id === +id ? highlightColor : normalColor;
+      
       results.push(this.chart.update());
     }
     return results;

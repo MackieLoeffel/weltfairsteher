@@ -50,8 +50,7 @@ WHERE c.category = :category AND sc.class = :class");
                     <!--Anzahl bestandener Challenges pro Kategorie--></td>
             <td style="text-align: center"><?= e($class["creativity"]) ?></td>
           <!-- PUNKTE BIS ZUR NÄCHSTEN ETAPPE (wie könnte man das kürzer umschreiben? "nächste Etappe in"? "Etappenabstand"?)
-          <td  class="etappe-box" style="color: white; background-color: #3A44C9; width: 20px; height: auto;
-    border-radius:20px; font-size: 16px; font-width: bold; text-align: center;"><?= e($class["etappe"])?></td>
+          <td  class="etappe-box"><?= e($class["etappe"])?></td>
 
           -->
             <td style="text-align: center"><b><?= e(getCurrentPoints($class))?></b></td> </tr>
