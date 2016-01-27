@@ -1,0 +1,3 @@
+<Files *.coffee>
+deny from all
+</Files>
