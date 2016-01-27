@@ -58,7 +58,7 @@ WHERE c.category = :category AND sc.class = :class");
         <?php } ?>
     </tbody>
 </table>
-
+<!--
 <div style="margin-left: 14px; margin-top: 25px; margin-right: 25px;
  color: white; font-size: 16px; width: auto; height: auto;
   float: left; background-color: #1BAB3F; text-align: center; position: relative;">
@@ -77,14 +77,14 @@ WHERE c.category = :category AND sc.class = :class");
   ganz oben rechts auswählst, <br>
   wird in Rot angezeigt.
 </div>
-
-<div id="chart" style="width: 50%; margin-top: 25px; position: relative;"></canvas>
+-->
+<div id="chart" style="width: 50%; margin-top: 25px; margin-left: 25%; background-color: #1BAB3F; position: relative;"></canvas>
 <script type="text/javascript">
  $('document').ready(function() {
      var chart = new LineChart("chart");
  });
 </script>
-<!--Liniendiagramm einfügen, das die gewählte Klasse highlighted: abszisse: 1. Tag bis heute  --  ordinate: punkte (0 bis max) -->
+<!--Liniendiagramm einfügen, das die gewählte Klasse highlighted: abszisse: 1. Tag bis heute  -  ordinate: punkte (0 bis max) -->
 
 
 <?php include "include/footer.php"?>
