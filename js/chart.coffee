@@ -66,3 +66,5 @@ class LineChart
     for c, i in classes
       @chart.series[i].update({color: if c.id == +id then highlightColor else normalColor}, false)
     @chart.redraw()
+
+window.LineChart = LineChart

@@ -1,31 +1,31 @@
-selectedClass = null
+window.window.selectedClass = null
 classSelectChanged = []
 setClass = (newClass) ->
   console.log 'setClass:', newClass
-  $('.class-' + selectedClass).removeClass 'class-selected'
-  selectedClass = newClass
-  localStorage.setItem 'selectedClass', selectedClass
-  $('.class-value').val selectedClass
-  $('.class-' + selectedClass).addClass 'class-selected'
+  $('.class-' + window.selectedClass).removeClass 'class-selected'
+  window.selectedClass = newClass
+  localStorage.setItem 'selectedClass', window.selectedClass
+  $('.class-value').val window.selectedClass
+  $('.class-' + window.selectedClass).addClass 'class-selected'
 
-  f(selectedClass) for f in classSelectChanged
+  f(window.selectedClass) for f in classSelectChanged
   return
 
-onClassSelectChanged = (f) ->
-  f selectedClass if selectedClass?
+window.onClassSelectChanged = (f) ->
+  f window.selectedClass if window.selectedClass?
   classSelectChanged.push f
 
 $('document').ready ->
-  selectedClass = localStorage.getItem('selectedClass')
+  window.selectedClass = localStorage.getItem('selectedClass')
 
   classes = []
   $('#class-select option').each (v, a) -> classes.push $(a).prop('value')
 
-  selectedClass = classes[0] if !selectedClass? or classes.indexOf(selectedClass) == -1
+  window.selectedClass = classes[0] if !window.selectedClass? or classes.indexOf(window.selectedClass) == -1
 
   classSelect = $('#class-select')
-  classSelect.val selectedClass
-  setClass selectedClass
+  classSelect.val window.selectedClass
+  setClass window.selectedClass
 
   classSelect.on 'change', ->
     setClass @value

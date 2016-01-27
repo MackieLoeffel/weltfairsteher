@@ -5,7 +5,6 @@ classChange = ->
       .attr("value", challenge.id)
       .text(challenge.name))
 
-setTimeout ->
+$('document').ready ->
   classChange()
   $("#class").change(classChange)
-, 0
