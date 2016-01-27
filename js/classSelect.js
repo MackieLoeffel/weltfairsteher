@@ -21,7 +21,6 @@
   };
 
   window.onClassSelectChanged = function(f) {
-    console.error("class select changed called");
     if (window.selectedClass != null) {
       f(window.selectedClass);
     }

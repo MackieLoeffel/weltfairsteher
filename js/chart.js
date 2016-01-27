@@ -110,7 +110,6 @@
 
     LineChart.prototype.setClass = function(id) {
       var c, i, j, len;
-      console.log("id", id);
       if (id == null) {
         return;
       }
