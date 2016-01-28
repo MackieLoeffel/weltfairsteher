@@ -42,6 +42,7 @@ if($_SESSION['role'] < 2) {
 $allowed_classes = $classStmt->fetchAll(PDO::FETCH_OBJ);
 include "include/chart.php";
 ?>
+<script src="js/api.js"></script>
 
 
 
@@ -159,7 +160,9 @@ GROUP BY c.id)");
                       height: auto;
                       text-align: center">
 
-        <form method="post">
+               <form id="addChallenge" action="javascript:void(0);" onsubmit="sendForm(this)">
+                   <input type="hidden" name="suggested" value="yes">
+                   <input type="hidden" name="category" value="">
             <h4>Selfmade-Challenge vorschlagen</h4>
             <div style="margin-left: 14px">
                 <b>Von:</b>
