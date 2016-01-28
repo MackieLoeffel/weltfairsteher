@@ -4,7 +4,7 @@ include __DIR__."/../include/access.php";
 check_access(ADMIN);
 
 $errors = [];
-if(!isset($_POST['email']) || !isset($_POST['password'] || !isset($_POST['password2'])) {
+if(!isset($_POST['email']) || !isset($_POST['password']) || !isset($_POST['password2'])) {
     echo json_encode(["Falsche Parameter!"]);
     exit();
 }

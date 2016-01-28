@@ -10,7 +10,7 @@ escapeHtml = (string) -> String(string).replace /[&<>"'\/]/g, (s) -> entityMap[s
 
 window.sendForm = (form) ->
   dest = $(form).attr("id")
-  $.post("admin/#{dest}.php", $("##{dest}").serialize()).done (errors) ->
+  $.post("api/#{dest}.php", $("##{dest}").serialize()).done (errors) ->
     console.log errors
     errors = JSON.parse(errors)
     resultDiv = $("##{dest} > .result")
