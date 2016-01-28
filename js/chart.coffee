@@ -34,12 +34,9 @@ class LineChart
     chartConfig =
       chart:
         type: "line"
-
         renderTo: canvas
+        backgroundColor: "#51DB74"
       title:
-         style: {
-                    color: 'red'
-                }
         text: "Punkte über Zeit"
       xAxis:
         categories: [-numdays..0].map (i) ->
@@ -51,11 +48,10 @@ class LineChart
           text: "Punkte"
       legend:
         layout: 'vertical'
-
         align: "right"
         verticalAlign: "middle"
         borderWidth: 0
-      series: for c in classes.sort((a, b) -> b.points[b.points.length- 1] - a.points[a.points.length - 1])
+      series: for c in classes.sort((a, b) -> _.last(b.points) - _.last(a.points))
         {
           name: c.name
           data: c.points

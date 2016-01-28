@@ -47,7 +47,8 @@ include __DIR__."/config.php";
              <link rel='stylesheet' id='genericons-css' href='http://de.ubergizmo.com/wp-content/themes/ubergizmo/fonts/genericons.css?ver=2.09' type='text/css' media='all'/>
                 <link rel='stylesheet' id='twentythirteen-style-css' href='http://de.ubergizmo.com/wp-content/themes/ubergizmo/style.css?ver=1447668848' type='text/css' media='all'/>
               <link rel='stylesheet' href='styles.css' type='text/css' />
-                <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+              <script src="libs/lodash.js"></script>
+              <script src="libs/jquery.js"></script>
                 <script src="js/classSelect.js" ></script>
                 <!--[if lt IE 9]>
 

@@ -62,9 +62,8 @@
       chartConfig = {
         chart: {
           type: "line",
-            backgroundColor: "#51DB74",
-
-          renderTo: canvas
+          renderTo: canvas,
+          backgroundColor: "#51DB74"
         },
         title: {
           text: "Punkte über Zeit"
@@ -87,7 +86,6 @@
         },
         legend: {
           layout: 'vertical',
-
           align: "right",
           verticalAlign: "middle",
           borderWidth: 0
@@ -95,7 +93,7 @@
         series: (function() {
           var k, len, ref1, results1;
           ref1 = classes.sort(function(a, b) {
-            return b.points[b.points.length - 1] - a.points[a.points.length - 1];
+            return _.last(b.points) - _.last(a.points);
           });
           results1 = [];
           for (k = 0, len = ref1.length; k < len; k++) {
