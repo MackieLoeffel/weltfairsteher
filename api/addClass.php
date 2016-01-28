@@ -12,9 +12,9 @@ apiCheck(!dbExists("SELECT id FROM class WHERE name = :name", ['name' => $name])
 apiCheck(dbExists("SELECT id FROM user WHERE id = :id", ['id' => $teacher]),
          "Unbekannter Lehrer");
 
-apiFinalCheck();
-
-$statement = $db->prepare("INSERT INTO class (name, teacher) VALUES (:name, :teacher)");
-$result = $statement->execute(['name' => $name,
-                               'teacher' => $teacher]);
+apiAction(function() use($name, $teacher, $db) {
+    $statement = $db->prepare("INSERT INTO class (name, teacher) VALUES (:name, :teacher)");
+    $result = $statement->execute(['name' => $name,
+                                   'teacher' => $teacher]);
+});
 ?>

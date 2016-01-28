@@ -18,14 +18,14 @@ if($teacher >= 0) {
              "Lehrer existiert nicht.");
 }
 
-apiFinalCheck();
-
-if(!empty($name)) {
-    dbExecute("UPDATE class SET name = :name WHERE id = :id ",
-              ["name" => $name, "id" => $class]);
-}
-if($teacher >= 0) {
-    dbExecute("UPDATE class SET teacher = :teacher WHERE id = :id ",
-              ["teacher" => $teacher, "id" => $class]);
-}
+apiAction(function() use($class, $name, $teacher, $db) {
+    if(!empty($name)) {
+        dbExecute("UPDATE class SET name = :name WHERE id = :id ",
+                  ["name" => $name, "id" => $class]);
+    }
+    if($teacher >= 0) {
+        dbExecute("UPDATE class SET teacher = :teacher WHERE id = :id ",
+                  ["teacher" => $teacher, "id" => $class]);
+    }
+});
 ?>

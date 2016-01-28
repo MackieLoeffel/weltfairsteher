@@ -11,13 +11,12 @@ apiCheck($password == $password2, "Die Passwörter müssen übereinstimmen.");
 apiCheck(!dbExists("SELECT id FROM user WHERE email = :email", ['email' => $email]),
          "Diese E-Mail-Adresse ist bereits vergeben.");
 
-apiFinalCheck();
+apiAction(function() use($password, $email, $db) {
+    $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
-
-$password_hash = password_hash($password, PASSWORD_DEFAULT);
-
-$statement = $db->prepare("INSERT INTO user (email, password, role) VALUES (:email, :password, :role)");
-$result = $statement->execute(['email' => $email,
-                               'password' => $password_hash,
-                               'role' => TEACHER]);
+    $statement = $db->prepare("INSERT INTO user (email, password, role) VALUES (:email, :password, :role)");
+    $result = $statement->execute(['email' => $email,
+                                   'password' => $password_hash,
+                                   'role' => TEACHER]);
+});
 ?>

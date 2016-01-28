@@ -33,12 +33,22 @@ function apiCheck($condition, $msg) {
     }
 }
 
-function apiFinalCheck() {
+function apiAction($action) {
     global $errors;
-    echo json_encode($errors);
-    if(!empty($errors)) {
-        exit();
+    if(empty($errors)) {
+        try {
+            $action();
+        } catch(PDOException $e) {
+            if($e->errorInfo[0] === "23000") {
+                apiAddError("Es existieren noch Verknüfungen.");
+            } else {
+                apiAddError($e->getMessage());
+            }
+        } catch(Exception $e) {
+            apiAddError($e->getMessage());
+        }
     }
+    echo json_encode($errors);
 }
 
 ?>
