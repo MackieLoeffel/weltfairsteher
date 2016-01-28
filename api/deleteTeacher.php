@@ -1,27 +1,14 @@
 <?php
-include __DIR__."/../include/access.php";
+include __DIR__."/include.php";
 
 check_access(ADMIN);
 
-$errors = [];
-if(!isset($_POST['teacher'])) {
-    echo json_encode(["Falsche Parameter!"]);
-    exit();
-}
+list($teacher) = apiCheckParams("teacher");
 
-$teacher = $_POST['teacher'];
+apiCheck(dbExists("SELECT id FROM user WHERE id = :teacher", ['teacher' => $teacher]),
+         "Lehrer existiert nicht!");
 
-$statement = $db->prepare("SELECT id FROM user WHERE id = :teacher");
-$result = $statement->execute(['teacher' => $teacher]);
-
-if($statement->fetch() === false) {
-    array_push($errors, "Lehrer existiert nicht!");
-}
-
-echo json_encode($errors);
-if(!empty($errors)) {
-    exit();
-}
+apiFinalCheck();
 
 $statement = $db->prepare("DELETE FROM user WHERE id = :teacher");
 $result = $statement->execute(['teacher' => $teacher]);

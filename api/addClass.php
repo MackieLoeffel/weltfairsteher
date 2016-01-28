@@ -1,43 +1,18 @@
 <?php
-include __DIR__."/../include/access.php";
+include __DIR__."/include.php";
 
 check_access(ADMIN);
 
-$errors = [];
-if(!isset($_POST['name']) || !isset($_POST['teacher'])) {
-    echo json_encode(["Falsche Parameter!"]);
-    exit();
-}
+list($name, $teacher) = apiCheckParams("name", "teacher");
+$name = trim($name);
 
-$name = trim($_POST['name']);
-$teacher = $_POST['teacher'];
+apiCheck(strlen($name) != 0, "Bitte einen Namen angeben.");
+apiCheck(!dbExists("SELECT id FROM class WHERE name = :name", ['name' => $name]),
+         "Dieser Klassenname ist bereits vergeben.");
+apiCheck(dbExists("SELECT id FROM user WHERE id = :id", ['id' => $teacher]),
+         "Unbekannter Lehrer");
 
-if(strlen($name) == 0) {
-    array_push($errors, "Bitte einen Namen angeben.");
-}
-
-if(empty($errors)) {
-    $statement = $db->prepare("SELECT id FROM class WHERE name = :name");
-    $result = $statement->execute(['name' => $name]);
-
-    if($statement->fetch() !== false) {
-        array_push($errors, "Dieser Klassenname ist bereits vergeben.");
-    }
-}
-
-if(empty($errors)) {
-    $statement = $db->prepare("SELECT id FROM user WHERE id = :id");
-    $result = $statement->execute(['id' => $teacher]);
-
-    if($statement->fetch() === false) {
-        array_push($errors, "Unbekannter Lehrer");
-    }
-}
-
-echo json_encode($errors);
-if(!empty($errors)) {
-    exit();
-}
+apiFinalCheck();
 
 $statement = $db->prepare("INSERT INTO class (name, teacher) VALUES (:name, :teacher)");
 $result = $statement->execute(['name' => $name,
