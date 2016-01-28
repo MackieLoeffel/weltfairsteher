@@ -90,10 +90,13 @@
           borderWidth: 0
         },
         series: (function() {
-          var k, len, results1;
+          var k, len, ref1, results1;
+          ref1 = classes.sort(function(a, b) {
+            return b.points[b.points.length - 1] - a.points[a.points.length - 1];
+          });
           results1 = [];
-          for (k = 0, len = classes.length; k < len; k++) {
-            c = classes[k];
+          for (k = 0, len = ref1.length; k < len; k++) {
+            c = ref1[k];
             results1.push({
               name: c.name,
               data: c.points,

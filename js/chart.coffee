@@ -50,7 +50,7 @@ class LineChart
         align: "right"
         verticalAlign: "middle"
         borderWidth: 0
-      series: for c in classes
+      series: for c in classes.sort((a, b) -> b.points[b.points.length- 1] - a.points[a.points.length - 1])
         {
           name: c.name
           data: c.points
