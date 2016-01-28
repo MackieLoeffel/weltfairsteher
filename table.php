@@ -83,7 +83,7 @@ WHERE c.category = :category AND sc.class = :class");
  $('document').ready(function() {
      var chart = new LineChart("chart");
  });
-</script>
+</script></div>
 <!--Liniendiagramm einfügen, das die gewählte Klasse highlighted: abszisse: 1. Tag bis heute  -  ordinate: punkte (0 bis max) -->
 
 
