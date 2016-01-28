@@ -43,18 +43,20 @@
                         <b>Soziales</b>, also die Art und Weise, wie Menschen
                         in der Gesellschaft zusammenleben, sowie <b>Wirtschaft</b>, also Bereiche wie Warenproduktion, Einkauf und Verkauf. <br><br>
                         Mit all diesen Dingen
-                        habt ihr tagtäglich zu tun, doch hinter allen kleinen Handlungen steckt häufig ein riesiger Prozess, der zuvor stattfand. Wusstet ihr zum Beispiel, das
-                        vor dem Kauf einer einfachen elektrischen Zahnbürste viele Rohstoffe wie Metalle oder Öl über mehrere Kontinente transportiert werden? Schiffe, Züge
+                        habt ihr - ohne es immer zu bemerken - tagtäglich zu tun. Selbst hinter kleinen Handlungen steckt dabei häufig ein riesiger Prozess, der zuvor stattfand.
+                        Wusstet ihr zum Beispiel, das
+                        vor dem Kauf einer einfachen elektrischen Zahnbürste viele Rohstoffe wie Metalle oder Öle über mehrere Kontinente transportiert werden? Schiffe, Züge
                         und Lastwägen legen also tausende Kilometer zurück, damit so eine elektrische Zahnbürste für einen möglichst niedrigen Preis im Geschäft steht.
                         <br><br>
-                        Das bringt aber viele Probleme mit sich. Nur eines davon sind die vielen Treibhausgase, die die Schiffe und Lastwägen ausstoßen. Das ist schlecht für die Umwelt
+                        Das bringt aber viele Probleme mit sich. Nur eines davon sind die vielen Treibhausgase, die die Schiffe und Lastwägen ausstoßen.
+                        Das ist schlecht für die Umwelt
                         und beschleunigt die Erderwärmung. Solche Probleme gibt es an vielen Orten unserer Welt. Als Teilnehmer an WeltFAIRsteher lernt ihr einige davon kennen und
                         erfahrt viele Lösungsvorschläge, wie die Probleme beseitigt werden könnten. Nachhaltigkeit kann nämlich eigentlich jeder. Man muss es nur wollen und tun.
                               </div><br>
                         <b><div id="wer"  style="margin-right: 30%; margin-left: 80px;"><h3>Wer kann mitmachen?</h3></div></b>
 
                         <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
-                            Teilnehmen kann jede 6. Klasse einer öffentlichen oder privaten Schule im deutschsprachigen Raum.
+                            Teilnehmen kann jede 6. Klasse einer öffentlichen oder privaten Schule in Bayern.
 Besonders vorteilhaft ist es natürlich, eine motivierte Lehrkraft zu haben, mit der man an <i>WeltFAIRsteher</i> teilnimmt.
 Wenn ihr eine Lehrkraft mit einem Korb Äpfeln oder einem Sack Kartoffeln bestechen wollt, ist das also vielleicht nicht die beste Voraussetzung -
 sofern die Lehrerin beziehungsweise der Lehrer nicht nur zu <s>faul</s> beschäftigt war und sich eigentlich für Nachhaltigkeit interessiert.
@@ -79,14 +81,16 @@ so könnt ihr sie von eurer verantwortlichen Lehrkraft online im <i>Lehrer-Berei
 Kriterien entspricht, so schalten wir sie als sogenannte <i>Selfmade-Challenge</i> frei und jede Klasse kann versuchen, die Challenge zu absolvieren.
 Was habt ihr als kreative Köpfe hinter der neuen Challenge davon? Zweierlei! Erstens habt ihr einen Beitrag zum Gelingen für alle Klassen geleistet, weil
 sie um eine Idee bereichert wurden. Und zweitens erhaltet ihr darüber hinaus einen Kreativitätsbonus! Für jede erfolgreich vorgeschlagene Challenge wird euer
-Kreativitätsbonus vom Anfangswert 1 um 0,2 erhöht. Der neue Wert wird dann mit euren Punkten multipliziert. Ein kleines Rechenbeispiel verdeutlicht am besten, wie wertvoll dieser Bonus für euch sein kann:
+Kreativitätsbonus vom Anfangswert 1 um 0,2 erhöht. Der neue Wert wird dann mit euren Punkten multipliziert. Ein kleines Rechenbeispiel verdeutlicht am besten,
+wie wertvoll dieser Bonus für euch sein kann:
  Angenommen euer Konto weist einen Wert von 30 Punkten auf. Eine erfolgreich eingebrachte Selfmade-Challenge erhöht euren Kreativitätsbonus auf 1,2.
  Euer Punktestand beträgt sodann 30 mal 1,2 = 36 Punkte. Habt ihr stattdessen sogar zwei Selfmade-Challenges erfolgreich eingreicht, so erhöht sich
  euer Punktestand auf 30 mal 1,4 = 42 Punkte. Und <i>WeltFAIRsteher</i> ist um zwei tolle Aufgaben reicher geworden. Das lohnt sich!
  <br><br>
  Falls ihr dafür auf Ideensuche seid oder einfach mehr über das Thema Nachhaltigkeit erfahren wollt,
- findet ihr im Reiter <i>Leckerwissen</i> viele hilfreiche Informationen und Links zu themenverwandten Seiten. Stoßt ihr im Internet selbst auf Artikel, Videos oder
- sonstiges, was in das <i>Leckerwissen</i> passen würde, so könnt ihr es dort einfach hinzufügen. Auch dadurch profitieren alle Teilnehmer voneinander und bilden
+ findet ihr im <i>Leckerwissen</i> viele hilfreiche Informationen und Links zu themenverwandten Seiten. Stoßt ihr im Internet selbst auf Artikel,
+ Videos oder
+ Sonstiges, was in das <i>Leckerwissen</i> passen würde, so könnt ihr es dort einfach hinzufügen. Auch dadurch profitieren alle Teilnehmer voneinander und bilden
  sozusagen eine "Schwarmintelligenz".
 
 
@@ -96,23 +100,30 @@ Kreativitätsbonus vom Anfangswert 1 um 0,2 erhöht. Der neue Wert wird dann mit
 
                         <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
 
-Keine Sorge, mit leeren Händen geht am Ende keine Klasse nach Hause. Im Laufe des Schuljahres werdet ihr so manche Errungenschaft feiern, die
-wortwörtlich nachhaltig ist. Ob ihr in der Tabelle also unten oder oben steht, ist nur zweitrangig.
-In Wahrheit spielen nämlich alle Klassen gemeinsam für eine lebenswerte Zukunft, die fair, also gerecht, gestaltet ist - auch wenn es manchmal nicht
-danach aussieht.
+Keine Sorge, mit leeren Händen geht am Ende keine Klasse nach Hause. Ganz im Gegenteil: Schon während des Schuljahres verfolgt ihr Etappenziele.
+Jede Klasse sieht in der Tabelle, wie viele Punkte sie noch von der nächsten Etappe entfernt ist. Habt ihr eine Etappe erreicht, so schicken
+wir euch zur Belohnung eine kleine Überraschung per Post. Außerdem werdet ihr über die Zeit der Teilnahme hinweg
+so manche Errungenschaft feiern, die
+wortwörtlich nachhaltig ist - für´s Leben lernen also. <br><br>
+Ob ihr in der Tabelle gerade unten oder oben steht, ist demzufolge nur zweitrangig.
+Letztendlich spielen nämlich alle Klassen gemeinsam für eine lebenswerte Zukunft, die fair, also gerecht, gestaltet ist.
 Na gut, ein paar Überraschungen haben wir für die Klassen mit den meisten Punkten trotzdem parat - als zusätzlicher
-Ansporn sozusagen. Der Siegerklasse winkt zum Beispiel ein erlebnispädagogisches Wochenende, also drei Tage fernab der Eltern Natur erleben,
-kostenlose Verpflegung genießen und spannende Entdeckungen machen. Insgesamt aber gilt ganz klar: Dabei zu sein ist ein Gewinn.
-Und auch wer am Tabellenende steht ist deshalb nicht "un-nachhaltig" beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit! Am wichtigsten ist
-der erste Schritt. Und dafür müsst ihr euch anmelden.
+Ansporn sozusagen.
+<br><br>
+Der Siegerklasse winkt zum Beispiel ein erlebnispädagogisches Wochenende, also drei Tage fernab der Eltern Natur erleben,
+kostenlose Verpflegung genießen und spannende Entdeckungen machen. Platz Zwei und Drei werden ebenfalls überrascht. Wenn ihr am Ende nicht einen der drei ersten Plätze belegen solltet, so werdet ihr trotzdem
+einen kleinen Preis samt Urkunde erhalten. Insgesamt aber gilt ganz klar: Dabei zu sein ist ein Gewinn.
+Und auch wer am Tabellenende steht ist deshalb nicht "un-nachhaltig" beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit!
+Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
 </div><br>
 <b><div id="wie"  style="margin-right: 30%; margin-left: 80px;"><h3>Wie meldet man sich an?</h3></div></b>
 
 <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F">
     Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an weltfairsteher@chancengestalten.de und teilt uns den kreativen Klassennamen mit,
     den ihr euch selbst ausdenken könnt. Das kann so etwas wie "Die Sojapatronen" sein, oder "Warme Kürbissuppen".
-    Wenn ihr uns verratet, von welcher Schule ihr kommt, würden wir uns natürlich sehr freuen - schon alleine deshalb, weil wir euch am Ende eine Urkunde zuschicken möchten.
-    Keine Sorge: Eure Schuldaten werden nicht veröffentlicht.
+    Wenn ihr uns verratet, von welcher Schule ihr kommt, würden wir uns natürlich sehr freuen - schon alleine deshalb,
+    weil wir euch eure Etappen-Überraschungen zusenden möchten.
+    Keine Sorge: Eure Schuldaten werden aber nicht veröffentlicht.
     <br><br>
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
 Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Bereich</i> gewissenhaft bestandene Challenges eintragen oder eine Selfmade-Challenge vorschlagen.

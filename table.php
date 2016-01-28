@@ -78,7 +78,7 @@ WHERE c.category = :category AND sc.class = :class");
   wird in Rot angezeigt.
 </div>
 -->
-<div id="chart" style="width: 50%; margin-top: 25px; margin-left: 25%; background-color: #1BAB3F; position: relative;"></canvas>
+<div id="chart" style="width: 50%; margin-top: 25px; margin-left: 25%; position: relative;"></canvas>
 <script type="text/javascript">
  $('document').ready(function() {
      var chart = new LineChart("chart");
