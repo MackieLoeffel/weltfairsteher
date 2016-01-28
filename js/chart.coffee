@@ -34,8 +34,12 @@ class LineChart
     chartConfig =
       chart:
         type: "line"
+
         renderTo: canvas
       title:
+         style: {
+                    color: 'red'
+                }
         text: "Punkte über Zeit"
       xAxis:
         categories: [-numdays..0].map (i) ->
@@ -47,6 +51,7 @@ class LineChart
           text: "Punkte"
       legend:
         layout: 'vertical'
+
         align: "right"
         verticalAlign: "middle"
         borderWidth: 0

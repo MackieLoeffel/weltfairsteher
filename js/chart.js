@@ -62,6 +62,8 @@
       chartConfig = {
         chart: {
           type: "line",
+            backgroundColor: "#51DB74",
+
           renderTo: canvas
         },
         title: {
@@ -85,6 +87,7 @@
         },
         legend: {
           layout: 'vertical',
+
           align: "right",
           verticalAlign: "middle",
           borderWidth: 0

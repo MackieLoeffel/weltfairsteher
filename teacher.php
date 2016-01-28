@@ -93,7 +93,7 @@ GROUP BY c.id)");
 <!--Liniendiagramm
    -->
 <div>
-    <div id="chart" style="margin-left: 14px; width: 300px; height: auto;
+    <div id="chart" style="margin-left: 14px; width: 300px; height: auto; margin-bottom: 25px;
     background-color: #1BAB3F; margin-top: 255px; float: left; position: absolute;">
   </div>
 </div>
@@ -108,7 +108,7 @@ GROUP BY c.id)");
    -->
 <div
     style="margin-left: 328px;
-           margin-top: 40px;
+           margin-top: 60px;
            margin-right: 5%;
            position: absolute;
            float: left;
