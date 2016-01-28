@@ -4,7 +4,7 @@ include "include/access.php";
 check_access(ADMIN);
 include "include/header.php";
 ?>
-<script src="js/admin.js" ></script>
+<script src="js/api.js" ></script>
 <br>
 
 
