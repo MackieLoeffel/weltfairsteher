@@ -3,34 +3,6 @@ include "include/access.php";
 check_access(TEACHER);
 include "include/header.php";
 
-
-if(isset($_POST["class"])) {
-    $checkStmt = $db->prepare("SELECT * FROM class WHERE id = :id AND teacher = :teacher");
-    $checkStmt->execute(["id" => $_POST["class"], "teacher" => $_SESSION["user"]]);
-
-    if($_SESSION["role"] > 1 || $checkStmt->fetch() !== false) {
-        if(isset($_POST["challenge"])) {
-            $scStmt = $db->prepare("SELECT * FROM solved_challenge WHERE class = :class AND challenge = :challenge");
-            $scStmt->execute(["class" => $_POST["class"], "challenge" => $_POST["challenge"]]);
-
-            if($scStmt->fetch() === false) {
-                // race condition here
-                $insertStmt = $db->prepare("INSERT INTO solved_challenge (class, challenge, at) VALUES (:class, :challenge, NOW())");
-                $insertStmt->execute(["class" => $_POST["class"], "challenge" => $_POST["challenge"]]);
-            }
-        }
-        if(isset($_POST["title"]) && isset($_POST["desc"]) && isset($_POST["points"])) {
-            $insertStmt = $db->prepare("INSERT INTO suggested (title, description, class, points) VALUES (:title, :desc, :class, :points)");
-            $insertStmt->execute(["title" => $_POST["title"],
-                                  "desc" => $_POST["desc"],
-                                  "class" => $_POST["class"],
-                                  "points" => $_POST["points"]]);
-        }
-    }
-}
-
-
-
 if($_SESSION['role'] < 2) {
     $classStmt = $db->prepare("SELECT id, name FROM class WHERE teacher = :teacher ");
     $classStmt->execute(["teacher" => $_SESSION['user']]);
@@ -53,7 +25,7 @@ include "include/chart.php";
         <div class="teacher-challenge-box-inner">
             <h4>Challenge eintragen:</h4>
             <span style="margin-bottom: 4px; margin-top: 9px; font-size:13px; color: black">
-                <form method="post">
+               <form id="solveChallenge" action="javascript:void(0);" onsubmit="sendForm(this)">
                     <b>Klasse:</b>
                     <select name="class" id="class" size="1">
                         <?php

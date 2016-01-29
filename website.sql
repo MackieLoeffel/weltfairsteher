@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 18, 2016 at 09:18 AM
+-- Generation Time: Jan 29, 2016 at 07:05 PM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -33,7 +33,7 @@ CREATE TABLE `challenge` (
   `points` int(11) NOT NULL,
   `category` enum('food','energy','culture','climate-change','production','selfmade') COLLATE utf8_bin NOT NULL,
   `author` int(11) DEFAULT NULL,
-  `author_time` datetime DEFAULT NULL
+  `author_time` datetime DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
@@ -211,6 +211,7 @@ ALTER TABLE `leckerwissen`
 --
 ALTER TABLE `solved_challenge`
   ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `class_2` (`class`,`challenge`),
   ADD KEY `class` (`class`),
   ADD KEY `challenge` (`challenge`);
 
@@ -240,7 +241,7 @@ ALTER TABLE `challenge`
 -- AUTO_INCREMENT for table `class`
 --
 ALTER TABLE `class`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `leckerwissen`
 --
@@ -250,7 +251,7 @@ ALTER TABLE `leckerwissen`
 -- AUTO_INCREMENT for table `solved_challenge`
 --
 ALTER TABLE `solved_challenge`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `suggested`
 --
@@ -260,7 +261,7 @@ ALTER TABLE `suggested`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- Constraints for dumped tables
 --
