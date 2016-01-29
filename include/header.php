@@ -101,7 +101,7 @@ include __DIR__."/config.php";
                                                "Leckerwissen" => 'leckerwissen.php',
                                                'Lehrer-Bereich' => "teacher.php",
                                                'Impressum' => 'impressum.php'];
-                                     if(isset($_SESSION["role"]) && $_SESSION["role"] > 1) {
+                                     if(isAdmin()) {
                                          $sites["Admin"] = "admin.php";
                                      }
                                      foreach ($sites as $site => $link) {

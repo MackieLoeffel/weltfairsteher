@@ -79,6 +79,19 @@ if(!defined('CONFIG_PHP')) {
         $stmt = $db->prepare($query);
         $stmt->execute($params);
     }
+
+    function isAdmin() {
+        global $_SESSION;
+        return isLoggedIn() && $_SESSION["role"] == 2;
+    }
+    function isTeacher() {
+        global $_SESSION;
+        return isLoggedIn() && $_SESSION["role"] == 1;
+    }
+    function isLoggedIn() {
+        global $_SESSION;
+        return isset($_SESSION["role"]);
+    }
 }
 
 ?>

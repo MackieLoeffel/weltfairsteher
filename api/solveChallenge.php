@@ -4,10 +4,9 @@ include __DIR__."/include.php";
 check_access(TEACHER);
 
 list($class, $challenge) = apiCheckParams("class", "challenge");
-$role = $_SESSION["role"];
 $user = $_SESSION["user"];
 
-apiCheck(dbExists(($role > 1) ?
+apiCheck(dbExists(isTeacher() ?
                   "SELECT id FROM class WHERE id = :class AND teacher = :teacher" :
                   "SELECT id FROM class WHERE id = :class",
                   ['class' => $class, "teacher" => $user]),

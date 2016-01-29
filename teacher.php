@@ -3,7 +3,7 @@ include "include/access.php";
 check_access(TEACHER);
 include "include/header.php";
 
-if($_SESSION['role'] < 2) {
+if(isTeacher()) {
     $classStmt = $db->prepare("SELECT id, name FROM class WHERE teacher = :teacher ");
     $classStmt->execute(["teacher" => $_SESSION['user']]);
 } else {
