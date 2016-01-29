@@ -267,3 +267,7 @@ z-index: 4;
     background-color: #1BAB3F;
     position: relative;
 }
+
+.solve-link.class-selected {
+    visibility: hidden;
+}

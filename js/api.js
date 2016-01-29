@@ -17,13 +17,19 @@
     });
   };
 
+  window.callApi = function(api, data, cb) {
+    return $.post("api/" + api + ".php", data).done(function(errors) {
+      console.log(errors);
+      errors = JSON.parse(errors);
+      return typeof cb === "function" ? cb(errors) : void 0;
+    });
+  };
+
   window.sendForm = function(form) {
     var dest;
     dest = $(form).attr("id");
-    $.post("api/" + dest + ".php", $("#" + dest).serialize()).done(function(errors) {
+    window.callApi(dest, $("#" + dest).serialize(), function(errors) {
       var error, i, len, list, resultDiv;
-      console.log(errors);
-      errors = JSON.parse(errors);
       resultDiv = $("#" + dest + " > .result");
       if (!resultDiv.length) {
         resultDiv = $("<div class='result'></div>");

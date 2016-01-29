@@ -49,7 +49,8 @@ include __DIR__."/config.php";
               <link rel='stylesheet' href='styles.css' type='text/css' />
               <script src="libs/lodash.js"></script>
               <script src="libs/jquery.js"></script>
-                <script src="js/classSelect.js" ></script>
+                <script src="js/classSelect.js"></script>
+                <script src="js/api.js"></script>
                 <!--[if lt IE 9]>
 
                      <![endif]-->

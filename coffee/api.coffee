@@ -8,11 +8,16 @@ entityMap =
 
 escapeHtml = (string) -> String(string).replace /[&<>"'\/]/g, (s) -> entityMap[s]
 
-window.sendForm = (form) ->
-  dest = $(form).attr("id")
-  $.post("api/#{dest}.php", $("##{dest}").serialize()).done (errors) ->
+window.callApi = (api, data, cb) ->
+  $.post("api/#{api}.php", data).done (errors) ->
     console.log errors
     errors = JSON.parse(errors)
+    cb? errors
+
+
+window.sendForm = (form) ->
+  dest = $(form).attr("id")
+  window.callApi dest, $("##{dest}").serialize(), (errors) ->
     resultDiv = $("##{dest} > .result")
     if !resultDiv.length
       resultDiv = $("<div class='result'></div>")

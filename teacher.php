@@ -14,7 +14,6 @@ if(isTeacher()) {
 $allowed_classes = $classStmt->fetchAll(PDO::FETCH_OBJ);
 include "include/chart.php";
 ?>
-<script src="js/api.js"></script>
 
 
 

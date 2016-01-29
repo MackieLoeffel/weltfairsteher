@@ -8,7 +8,7 @@ $user = $_SESSION["user"];
 
 apiCheck(dbExists(isTeacher() ?
                   "SELECT id FROM class WHERE id = :class AND teacher = :teacher" :
-                  "SELECT id FROM class WHERE id = :class",
+                  "SELECT id FROM class WHERE id = :class AND :teacher != -1", // dummy use of :teacher
                   ['class' => $class, "teacher" => $user]),
          "Ungültige Klasse");
 apiCheck(dbExists("SELECT id FROM challenge WHERE id = :id",

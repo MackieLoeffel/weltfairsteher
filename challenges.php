@@ -8,16 +8,15 @@ JOIN solved_challenge as sc ON c.id=sc.challenge
 JOIN class as cl ON cl.id = sc.class
 WHERE c.id = :id");
     $classStmt->execute(['id' => $row->id]);
+    $classes = "";
+    foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $classRow) {
+        $classes = $classes . " class-" . e($classRow->id);
+    }
 ?>
     <div class="<?= e($row->category) ?> challenge-points">
         <b><?= e($row->points)?></b>
     </div>
-    <b><u><a class="<?php
-                    foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $classRow) {
-                        echo " class-" . $classRow->id;
-                    }
-                    ?>
-                    challenge-title"
+    <b><u><a class="<?= $classes ?> challenge-title"
              onclick="return toggleMe('challenge-<?=e($row->id)?>')"
              href="javascript:void(0)" ><?=e($row->name)?></a></u></b><br>
     <div style="display:none;" class="dbox" id="challenge-<?=e($row->id)?>">
@@ -26,7 +25,13 @@ WHERE c.id = :id");
         <?php if($row->author) { ?>
             <div style="color: black;">Von:<b><?=e($row->author)?></b></div>
         <?php } ?>
-    </div><br><br>
+    </div>
+    <?php if(isLoggedIn()) {?>
+        <div class="solve-link <?= $classes ?>" >
+            <a href="#" onclick="callApi('solveChallenge', {'class': selectedClass, 'challenge': <?= e($row->id)?>})" style="color: black">Lösen</a>
+        </div>
+    <?php } ?>
+    <br><br>
 <?php
 }
 
