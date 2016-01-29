@@ -80,6 +80,33 @@ include "include/header.php";
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 
+<form id="addChallenge" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <input type="hidden" name="class" value="-1">
+    <input type="hidden" name="suggested" value="">
+    <b style="color: black;">Neue Challenge hinzufügen:</b>
+    <br>
+    Titel: <input type="text" value="" size=25 name="title">
+    </input>
+    <br>
+    Kategorie: <select name="category">
+        <?php foreach($categories as $cat) {?>
+            <option value="<?=e($cat->name)?>"><?= e($cat->title) ?></option>
+        <?php } ?>
+    </select>
+    <br>
+    Punkte:
+    <select name="points" size="1">
+        <?php for($i = 1; $i <= 9; $i++) {?>
+            <option value="<?= $i?>"><?= $i?></option>
+        <?php } ?>
+    </select>
+
+    <br>
+    Kurzbeschreibung: <textarea rows="7" name="desc"> </textarea>
+    <br>
+    <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
+</form>
+
 <div class="admin-box">
     <b>FUNKTIONIERT BIS HIER!</b>
 </div>
@@ -118,33 +145,6 @@ include "include/header.php";
 
     </input>
 </div>
-
-<div class="admin-box">
-
-    <b style="color: black;">Neue Challenge hinzufügen:</b>
-    <br>
-    Titel: <input type="text" value="" size=25>
-    </input>
-    <br>
-    Kategorie: <select name="categories">
-        <option>Ernährung</option>
-        <option>Wasser & Energie</option>
-        <option>Interkulturelle Verständigung</option>
-        <option>Klimawandel</option>
-        <option>Warenproduktion</option>
-    </select>
-    <br>
-    Punkte: <input type="text" value="" size=5>
-    </input>
-    <br>
-    Kurzbeschreibung: <textarea rows="7">
-    </textarea>
-    <br>
-    <input type="button" value="Gesamteingabe bestätigen" style="background-color: green; float: right;">
-
-    </input>
-</div>
-
 
 <div class="admin-box">
 
