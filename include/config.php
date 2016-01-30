@@ -92,6 +92,15 @@ if(!defined('CONFIG_PHP')) {
         global $_SESSION;
         return isset($_SESSION["role"]);
     }
+
+    define("TEACHER_PDF", "TEACHER");
+    define("PUPIL_PDF", "PUPIL");
+    define("MAX_PDF_SIZE", 50000000);
+
+    function getPDFPath($challenge, $type) {
+        assert($type === TEACHER_PDF || $type === PUPIL_PDF);
+        return __DIR__."/../uploads/" . $type . "_" . $challenge . ".pdf";
+    }
 }
 
 ?>

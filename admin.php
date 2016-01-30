@@ -116,6 +116,25 @@ include "include/header.php";
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
+<div id="upload" class="admin-box">
+    <b style="color: black;">PDF Hochladen:</b>
+    <br>
+    Challenge: <select name="challenge">
+        <?php foreach(fetchAll("SELECT id, name FROM challenge") as $challenge) {?>
+            <option value="<?=e($challenge->id)?>"><?=e($challenge->name)?></option>
+        <?php } ?>
+    </select><br/>
+    <br>
+    PDF: <input type="file" name="file" accept="text/*.pdf"> </input>
+    <br>
+    <label for="teacher-pdf"> Lehrer-PDF </label>
+    <input id="teacher-pdf" type="radio" name="type" value="<?= e(TEACHER_PDF) ?>"></input>
+    <br/>
+    <label for="pupil-pdf"> Schüler-PDF </label>
+    <input id="pupil-pdf" type="radio" name="type" value="<?= e(PUPIL_PDF) ?>"></input>
+    <br>
+    <input type="submit" onclick="sendFile('upload')" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
+</div>
 
 <div class="admin-box">
     <b>FUNKTIONIERT BIS HIER!</b>
