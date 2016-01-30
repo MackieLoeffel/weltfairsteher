@@ -38,6 +38,7 @@
         return resultDiv.hide();
       }), 3000);
     }
+    resultDiv.show();
   };
 
   window.callApi = function(api, data, cb) {

@@ -22,6 +22,7 @@ appendResult = (dest, errors) ->
   else
     resultDiv.append("<b>Erfolgreich!</b>")
     setTimeout (-> resultDiv.hide() ), 3000
+  resultDiv.show()
   return
 
 window.callApi = (api, data, cb) ->
