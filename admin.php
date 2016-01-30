@@ -136,6 +136,16 @@ include "include/header.php";
     <input type="submit" onclick="sendFile('upload')" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </div>
 
+<form id="deleteLeckerwissen" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: red;">Leckerwissen löschen</b><br/>
+    <select name="leckerwissen">
+        <?php foreach(fetchAll("SELECT id, title FROM leckerwissen") as $lw) {?>
+            <option value="<?=e($lw->id)?>"><?=e($lw->title)?></option>
+        <?php } ?>
+    </select><br/>
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
+</form>
+
 <div class="admin-box">
     <b>FUNKTIONIERT BIS HIER!</b>
 </div>
@@ -307,17 +317,6 @@ include "include/header.php";
 
     </input>
 </div>
-
-
-<form id="deleteLeckerwissen" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: red;">Leckerwissen löschen</b><br/>
-    <select name="leckerwissen">
-        <?php foreach(fetchAll("SELECT id, name FROM leckerwissen") as $leckerwissen) {?>
-            <option value="<?=e($leckerwissen->id)?>"><?=e($leckerwissen->name)?></option>
-        <?php } ?>
-    </select><br/>
-    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
-</form>
 
 
 <div class="admin-box">
