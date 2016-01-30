@@ -339,15 +339,6 @@ include "include/header.php";
     </input>
 </div>
 
-
-
-<div style="margin-left: 15%; margin-bottom: 30px; margin-right: 20px;
-            color: white; font-size: 16px; width: 50%; height: auto; position: relative;
-            float: left; background-color: #1BAB3F">
-    <a href="register.php" style="color: blue;">Neuen Benutzer registrieren</a>
-
-</div>
-
 <br>
 
 <div>
