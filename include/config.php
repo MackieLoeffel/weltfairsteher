@@ -19,9 +19,9 @@ if(!defined('CONFIG_PHP')) {
     $categories = [
         new Category("food", 'ERNÄHRUNG'),
         new Category("water", "WASSER & RESSOURCEN"),
-        new Category("culture", "KULTURELLE VIELFALT"),
+        new Category("culture", "SOZIALE VERANTWORTUNG"),
         new Category("climate-change", "KLIMAWANDEL"),
-        new Category("production", "WARENPRODUKTION"),
+        new Category("production", "WARENPRODUKTION & KONSUM"),
         new Category("energy", "ENERGIE & MOBILITÄT"),
     ];
 
