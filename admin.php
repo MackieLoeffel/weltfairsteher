@@ -95,7 +95,8 @@ include "include/header.php";
 <form id="deleteTeacher" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
     <b style="color: red;">Lehrer löschen</b><br/>
     <select name="teacher">
-        <?php foreach(fetchAll("SELECT id, email FROM user") as $class) {?>
+        <?php foreach(fetchAll("SELECT id, email FROM user WHERE role != :admin",
+                               ["admin" => ADMIN]) as $class) {?>
             <option value="<?=e($class->id)?>"><?=e($class->email)?></option>
         <?php } ?>
     </select><br/>
