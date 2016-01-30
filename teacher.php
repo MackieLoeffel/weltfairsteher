@@ -58,6 +58,21 @@ GROUP BY c.id)");
             <!--"Klasse wechseln" nur anzeigen, wenn ein Lehrer für mehrere Klassen verantwortlich ist.
               In der Auswahlliste nur die Klassen anzeigen, die mit dem Konto des Lehrers verbunden sind -->
         </div>
+<div class=".abstand teacher-challenge-box" style="position: relative"><br>
+<form id="changeUser" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: black;">Daten bearbeiten:</b><br>
+    (Felder leer lassen, um sie nicht zu ändern)<br/>
+    <input type="hidden" name="user" value="<?= e($_SESSION["user"]) ?>">
+    Neue E-Mail-Adresse:  <input type="text" name="email" value="">
+    </input><br>
+
+    Neues Passwort:<input type="text" name="password" value=""> </input>
+    <br>
+    Neues Passwort wiederholen:<input type="text" name="password2" value=""> </input>
+
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
+</form>
+</div>
 
 
 
@@ -181,8 +196,7 @@ padding: 40px;
         </form><br>
 </div>
 <div class=".abstand teacher-challenge-box"><br>
-    <section class="container">
-        <form action="logout.php" method="get">
+            <form action="logout.php" method="get">
             <input type="submit" value="Logout" style="background-color: #52150D; font-size: 11px;">
         </form>
 <br>

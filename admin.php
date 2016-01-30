@@ -33,18 +33,13 @@ include "include/header.php";
             <option value="<?=e($class->id)?>"><?=e($class->email)?></option>
         <?php } ?>
     </select><br/>
-    Neue E-Mail-Adresse:  <input type="text" name="email" value="">
-    </input><br>
+    Neue E-Mail-Adresse:  <input type="text" name="email" value=""> </input><br>
 
-    Neues Passwort:<input type="text" name="password" value="">
-    </input>
+    Neues Passwort:<input type="text" name="password" value=""> </input>
     <br>
-    Neues Passwort wiederholen:<input type="text" name="password2" value="">
-    </input>
+    Neues Passwort wiederholen:<input type="text" name="password2" value=""> </input>
 
-    <input type="submit" value="Bestätigen" style="background-color: green; float: right;">
-
-    </input>
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 <br>
 
