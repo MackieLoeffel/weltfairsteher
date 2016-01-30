@@ -25,6 +25,28 @@ include "include/header.php";
     </input>
 </form>
 <br>
+<form id="changeUser" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: black;">Bestehenden Benutzer bearbeiten:</b><br>
+    (Felder leer lassen, um sie nicht zu ändern)<br/>
+    Benutzer: <select name="user">
+        <?php foreach(fetchAll("SELECT id, email FROM user") as $class) {?>
+            <option value="<?=e($class->id)?>"><?=e($class->email)?></option>
+        <?php } ?>
+    </select><br/>
+    Neue E-Mail-Adresse:  <input type="text" name="email" value="">
+    </input><br>
+
+    Neues Passwort:<input type="text" name="password" value="">
+    </input>
+    <br>
+    Neues Passwort wiederholen:<input type="text" name="password2" value="">
+    </input>
+
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;">
+
+    </input>
+</form>
+<br>
 
 <form id="addClass" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
     <b style="color: black;">Neue Klasse hinzufügen:</b><br>
