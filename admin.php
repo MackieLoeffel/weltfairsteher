@@ -318,26 +318,6 @@ include "include/header.php";
     </input>
 </div>
 
-
-<div class="admin-box">
-    <b style="color: black;">Admin bearbeiten:</b>
-    <br>
-    Angemeldet als: ---
-    <br>
-    Neue E-Mail-Adresse: <input type="text" name="adminmail">
-    </input>
-    <br>
-    Neues Passwort: <input type="text" name="adminpw">
-    </input>
-    <br>
-    Passwort wiederholen: <input type="text" name="adminpw">
-    </input>
-    <br>
-    <input type="button" value="Bestätigen" style="background-color: green; float: right;">
-
-    </input>
-</div>
-
 <br>
 
 <div>
