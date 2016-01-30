@@ -12,7 +12,7 @@ font-size: 13px;
 }
 
 .challenge-header {
-    width: 18%;
+    width: 15.5%;
     height: 20px;
     border-radius: 5px;
     margin-top: 35px;
@@ -30,7 +30,7 @@ font-size: 13px;
 .challenge-box {
     background-color:#1BAB3F;
     z-index: 1;
-    width: 18%;
+    width: 15.5%;
     height: auto;
     float: left;
     margin-top: 5px;
@@ -94,7 +94,7 @@ font-size: 13px;
 }
 .selfmade-col {
     z-index: 1;
-    width: 18%;
+    width: 16%;
     float: left;
     margin-top: 5px;
     margin-right: 0px;
@@ -113,6 +113,10 @@ font-size: 13px;
 }
 
 .energy {
+    background-color:#26EBEB;
+}
+
+.water {
     background-color:#3A7EFC;
 }
 
@@ -194,7 +198,7 @@ z-index: 4;
 }
 
 .leckerwissen-header {
-    width: 16%;
+    width: 13.5%;
     height: 20px;
     border-radius: 5px;
     margin-top: 35px;
@@ -213,7 +217,7 @@ z-index: 4;
 .leckerwissen-box {
     background-color:#1BAB3F;
     z-index: 1;
-    width: 16%;
+    width: 13.5%;
     height: auto;
     float: left;
     margin-top: 5px;

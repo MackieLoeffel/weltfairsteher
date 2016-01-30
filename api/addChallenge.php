@@ -9,6 +9,7 @@ $suggested = !!$suggested;
 $title = trim($title);
 $desc = trim($desc);
 
+apiCheck(ctype_digit($points), "Punkte müssen eine Zahl sein");
 apiCheck(strlen($title) !== 0, "Titel darf nicht leer sein");
 apiCheck(strlen($desc) !== 0, "Beschreibung darf nicht leer sein");
 apiCheck(isAdmin() || dbExists("SELECT id FROM class WHERE id = :id AND teacher = :teacher", ["id" => $class, "teacher" => $user]), "Keine Berechtigung für diese Klasse");

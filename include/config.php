@@ -18,10 +18,11 @@ if(!defined('CONFIG_PHP')) {
     }
     $categories = [
         new Category("food", 'ERNÄHRUNG'),
-        new Category("energy", "WASSER & ENERGIE"),
+        new Category("water", "WASSER & RESSOURCEN"),
         new Category("culture", "KULTURELLE VIELFALT"),
         new Category("climate-change", "KLIMAWANDEL"),
         new Category("production", "WARENPRODUKTION"),
+        new Category("energy", "ENERGIE & MOBILITÄT"),
     ];
 
     // from http://stackoverflow.com/questions/1243418/php-how-to-resolve-a-relative-url
@@ -91,6 +92,15 @@ if(!defined('CONFIG_PHP')) {
     function isLoggedIn() {
         global $_SESSION;
         return isset($_SESSION["role"]);
+    }
+
+    define("TEACHER_PDF", "TEACHER");
+    define("PUPIL_PDF", "PUPIL");
+    define("MAX_PDF_SIZE", 50000000);
+
+    function getPDFPath($challenge, $type) {
+        assert($type === TEACHER_PDF || $type === PUPIL_PDF);
+        return __DIR__."/../uploads/" . $type . "_" . $challenge . ".pdf";
     }
 }
 
