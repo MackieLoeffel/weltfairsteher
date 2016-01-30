@@ -63,7 +63,7 @@ GROUP BY c.id)");
 
 
 <!--Liniendiagramm
-   -->
+
 <div>
     <div id="chart" style="margin-left: 14px; width: 300px; height: auto; margin-bottom: 25px;
     background-color: #1BAB3F; margin-top: 255px; float: left; position: absolute;">
@@ -74,20 +74,22 @@ GROUP BY c.id)");
      var chart = new LineChart("chart");
  })
 </script>
-
+-->
 <!-- Selfmade-Challenge vorschlagen
      evtl noch insofern ändern, dass nicht eine Beschreibung gefordert ist, sondern jenes formuliert werden muss, was auch wir für eine Challenge ausarbeiten (kategorie, punktzahl, einbettung...... gefahr: zu hohe hürde, eine eigene challenge zu formulieren)
    -->
 <div
-    style="margin-left: 328px;
-           margin-top: 60px;
+    style="margin-left: 570px;
+           margin-top: 40px;
            margin-right: 5%;
-           position: absolute;
+           position: relative;
            float: left;
            background-color:#1BAB3F;
            width: auto;
            max-width: 500px;
-           height: auto;">
+           height: auto;
+padding: 40px;
+           ">
 
            <h4 style="margin-left: 22px;">Allgemeine Hinweise</h4>
 
@@ -104,7 +106,7 @@ GROUP BY c.id)");
 </li><br>
 <li>Sie können auf dieser Seite auch <b style="color: black;">Selfmade-Challenges</b> von einer Klasse,
   für die Sie verantwortlich sind, vorschlagen. Füllen Sie dazu einfach das
-  neben stehende Formular aus. Die vorgeschlagene Challenge wird allerdings
+  nebenstehende Formular aus. Die vorgeschlagene Challenge wird allerdings
   nicht sofort hinzugefügt, sondern erst einer Kontrolle unterzogen. Entspricht
   die vorgeschlagene Selfmade-Challenge den Kriterien der Nachhaltigkeit, wird
   sie dem Challenge-Verzeichnis hinzugefügt und ist öffentlich sichtbar. Auch
@@ -121,9 +123,9 @@ GROUP BY c.id)");
          </div>
 
            <div
-               style="margin-left: 14px;
+               style="margin-left: 15%;
                z-index: 1;
-                      margin-top: 425px;
+                      margin-top: 255px;
                       position: absolute;
                       float: left;
                       background-color:#1BAB3F;
@@ -157,7 +159,7 @@ GROUP BY c.id)");
 
             </div>
             <br>
-            <div style="color: white; margin-left: 14px; margin-right: 14px;">
+            <div style="color: white; margin-left: 15%; margin-right: 14px;">
                 <textarea cols="50" row=8" name="desc">Challenge-Beschreibung</textarea>
 
                 <br>

@@ -100,7 +100,7 @@ include __DIR__."/config.php";
                                      $sites = ["Tabelle" => "table.php",
                                                "Challenges" => "challenges.php",
                                                "Leckerwissen" => 'leckerwissen.php',
-                                               'Lehrer-Bereich' => "teacher.php",
+                                               'Lehrkraft-Bereich' => "teacher.php",
                                                'Impressum' => 'impressum.php'];
                                      if(isAdmin()) {
                                          $sites["Admin"] = "admin.php";
