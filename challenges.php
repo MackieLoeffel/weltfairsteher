@@ -35,13 +35,13 @@ WHERE c.id = :id");
         }
         if(isLoggedIn() && file_exists(getPDFPath($row->id, TEACHER_PDF))) {?>
             <div>
-                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black">Lehrer PDF</a>
+                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black">Lehrkraft-PDF</a>
             </div>
         <?php } ?>
     </div>
     <?php if(isLoggedIn()) {?>
         <div class="solve-link <?= $classes ?>" >
-            <a href="#" onclick="callApi('solveChallenge', {'class': selectedClass, 'challenge': <?= e($row->id)?>})" style="color: black">Lösen</a>
+            <a href="#" onclick="callApi('solveChallenge', {'class': selectedClass, 'challenge': <?= e($row->id)?>})" style="color: black"><br><b>Download:</b> Lehrkraft-PDF</a>
         </div>
     <?php } ?>
     <br><br>

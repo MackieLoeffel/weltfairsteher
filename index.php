@@ -3,7 +3,7 @@
 <br>
 <br>
 <br>
-<ul>
+<ul style="margin-left: 14%;">
 <li><span class="abstand" ><a href="#was" style="color: #C5F2B6">Was ist das?</a>
     <br></span></li>
   <li>  <span class="abstand" ><a href="#worum" style="color: #C5F2B6">Worum geht´s?</a>
@@ -24,20 +24,20 @@
                         <!-- image
                            -->
                         <br>
-                        <b><div id="was"  style="margin-right: 30%; margin-left: 80px;">
+                        <b><div id="was"  style="margin-right: 30%; margin-left: 15%;">
                         <h3>Was ist das?</h3>
                         </div></b>
 
-                        <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
+                        <div  style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
                           WeltFAIRsteher ist eine Nachhaltigkeitschallenge für Schulklassen, also ein Wettbewerb, bei dem es darum geht,
                         gemeinsam als Klasse Aufgaben zu bewältigen, die mit Nachhaltigkeit zu tun haben. Das kann von kleinen handwerklichen Projekten über
                         die Organisation und Verspeisung eines ökologisch nachhaltigen Frühstücks bis hin zu unterhaltsamen Spielen,
                         spannenden Referaten und sozialem Engagement reichen.
 
                             </div><br>
-                        <b><div id="worum"  style="margin-right: 30%; margin-left: 80px;"><h3>Worum geht´s?</h3></div></b>
+                        <b><div id="worum"  style="margin-right: 30%; margin-left: 15%;"><h3>Worum geht´s?</h3></div></b>
 
-                        <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
+                        <div  style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
                         Nachhaltigkeit ist ein sehr vielseitiges Thema, das in fast jeden Lebensbereich dringt. Die wichtigsten Aspekte von Nachhaltigkeit
                         sind <b>Ökologie</b>, also die Beziehungen von Organismen wie Menschen, Tieren oder Pflanzen zu ihrer Umwelt,
                         <b>Soziales</b>, also die Art und Weise, wie Menschen
@@ -53,9 +53,9 @@
                         und beschleunigt die Erderwärmung. Solche Probleme gibt es an vielen Orten unserer Welt. Als Teilnehmer an WeltFAIRsteher lernt ihr einige davon kennen und
                         erfahrt viele Lösungsvorschläge, wie die Probleme beseitigt werden könnten. Nachhaltigkeit kann nämlich eigentlich jeder. Man muss es nur wollen und tun.
                               </div><br>
-                        <b><div id="wer"  style="margin-right: 30%; margin-left: 80px;"><h3>Wer kann mitmachen?</h3></div></b>
+                        <b><div id="wer"  style="margin-right: 30%; margin-left: 15%;"><h3>Wer kann mitmachen?</h3></div></b>
 
-                        <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
+                        <div  style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
                             Teilnehmen kann jede 6. Klasse einer öffentlichen oder privaten Schule in Bayern.
 Besonders vorteilhaft ist es natürlich, eine motivierte Lehrkraft zu haben, mit der man an <i>WeltFAIRsteher</i> teilnimmt.
 Wenn ihr eine Lehrkraft mit einem Korb Äpfeln oder einem Sack Kartoffeln bestechen wollt, ist das also vielleicht nicht die beste Voraussetzung -
@@ -64,9 +64,9 @@ sofern die Lehrerin beziehungsweise der Lehrer nicht nur zu <s>faul</s> beschäf
 Anmelden kann euch aber nur eine Lehrkraft.
                         </div><br>
 
-                        <b><div id="ablauf"  style="margin-right: 30%; margin-left: 80px;"><h3>Wie läuft´s ab?</h3></div></b>
+                        <b><div id="ablauf"  style="margin-right: 30%; margin-left: 15%;"><h3>Wie läuft´s ab?</h3></div></b>
 
-                        <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
+                        <div  style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Jede Klasse kann sich an den Aufgaben, die ihr unter dem Reiter <i>Challenges</i> findet, versuchen. Mit welcher Challenge ihr dabei beginnt ist
 genauso gleichgültig wie die Anzahl der Schülerinnen und Schüler, die sich an einer Challenge beteiligen. Manchmal ist es sogar am besten,
 wenn nur wenige Schülerinnen und Schüler eine Aufgabe verfolgen.
@@ -96,9 +96,9 @@ wie wertvoll dieser Bonus für euch sein kann:
 
 
                         </div><br>
-                        <b><div id="gewinn"  style="margin-right: 30%; margin-left: 80px;"><h3>Was kann man gewinnen?</h3></div></b>
+                        <b><div id="gewinn"  style="margin-right: 30%; margin-left: 15%;"><h3>Was kann man gewinnen?</h3></div></b>
 
-                        <div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
+                        <div  style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
 
 Keine Sorge, mit leeren Händen geht am Ende keine Klasse nach Hause. Ganz im Gegenteil: Schon während des Schuljahres verfolgt ihr Etappenziele.
 Jede Klasse sieht in der Tabelle, wie viele Punkte sie noch von der nächsten Etappe entfernt ist. Habt ihr eine Etappe erreicht, so schicken
@@ -116,13 +116,14 @@ einen kleinen Preis samt Urkunde erhalten. Insgesamt aber gilt ganz klar: Dabei 
 Und auch wer am Tabellenende steht ist deshalb nicht "un-nachhaltig" beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit!
 Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
 </div><br>
-<b><div id="wie"  style="margin-right: 30%; margin-left: 80px;"><h3>Wie meldet man sich an?</h3></div></b>
+<b><div id="wie"  style="margin-right: 30%; margin-left: 15%;"><h3>Wie meldet man sich an?</h3></div></b>
 
-<div  style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F">
+<div  style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
     Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an weltfairsteher@chancengestalten.de und teilt uns den kreativen Klassennamen mit,
     den ihr euch selbst ausdenken könnt. Das kann so etwas wie "Die Sojapatronen" sein, oder "Warme Kürbissuppen".
     Wenn ihr uns verratet, von welcher Schule ihr kommt, würden wir uns natürlich sehr freuen - schon alleine deshalb,
-    weil wir euch eure Etappen-Überraschungen zusenden möchten.
+    weil wir euch eure Etappen-Überraschungen zusenden möchten. Deshalb solltet ihr uns auch mitteilen, wie viele Schüler_innen unter
+    Klassennamen teilnehmen.
     Keine Sorge: Eure Schuldaten werden aber nicht veröffentlicht.
     <br><br>
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
@@ -131,9 +132,9 @@ Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Be
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
 </div><br>
 
-                        <b><div id="wir" class="abstand" style="margin-right: 30%; margin-left: 80px;"><h3>Über uns</h3></div></b>
+                        <b><div id="wir" class="abstand" style="margin-right: 30%; margin-left: 15%;"><h3>Über uns</h3></div></b>
 
-                        <div style="margin-right: 30%; margin-left: 80px; text-align: justify; background-color: #1BAB3F;">
+                        <div style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Wir sind ein Team aus Mitgliedern des Max-Weber-Programms sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg. Ein Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>. Ob an der Planung, den Themen, der Website oder der Kommunikation - alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
 
 
