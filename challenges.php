@@ -24,6 +24,19 @@ WHERE c.id = :id");
         <br>
         <?php if($row->author) { ?>
             <div style="color: black;">Von:<b><?=e($row->author)?></b></div>
+        <?php
+        }
+        // pdfs
+        if(file_exists(getPDFPath($row->id, PUPIL_PDF))) {?>
+            <div>
+                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="color: black">Schüler PDF</a>
+            </div>
+        <?php
+        }
+        if(isLoggedIn() && file_exists(getPDFPath($row->id, TEACHER_PDF))) {?>
+            <div>
+                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black">Lehrer PDF</a>
+            </div>
         <?php } ?>
     </div>
     <?php if(isLoggedIn()) {?>

@@ -66,3 +66,16 @@ window.sendFile = (dest) ->
   window.callApi dest, fd, (errors) ->
     appendResult dest, errors
   return false
+
+window.downloadPDF = (challenge, type) ->
+  form = $("#downloadForm")
+  if !form.length
+    form = $ """
+      <form id='downloadForm' style='display:none' method='POST' action='api/download.php'>
+        <input type="hidden" name="challenge" value="#{challenge}"></input>
+        <input type="hidden" name="type" value="#{type}"></input>
+      </form>"""
+    form.appendTo "body"
+  form.find("[name='challenge']")[0].value = challenge
+  form.find("[name='type']")[0].value = type
+  form.submit()

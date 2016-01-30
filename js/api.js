@@ -97,4 +97,16 @@
     return false;
   };
 
+  window.downloadPDF = function(challenge, type) {
+    var form;
+    form = $("#downloadForm");
+    if (!form.length) {
+      form = $("<form id='downloadForm' style='display:none' method='POST' action='api/download.php'>\n  <input type=\"hidden\" name=\"challenge\" value=\"" + challenge + "\"></input>\n  <input type=\"hidden\" name=\"type\" value=\"" + type + "\"></input>\n</form>");
+      form.appendTo("body");
+    }
+    form.find("[name='challenge']")[0].value = challenge;
+    form.find("[name='type']")[0].value = type;
+    return form.submit();
+  };
+
 }).call(this);
