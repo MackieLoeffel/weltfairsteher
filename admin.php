@@ -107,6 +107,16 @@ include "include/header.php";
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 
+<form id="deleteChallenge" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: red;">Challenge löschen</b><br/>
+    <select name="challenge">
+        <?php foreach(fetchAll("SELECT id, name FROM challenge") as $challenge) {?>
+            <option value="<?=e($challenge->id)?>"><?=e($challenge->name)?></option>
+        <?php } ?>
+    </select><br/>
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
+</form>
+
 <div class="admin-box">
     <b>FUNKTIONIERT BIS HIER!</b>
 </div>
@@ -239,16 +249,6 @@ include "include/header.php";
     </input>
 </div>
 
-
-<form id="deleteChallenge" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: red;">Challenge löschen</b><br/>
-    <select name="challenge">
-        <?php foreach(fetchAll("SELECT id, name FROM challenge") as $challenge) {?>
-            <option value="<?=e($challenge->id)?>"><?=e($challenge->name)?></option>
-        <?php } ?>
-    </select><br/>
-    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
-</form>
 
 <div class="admin-box">
 
