@@ -117,7 +117,7 @@ include "include/header.php";
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 <div id="upload" class="admin-box">
-    <b style="color: black;">PDF Hochladen:</b>
+    <b style="color: black;">PDF hochladen:</b>
     <br>
     Challenge: <select name="challenge">
         <?php foreach(fetchAll("SELECT id, name FROM challenge") as $challenge) {?>
