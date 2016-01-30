@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 29, 2016 at 07:05 PM
+-- Generation Time: Jan 30, 2016 at 08:49 PM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -31,7 +31,7 @@ CREATE TABLE `challenge` (
   `name` varchar(100) COLLATE utf8_bin NOT NULL,
   `description` varchar(2000) COLLATE utf8_bin NOT NULL,
   `points` int(11) NOT NULL,
-  `category` enum('food','energy','culture','climate-change','production','selfmade') COLLATE utf8_bin NOT NULL,
+  `category` enum('food','energy','culture','climate-change','production','selfmade','water') COLLATE utf8_bin NOT NULL,
   `author` int(11) DEFAULT NULL,
   `author_time` datetime DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -52,7 +52,9 @@ INSERT INTO `challenge` (`id`, `name`, `description`, `points`, `category`, `aut
 (10, 'SelfMade-Essen3', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2015-12-25 12:26:00'),
 (11, 'SelfMade-Essen4', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2015-12-28 00:00:00'),
 (12, 'SelfMade-Essen5', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2016-01-07 06:00:00'),
-(13, 'SelfMade-Essen6', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 2, '2016-01-05 12:27:00');
+(13, 'SelfMade-Essen6', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 2, '2016-01-05 12:27:00'),
+(14, 'Wasser1', 'Wasser, Wasser, Wasser...', 1, 'water', NULL, '2016-01-30 20:42:40'),
+(15, 'Wasser2', 'Noch viel mehr Wasser!', 2, 'water', NULL, '2016-01-30 20:42:56');
 
 -- --------------------------------------------------------
 
@@ -85,7 +87,7 @@ CREATE TABLE `leckerwissen` (
   `id` int(11) NOT NULL,
   `link` text COLLATE utf8_bin NOT NULL,
   `title` text COLLATE utf8_bin NOT NULL,
-  `category` enum('food','energy','culture','climate-change','production','other') COLLATE utf8_bin NOT NULL,
+  `category` enum('food','energy','culture','climate-change','production','other','water') COLLATE utf8_bin NOT NULL,
   `type` enum('article','video','other') COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -236,7 +238,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `challenge`
 --
 ALTER TABLE `challenge`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `class`
 --
@@ -251,7 +253,7 @@ ALTER TABLE `leckerwissen`
 -- AUTO_INCREMENT for table `solved_challenge`
 --
 ALTER TABLE `solved_challenge`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `suggested`
 --
