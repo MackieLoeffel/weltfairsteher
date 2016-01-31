@@ -38,11 +38,15 @@ class LineChart
         backgroundColor: "#51DB74"
       title:
         text: "Punkte über Zeit"
+      tooltip:
+        dateTimeLabelFormats:
+          millisecond:"%A, %b %e"
       xAxis:
-        categories: [-numdays..0].map (i) ->
-          #days[new Date(Date.now() + i * milliPerDay).getUTCDay()]
-          date = new Date(Date.now() + i * milliPerDay)
-          return "#{date.getUTCDate()}.#{date.getUTCMonth()+1}."
+        type: "datetime"
+        #categories: [-numdays..0].map (i) ->
+        #  #days[new Date(Date.now() + i * milliPerDay).getUTCDay()]
+        #  date = new Date(Date.now() + i * milliPerDay)
+        #  return "#{date.getUTCDate()}.#{date.getUTCMonth()+1}."
       yAxis:
         title:
           text: "Punkte"
@@ -56,6 +60,8 @@ class LineChart
           name: c.name
           data: c.points
           color: normalColor
+          pointStart: new Date(Date.now() - numdays * milliPerDay).getTime()
+          pointInterval: milliPerDay
         }
     # console.log JSON.stringify chartConfig, true, 4
     @chart = new Highcharts.Chart(chartConfig);

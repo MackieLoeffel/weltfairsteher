@@ -54,7 +54,7 @@
   LineChart = (function() {
     function LineChart(canvas) {
       this.setClass = bind(this.setClass, this);
-      var c, chartConfig, days, j, milliPerDay, numdays, ref, results;
+      var c, chartConfig, days, milliPerDay, numdays;
       console.assert(classes.length > 0, "there must be classes!");
       numdays = classes[0].points.length - 1;
       milliPerDay = 24 * 3600 * 1000;
@@ -68,16 +68,13 @@
         title: {
           text: "Punkte über Zeit"
         },
+        tooltip: {
+          dateTimeLabelFormats: {
+            millisecond: "%A, %b %e"
+          }
+        },
         xAxis: {
-          categories: (function() {
-            results = [];
-            for (var j = ref = -numdays; ref <= 0 ? j <= 0 : j >= 0; ref <= 0 ? j++ : j--){ results.push(j); }
-            return results;
-          }).apply(this).map(function(i) {
-            var date;
-            date = new Date(Date.now() + i * milliPerDay);
-            return (date.getUTCDate()) + "." + (date.getUTCMonth() + 1) + ".";
-          })
+          type: "datetime"
         },
         yAxis: {
           title: {
@@ -91,20 +88,22 @@
           borderWidth: 0
         },
         series: (function() {
-          var k, len, ref1, results1;
-          ref1 = classes.sort(function(a, b) {
+          var j, len, ref, results;
+          ref = classes.sort(function(a, b) {
             return _.last(b.points) - _.last(a.points);
           });
-          results1 = [];
-          for (k = 0, len = ref1.length; k < len; k++) {
-            c = ref1[k];
-            results1.push({
+          results = [];
+          for (j = 0, len = ref.length; j < len; j++) {
+            c = ref[j];
+            results.push({
               name: c.name,
               data: c.points,
-              color: normalColor
+              color: normalColor,
+              pointStart: new Date(Date.now() - numdays * milliPerDay).getTime(),
+              pointInterval: milliPerDay
             });
           }
-          return results1;
+          return results;
         })()
       };
       this.chart = new Highcharts.Chart(chartConfig);
