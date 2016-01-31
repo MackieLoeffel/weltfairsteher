@@ -1,6 +1,15 @@
 normalColor = "rgba(0,70,224,0.6)"
 highlightColor = "rgba(255,0,85,1)"
 
+Highcharts.setOptions
+  lang:
+    months: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
+    shortMonths: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul",  "Aug", "Sep", "Okt", "Nov", "Dez"]
+    weekdays: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag']
+    resetZoom: "Zoom zurücksetzen"
+    resetZoomTitle: "Zoom auf 1:1 zurücksetzen"
+    decimalPoint: ","
+
 class BarChart
   constructor: (@classes, canvas) ->
     bar =
@@ -41,7 +50,7 @@ class LineChart
         text: "Punkte über Zeit"
       tooltip:
         dateTimeLabelFormats:
-          millisecond:"%A, %b %e"
+          millisecond:"%A, %e. %b"
       xAxis:
         type: "datetime"
         #categories: [-numdays..0].map (i) ->
