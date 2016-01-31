@@ -39,12 +39,22 @@ class LineChart
       title:
         text: "Punkte über Zeit"
       xAxis:
-        [-numdays..0].map (i) ->
-          #days[new Date(Date.now() + i * milliPerDay).getUTCDay()]
-          date = new Date(Date.now() + i * milliPerDay)
-          return "#{date.getUTCDate()}.#{date.getUTCMonth()+1}."
+        type: 'datetime',
+        labels: {
+            step: 12
+        },
+         dateTimeLabelFormats:
+          {
+                month: '%b \'%y',
+                year: '%Y'
+            },
+
+            allowDecimals: true,
+
+,
 
 
+ categories: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
 
 
       yAxis:
