@@ -52,32 +52,11 @@ class LineChart
         dateTimeLabelFormats:
           millisecond:"%A, %e. %b"
       xAxis:
-<<<<<<< HEAD
-        type: 'datetime',
-        labels: {
-            step: 12
-        },
-         dateTimeLabelFormats:
-          {
-                month: '%b \'%y',
-                year: '%Y'
-            },
-
-            allowDecimals: true,
-
-,
-
-
- categories: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
-
-
-=======
         type: "datetime"
         #categories: [-numdays..0].map (i) ->
         #  #days[new Date(Date.now() + i * milliPerDay).getUTCDay()]
         #  date = new Date(Date.now() + i * milliPerDay)
         #  return "#{date.getUTCDate()}.#{date.getUTCMonth()+1}."
->>>>>>> b99b4581f28060bee4326f195b2e11e87289c2fb
       yAxis:
         title:
           text: "Punkte"
