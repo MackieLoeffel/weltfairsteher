@@ -170,41 +170,6 @@ include "include/header.php";
 
 <div class="admin-box">
 
-    <b style="color: black;">Bestehende Lehrkraft bearbeiten:</b>
-    <br>
-    Lehrkraft: <select name="teacher">
-        <option>Lehrkraft A</option>
-        <option>Lehrkraft B</option>
-        <option>Lehrkraft C</option>
-    </select>
-    <br>
-    Neue E-Mail-Adresse: <input type="text" value="" size=40>
-    </input><br>
-    Neues Passwort: <input type="text" value="" size=20>
-
-    </input><br>
-    Passwort wiederholen: <input type="text" value="" size=20>
-
-    </input><br>  <br>
-    Klasse ändern: <select name="classlist">
-        <option>Aktuelle Klasse</option>
-        <option>Elektrokürbis</option>
-        <option>Mc Do Not</option>
-    </select>
-    <br>
-    Klasse hinzufügen: <select name="classlist2">
-        <option>Keine Auswahl</option>
-        <option>Elektrokürbis</option>
-        <option>Mc Do Not</option>
-    </select>
-
-    <input type="button" value="Gesamteingabe bestätigen" style="background-color: green; float: right;">
-
-    </input>
-</div>
-
-<div class="admin-box">
-
     <b style="color: black;">Neue Selfmade-Challenge hinzufügen:</b>
     <br>
     Titel: <input type="text" value="" size=25>
