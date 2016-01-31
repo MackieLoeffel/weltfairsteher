@@ -8,7 +8,13 @@ include "include/chart.php";
 <br>
 
 
-<table class=".abstand" style="margin-left: 7px; color= white; margin-right= 14px;" cellspacing="0" cellpadding="20"> <thead style="color: white;"><tr> <th  style="text-align: center">Rang</th> <th style="text-align: center">Klassenname</th> <th style="text-align: center">Challenges</th> <th style="text-align: center">Kreativität</th> <th style="text-align: center">Punkte</th> </tr></thead>
+<table class=".abstand" style="margin-left: 15%; color= white; margin-right: 15%; max-width: 70%;" cellspacing="0" cellpadding="20">
+  <thead style="color: white;"><tr> <th  style="text-align: center">
+    Rang</th> <th style="text-align: center">
+      Klassenname</th> <th style="text-align: center">
+        Challenges</th> <th style="text-align: center">
+          Kreativität</th> <th style="text-align: center">
+            Punkte</th> </tr></thead>
     <tbody>
         <?php
         array_push($categories, new Category("selfmade", ""));
@@ -31,8 +37,8 @@ WHERE c.category = :category AND sc.class = :class");
         <tr class="table-row class-<?= e($class["id"])?>">
             <td style="color: white; text-align: center"><b><?= e($rank) ?></b></td>
             <td style="text-align: center"><?= e($class["name"]) ?></td>
-            <td style="text-align: center">
-                <div class="table-box">
+            <td>
+                <div class="table-box" style="text-align: center; margin-left: 20px;">
                     <br>
                     <?php
                     $index = 0;
@@ -78,7 +84,7 @@ WHERE c.category = :category AND sc.class = :class");
   wird in Rot angezeigt.
 </div>
 -->
-<div id="chart" style="width: 50%; margin-top: 25px; margin-left: 25%; position: relative;"></canvas>
+<div id="chart" style="width: 70%; margin-top: 25px; margin-left: 15%; position: relative;"></canvas>
 <script type="text/javascript">
  $('document').ready(function() {
      var chart = new LineChart("chart");

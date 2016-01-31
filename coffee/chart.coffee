@@ -39,10 +39,14 @@ class LineChart
       title:
         text: "Punkte über Zeit"
       xAxis:
-        categories: [-numdays..0].map (i) ->
+        [-numdays..0].map (i) ->
           #days[new Date(Date.now() + i * milliPerDay).getUTCDay()]
           date = new Date(Date.now() + i * milliPerDay)
           return "#{date.getUTCDate()}.#{date.getUTCMonth()+1}."
+
+
+
+
       yAxis:
         title:
           text: "Punkte"
