@@ -31,10 +31,14 @@
         error = errors[i];
         list.append("<li>" + (escapeHtml(error)) + "</li>");
       }
-      return resultDiv.append(list);
+      resultDiv.append(list);
     } else {
-      return resultDiv.append("<b>Erfolgreich!</b>");
+      resultDiv.append("<b>Erfolgreich!</b>");
+      setTimeout((function() {
+        return resultDiv.hide();
+      }), 3000);
     }
+    resultDiv.show();
   };
 
   window.callApi = function(api, data, cb) {

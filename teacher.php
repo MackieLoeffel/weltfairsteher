@@ -62,6 +62,7 @@ GROUP BY c.id)");
 
 
 
+
 <!--Liniendiagramm
 
 <div>
@@ -95,9 +96,11 @@ padding: 40px;
 
            <ul> <span style="color: white; text-align: justify; margin-right: 8px;">
 <li>Auf dieser Seite können bestandene <b style="color: black;">Challenges eingetragen</b> werden.
-  Falls man für mehrere Klassen verantwortlich ist, muss die entsprechende Klasse
-  zunächst ausgewählt werden. (Achtung: Relevant hierfür ist nicht die Auswahl
-  in der schwarzen Menüleiste)
+  Falls sie für mehrere Klassen verantwortlich sind, muss die entsprechende Klasse
+  zunächst ausgewählt werden. Achtung: Relevant hierfür ist nicht die Auswahl
+  in der schwarzen Menüleiste. Alternativ können die Challenges auch direkt im Menüpunkt <i>Challenges</i>
+  als bestanden eingetragen werden, nachdem Sie sich als Lehrkraft angemeldet haben. Klicken Sie dazu einfach auf "Challenge abschließen"
+  unter der jeweiligen Challenge.
 </li><br>
 <li>Nachdem Sie sich als Lehrkraft eingeloggt haben, können Sie unter
   <i>Challenges</i> zu jeder Aufgabe eine <b style="color: black;">PDF-Datei downloaden</b>, in der
@@ -115,7 +118,12 @@ padding: 40px;
   entspricht, antworten wir Ihnen per Mail. Das Team hinter WeltFAIRsteher
   behält es sich vor, über die Entscheidung bezüglich der Akzeptanz einer
   Challenge selbständig zu verfügen.
-</li></span>
+</li><br>
+<li>Zudem können Sie links Ihre <b style="color: black;">persönlichen Zugangsdaten </b>(Passwort und E-Mail-Adresse) ändern.
+  Wenn sich die Größe einer von Ihnen betreuten Klasse ändert oder Sie anderweitige Fragen beziehungsweise Probleme haben,
+   schreiben Sie uns einfach eine E-Mail.
+</li>
+</span>
 
            </ul>
 
@@ -180,14 +188,39 @@ padding: 40px;
             </div>
         </form><br>
 </div>
-<div class=".abstand teacher-challenge-box"><br>
-    <section class="container">
-        <form action="logout.php" method="get">
+
+<div class=".abstand teacher-challenge-box"
+ style="position: absolute;
+margin-top: 735px;
+padding: 10px;
+ ">
+
+<form id="changeUser" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <h2 style="color: black;">Daten bearbeiten</h2>
+
+    <span style="font-size: 11px;">(Felder leer lassen, um sie nicht zu ändern)<br/></span>
+    <input type="hidden" name="user" value="<?= e($_SESSION["user"]) ?>">
+    Neue E-Mail-Adresse:  <input type="text" name="email" value="">
+    </input><br>
+
+    Neues Passwort:<input type="text" name="password" value=""> </input>
+    <br>
+    Passwort wiederholen:<input type="text" name="password2" value=""> </input>
+
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
+</form>
+</div>
+
+<div class=".abstand teacher-challenge-box" style="margin-top: 1010px; position: absolute;"><br>
+            <form action="logout.php" method="get">
             <input type="submit" value="Logout" style="background-color: #52150D; font-size: 11px;">
         </form>
 <br>
 </div>
-
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>

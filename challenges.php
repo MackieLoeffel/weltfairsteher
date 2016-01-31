@@ -41,7 +41,7 @@ WHERE c.id = :id");
     </div>
     <?php if(isLoggedIn()) {?>
         <div class="solve-link <?= $classes ?>" >
-            <a href="#" onclick="callApi('solveChallenge', {'class': selectedClass, 'challenge': <?= e($row->id)?>})" style="color: black"><br><b>Download:</b> Lehrkraft-PDF</a>
+            <a href="#" onclick="callApi('solveChallenge', {'class': selectedClass, 'challenge': <?= e($row->id)?>})" style="color: black">Challenge abschließen</a>
         </div>
     <?php } ?>
     <br><br>

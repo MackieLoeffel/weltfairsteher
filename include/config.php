@@ -21,9 +21,16 @@ if(!defined('CONFIG_PHP')) {
         new Category("water", "WASSER & RESSOURCEN"),
         new Category("culture", "SOZIALE VERANTWORTUNG"),
         new Category("climate-change", "KLIMAWANDEL"),
-        new Category("production", "WARENPRODUKTION & KONSUM"),
+        new Category("production", "PRODUKTION & KONSUM"),
         new Category("energy", "ENERGIE & MOBILITÄT"),
     ];
+    $leckerwissenTypes = [
+        ['name' => 'article', "desc" => "Artikel"],
+        ['name' => 'video', "desc" => "Videos"],
+        ['name' => 'other', "desc" => "Sonstiges"]
+    ];
+
+
 
     // from http://stackoverflow.com/questions/1243418/php-how-to-resolve-a-relative-url
     function rel2abs($rel, $base)

@@ -25,6 +25,23 @@ include "include/header.php";
     </input>
 </form>
 <br>
+<form id="changeUser" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: black;">Bestehenden Benutzer bearbeiten:</b><br>
+    (Felder leer lassen, um sie nicht zu ändern)<br/>
+    Benutzer: <select name="user">
+        <?php foreach(fetchAll("SELECT id, email FROM user") as $class) {?>
+            <option value="<?=e($class->id)?>"><?=e($class->email)?></option>
+        <?php } ?>
+    </select><br/>
+    Neue E-Mail-Adresse:  <input type="text" name="email" value=""> </input><br>
+
+    Neues Passwort:<input type="text" name="password" value=""> </input>
+    <br>
+    Neues Passwort wiederholen:<input type="text" name="password2" value=""> </input>
+
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
+</form>
+<br>
 
 <form id="addClass" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
     <b style="color: black;">Neue Klasse hinzufügen:</b><br>
@@ -73,7 +90,8 @@ include "include/header.php";
 <form id="deleteTeacher" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
     <b style="color: red;">Lehrer löschen</b><br/>
     <select name="teacher">
-        <?php foreach(fetchAll("SELECT id, email FROM user") as $class) {?>
+        <?php foreach(fetchAll("SELECT id, email FROM user WHERE role != :admin",
+                               ["admin" => ADMIN]) as $class) {?>
             <option value="<?=e($class->id)?>"><?=e($class->email)?></option>
         <?php } ?>
     </select><br/>
@@ -135,6 +153,16 @@ include "include/header.php";
     <br>
     <input type="submit" onclick="sendFile('upload')" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </div>
+
+<form id="deleteLeckerwissen" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: red;">Leckerwissen löschen</b><br/>
+    <select name="leckerwissen">
+        <?php foreach(fetchAll("SELECT id, title FROM leckerwissen") as $lw) {?>
+            <option value="<?=e($lw->id)?>"><?=e($lw->title)?></option>
+        <?php } ?>
+    </select><br/>
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
+</form>
 
 <div class="admin-box">
     <b>FUNKTIONIERT BIS HIER!</b>
@@ -306,46 +334,6 @@ include "include/header.php";
     <input type="button" value="Gesamteingabe bestätigen" style="background-color: green; float: right;">
 
     </input>
-</div>
-
-
-<form id="deleteLeckerwissen" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: red;">Leckerwissen löschen</b><br/>
-    <select name="leckerwissen">
-        <?php foreach(fetchAll("SELECT id, name FROM leckerwissen") as $leckerwissen) {?>
-            <option value="<?=e($leckerwissen->id)?>"><?=e($leckerwissen->name)?></option>
-        <?php } ?>
-    </select><br/>
-    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
-</form>
-
-
-<div class="admin-box">
-    <b style="color: black;">Admin bearbeiten:</b>
-    <br>
-    Angemeldet als: ---
-    <br>
-    Neue E-Mail-Adresse: <input type="text" name="adminmail">
-    </input>
-    <br>
-    Neues Passwort: <input type="text" name="adminpw">
-    </input>
-    <br>
-    Passwort wiederholen: <input type="text" name="adminpw">
-    </input>
-    <br>
-    <input type="button" value="Bestätigen" style="background-color: green; float: right;">
-
-    </input>
-</div>
-
-
-
-<div style="margin-left: 15%; margin-bottom: 30px; margin-right: 20px;
-            color: white; font-size: 16px; width: 50%; height: auto; position: relative;
-            float: left; background-color: #1BAB3F">
-    <a href="register.php" style="color: blue;">Neuen Benutzer registrieren</a>
-
 </div>
 
 <br>

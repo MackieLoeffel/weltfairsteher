@@ -7,6 +7,17 @@
 
   highlightColor = "rgba(255,0,85,1)";
 
+  Highcharts.setOptions({
+    lang: {
+      months: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+      shortMonths: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
+      weekdays: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
+      resetZoom: "Zoom zurücksetzen",
+      resetZoomTitle: "Zoom auf 1:1 zurücksetzen",
+      decimalPoint: ","
+    }
+  });
+
   BarChart = (function() {
     function BarChart(classes1, canvas) {
       var bar, c;
@@ -54,7 +65,7 @@
   LineChart = (function() {
     function LineChart(canvas) {
       this.setClass = bind(this.setClass, this);
-      var c, chartConfig, days, j, milliPerDay, numdays, ref, results;
+      var c, chartConfig, days, milliPerDay, numdays;
       console.assert(classes.length > 0, "there must be classes!");
       numdays = classes[0].points.length - 1;
       milliPerDay = 24 * 3600 * 1000;
@@ -63,21 +74,19 @@
         chart: {
           type: "line",
           renderTo: canvas,
-          backgroundColor: "#51DB74"
+          backgroundColor: "#51DB74",
+          zoomType: "x"
         },
         title: {
           text: "Punkte über Zeit"
         },
+        tooltip: {
+          dateTimeLabelFormats: {
+            millisecond: "%A, %e. %b"
+          }
+        },
         xAxis: {
-          categories: (function() {
-            results = [];
-            for (var j = ref = -numdays; ref <= 0 ? j <= 0 : j >= 0; ref <= 0 ? j++ : j--){ results.push(j); }
-            return results;
-          }).apply(this).map(function(i) {
-            var date;
-            date = new Date(Date.now() + i * milliPerDay);
-            return (date.getUTCDate()) + "." + (date.getUTCMonth() + 1) + ".";
-          })
+          type: "datetime"
         },
         yAxis: {
           title: {
@@ -91,20 +100,22 @@
           borderWidth: 0
         },
         series: (function() {
-          var k, len, ref1, results1;
-          ref1 = classes.sort(function(a, b) {
+          var j, len, ref, results;
+          ref = classes.sort(function(a, b) {
             return _.last(b.points) - _.last(a.points);
           });
-          results1 = [];
-          for (k = 0, len = ref1.length; k < len; k++) {
-            c = ref1[k];
-            results1.push({
+          results = [];
+          for (j = 0, len = ref.length; j < len; j++) {
+            c = ref[j];
+            results.push({
               name: c.name,
               data: c.points,
-              color: normalColor
+              color: normalColor,
+              pointStart: new Date(Date.now() - numdays * milliPerDay).getTime(),
+              pointInterval: milliPerDay
             });
           }
-          return results1;
+          return results;
         })()
       };
       this.chart = new Highcharts.Chart(chartConfig);

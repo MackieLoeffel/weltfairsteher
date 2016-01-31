@@ -1,6 +1,15 @@
 normalColor = "rgba(0,70,224,0.6)"
 highlightColor = "rgba(255,0,85,1)"
 
+Highcharts.setOptions
+  lang:
+    months: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
+    shortMonths: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul",  "Aug", "Sep", "Okt", "Nov", "Dez"]
+    weekdays: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag']
+    resetZoom: "Zoom zurücksetzen"
+    resetZoomTitle: "Zoom auf 1:1 zurücksetzen"
+    decimalPoint: ","
+
 class BarChart
   constructor: (@classes, canvas) ->
     bar =
@@ -36,9 +45,14 @@ class LineChart
         type: "line"
         renderTo: canvas
         backgroundColor: "#51DB74"
+        zoomType: "x"
       title:
         text: "Punkte über Zeit"
+      tooltip:
+        dateTimeLabelFormats:
+          millisecond:"%A, %e. %b"
       xAxis:
+<<<<<<< HEAD
         type: 'datetime',
         labels: {
             step: 12
@@ -57,6 +71,13 @@ class LineChart
  categories: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
 
 
+=======
+        type: "datetime"
+        #categories: [-numdays..0].map (i) ->
+        #  #days[new Date(Date.now() + i * milliPerDay).getUTCDay()]
+        #  date = new Date(Date.now() + i * milliPerDay)
+        #  return "#{date.getUTCDate()}.#{date.getUTCMonth()+1}."
+>>>>>>> b99b4581f28060bee4326f195b2e11e87289c2fb
       yAxis:
         title:
           text: "Punkte"
@@ -70,6 +91,8 @@ class LineChart
           name: c.name
           data: c.points
           color: normalColor
+          pointStart: new Date(Date.now() - numdays * milliPerDay).getTime()
+          pointInterval: milliPerDay
         }
     # console.log JSON.stringify chartConfig, true, 4
     @chart = new Highcharts.Chart(chartConfig);
