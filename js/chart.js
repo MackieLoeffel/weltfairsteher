@@ -63,7 +63,8 @@
         chart: {
           type: "line",
           renderTo: canvas,
-          backgroundColor: "#51DB74"
+          backgroundColor: "#51DB74",
+          zoomType: "x"
         },
         title: {
           text: "Punkte über Zeit"
