@@ -145,10 +145,10 @@ include "include/header.php";
     <br>
     PDF: <input type="file" name="file" accept="text/*.pdf"> </input>
     <br>
-    <label for="teacher-pdf"> Lehrer-PDF </label>
+    <label for="teacher-pdf"> Hinweise für Lehrkraft [PDF] </label>
     <input id="teacher-pdf" type="radio" name="type" value="<?= e(TEACHER_PDF) ?>"></input>
     <br/>
-    <label for="pupil-pdf"> Schüler-PDF </label>
+    <label for="pupil-pdf"> Materialdatei für Schüler_innen [PDF] </label>
     <input id="pupil-pdf" type="radio" name="type" value="<?= e(PUPIL_PDF) ?>"></input>
     <br>
     <input type="submit" onclick="sendFile('upload')" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
@@ -230,11 +230,11 @@ include "include/header.php";
     Kurzbeschreibung: <textarea rows="7">
     </textarea>
     <br><br>
-    Schüler-PDF hinzufügen: <input type="file" name="schuelerpdf" accept="text/*.pdf">
+    Materialdatei für Schüler_innen [PDF] hinzufügen: <input type="file" name="schuelerpdf" accept="text/*.pdf">
     </input>
 
     <br>
-    Lehrer-PDF hinzufügen:<input type="file" name="schuelerpdf" accept="text/*.pdf">
+  Hinweise für Lehrkraft [PDF] hinzufügen:<input type="file" name="schuelerpdf" accept="text/*.pdf">
     </input>
 
     <br><br>

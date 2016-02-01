@@ -29,19 +29,19 @@ WHERE c.id = :id");
         // pdfs
         if(file_exists(getPDFPath($row->id, PUPIL_PDF))) {?>
             <div>
-                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="color: black">Schüler PDF</a>
+                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="color: black"><b>Download:</b> Materialdatei [PDF]</a>
             </div>
         <?php
         }
         if(isLoggedIn() && file_exists(getPDFPath($row->id, TEACHER_PDF))) {?>
             <div>
-                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black">Lehrkraft-PDF</a>
+                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black"><b>Download:</b> Hinweise für Lehrkraft [PDF]</a>
             </div>
         <?php } ?>
     </div>
     <?php if(isLoggedIn()) {?>
         <div class="solve-link <?= $classes ?>" >
-            <a href="#" onclick="callApi('solveChallenge', {'class': selectedClass, 'challenge': <?= e($row->id)?>})" style="color: black">Challenge abschließen</a>
+            <a href="#" onclick="callApi('solveChallenge', {'class': selectedClass, 'challenge': <?= e($row->id)?>})" style="color: black">Challenge abschließen!</a>
         </div>
     <?php } ?>
     <br><br>
