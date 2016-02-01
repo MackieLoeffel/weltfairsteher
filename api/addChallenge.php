@@ -15,7 +15,7 @@ apiCheck(strlen($desc) !== 0, "Beschreibung darf nicht leer sein");
 apiCheck(isAdmin() || dbExists("SELECT id FROM class WHERE id = :id AND teacher = :teacher", ["id" => $class, "teacher" => $user]), "Keine Berechtigung für diese Klasse");
 apiCheck(!$suggested || dbExists("SELECT id FROM class WHERE id = :id", ["id" => $class]), "Ungültige Klasse");
 apiCheck(isAdmin() || $suggested, "Keine Berechtigung");
-apiCheck($suggested || array_filter($categories, function($cat) use ($category) { return $cat->name === $category; }), "Ungültige Kategorie");
+apiCheck($suggested || $category === "selfmade" || array_filter($categories, function($cat) use ($category) { return $cat->name === $category; }), "Ungültige Kategorie");
 
 apiAction(function() use ($title, $desc, $class, $points, $suggested, $category) {
     if($suggested) {
