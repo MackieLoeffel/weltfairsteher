@@ -168,7 +168,7 @@ padding: 40px;
             </div>
             <br>
             <div style="color: white; margin-left: 15%; margin-right: 14px;">
-                <textarea cols="50" row=8" name="desc">Challenge-Beschreibung</textarea>
+                <textarea cols="50" row=8" name="description">Challenge-Beschreibung</textarea>
 
                 <br>
 

@@ -3,7 +3,7 @@ include __DIR__."/include.php";
 check_access(TEACHER);
 
 list($class, $title, $desc, $points, $suggested, $category) = apiCheckParams(
-    "class", "title", "desc", "points", "suggested", "category");
+    "class", "title", "description", "points", "suggested", "category");
 $user = $_SESSION["user"];
 $suggested = !!$suggested;
 $title = trim($title);

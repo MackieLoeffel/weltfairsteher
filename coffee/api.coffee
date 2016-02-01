@@ -39,9 +39,10 @@ window.callApi = (api, data, cb) ->
   $.post request
   return false
 
-window.sendForm = (form) ->
+window.sendForm = (form, {api, cb, data} = {}) ->
   dest = $(form).attr("id")
-  window.callApi dest, $("##{dest}").serialize(), (errors) ->
+  window.callApi (api ? dest), (data ? $("##{dest}").serialize()), (errors) ->
+    cb? errors
     appendResult(dest, errors)
   return false
 

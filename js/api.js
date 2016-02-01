@@ -60,10 +60,14 @@
     return false;
   };
 
-  window.sendForm = function(form) {
-    var dest;
+  window.sendForm = function(form, arg) {
+    var api, cb, data, dest, ref;
+    ref = arg != null ? arg : {}, api = ref.api, cb = ref.cb, data = ref.data;
     dest = $(form).attr("id");
-    window.callApi(dest, $("#" + dest).serialize(), function(errors) {
+    window.callApi(api != null ? api : dest, data != null ? data : $("#" + dest).serialize(), function(errors) {
+      if (typeof cb === "function") {
+        cb(errors);
+      }
       return appendResult(dest, errors);
     });
     return false;

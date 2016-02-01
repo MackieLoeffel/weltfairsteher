@@ -4,6 +4,7 @@ include "include/access.php";
 check_access(ADMIN);
 include "include/header.php";
 ?>
+<script src="js/admin.js"></script>
 <br>
 
 
@@ -120,12 +121,50 @@ include "include/header.php";
     </select>
 
     <br>
-    Kurzbeschreibung: <textarea rows="7" name="desc"> </textarea>
+    Kurzbeschreibung: <textarea rows="7" name="description"> </textarea>
     <br>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 
+<form id="acceptSelfmade" class="admin-box" action="javascript:void(0);" onsubmit="acceptSelfmade()">
+    <input type="hidden" name="class" value="-1">
+    <input type="hidden" name="suggested" value="">
+    <input type="hidden" name="category" value="selfmade">
+    <b style="color: black;">Selfmade-Challenge übernehmen:</b>
+    <br>
+    <div style="float: left">
+        <select id="selfmadeSelect" size="10">
+            <?php
+            $suggestedChallenges = [];
+            foreach(fetchAll("SELECT s.id, s.title, s.description, s.points, s.class, c.name FROM suggested s JOIN class c ON c.id = s.class") as $c) {
+                $suggestedChallenges[$c->id] = $c;?>
+                <option value="<?=e($c->id)?>"> <?=e($c->title)?></option>
+            <?php } ?>
+        </select>
+        <script> var suggestedChallenges = <?= json_encode($suggestedChallenges) ?>; </script>
+    </div>
+    <div style="float: right">
+        Von: <b id="class-name"> </b> <br/>
+        Titel: <input type="text" value="" size="25" name="title"> </input>
+        <br>
+        Punkte:
+        <select name="points" size="1">
+            <?php for($i = 1; $i <= 9; $i++) {?>
+                <option value="<?= $i?>"><?= $i?></option>
+            <?php } ?>
+        </select>
+
+        <br>
+        Kurzbeschreibung: <textarea rows="7" name="description"> </textarea>
+        <br>
+        <input type="button" value="Challenge verwerfen" style="background-color: #52150D; float: right"
+               onclick="sendForm('#acceptSelfmade', {'api': 'deleteChallenge', 'data': {'suggested': '1', 'challenge': $('#selfmadeSelect').val()}})"/>
+        <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
+    </div>
+</form>
+
 <form id="deleteChallenge" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <input type="hidden" name="suggested" value="" />
     <b style="color: red;">Challenge löschen</b><br/>
     <select name="challenge">
         <?php foreach(fetchAll("SELECT id, name FROM challenge") as $challenge) {?>
