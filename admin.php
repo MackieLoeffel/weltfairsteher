@@ -244,39 +244,6 @@ include "include/header.php";
 
 <div class="admin-box">
 
-    <b style="color: black;">Neue Selfmade-Challenge hinzufügen:</b>
-    <br>
-    Titel: <input type="text" value="" size=25>
-    </input>
-    <br>
-    Kategorie: <select name="categories">
-        <option>Ernährung</option>
-        <option>Wasser & Energie</option>
-        <option>Interkulturelle Verständigung</option>
-        <option>Klimawandel</option>
-        <option>Warenproduktion</option>
-        <option>Sonstiges</option>
-    </select>
-    <br>
-    Punkte: <input type="text" value="" size=5>
-    </input>
-    <br>
-    Kurzbeschreibung: <textarea rows="7">
-    </textarea>
-    <br>
-    Verantwortliche Klasse: <select name="classes">
-        <option>Die Sojapatronen</option>
-        <option>Elektrokürbis</option>
-        <option>Mc Do Not</option>
-    </select>
-    <br>
-    <input type="button" value="Gesamteingabe bestätigen" style="background-color: green; float: right;">
-
-    </input>
-</div>
-
-<div class="admin-box">
-
     <b style="color: black;">Bestehende Challenge bearbeiten:</b>
     <br>
     Challenge: <select name="challenges">
