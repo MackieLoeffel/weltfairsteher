@@ -134,6 +134,7 @@ include "include/header.php";
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
+
 <div id="upload" class="admin-box">
     <b style="color: black;">PDF hochladen:</b>
     <br>
@@ -153,6 +154,40 @@ include "include/header.php";
     <br>
     <input type="submit" onclick="sendFile('upload')" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </div>
+
+<form id="changeLeckerwissen" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: black;">Leckerwissen bearbeiten:</b>
+    <br>
+    Leckerwissen:
+    <select name="lw">
+        <?php foreach(fetchAll("SELECT id, title FROM leckerwissen") as $lw) {?>
+            <option value="<?=e($lw->id)?>"><?=e($lw->title)?></option>
+        <?php } ?>
+    </select><br/>
+    <br>
+    Bezeichnung: <input type="text" name="title" value="" size=25>
+    </input>
+    <br>
+    Link: <input type="url" name="link" value="">
+    </input>
+    <br><br>
+    Kategorie: <select name="category">
+        <?php foreach($categories as $cat) {?>
+            <option value="<?=e($cat->name)?>"><?= e($cat->title) ?></option>
+        <?php } ?>
+    </select>
+    <br>
+    Art: <select name="type">
+        <?php foreach($leckerwissenTypes as $t) {?>
+            <option value="<?=e($t["name"])?>"><?= e($t["desc"]) ?></option>
+        <?php }?>
+    </select>
+
+    <br>
+    <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;">
+
+    </input>
+</form>
 
 <form id="deleteLeckerwissen" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
     <b style="color: red;">Leckerwissen löschen</b><br/>
@@ -263,47 +298,6 @@ include "include/header.php";
 
 
 <div class="admin-box">
-
-    <b style="color: black;">Leckerwissen bearbeiten:</b>
-    <br>
-    Leckerwissen: <select name="leckerwissen">
-        <option>Leckerwissen 1</option>
-        <option>Leckerissen 2</option>
-        <option>Leckerwissen 3</option>
-    </select>
-    <br>
-    Bezeichnung: <input type="text" value="" size=25>
-    </input>
-    <br>
-    Link: <input type="text" value="">
-    </input>
-    <br><br>
-    Kategorie: <select name="categories">
-        <option>Keine Auswahl</option>
-        <option>Ernährung</option>
-        <option>Wasser & Energie</option>
-        <option>Interkulturelle Verständigung</option>
-        <option>Klimawandel</option>
-        <option>Warenproduktion</option>
-        <option>Weiteres</option>
-    </select>
-    <br>
-    Art: <select name="art">
-        <option>Keine Auswahl</option>
-        <option>Artikel</option>
-        <option>Video</option>
-        <option>Sonstiges</option>
-    </select>
-
-    <br>
-    <input type="button" value="Gesamteingabe bestätigen" style="background-color: green; float: right;">
-
-    </input>
-</div>
-
-<br>
-
-<div>
     <form action="logout.php" method="get">
         <input type="submit" value="Logout" style="background-color: #52150D; font-size: 11px; margin-top: 25px; color: white; margin-left: 5px;
                                                    width: auto; height: auto;
