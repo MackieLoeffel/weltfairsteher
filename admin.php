@@ -157,7 +157,7 @@ include "include/header.php";
         <br>
         Kurzbeschreibung: <textarea rows="7" name="description"> </textarea>
         <br>
-        <input type="button" value="Challenge verwerfen" style="background-color: #52150D; float: right"
+        <input type="button" value="Selfmade-Challenge verwerfen" style="background-color: #52150D; float: right"
                onclick="sendForm('#acceptSelfmade', {'api': 'deleteChallenge', 'data': {'suggested': '1', 'challenge': $('#selfmadeSelect').val()}})"/>
         <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
     </div>
