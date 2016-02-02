@@ -10,7 +10,7 @@ include "include/header.php";
 
 <br>
 
-<form id="register" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+<form id="addTeacher" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
     <b style="color: black;">Neue Lehrkraft hinzufügen:</b><br>
     E-Mail-Adresse:  <input type="text" name="email" value="">
     </input><br>
