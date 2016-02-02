@@ -26,7 +26,8 @@
       prop = ref[i];
       $("#acceptSelfmade >> [name='" + prop + "']").val(suggestedChallenges[id][prop]);
     }
-    return $("#class-name").text(suggestedChallenges[id].name);
+    $("#class-name").text(suggestedChallenges[id].name);
+    return $("#teacher-email").text(suggestedChallenges[id].email);
   };
 
   $('document').ready(function() {

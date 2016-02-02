@@ -169,7 +169,7 @@ include "include/header.php";
         <select id="selfmadeSelect" size="10">
             <?php
             $suggestedChallenges = [];
-            foreach(fetchAll("SELECT s.id, s.title, s.description, s.points, s.class, c.name FROM suggested s JOIN class c ON c.id = s.class") as $c) {
+            foreach(fetchAll("SELECT s.id, s.title, s.description, s.points, s.class, c.name, u.email FROM suggested s JOIN class c ON c.id = s.class JOIN user u ON u.id = c.teacher ") as $c) {
                 $suggestedChallenges[$c->id] = $c;?>
                 <option value="<?=e($c->id)?>"> <?=e($c->title)?></option>
             <?php } ?>
@@ -178,6 +178,7 @@ include "include/header.php";
     </div>
     <div style="float: right">
         Von: <b id="class-name"> </b> <br/>
+        Lehrkraft: <b id="teacher-email"> </b> <br/>
         Titel: <input type="text" value="" size="25" name="title"> </input>
         <br>
         Punkte:

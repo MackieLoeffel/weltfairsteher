@@ -11,6 +11,7 @@ selectSelfmade = ->
   for prop in ["title", "points", "class", "description"]
     $("#acceptSelfmade >> [name='#{prop}']").val(suggestedChallenges[id][prop])
   $("#class-name").text suggestedChallenges[id].name
+  $("#teacher-email").text suggestedChallenges[id].email
 
 $('document').ready ->
   first = null
