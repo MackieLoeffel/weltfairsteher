@@ -126,6 +126,39 @@ include "include/header.php";
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 
+<form id="changeChallenge" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: black;">Challenge bearbeiten:</b><br/>
+    (Felder leer lassen, um sie nicht zu ändern)<br/>
+    Challenge: <select name="challenge">
+        <?php foreach(fetchAll("SELECT id, name FROM challenge") as $c) {?>
+            <option value="<?=e($c->id)?>"><?=e($c->name)?></option>
+        <?php } ?>
+    </select><br/>
+    <br>
+    Titel: <input type="text" value="" size=25 name="name">
+    </input>
+    <br>
+    Kategorie: <select name="category">
+        <option value="">Aktuelle Kategorie</option>
+        <?php foreach($categories as $cat) {?>
+            <option value="<?=e($cat->name)?>"><?= e($cat->title) ?></option>
+        <?php } ?>
+    </select>
+    <br>
+    Punkte:
+    <select name="points" size="1">
+        <option value=""> Aktuelle Punktzahl </option>
+        <?php for($i = 1; $i <= 9; $i++) {?>
+            <option value="<?= $i?>"><?= $i?></option>
+        <?php } ?>
+    </select>
+
+    <br>
+    Kurzbeschreibung: <textarea rows="7" name="description"> </textarea>
+    <br>
+    <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
+</form>
+
 <form id="acceptSelfmade" class="admin-box" action="javascript:void(0);" onsubmit="acceptSelfmade()">
     <input type="hidden" name="class" value="-1">
     <input type="hidden" name="suggested" value="">
@@ -237,71 +270,6 @@ include "include/header.php";
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-
-<div class="admin-box">
-    <b>FUNKTIONIERT BIS HIER!</b>
-</div>
-
-<div class="admin-box">
-
-    <b style="color: black;">Bestehende Challenge bearbeiten:</b>
-    <br>
-    Challenge: <select name="challenges">
-        <option>Bio-Frühstück</option>
-        <option>Challenge 2</option>
-        <option>Challenge 3</option>
-    </select>
-    <br>
-    Titel: <input type="text" value="" size=25>
-    </input>
-    <br><br>
-    Kategorie: <select name="categories">
-        <option>Keine Auswahl</option>
-        <option>Ernährung</option>
-        <option>Wasser & Energie</option>
-        <option>Interkulturelle Verständigung</option>
-        <option>Klimawandel</option>
-        <option>Warenproduktion</option>
-        <option>Sonstiges</option>
-    </select>
-    <br>
-    Punkte: <input type="text" value="" size=5>
-    </input>
-    <br>
-    Kurzbeschreibung: <textarea rows="7">
-    </textarea>
-    <br><br>
-    Materialdatei für Schüler_innen [PDF] hinzufügen: <input type="file" name="schuelerpdf" accept="text/*.pdf">
-    </input>
-
-    <br>
-  Hinweise für Lehrkraft [PDF] hinzufügen:<input type="file" name="schuelerpdf" accept="text/*.pdf">
-    </input>
-
-    <br><br>
-    <b>Selfmade-Challenge:</b>
-    <br>
-
-    <input type="radio" value="selfmade" name="selfmade" >Ja
-    </input>
-    <br>
-    <input type="radio" value="noselfmade" name="selfmade" checked="checked">Nein
-    </input>
-    <br><br>
-    Verantwortliche Klasse:
-    <select name="classes">
-        <option>Keine Auswahl</option>
-        <option>Die Sojapatronen</option>
-        <option>Elektrokürbis</option>
-        <option>Mc Do Not</option>
-    </select>
-
-    <br>
-    <input type="button" value="Gesamteingabe bestätigen" style="background-color: green; float: right;">
-
-    </input>
-</div>
-
 
 <div class="admin-box">
     <form action="logout.php" method="get">
