@@ -147,11 +147,8 @@ font-size: 13px;
     color: white
 }
 
-.etappe-box {
-border:1px solid;
+.milestone-box {
 border-color: white;
-font: white;
-background-color: #0F9C2E;
 width: 20px;
 height: auto;
 border-radius:20px;
@@ -163,6 +160,7 @@ margin-bottom: 0px;
 margin-left: 0px;
 margin-right: 0px;
 z-index: 4;
+color: #F0F022;
 }
 
 .table-box {

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2016 at 10:47 PM
+-- Generation Time: Feb 02, 2016 at 04:31 PM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -54,7 +54,7 @@ INSERT INTO `challenge` (`id`, `name`, `description`, `points`, `category`, `aut
 (12, 'SelfMade-Essen5', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2016-01-07 06:00:00'),
 (13, 'SelfMade-Essen6', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 2, '2016-01-05 12:27:00'),
 (14, 'Wasser1', 'Wasser, Wasser, Wasser...', 1, 'water', NULL, '2016-01-30 20:42:40'),
-(15, 'Wasser2', 'Noch viel mehr Wasser!', 2, 'water', NULL, '2016-01-30 20:42:56');
+(15, 'Wasser2', 'gaaaanz viel Wasser!', 2, 'water', NULL, '2016-01-30 20:42:56');
 
 -- --------------------------------------------------------
 
@@ -121,6 +121,26 @@ INSERT INTO `leckerwissen` (`id`, `link`, `title`, `category`, `type`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `milestone`
+--
+
+CREATE TABLE `milestone` (
+  `id` int(11) NOT NULL,
+  `points` int(11) NOT NULL,
+  `description` text COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `milestone`
+--
+
+INSERT INTO `milestone` (`id`, `points`, `description`) VALUES
+(1, 10, 'Schon nicht schlecht'),
+(2, 20, 'ziemlich krass');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `solved_challenge`
 --
 
@@ -139,7 +159,8 @@ INSERT INTO `solved_challenge` (`id`, `at`, `class`, `challenge`) VALUES
 (1, '2015-12-25 07:28:34', 1, 1),
 (2, '2015-12-24 00:00:00', 1, 11),
 (3, '2015-12-23 20:00:00', 2, 5),
-(4, '2015-12-24 16:00:00', 3, 7);
+(4, '2015-12-24 16:00:00', 3, 7),
+(5, '2016-01-31 13:19:45', 2, 15);
 
 -- --------------------------------------------------------
 
@@ -160,7 +181,7 @@ CREATE TABLE `suggested` (
 --
 
 INSERT INTO `suggested` (`id`, `title`, `description`, `class`, `points`) VALUES
-(2, 'dd', 'Challenge-Beschreibung', 1, 6);
+(3, 'Hallo!', 'Challenge-Beschreibung', 2, 7);
 
 -- --------------------------------------------------------
 
@@ -181,7 +202,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `password`, `email`, `role`) VALUES
 (3, '$2y$10$u6F8pbGlu8.VQ2lcBwH4XeYKp1tsO.81Tj511n91Nat6.R.tsPZOO', 'a@b.de', 2),
-(4, '$2y$10$VD8rg18PgyjWI8kuluGUJucrPrK85DtNGgpjW3IYVda1mjEPt765K', 'teacher@test.de', 1);
+(4, '$2y$10$CenkCYnbeP01VK5PMheAnuWC6HaqoukjkldCHCqkzSVmfCj7Av8UG', 'teacher@test.de', 1);
 
 --
 -- Indexes for dumped tables
@@ -206,6 +227,12 @@ ALTER TABLE `class`
 -- Indexes for table `leckerwissen`
 --
 ALTER TABLE `leckerwissen`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `milestone`
+--
+ALTER TABLE `milestone`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -244,27 +271,32 @@ ALTER TABLE `challenge`
 -- AUTO_INCREMENT for table `class`
 --
 ALTER TABLE `class`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `leckerwissen`
 --
 ALTER TABLE `leckerwissen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+--
+-- AUTO_INCREMENT for table `milestone`
+--
+ALTER TABLE `milestone`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `solved_challenge`
 --
 ALTER TABLE `solved_challenge`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `suggested`
 --
 ALTER TABLE `suggested`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- Constraints for dumped tables
 --

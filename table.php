@@ -14,7 +14,9 @@ include "include/chart.php";
       Klassenname</th> <th style="text-align: center">
         Challenges</th> <th style="text-align: center">
           Kreativität</th> <th style="text-align: center">
-            Punkte</th> </tr></thead>
+       Punkte</th>
+      <th style="text-align: center">Nächste Etappe</th>
+  </tr></thead>
     <tbody>
         <?php
         array_push($categories, new Category("selfmade", ""));
@@ -53,14 +55,16 @@ WHERE c.category = :category AND sc.class = :class");
                   <?php $index += 1; } ?>
                 </div>
 
-                    <!--Anzahl bestandener Challenges pro Kategorie--></td>
+            </td>
             <td style="text-align: center"><?= e($class["creativity"]) ?></td>
-          <!-- PUNKTE BIS ZUR NÄCHSTEN ETAPPE (wie könnte man das kürzer umschreiben? "nächste Etappe in"? "Etappenabstand"?)
-          <td  class="etappe-box" style="color: white; background-color: #3A44C9; width: 20px; height: auto;
-    border-radius:20px; font-size: 16px; font-width: bold; text-align: center;"><?= e($class["etappe"])?></td>
-
-          -->
-            <td style="text-align: center"><b><?= e(getCurrentPoints($class))?></b></td> </tr>
+            <td style="text-align: center"><b><?= e(getCurrentPoints($class))?></b></td>
+            <td  class="milestone-box" >
+                <?php
+                // min defaults to 0, if there is no row
+                $mstone = fetch("SELECT MIN(points) as p FROM milestone WHERE points > :points", ["points" => getCurrentPoints($class)])->p - getCurrentPoints($class);
+                echo e($mstone > 0 ? $mstone : "---");
+                ?></td>
+        </tr>
         <?php } ?>
     </tbody>
 </table>

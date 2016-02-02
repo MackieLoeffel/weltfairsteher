@@ -17,6 +17,8 @@ class LineChart
     numdays = classes[0].points.length - 1
     milliPerDay = 24 * 3600 * 1000
     days = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"]
+    pointStart = Date.now() - numdays * milliPerDay
+    maxPoints = _.max classes.map (c) -> _.last c.points
 
     chartConfig =
       chart:
@@ -43,14 +45,25 @@ class LineChart
         align: "right"
         verticalAlign: "middle"
         borderWidth: 0
-      series: for c in classes.sort((a, b) -> _.last(b.points) - _.last(a.points))
+      series: (for c in classes.sort((a, b) -> _.last(b.points) - _.last(a.points))
         {
           name: c.name
           data: c.points
           color: normalColor
-          pointStart: new Date(Date.now() - numdays * milliPerDay).getTime()
+          pointStart: pointStart
           pointInterval: milliPerDay
-        }
+        }).concat (for ms, i in milestones
+          break if i > 0 && milestones[i-1].points > maxPoints
+          {
+            data: [ms.points, ms.points]
+            color: "#F0F022"
+            dashStyle: "Dash"
+            showInLegend: false
+            pointStart: pointStart
+            pointInterval: Date.now() - pointStart
+            marker:
+              enabled: false
+          })
     # console.log JSON.stringify chartConfig, true, 4
     @chart = new Highcharts.Chart(chartConfig);
     onClassSelectChanged @setClass

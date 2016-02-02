@@ -37,9 +37,13 @@ ORDER BY at
                           "creativity" => $creativity,
                           "id" => $class->id]);
 }
+
+$milestones = fetchAll("SELECT points FROM milestone ORDER BY points ASC");
+
 ?>
 <script type="text/javascript">
- classes = <?= json_encode($classes) ?>;
+ var classes = <?= json_encode($classes) ?>;
+ var milestones = <?= json_encode($milestones) ?>;
 </script>
 <script src="http://code.highcharts.com/highcharts.js"></script>
 <script src="js/chart.js"></script>

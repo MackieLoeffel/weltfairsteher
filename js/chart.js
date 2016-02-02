@@ -21,11 +21,15 @@
   LineChart = (function() {
     function LineChart(canvas) {
       this.setClass = bind(this.setClass, this);
-      var c, chartConfig, days, milliPerDay, numdays;
+      var c, chartConfig, days, i, maxPoints, milliPerDay, ms, numdays, pointStart;
       console.assert(classes.length > 0, "there must be classes!");
       numdays = classes[0].points.length - 1;
       milliPerDay = 24 * 3600 * 1000;
       days = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+      pointStart = Date.now() - numdays * milliPerDay;
+      maxPoints = _.max(classes.map(function(c) {
+        return _.last(c.points);
+      }));
       chartConfig = {
         chart: {
           type: "line",
@@ -55,7 +59,7 @@
           verticalAlign: "middle",
           borderWidth: 0
         },
-        series: (function() {
+        series: ((function() {
           var j, len, ref, results;
           ref = classes.sort(function(a, b) {
             return _.last(b.points) - _.last(a.points);
@@ -67,12 +71,33 @@
               name: c.name,
               data: c.points,
               color: normalColor,
-              pointStart: new Date(Date.now() - numdays * milliPerDay).getTime(),
+              pointStart: pointStart,
               pointInterval: milliPerDay
             });
           }
           return results;
-        })()
+        })()).concat((function() {
+          var j, len, results;
+          results = [];
+          for (i = j = 0, len = milestones.length; j < len; i = ++j) {
+            ms = milestones[i];
+            if (i > 0 && milestones[i - 1].points > maxPoints) {
+              break;
+            }
+            results.push({
+              data: [ms.points, ms.points],
+              color: "#F0F022",
+              dashStyle: "Dash",
+              showInLegend: false,
+              pointStart: pointStart,
+              pointInterval: Date.now() - pointStart,
+              marker: {
+                enabled: false
+              }
+            });
+          }
+          return results;
+        })())
       };
       this.chart = new Highcharts.Chart(chartConfig);
       onClassSelectChanged(this.setClass);
