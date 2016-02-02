@@ -10,28 +10,6 @@ Highcharts.setOptions
     resetZoomTitle: "Zoom auf 1:1 zurücksetzen"
     decimalPoint: ","
 
-class BarChart
-  constructor: (@classes, canvas) ->
-    bar =
-      labels: ["Punkte"]#_.map(classes, "name")
-      datasets: for c in @classes
-        {
-          label: c.name
-          strokeColor: normalColor
-          fillColor: normalColor #"rgba(7,108,240,0.6)"
-          data: [c.points[c.points.length - 1]]
-        }
-
-    @chart = new Chart(canvas.getContext("2d")).Bar(bar, {barShowStroke: false});
-
-  setClass: (id) ->
-    for c, i in @classes
-      console.log @chart.datasets[i]
-      # not working, don't know why
-      @chart.datasets[i].fillColor = if c.id == +id then highlightColor else normalColor
-      @chart.update()
-
-
 class LineChart
   constructor: (canvas) ->
     console.assert classes.length > 0, "there must be classes!"
