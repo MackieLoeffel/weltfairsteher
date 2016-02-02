@@ -86,7 +86,7 @@
             }
             results.push({
               data: [ms.points, ms.points],
-              color: "#F0F022",
+              color: "#00662A",
               dashStyle: "Dash",
               showInLegend: false,
               pointStart: pointStart,

@@ -39,12 +39,30 @@ foreach($categories as $c) {
 <?php } ?>
 
 <!--
+     BOOKLET DER ALTERNATIVEN DOWNLOAD
+   -->
+
+   <div style="float: left;
+   margin-left: 7px; ">
+    <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
+    target="_blank">
+      <img src="Booklet-der-Alternativen.jpg" tag="booklet" alt="Booklet der Alternativen" width="18%" height="auto">
+      </a>
+   <div style="background-color:#1BAB3F; font-size: 17px; color: black; width: 18%; text-align: center; ">
+     <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
+     target="_blank"><b style="color: white;"><i>Booklet der Alternativen</i><br></b>
+     <b style="font-size: 15px; color: black; ">
+      hier kostenlos herunterladen!</b></a>
+           </div>
+</div>
+
+<!--
      ADD NEW LECKERWISSEN
    -->
 
 
-<div style="float: left; background-color:#1BAB3F;
-font-size: 15px; margin-left: 7px; color: white; width: 33%">
+<div style="float: right; background-color:#1BAB3F;
+font-size: 15px; margin-right: 15%; color: white; width: 30%; padding: 10px; position: relative;">
 <h4>Neues Leckerwissen hinzufügen:</h4>
 <form id="addLeckerwissen" action="javascript:void(0);" onsubmit="sendForm(this)">
         <label for="bezeichnung" style="color: black;font-size: 13px;">
@@ -83,4 +101,17 @@ font-size: 15px; margin-left: 7px; color: white; width: 33%">
         style="background-color: green; font-size: 12px; float: right; width: 50px;">
         <!--<input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()"> -->
     </form></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
 <?php include "include/footer.php"?>

@@ -148,19 +148,18 @@ font-size: 13px;
 }
 
 .milestone-box {
-border-color: white;
-width: 20px;
-height: auto;
-border-radius:20px;
+
+
+
 font-size: 16px;
 font-weight: bold;
 text-align: center;
 margin-top: 0px;
 margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
+margin-left: auto;
+margin-right: auto;
 z-index: 4;
-color: #F0F022;
+color: #00662A;
 }
 
 .table-box {

@@ -174,11 +174,22 @@ padding: 40px;
 
                 <span style="font-size: 13px; color: white">
                   Die Challenge-Beschreibung sollte Folgendes beinhalten:
-<ul>
-<li>abc
+<ul style="color: black; text-align: left;">
+<li>Kurzbeschreibung der zugrundeliegenden Problematik in einem Satz
 </li>
-<li>def
+<li>Challenge-Auftrag und Zielvorstellung
 </li>
+<li>Bewertungskriterien
+</li>
+<li>Adressierte Dimensionen der Nachhaltigkeit (Ökologie, Ökonomie, Soziales)
+</li>
+<li>Eventuelle Einbettung in den Lehrplan und Gruppengröße
+</li>
+<li>Geschätzter Arbeitsaufwand in Stunden
+</li>
+<li>Benötigte Hilfsmittel und Quellen
+</li>
+
 
 </ul>                  </span><br>
 
@@ -191,7 +202,7 @@ padding: 40px;
 
 <div class=".abstand teacher-challenge-box"
  style="position: absolute;
-margin-top: 735px;
+margin-top: 980px;
 padding: 10px;
  ">
 
@@ -211,7 +222,7 @@ padding: 10px;
 </form>
 </div>
 
-<div class=".abstand teacher-challenge-box" style="margin-top: 1010px; position: absolute;"><br>
+<div class=".abstand teacher-challenge-box" style="margin-top: 1260px; position: absolute;"><br>
             <form action="logout.php" method="get">
             <input type="submit" value="Logout" style="background-color: #52150D; font-size: 11px;">
         </form>

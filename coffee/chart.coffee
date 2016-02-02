@@ -56,7 +56,7 @@ class LineChart
           break if i > 0 && milestones[i-1].points > maxPoints
           {
             data: [ms.points, ms.points]
-            color: "#F0F022"
+            color: "#00662A"
             dashStyle: "Dash"
             showInLegend: false
             pointStart: pointStart
