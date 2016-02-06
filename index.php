@@ -51,7 +51,8 @@
                         Das bringt aber viele Probleme mit sich. Nur eines davon sind die vielen Treibhausgase, die die Schiffe und Lastwägen ausstoßen.
                         Das ist schlecht für die Umwelt
                         und beschleunigt die Erderwärmung. Solche Probleme gibt es an vielen Orten unserer Welt. Als Teilnehmer an WeltFAIRsteher lernt ihr einige davon kennen und
-                        erfahrt viele Lösungsvorschläge, wie die Probleme beseitigt werden könnten. Nachhaltigkeit kann nämlich eigentlich jeder. Man muss es nur wollen und tun.
+                        erfahrt viele Lösungsvorschläge, wie die Probleme beseitigt werden könnten. Nachhaltigkeit kann nämlich eigentlich jeder. Man muss nur das Glück haben,
+                        zur richtigen Zeit und am richtigen Ort die richtigen Erfahrungen zu machen. Und dabei helfen wir euch.
                               </div><br>
                         <b><div id="wer"  style="margin-right: 30%; margin-left: 15%;"><h3>Wer kann mitmachen?</h3></div></b>
 
@@ -111,9 +112,10 @@ Na gut, ein paar Überraschungen haben wir für die Klassen mit den meisten Punk
 Ansporn sozusagen.
 <br><br>
 Der Siegerklasse winkt zum Beispiel ein erlebnispädagogisches Wochenende, also drei Tage fernab der Eltern Natur erleben,
-kostenlose Verpflegung genießen und spannende Entdeckungen machen. Platz Zwei und Drei werden ebenfalls überrascht. Wenn ihr am Ende nicht einen der drei ersten Plätze belegen solltet, so werdet ihr trotzdem
-einen kleinen Preis samt Urkunde erhalten. Insgesamt aber gilt ganz klar: Dabei zu sein ist ein Gewinn.
-Und auch wer am Tabellenende steht ist deshalb nicht "un-nachhaltig" beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit!
+kostenlose Verpflegung genießen und spannende Entdeckungen machen. Platz Zwei und Drei werden ebenfalls besonders überrascht.
+Wenn ihr am Ende nicht einen der drei ersten Plätze belegen solltet, so werdet ihr trotzdem
+einen kleinen Preis samt Urkunde erhalten, denn selbst wer am Tabellenende steht ist deshalb nicht "un-nachhaltig"
+beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit!
 Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
 </div><br>
 <b><div id="wie"  style="margin-right: 30%; margin-left: 15%;"><h3>Wie meldet man sich an?</h3></div></b>
@@ -135,7 +137,9 @@ Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Be
                         <b><div id="wir" class="abstand" style="margin-right: 30%; margin-left: 15%;"><h3>Über uns</h3></div></b>
 
                         <div style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
-Wir sind ein Team aus Mitgliedern des Max-Weber-Programms sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg. Ein Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>. Ob an der Planung, den Themen, der Website oder der Kommunikation - alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
+Wir sind ein Team aus Mitgliedern des Max-Weber-Programms sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
+Ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>. 
+Ob an der Planung, den Themen, der Website oder der Kommunikation - alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
 
 
 
