@@ -4,6 +4,7 @@ include __DIR__."/include.php";
 check_access(ADMIN);
 
 list($m, $points, $description) = apiCheckParams("milestone", "points", "description");
+$description = trim($description);
 
 apiCheck(dbExists("SELECT id FROM milestone WHERE id = :id", ["id" => $m]),
          "Unbekannte Etappe");

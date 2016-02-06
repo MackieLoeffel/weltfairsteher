@@ -4,6 +4,7 @@ include __DIR__."/include.php";
 check_access(ADMIN);
 
 list($points, $description) = apiCheckParams("points", "description");
+$description = trim($description);
 
 apiCheck(ctype_digit($points), "Punkte müssen eine Zahl sein");
 apiCheck(!dbExists("SELECT id FROM milestone WHERE points = :p", ["p"=>$points]),
