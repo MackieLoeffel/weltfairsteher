@@ -272,18 +272,39 @@ include "include/header.php";
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 
-<form class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: red;">Etappe ändern</b><br/>
-    <select name="milestone">
-        <?php foreach(fetchAll("SELECT id, name FROM milestone") as $milestone) {?>
-            <option value="<?=e($milestone->id)?>"><?=e($milestone->name)?></option>
+<form id="addMilestone" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: black;">Etappe hinzufügen</b><br/>
+    Punkte: <input type="text" value="" name="points" size="4" />
+    <br>
+    Kurzbeschreibung: <textarea rows="7" name="description"> </textarea>
+    <br>
+
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
+</form>
+
+<form id="changeMilestone" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: black;">Etappe ändern</b><br/>
+    Punkte: <select name="milestone">
+        <?php foreach(fetchAll("SELECT id, points FROM milestone") as $milestone) {?>
+            <option value="<?=e($milestone->id)?>"><?=e($milestone->points)?></option>
         <?php } ?>
     </select><br>
 
-    Neuer Punktwert für Etappe:
-    <input type="text" value="" name="name" size=4>
-      <br>
+    Neuer Punktwert für Etappe: <input type="text" value="" name="points" size=4 />
+    <br>
+    Kurzbeschreibung: <textarea rows="7" name="description"> </textarea>
+    <br>
 
+    <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
+</form>
+
+<form id="deleteMilestone" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <b style="color: red;">Etappe löschen</b><br/>
+    Punkte: <select name="milestone">
+        <?php foreach(fetchAll("SELECT id, points FROM milestone") as $m) {?>
+            <option value="<?=e($m->id)?>"><?=e($m->points)?></option>
+        <?php } ?>
+    </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 
