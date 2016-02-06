@@ -78,9 +78,10 @@ include "include/header.php";
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 
-<form id="deleteClass" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+<form id="deleteClassBox" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
+    <input type="hidden" name="table" value="class" />
     <b style="color: red;">Klasse löschen</b><br/>
-    <select name="class">
+    <select name="id">
         <?php foreach(fetchAll("SELECT id, name FROM class") as $class) {?>
             <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
         <?php } ?>
@@ -121,7 +122,7 @@ include "include/header.php";
     </select>
 
     <br>
-    Kurzbeschreibung: <textarea rows="7" name="description"> </textarea>
+    Kurzbeschreibung: <textarea rows="7" name="description"></textarea>
     <br>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
@@ -154,7 +155,7 @@ include "include/header.php";
     </select>
 
     <br>
-    Kurzbeschreibung: <textarea rows="7" name="description"> </textarea>
+    Kurzbeschreibung: <textarea rows="7" name="description"></textarea>
     <br>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
@@ -189,18 +190,18 @@ include "include/header.php";
         </select>
 
         <br>
-        Kurzbeschreibung: <textarea rows="7" name="description"> </textarea>
+        Kurzbeschreibung: <textarea rows="7" name="description"></textarea>
         <br>
         <input type="button" value="Selfmade-Challenge verwerfen" style="background-color: #52150D; float: right"
-               onclick="sendForm('#acceptSelfmade', {'api': 'deleteChallenge', 'data': {'suggested': '1', 'challenge': $('#selfmadeSelect').val()}})"/>
+               onclick="sendForm('#acceptSelfmade', {'api': 'deleteEntry', 'data': {'table': 'suggested', 'id': $('#selfmadeSelect').val()}})"/>
         <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
     </div>
 </form>
 
-<form id="deleteChallenge" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <input type="hidden" name="suggested" value="" />
+<form id="deleteChallengeBox" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
+    <input type="hidden" name="table" value="challenge" />
     <b style="color: red;">Challenge löschen</b><br/>
-    <select name="challenge">
+    <select name="id">
         <?php foreach(fetchAll("SELECT id, name FROM challenge") as $challenge) {?>
             <option value="<?=e($challenge->id)?>"><?=e($challenge->name)?></option>
         <?php } ?>
@@ -262,9 +263,10 @@ include "include/header.php";
     </input>
 </form>
 
-<form id="deleteLeckerwissen" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+<form id="deleteLWBox" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
+    <input type="hidden" name="table" value="leckerwissen" />
     <b style="color: red;">Leckerwissen löschen</b><br/>
-    <select name="leckerwissen">
+    <select name="id">
         <?php foreach(fetchAll("SELECT id, title FROM leckerwissen") as $lw) {?>
             <option value="<?=e($lw->id)?>"><?=e($lw->title)?></option>
         <?php } ?>
@@ -276,7 +278,7 @@ include "include/header.php";
     <b style="color: black;">Etappe hinzufügen</b><br/>
     Punkte: <input type="text" value="" name="points" size="4" />
     <br>
-    Kurzbeschreibung: <textarea rows="7" name="description"> </textarea>
+    Kurzbeschreibung: <textarea rows="7" name="description"></textarea>
     <br>
 
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
@@ -292,15 +294,16 @@ include "include/header.php";
 
     Neuer Punktwert für Etappe: <input type="text" value="" name="points" size=4 />
     <br>
-    Kurzbeschreibung: <textarea rows="7" name="description"> </textarea>
+    Kurzbeschreibung: <textarea rows="7" name="description"></textarea>
     <br>
 
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 
-<form id="deleteMilestone" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+<form id="deleteMilestoneBox" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
+    <input type="hidden" name="table" value="milestone" />
     <b style="color: red;">Etappe löschen</b><br/>
-    Punkte: <select name="milestone">
+    Punkte: <select name="id">
         <?php foreach(fetchAll("SELECT id, points FROM milestone") as $m) {?>
             <option value="<?=e($m->id)?>"><?=e($m->points)?></option>
         <?php } ?>
