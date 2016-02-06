@@ -278,7 +278,8 @@ include "include/header.php";
     <b style="color: black;">Etappe hinzufügen</b><br/>
     Punkte: <input type="text" value="" name="points" size="4" />
     <br>
-    Kurzbeschreibung: <textarea rows="7" name="description"></textarea>
+    Kurzbeschreibung (aktuell unbenutzt): <br/>
+    <textarea rows="7" name="description"></textarea>
     <br>
 
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
@@ -294,7 +295,8 @@ include "include/header.php";
 
     Neuer Punktwert für Etappe: <input type="text" value="" name="points" size=4 />
     <br>
-    Kurzbeschreibung: <textarea rows="7" name="description"></textarea>
+    Kurzbeschreibung (aktuell unbenutzt): <br/>
+    <textarea rows="7" name="description"></textarea>
     <br>
 
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
