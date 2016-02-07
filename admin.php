@@ -106,7 +106,7 @@ include "include/header.php";
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-<?php }); slideDown("Neue Challenge hinzufügen", function() { ?>
+<?php }); slideDown("Neue Challenge hinzufügen", function() use ($categories) { ?>
 <form id="addChallenge" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     <input type="hidden" name="class" value="-1">
     <input type="hidden" name="suggested" value="">
@@ -130,7 +130,7 @@ include "include/header.php";
     <br>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-<?php }); slideDown("Challenge bearbeiten", function() { ?>
+<?php }); slideDown("Challenge bearbeiten", function() use ($categories) { ?>
 <form id="changeChallenge" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     (Felder leer lassen, um sie nicht zu ändern)<br/>
     Challenge: <select name="challenge">
@@ -226,7 +226,7 @@ include "include/header.php";
     <br>
     <input type="submit" onclick="sendFile('upload')" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </div>
-<?php }); slideDown("Leckerwissen bearbeiten", function() { ?>
+<?php }); slideDown("Leckerwissen bearbeiten", function() use ($categories, $leckerwissenTypes){ ?>
 <form id="changeLeckerwissen" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     Leckerwissen:
     <select name="lw">
