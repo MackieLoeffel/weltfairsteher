@@ -56,6 +56,16 @@ include "include/header.php";
 
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
+<?php }); slideDown("Lehrkraft löschen", function() { ?>
+<form id="deleteTeacher" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
+    <select name="teacher">
+        <?php foreach(fetchAll("SELECT id, email FROM user WHERE role != :admin",
+                               ["admin" => ADMIN]) as $class) {?>
+            <option value="<?=e($class->id)?>"><?=e($class->email)?></option>
+        <?php } ?>
+    </select><br/>
+    <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
+</form>
 <?php }); slideDown("Neue Klasse hinzufügen", function() { ?>
 <form id="addClass" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     Name: <input type="text" name="name" value=""></input> <br/>
@@ -95,16 +105,6 @@ include "include/header.php";
         <?php } ?>
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
-</form>
-<?php }); slideDown("Lehrer löschen", function() { ?>
-<form id="deleteTeacher" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <select name="teacher">
-        <?php foreach(fetchAll("SELECT id, email FROM user WHERE role != :admin",
-                               ["admin" => ADMIN]) as $class) {?>
-            <option value="<?=e($class->id)?>"><?=e($class->email)?></option>
-        <?php } ?>
-    </select><br/>
-    <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 <?php }); slideDown("Neue Challenge hinzufügen", function() { ?>
 <form id="addChallenge" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
