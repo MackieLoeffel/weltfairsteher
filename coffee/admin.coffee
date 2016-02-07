@@ -22,3 +22,10 @@ $('document').ready ->
   $("#selfmadeSelect").val first
   $("#selfmadeSelect").change selectSelfmade
   selectSelfmade()
+
+  $(".slide-down .slide-down-header").each  ->
+    $(this).click ->
+      $(this).siblings(".slide-down-hidden").slideToggle(300)
+      $(this).children("div").toggleClass("production")
+      $(this).children("div").toggleClass("selfmade")
+  return

@@ -2,6 +2,22 @@
 include "include/access.php";
 
 check_access(ADMIN);
+
+function slideDown($name, $func) {
+   ?>
+    <div class="slide-down admin-box">
+        <div class="slide-down-header">
+            <b style="color: black; float:left"><?= e($name) ?></b>
+            <div class="production" style="float: right">b</div>
+        </div>
+        <br/>
+
+        <?php $func(); ?>
+    </div>
+    <br/>
+    <?php
+}
+
 include "include/header.php";
 ?>
 <script src="js/admin.js"></script>
@@ -9,25 +25,23 @@ include "include/header.php";
 
 
 <br>
-
-<form id="addTeacher" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: black;">Neue Lehrkraft hinzufügen:</b><br>
-    E-Mail-Adresse:  <input type="text" name="email" value="">
+<?php slideDown("Neue Lehrkraft hinzufügen", function() { ?>
+    <form id="addTeacher" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
+        E-Mail-Adresse:  <input type="text" name="email" value="">
     </input><br>
 
     Passwort:<input type="text" name="password" value="">
-    </input>
-    <br>
-    Passwort wiederholen:<input type="text" name="password2" value="">
-    </input>
+        </input>
+        <br>
+        Passwort wiederholen:<input type="text" name="password2" value="">
+        </input>
 
-    <input type="submit" value="Bestätigen" style="background-color: green; float: right;">
+        <input type="submit" value="Bestätigen" style="background-color: green; float: right;">
 
-    </input>
-</form>
-<br>
-<form id="changeUser" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: black;">Bestehenden Benutzer bearbeiten:</b><br>
+        </input>
+    </form>
+<?php }); slideDown("Bestehenden Benutzer bearbeiten", function() { ?>
+<form id="changeUser" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     (Felder leer lassen, um sie nicht zu ändern)<br/>
     Benutzer: <select name="user">
         <?php foreach(fetchAll("SELECT id, email FROM user") as $class) {?>
@@ -42,10 +56,8 @@ include "include/header.php";
 
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-<br>
-
-<form id="addClass" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: black;">Neue Klasse hinzufügen:</b><br>
+<?php }); slideDown("Neue Klasse hinzufügen", function() { ?>
+<form id="addClass" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     Name: <input type="text" name="name" value=""></input> <br/>
     Lehrer: <select name="teacher" size="1">
         <?php foreach(fetchAll("SELECT id, email FROM user") as $teacher) {?>
@@ -54,11 +66,8 @@ include "include/header.php";
     </select> <br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-<br>
-
-<form id="changeClass" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: black;">Bestehende Klasse bearbeiten:</b>
-    <br>
+<?php }); slideDown("Bestehende Klasse bearbeiten", function() { ?>
+<form id="changeClass" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     Klasse: <select name="class">
         <?php foreach(fetchAll("SELECT id, name FROM class") as $class) {?>
             <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
@@ -77,10 +86,9 @@ include "include/header.php";
     </select><br/>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-
-<form id="deleteClassBox" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
+<?php }); slideDown("Klasse löschen", function() { ?>
+<form id="deleteClassBox" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
     <input type="hidden" name="table" value="class" />
-    <b style="color: red;">Klasse löschen</b><br/>
     <select name="id">
         <?php foreach(fetchAll("SELECT id, name FROM class") as $class) {?>
             <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
@@ -88,9 +96,8 @@ include "include/header.php";
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-
-<form id="deleteTeacher" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: red;">Lehrer löschen</b><br/>
+<?php }); slideDown("Lehrer löschen", function() { ?>
+<form id="deleteTeacher" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     <select name="teacher">
         <?php foreach(fetchAll("SELECT id, email FROM user WHERE role != :admin",
                                ["admin" => ADMIN]) as $class) {?>
@@ -99,14 +106,11 @@ include "include/header.php";
     </select><br/>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-
-<form id="addChallenge" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
+<?php }); slideDown("Neue Challenge hinzufügen", function() { ?>
+<form id="addChallenge" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     <input type="hidden" name="class" value="-1">
     <input type="hidden" name="suggested" value="">
-    <b style="color: black;">Neue Challenge hinzufügen:</b>
-    <br>
-    Titel: <input type="text" value="" size=25 name="title">
-    </input>
+    Titel: <input type="text" value="" size=25 name="title"></input>
     <br>
     Kategorie: <select name="category">
         <?php foreach($categories as $cat) {?>
@@ -126,9 +130,8 @@ include "include/header.php";
     <br>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-
-<form id="changeChallenge" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: black;">Challenge bearbeiten:</b><br/>
+<?php }); slideDown("Challenge bearbeiten", function() { ?>
+<form id="changeChallenge" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     (Felder leer lassen, um sie nicht zu ändern)<br/>
     Challenge: <select name="challenge">
         <?php foreach(fetchAll("SELECT id, name FROM challenge") as $c) {?>
@@ -159,13 +162,11 @@ include "include/header.php";
     <br>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-
-<form id="acceptSelfmade" class="admin-box" action="javascript:void(0);" onsubmit="acceptSelfmade()">
+<?php }); slideDown("Selfmade-Challenge übernehmen", function() { ?>
+<form id="acceptSelfmade" class="slide-down-hidden" action="javascript:void(0);" onsubmit="acceptSelfmade()">
     <input type="hidden" name="class" value="-1">
     <input type="hidden" name="suggested" value="">
     <input type="hidden" name="category" value="selfmade">
-    <b style="color: black;">Selfmade-Challenge übernehmen:</b>
-    <br>
     <div style="float: left">
         <select id="selfmadeSelect" size="10">
             <?php
@@ -197,10 +198,9 @@ include "include/header.php";
         <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
     </div>
 </form>
-
-<form id="deleteChallengeBox" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
+<?php }); slideDown("Challenge löschen", function() { ?>
+<form id="deleteChallengeBox" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
     <input type="hidden" name="table" value="challenge" />
-    <b style="color: red;">Challenge löschen</b><br/>
     <select name="id">
         <?php foreach(fetchAll("SELECT id, name FROM challenge") as $challenge) {?>
             <option value="<?=e($challenge->id)?>"><?=e($challenge->name)?></option>
@@ -208,10 +208,8 @@ include "include/header.php";
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-
-<div id="upload" class="admin-box">
-    <b style="color: black;">PDF hochladen:</b>
-    <br>
+<?php }); slideDown("PDF hochladen", function() { ?>
+<div id="upload" class="slide-down-hidden">
     Challenge: <select name="challenge">
         <?php foreach(fetchAll("SELECT id, name FROM challenge") as $challenge) {?>
             <option value="<?=e($challenge->id)?>"><?=e($challenge->name)?></option>
@@ -228,10 +226,8 @@ include "include/header.php";
     <br>
     <input type="submit" onclick="sendFile('upload')" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </div>
-
-<form id="changeLeckerwissen" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: black;">Leckerwissen bearbeiten:</b>
-    <br>
+<?php }); slideDown("Leckerwissen bearbeiten", function() { ?>
+<form id="changeLeckerwissen" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     Leckerwissen:
     <select name="lw">
         <?php foreach(fetchAll("SELECT id, title FROM leckerwissen") as $lw) {?>
@@ -262,10 +258,9 @@ include "include/header.php";
 
     </input>
 </form>
-
-<form id="deleteLWBox" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
+<?php }); slideDown("Leckerwissen löschen", function() { ?>
+<form id="deleteLWBox" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
     <input type="hidden" name="table" value="leckerwissen" />
-    <b style="color: red;">Leckerwissen löschen</b><br/>
     <select name="id">
         <?php foreach(fetchAll("SELECT id, title FROM leckerwissen") as $lw) {?>
             <option value="<?=e($lw->id)?>"><?=e($lw->title)?></option>
@@ -273,9 +268,8 @@ include "include/header.php";
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-
-<form id="addMilestone" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: black;">Etappe hinzufügen</b><br/>
+<?php }); slideDown("Etappe hinzufügen", function() { ?>
+<form id="addMilestone" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     Punkte: <input type="text" value="" name="points" size="4" />
     <br>
     Kurzbeschreibung (aktuell unbenutzt): <br/>
@@ -284,9 +278,8 @@ include "include/header.php";
 
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-
-<form id="changeMilestone" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <b style="color: black;">Etappe ändern</b><br/>
+<?php }); slideDown("Etappe ändern", function() { ?>
+<form id="changeMilestone" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     Punkte: <select name="milestone">
         <?php foreach(fetchAll("SELECT id, points FROM milestone") as $milestone) {?>
             <option value="<?=e($milestone->id)?>"><?=e($milestone->points)?></option>
@@ -301,10 +294,9 @@ include "include/header.php";
 
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-
-<form id="deleteMilestoneBox" class="admin-box" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
+<?php }); slideDown("Etappe löschen", function() { ?>
+<form id="deleteMilestoneBox" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
     <input type="hidden" name="table" value="milestone" />
-    <b style="color: red;">Etappe löschen</b><br/>
     Punkte: <select name="id">
         <?php foreach(fetchAll("SELECT id, points FROM milestone") as $m) {?>
             <option value="<?=e($m->id)?>"><?=e($m->points)?></option>
@@ -312,7 +304,7 @@ include "include/header.php";
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-
+<?php }); ?>
 <div class="admin-box">
     <form action="logout.php" method="get">
         <input type="submit" value="Logout" style="background-color: #52150D; font-size: 11px; margin-top: 25px; color: white; margin-left: 5px;

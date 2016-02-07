@@ -42,7 +42,14 @@
     }
     $("#selfmadeSelect").val(first);
     $("#selfmadeSelect").change(selectSelfmade);
-    return selectSelfmade();
+    selectSelfmade();
+    $(".slide-down .slide-down-header").each(function() {
+      return $(this).click(function() {
+        $(this).siblings(".slide-down-hidden").slideToggle(300);
+        $(this).children("div").toggleClass("production");
+        return $(this).children("div").toggleClass("selfmade");
+      });
+    });
   });
 
 }).call(this);

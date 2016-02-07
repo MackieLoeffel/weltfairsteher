@@ -273,3 +273,7 @@ color: #00662A;
 .solve-link.class-selected {
     visibility: hidden;
 }
+
+.slide-down-hidden {
+    display: none
+}
