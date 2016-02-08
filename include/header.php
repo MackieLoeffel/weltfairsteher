@@ -46,7 +46,8 @@ include __DIR__."/config.php";
                 <link rel='stylesheet' id='twentythirteen-fonts-css' href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700%7COpen+Sans+Condensed%3A300%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all'/>
              <link rel='stylesheet' id='genericons-css' href='http://de.ubergizmo.com/wp-content/themes/ubergizmo/fonts/genericons.css?ver=2.09' type='text/css' media='all'/>
                 <link rel='stylesheet' id='twentythirteen-style-css' href='http://de.ubergizmo.com/wp-content/themes/ubergizmo/style.css?ver=1447668848' type='text/css' media='all'/>
-              <link rel='stylesheet' href='styles.css' type='text/css' />
+                <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+                <link rel='stylesheet' href='styles.css' type='text/css' />
               <script src="libs/lodash.js"></script>
               <script src="libs/jquery.js"></script>
                 <script src="js/classSelect.js"></script>

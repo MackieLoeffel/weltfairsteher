@@ -8,7 +8,7 @@ function slideDown($name, $func) {
     <div class="slide-down admin-box">
         <div class="slide-down-header">
             <b style="color: black; float:left"><?= e($name) ?></b>
-            <div class="production" style="float: right">b</div>
+            <i class="fa fa-arrow-down" style="float: right"></i>
         </div>
         <br/>
 
@@ -195,6 +195,7 @@ include "include/header.php";
         <br>
         <input type="button" value="Selfmade-Challenge verwerfen" style="background-color: #52150D; float: right"
                onclick="sendForm('#acceptSelfmade', {'api': 'deleteEntry', 'data': {'table': 'suggested', 'id': $('#selfmadeSelect').val()}})"/>
+        <br/>
         <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
     </div>
 </form>
