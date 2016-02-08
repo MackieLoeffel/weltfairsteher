@@ -15,7 +15,7 @@ include "include/chart.php";
         Challenges</th> <th style="text-align: center">
           Kreativität</th> <th style="text-align: center">
        Punkte</th>
-      <th style="text-align: center">Nächste Etappe</th>
+      <th style="text-align: center">Nächste Etappe in</th>
   </tr></thead>
     <tbody>
         <?php

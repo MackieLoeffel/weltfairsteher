@@ -71,10 +71,14 @@ Anmelden kann euch aber nur eine Lehrkraft.
 Jede Klasse kann sich an den Aufgaben, die ihr unter dem Reiter <i>Challenges</i> findet, versuchen. Mit welcher Challenge ihr dabei beginnt ist
 genauso gleichgültig wie die Anzahl der Schülerinnen und Schüler, die sich an einer Challenge beteiligen. Manchmal ist es sogar am besten,
 wenn nur wenige Schülerinnen und Schüler eine Aufgabe verfolgen.
-Wie viele Personen wir für eine Aufgabe empfehlen, könnt ihr auch bei jeder einzelnen Challenge nachlesen. <br><br>
+Wie viele Personen wir für eine Aufgabe empfehlen, könnt ihr auch bei den meisten Challenges nachlesen. <br><br>
 Sobald ihr eine Challenge erfolgreich abgeschlossen habt, kann eure Lehrkraft die Challenge im <i>Lehrer-Bereich</i> eintragen.
-Euren aktuellen Punktestand seht ihr in der <i>Tabelle</i>.
-Die darunter stehende Grafik zeigt den zeitlichen Verlauf aller Klassen. Die Klasse, die ihr oben (in der Kopfzeile) gewählt habt, wird dabei Rot angezeigt.
+Am besten hält immer eine Person eurer Klasse oder der jeweiligen Gruppe den Erfolg einer Challenge,
+beispielsweise ein Referat oder den "Coffee-to-go-again"-Aufkleber an der Eingangstüre zu einem Café,
+mit einer Kamera fest, damit euch niemand vorwerfen kann, ihr hättet geschummelt, um das Punktekonto aufzubessern.
+Á propos: Euren aktuellen Punktestand seht ihr in der <i>Tabelle</i>, ebenso wie die Anzahl der bestandenen Challenges.
+Die darunter stehende Grafik zeigt den zeitlichen Verlauf aller Klassen.
+Die Klasse, die ihr oben (in der Kopfzeile) gewählt habt, wird dabei Rot angezeigt.
 
 <br><br>
 Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr etwa eine Idee für eine neue Challenge habt,
@@ -125,11 +129,12 @@ Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
     den ihr euch selbst ausdenken könnt. Das kann so etwas wie "Die Sojapatronen" sein, oder "Warme Kürbissuppen".
     Wenn ihr uns verratet, von welcher Schule ihr kommt, würden wir uns natürlich sehr freuen - schon alleine deshalb,
     weil wir euch eure Etappen-Überraschungen zusenden möchten. Deshalb solltet ihr uns auch mitteilen, wie viele Schüler_innen unter
-    Klassennamen teilnehmen.
-    Keine Sorge: Eure Schuldaten werden aber nicht veröffentlicht.
+    eurem Klassennamen teilnehmen.
+    Keine Sorge: Eure Schuldaten werden nicht veröffentlicht.
     <br><br>
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
-Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Bereich</i> gewissenhaft bestandene Challenges eintragen oder eine Selfmade-Challenge vorschlagen.
+Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Bereich</i> gewissenhaft bestandene Challenges
+eintragen oder eine Selfmade-Challenge vorschlagen.
 
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
 </div><br>
@@ -138,7 +143,7 @@ Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Be
 
                         <div style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Wir sind ein Team aus Mitgliedern des Max-Weber-Programms sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
-Ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>. 
+Ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
 Ob an der Planung, den Themen, der Website oder der Kommunikation - alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
 
 
