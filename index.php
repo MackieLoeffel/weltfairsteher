@@ -134,7 +134,8 @@ Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
     <br><br>
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
 Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Bereich</i> gewissenhaft bestandene Challenges
-eintragen oder eine Selfmade-Challenge vorschlagen.
+eintragen oder eine Selfmade-Challenge vorschlagen. Außerdem haben eingeloggte Lehrkräfte Zugang zu
+ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Challenges.
 
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
 </div><br>
