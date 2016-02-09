@@ -1,28 +1,24 @@
 <?php include "include/header.php"?>
 
 <br>
+
+<img src="logo_weltfairsteher_transparent_startseite.png" style="margin-left: 15%; width: 55%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
 <br>
 <br>
-<ul style="margin-left: 14%;">
-<li><span class="abstand" ><a href="#was" style="color: #C5F2B6">Was ist das?</a>
-    <br></span></li>
-  <li>  <span class="abstand" ><a href="#worum" style="color: #C5F2B6">Worum geht´s?</a>
-        <br></span></li>
-      <li>  <span class="abstand" ><a href="#wer" style="color: #C5F2B6">Wer kann mitmachen?</a>
-            <br></span></li>
-              <li>  <span class="abstand"><a href="#ablauf" style="color: #C5F2B6">Wie läuft´s ab?</a>
-                    <br></span></li>
-                  <li>  <span class="abstand"><a href="#gewinn" style="color: #C5F2B6">Was kann man gewinnen?</a>
-                        <br></span></li>
-                        <li>    <span class="abstand"><a href="#wie" style="color: #C5F2B6">Wie meldet man sich an?</a>
-                                <br></span></li>
-                    <li>    <span class="abstand"><a href="#wir" style="color: #C5F2B6">Über uns</a></span>
-                        <br></li>
-</ul>
+<span style="margin-left: 15%; font-size: 24.5px;">
+<a href="#was" style="color: #C5F2B6; background-color: #C9960A;">Beschreibung?</a>&#160
+    <a href="#worum" style="color: #C5F2B6; background-color: #3A7EFC;">Thema?</a>&#160
+    <a href="#wer" style="color: #C5F2B6; background-color: #7761C5;">Teilnehmer?</a>&#160
+    <a href="#ablauf" style="color: #C5F2B6; background-color: #1B5A0A;">Ablauf?</a>&#160
+
+    <a href="#gewinn" style="color: #C5F2B6; background-color: #CC4321;">Gewinne?</a>&#160
+    <a href="#wie" style="color: #C5F2B6; background-color: #10B3B3;">Anmeldung?</a>&#160
+    <a href="#wir" style="color: #C5F2B6; background-color: black;">Über uns!</a></span>
+                        <br>
+</span>
 
                         <br>
-                        <!-- image
-                           -->
+                        <img src="weltkarte_gewuerze2.jpg" style="margin-left: 15%; width: 55%; height: auto;" alt="Weltkarte aus Gewuerzen">
                         <br>
                         <b><div id="was"  style="margin-right: 30%; margin-left: 15%;">
                         <h3>Was ist das?</h3>
