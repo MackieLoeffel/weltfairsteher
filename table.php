@@ -8,7 +8,7 @@ include "include/chart.php";
 <br>
 
 
-<table class=".abstand" style="margin-left: 15%; color= white; margin-right: 15%; max-width: 70%;" cellspacing="0" cellpadding="20">
+<table class="abstaende" style="color= white; max-width: 98%;" cellspacing="0" cellpadding="20">
   <thead style="color: white;"><tr> <th  style="text-align: center">
     Rang</th> <th style="text-align: center">
       Klassenname</th> <th style="text-align: center">
@@ -56,7 +56,7 @@ WHERE c.category = :category AND sc.class = :class");
                 </div>
 
             </td>
-            <td style="text-align: center"><?= e($class["creativity"]) ?></td>
+            <td style="text-align: center;"><?= e($class["creativity"]) ?></td>
             <td style="text-align: center"><b><?= e(getCurrentPoints($class))?></b></td>
             <td  class="milestone-box" >
                 <?php
@@ -88,7 +88,7 @@ WHERE c.category = :category AND sc.class = :class");
   wird in Rot angezeigt.
 </div>
 -->
-<div id="chart" style="width: 70%; margin-top: 25px; margin-left: 15%; position: relative;"></canvas>
+<div id="chart" class="abstaende" style="width: 98%; margin-top: 25px; position: relative;"></canvas>
 <script type="text/javascript">
  $('document').ready(function() {
      var chart = new LineChart("chart");

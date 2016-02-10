@@ -163,5 +163,6 @@ width: 40%; text-align: center; color: black; background-color: yellow;">
              }
             </script>
 
-            <body style="background-color:#0F9C2E;">
+            <body style="background-color: #C5F2B6;">
+<section id="border" style="margin-left: 13%; margin-right: 17%; background-color: #0F9C2E;">
                   <!-- onLoad="popup('http://nachhaltigkeitschallenge.de/lehrer-login/popup/','lehrer-login','320','240','center','front');" -->

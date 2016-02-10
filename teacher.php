@@ -80,21 +80,20 @@ GROUP BY c.id)");
      evtl noch insofern ändern, dass nicht eine Beschreibung gefordert ist, sondern jenes formuliert werden muss, was auch wir für eine Challenge ausarbeiten (kategorie, punktzahl, einbettung...... gefahr: zu hohe hürde, eine eigene challenge zu formulieren)
    -->
 <div
-    style="margin-left: 570px;
+    style="margin-left: 38%;
            margin-top: 40px;
-           margin-right: 5%;
+           margin-right: 1%;
            position: relative;
            float: left;
            background-color:#1BAB3F;
-           width: auto;
-           max-width: 500px;
+           max-width: 61%;
            height: auto;
-padding: 40px;
+
            ">
 
            <h4 style="margin-left: 22px;">Allgemeine Hinweise</h4>
 
-           <ul> <span style="color: white; text-align: justify; margin-right: 8px;">
+           <ul style="color: white; text-align: justify; padding: 30px;">
 <li>Auf dieser Seite können bestandene <b style="color: black;">Challenges eingetragen</b> werden.
   Falls sie für mehrere Klassen verantwortlich sind, muss die entsprechende Klasse
   zunächst ausgewählt werden. Achtung: Relevant hierfür ist nicht die Auswahl
@@ -123,21 +122,21 @@ padding: 40px;
   Wenn sich die Größe einer von Ihnen betreuten Klasse ändert oder Sie anderweitige Fragen beziehungsweise Probleme haben,
    schreiben Sie uns einfach eine E-Mail.
 </li>
-</span>
+
 
            </ul>
 
 
          </div>
 
-           <div
-               style="margin-left: 15%;
+           <div class="teacher-challenge-box-inner"
+               style="
                z-index: 1;
                       margin-top: 255px;
                       position: absolute;
                       float: left;
                       background-color:#1BAB3F;
-                      width: 300px;
+
                       height: auto;
                       text-align: center">
 
@@ -167,7 +166,7 @@ padding: 40px;
 
             </div>
             <br>
-            <div style="color: white; margin-left: 15%; margin-right: 14px;">
+            <div style="color: white; margin-left: 1%; margin-right: 14px;">
                 <textarea cols="50" row=8" name="description">Challenge-Beschreibung</textarea>
 
                 <br>
@@ -202,12 +201,12 @@ padding: 40px;
 
 <div class=".abstand teacher-challenge-box"
  style="position: absolute;
-margin-top: 980px;
+margin-top: 815px;
 padding: 10px;
  ">
 
 <form id="changeUser" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <h2 style="color: black;">Daten bearbeiten</h2>
+    <h4 style="color: black;">Daten bearbeiten</h2>
 
     <span style="font-size: 11px;">(Felder leer lassen, um sie nicht zu ändern)<br/></span>
     <input type="hidden" name="user" value="<?= e($_SESSION["user"]) ?>">
@@ -222,7 +221,7 @@ padding: 10px;
 </form>
 </div>
 
-<div class=".abstand teacher-challenge-box" style="margin-top: 1260px; position: absolute;"><br>
+<div class=".abstand teacher-challenge-box" style="margin-top: 1075px; position: absolute;"><br>
             <form action="logout.php" method="get">
             <input type="submit" value="Logout" style="background-color: #52150D; font-size: 11px;">
         </form>

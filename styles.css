@@ -105,6 +105,22 @@ font-size: 13px;
     font-size: 11px;
 }
 
+.abstaende {
+margin-left: 1%;
+margin-right: 1%;
+
+
+
+
+}
+
+
+#border {
+border-left: 4px solid #4BBF60;
+border-right: 4px solid #4BBF60;
+
+
+}
 
 
 
@@ -228,13 +244,13 @@ color: #00662A;
 
 .teacher-challenge-box {
     background-color:#1BAB3F;
-    width: 300px;
+    width: 24%;
     height: auto;
     float: left;
     margin-top: 740px;
-    margin-right: 14px;
+    margin-right: 1%;
     margin-bottom: ;
-    margin-left: 15%;
+    margin-left: 1%;
     text-align:center;
     color: black;
     font-size: 13px;
@@ -244,12 +260,12 @@ color: #00662A;
 .teacher-challenge-box-inner {
     background-color:#1BAB3F;
     z-index: 1;
-    width:300px;
+    width:24%;
     height: auto;
+    margin-right: 1%;
     margin-top: 40px;
-    margin-right: 14px;
     margin-bottom: ;
-    margin-left: 15%;
+    margin-left: 1%;
     text-align:center;
     color: black;
     font-size: 13px;

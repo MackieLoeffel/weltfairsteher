@@ -1,11 +1,10 @@
 <?php include "include/header.php"?>
-
 <br>
 
-<img src="logo_weltfairsteher_transparent_startseite.png" style="margin-left: 15%; width: 55%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
+<img src="logo_weltfairsteher_transparent_startseite.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
 <br>
 <br>
-<span style="margin-left: 15%; font-size: 24.5px;">
+<span class="abstaende" style="font-size: 30.3px;">
 <a href="#was" style="color: #C5F2B6; background-color: #C9960A;">Beschreibung?</a>&#160
     <a href="#worum" style="color: #C5F2B6; background-color: #3A7EFC;">Thema?</a>&#160
     <a href="#wer" style="color: #C5F2B6; background-color: #7761C5;">Teilnehmer?</a>&#160
@@ -18,23 +17,23 @@
 </span>
 
                         <br>
-                        <img src="weltkarte_gewuerze2.jpg" style="margin-left: 15%; width: 55%; height: auto;" alt="Weltkarte aus Gewuerzen">
+                        <img src="weltkarte_gewuerze2.jpg" class="abstaende" style="width: 98%; height: auto;" alt="Weltkarte aus Gewuerzen">
                         <br>
                         <b>
-                        <h3 id="was" style="color: #C5F2B6; background-color: #C9960A; margin-left: 15%; margin-right: 30%;">Was ist das?</h3>
+                        <h3 id="was" class="abstaende" style="color: #C5F2B6; background-color: #C9960A;">Was ist das?</h3>
                         </b>
 
-                        <div  style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
+                        <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
                           WeltFAIRsteher ist eine Nachhaltigkeitschallenge für Schulklassen, also ein Wettbewerb, bei dem es darum geht,
                         gemeinsam als Klasse Aufgaben zu bewältigen, die mit Nachhaltigkeit zu tun haben. Das kann von kleinen handwerklichen Projekten über
                         die Organisation und Verspeisung eines ökologisch nachhaltigen Frühstücks bis hin zu unterhaltsamen Spielen,
                         spannenden Referaten und sozialem Engagement reichen.
 
                             </div><br>
-                        <b><h3 id="worum"  style="margin-right: 30%; margin-left: 15%; color: #C5F2B6; background-color: #3A7EFC;">Worum geht´s?</h3>
+                        <b><h3 id="worum" class="abstaende" style=" color: #C5F2B6; background-color: #3A7EFC;">Worum geht´s?</h3>
                         </b>
 
-                        <div  style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
+                        <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
                         Nachhaltigkeit ist ein sehr vielseitiges Thema, das in fast jeden Lebensbereich dringt. Die wichtigsten Aspekte von Nachhaltigkeit
                         sind <b>Ökologie</b>, also die Beziehungen von Organismen wie Menschen, Tieren oder Pflanzen zu ihrer Umwelt,
                         <b>Soziales</b>, also die Art und Weise, wie Menschen
@@ -51,10 +50,10 @@
                         erfahrt viele Lösungsvorschläge, wie die Probleme beseitigt werden könnten. Nachhaltigkeit kann nämlich eigentlich jeder. Man muss nur das Glück haben,
                         zur richtigen Zeit und am richtigen Ort die richtigen Erfahrungen zu machen. Und dabei helfen wir euch.
                               </div><br>
-                        <b><h3 id="wer"  style="margin-right: 30%; margin-left: 15%; color: #C5F2B6; background-color: #7761C5;">Wer kann mitmachen?</h3>
+                        <b><h3 id="wer"  class="abstaende" style="color: #C5F2B6; background-color: #7761C5;">Wer kann mitmachen?</h3>
                         </b>
 
-                        <div  style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
+                        <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
                             Teilnehmen kann jede 6. Klasse einer öffentlichen oder privaten Schule in Bayern.
 Besonders vorteilhaft ist es natürlich, eine motivierte Lehrkraft zu haben, mit der man an <i>WeltFAIRsteher</i> teilnimmt.
 Wenn ihr eine Lehrkraft mit einem Korb Äpfeln oder einem Sack Kartoffeln bestechen wollt, ist das also vielleicht nicht die beste Voraussetzung -
@@ -63,10 +62,10 @@ sofern die Lehrerin beziehungsweise der Lehrer nicht nur zu <s>faul</s> beschäf
 Anmelden kann euch aber nur eine Lehrkraft.
                         </div><br>
 
-                        <b><h3 id="ablauf"  style="margin-right: 30%; margin-left: 15%; color: #C5F2B6; background-color: #1B5A0A;">Wie läuft´s ab?</h3>
+                        <b><h3 id="ablauf" class="abstaende" style="color: #C5F2B6; background-color: #1B5A0A;">Wie läuft´s ab?</h3>
                         </b>
 
-                        <div  style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
+                        <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Jede Klasse kann sich an den Aufgaben, die ihr unter dem Reiter <i>Challenges</i> findet, versuchen. Mit welcher Challenge ihr dabei beginnt ist
 genauso gleichgültig wie die Anzahl der Schülerinnen und Schüler, die sich an einer Challenge beteiligen. Manchmal ist es sogar am besten,
 wenn nur wenige Schülerinnen und Schüler eine Aufgabe verfolgen.
@@ -100,10 +99,10 @@ wie wertvoll dieser Bonus für euch sein kann:
 
 
                         </div><br>
-                        <b><h3 id="gewinn"  style="margin-right: 30%; margin-left: 15%; color: #C5F2B6; background-color: #CC4321;">Was kann man gewinnen?
+                        <b><h3 id="gewinn" class="abstaende" style="color: #C5F2B6; background-color: #CC4321;">Was kann man gewinnen?
                         </h3></b>
 
-                        <div  style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
+                        <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 
 Keine Sorge, mit leeren Händen geht am Ende keine Klasse nach Hause. Ganz im Gegenteil: Schon während des Schuljahres verfolgt ihr Etappenziele.
 Jede Klasse sieht in der Tabelle, wie viele Punkte sie noch von der nächsten Etappe entfernt ist. Habt ihr eine Etappe erreicht, so schicken
@@ -122,9 +121,9 @@ einen kleinen Preis samt Urkunde erhalten, denn selbst wer am Tabellenende steht
 beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit!
 Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
 </div><br>
-<b><h3 id="wie"  style="margin-right: 30%; margin-left: 15%; color: #C5F2B6; background-color: #10B3B3;">Wie meldet man sich an?</h3></b>
+<b><h3 id="wie" class="abstaende" style="color: #C5F2B6; background-color: #10B3B3;">Wie meldet man sich an?</h3></b>
 
-<div  style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
+<div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
     Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an weltfairsteher@chancengestalten.de und teilt uns den kreativen Klassennamen mit,
     den ihr euch selbst ausdenken könnt. Das kann so etwas wie "Die Sojapatronen" sein, oder "Warme Kürbissuppen".
     Wenn ihr uns verratet, von welcher Schule ihr kommt, würden wir uns natürlich sehr freuen - schon alleine deshalb,
@@ -140,10 +139,10 @@ ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Chal
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
 </div><br>
 
-                        <b><h3 id="wir" style="margin-right: 30%; margin-left: 15%; color: #C5F2B6; background-color: black;">Über uns
+                        <b><h3 id="wir" class="abstaende" style="color: #C5F2B6; background-color: black;">Über uns
                         </h3></b>
 
-                        <div style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
+                        <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Wir sind ein Team aus Mitgliedern des Max-Weber-Programms sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
 Ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
 Ob an der Planung, den Themen, der Website oder der Kommunikation - alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>

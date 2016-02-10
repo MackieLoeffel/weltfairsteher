@@ -5,7 +5,7 @@
 
 
 
-<div style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
+<div class="abstaende" style=" text-align: justify; background-color: #1BAB3F; padding: 20px;">
 
 
 
@@ -14,7 +14,7 @@
     </div>
     <br>
 
-    <div style="margin-right: 30%; margin-left: 15%; text-align: justify; background-color: #1BAB3F; padding: 20px;">
+    <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 
       <h4>Team</h4>
       Jana Costa <br> Maximilian Held <br> Michael Sammler <br> Julia Schmidt <br> Andreas Eichenseher <br> Hannah Witzenrath <br> Rebecca Reuthal <br> Carina Mnich <br> Dominik Peller <br>
@@ -22,7 +22,7 @@
         </div>
         <br>
 
-        <div style="margin-right: 30%; margin-left: 15%; padding: 20px; text-align: justify; background-color: #1BAB3F;">
+        <div class="abstaende" style="padding: 20px; text-align: justify; background-color: #1BAB3F;">
 
 
           <h4>Kontakt</h4>
@@ -30,7 +30,7 @@
             </div>
             <br>
 
-            <div style="margin-right: 30%; margin-left: 15%;  text-align: justify; background-color: #1BAB3F; padding: 20px;">
+            <div class="abstaende" style=" text-align: justify; background-color: #1BAB3F; padding: 20px;">
 
 
               <h4>Dachorganisation</h4>
@@ -45,7 +45,7 @@
                 <br>
 
 
-  <div style="margin-right: 30%; margin-left: 15%;  text-align: justify; background-color: #1BAB3F; padding: 20px;">
+  <div class="abstaende" style=" text-align: justify; background-color: #1BAB3F; padding: 20px;">
 
                   <h4>Rechtliche Hinweise</h4>
                   <b>1. Haftungsbeschränkung<br></b>

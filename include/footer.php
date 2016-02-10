@@ -29,7 +29,7 @@
         <br>
         &copy; 2016 WeltFAIRsteher <br> Kontakt: weltfairsteher@chancengestalten.de
     </footer> </div>
-
+</section>
      </div>
     </body>
     </html>
