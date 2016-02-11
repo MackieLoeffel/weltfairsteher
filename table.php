@@ -12,6 +12,10 @@ include "include/chart.php";
   <thead style="color: white;"><tr> <th  style="text-align: center">
     Rang</th> <th style="text-align: center">
       Klassenname</th> <th style="text-align: center">
+
+<!-- If Window-Width too small, do not show challenges
+-->
+
         Challenges</th> <th style="text-align: center">
           Kreativität</th> <th style="text-align: center">
        Punkte</th>
@@ -40,7 +44,7 @@ WHERE c.category = :category AND sc.class = :class");
             <td style="color: white; text-align: center"><b><?= e($rank) ?></b></td>
             <td style="text-align: center"><?= e($class["name"]) ?></td>
             <td>
-                <div class="table-box" style="text-align: center; margin-left: 20px;">
+                <div class="table-box" style="text-align: center; margin-left: 10%;">
                     <br>
                     <?php
                     $index = 0;
@@ -49,7 +53,7 @@ WHERE c.category = :category AND sc.class = :class");
                                            "class" => $class["id"]]);
                     ?>
                     <span class="table-number <?= e($c->name) ?>"
-                          style="margin-left: <?= $index * 25 ?>px;">
+                          style="margin-left: <?= $index * 20 ?>px;">
                         <b><?= $numStmt->fetch(PDO::FETCH_OBJ)->count ?></b>
                     </span>
                   <?php $index += 1; } ?>

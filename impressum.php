@@ -29,7 +29,7 @@
 
 
               <h4 style="color: white;">Dachorganisation</h4>
-              <a style="color: #1B4D0B;" href="http://www.chancengestalten.de/">CHANGE – Chancen Nachhaltig Gestalten. e.V.</a><br>
+              <a style="color: #1B4D0B;" target="_blank" href="http://www.chancengestalten.de/">CHANGE – Chancen Nachhaltig Gestalten. e.V.</a><br>
               Gemeinnütziger und mildtätiger Verein im Sinne von § 10b EStG, § 9 Abs. 1 Nr. 2 KStG und § 9 Nr. 5 GewStG.<br>
               Eingetragen am Amtsgericht Bamberg (VR 200408).<br>
               Sitz des Vereins ist Bamberg.<br>

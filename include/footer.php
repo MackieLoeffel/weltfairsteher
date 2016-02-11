@@ -14,7 +14,7 @@
     <footer style="
                    z-index: 5;
                    width: 100%;
-                   height: 60px;
+                   height: 70px;
                    background-color: #027018;
                    color: #CACCCA;
                    font-size: 11px;
@@ -27,7 +27,8 @@
                    ">
 
         <br>
-        &copy; 2016 WeltFAIRsteher <br> Kontakt: weltfairsteher@chancengestalten.de
+        &copy; 2016 WeltFAIRsteher <br> Kontakt: weltfairsteher@chancengestalten.de<br>
+        <a href="#" class="scrollbutton-top" style="color: white; float: right; margin-right: 1%;">↑</a>
     </footer> </div>
 </section>
      </div>

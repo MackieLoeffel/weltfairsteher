@@ -131,7 +131,29 @@ include __DIR__."/config.php";
                                   </nav>
                           </div>
 
+                          <!--  Scroll to Top Script -->
+                          <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+                          </script>
 
+                          <script>
+                          	jQuery(document).ready(function() {
+                          		var offset = 220;
+                          		var duration = 500;
+                          		jQuery(window).scroll(function() {
+                          			if (jQuery(this).scrollTop() > offset) {
+                          				jQuery('.scrollbutton-top').fadeIn(duration);
+                          			} else {
+                          				jQuery('.scrollbutton-top').fadeOut(duration);
+                          			}
+                          		});
+
+                          		jQuery('.scrollbutton-top').click(function(event) {
+                          			event.preventDefault();
+                          			jQuery('html, body').animate({scrollTop: 0}, duration);
+                          			return false;
+                          		})
+                          	});
+                          </script>
 
 
 
@@ -164,5 +186,5 @@ width: 40%; text-align: center; color: black; background-color: yellow;">
             </script>
 
             <body style="background-color: #C5F2B6;">
-<section id="border" style="margin-left: 13%; margin-right: 17%; background-color: #0F9C2E;">
+<section id="border" class="sectionbg">
                   <!-- onLoad="popup('http://nachhaltigkeitschallenge.de/lehrer-login/popup/','lehrer-login','320','240','center','front');" -->

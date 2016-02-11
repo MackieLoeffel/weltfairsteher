@@ -4,7 +4,7 @@
 <img src="logo_weltfairsteher_transparent_startseite.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
 <br>
 <br>
-<span class="abstaende" style="font-size: 29.3px;">
+<span class="abstaende" style="font-size: 25.9px;">
 <a href="#was" style="color: #C5F2B6; background-color: #C9960A;">Beschreibung?</a>&#160
     <a href="#worum" style="color: #C5F2B6; background-color: #3A7EFC; margin-left: 1%;">Thema?</a>
     <a href="#wer" style="color: #C5F2B6; background-color: #7761C5; margin-left: 1%;">Teilnehmer?</a>
@@ -12,7 +12,8 @@
 
     <a href="#gewinn" style="color: #C5F2B6; background-color: #CC4321; margin-left: 1%;">Gewinne?</a>
     <a href="#wie" style="color: #C5F2B6; background-color: #10B3B3; margin-left: 1%;">Anmeldung?</a>
-    <a href="#wir" style="color: #C5F2B6; background-color: black; margin-left: 1%;">Über uns!</a></span>
+    <a href="#wir" style="color: #C5F2B6; background-color: #C26111; margin-left: 1%;">Über uns!</a>
+    <a href="#spenden" style="color: #C5F2B6; background-color: #D490C6; margin-left: 1%;">Spenden</a></span>
                         <br>
 </span>
 
@@ -140,7 +141,7 @@ ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Chal
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
 </div><br>
 
-                        <b><h3 id="wir" class="abstaende" style="color: #C5F2B6; background-color: black;">Über uns
+                        <b><h3 id="wir" class="abstaende" style="color: #C5F2B6; background-color: #C26111;">Über uns
                         </h3></b>
 
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
@@ -148,7 +149,27 @@ Wir sind ein Team aus Mitgliedern des Max-Weber-Programms sowie des Vereins CHAN
 Ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
 Ob an der Planung, den Themen, der Website oder der Kommunikation - alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
 
+<b><h3 id="spenden" class="abstaende" style="color: #C5F2B6; background-color: #D490C6;">Spenden
+</h3></b>
+<div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
+Wie gesagt: <i>WeltFAIRsteher</i> wird rein ehrenamtlich betrieben. Um dennoch die Etappenziele und Preise für die Teilnehmer zu finanzieren,
+sind wir auf freiwillige Spenden angewiesen. Wenn ihr also eine Person kennt, die jemanden kennt, die jemanden kennt, die versucht, Geld
+loszuwerden, oder selbst einen kleinen (oder gerne auch großen) Beitrag zu einem nachhaltigen Bildungsprojekt leisten wollt, dann überweist
+einfach einen Betrag eurer Wahl auf das Konto des gemeinnützigen Vereins<br>
+<b> CHANGE - Chancen.Nachhaltig.Gestalten<br>
+IBAN: DE35 7705 0000 0302 2593 95<br>
+Bic-/Swift Code: BYLADEM1SKB<br>
+Sparkasse Bamberg<br></b>
+Bitte gebt dabei den Betreff “WeltFAIRsteher” sowie eure vollständige Postanschrift an.
+An diese schicken wir bei Beträgen über 200 Euro nämlich eine Spendenbescheinigung. Alternativ lässt sich über <a style="color: green;" href="http://www.chancengestalten.de/unterstutzen/spende/online-spende/" target="_blank"
+>diesen Link </a> auch direkt Online spenden. Und zu guter Letzt: Wer einen PayPal Account besitzt, kann auch komfortabel hierüber spenden:
 
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="hosted_button_id" value="8274KCREHG8KA" />
+  <input type="image" name="submit" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif"
+  alt="PayPal - The safer, easier way to pay online!" />
+   <img src="https://www.paypal.com/de_DE/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></form>
+</div><br>
 
 
                         <?php include "include/footer.php"?>

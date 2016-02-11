@@ -28,7 +28,7 @@ foreach($categories as $c) {
                 echo "<br>";
             }
         ?>
-        <b><?= e($t["desc"]) ?>:</b><br>
+        <b><?= e($t["desc"]) ?></b><br>
         <?php foreach($leckerStmt->fetchAll(PDO::FETCH_OBJ) as $entry) {?>
             <a href="<?= e($entry->link) ?>" target="_blank">
                 <font color="#00301B"><?= e($entry->title) ?></font>
