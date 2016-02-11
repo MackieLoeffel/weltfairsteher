@@ -4,21 +4,22 @@
 <img src="logo_weltfairsteher_transparent_startseite.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
 <br>
 <br>
-<span class="abstaende" style="font-size: 30.3px;">
+<span class="abstaende" style="font-size: 29.3px;">
 <a href="#was" style="color: #C5F2B6; background-color: #C9960A;">Beschreibung?</a>&#160
-    <a href="#worum" style="color: #C5F2B6; background-color: #3A7EFC;">Thema?</a>&#160
-    <a href="#wer" style="color: #C5F2B6; background-color: #7761C5;">Teilnehmer?</a>&#160
-    <a href="#ablauf" style="color: #C5F2B6; background-color: #1B5A0A;">Ablauf?</a>&#160
+    <a href="#worum" style="color: #C5F2B6; background-color: #3A7EFC; margin-left: 1%;">Thema?</a>
+    <a href="#wer" style="color: #C5F2B6; background-color: #7761C5; margin-left: 1%;">Teilnehmer?</a>
+    <a href="#ablauf" style="color: #C5F2B6; background-color: #1B5A0A; margin-left: 1%;">Ablauf?</a>
 
-    <a href="#gewinn" style="color: #C5F2B6; background-color: #CC4321;">Gewinne?</a>&#160
-    <a href="#wie" style="color: #C5F2B6; background-color: #10B3B3;">Anmeldung?</a>&#160
-    <a href="#wir" style="color: #C5F2B6; background-color: black;">Über uns!</a></span>
+    <a href="#gewinn" style="color: #C5F2B6; background-color: #CC4321; margin-left: 1%;">Gewinne?</a>
+    <a href="#wie" style="color: #C5F2B6; background-color: #10B3B3; margin-left: 1%;">Anmeldung?</a>
+    <a href="#wir" style="color: #C5F2B6; background-color: black; margin-left: 1%;">Über uns!</a></span>
                         <br>
 </span>
 
                         <br>
                         <img src="weltkarte_gewuerze2.jpg" class="abstaende" style="width: 98%; height: auto;" alt="Weltkarte aus Gewuerzen">
                         <br>
+                          <br>
                         <b>
                         <h3 id="was" class="abstaende" style="color: #C5F2B6; background-color: #C9960A;">Was ist das?</h3>
                         </b>

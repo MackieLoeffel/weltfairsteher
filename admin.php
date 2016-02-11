@@ -317,9 +317,42 @@ include "include/header.php";
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
 
 
 <br>
+<br>
+<br>
+<br>
 
-</body>
-</html>
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<?php include "include/footer.php"?>

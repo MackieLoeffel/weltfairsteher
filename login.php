@@ -27,7 +27,7 @@ if(isset($_SESSION["user"])) {
 if($showForm) {
 ?>
         <div class="login" style="width: 30%; margin-left: 35%; margin-right: 35%;
-        margin-top: 50px; height: auto; background-color: #6EDB95;">
+        margin-top: 0px; height: auto; background-color: #6EDB95;">
             <form method="post">
                 <p><input type="text" name="email" style="width: 100%;
                   text-align: center; margin-top: 5px;" value=""

@@ -4,20 +4,15 @@
 <br>
 
 
-
-<div class="abstaende" style=" text-align: justify; background-color: #1BAB3F; padding: 20px;">
-
-
-
-  <h4>Hauptverantwortliche</h4>
-  Jana Costa<br>Maximilian Held<br>
-    </div>
     <br>
 
     <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 
-      <h4>Team</h4>
-      Jana Costa <br> Maximilian Held <br> Michael Sammler <br> Julia Schmidt <br> Andreas Eichenseher <br> Hannah Witzenrath <br> Rebecca Reuthal <br> Carina Mnich <br> Dominik Peller <br>
+      <h4 style="color: white;">Team</h4>
+      Jana Costa <br> Maximilian Held <br> Michael Sammler <br>
+      Julia Schmidt <br> Andreas Eichenseher <br>
+      Hannah Witzenrath <br>  Carina Mnich<br>
+       Rebecca Reuthal <br>
 
         </div>
         <br>
@@ -25,7 +20,7 @@
         <div class="abstaende" style="padding: 20px; text-align: justify; background-color: #1BAB3F;">
 
 
-          <h4>Kontakt</h4>
+          <h4 style="color: white;">Kontakt</h4>
           <a style="color: #1B4D0B;" href="mailto:weltfairsteher@chancengestalten.de" target="_top">weltfairsteher@chancengestalten.de</a>
             </div>
             <br>
@@ -33,7 +28,7 @@
             <div class="abstaende" style=" text-align: justify; background-color: #1BAB3F; padding: 20px;">
 
 
-              <h4>Dachorganisation</h4>
+              <h4 style="color: white;">Dachorganisation</h4>
               <a style="color: #1B4D0B;" href="http://www.chancengestalten.de/">CHANGE – Chancen Nachhaltig Gestalten. e.V.</a><br>
               Gemeinnütziger und mildtätiger Verein im Sinne von § 10b EStG, § 9 Abs. 1 Nr. 2 KStG und § 9 Nr. 5 GewStG.<br>
               Eingetragen am Amtsgericht Bamberg (VR 200408).<br>
@@ -47,7 +42,7 @@
 
   <div class="abstaende" style=" text-align: justify; background-color: #1BAB3F; padding: 20px;">
 
-                  <h4>Rechtliche Hinweise</h4>
+                  <h4 style="color: white;">Rechtliche Hinweise</h4>
                   <b>1. Haftungsbeschränkung<br></b>
                   Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Der Anbieter übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte. Die Nutzung der Inhalte der Website erfolgt auf eigene Gefahr des Nutzers. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Mit der reinen Nutzung der Website des Anbieters kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande.<br><br>
                   <b>2. Externe Links<br></b>

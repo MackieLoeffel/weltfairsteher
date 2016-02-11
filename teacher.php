@@ -22,7 +22,7 @@ include "include/chart.php";
         <!--Klasse wechseln, Logout
            -->
         <div class="teacher-challenge-box-inner">
-            <h4>Challenge eintragen:</h4>
+            <h4 style="color: white;">Challenge eintragen:</h4>
             <span style="margin-bottom: 4px; margin-top: 9px; font-size:13px; color: black">
                <form id="solveChallenge" action="javascript:void(0);" onsubmit="sendForm(this)">
                     <b>Klasse:</b>
@@ -91,10 +91,10 @@ GROUP BY c.id)");
 
            ">
 
-           <h4 style="margin-left: 22px;">Allgemeine Hinweise</h4>
+           <h4 style="margin-left: 22px; color: white;">Allgemeine Hinweise</h4>
 
-           <ul style="color: white; text-align: justify; padding: 30px;">
-<li>Auf dieser Seite können bestandene <b style="color: black;">Challenges eingetragen</b> werden.
+           <ul style="color: black; text-align: justify; padding: 30px;">
+<li>Auf dieser Seite können bestandene <b style="color: white;">Challenges eingetragen</b> werden.
   Falls sie für mehrere Klassen verantwortlich sind, muss die entsprechende Klasse
   zunächst ausgewählt werden. Achtung: Relevant hierfür ist nicht die Auswahl
   in der schwarzen Menüleiste. Alternativ können die Challenges auch direkt im Menüpunkt <i>Challenges</i>
@@ -102,11 +102,11 @@ GROUP BY c.id)");
   unter der jeweiligen Challenge.
 </li><br>
 <li>Nachdem Sie sich als Lehrkraft eingeloggt haben, können Sie unter
-  <i>Challenges</i> zu jeder Aufgabe eine <b style="color: black;">PDF-Datei downloaden</b>, in der
+  <i>Challenges</i> zu jeder Aufgabe eine <b style="color: white;">PDF-Datei downloaden</b>, in der
   Sie weitere Informationen zur Umsetzung einer Challenge finden, die für
   Sie als Lehrkraft relevant sind.
 </li><br>
-<li>Sie können auf dieser Seite auch <b style="color: black;">Selfmade-Challenges</b> von einer Klasse,
+<li>Sie können auf dieser Seite auch <b style="color: white;">Selfmade-Challenges</b> von einer Klasse,
   für die Sie verantwortlich sind, vorschlagen. Füllen Sie dazu einfach das
   nebenstehende Formular aus. Die vorgeschlagene Challenge wird allerdings
   nicht sofort hinzugefügt, sondern erst einer Kontrolle unterzogen. Entspricht
@@ -118,7 +118,7 @@ GROUP BY c.id)");
   behält es sich vor, über die Entscheidung bezüglich der Akzeptanz einer
   Challenge selbständig zu verfügen.
 </li><br>
-<li>Zudem können Sie links Ihre <b style="color: black;">persönlichen Zugangsdaten </b>(Passwort und E-Mail-Adresse) ändern.
+<li>Zudem können Sie links Ihre <b style="color: white;">persönlichen Zugangsdaten </b>(Passwort und E-Mail-Adresse) ändern.
   Wenn sich die Größe einer von Ihnen betreuten Klasse ändert oder Sie anderweitige Fragen beziehungsweise Probleme haben,
    schreiben Sie uns einfach eine E-Mail.
 </li>
@@ -143,7 +143,7 @@ GROUP BY c.id)");
                <form id="addChallenge" action="javascript:void(0);" onsubmit="sendForm(this)">
                    <input type="hidden" name="suggested" value="yes">
                    <input type="hidden" name="category" value="">
-            <h4>Selfmade-Challenge vorschlagen</h4>
+            <h4 style="color: white;">Selfmade-Challenge vorschlagen</h4>
             <div style="margin-left: 14px">
                 <b>Von:</b>
                 <select name="class" size="1">
@@ -206,7 +206,7 @@ padding: 10px;
  ">
 
 <form id="changeUser" action="javascript:void(0);" onsubmit="sendForm(this)">
-    <h4 style="color: black;">Daten bearbeiten</h2>
+    <h4 style="color: white;">Daten bearbeiten</h2>
 
     <span style="font-size: 11px;">(Felder leer lassen, um sie nicht zu ändern)<br/></span>
     <input type="hidden" name="user" value="<?= e($_SESSION["user"]) ?>">
