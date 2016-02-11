@@ -19,7 +19,7 @@
 
                         <br>
                         <img src="weltkarte_gewuerze2.jpg" class="abstaende" style="width: 98%; height: auto;" alt="Weltkarte aus Gewuerzen">
-                        <br>
+                      
                           <br>
                         <b>
                         <h3 id="was" class="abstaende" style="color: #C5F2B6; background-color: #C9960A;">Was ist das?</h3>
@@ -28,11 +28,11 @@
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
                           WeltFAIRsteher ist eine Nachhaltigkeitschallenge für Schulklassen, also ein Wettbewerb, bei dem es darum geht,
                         gemeinsam als Klasse Aufgaben zu bewältigen, die mit Nachhaltigkeit zu tun haben. Das kann von kleinen handwerklichen Projekten über
-                        die Organisation und Verspeisung eines ökologisch nachhaltigen Frühstücks bis hin zu unterhaltsamen Spielen,
+                        die <span id="worum"></span> Organisation und Verspeisung eines ökologisch nachhaltigen Frühstücks bis hin zu unterhaltsamen Spielen,
                         spannenden Referaten und sozialem Engagement reichen.
 
                             </div><br>
-                        <b><h3 id="worum" class="abstaende" style=" color: #C5F2B6; background-color: #3A7EFC;">Worum geht´s?</h3>
+                        <b><h3  class="abstaende" style=" color: #C5F2B6; background-color: #3A7EFC;">Worum geht´s?</h3>
                         </b>
 
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
@@ -49,10 +49,10 @@
                         Das bringt aber viele Probleme mit sich. Nur eines davon sind die vielen Treibhausgase, die die Schiffe und Lastwägen ausstoßen.
                         Das ist schlecht für die Umwelt
                         und beschleunigt die Erderwärmung. Solche Probleme gibt es an vielen Orten unserer Welt. Als Teilnehmer an WeltFAIRsteher lernt ihr einige davon kennen und
-                        erfahrt viele Lösungsvorschläge, wie die Probleme beseitigt werden könnten. Nachhaltigkeit kann nämlich eigentlich jeder. Man muss nur das Glück haben,
+                        erfahrt viele Lösungsvorschläge, wie die Probleme beseitigt werden könnten. <span id="wer"></span> Nachhaltigkeit kann nämlich eigentlich jeder. Man muss nur das Glück haben,
                         zur richtigen Zeit und am richtigen Ort die richtigen Erfahrungen zu machen. Und dabei helfen wir euch.
                               </div><br>
-                        <b><h3 id="wer"  class="abstaende" style="color: #C5F2B6; background-color: #7761C5;">Wer kann mitmachen?</h3>
+                        <b><h3   class="abstaende" style="color: #C5F2B6; background-color: #7761C5;">Wer kann mitmachen?</h3>
                         </b>
 
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
@@ -60,11 +60,11 @@
 Besonders vorteilhaft ist es natürlich, eine motivierte Lehrkraft zu haben, mit der man an <i>WeltFAIRsteher</i> teilnimmt.
 Wenn ihr eine Lehrkraft mit einem Korb Äpfeln oder einem Sack Kartoffeln bestechen wollt, ist das also vielleicht nicht die beste Voraussetzung -
 sofern die Lehrerin beziehungsweise der Lehrer nicht nur zu <s>faul</s> beschäftigt war und sich eigentlich für Nachhaltigkeit interessiert.
-Übrigens: Eine Klasse kann natürlich auch mit der Unterstützung mehrerer Lehrkräfte teilnehmen, etwa um sowohl im Erdkunde-, als auch im Biologie-Unterricht an Challenges zu arbeiten.
+Übrigens: <span id="ablauf"></span> Eine Klasse kann natürlich auch mit der Unterstützung mehrerer Lehrkräfte teilnehmen, etwa um sowohl im Erdkunde-, als auch im Biologie-Unterricht an Challenges zu arbeiten.
 Anmelden kann euch aber nur eine Lehrkraft.
                         </div><br>
 
-                        <b><h3 id="ablauf" class="abstaende" style="color: #C5F2B6; background-color: #1B5A0A;">Wie läuft´s ab?</h3>
+                        <b><h3  class="abstaende" style="color: #C5F2B6; background-color: #1B5A0A;">Wie läuft´s ab?</h3>
                         </b>
 
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
@@ -95,13 +95,13 @@ wie wertvoll dieser Bonus für euch sein kann:
  Falls ihr dafür auf Ideensuche seid oder einfach mehr über das Thema Nachhaltigkeit erfahren wollt,
  findet ihr im <i>Leckerwissen</i> viele hilfreiche Informationen und Links zu themenverwandten Seiten. Stoßt ihr im Internet selbst auf Artikel,
  Videos oder
- Sonstiges, was in das <i>Leckerwissen</i> passen würde, so könnt ihr es dort einfach hinzufügen. Auch dadurch profitieren alle Teilnehmer voneinander und bilden
+ Sonstiges, was in das <i>Leckerwissen</i> passen würde,  <span id="gewinn"></span> so könnt ihr es dort einfach hinzufügen. Auch dadurch profitieren alle Teilnehmer voneinander und bilden
  sozusagen eine "Schwarmintelligenz".
 
 
 
                         </div><br>
-                        <b><h3 id="gewinn" class="abstaende" style="color: #C5F2B6; background-color: #CC4321;">Was kann man gewinnen?
+                        <b><h3  class="abstaende" style="color: #C5F2B6; background-color: #CC4321;">Was kann man gewinnen?
                         </h3></b>
 
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
@@ -120,10 +120,10 @@ Der Siegerklasse winkt zum Beispiel ein erlebnispädagogisches Wochenende, also 
 kostenlose Verpflegung genießen und spannende Entdeckungen machen. Platz Zwei und Drei werden ebenfalls besonders überrascht.
 Wenn ihr am Ende nicht einen der drei ersten Plätze belegen solltet, so werdet ihr trotzdem
 einen kleinen Preis samt Urkunde erhalten, denn selbst wer am Tabellenende steht ist deshalb nicht "un-nachhaltig"
-beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit!
+beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit! <span id="wie"></span>
 Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
 </div><br>
-<b><h3 id="wie" class="abstaende" style="color: #C5F2B6; background-color: #10B3B3;">Wie meldet man sich an?</h3></b>
+<b><h3 class="abstaende" style="color: #C5F2B6; background-color: #10B3B3;">Wie meldet man sich an?</h3></b>
 
 <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
     Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an weltfairsteher@chancengestalten.de und teilt uns den kreativen Klassennamen mit,
@@ -138,18 +138,18 @@ Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Be
 eintragen oder eine Selfmade-Challenge vorschlagen. Außerdem haben eingeloggte Lehrkräfte Zugang zu
 ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Challenges.
 
-    Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
+    Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. <span id="wir"></span> <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
 </div><br>
 
-                        <b><h3 id="wir" class="abstaende" style="color: #C5F2B6; background-color: #C26111;">Über uns
+                        <b><h3  class="abstaende" style="color: #C5F2B6; background-color: #C26111;">Über uns
                         </h3></b>
 
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Wir sind ein Team aus Mitgliedern des Max-Weber-Programms sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
 Ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
-Ob an der Planung, den Themen, der Website oder der Kommunikation - alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
+Ob an der Planung, den Themen, der Website oder der Kommunikation - <span id="spenden"></span> alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
 
-<b><h3 id="spenden" class="abstaende" style="color: #C5F2B6; background-color: #D490C6;">Spenden
+<b><h3  class="abstaende" style="color: #C5F2B6; background-color: #D490C6;">Spenden
 </h3></b>
 <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Wie gesagt: <i>WeltFAIRsteher</i> wird rein ehrenamtlich betrieben. Um dennoch die Etappenziele und Preise für die Teilnehmer zu finanzieren,
