@@ -131,25 +131,21 @@ include __DIR__."/config.php";
                                   </nav>
                           </div>
 
-                          <!--  Scroll to Top Script -->
-                          <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-                          </script>
-
                           <script>
-                          	jQuery(document).ready(function() {
+                           $(document).ready(function() {
                           		var offset = 220;
                           		var duration = 500;
-                          		jQuery(window).scroll(function() {
-                          			if (jQuery(this).scrollTop() > offset) {
-                          				jQuery('.scrollbutton-top').fadeIn(duration);
+                          		$(window).scroll(function() {
+                          			if ($(this).scrollTop() > offset) {
+                          				$('.scrollbutton-top').fadeIn(duration);
                           			} else {
-                          				jQuery('.scrollbutton-top').fadeOut(duration);
+                          				$('.scrollbutton-top').fadeOut(duration);
                           			}
                           		});
 
-                          		jQuery('.scrollbutton-top').click(function(event) {
+                          		$('.scrollbutton-top').click(function(event) {
                           			event.preventDefault();
-                          			jQuery('html, body').animate({scrollTop: 0}, duration);
+                          			$('html, body').animate({scrollTop: 0}, duration);
                           			return false;
                           		})
                           	});
