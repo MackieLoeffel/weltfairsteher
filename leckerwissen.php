@@ -58,19 +58,35 @@ foreach($categories as $c) {
 
 <!--
      ADD NEW LECKERWISSEN
+
+
+to discuss:
+- captcha einfuegen, um vor spam zu schuetzen
+- leckerwissen vor dem hinzufuegen ueberpruefen, also an uns schicken, um sie
+freizuschalten
+
+to do:
+hinweise entschaerfen, sodass schueler keine hemmnisse haben, leckerwissen
+einzutragen
+
    -->
 
 
 <div style="float: right; background-color:#1BAB3F;
-font-size: 15px; margin-right: 15%; color: white; width: 30%; padding: 10px; position: relative;">
-<h4>Neues Leckerwissen hinzufügen:</h4>
-<form id="addLeckerwissen" action="javascript:void(0);" onsubmit="sendForm(this)">
-        <label for="bezeichnung" style="color: black;font-size: 13px;">
-          Bezeichnung:
+font-size: 15px; margin-right: 15%; color: white; width: 50%; padding: 10px; position: relative;">
+<b style="font-size: 18px;">Neues Leckerwissen hinzufügen:</b><br>
+
+<span style="float: right; font-size: 11px; color: black; text-align: justify;">Bitte fügt nur thematisch passende Einträge ins Leckerwissen - Werbung, also
+  Links zu Produkten oder Händlern, soll nicht ins Leckerwissen. Unpassende Einträge wird das Team
+  von WeltFAIRsteher unankündigt und ohne offizielle Stellungnahme entfernen.
+</span><br><br>
+<form id="addLeckerwissen" action="javascript:void(0);" onsubmit="sendForm(this)" style="float: left;">
+        <label for="bezeichnung" style="color: white; font-size: 13px;">
+        <br>  Bezeichnung:
             <input type="text" name="title" size="20" max="200">
         </label>
         <br>
-        <label for="link" style="color: black; font-size: 13px;">
+        <label for="link" style="color: white; font-size: 13px;">
           Link:
             <input type="url" name="link" style="margin-left: 47px;"
             size="20" max="200">
