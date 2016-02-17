@@ -48,7 +48,7 @@ GROUP BY c.id)");
                     <b>Challenge:</b><br>
                     <select name="challenge" id="challenges" size="1"> </select>
                     <br><br>
-                    <input type="submit" value="eintragen" style="background-color: green"><br><br>
+                    <input type="submit" value="eintragen" style="background-color: green; color: white;"><br><br>
                 </form>
                 <script type="text/javascript">
                  var challenges = <?= json_encode($challenges); ?>;
@@ -134,7 +134,7 @@ GROUP BY c.id)");
            <div class="teacher-challenge-box-inner"
                style="
                z-index: 1;
-                      margin-top: 295px;
+                      margin-top: 235px;
                       position: absolute;
                       float: left;
                       background-color:#1BAB3F;
@@ -169,7 +169,7 @@ padding: 10px;
             </div>
             <br>
             <div style="color: white;">
-                <textarea cols="50" row=8" name="description" style="height: 329px;">Challenge-Beschreibung</textarea>
+                <textarea cols="50" row=8" name="description" style="height: 329px; width: 93%;">Challenge-Beschreibung</textarea>
 
                 <br>
 
@@ -224,7 +224,7 @@ padding: 10px;
      Passwort wiederholen:<br>
      <input type="text" name="password2" value=""> </input>
  <br><br>
-     <input type="submit" value="Bestätigen" style="background-color: green; "> </input>
+     <input type="submit" value="Bestätigen" style="background-color: green; color: white;"> </input>
  </form>
  </div>
 
@@ -236,7 +236,7 @@ float: right;
 width: 24.5%;">
 <br>
             <form action="logout.php" method="get">
-            <input type="submit" value="Logout" style="background-color: #52150D; font-size: 11px;">
+            <input type="submit" value="Logout" style="background-color: #52150D; font-size: 11px; color: white;">
         </form>
 <br>
 </div>

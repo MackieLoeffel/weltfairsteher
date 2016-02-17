@@ -14,12 +14,13 @@ include __DIR__."/config.php";
             <!--<![endif]-->
             <head>
                 <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
                 <title>WeltFAIRsteher</title>
 
                 <meta name="description" content="Die Nachhaltigkeitschallenge"/>
                 <link rel="canonical" href="http://link"/>
-
+<link href="bootstraps/css/bootstrap.min.css" rel="stylesheet">
 <!-- Favicon einbinden
 -->
 <link rel="apple-touch-icon" sizes="57x57" type="image/x-icon" href="favi/apple-icon-57x57.png">
@@ -42,10 +43,6 @@ include __DIR__."/config.php";
 
 
 
-                <style id='wp-polls-inline-css' type='text/css'>.wp-polls .pollbar{margin:1px;font-size:8px;line-height:10px;height:10px; border:1px solid #1874CD}</style>
-                <link rel='stylesheet' id='twentythirteen-fonts-css' href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700%7COpen+Sans+Condensed%3A300%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all'/>
-             <link rel='stylesheet' id='genericons-css' href='http://de.ubergizmo.com/wp-content/themes/ubergizmo/fonts/genericons.css?ver=2.09' type='text/css' media='all'/>
-                <link rel='stylesheet' id='twentythirteen-style-css' href='http://de.ubergizmo.com/wp-content/themes/ubergizmo/style.css?ver=1447668848' type='text/css' media='all'/>
                 <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
                 <link rel='stylesheet' href='styles.css' type='text/css' />
               <script src="libs/lodash.js"></script>
@@ -55,7 +52,13 @@ include __DIR__."/config.php";
                 <!--[if lt IE 9]>
 
                      <![endif]-->
-                <script pagespeed_orig_type="text/javascript" type="text/psajs" orig_index="1">function w3tc_popupadmin_bar(url){return window.open(url,'','width=800,height=600,status=no,toolbar=no,menubar=no,scrollbars=yes');}</script>
+
+<link href='https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|PT+Sans+Narrow|Titillium+Web|Lobster|Patua+One|Pathway+Gothic+One|Lobster+Two|Amaranth' rel='stylesheet' type='text/css'>
+
+
+                <script pagespeed_orig_type="text/javascript" type="text/psajs" orig_index="1">
+                function w3tc_popupadmin_bar(url){return window.open(url,'','width=800,height=600,status=no,toolbar=no,menubar=no,scrollbars=yes');}
+                </script>
 
                 <SCRIPT LANGUAGE='JAVASCRIPT' TYPE='TEXT/JAVASCRIPT'>
                  <!--
@@ -76,26 +79,42 @@ include __DIR__."/config.php";
 
             </head>
 
-            <header id="masthead" class="site-header is-logged-in" role="banner" position="fixed">
+
+
+<div class="container" id="border" style="margin-left: 13%; width: 70%; background-color: #0F9C2E; height: 40px; margin-bottom: 70px;
+ position: fixed;">
+
+
+<div class="navbar navbar-default" role="navigation" id="border2"
+style="background-color: #DFF7D7; height: 32px; margin-top: -5px; border-color: white">
+
+<div class="navbar-header">
+
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">Menü</></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+
+<span class="navbar-brand">
+<a href="index.php">
+    <img src="Logo_BGtransparent_blackFont.png" alt="Weltfairsteher" title="Weltfairsteher" style="height: 32px; margin-top: -6px;">
+  </a>
+
+</span>
 
 
 
-                          <div id="navbar" class="navbar">
-                              <nav id="site-navigation" class="navigation main-navigation" role="navigation" style="margin-top: -33px">
-                                  <a class="home-link" href="index.php" title="Weltfairsteher" rel="home">
-                                      <h1 class="site-title">
-                                        <img src="Logo_BGtransparent.png" alt="Weltfairsteher" title="Weltfairsteher" style="height: 32px; margin-left: 10px">
-                                      </h1>
-                                  </a>
-
-<!--
-                                  <a class="menu-toggle"
-                                         href="#" style="color: white;" title="menu">Menü</a>
--->
+</div>
 
 
+  <div class="navbar-collapse collapse">
 
-                                  <div class="menu-menu-left-container" style="margin-left: -10px; float: left"><ul id="menu-menu-left" class="nav-menus nav-menu">
+
+                                  <ul class="nav navbar-nav" >
+
 
                                      <?php
                                      $sites = ["Tabelle" => "table.php",
@@ -109,16 +128,17 @@ include __DIR__."/config.php";
                                      foreach ($sites as $site => $link) {
                                      ?>
 
-                                         <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?=$link?>"><?=$site?></a></li>
+                                     <li class="menu-item menu-item-type-taxonomy menu-item-object-category"
+                                     style="font-size: 1.2vw; text-transform: uppercase; font-family: Pathway Gothic One;">
+                                     <a href="<?=$link?>"><b><?=$site?></b></a></li>
 
                                      <?php } ?>
-                                  </ul></div>
 
-                                  <span style="margin-right: 10px; margin-left: 10px; margin-bottom: 10px; margin-top: 9px; float: left; font-size:13px; color: #0F9C2E">
+<li style="margin-top: 15px; margin-left: 15px; color: grey; font-size: 1vw;">
                                     <form method="POST">
-                                      <b>Wähle deine Klasse:</b>
 
                                       <select id="class-select" name="klasse" size="1">
+<option value="default">Klasse wählen</option>
                                           <?php
                                           $classStmt = $db->prepare("SELECT id, name FROM class");
                                           $classStmt->execute();
@@ -127,8 +147,11 @@ include __DIR__."/config.php";
                                               <option value="<?= e($row->id) ?>"><?= e($row->name) ?></option>
                                           <?php } ?>
                                       </select>
-                                  </form></span>
-                                  </nav>
+                                  </form></li>
+                                    </ul>
+                          </div>
+                          </div>
+                          </div>
                           </div>
 
                           <script>
@@ -161,9 +184,7 @@ width: 40%; text-align: center; color: black; background-color: yellow;">
   Homepage noch in Bearbeitung.
 </div>
 -->
-            <style>
-             .abstand { margin: 0cm 1cm 0cm 1cm;}
-            </style>
+            
 
             <script type="text/javascript" language="JavaScript">
              function toggleMe(a){
@@ -181,6 +202,14 @@ width: 40%; text-align: center; color: black; background-color: yellow;">
              }
             </script>
 
-            <body style="background-color: #C5F2B6;">
-<section id="border" class="sectionbg">
+            <body style="background-color: #C5F2B6; font-family: Roboto Slab;">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstraps/js/bootstrap.min.js"></script>
+    <section id="border" class="sectionbg">
+<br>
+<br>
+<br>
+
                   <!-- onLoad="popup('http://nachhaltigkeitschallenge.de/lehrer-login/popup/','lehrer-login','320','240','center','front');" -->

@@ -8,14 +8,14 @@ $leckerStmt = $db->prepare("SELECT link, title FROM leckerwissen
 WHERE category = :category AND type = :type");
 foreach($categories as $c) {
 ?>
-    <div class=".abstand leckerwissen-header <?= e($c->name) ?>">
-        <?= e($c->title) ?>
-    </div>
-<?php
-}
-foreach($categories as $c) {
-?>
-    <div class=".abstand leckerwissen-box">
+
+<div class="container">
+<div class="row">
+
+    <div class="leckerwissen-header <?= e($c->name) ?>" class="col-xs-12 col-sm-6 col-md-4">
+        <?= e($c->title) ?></div>
+
+    <div class="leckerwissen-box" class="col-xs-12 col-sm-6 col-md-4" style="padding: 1%;">
         <?php
         $first = true;
         foreach($leckerwissenTypes as $t) {
@@ -28,7 +28,7 @@ foreach($categories as $c) {
                 echo "<br>";
             }
         ?>
-        <b><?= e($t["desc"]) ?></b><br>
+        <b style="font-family: Titillium Web;"><?= e($t["desc"]) ?></b><br>
         <?php foreach($leckerStmt->fetchAll(PDO::FETCH_OBJ) as $entry) {?>
             <a href="<?= e($entry->link) ?>" target="_blank">
                 <font color="#00301B"><?= e($entry->title) ?></font>
@@ -37,6 +37,12 @@ foreach($categories as $c) {
 <?php } ?>
     </div>
 <?php } ?>
+</div>
+</div>
+<?php
+
+
+?>
 
 <!--
      BOOKLET DER ALTERNATIVEN DOWNLOAD
@@ -46,9 +52,9 @@ foreach($categories as $c) {
    margin-left: 7px; ">
     <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
     target="_blank">
-      <img src="Booklet-der-Alternativen.jpg" tag="booklet" alt="Booklet der Alternativen" width="18%" height="auto">
+      <img src="Booklet-der-Alternativen.jpg" tag="booklet" alt="Booklet der Alternativen" width="25%" height="auto">
       </a>
-   <div style="background-color:#1BAB3F; font-size: 17px; color: black; width: 18%; text-align: center; ">
+   <div style="background-color:#1BAB3F; font-size: 17px; color: black; width: 25%; text-align: center; ">
      <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
      target="_blank"><b style="color: white;"><i>Booklet der Alternativen</i><br></b>
      <b style="font-size: 15px; color: black; ">
@@ -73,27 +79,27 @@ einzutragen
 
 
 <div style="float: right; background-color:#1BAB3F;
-font-size: 15px; margin-right: 15%; color: white; width: 50%; padding: 10px; position: relative;">
-<b style="font-size: 18px;">Neues Leckerwissen hinzufügen:</b><br>
+font-size: 15px; margin-right: 15%; color: white; width: 25%; padding: 10px; position: relative;">
+<b style="font-size: 18px; text-align: center;">Neues Leckerwissen hinzufügen:</b><br>
 
-<span style="float: right; font-size: 11px; color: black; text-align: justify;">Bitte fügt nur thematisch passende Einträge ins Leckerwissen - Werbung, also
+<span style="float: right; font-size: 11px; color: black; text-align: justify; font-family: Titillium Web;">Bitte fügt nur thematisch passende Einträge ins Leckerwissen - Werbung, also
   Links zu Produkten oder Händlern, soll nicht ins Leckerwissen. Unpassende Einträge wird das Team
   von WeltFAIRsteher unankündigt und ohne offizielle Stellungnahme entfernen.
 </span><br><br>
 <form id="addLeckerwissen" action="javascript:void(0);" onsubmit="sendForm(this)" style="float: left;">
         <label for="bezeichnung" style="color: white; font-size: 13px;">
-        <br>  Bezeichnung:
+        <br>  Bezeichnung:<br>
             <input type="text" name="title" size="20" max="200">
         </label>
         <br>
         <label for="link" style="color: white; font-size: 13px;">
-          Link:
-            <input type="url" name="link" style="margin-left: 47px;"
+          Link:<br>
+            <input type="url" name="link" style=""
             size="20" max="200">
         </label><br>
         <span style="font-size: 13px; margin-right: 52px"><b>
-          Art:</b></span>
-        <select name="type" size="1">
+          Art:</b></span><br>
+        <select name="type" size="1" style="color: black;">
             <?php foreach($leckerwissenTypes as $t) { ?>
                 <option value="<?=e($t["name"])?>"><?= e($t["desc"]) ?>
                 </option>
@@ -102,8 +108,8 @@ font-size: 15px; margin-right: 15%; color: white; width: 50%; padding: 10px; pos
         </span>
         <br>
         <span style="font-size: 13px; margin-right: 13px"><b>
-          Kategorie:</b></span>
-                <select name="category" size="1">
+          Kategorie:</b></span><br>
+                <select name="category" size="1" style="color: black;">
                     <?php foreach($categories as $c) { ?>
                         <option value="<?=e($c->name)?>">
                           <?=e($c->title)?></option>
@@ -112,11 +118,47 @@ font-size: 15px; margin-right: 15%; color: white; width: 50%; padding: 10px; pos
         </span>
 
 
-
+<br>
         <input type="submit" value="Hinzufügen"
-        style="background-color: green; font-size: 12px; float: right; width: 50px;">
+        style="background-color: green; font-size: 12px; margin-left: auto; margin-right: auto; width: auto;">
         <!--<input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()"> -->
     </form></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>

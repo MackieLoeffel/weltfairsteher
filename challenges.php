@@ -13,36 +13,41 @@ WHERE c.id = :id");
         $classes = $classes . " class-" . e($classRow->id);
     }
 ?>
-    <div class="<?= e($row->category) ?> challenge-points">
-        <b><?= e($row->points)?></b>
+
+
+    <div class="<?= e($row->category) ?> challenge-points" >
+        <b style="font-family: Titillium Web;"><?= e($row->points)?></b>
     </div>
     <b><u><a class="<?= $classes ?> challenge-title"
              onclick="return toggleMe('challenge-<?=e($row->id)?>')"
-             href="javascript:void(0)" ><?=e($row->name)?></a></u></b><br>
+             href="javascript:void(0)"
+             style="font-family: Titillium Web;"><?=e($row->name)?></a></u></b><br>
     <div style="display:none;" class="dbox" id="challenge-<?=e($row->id)?>">
         <?= e($row->description) ?>
         <br>
         <?php if($row->author) { ?>
-            <div style="color: black;">Von:<b><?=e($row->author)?></b></div>
+            <div style="color: black; font-family: Titillium Web;">Von:<b><?=e($row->author)?></b></div>
         <?php
         }
         // pdfs
         if(file_exists(getPDFPath($row->id, PUPIL_PDF))) {?>
             <div>
-                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="color: black"><b>Download:</b> Materialdatei [PDF]</a>
+                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="color: black; font-family: Titillium Web;"><b>Download:</b> Materialdatei [PDF]</a>
             </div>
         <?php
         }
         if(isLoggedIn() && file_exists(getPDFPath($row->id, TEACHER_PDF))) {?>
             <div>
-                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black"><b>Download:</b> Hinweise für Lehrkraft [PDF]</a>
+                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black; font-family: Titillium Web;"><b>Download:</b> Hinweise für Lehrkraft [PDF]</a>
             </div>
         <?php } ?>
     </div>
     <?php if(isLoggedIn()) {?>
         <div class="solve-link <?= $classes ?>" >
-            <a href="#" onclick="callApi('solveChallenge', {'class': selectedClass, 'challenge': <?= e($row->id)?>})" style="color: black">Challenge abschließen!</a>
+            <a href="#" onclick="callApi('solveChallenge', {'class': selectedClass, 'challenge': <?= e($row->id)?>})" style="color: black; font-family: Titillium Web;">Challenge abschließen!</a>
         </div>
+
+
     <?php } ?>
     <br><br>
 <?php
@@ -170,6 +175,7 @@ NeuStrukturierung test ende
             ?>
         </div>
     <?php } ?>
+</div>
 </div>
 <br>
 <br>

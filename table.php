@@ -8,18 +8,20 @@ include "include/chart.php";
 <br>
 
 
-<table class="abstaende" style="color= white; max-width: 98%;" cellspacing="0" cellpadding="20">
-  <thead style="color: white;"><tr> <th  style="text-align: center">
-    Rang</th> <th style="text-align: center">
-      Klassenname</th> <th style="text-align: center">
+
+
+<table class="abstaende" style="color= white; width: 98%;" cellspacing="0" cellpadding="20">
+  <thead style="color: white;"><tr> <th  style="text-align: center; font-family: Titillium Web;">
+    Rang</th> <th style="text-align: center; font-family: Titillium Web;">
+      Klassenname</th> <th style="text-align: center; font-family: Titillium Web;" class="row hidden-xs" class="row hidden-sm" class="visible-md">
 
 <!-- If Window-Width too small, do not show challenges
 -->
 
-        Challenges</th> <th style="text-align: center">
-          Kreativität</th> <th style="text-align: center">
+        Challenges</th> <th style="text-align: center; font-family: Titillium Web;">
+          Kreativität</th> <th style="text-align: center; font-family: Titillium Web;">
        Punkte</th>
-      <th style="text-align: center">Nächste Etappe in</th>
+      <th style="text-align: center; font-family: Titillium Web;">Nächste Etappe in</th>
   </tr></thead>
     <tbody>
         <?php
@@ -41,10 +43,10 @@ WHERE c.category = :category AND sc.class = :class");
             $rank += 1;
         ?>
         <tr class="table-row class-<?= e($class["id"])?>">
-            <td style="color: white; text-align: center"><b><?= e($rank) ?></b></td>
+            <td style="color: white; text-align: center; font-family: Titillium Web;"><b><?= e($rank) ?></b></td>
             <td style="text-align: center"><?= e($class["name"]) ?></td>
-            <td>
-                <div class="table-box" style="text-align: center; margin-left: 10%;">
+            <td class="row hidden-xs" class="row hidden-sm" class="visible-md">
+                <div class="table-box"  style="text-align: center; margin-left: 10%; margin-top: 18px; font-family: Titillium Web;">
                     <br>
                     <?php
                     $index = 0;
@@ -72,6 +74,7 @@ WHERE c.category = :category AND sc.class = :class");
         <?php } ?>
     </tbody>
 </table>
+
 <!--
 <div style="margin-left: 14px; margin-top: 25px; margin-right: 25px;
  color: white; font-size: 16px; width: auto; height: auto;
