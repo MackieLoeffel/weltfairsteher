@@ -248,6 +248,7 @@ color: #00662A;
 .sectionbg {
 width: 100%;
 background-color: #0F9C2E;
+margin-top: -110px;
 }
 }
 
@@ -257,7 +258,7 @@ background-color: #0F9C2E;
 margin-left: 13%;
 margin-right: 17%;
 background-color: #0F9C2E;
-margin-top: 0px;
+margin-top: -110px;
 }
 }
 
@@ -329,14 +330,64 @@ text-align: left;
 }
 }
 
+
+
+
 @media screen and (max-width: 960px) {
 
-.navbar-full{
+.navbar-full {
 width: 100%;
+margin-left: 0px;
+margin-right: 0px;
+background-color: #0F9C2E; height: 0px; margin-bottom: 40px;
+ position: fixed; color: white;
+}
+}
+
+@media screen and (min-width: 961px) {
+
+.navbar-full {
+
+  background-color: #0F9C2E; height: 0px; margin-bottom: 40px;
+   position: fixed; color: white;
+}
+}
+
+@media screen and (max-width: 960px) {
+
+.navbar-full-2 {
+width: 100%;
+margin-left: 0px;
+margin-right: 0px;
+
+background-color: black; height: 32px;
+ position: fixed; color: white;
+}
+}
+
+@media screen and (min-width: 961px) {
+
+.navbar-full-2 {
+width: 70%;
+margin-left: 17%;
+  background-color: black; height: 32px;
+   position: fixed; color: white;
 }
 }
 
 
+
+
+
+
+
+
+
+
+.nav-text {
+color: white;
+
+}
 
 .teacher-challenge-box {
     background-color:#1BAB3F;

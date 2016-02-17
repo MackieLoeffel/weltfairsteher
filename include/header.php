@@ -81,16 +81,18 @@ include __DIR__."/config.php";
 
 
 
-<div class="container" id="border" style="margin-left: 13%; width: 70%; background-color: #0F9C2E; height: 0px; margin-bottom: 70px;
- position: fixed; font-color: white;">
+<div class="container" style="margin-left: 13%; width: 67%;
+margin-bottom: 110px; ">
 
 
-<div class="navbar navbar-default navbar-full" role="navigation" id="border2"
-style="background-color: black; height: 32px; margin-top: -5px; border-color: green; font-color: white;">
+<div class="navbar navbar-default" role="navigation" id="border2"
+style="background-color: black; height: 32px; margin-top: -5px;
+border-color: green; font-color: white; position: fixed; width: 67.5%;
+margin-right: 17%; margin-bottom: 30px;">
 
-<div class="navbar-header navbar-full" style="color: white;">
+<div class="navbar-header " style="color: white;">
 
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="height: 37px;">
 <span class="sr-only">Menü</></span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
@@ -120,15 +122,14 @@ style="background-color: black; height: 32px; margin-top: -5px; border-color: gr
                                      $sites = ["Tabelle" => "table.php",
                                                "Challenges" => "challenges.php",
                                                "Leckerwissen" => 'leckerwissen.php',
-                                               'Lehrkraft-Bereich' => "teacher.php",
-                                               'Impressum' => 'impressum.php'];
+                                               'Lehrkraft-Bereich' => "teacher.php"];
                                      if(isAdmin()) {
                                          $sites["Admin"] = "admin.php";
                                      }
                                      foreach ($sites as $site => $link) {
                                      ?>
 
-                                     <li class="menu-item menu-item-type-taxonomy menu-item-object-category"
+                                     <li class="nav-text"
                                      style="font-size: 1.2vw; text-transform: uppercase;
                                      font-family: Pathway Gothic One; font-color: white; margin-right: -10px;">
                                      <a href="<?=$link?>"><b><?=$site?></b></a></li>
