@@ -369,6 +369,7 @@ background-color: black; height: 32px;
 
 .navbar-full-2 {
 width: 70%;
+margin-left: 13%;
 margin-left: 17%;
   background-color: black; height: 32px;
    position: fixed; color: white;
@@ -376,11 +377,19 @@ margin-left: 17%;
 }
 
 
+.table-head {
+text-align: center;
+font-family: Titillium Web;
+border-collapse: collapse;
+border-bottom: 3px solid white;
+}
+
+.table-lines {
+  border-collapse: collapse;
+  border-bottom: 1px solid white; 
 
 
-
-
-
+}
 
 
 

@@ -139,7 +139,7 @@ Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Be
 eintragen oder eine Selfmade-Challenge vorschlagen. Außerdem haben eingeloggte Lehrkräfte Zugang zu
 ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Challenges.
 
-    Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. <span id="wir"></span> <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
+    Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. <span id="spenden"></span> <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
 </div><br>
 
 
@@ -156,7 +156,7 @@ Bic-/Swift Code: BYLADEM1SKB<br>
 Sparkasse Bamberg<br></b>
 Bitte gebt dabei den Betreff “WeltFAIRsteher” sowie eure vollständige Postanschrift an.
 An diese schicken wir bei Beträgen über 200 Euro nämlich eine Spendenbescheinigung. Alternativ lässt sich über <a style="color: green;" href="http://www.chancengestalten.de/unterstutzen/spende/online-spende/" target="_blank"
->diesen Link </a> auch direkt Online spenden. Und zu guter Letzt: Wer einen PayPal Account besitzt, kann auch komfortabel hierüber spenden:
+>diesen Link </a> auch direkt Online spenden. <span id="wir"></span>Und zu guter Letzt: Wer einen PayPal Account besitzt, kann auch komfortabel hierüber spenden:
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_s-xclick" />
   <input type="hidden" name="hosted_button_id" value="8274KCREHG8KA" />
@@ -171,6 +171,53 @@ An diese schicken wir bei Beträgen über 200 Euro nämlich eine Spendenbeschein
 <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Wir sind ein Team aus Mitgliedern des Max-Weber-Programms sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
 Ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
-Ob an der Planung, den Themen, der Website oder der Kommunikation - <span id="spenden"></span> alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
+Ob an der Planung, den Themen, der Website oder der Kommunikation -  alles geschieht ehrenamtlich und mit jeder Menge Herzblut.
+<br>
+<br>
+<div class="container">
+<div class="row" style="margin-right: 10%;">
+<!--
+runde portraits! evtl einheitlich, falls ein gemeinsames treffen aller beteiligten stattfindet
+
+-->
+<div class="col-xs-12 col-sm-6 col-md-4">
+<img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
+<span style="text-align: center;">Jana<br> Costa</span><br><br><br>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+<img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
+<span style="text-align: center;">Maximilian <br>Held</span><br><br><br>
+</div>
+
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+<img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
+<span style="text-align: center;">Michael<br>Sammler</span><br><br><br>
+</div>
+
+</div>
+<div class="row" style="margin-right: 10%;">
+<div class="col-xs-12 col-sm-6 col-md-4" >
+<img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
+<span style="text-align: center; width: 35%;">Andreas<br>Eichenseher</span><br><br><br>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+<img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
+<span style="text-align: center;">Julia<br>Schmidt</span><br><br><br>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+<img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
+<span style="text-align: center; width: 35%;">Hannah<br>Witzenrath</span><br><br><br>
+</div>
+
+
+
+
+</div>
+</div>
+
+</div><br>
 <br>
                         <?php include "include/footer.php"?>

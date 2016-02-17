@@ -11,17 +11,16 @@ include "include/chart.php";
 
 
 <table class="abstaende" style="color= white; width: 98%;" cellspacing="0" cellpadding="20">
-  <thead style="color: white;"><tr> <th  style="text-align: center; font-family: Titillium Web;">
-    Rang</th> <th style="text-align: center; font-family: Titillium Web;">
-      Klassenname</th> <th style="text-align: center; font-family: Titillium Web;" class="row hidden-xs" class="row hidden-sm" class="visible-md">
+  <thead  style="color: white;"><tr> <th class="table-head">
+    Rang</th> <th class="table-head">
+      Klassenname</th> <th class="table-head visible-lg">
 
-<!-- If Window-Width too small, do not show challenges
--->
 
-        Challenges</th> <th style="text-align: center; font-family: Titillium Web;">
-          Kreativität</th> <th style="text-align: center; font-family: Titillium Web;">
+
+        Challenges</th> <th class="table-head">
+          Kreativität</th> <th class="table-head">
        Punkte</th>
-      <th style="text-align: center; font-family: Titillium Web;">Nächste Etappe in</th>
+      <th class="table-head">Nächste Etappe in</th>
   </tr></thead>
     <tbody>
         <?php
@@ -42,10 +41,10 @@ WHERE c.category = :category AND sc.class = :class");
         foreach($classes as $class) {
             $rank += 1;
         ?>
-        <tr class="table-row class-<?= e($class["id"])?>">
-            <td style="color: white; text-align: center; font-family: Titillium Web;"><b><?= e($rank) ?></b></td>
-            <td style="text-align: center"><?= e($class["name"]) ?></td>
-            <td class="row hidden-xs" class="row hidden-sm" class="visible-md">
+        <tr class="table-row class-<?= e($class["id"])?>" >
+            <td class="table-lines" style="color: white; text-align: center; font-family: Titillium Web;"><b><?= e($rank) ?></b></td>
+            <td class="table-lines" style="text-align: center"><?= e($class["name"]) ?></td>
+            <td  class="table-lines visible-lg" >
                 <div class="table-box"  style="text-align: center; margin-left: 10%; margin-top: 18px; font-family: Titillium Web;">
                     <br>
                     <?php
@@ -62,9 +61,9 @@ WHERE c.category = :category AND sc.class = :class");
                 </div>
 
             </td>
-            <td style="text-align: center;"><?= e($class["creativity"]) ?></td>
-            <td style="text-align: center"><b><?= e(getCurrentPoints($class))?></b></td>
-            <td  class="milestone-box" >
+            <td class="table-lines" style="text-align: center;"><?= e($class["creativity"]) ?></td>
+            <td class="table-lines" style="text-align: center"><b><?= e(getCurrentPoints($class))?></b></td>
+            <td  class="table-lines" class="milestone-box" style="text-align: center">
                 <?php
                 // min defaults to 0, if there is no row
                 $mstone = fetch("SELECT MIN(points) as p FROM milestone WHERE points > :points", ["points" => getCurrentPoints($class)])->p - getCurrentPoints($class);

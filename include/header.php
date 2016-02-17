@@ -16,7 +16,7 @@ include __DIR__."/config.php";
                 <meta charset="UTF-8">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
-                <title>WeltFAIRsteher</title>
+                <title>Die Nachhaltigkeitschallenge</title>
 
                 <meta name="description" content="Die Nachhaltigkeitschallenge"/>
                 <link rel="canonical" href="http://link"/>
@@ -80,14 +80,13 @@ include __DIR__."/config.php";
             </head>
 
 
-
 <div class="container" style="margin-left: 13%; width: 67%;
-margin-bottom: 110px; ">
+margin-bottom: 110px;">
 
 
 <div class="navbar navbar-default" role="navigation" id="border2"
 style="background-color: black; height: 32px; margin-top: -5px;
-border-color: green; font-color: white; position: fixed; width: 67.5%;
+border-color: green; font-color: white; position: fixed; z-index: 999; width: 67.5%;
 margin-right: 17%; margin-bottom: 30px;">
 
 <div class="navbar-header " style="color: white;">
@@ -115,7 +114,7 @@ margin-right: 17%; margin-bottom: 30px;">
   <div class="navbar-collapse collapse  navbar-custom" style="color: white; background-color: black;">
 
 
-                                  <ul class="nav navbar-nav " style="font-color: white;">
+                                  <ul class="nav navbar-nav" style="font-color: white;">
 
 
                                      <?php
