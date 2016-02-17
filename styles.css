@@ -243,7 +243,7 @@ color: #00662A;
     background-color: #68E395;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 960px) {
 
 .sectionbg {
 width: 100%;
@@ -252,7 +252,7 @@ background-color: #0F9C2E;
 }
 
 
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 961px) {
 .sectionbg {
 margin-left: 13%;
 margin-right: 17%;
@@ -320,6 +320,23 @@ margin-top: 0px;
     color: white;
     font-size: 1.2vw;
 }
+
+@media screen and (max-width: 720px) {
+.navbar-custom {
+color: white;
+width: 33%; float: right; font-size: 3vw;
+text-align: left;
+}
+}
+
+@media screen and (max-width: 960px) {
+
+.navbar-full{
+width: 100%;
+}
+}
+
+
 
 .teacher-challenge-box {
     background-color:#1BAB3F;

@@ -81,14 +81,14 @@ include __DIR__."/config.php";
 
 
 
-<div class="container" id="border" style="margin-left: 13%; width: 70%; background-color: #0F9C2E; height: 40px; margin-bottom: 70px;
- position: fixed;">
+<div class="container" id="border" style="margin-left: 13%; width: 70%; background-color: #0F9C2E; height: 0px; margin-bottom: 70px;
+ position: fixed; font-color: white;">
 
 
-<div class="navbar navbar-default" role="navigation" id="border2"
-style="background-color: #DFF7D7; height: 32px; margin-top: -5px; border-color: white">
+<div class="navbar navbar-default navbar-full" role="navigation" id="border2"
+style="background-color: black; height: 32px; margin-top: -5px; border-color: green; font-color: white;">
 
-<div class="navbar-header">
+<div class="navbar-header navbar-full" style="color: white;">
 
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 <span class="sr-only">Menü</></span>
@@ -100,7 +100,7 @@ style="background-color: #DFF7D7; height: 32px; margin-top: -5px; border-color: 
 
 <span class="navbar-brand">
 <a href="index.php">
-    <img src="Logo_BGtransparent_blackFont.png" alt="Weltfairsteher" title="Weltfairsteher" style="height: 32px; margin-top: -6px;">
+    <img src="Logo_BGtransparent.png" alt="Weltfairsteher" title="Weltfairsteher" style="height: 32px; margin-top: -6px;">
   </a>
 
 </span>
@@ -110,10 +110,10 @@ style="background-color: #DFF7D7; height: 32px; margin-top: -5px; border-color: 
 </div>
 
 
-  <div class="navbar-collapse collapse">
+  <div class="navbar-collapse collapse  navbar-custom" style="color: white; background-color: black;">
 
 
-                                  <ul class="nav navbar-nav" >
+                                  <ul class="nav navbar-nav " style="font-color: white;">
 
 
                                      <?php
@@ -129,7 +129,8 @@ style="background-color: #DFF7D7; height: 32px; margin-top: -5px; border-color: 
                                      ?>
 
                                      <li class="menu-item menu-item-type-taxonomy menu-item-object-category"
-                                     style="font-size: 1.2vw; text-transform: uppercase; font-family: Pathway Gothic One;">
+                                     style="font-size: 1.2vw; text-transform: uppercase;
+                                     font-family: Pathway Gothic One; font-color: white; margin-right: -10px;">
                                      <a href="<?=$link?>"><b><?=$site?></b></a></li>
 
                                      <?php } ?>
@@ -184,7 +185,7 @@ width: 40%; text-align: center; color: black; background-color: yellow;">
   Homepage noch in Bearbeitung.
 </div>
 -->
-            
+
 
             <script type="text/javascript" language="JavaScript">
              function toggleMe(a){

@@ -4,7 +4,7 @@
 <img src="logo_weltfairsteher_transparent_startseite.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
 <br>
 <br>
-<span class="abstaende" style="font-size: 25.9px;">
+<span class="abstaende" style="font-size: 22.7px;">
 <a href="#was" style="color: #C5F2B6; background-color: #C9960A;">Beschreibung?</a>&#160
     <a href="#worum" style="color: #C5F2B6; background-color: #3A7EFC; margin-left: 1%;">Thema?</a>
     <a href="#wer" style="color: #C5F2B6; background-color: #7761C5; margin-left: 1%;">Teilnehmer?</a>
@@ -12,14 +12,15 @@
 
     <a href="#gewinn" style="color: #C5F2B6; background-color: #CC4321; margin-left: 1%;">Gewinne?</a>
     <a href="#wie" style="color: #C5F2B6; background-color: #10B3B3; margin-left: 1%;">Anmeldung?</a>
+    <a href="#spenden" style="color: #C5F2B6; background-color: #D490C6; margin-left: 1%;">Spenden</a>
     <a href="#wir" style="color: #C5F2B6; background-color: #C26111; margin-left: 1%;">Über uns!</a>
-    <a href="#spenden" style="color: #C5F2B6; background-color: #D490C6; margin-left: 1%;">Spenden</a></span>
+    </span>
                         <br>
 </span>
 
                         <br>
                         <img src="weltkarte_gewuerze2.jpg" class="abstaende" style="width: 98%; height: auto;" alt="Weltkarte aus Gewuerzen">
-                      
+
                           <br>
                         <b>
                         <h3 id="was" class="abstaende" style="color: #C5F2B6; background-color: #C9960A;">Was ist das?</h3>
@@ -141,13 +142,6 @@ ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Chal
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. <span id="wir"></span> <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
 </div><br>
 
-                        <b><h3  class="abstaende" style="color: #C5F2B6; background-color: #C26111;">Über uns
-                        </h3></b>
-
-                        <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-Wir sind ein Team aus Mitgliedern des Max-Weber-Programms sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
-Ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
-Ob an der Planung, den Themen, der Website oder der Kommunikation - <span id="spenden"></span> alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
 
 <b><h3  class="abstaende" style="color: #C5F2B6; background-color: #D490C6;">Spenden
 </h3></b>
@@ -171,5 +165,12 @@ An diese schicken wir bei Beträgen über 200 Euro nämlich eine Spendenbeschein
    <img src="https://www.paypal.com/de_DE/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></form>
 </div><br>
 
+<b><h3  class="abstaende" style="color: #C5F2B6; background-color: #C26111;">Über uns
+</h3></b>
 
+<div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
+Wir sind ein Team aus Mitgliedern des Max-Weber-Programms sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
+Ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
+Ob an der Planung, den Themen, der Website oder der Kommunikation - <span id="spenden"></span> alles geschieht ehrenamtlich und mit jeder Menge Herzblut.</div><br>
+<br>
                         <?php include "include/footer.php"?>
