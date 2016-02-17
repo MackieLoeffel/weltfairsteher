@@ -111,7 +111,7 @@ margin-right: 17%; margin-bottom: 30px;">
 </div>
 
 
-  <div class="navbar-collapse collapse  navbar-custom" style="color: white; background-color: black;">
+  <div class="navbar-collapse collapse  navbar-custom" style="color: white; background-color: black; width: %; font-size: 18px;">
 
 
                                   <ul class="nav navbar-nav" style="font-color: white;">
