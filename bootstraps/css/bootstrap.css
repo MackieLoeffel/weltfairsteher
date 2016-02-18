@@ -1585,31 +1585,28 @@ pre code {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 100%;
   color: white;
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;color: white;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;color: white;
+  width: 100%;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;color: white;
+  width: 100%;
   }
 }
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  color: white;
+  width: 100%;
 }
 .row {
   margin-right: -15px;
@@ -4514,6 +4511,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
+  color: white;
+  width: 100%;
 }
 .navbar-default .navbar-brand {
   color: white;

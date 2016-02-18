@@ -80,18 +80,22 @@ include __DIR__."/config.php";
             </head>
 
 
-<div class="container" style="margin-left: 13%; width: 67%;
-margin-bottom: 110px;">
+<div class="container" style="margin-bottom: 110px; min-width: 100%;">
+<!--
+luecke links bei kleineren bildschirmen schließen
+nav-leisten-inhalt mit margin-left 13% versehen
+font-color white
+margin-right kleiner <- text evtl nicht mit "vw" bei size verändern, sondern pt oder %
 
+-->
 
 <div class="navbar navbar-default" role="navigation" id="border2"
-style="background-color: black; height: 32px; margin-top: -5px;
-border-color: green; font-color: white; position: fixed; z-index: 999; width: 67.5%;
-margin-right: 17%; margin-bottom: 30px;">
+style="height: 32px; margin-top: -5px; background-color: black; margin-left: -1.5%;
+border-color: green; font-color: white; position: fixed; z-index: 999; margin-bottom: 30px; min-width: 101.5%;">
 
-<div class="navbar-header " style="color: white;">
+<div class="navbar-header" style="color: white;">
 
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="height: 37px;">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="height: 37px; margin-right: 10%;">
 <span class="sr-only">Menü</></span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
@@ -101,7 +105,7 @@ margin-right: 17%; margin-bottom: 30px;">
 
 <span class="navbar-brand">
 <a href="index.php">
-    <img src="Logo_BGtransparent.png" alt="Weltfairsteher" title="Weltfairsteher" style="height: 32px; margin-top: -6px;">
+    <img src="Logo_BGtransparent.png" alt="Weltfairsteher" title="Weltfairsteher" style="height: 35px; margin-top: -6px; margin-left: 13%;">
   </a>
 
 </span>
@@ -111,7 +115,7 @@ margin-right: 17%; margin-bottom: 30px;">
 </div>
 
 
-  <div class="navbar-collapse collapse  navbar-custom" style="color: white; background-color: black; width: %; font-size: 18px;">
+  <div class="navbar-collapse collapse" style="color: white; background-color: black; width: 100%; font-size: 18px;">
 
 
                                   <ul class="nav navbar-nav" style="font-color: white;">
@@ -130,7 +134,7 @@ margin-right: 17%; margin-bottom: 30px;">
 
                                      <li class="nav-text"
                                      style="font-size: 1.2vw; text-transform: uppercase;
-                                     font-family: Pathway Gothic One; font-color: white; margin-right: -10px;">
+                                     font-family: Pathway Gothic One; font-color: white;">
                                      <a href="<?=$link?>"><b><?=$site?></b></a></li>
 
                                      <?php } ?>
