@@ -16,9 +16,9 @@ include __DIR__."/config.php";
                 <meta charset="UTF-8">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
-                <title>Die Nachhaltigkeitschallenge</title>
+                <title>WeltFAIRsteher</title>
 
-                <meta name="description" content="Die Nachhaltigkeitschallenge"/>
+                <meta name="description" content="WeltFAIRsteher"/>
                 <link rel="canonical" href="http://link"/>
 <link href="bootstraps/css/bootstrap.min.css" rel="stylesheet">
 <!-- Favicon einbinden
@@ -81,19 +81,13 @@ include __DIR__."/config.php";
 
 
 <div class="container" style="margin-bottom: 110px; min-width: 100%;">
-<!--
-luecke links bei kleineren bildschirmen schließen
-nav-leisten-inhalt mit margin-left 13% versehen
-font-color white
-margin-right kleiner <- text evtl nicht mit "vw" bei size verändern, sondern pt oder %
 
--->
 
-<div class="navbar navbar-default" role="navigation" id="border2"
-style="height: 32px; margin-top: -5px; background-color: black; margin-left: -1.5%;
-border-color: green; font-color: white; position: fixed; z-index: 999; margin-bottom: 30px; min-width: 101.5%;">
+<div class="navbar navbar-default" role="navigation"
+style="height: 32px; margin-top: -5px; background-color: #1F211F; margin-left: -4%;
+border-color: green; font-color: white; position: fixed; z-index: 999; margin-bottom: 30px; min-width: 104%;">
 
-<div class="navbar-header" style="color: white;">
+<div class="navbar-header nav-img-logo" style="color: white;">
 
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="height: 37px; margin-right: 10%;">
 <span class="sr-only">Menü</></span>
@@ -105,7 +99,7 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
 
 <span class="navbar-brand">
 <a href="index.php">
-    <img src="Logo_BGtransparent.png" alt="Weltfairsteher" title="Weltfairsteher" style="height: 35px; margin-top: -6px; margin-left: 13%;">
+    <img src="Logo_BGtransparent.png" alt="Weltfairsteher" title="Weltfairsteher" class="nav-img-logo">
   </a>
 
 </span>
@@ -115,10 +109,10 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
 </div>
 
 
-  <div class="navbar-collapse collapse" style="color: white; background-color: black; width: 100%; font-size: 18px;">
+  <div class="navbar-collapse collapse" style="color: white; background-color: #1F211F; margin-right: 17%; width: 100%; ">
 
 
-                                  <ul class="nav navbar-nav" style="font-color: white;">
+                                  <ul class="nav navbar-nav text-nav-head" style="font-color: white; background-color: #1F211F;">
 
 
                                      <?php
@@ -132,14 +126,14 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                      foreach ($sites as $site => $link) {
                                      ?>
 
-                                     <li class="nav-text"
-                                     style="font-size: 1.2vw; text-transform: uppercase;
-                                     font-family: Pathway Gothic One; font-color: white;">
-                                     <a href="<?=$link?>"><b><?=$site?></b></a></li>
+                                     <li
+                                     style="font-size: 13pt; text-transform: uppercase;
+                                     font-family: Pathway Gothic One;">
+                                     <a href="<?=$link?>"><b style="color: white;"><?=$site?></b></a></li>
 
                                      <?php } ?>
 
-<li style="margin-top: 15px; margin-left: 15px; color: grey; font-size: 1vw;">
+<li style="margin-top: 15px; margin-left: 15px; color: grey; font-size: 10pt;">
                                     <form method="POST">
 
                                       <select id="class-select" name="klasse" size="1">
