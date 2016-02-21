@@ -170,46 +170,51 @@ An diese schicken wir bei Beträgen über 200 Euro nämlich eine Spendenbeschein
 
 <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Wir sind ein Team aus Mitgliedern des Max-Weber-Programms sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
-Ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
-Ob an der Planung, den Themen, der Website oder der Kommunikation -  alles geschieht ehrenamtlich und mit jeder Menge Herzblut.
+Über ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
+Ob an der Planung, den Challenges, der Website oder der Kommunikation -  alles geschieht ehrenamtlich und mit jeder Menge Herzblut.
 <br>
 <br>
 <div class="container">
 <div class="row" style="margin-right: 10%;">
-<!--
-runde portraits! evtl einheitlich, falls ein gemeinsames treffen aller beteiligten stattfindet
 
--->
 <div class="col-xs-12 col-sm-6 col-md-4">
-<img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center;">Jana<br> Costa</span><br><br><br>
+<img src="portraits/Jana.png" alt="bild-name" style="width: 40%; height: auto; margin-right: 10%; "><br>
+<span style="text-align: center;">&#160&#160&#160&#160&#160&#160&#160Jana Costa</span><br><br><br>
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-4">
 <img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center;">Maximilian <br>Held</span><br><br><br>
+<span style="text-align: center;">Maximilian Held</span><br><br><br>
 </div>
 
 
 <div class="col-xs-12 col-sm-6 col-md-4">
 <img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center;">Michael<br>Sammler</span><br><br><br>
+<span style="text-align: center;">Michael Sammler</span><br><br><br>
 </div>
 
 </div>
 <div class="row" style="margin-right: 10%;">
 <div class="col-xs-12 col-sm-6 col-md-4" >
 <img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center; width: 35%;">Andreas<br>Eichenseher</span><br><br><br>
+<span style="text-align: center; width: 35%;">Andreas Eichenseher</span><br><br><br>
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-4">
 <img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center;">Julia<br>Schmidt</span><br><br><br>
+<span style="text-align: center;">Julia Schmidt</span><br><br><br>
 </div>
 <div class="col-xs-12 col-sm-6 col-md-4">
 <img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center; width: 35%;">Hannah<br>Witzenrath</span><br><br><br>
+<span style="text-align: center; width: 35%;">Hannah Witzenrath</span><br><br><br>
+</div>
+</div>
+<div class="row" style="margin-right: 10%;">
+
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+<img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
+<span style="text-align: center; width: 35%;">Carina Mnich</span><br><br><br>
 </div>
 
 

@@ -4,25 +4,15 @@
 <br>
 
 
-    <br>
 
-    <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-
-      <h4 style="color: white;">Team</h4>
-      Jana Costa <br> Maximilian Held <br> Michael Sammler <br>
-      Julia Schmidt <br> Andreas Eichenseher <br>
-      Hannah Witzenrath <br>  Carina Mnich<br>
-       Rebecca Reuthal <br>
-
-        </div>
-        <br>
 
         <div class="abstaende" style="padding: 20px; text-align: justify; background-color: #1BAB3F;">
 
 
           <h4 style="color: white;">Kontakt</h4>
           <a style="color: #1B4D0B;" href="mailto:weltfairsteher@chancengestalten.de" target="_top">weltfairsteher@chancengestalten.de</a>
-            </div>
+        
+           </div>
             <br>
 
             <div class="abstaende" style=" text-align: justify; background-color: #1BAB3F; padding: 20px;">
