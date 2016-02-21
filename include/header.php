@@ -202,8 +202,6 @@ width: 40%; text-align: center; color: black; background-color: yellow;">
             </script>
 
             <body style="background-color: #C5F2B6; font-family: Roboto Slab;">
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstraps/js/bootstrap.min.js"></script>
     <section id="border" class="sectionbg">

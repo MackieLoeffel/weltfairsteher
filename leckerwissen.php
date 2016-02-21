@@ -6,18 +6,16 @@
 array_push($categories, new Category("other", "Weiteres"));
 $leckerStmt = $db->prepare("SELECT link, title FROM leckerwissen
 WHERE category = :category AND type = :type");
-?>
-<div class="container">
-<div class="row">
-<?php
 foreach($categories as $c) {
 ?>
 
+<div class="container">
+<div class="row">
 
-    <div class="leckerwissen-header <?= e($c->name) ?> col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="leckerwissen-header <?= e($c->name) ?>" class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
         <?= e($c->title) ?></div>
 
-    <div class="leckerwissen-box col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding: 1%;">
+    <div class="leckerwissen-box" class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding: 1%;">
         <?php
         $first = true;
         foreach($leckerwissenTypes as $t) {
@@ -29,7 +27,6 @@ foreach($categories as $c) {
             } else {
                 echo "<br>";
             }
-
         ?>
         <b style="font-family: Titillium Web;"><?= e($t["desc"]) ?></b><br>
         <?php foreach($leckerStmt->fetchAll(PDO::FETCH_OBJ) as $entry) {?>
@@ -39,26 +36,6 @@ foreach($categories as $c) {
         <?php } ?>
 <?php } ?>
     </div>
-
-
-    <?php
-    //if categorie gleich "climate-change" oder "other", then add <div class="row"> else
-
-
-    if($categories=="energy") {
-      echo '<div class="row">'
-    };
-    else {
-
-
-    if($categories=="culture") {
-      echo '<div class="row">'
-    } else {
-    };
-      }
-    ?>
-
-
 <?php } ?>
 </div>
 </div>
