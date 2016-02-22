@@ -330,7 +330,7 @@ float: right;
     margin-left: 1%;
     text-align:center;
     color: white;
-    font-size: 1.2vw;
+    font-size: 13px;
 
     clear: both;
 }
@@ -341,7 +341,7 @@ float: right;
 .leckerwissen-box {
     background-color:#1BAB3F;
     z-index: 1;
-    
+
 
     height: auto;
 

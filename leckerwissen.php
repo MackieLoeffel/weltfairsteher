@@ -2,47 +2,51 @@
 
 <br>
 <br>
+<div class="container">
 <?php
 array_push($categories, new Category("other", "Weiteres"));
 $leckerStmt = $db->prepare("SELECT link, title FROM leckerwissen
 WHERE category = :category AND type = :type");
+$i = 0;
 foreach($categories as $c) {
+    if($i % 3 == 0 ) { ?>
+    <div class="row">
+        <?php }
+
 ?>
 
-<div class="container">
-<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4">
+        <div class="leckerwissen-header <?= e($c->name) ?>"><?= e($c->title) ?></div>
 
-    <div class="leckerwissen-header <?= e($c->name) ?>" class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-        <?= e($c->title) ?></div>
+        <div class="leckerwissen-box" style="padding: 1%;">
+            <?php
+            $first = true;
+            foreach($leckerwissenTypes as $t) {
+                $leckerStmt->execute(["category" => $c->name,
+                                      "type" => $t["name"]]);
 
-    <div class="leckerwissen-box" class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding: 1%;">
-        <?php
-        $first = true;
-        foreach($leckerwissenTypes as $t) {
-            $leckerStmt->execute(["category" => $c->name,
-                                  "type" => $t["name"]]);
-
-            if($first) {
-                $first = false;
-            } else {
-                echo "<br>";
+                if($first) {
+                    $first = false;
+                } else {
+                    echo "<br>";
             }
-        ?>
-        <b style="font-family: Titillium Web;"><?= e($t["desc"]) ?></b><br>
-        <?php foreach($leckerStmt->fetchAll(PDO::FETCH_OBJ) as $entry) {?>
-            <a href="<?= e($entry->link) ?>" target="_blank">
-                <font color="#00301B"><?= e($entry->title) ?></font>
-            </a><br>
-        <?php } ?>
+            ?>
+            <b style="font-family: Titillium Web;"><?= e($t["desc"]) ?></b><br>
+            <?php foreach($leckerStmt->fetchAll(PDO::FETCH_OBJ) as $entry) {?>
+                <a href="<?= e($entry->link) ?>" target="_blank">
+                    <font color="#00301B"><?= e($entry->title) ?></font>
+                </a><br>
+            <?php } ?>
 <?php } ?>
+        </div>
     </div>
-<?php } ?>
+    <?php
+    if($i % 3 == 2 || $i == count($categories)-1) { ?>
+    </div>
+    <?php }
+    $i++;
+    } ?>
 </div>
-</div>
-<?php
-
-
-?>
 
 <!--
      BOOKLET DER ALTERNATIVEN DOWNLOAD
