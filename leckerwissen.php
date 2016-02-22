@@ -2,20 +2,95 @@
 
 <br>
 <br>
-<div class="container">
+<div class="container" style="width: 98%; margin-right: 1%;">
+
+
+<div class="row">
+   <div  class="col-xs-12 col-lg-4" style="height: 225px;
+background-color: #1BAB3F;
+margin-left: 2%;
+   margin-top: 20px;
+width: 30%;
+   margin-bottom: 10px;
+
+
+   font-size: 17px; color: black;
+   text-align:center;">
+    <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
+    target="_blank">
+      <img src="Booklet-der-Alternativen.jpg" tag="booklet" width="100%" alt="Booklet der Alternativen"
+    height="auto">
+      </a><br>
+     <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
+     target="_blank"><b style="color: white;"><i>Booklet der Alternativen</i><br></b>
+     <b style="font-size: 15px; color: black;">
+      hier kostenlos herunterladen!</b></a>
+           </div>
+<br>
+
+<div class="col-xs-12 col-lg-8" style="background-color:#1BAB3F; margin-top 25px; width: 63%;
+margin-right: 2%; float: right; height: auto; font-size: 15px; color: white; padding: 10px;">
+<b style="font-size: 18px; float: left;">Neues Leckerwissen hinzufügen:</b><br>
+
+<span style="font-size: 11px; color: black; text-align: justify; float: right; font-family: Titillium Web;">
+Hier könnt ihr Links zu Artikel, Videos oder Sonstigem posten, die zum Thema <i>Nachhaltigkeit</i> passen.
+Achtet darauf, <b>Werbung zu vermeiden</b>. Unpassende oder unangemessene Einträge sowie offensichtliche Werbung für konkrete Produkte oder
+Unternehmen wird das Team
+  von WeltFAIRsteher unangekündigt und ohne offizielle Stellungnahme entfernen.
+</span><br><br>
+<form id="addLeckerwissen" action="javascript:void(0);" onsubmit="sendForm(this)" style="float: left; width: 100%;">
+        <br><label for="bezeichnung" style="color: white; font-size: 13px;">
+          Bezeichnung:<br>
+            <input type="text" name="title" size="20" max="200" style="color: black;">
+        </label>
+        <span style="font-size: 13px; float: right;"><b style="float: right;">
+          Art:</b><br>
+        <select name="type" size="1" style="color: black;">
+            <?php foreach($leckerwissenTypes as $t) { ?>
+                <option value="<?=e($t["name"])?>"><?= e($t["desc"]) ?>
+                </option>
+            <?php } ?>
+        </select></span>
+
+
+        <br>
+        <label for="link" style="color: white; font-size: 13px;">
+          Link:<br>
+            <input type="url" name="link"
+            size="20" max="200"  style="color: black;">
+        </label>
+
+        <span style="font-size: 13px; float: right;"><b style="float: right;">
+          Kategorie:</b><br>
+                <select name="category" size="1" style="color: black;">
+                    <?php foreach($categories as $c) { ?>
+                        <option value="<?=e($c->name)?>">
+                          <?=e($c->title)?></option>
+                    <?php } ?>
+                </select>
+        </span><br>
+        <input type="submit" value="Hinzufügen"
+        style="background-color: green; font-size: 12px;  float: right; width: auto;">
+        <!--<input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()"> -->
+    </form></div>
+
+</div>
+
 <?php
 array_push($categories, new Category("other", "Weiteres"));
 $leckerStmt = $db->prepare("SELECT link, title FROM leckerwissen
 WHERE category = :category AND type = :type");
+
+
 $i = 0;
 foreach($categories as $c) {
-    if($i % 3 == 0 ) { ?>
+     if($i % 3 == 0 ) { ?>
     <div class="row">
-        <?php }
+      <?php }
 
-?>
+      ?>
 
-    <div class="col-xs-12 col-sm-12 col-md-4">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
         <div class="leckerwissen-header <?= e($c->name) ?>"><?= e($c->title) ?></div>
 
         <div class="leckerwissen-box" style="padding: 1%;">
@@ -45,88 +120,10 @@ foreach($categories as $c) {
     </div>
     <?php }
     $i++;
-    } ?>
+    }
+?>
 </div>
 
-<!--
-     BOOKLET DER ALTERNATIVEN DOWNLOAD
-   -->
-
-   <div style="float: left;
-   margin-left: 7px; ">
-    <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
-    target="_blank">
-      <img src="Booklet-der-Alternativen.jpg" tag="booklet" alt="Booklet der Alternativen" width="25%" height="auto">
-      </a>
-   <div style="background-color:#1BAB3F; font-size: 17px; color: black; width: 25%; text-align: center; ">
-     <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
-     target="_blank"><b style="color: white;"><i>Booklet der Alternativen</i><br></b>
-     <b style="font-size: 15px; color: black; ">
-      hier kostenlos herunterladen!</b></a>
-           </div>
-</div>
-
-<!--
-     ADD NEW LECKERWISSEN
-
-
-to discuss:
-- captcha einfuegen, um vor spam zu schuetzen
-- leckerwissen vor dem hinzufuegen ueberpruefen, also an uns schicken, um sie
-freizuschalten
-
-to do:
-hinweise entschaerfen, sodass schueler keine hemmnisse haben, leckerwissen
-einzutragen
-
-   -->
-
-
-<div style="float: right; background-color:#1BAB3F;
-font-size: 15px; margin-right: 15%; color: white; width: 25%; padding: 10px; position: relative;">
-<b style="font-size: 18px; text-align: center;">Neues Leckerwissen hinzufügen:</b><br>
-
-<span style="float: right; font-size: 11px; color: black; text-align: justify; font-family: Titillium Web;">Bitte fügt nur thematisch passende Einträge ins Leckerwissen - Werbung, also
-  Links zu Produkten oder Händlern, soll nicht ins Leckerwissen. Unpassende Einträge wird das Team
-  von WeltFAIRsteher unankündigt und ohne offizielle Stellungnahme entfernen.
-</span><br><br>
-<form id="addLeckerwissen" action="javascript:void(0);" onsubmit="sendForm(this)" style="float: left;">
-        <label for="bezeichnung" style="color: white; font-size: 13px;">
-        <br>  Bezeichnung:<br>
-            <input type="text" name="title" size="20" max="200">
-        </label>
-        <br>
-        <label for="link" style="color: white; font-size: 13px;">
-          Link:<br>
-            <input type="url" name="link" style=""
-            size="20" max="200">
-        </label><br>
-        <span style="font-size: 13px; margin-right: 52px"><b>
-          Art:</b></span><br>
-        <select name="type" size="1" style="color: black;">
-            <?php foreach($leckerwissenTypes as $t) { ?>
-                <option value="<?=e($t["name"])?>"><?= e($t["desc"]) ?>
-                </option>
-            <?php } ?>
-        </select>
-        </span>
-        <br>
-        <span style="font-size: 13px; margin-right: 13px"><b>
-          Kategorie:</b></span><br>
-                <select name="category" size="1" style="color: black;">
-                    <?php foreach($categories as $c) { ?>
-                        <option value="<?=e($c->name)?>">
-                          <?=e($c->title)?></option>
-                    <?php } ?>
-                </select>
-        </span>
-
-
-<br>
-        <input type="submit" value="Hinzufügen"
-        style="background-color: green; font-size: 12px; margin-left: auto; margin-right: auto; width: auto;">
-        <!--<input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()"> -->
-    </form></div>
     <br>
     <br>
     <br>

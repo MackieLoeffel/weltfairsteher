@@ -1,5 +1,8 @@
 <?php include "include/header.php";
 
+
+
+
 function printChallenge($row) {
     global $db;
     # finc classes for challenge
@@ -7,10 +10,15 @@ function printChallenge($row) {
 JOIN solved_challenge as sc ON c.id=sc.challenge
 JOIN class as cl ON cl.id = sc.class
 WHERE c.id = :id");
+
     $classStmt->execute(['id' => $row->id]);
     $classes = "";
     foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $classRow) {
         $classes = $classes . " class-" . e($classRow->id);
+
+
+
+
     }
 ?>
 
@@ -57,31 +65,122 @@ WHERE c.id = :id");
 
 <br>
 <br>
-
+<div class="container" style="width: 100%; margin-right: 1%;">
+  <div class="row">
 <?php
 foreach($categories as $c) {
-?>
-    <div class=".abstand challenge-header <?= e($c->name) ?>">
+
+
+
+
+if($c->name == 'food' || $c->name == 'water' || $c->name == 'culture') {
+    ?>
+    <div class=".abstand col-xs-12 col-lg-4 challenge-header <?= e($c->name) ?>">
         <?= e($c->title) ?>
     </div>
+
+
+    <?php
+    }
+?>
+
+
+    <?php }
+?>
+</div>
+
+<div class="row">
+
+
+
 <?php
-}
 // TODO: error handling
 $challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, cl.name AS author
 FROM challenge as c
 LEFT JOIN class as cl ON cl.id = c.author
 WHERE category=:category");
 foreach($categories as $c) {
+  if($c->name == 'food' || $c->name == 'water' || $c->name == 'culture') {
 ?>
-    <div class=".abstand challenge-box">
+    <div class=".abstand challenge-box col-xs-12 col-lg-4">
         <?php
         $challengeStmt->execute(['category' => $c->name]);
         foreach($challengeStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
             printChallenge($row);
         }
         ?>
+      </div>
+
+
+<?php
+
+}
+}
+
+?>
+</div>
+
+
+
+<div class="row">
+<?php
+foreach($categories as $c) {
+
+
+
+
+if($c->name == 'climate-change' || $c->name == 'production' || $c->name == 'energy') {
+  ?>
+  <div class=".abstand col-xs-12 col-lg-4 challenge-header <?= e($c->name) ?>">
+      <?= e($c->title) ?>
+  </div>
+
+
+  <?php
+  }
+?>
+
+
+  <?php }
+?>
+</div>
+
+<div class="row">
+
+
+
+<?php
+// TODO: error handling
+$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, cl.name AS author
+FROM challenge as c
+LEFT JOIN class as cl ON cl.id = c.author
+WHERE category=:category");
+foreach($categories as $c) {
+if($c->name == 'climate-change' || $c->name == 'production' || $c->name == 'energy') {
+?>
+  <div class=".abstand challenge-box col-xs-12 col-lg-4">
+      <?php
+      $challengeStmt->execute(['category' => $c->name]);
+      foreach($challengeStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
+          printChallenge($row);
+      }
+      ?>
     </div>
-<?php } ?>
+
+
+<?php
+
+}
+}
+
+?>
+</div>
+
+
+
+
+
+</div>
 
 <!--
 NeuStrukturierung test anfang
@@ -149,6 +248,8 @@ NeuStrukturierung test ende
     Selfmade-Challenges
 </div>
 <div class="selfmade-box">
+  <div class="container">
+
     <?php
     // create as many columns as categories
     $cols = [];
@@ -166,17 +267,31 @@ NeuStrukturierung test ende
     }
 
     foreach($cols as $col) {
+        if($index == '1' || $index == '4'  || $index == '7' || $index == '10' || $index == '13' || $index == '16' || $index == '19') {
     ?>
-        <div class=".abstand selfmade-col">
+    <div class="row">
+      <?php } ?>
+
+        <div class=".abstand selfmade-col col-xs-12 col-lg-4">
             <?php
             foreach($col as $row) {
                 printChallenge($row);
             }
             ?>
         </div>
-    <?php } ?>
+    <?php }
+    if($index == '3' || $index == '6'  || $index == '9' || $index == '12' || $index == '15' || $index == '18' || $index == '21') {
+      ?>
+    </div>
+        <?php } ?>
+
+
+    
 </div>
 </div>
+
+</div>
+
 <br>
 <br>
 <br>
@@ -221,4 +336,4 @@ NeuStrukturierung test ende
 <br>
 <br>
 <br>
-<?php include "include/footer.php"?>
+<?php include "include/footer.php" ?>
