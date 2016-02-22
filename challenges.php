@@ -248,7 +248,7 @@ NeuStrukturierung test ende
     Selfmade-Challenges
 </div>
 <div class="selfmade-box">
-  <div class="container">
+  <div class="container" style="margin-right: 5%; width: 95%;">
 
     <?php
     // create as many columns as categories
@@ -286,7 +286,7 @@ NeuStrukturierung test ende
         <?php } ?>
 
 
-    
+
 </div>
 </div>
 
