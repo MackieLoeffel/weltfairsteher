@@ -4,7 +4,7 @@
 <img src="logo_weltfairsteher_transparent_startseite.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
 <br>
 <br>
-<span class="abstaende" style="font-size: 22.7px;">
+<span class="abstaende" style="font-size: 20.4px;">
 <a href="#was" style="color: #C5F2B6; background-color: #C9960A;">Beschreibung?</a>&#160
     <a href="#worum" style="color: #C5F2B6; background-color: #3A7EFC; margin-left: 1%;">Thema?</a>
     <a href="#wer" style="color: #C5F2B6; background-color: #7761C5; margin-left: 1%;">Teilnehmer?</a>
