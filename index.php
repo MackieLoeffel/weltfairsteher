@@ -178,8 +178,8 @@ Ob an der Planung, den Challenges, der Website oder der Kommunikation -  alles g
 <div class="row" style="margin-right: 10%;">
 
 <div class="col-xs-12 col-sm-6 col-md-4">
-<img src="portraits/Jana.png" alt="bild-name" style="width: 40%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center;">&#160&#160&#160&#160&#160&#160&#160Jana Costa</span><br><br><br>
+<img src="portraits/Jana.png" alt="bild-jana" style="width: 35%; height: auto; margin-right: 10%; "><br>
+<span style="text-align: center; width: 35%;">&#160&#160&#160&#160&#160&#160&#160Jana Costa</span><br><br><br>
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-4">
@@ -196,7 +196,7 @@ Ob an der Planung, den Challenges, der Website oder der Kommunikation -  alles g
 </div>
 <div class="row" style="margin-right: 10%;">
 <div class="col-xs-12 col-sm-6 col-md-4" >
-<img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
+<img src="portraits/Andi_2.png" alt="bild-andi" style="width: 35%; height: auto; margin-right: 10%; "><br>
 <span style="text-align: center; width: 35%;">Andreas Eichenseher</span><br><br><br>
 </div>
 
