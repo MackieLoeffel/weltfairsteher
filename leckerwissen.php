@@ -18,7 +18,7 @@ width: 30%;
    text-align:center;">
     <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
     target="_blank">
-      <img src="Booklet-der-Alternativen.jpg" tag="booklet" width="100%" alt="Booklet der Alternativen"
+      <img src="Booklet-der-Alternativen.jpg" tag="booklet" width="100%" style="margin-top: 16px;" alt="Booklet der Alternativen"
     height="auto">
       </a><br>
      <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
