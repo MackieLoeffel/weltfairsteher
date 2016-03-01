@@ -7,7 +7,8 @@ include "include/chart.php";
 <br>
 <br>
 
-
+<span style="width: auto; height: auto; margin-left: 33%; margin-right: auto; margin-bottom: 30px; background-color: yellow; color: black;">
+  Die erwähnten Klassen sind lediglich Beispielklassen</span>
 
 
 <table class="abstaende" style="color= white; width: 98%;" cellspacing="0" cellpadding="20">
