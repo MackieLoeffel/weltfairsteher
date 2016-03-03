@@ -38,8 +38,12 @@ Achtet darauf, <b>Werbung zu vermeiden</b>. Unpassende oder unangemessene Eintr�
 Unternehmen wird das Team
   von WeltFAIRsteher unangekündigt und ohne offizielle Stellungnahme entfernen.
 </span><br><br>
+
+
+
+
 <form id="addLeckerwissen" action="javascript:void(0);" onsubmit="sendForm(this)" style="float: left; width: 100%;">
-        <br><label for="bezeichnung" style="color: white; font-size: 13px;">
+        <label for="bezeichnung" style="color: white; font-size: 13px;">
           Bezeichnung:<br>
             <input type="text" name="title" size="20" max="200" style="color: black;">
         </label>
@@ -68,11 +72,23 @@ Unternehmen wird das Team
                           <?=e($c->title)?></option>
                     <?php } ?>
                 </select>
-        </span><br>
-        <input type="submit" value="Hinzufügen"
-        style="background-color: green; font-size: 12px;  float: right; width: auto;">
-        <!--<input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()"> -->
-    </form></div>
+        </span><br><br>
+
+
+            <img style="float: left;" src="captcha/captcha.php" alt="Captcha"
+            title="Captcha - Bitte Zeichen in das Feld eingeben" width=140 height=40 />
+    <input style="color: black;" type="text" name="captcha_code" size=10 />
+<br>
+
+    <b style="color: black; font-size: 11px; float: left; width: 75%; height: auto;">
+      Bitte gib den angezeigten Code in das daneben stehende Feld ein,
+      damit wir wissen, ob du ein Mensch bist.</b>
+    <input type="submit" value="Hinzufügen"
+    style="background-color: green; font-size: 12px;  float: right; width: auto;">
+    <!--<input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()"> -->
+  </form>
+
+  </div>
 
 </div>
 
