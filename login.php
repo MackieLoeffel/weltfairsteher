@@ -3,19 +3,19 @@ include "include/header.php";
 
 $showForm = true;
 if(isset($_SESSION["user"])) {
-    echo "already logged in!";
+    echo "Sie sind bereits angemeldet!";
     $showForm = false;
 } else if(isset($_POST["email"]) && isset($_POST["password"])) {
     $userStmt = $db->prepare("SELECT id, role, password FROM user WHERE email = :email ");
     $userStmt->execute(["email" => $_POST["email"]]);
     $user = $userStmt->fetch(PDO::FETCH_OBJ);
     if($user === false || !password_verify($_POST["password"], $user->password)) {
-        echo "invalid email or password! <br>";
+        echo "Falsches Passwort oder falsche E-Mail-Adresse! <br>";
     } else {
         $_SESSION["role"] = $user->role;
         $_SESSION["user"] = $user->id;
 ?>
-    <b> logged in, redirecting in 3 seconds... </b>
+    <b style="margin-left: 30%;"> Die Anmeldung war erfolgreich, bitte haben Sie einen Moment Geduld... </b>
     <script type="text/javascript">
      setTimeout(function() {window.location = "teacher.php"}, 3*1000);
     </script>

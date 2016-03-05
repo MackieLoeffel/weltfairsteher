@@ -1,8 +1,10 @@
 <?php include "include/header.php";
+?>
 
 
-
-
+<span style="width: auto; height: auto; margin-left: 35%; margin-right: auto; margin-bottom: 30px; background-color: yellow; color: black;">
+  Die Challenges sind noch nicht vollzählig.</span>
+<?php
 function printChallenge($row) {
     global $db;
     # finc classes for challenge
