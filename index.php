@@ -70,8 +70,8 @@ Anmelden kann euch aber nur eine Lehrkraft.
 
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Jede Klasse kann sich an den Aufgaben, die ihr unter dem Reiter <i>Challenges</i> findet, versuchen. Mit welcher Challenge ihr dabei beginnt ist
-genauso gleichgültig wie die Anzahl der Schülerinnen und Schüler, die sich an einer Challenge beteiligen. Manchmal ist es sogar am besten,
-wenn nur wenige Schülerinnen und Schüler eine Aufgabe verfolgen.
+genauso gleichgültig wie die Anzahl der Schüler*innen, die sich an einer Challenge beteiligen. Manchmal ist es sogar am besten,
+wenn nur wenige Schüler*innen eine Aufgabe verfolgen.
 Wie viele Personen wir für eine Aufgabe empfehlen, könnt ihr auch bei den meisten Challenges nachlesen. <br><br>
 Sobald ihr eine Challenge erfolgreich abgeschlossen habt, kann eure Lehrkraft die Challenge im <i>Lehrer-Bereich</i> eintragen.
 Am besten hält immer eine Person eurer Klasse oder der jeweiligen Gruppe den Erfolg einer Challenge,
@@ -127,10 +127,10 @@ Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
 <b><h3 class="abstaende" style="color: #C5F2B6; background-color: #10B3B3;">Wie meldet man sich an?</h3></b>
 
 <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-    Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an weltfairsteher@chancengestalten.de und teilt uns den kreativen Klassennamen mit,
+    Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an  <a href="mailto:kontakt@weltfairsteher.jetzt" target="_top">kontakt@weltfairsteher.jetzt</a> und teilt uns den kreativen Klassennamen mit,
     den ihr euch selbst ausdenken könnt. Das kann so etwas wie "Die Sojapatronen" sein, oder "Warme Kürbissuppen".
     Wenn ihr uns verratet, von welcher Schule ihr kommt, würden wir uns natürlich sehr freuen - schon alleine deshalb,
-    weil wir euch eure Etappen-Überraschungen zusenden möchten. Deshalb solltet ihr uns auch mitteilen, wie viele Schüler_innen unter
+    weil wir euch eure Etappen-Überraschungen zusenden möchten. Deshalb solltet ihr uns auch mitteilen, wie viele Schüler*innen unter
     eurem Klassennamen teilnehmen.
     Keine Sorge: Eure Schuldaten werden nicht veröffentlicht.
     <br><br>

@@ -123,7 +123,7 @@ GROUP BY c.id)");
            Zugangsdaten </b>(Passwort und E-Mail-Adresse) ändern. Wenn sich die
            Größe einer von Ihnen betreuten Klasse ändert oder Sie anderweitige
            Fragen beziehungsweise Probleme haben, schreiben Sie uns einfach eine
-           E-Mail an weltfairsteher@chancengestalten.de. </li>
+           E-Mail an   <a href="mailto:kontakt@weltfairsteher.jetzt" target="_top">kontakt@weltfairsteher.jetzt</a>. </li>
 
 
            </ul>

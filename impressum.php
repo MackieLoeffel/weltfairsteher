@@ -10,8 +10,8 @@
 
 
           <h4 style="color: white;">Kontakt</h4>
-          <a style="color: #1B4D0B;" href="mailto:weltfairsteher@chancengestalten.de" target="_top">weltfairsteher@chancengestalten.de</a>
-        
+          <a style="color: #1B4D0B;" href="mailto:kontakt@weltfairsteher.jetzt" target="_top">kontakt@weltfairsteher.jetzt</a>
+
            </div>
             <br>
 

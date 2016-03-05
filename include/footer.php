@@ -29,7 +29,7 @@
         <br>
          <a href="http://localhost/weltfairsteher/impressum.php" alt="impressum" style="color: white; font-size: 14px;"><b>Impressum</b></a>
         <br><br>
-        &copy; 2016 WeltFAIRsteher <br> Kontakt: weltfairsteher@chancengestalten.de<br>
+        &copy; 2016 WeltFAIRsteher <br> <a style="background-color: white;" href="mailto:kontakt@weltfairsteher.jetzt">kontakt@weltfairsteher.jetzt</a><br>
         <a href="#" class="scrollbutton-top" style="color: white; float: right; margin-right: 1%;">↑</a>
     </footer> </div>
 </section>
