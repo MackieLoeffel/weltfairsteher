@@ -38,9 +38,11 @@
 
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
                         Nachhaltigkeit ist ein sehr vielseitiges Thema, das in fast jeden Lebensbereich dringt. Die wichtigsten Aspekte von Nachhaltigkeit
-                        sind <b>Ökologie</b>, also die Beziehungen von Organismen wie Menschen, Tieren oder Pflanzen zu ihrer Umwelt,
-                        <b>Soziales</b>, also die Art und Weise, wie Menschen
-                        in der Gesellschaft zusammenleben, sowie <b>Wirtschaft</b>, also Bereiche wie Warenproduktion, Einkauf und Verkauf. <br><br>
+                        sind:<ul>
+                        <li> <b>Ökologie</b>, also die Beziehungen von Organismen wie Menschen, Tieren oder Pflanzen zu ihrer Umwelt,</li>
+                      <li>  <b>Soziales</b>, also die Art und Weise, wie Menschen
+                        in der Gesellschaft zusammenleben und</li>
+                        <li> <b>Wirtschaft</b>, also Bereiche wie Warenproduktion, Einkauf und Verkauf.</li></ul>
                         Mit all diesen Dingen
                         habt ihr - ohne es immer zu bemerken - tagtäglich zu tun. Selbst hinter kleinen Handlungen steckt dabei häufig ein riesiger Prozess, der zuvor stattfand.
                         Wusstet ihr zum Beispiel, das
@@ -49,7 +51,7 @@
                         <br><br>
                         Das bringt aber viele Probleme mit sich. Nur eines davon sind die vielen Treibhausgase, die die Schiffe und Lastwägen ausstoßen.
                         Das ist schlecht für die Umwelt
-                        und beschleunigt die Erderwärmung. Solche Probleme gibt es an vielen Orten unserer Welt. Als Teilnehmer an WeltFAIRsteher lernt ihr einige davon kennen und
+                        und beschleunigt die Erderwärmung. Solche Probleme gibt es an vielen Orten unserer Welt. Als Teilnehmende an WeltFAIRsteher lernt ihr einige davon kennen und
                         erfahrt viele Lösungsvorschläge, wie die Probleme beseitigt werden könnten. <span id="wer"></span> Nachhaltigkeit kann nämlich eigentlich jeder. Man muss nur das Glück haben,
                         zur richtigen Zeit und am richtigen Ort die richtigen Erfahrungen zu machen. Und dabei helfen wir euch.
                               </div><br>
@@ -60,7 +62,7 @@
                             Teilnehmen kann jede 6. Klasse einer öffentlichen oder privaten Schule in Bayern.
 Besonders vorteilhaft ist es natürlich, eine motivierte Lehrkraft zu haben, mit der man an <i>WeltFAIRsteher</i> teilnimmt.
 Wenn ihr eine Lehrkraft mit einem Korb Äpfeln oder einem Sack Kartoffeln bestechen wollt, ist das also vielleicht nicht die beste Voraussetzung -
-sofern die Lehrerin beziehungsweise der Lehrer nicht nur zu <s>faul</s> beschäftigt war und sich eigentlich für Nachhaltigkeit interessiert.
+sofern die Lehrerin beziehungsweise der Lehrer nicht nur zu beschäftigt war und sich eigentlich für Nachhaltigkeit interessiert.
 Übrigens: <span id="ablauf"></span> Eine Klasse kann natürlich auch mit der Unterstützung mehrerer Lehrkräfte teilnehmen, etwa um sowohl im Erdkunde-, als auch im Biologie-Unterricht an Challenges zu arbeiten.
 Anmelden kann euch aber nur eine Lehrkraft.
                         </div><br>
@@ -117,8 +119,6 @@ Letztendlich spielen nämlich alle Klassen gemeinsam für eine lebenswerte Zukun
 Na gut, ein paar Überraschungen haben wir für die Klassen mit den meisten Punkten trotzdem parat - als zusätzlicher
 Ansporn sozusagen.
 <br><br>
-Der Siegerklasse winkt zum Beispiel ein erlebnispädagogisches Wochenende, also drei Tage fernab der Eltern Natur erleben,
-kostenlose Verpflegung genießen und spannende Entdeckungen machen. Platz Zwei und Drei werden ebenfalls besonders überrascht.
 Wenn ihr am Ende nicht einen der drei ersten Plätze belegen solltet, so werdet ihr trotzdem
 einen kleinen Preis samt Urkunde erhalten, denn selbst wer am Tabellenende steht ist deshalb nicht "un-nachhaltig"
 beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit! <span id="wie"></span>
@@ -146,7 +146,7 @@ ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Chal
 <b><h3  class="abstaende" style="color: #C5F2B6; background-color: #D490C6;">Spenden
 </h3></b>
 <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-Wie gesagt: <i>WeltFAIRsteher</i> wird rein ehrenamtlich betrieben. Um dennoch die Etappenziele und Preise für die Teilnehmer zu finanzieren,
+<i>WeltFAIRsteher</i> wird rein ehrenamtlich betrieben. Um dennoch die Etappenziele und Preise für die Teilnehmer zu finanzieren,
 sind wir auf freiwillige Spenden angewiesen. Wenn ihr also eine Person kennt, die jemanden kennt, die jemanden kennt, die versucht, Geld
 loszuwerden, oder selbst einen kleinen (oder gerne auch großen) Beitrag zu einem nachhaltigen Bildungsprojekt leisten wollt, dann überweist
 einfach einen Betrag eurer Wahl auf das Konto des gemeinnützigen Vereins<br>
@@ -179,27 +179,26 @@ Ob an der Planung, den Challenges, der Website oder der Kommunikation -  alles g
 
 <div class="col-xs-12 col-sm-6 col-md-4">
 <img src="portraits/jana-2.png" alt="bild-jana" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center; width: 35%;">&#160&#160&#160&#160&#160&#160&#160Jana Costa</span><br><br><br>
+<span style="text-align: center; width: 35%;">Jana Costa</span><br><br><br>
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-4">
 <img src="portraits/max.png" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center;">Maximilian Held</span><br><br><br>
+<span style="text-align: center;">Maximilian <br>Held</span><br><br><br>
 </div>
 
 
 <div class="col-xs-12 col-sm-6 col-md-4">
 <img src="portraits/Andi.png" alt="bild-andi" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center; width: 35%;">Andreas Eichenseher</span><br><br><br>
+<span style="text-align: center; width: 35%;">Andreas <br>Eichenseher</span><br><br><br>
 
 </div>
 
 </div>
-<!--
 <div class="row" style="margin-right: 10%;">
 <div class="col-xs-12 col-sm-6 col-md-4" >
 <img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center;">Michael Sammler</span><br><br><br>
+<span style="text-align: center;">Michael <br>Sammler</span><br><br><br>
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-4">
@@ -208,7 +207,7 @@ Ob an der Planung, den Challenges, der Website oder der Kommunikation -  alles g
 </div>
 <div class="col-xs-12 col-sm-6 col-md-4">
 <img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center; width: 35%;">Hannah Witzenrath</span><br><br><br>
+<span style="text-align: center; width: 35%;">Hannah <br>Witzenrath</span><br><br><br>
 </div>
 </div>
 <div class="row" style="margin-right: 10%;">
@@ -223,10 +222,13 @@ Ob an der Planung, den Challenges, der Website oder der Kommunikation -  alles g
 
 
 </div>
+
 </div>
 
--->
 
-</div><br>
+
+</div>
+
+<br>
 <br>
                         <?php include "include/footer.php"?>

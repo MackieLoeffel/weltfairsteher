@@ -6,43 +6,43 @@
 
 
 <div class="row">
-   <div  class="col-xs-12 col-lg-4" style="height: 225px;
+   <div  class="col-xs-12 col-lg-4" style="height: 180px;
 background-color: #1BAB3F;
 margin-left: 2%;
    margin-top: 20px;
 width: 30%;
-   margin-bottom: 10px;
+   margin-bottom: 5px;
 
 
-   font-size: 17px; color: black;
-   text-align:center;">
+   color: black;
+   ">
+   <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
+   target="_blank"><b style="color: black; margin-top: 12px;  font-size: 10px;">Kostenloser Download - <i style="color: white;  font-size: 10px;">Booklet der Alternativen</i><br>
+   </b></a>
     <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
     target="_blank">
-      <img src="Booklet-der-Alternativen.jpg" tag="booklet" width="100%" style="margin-top: 16px;" alt="Booklet der Alternativen"
+      <img src="Booklet-der-Alternativen.jpg" tag="booklet" width="100%" style="margin-top: 1px;" alt="Booklet der Alternativen"
     height="auto">
-      </a><br>
-     <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
-     target="_blank"><b style="color: white;"><i>Booklet der Alternativen</i><br></b>
-     <b style="font-size: 15px; color: black;">
-      hier kostenlos herunterladen!</b></a>
+      </a>
+
            </div>
 <br>
 
 <div class="col-xs-12 col-lg-8" style="background-color:#1BAB3F; margin-top 25px; width: 63%;
 margin-right: 2%; float: right; height: auto; font-size: 15px; color: white; padding: 10px;">
-<b style="font-size: 18px; float: left;">Neues Leckerwissen hinzufügen:</b><br>
+<b style="font-size: 18px; float: left;">Neues Leckerwissen hinzufügen</b>	&#x2003;&#x2003;
 
-<span style="font-size: 11px; color: black; text-align: justify; float: right; font-family: Titillium Web;">
-Hier könnt ihr Links zu Artikel, Videos oder Sonstigem posten, die zum Thema <i>Nachhaltigkeit</i> passen.
-Achtet darauf, <b>Werbung zu vermeiden</b>. Unpassende oder unangemessene Einträge sowie offensichtliche Werbung für konkrete Produkte oder
-Unternehmen wird das Team
-  von WeltFAIRsteher unangekündigt und ohne offizielle Stellungnahme entfernen.
-</span><br><br>
+<a href="javascript:void(0)" onclick="return toggleMe('addLeckerwissen')" style="background-color: white; margin-top: 10px;
+ border: 2px solid white; border-radius: 30px;"
+
+><i class="fa fa-arrow-down"></i></a><br>
 
 
 
 
-<form id="addLeckerwissen" action="javascript:void(0);" onsubmit="sendForm(this)" style="float: left; width: 100%;">
+
+
+<form id="addLeckerwissen" action="javascript:void(0);" onsubmit="sendForm(this)" style="float: left; width: 100%; display:none;">
         <label for="bezeichnung" style="color: white; font-size: 13px;">
           Bezeichnung:<br>
             <input type="text" name="title" size="20" max="200" style="color: black;">
@@ -88,8 +88,15 @@ Unternehmen wird das Team
     <!--<input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()"> -->
   </form>
 
-  </div>
 
+<span style="font-size: 12px; color: black; text-align: justify; float: right; font-family: Titillium Web; margin-top: 10px;">
+  Hier könnt ihr Links zu Artikel, Videos oder Sonstigem posten, die zum Thema <i>Nachhaltigkeit</i> passen. Öffnet dazu das Eingabefeld,
+  indem ihr auf den Pfeil klickt.
+  Bitte achtet darauf, <b>Werbung zu vermeiden</b>. Unpassende oder unangemessene Einträge sowie offensichtliche Werbung für konkrete Produkte oder
+  Unternehmen werden unangekündigt entfernt.
+  </span>
+
+    </div>
 </div>
 
 <?php
