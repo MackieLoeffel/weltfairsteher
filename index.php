@@ -202,7 +202,7 @@ Ob an der Planung, den Challenges, der Website oder der Kommunikation -  alles g
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-4">
-<img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
+<img src="portraits/julia-schmidt-1.png" alt="bild-julia" style="width: 35%; height: auto; margin-right: 10%; "><br>
 <span style="text-align: center;">Julia Schmidt</span><br><br><br>
 </div>
 <div class="col-xs-12 col-sm-6 col-md-4">

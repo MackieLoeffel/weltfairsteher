@@ -16,10 +16,10 @@ width: 30%;
 
    color: black;
    ">
-   <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
+   <a href="/CHANGEeV_Booklet_der_Alternativen.pdf"
    target="_blank"><b style="color: black; margin-top: 12px;  font-size: 10px;">Kostenloser Download - <i style="color: white;  font-size: 10px;">Booklet der Alternativen</i><br>
    </b></a>
-    <a href="http://localhost/weltfairsteher/CHANGEeV_Booklet_der_Alternativen.pdf"
+    <a href="/CHANGEeV_Booklet_der_Alternativen.pdf"
     target="_blank">
       <img src="Booklet-der-Alternativen.jpg" tag="booklet" width="100%" style="margin-top: 1px;" alt="Booklet der Alternativen"
     height="auto">
