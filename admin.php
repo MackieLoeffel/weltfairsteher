@@ -8,7 +8,9 @@ function slideDown($name, $func) {
     <div class="slide-down admin-box">
         <div class="slide-down-header">
             <b style="color: black; float:left"><?= e($name) ?></b>
-            <i class="fa fa-arrow-down" style="float: right"></i>
+            <a href="javascript:void(0)" style="float:right; background-color: white; border: 2px solid white; border-radius: 30px;">
+                <i class="fa fa-arrow-down"></i>
+            </a>
         </div>
         <br/>
 

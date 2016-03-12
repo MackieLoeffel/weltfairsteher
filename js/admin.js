@@ -46,8 +46,8 @@
     $(".slide-down .slide-down-header").each(function() {
       return $(this).click(function() {
         $(this).siblings(".slide-down-hidden").slideToggle(300);
-        $(this).children(".fa").toggleClass("fa-arrow-down");
-        return $(this).children(".fa").toggleClass("fa-arrow-up");
+        $(this).find(".fa").toggleClass("fa-arrow-down");
+        return $(this).find(".fa").toggleClass("fa-arrow-up");
       });
     });
   });
