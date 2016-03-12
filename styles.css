@@ -21,7 +21,11 @@ font-family: 'Amaranth', sans-serif;
 
 -->
 
+.active {
+background-color: red;
 
+
+}
 
 
 
@@ -38,7 +42,7 @@ font-size: 13px;
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
 
 .challenge-header {
     width: 98%;
