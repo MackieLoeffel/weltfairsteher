@@ -17,10 +17,6 @@ WHERE c.id = :id");
     $classes = "";
     foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $classRow) {
         $classes = $classes . " class-" . e($classRow->id);
-
-
-
-
     }
 ?>
 
@@ -60,232 +56,76 @@ WHERE c.id = :id");
 
     <?php } ?>
     <br><br>
-<?php
-}
-
-?>
+<?php } ?>
 
 <br>
 <br>
 <div class="container" style="width: 100%; margin-right: 1%;">
-  <div class="row">
-<?php
-foreach($categories as $c) {
-
-
-
-
-if($c->name == 'food' || $c->name == 'water' || $c->name == 'culture') {
-    ?>
-    <div class=".abstand col-xs-12 col-lg-4 challenge-header <?= e($c->name) ?>">
-        <?= e($c->title) ?>
-    </div>
-
-
     <?php
-    }
-?>
-
-
-    <?php }
-?>
-</div>
-
-<div class="row">
-
-
-
-<?php
-// TODO: error handling
 $challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, cl.name AS author
 FROM challenge as c
 LEFT JOIN class as cl ON cl.id = c.author
 WHERE category=:category");
-foreach($categories as $c) {
-  if($c->name == 'food' || $c->name == 'water' || $c->name == 'culture') {
-?>
-    <div class=".abstand challenge-box col-xs-12 col-lg-4">
-        <?php
-        $challengeStmt->execute(['category' => $c->name]);
-        foreach($challengeStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
-            printChallenge($row);
-        }
-        ?>
-      </div>
 
-
-<?php
-
-}
-}
-
-?>
-</div>
-
-
-
-<div class="row">
-<?php
-foreach($categories as $c) {
-
-
-
-
-if($c->name == 'climate-change' || $c->name == 'production' || $c->name == 'energy') {
-  ?>
-  <div class=".abstand col-xs-12 col-lg-4 challenge-header <?= e($c->name) ?>">
-      <?= e($c->title) ?>
-  </div>
-
-
-  <?php
-  }
-?>
-
-
-  <?php }
-?>
-</div>
-
-<div class="row">
-
-
-
-<?php
-// TODO: error handling
-$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, cl.name AS author
-FROM challenge as c
-LEFT JOIN class as cl ON cl.id = c.author
-WHERE category=:category");
-foreach($categories as $c) {
-if($c->name == 'climate-change' || $c->name == 'production' || $c->name == 'energy') {
-?>
-  <div class=".abstand challenge-box col-xs-12 col-lg-4">
-      <?php
-      $challengeStmt->execute(['category' => $c->name]);
-      foreach($challengeStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
-          printChallenge($row);
-      }
-      ?>
-    </div>
-
-
-<?php
-
-}
-}
-
-?>
-</div>
-
-
-
-
-
-</div>
-
-<!--
-NeuStrukturierung test anfang
-
-
-<div class="<?= e($row->category) ?> challenge-points2">
-    <b><?= e($row->points)?></b>
-</div>
-<b><u><a class="<?php
-                foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $classRow) {
-                    echo " class-" . $classRow->id;
-                }
-                ?>
-                challenge-title2"
-         onclick="return toggleMe('challenge-<?=e($row->id)?>')"
-         href="javascript:void(0)" ><?=e($row->name)?></a></u></b><br>
-<div style="display:none;" class="dbox" id="challenge-<?=e($row->id)?>">
-    <?= e($row->description) ?>
-    <br>
-    <?php if($row->author) { ?>
-        <div style="color: black;">Von:<b><?=e($row->author)?></b></div>
+    $i = 0;
+    define("NUM_COLS", 3);
+    foreach($categories as $c) {
+        if($i % NUM_COLS == 0 ) { ?>
+        <div class="row">
     <?php } ?>
-</div><br><br>
-<?php
-
-
-?>
-
-<br>
-<br>
-
-<?php
-foreach($categories as $c) {
-?>
-<div class=".abstand challenge-header2 <?= e($c->name) ?>">
-    <?= e($c->title) ?>
-</div>
-<?php
-}
-// TODO: error handling
-$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, cl.name AS author
-FROM challenge as c
-LEFT JOIN class as cl ON cl.id = c.author
-WHERE category=:category");
-foreach($categories as $c) {
-?>
-<div class=".abstand challenge-box2">
+    <div class="col-xs-12 col-md-4 col-lg-4">
+        <div class="challenge-header <?= e($c->name) ?>">
+            <?= e($c->title) ?>
+        </div>
+        <div class="challenge-box">
+            <?php
+            $challengeStmt->execute(['category' => $c->name]);
+            foreach($challengeStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
+                printChallenge($row);
+            }
+            ?>
+        </div>
+    </div>
     <?php
-    $challengeStmt->execute(['category' => $c->name]);
-    foreach($challengeStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
-        printChallenge($row);
+    if($i % NUM_COLS == NUM_COLS-1 || $i == count($categories)-1) { ?>
+    </div>
+    <?php
     }
-    ?>
+    $i++;
+    } ?>
 </div>
-<?php } ?>
-
-
-
-
-
-NeuStrukturierung test ende
--->
 
 <div class="selfmade-whole">
     Selfmade-Challenges
 </div>
 <div class="selfmade-box">
-  <div class="container" style="margin-right: 5%; width: 95%;">
+  <div class="container" style="width: 100%; margin-right: 1%;">
 
     <?php
-    // create as many columns as categories
-    $cols = [];
-    foreach($categories as $c) {
-        array_push($cols, []);
-    }
-
     $challengeStmt->execute(['category' => "selfmade"]);
 
-    // try to fill the columns as equal as possible
-    $index = 0;
-    foreach($challengeStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
-        array_push($cols[$index], $row);
-        $index = ($index + 1) % count($cols);
-    }
-
+    $i = 0;
+    $cols = $challengeStmt->fetchAll(PDO::FETCH_OBJ);
     foreach($cols as $col) {
-        if($index == '1' || $index == '4'  || $index == '7' || $index == '10' || $index == '13' || $index == '16' || $index == '19') {
+        if($i % NUM_COLS == 0 ) {
     ?>
-    <div class="row">
-      <?php } ?>
-
-        <div class=".abstand selfmade-col col-xs-12 col-lg-4">
+        <div class="row">
+    <?php } ?>
+    <div class="col-xs-12 col-md-4 col-lg-4">
+        <div class="challenge-box">
             <?php
-            foreach($col as $row) {
-                printChallenge($row);
-            }
+            printChallenge($col);
             ?>
         </div>
-    <?php }
-    if($index == '3' || $index == '6'  || $index == '9' || $index == '12' || $index == '15' || $index == '18' || $index == '21') {
-      ?>
     </div>
-        <?php } ?>
+    <?php
+    if($i % NUM_COLS == NUM_COLS-1 || $i == count($cols)-1) { ?>
+        </div>
+    <?php
+    }
+    $i++;
+    }
+    ?>
 
 
 

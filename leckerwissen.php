@@ -104,16 +104,13 @@ array_push($categories, new Category("other", "Weiteres"));
 $leckerStmt = $db->prepare("SELECT link, title FROM leckerwissen
 WHERE category = :category AND type = :type");
 
-
 $i = 0;
 foreach($categories as $c) {
      if($i % 3 == 0 ) { ?>
     <div class="row">
-      <?php }
+      <?php } ?>
 
-      ?>
-
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="col-xs-12 col-md-4 col-lg-4">
         <div class="leckerwissen-header <?= e($c->name) ?>"><?= e($c->title) ?></div>
 
         <div class="leckerwissen-box" style="padding: 1%;">

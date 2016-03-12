@@ -38,42 +38,7 @@ font-size: 13px;
 
 }
 
-@media screen and (min-width: 800px) {
-
 .challenge-header {
-    width: 98%;
-    height: 20px;
-    border-radius: 5px;
-    margin-top: 35px;
-    margin-right: 0%;
-    margin-bottom: 10px;
-    margin-left: 1%;
-    text-align:center;
-    color: white;
-    font-size: 16px;
-
-
-}
-
-.challenge-box {
-    background-color:#1BAB3F;
-    z-index: 1;
-    width: 98%;
-    height: auto;
-    float: left;
-    margin-top: 5px;
-    margin-right: 0%;
-    margin-bottom: 10px;
-    margin-left: 1%;
-    text-align:center;
-    color: white;
-    font-size: 15px;
-
-}
-
-}
-.challenge-header {
-    width: 32%;
     height: 20px;
     border-radius: 5px;
     margin-top: 35px;
@@ -90,9 +55,7 @@ font-size: 13px;
 .challenge-box {
     background-color:#1BAB3F;
     z-index: 1;
-    width: 32%;
     height: auto;
-    float: left;
     margin-top: 5px;
     margin-right: 0%;
     margin-bottom: 10px;
@@ -110,13 +73,13 @@ font-size: 13px;
     height: 20px;
     border-radius:20px;
     margin-top: 0px;
-    margin-right: 0px;
+    margin-right: 10px;
     margin-bottom: -20px;
-    margin-left: 93%;
+    margin-left: 0px;
     text-align:center;
     font-size: 14px;
     font-width: bold;
-    float: left;
+    float: right;
     color: white;
 }
 .challenge-points.selfmade {
@@ -153,7 +116,6 @@ font-size: 13px;
 }
 .selfmade-col {
     z-index: 1;
-    width: 16%;
     float: left;
     margin-top: 5px;
     margin-right: 0px;
