@@ -3,12 +3,8 @@ include __DIR__."/include.php";
 
 //check_access(TEACHER);
 
-
-
-
-
-list($link, $title, $type, $category) = apiCheckParams(
-    "link", "title", "type", "category");
+list($link, $title, $type, $category, $captcha) = apiCheckParams(
+    "link", "title", "type", "category", "captcha_code");
 
 apiCheck(strlen($link) != 0, "Link darf nicht leer sein");
 apiCheck(strlen($title) != 0, "Titel darf nicht leer sein");
@@ -17,21 +13,7 @@ apiCheck($category == "other" || array_filter($categories, function($cat) use ($
 apiCheck(array_filter($leckerwissenTypes,
                       function($t) use ($type) { return $t["name"] === $type; }),
          "Ungültiger Typ");
-
-
-
-         //CAPTCHA_CODE
-           // Ganz oben, vor irgendeiner Ausgabe: //
-         session_start();
-
-           // Bearbeiten des Formulars //
-           if ($_POST['captcha_code'] == $_SESSION['captcha_spam']) {
-             // Das Captcha wurde korrekt ausgefuellt //
-
-             // [HIER] kann jetzt der PHP-Code hin, den vorher ohnehin genutzt hast, um das Formular zu verarbeiten.
-
-
-
+apiCheck($captcha === $_SESSION['captcha_spam'], "Captcha falsch!");
 
 apiAction(function() use($link, $title, $type, $category) {
     dbExecute("INSERT INTO leckerwissen (link, title, type, category) VALUES (:link, :title, :type, :category)",
@@ -39,18 +21,5 @@ apiAction(function() use($link, $title, $type, $category) {
                "title" => $title,
                "type" => $type,
                "category" => $category]);
-
-
-             });
-
-
-
-} else {
-  // Captcha wurde falsch ausgefuellt, Fehler ausgeben. //
-  echo 'Du hast den Captcha-Code falsch eingegeben!';
-}
-//CAPTCHA_CODE ENDE
-
-
-
+});
 ?>

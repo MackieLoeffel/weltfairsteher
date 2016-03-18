@@ -2,34 +2,30 @@
 
 <br>
 <br>
-<div class="container" style="width: 98%; margin-right: 1%;">
 
 
-<div class="row">
-   <div  class="col-xs-12 col-lg-4" style="height: 180px;
-background-color: #1BAB3F;
-margin-left: 2%;
-   margin-top: 20px;
-width: 30%;
+
+
+   <div  style="
+margin-left: 0%;
+width: 100%;
+margin-right: 0%;
+margin-top: -56px;
+
    margin-bottom: 5px;
-
-
-   color: black;
    ">
    <a href="/CHANGEeV_Booklet_der_Alternativen.pdf"
-   target="_blank"><b style="color: black; margin-top: 12px;  font-size: 10px;">Kostenloser Download - <i style="color: white;  font-size: 10px;">Booklet der Alternativen</i><br>
-   </b></a>
-    <a href="/CHANGEeV_Booklet_der_Alternativen.pdf"
-    target="_blank">
-      <img src="Booklet-der-Alternativen.jpg" tag="booklet" width="100%" style="margin-top: 1px;" alt="Booklet der Alternativen"
+   target="_blank">
+
+      <img src="booklet-banner-2.jpg" tag="booklet" width="100%" alt="Booklet der Alternativen"
     height="auto">
       </a>
 
            </div>
 <br>
 
-<div class="col-xs-12 col-lg-8" style="background-color:#1BAB3F; margin-top 25px; width: 63%;
-margin-right: 2%; float: right; height: auto; font-size: 15px; color: white; padding: 10px;">
+<div  style="background-color:#1BAB3F; margin-top: 0px; width: 98%;
+margin-right: 1%; float: right; height: auto; font-size: 15px; color: white; padding: 10px;">
 <b style="font-size: 18px; float: left;">Neues Leckerwissen hinzufügen</b>	&#x2003;&#x2003;
 
 <a href="javascript:void(0)" onclick="return toggleMe('addLeckerwissen')" style="background-color: white; margin-top: 10px;
@@ -97,23 +93,20 @@ margin-right: 2%; float: right; height: auto; font-size: 15px; color: white; pad
   </span>
 
     </div>
-</div>
+<div class="container" style="width: 100%; margin-right: 1%; ">
 
 <?php
 array_push($categories, new Category("other", "Weiteres"));
 $leckerStmt = $db->prepare("SELECT link, title FROM leckerwissen
 WHERE category = :category AND type = :type");
 
-
 $i = 0;
 foreach($categories as $c) {
-     if($i % 3 == 0 ) { ?>
+     if($i % 2 == 0 ) { ?>
     <div class="row">
-      <?php }
+      <?php } ?>
 
-      ?>
-
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="col-xs-12 col-md-6 col-lg-6">
         <div class="leckerwissen-header <?= e($c->name) ?>"><?= e($c->title) ?></div>
 
         <div class="leckerwissen-box" style="padding: 1%;">
@@ -139,7 +132,7 @@ foreach($categories as $c) {
         </div>
     </div>
     <?php
-    if($i % 3 == 2 || $i == count($categories)-1) { ?>
+    if($i % 2 == 1 || $i == count($categories)-1) { ?>
     </div>
     <?php }
     $i++;

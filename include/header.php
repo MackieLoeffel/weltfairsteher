@@ -131,7 +131,16 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                      font-family: Pathway Gothic One;">
                                      <a href="<?=$link?>"><b style="color: white;"><?=$site?></b></a></li>
 
-                                     <?php } ?>
+                                     <?php
+                                     // catch ($sites as $site => "impressum.php") {
+$sites = ["Impressum" => "impressum.php"];
+
+                                  //  }
+
+}
+
+//if($sites as $site => "table.php" || "challenges.php") {
+?>
 
 <li style="margin-top: 15px; margin-left: 15px; color: grey; font-size: 10pt;">
                                     <form method="POST">
@@ -147,7 +156,9 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                           <?php } ?>
                                       </select>
                                   </form></li>
+
                                     </ul>
+
                           </div>
                           </div>
                           </div>

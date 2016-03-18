@@ -6,8 +6,24 @@ include "include/chart.php";
 <br>
 <br>
 <br>
+<div  style="
+margin-left: 0%;
+float: left;
+width: 100%;
+margin-right: 0%;
 
-<span style="width: auto; height: auto; margin-left: 33%; margin-right: auto; margin-bottom: 30px; background-color: yellow; color: black;">
+margin-top: -75px;
+
+margin-bottom: 10px;
+">
+
+
+   <img src="table-banner.png" tag="kompass" width="100%" alt="kompass"
+ height="auto">
+
+        </div>
+<br>
+<span style="width: auto; height: auto; margin-left: 33%; margin-right: auto; margin-bottom: 5px; background-color: yellow; color: black;">
   Die erwähnten Klassen sind lediglich Beispielklassen</span>
 
 

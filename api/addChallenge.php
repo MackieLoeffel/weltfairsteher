@@ -34,7 +34,7 @@ apiAction(function() use ($title, $desc, $class, $points, $suggested, $category)
             $class = NULL;
         }
 
-        dbExecute("INSERT INTO challenge (name, description, author, points, category) VALUES (:title, :desc, :class, :points, :category)",
+        dbExecute("INSERT INTO challenge (name, description, author, points, category, author_time) VALUES (:title, :desc, :class, :points, :category, NOW())",
                   ["title" => $title,
                    "desc" => $desc,
                    "class" => $class,

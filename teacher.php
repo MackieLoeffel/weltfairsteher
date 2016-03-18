@@ -15,6 +15,21 @@ $allowed_classes = $classStmt->fetchAll(PDO::FETCH_OBJ);
 include "include/chart.php";
 ?>
 
+<div  style="
+margin-left: 1%;
+float: left;
+width: 100%;
+margin-left: 0%;
+margin-top: -14px;
+margin-right: 0%;
+margin-bottom: 5px;
+">
+
+
+   <img src="teacher-banner.png" tag="light" width="100%" alt="light"
+ height="auto">
+
+        </div>
 
 
 
@@ -23,7 +38,7 @@ include "include/chart.php";
            -->
         <div class="teacher-challenge-box-inner">
             <h4 style="color: white;">Challenge eintragen:</h4>
-            <span style="margin-bottom: 4px; margin-top: 9px; font-size:13px; color: black">
+            <span style="margin-bottom: 104px; margin-top: 9px; font-size:13px; color: black">
                <form id="solveChallenge" action="javascript:void(0);" onsubmit="sendForm(this)">
                     <b>Klasse:</b><br>
                     <select name="class" id="class" size="1">
