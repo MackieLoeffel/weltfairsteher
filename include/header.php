@@ -132,20 +132,22 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                              <a href="<?=$link?>"><b style="color: white;"><?=$site?></b></a></li>
                                      <?php } ?>
 
+                                     <?php if(in_array(basename($_SERVER['PHP_SELF']), [
+                                         "table.php", "challenges.php"])) {?>
                                      <li style="margin-top: 15px; margin-left: 15px; color: grey; font-size: 10pt;">
-                                    <form method="POST">
-
-                                      <select id="class-select" name="klasse" size="1">
-<option value="default">Klasse wählen</option>
-                                          <?php
-                                          $classStmt = $db->prepare("SELECT id, name FROM class");
-                                          $classStmt->execute();
-                                          foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
-                                          ?>
-                                              <option value="<?= e($row->id) ?>"><?= e($row->name) ?></option>
-                                          <?php } ?>
-                                      </select>
-                                  </form></li>
+                                         <form method="POST">
+                                             <select id="class-select" name="klasse" size="1">
+                                                 <option value="default">Klasse wählen</option>
+                                                 <?php
+                                                 $classStmt = $db->prepare("SELECT id, name FROM class");
+                                                 $classStmt->execute();
+                                                 foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
+                                                 ?>
+                                                     <option value="<?= e($row->id) ?>"><?= e($row->name) ?></option>
+                                                 <?php } ?>
+                                             </select>
+                                         </form></li>
+                                   <?php } ?>
 
                                     </ul>
 
