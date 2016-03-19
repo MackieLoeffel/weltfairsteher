@@ -1,4 +1,11 @@
-window.window.selectedClass = null
+
+# toggle
+window.readOn = (dest, link) ->
+  $("##{dest}").show(200)
+  $(link).hide()
+
+# class select
+window.selectedClass = null
 classSelectChanged = []
 setClass = (newClass) ->
   console.log 'setClass:', newClass

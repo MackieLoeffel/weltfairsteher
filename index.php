@@ -45,7 +45,7 @@
                       <li>  <b>Soziales</b>, also die Art und Weise, wie Menschen
                         in der Gesellschaft zusammenleben und</li>
                         <li> <b>Wirtschaft</b>, also Bereiche wie Warenproduktion, Einkauf und Verkauf.</li></ul>
-                        <a href="javascript:void(0)" onclick="return toggleMe('zwei');" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
+                        <a href="javascript:void(0)" onclick="readOn('zwei', this);" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
                         <span id="zwei" style="display:none;">  Mit all diesen Dingen
                         habt ihr - ohne es immer zu bemerken - tagtäglich zu tun. Selbst hinter kleinen Handlungen steckt dabei häufig ein riesiger Prozess, der zuvor stattfand.
                         Wusstet ihr zum Beispiel, das
@@ -80,14 +80,7 @@ Jede Klasse kann sich an den Aufgaben, die ihr unter dem Reiter <i>Challenges</i
 genauso gleichgültig wie die Anzahl der Schüler*innen, die sich an einer Challenge beteiligen. Manchmal ist es sogar am besten,
 wenn nur wenige Schüler*innen eine Aufgabe verfolgen. Sobald ihr eine Challenge erfolgreich abgeschlossen habt,
 kann eure Lehrkraft die Challenge im <i>Lehrer-Bereich</i> eintragen.<br>
-<span id="vier0"><a href="javascript:void(0)" onclick="more4()" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
-<script type="text/javascript">
-function more4() {
-return toggleMe('vier');
-var weg4 = document.getElementById('vier0');
-weg4.style.display = 'none';
-}
-</script></span>
+<span ><a href="javascript:void(0)" onclick="readOn('vier', this)" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
 
 <span id="vier" style="display:none;">
 
@@ -131,7 +124,7 @@ Jede Klasse sieht in der Tabelle, wie viele Punkte sie noch von der nächsten Et
 wir euch zur Belohnung eine kleine Überraschung per Post. Außerdem werdet ihr über die Zeit der Teilnahme hinweg
 so manche Errungenschaft feiern, die
 wortwörtlich nachhaltig ist - für´s Leben lernen also. <br>
-<a href="javascript:void(0)" onclick="return toggleMe('fuenf')" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
+<a href="javascript:void(0)" onclick="readOn('fuenf', this)" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
 <span id="fuenf" style="display:none;">
 Ob ihr in der Tabelle gerade unten oder oben steht, ist demzufolge nur zweitrangig.
 Letztendlich spielen nämlich alle Klassen gemeinsam für eine lebenswerte Zukunft, die fair, also gerecht, gestaltet ist.
@@ -155,7 +148,7 @@ Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
     eurem Klassennamen teilnehmen.
     Keine Sorge: Eure Schuldaten werden nicht veröffentlicht.
     <br>
-    <a href="javascript:void(0)" onclick="return toggleMe('sechs')" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
+    <a href="javascript:void(0)" onclick="readOn('sechs', this)" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
     <span id="sechs" style="display:none;">
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
 Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrer-Bereich</i> gewissenhaft bestandene Challenges

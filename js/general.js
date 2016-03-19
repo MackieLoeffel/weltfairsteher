@@ -2,7 +2,12 @@
 (function() {
   var classSelectChanged, setClass;
 
-  window.window.selectedClass = null;
+  window.readOn = function(dest, link) {
+    $("#" + dest).show(200);
+    return $(link).hide();
+  };
+
+  window.selectedClass = null;
 
   classSelectChanged = [];
 
