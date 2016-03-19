@@ -126,23 +126,13 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                      foreach ($sites as $site => $link) {
                                      ?>
 
-                                     <li
-                                     style="font-size: 13pt; text-transform: uppercase;
-                                     font-family: Pathway Gothic One;">
-                                     <a href="<?=$link?>"><b style="color: white;"><?=$site?></b></a></li>
+                                         <li
+                                             style="font-size: 13pt; text-transform: uppercase;
+                                                    font-family: Pathway Gothic One;">
+                                             <a href="<?=$link?>"><b style="color: white;"><?=$site?></b></a></li>
+                                     <?php } ?>
 
-                                     <?php
-                                     // catch ($sites as $site => "impressum.php") {
-$sites = ["Impressum" => "impressum.php"];
-
-                                  //  }
-
-}
-
-//if($sites as $site => "table.php" || "challenges.php") {
-?>
-
-<li style="margin-top: 15px; margin-left: 15px; color: grey; font-size: 10pt;">
+                                     <li style="margin-top: 15px; margin-left: 15px; color: grey; font-size: 10pt;">
                                     <form method="POST">
 
                                       <select id="class-select" name="klasse" size="1">
