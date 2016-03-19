@@ -65,7 +65,7 @@ if(!defined('CONFIG_PHP')) {
 
     # escape
     function e($str) {
-        return htmlspecialchars($str);
+        return htmlspecialchars($str, ENT_QUOTES, "UTF-8");
     }
 
     function fetchAll($query, $params = []) {
