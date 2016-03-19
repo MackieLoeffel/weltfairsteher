@@ -85,10 +85,11 @@
               break;
             }
             results.push({
+              name: "Etappe",
               data: [ms.points, ms.points],
               color: "#00662A",
               dashStyle: "Dash",
-              showInLegend: false,
+              showInLegend: i === 0,
               pointStart: pointStart,
               pointInterval: Date.now() - pointStart,
               marker: {

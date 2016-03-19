@@ -55,10 +55,11 @@ class LineChart
         }).concat (for ms, i in milestones
           break if i > 0 && milestones[i-1].points > maxPoints
           {
+            name: "Etappe"
             data: [ms.points, ms.points]
             color: "#00662A"
             dashStyle: "Dash"
-            showInLegend: false
+            showInLegend: i == 0
             pointStart: pointStart
             pointInterval: Date.now() - pointStart
             marker:
