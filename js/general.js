@@ -36,8 +36,10 @@
     var classSelect, classes;
     window.selectedClass = localStorage.getItem('selectedClass');
     classes = [];
+    window.classNames = {};
     $('#class-select option').each(function(v, a) {
-      return classes.push($(a).prop('value'));
+      classes.push($(a).prop('value'));
+      return window.classNames[$(a).prop('value')] = $(a).text().trim();
     });
     if ((window.selectedClass == null) || classes.indexOf(window.selectedClass) === -1) {
       window.selectedClass = classes[0];
