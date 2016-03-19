@@ -13,7 +13,7 @@ apiCheck($category == "other" || array_filter($categories, function($cat) use ($
 apiCheck(array_filter($leckerwissenTypes,
                       function($t) use ($type) { return $t["name"] === $type; }),
          "Ungültiger Typ");
-apiCheck($captcha === $_SESSION['captcha_spam'], "Captcha falsch!");
+apiCheck($captcha === $_SESSION['captcha_spam'], "Der Captcha-Code war leider falsch!");
 
 apiAction(function() use($link, $title, $type, $category) {
     dbExecute("INSERT INTO leckerwissen (link, title, type, category) VALUES (:link, :title, :type, :category)",
