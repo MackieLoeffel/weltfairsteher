@@ -1,4 +1,6 @@
-<?php include "include/header.php"?>
+<?php include "include/header.php";
+array_push($categories, new Category("other", "Weiteres"));
+?>
 
 <br>
 <br>
@@ -96,7 +98,6 @@ margin-right: 1%; float: right; height: auto; font-size: 15px; color: white; pad
 <div class="container" style="width: 100%; margin-right: 1%; ">
 
 <?php
-array_push($categories, new Category("other", "Weiteres"));
 $leckerStmt = $db->prepare("SELECT link, title FROM leckerwissen
 WHERE category = :category AND type = :type");
 
