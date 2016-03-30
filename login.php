@@ -15,7 +15,7 @@ if(isset($_SESSION["user"])) {
         $_SESSION["role"] = $user->role;
         $_SESSION["user"] = $user->id;
 ?>
-    <b style="margin-left: 30%;"> Jippie, Sie sind wieder da! In wenigen Augenblicken geht´s weiter... </b>
+    <b style="margin-left: 30%;"> Schön, dass Sie wieder da sind! In wenigen Augenblicken geht´s weiter... </b>
     <script type="text/javascript">
      setTimeout(function() {window.location = "teacher.php"}, 3*1000);
     </script>
