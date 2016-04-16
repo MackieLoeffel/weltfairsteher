@@ -4,16 +4,17 @@
 <img src="logo_weltfairsteher_transparent_startseite.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
 <br>
 <br>
-<span class="abstaende" style="font-size: 22px;">
-<a href="#was" style="color: #C5F2B6; background-color: #C9960A;">Beschreibung</a>&#160
-    <a href="#worum" style="color: #C5F2B6; background-color: #3A7EFC; margin-left: 1%;">Thema</a>
-    <a href="#wer" style="color: #C5F2B6; background-color: #7761C5; margin-left: 1%;">Teilnehmer</a>
-    <a href="#ablauf" style="color: #C5F2B6; background-color: #1B5A0A; margin-left: 1%;">Ablauf</a>
+<span class="abstaende" style="font-size: 18.1px;">
+<a href="#was" style="color: #C5F2B6; background-color: #C9960A;">Beschreibung</a>
+    <a href="#worum" style="color: #C5F2B6; background-color: #3A7EFC; margin-left: 1px;">Thema</a>
+    <a href="#wer" style="color: #C5F2B6; background-color: #7761C5; margin-left: 1px;">Teilnehmer</a>
+    <a href="#ablauf" style="color: #C5F2B6; background-color: #1B5A0A; margin-left: 1px;">Ablauf</a>
 
-    <a href="#gewinn" style="color: #C5F2B6; background-color: #CC4321; margin-left: 1%;">Gewinne</a>
-    <a href="#wie" style="color: #C5F2B6; background-color: #10B3B3; margin-left: 1%;">Anmeldung</a>
-    <a href="#spenden" style="color: #C5F2B6; background-color: #D490C6; margin-left: 1%;">Spenden</a>
-    <a href="#wir" style="color: #C5F2B6; background-color: #851023; margin-left: 1%;">Über uns</a>
+    <a href="#gewinn" style="color: #C5F2B6; background-color: #CC4321; margin-left: 1px;">Gewinne</a>
+    <a href="#wie" style="color: #C5F2B6; background-color: #10B3B3; margin-left: 1px;">Anmeldung</a>
+    <a href="#lehrer" style="color: #C5F2B6; background-color: #00693F; margin-left: 1px;">Hinweise für Lehrkräfte</a>
+    <a href="#spenden" style="color: #C5F2B6; background-color: #D490C6; margin-left: 1px;">Spenden</a>
+    <a href="#wir" style="color: #C5F2B6; background-color: #851023; margin-left: 1px;">Über uns</a>
     </span>
                         <br>
 </span>
@@ -46,7 +47,7 @@
                         in der Gesellschaft zusammenleben und</li>
                         <li> <b>Wirtschaft</b>, also Bereiche wie Warenproduktion, Einkauf und Verkauf.</li></ul>
                         <a href="javascript:void(0)" onclick="readOn('zwei', this);" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
-                        <span id="zwei" style="display:none;">  Mit all diesen Dingen
+                        <span id="zwei" style="display:none;"> <br> Mit all diesen Dingen
                         habt ihr - ohne es vielleicht zu bemerken - tagtäglich zu tun. Selbst hinter kleinen Handlungen steckt dabei häufig ein riesiger Prozess, der zuvor stattfand.
                         Wusstet ihr zum Beispiel, dass
                         vor dem Kauf einer einfachen elektrischen Zahnbürste viele Rohstoffe wie Metalle oder Öle über mehrere Kontinente transportiert werden? Schiffe, Züge
@@ -79,7 +80,7 @@ genauso gleichgültig wie die Anzahl der Schüler*innen, die sich an einer Chall
 kann eure Lehrkraft die Challenge im <i>Lehrkraft-Bereich</i> eintragen. Den aktuellen Punktestand eurer Klasse findet ihr unter dem Reiter <i>Tabelle</i><br>
 <span ><a href="javascript:void(0)" onclick="readOn('vier', this)" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
 
-<span id="vier" style="display:none;">
+<span id="vier" style="display:none;"><br>
 
 In der <i>Tabelle</i> könnt ihr eure Klasse in der Navigationsleiste wählen, um sie im Diagramm zu sehen. Außerdem wird euch die Punktzahl der bestandenen Challenges je Kategorie
 sowie die Gesamtpunktzahl angezeigt. Damit euch niemand vorwerfen kann, ihr hättet für das Punktekonto geschummelt, haltet ihr den Erfolg einer Challenge,
@@ -111,7 +112,9 @@ wie wertvoll dieser Bonus für euch sein kann:
  Unter dem Reiter <i>Challenges</i> findet ihr natürlich alle Aufgaben, die euch zur Auswahl stehen - auch diejenigen, die
  ihr oder eine andere Klasse als Selfmade-Challenge einbringen konnte. Die Challenges sind zwar thematisch nach Kategorien geordnet - ihr
  müsst sie aber nicht in einer Reihenfolge absolvieren. Die Zahl, die bei jeder Challenge steht, repräsentiert die Punkte, die ihr bekommt,
- wenn ihr die Challenge erfolgreich abschließt. Wenn ihr eine Challenge gewählt habt, wendet euch an eure Lehrkraft, da diese online weitere Informationen und Unterrichtsmaterialien einsehen kann.
+ wenn ihr die Challenge erfolgreich abschließt. Wenn ihr eine Challenge gewählt habt, könnt ihr manchmal eigenständig mithilfe der dazugehörigen PDF-Datei loslegen oder die Durchführung
+ mit einer Lehrkraft organisieren. Für diese Organisation empfehlen wir euch, ein oder zwei Personen in eurer Klasse auszuwählen, die euch bei WeltFAIRsteher vertreten, um diesbezüglich in
+ engem Kontakt mit den Lehrer*innen zu stehen - Klassensprecher*innen für die Nachhaltigkeitschallenge sozusagen.
 
 </span>
 
@@ -129,7 +132,7 @@ wir euch zur Belohnung eine kleine Überraschung per Post. Außerdem werdet ihr 
 so manche Errungenschaft feiern, die
 wortwörtlich nachhaltig ist - für´s Leben lernen also. <br>
 <a href="javascript:void(0)" onclick="readOn('fuenf', this)" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
-<span id="fuenf" style="display:none;">
+<span id="fuenf" style="display:none;"><br>
 Ob ihr in der Tabelle gerade unten oder oben steht, ist demzufolge nur zweitrangig.
 Letztendlich spielen nämlich alle Klassen gemeinsam für eine lebenswerte Zukunft, die fair, also gerecht, gestaltet ist.
 Na gut, ein paar Überraschungen haben wir für die Klassen mit den meisten Punkten trotzdem parat - als zusätzlicher
@@ -152,7 +155,7 @@ Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
     Keine Sorge: Eure Schuldaten werden nicht veröffentlicht und vertraulich behandelt.
     <br>
     <a href="javascript:void(0)" onclick="readOn('sechs', this)" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
-    <span id="sechs" style="display:none;">
+    <span id="sechs" style="display:none;"><br>
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
 Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrkraft-Bereich</i> gewissenhaft bestandene Challenges
 eintragen oder eine Selfmade-Challenge vorschlagen. Außerdem haben eingeloggte Lehrkräfte Zugang zu
@@ -161,6 +164,25 @@ ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Chal
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. Ebenso möglich ist, dass eine zweite und dritte Lehrkraft
     die Verantwortung für eine Klasse übernimmt und Challenges aus seinem oder ihren Fachbereich betreut sowie online einträgt. Die Voraussetzung hierfür ist, dass
     alle Lehrkräfte einer Klasse das selbe WeltFAIRsteher-Konto benutzen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
+</span>
+</div><br>
+
+
+<b>
+<h3 class="abstaende" id="lehrer" style="color: #C5F2B6; background-color: #00693F;">Was müssen die Lehrer*innen tun?</h3></b>
+
+<div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
+  Als Lehrkräfte übernehmen Sie zwar die Verantwortung für eine Klasse, können die Challenges aber flexibel in Unterricht und Freizeit der Kinder
+  einbinden. Auch die Verantwortung muss nicht nur auf Ihren Schultern liegen. So können Sie spezielle Klassensprecher*innen für WeltFAIRsteher ernennen,
+  die gerne Projektmanagement beitreiben möchten und sich um die Koordination von Challenges, den Schüler*innen-Gruppen, welche die Challenges bearbeiten könnten
+  sowie darum kümmern, dass andere Lehrkräfte passende Challenges in deren Unterricht integrieren.
+    <br>
+    <a href="javascript:void(0)" onclick="readOn('sechseins', this)" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
+    <span id="sechseins" style="display:none;"><br>
+Ziel des Projektes ist es dabei, Bildung für nachhaltige Entwicklung strukturell in den Schulalltag zu verankern. WeltFAIRsteher verfolgt deshalb einen ganzheitlichen
+und integrierenden Ansatz und versteht sich nicht als rein additives Angebot. Damit es den Schüler*innen möglichst einfach gemacht wird, auch eigenständig Challenges nachvollziehen und durchführen zu können, ist für jede Challenge auch eine PDF
+verfügbar, in welcher eine genauere Beschreibung, die zeitlichen und materiellen Anforderungen sowie die Bewertungskriterien und mehr aufgelistet wird. Gegebenenfalls
+beinhalten die PDF-Dokumente auch benötigtes Material oder hilfreiche Erklärungen. [Bis alle Challenges mit einer entsprechenden PDF ausgestattet sind, dauert es aber noch ein wenig.]
 </span>
 </div><br>
 
@@ -177,7 +199,7 @@ einfach einen Betrag eurer Wahl auf das Konto des gemeinnützigen Vereins<br>
 IBAN: DE35 7705 0000 0302 2593 95<br>
 Bic-/Swift Code: BYLADEM1SKB<br>
 Sparkasse Bamberg<br>
-Betreff: “WeltFAIRsteher”</b><br>
+Betreff/Zweck/Purpose: “WeltFAIRsteher”</b><br>
 Bei Beträgen über 200 Euro gebt bitte eure vollständige Postanschrift an. An diese schicken wir nämlich eine Spendenbescheinigung.  Alternativ lässt sich über <a style="color: green;" href="http://www.chancengestalten.de/unterstutzen/spende/online-spende/" target="_blank"
 >diesen Link </a> auch direkt Online spenden. Und zu guter Letzt: Wer einen PayPal Account besitzt, kann auch komfortabel hierüber spenden:
 
