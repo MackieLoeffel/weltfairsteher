@@ -44,7 +44,7 @@ if($showForm) {
                   text-align: center;"><input type="submit" name="commit"
                   value="Login"></p>  </form>
                   <span style="width: 26%; text-align: center; margin-left: 39%; margin-top:-17px;">
-                    <a href="#" alt="pw reset" style="color: grey; font-size: 9px;">Passwort vergessen?</a></span>
+                    <a href="forgotPassword.php" alt="pw reset" style="color: grey; font-size: 9px;">Passwort vergessen?</a></span>
                 </div>
 <?php
 }
