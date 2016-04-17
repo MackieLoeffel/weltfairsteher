@@ -14,7 +14,14 @@ apiAction(function() use($email) {
         $rand = bin2hex(openssl_random_pseudo_bytes(16));
         dbExecute("INSERT INTO forgot (id, user, created_at) VALUES (:rand, :user, NOW())",
                   ["user" => $user->id, "rand" => $rand]);
-        mail($email, "Passwort vergessen", "Hallo,\r\num dein Passwort zurückzusetzen gehe bitte auf diesen Link: http://www.weltfairsteher.jetzt/resetPassword.php?forgotid=$rand\r\nViele Grüße\r\nDein Weltfairsteher Team", "FROM: kontakt@weltfairsteher.jetzt");
+
+        $headers   = array();
+        // für umlaute
+        $headers[] = "MIME-Version: 1.0";
+        $headers[] = "Content-type: text/plain; charset=utf-8";
+        $headers[] = "From: kontakt@weltfairsteher.jetzt";
+        $headers[] = "Reply-To: kontakt@weltfairsteher.jetzt";
+        mail($email, "Passwort vergessen", "Hallo,\r\num dein Passwort zurückzusetzen gehe bitte auf diesen Link: http://www.weltfairsteher.jetzt/resetPassword.php?forgotid=$rand\r\nViele Grüße\r\nDein Weltfairsteher Team", implode("\r\n", $headers));
     }
 });
 ?>
