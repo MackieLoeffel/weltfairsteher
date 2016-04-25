@@ -4,18 +4,29 @@
 <img src="logo_weltfairsteher_transparent_startseite.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
 <br>
 <br>
-<span class="abstaende" style="font-size: 18.1px;">
-<a href="#was" style="color: #C5F2B6; background-color: #C9960A;">Beschreibung</a>
-    <a href="#worum" style="color: #C5F2B6; background-color: #3A7EFC; margin-left: 1px;">Thema</a>
-    <a href="#wer" style="color: #C5F2B6; background-color: #7761C5; margin-left: 1px;">Teilnehmer</a>
-    <a href="#ablauf" style="color: #C5F2B6; background-color: #1B5A0A; margin-left: 1px;">Ablauf</a>
+<span style="font-size: 19.5px;">
+<a href="#was" class="indexlink" style="color: #C5F2B6; background-color: #C9960A; margin-left: 1%;"
+><span data-title="Beschreibung">Beschreibung</span></a>
+    <a href="#worum" class="indexlink" style="color: #C5F2B6; background-color: #3A7EFC; margin-left: 1px;">
+    <span data-title="Thema">Thema</span></a>
+    <a href="#wer" class="indexlink" style="color: #C5F2B6; background-color: #7761C5; margin-left: 1px;">
+    <span data-title="Teilnehmer">Teilnehmer</span></a>
+    <a href="#ablauf" class="indexlink" style="color: #C5F2B6; background-color: #1B5A0A; margin-left: 1px;">
+    <span data-title="Ablauf">Ablauf</span></a>
 
-    <a href="#gewinn" style="color: #C5F2B6; background-color: #CC4321; margin-left: 1px;">Gewinne</a>
-    <a href="#wie" style="color: #C5F2B6; background-color: #10B3B3; margin-left: 1px;">Anmeldung</a>
-    <a href="#lehrer" style="color: #C5F2B6; background-color: #00693F; margin-left: 1px;">Hinweise für Lehrkräfte</a>
-    <a href="#spenden" style="color: #C5F2B6; background-color: #D490C6; margin-left: 1px;">Spenden</a>
-    <a href="#wir" style="color: #C5F2B6; background-color: #851023; margin-left: 1px;">Über uns</a>
+    <a href="#gewinn" class="indexlink" style="color: #C5F2B6; background-color: #CC4321; margin-left: 1px;">
+    <span data-title="Gewinne">Gewinne</span></a>
+    <a href="#wie" class="indexlink" style="color: #C5F2B6; background-color: #153896; margin-left: 1px;">
+    <span data-title="Anmeldung">Anmeldung</span></a>
+    <a href="#lehrer" class="indexlink" style="color: #C5F2B6; background-color: #00693F; margin-left: 1px;">
+    <span data-title="Lehrkraft">Lehrkraft</span></a>
+    <a href="#spenden" class="indexlink" style="color: #C5F2B6; background-color: #E84B82; margin-left: 1px;">
+    <span data-title="Spenden">Spenden</span></a>
+    <a href="#wir" class="indexlink" style="color: #C5F2B6; background-color: #851023; margin-left: 1px;">
+    <span data-title="Über uns">Über uns</span></a>
     </span>
+
+
                         <br>
 </span>
 
@@ -46,7 +57,7 @@
                       <li>  <b>Soziales</b>, also die Art und Weise, wie Menschen
                         in der Gesellschaft zusammenleben und</li>
                         <li> <b>Wirtschaft</b>, also Bereiche wie Warenproduktion, Einkauf und Verkauf.</li></ul>
-                        <a href="javascript:void(0)" onclick="readOn('zwei', this);" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
+                        <span><a href="javascript:void(0)" class="indexlink" onclick="readOn('zwei', this);" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
                         <span id="zwei" style="display:none;"> <br> Mit all diesen Dingen
                         habt ihr - ohne es vielleicht zu bemerken - tagtäglich zu tun. Selbst hinter kleinen Handlungen steckt dabei häufig ein riesiger Prozess, der zuvor stattfand.
                         Wusstet ihr zum Beispiel, dass
@@ -78,7 +89,7 @@ Anmelden kann euch aber nur eine Lehrkraft, damit wir eine zentrale Ansprechpers
 Jede Klasse kann sich an den Aufgaben, die ihr unter dem Reiter <i>Challenges</i> findet, versuchen. Mit welcher Challenge ihr dabei beginnt ist
 genauso gleichgültig wie die Anzahl der Schüler*innen, die sich an einer Challenge beteiligen. Sobald ihr eine Challenge erfolgreich abgeschlossen habt,
 kann eure Lehrkraft die Challenge im <i>Lehrkraft-Bereich</i> eintragen. Den aktuellen Punktestand eurer Klasse findet ihr unter dem Reiter <i>Tabelle</i><br>
-<span ><a href="javascript:void(0)" onclick="readOn('vier', this)" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
+<span><a href="javascript:void(0)" class="indexlink" onclick="readOn('vier', this)" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
 
 <span id="vier" style="display:none;"><br>
 
@@ -131,7 +142,7 @@ Jede Klasse sieht in der Tabelle, wie viele Punkte sie noch von der nächsten Et
 wir euch zur Belohnung eine kleine Überraschung per Post. Außerdem werdet ihr über die Zeit der Teilnahme hinweg
 so manche Errungenschaft feiern, die
 wortwörtlich nachhaltig ist - für´s Leben lernen also. <br>
-<a href="javascript:void(0)" onclick="readOn('fuenf', this)" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
+<span><a href="javascript:void(0)" class="indexlink" onclick="readOn('fuenf', this)" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
 <span id="fuenf" style="display:none;"><br>
 Ob ihr in der Tabelle gerade unten oder oben steht, ist demzufolge nur zweitrangig.
 Letztendlich spielen nämlich alle Klassen gemeinsam für eine lebenswerte Zukunft, die fair, also gerecht, gestaltet ist.
@@ -148,13 +159,13 @@ Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
 <h3 class="abstaende" id="spenden" style="color: #C5F2B6; background-color: #10B3B3;">Wie meldet man sich an?</h3></b>
 
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-    Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an  <a href="mailto:kontakt@weltfairsteher.jetzt" target="_top">kontakt@weltfairsteher.jetzt</a> und teilt uns den kreativen Klassennamen mit,
+    Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an   <span><a href="mailto:kontakt@weltfairsteher.jetzt" target="_top" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="kontakt@weltfairsteher.jetzt">kontakt@weltfairsteher.jetzt</span></a></span> und teilt uns den kreativen Klassennamen mit,
     den ihr euch selbst ausdenken könnt.
     Wenn ihr uns verratet, von welcher Schule ihr kommt, können wir euch auch eure Etappen-Überraschungen zusenden. Dafür solltet ihr uns auch mitteilen, wie viele Schüler*innen unter
     eurem Klassennamen teilnehmen.
     Keine Sorge: Eure Schuldaten werden nicht veröffentlicht und vertraulich behandelt.
     <br>
-    <a href="javascript:void(0)" onclick="readOn('sechs', this)" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
+    <span><a href="javascript:void(0)" class="indexlink" onclick="readOn('sechs', this)" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
     <span id="sechs" style="display:none;"><br>
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
 Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrkraft-Bereich</i> gewissenhaft bestandene Challenges
@@ -173,11 +184,11 @@ ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Chal
 
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
   Als Lehrkräfte übernehmen Sie zwar die Verantwortung für eine Klasse, können die Challenges aber flexibel in Unterricht und Freizeit der Kinder
-  einbinden. Auch die Verantwortung muss nicht nur auf Ihren Schultern liegen. So können Sie spezielle Klassensprecher*innen für WeltFAIRsteher ernennen,
+  einbinden. Auch die Verantwortung muss nicht nur auf Ihren Schultern lasten. So können Sie spezielle Klassensprecher*innen für WeltFAIRsteher ernennen,
   die gerne Projektmanagement beitreiben möchten und sich um die Koordination von Challenges, den Schüler*innen-Gruppen, welche die Challenges bearbeiten könnten
   sowie darum kümmern, dass andere Lehrkräfte passende Challenges in deren Unterricht integrieren.
     <br>
-    <a href="javascript:void(0)" onclick="readOn('sechseins', this)" style="text-align: center; color: #C5F2B6; background-color: #108542">Weiterlesen...</a>
+  <span><a href="javascript:void(0)" onclick="readOn('sechseins', this)" class="indexlink" style="text-align: center; color: #C5F2B6; background-color: #108542">  <span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
     <span id="sechseins" style="display:none;"><br>
 Ziel des Projektes ist es dabei, Bildung für nachhaltige Entwicklung strukturell in den Schulalltag zu verankern. WeltFAIRsteher verfolgt deshalb einen ganzheitlichen
 und integrierenden Ansatz und versteht sich nicht als rein additives Angebot. Damit es den Schüler*innen möglichst einfach gemacht wird, auch eigenständig Challenges nachvollziehen und durchführen zu können, ist für jede Challenge auch eine PDF
@@ -188,7 +199,7 @@ beinhalten die PDF-Dokumente auch benötigtes Material oder hilfreiche Erklärun
 
 
 <b>
-<h3  class="abstaende" id="wir" style="color: #C5F2B6; background-color: #D490C6;">Spenden
+<h3  class="abstaende" id="wir" style="color: #C5F2B6; background-color: #E84B82;">Spenden
 </h3></b>
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 <i>WeltFAIRsteher</i> wird rein ehrenamtlich betrieben. Um dennoch die Etappenziele und Preise für die Teilnehmer zu finanzieren,
@@ -217,51 +228,71 @@ Bei Beträgen über 200 Euro gebt bitte eure vollständige Postanschrift an. An 
 <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Wir sind ein Team aus Mitgliedern des Max-Weber-Programms Bayern sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
 Über ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
-Ob an der Planung, den Challenges, der Website oder der Kommunikation -  alles geschieht ehrenamtlich und mit jeder Menge Herzblut.
+Ob an der Planung, den Challenges, der Webseite oder der Kommunikation -  alles geschieht ehrenamtlich und mit jeder Menge Herzblut.
 <br>
 <br>
 <div class="container">
 <div class="row" style="margin-right: 10%;">
 
-<div class="col-xs-12 col-sm-6 col-md-4">
-<img src="portraits/jana-2.png" alt="bild-jana" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center; width: 35%;">Jana Costa</span><br><br><br>
+<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<img src="portraits/jana-2.png" alt="bild-jana" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Jana Costa</b>,  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-4">
-<img src="portraits/max.png" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center;">Maximilian <br>Held</span><br><br><br>
-</div>
-
-
-<div class="col-xs-12 col-sm-6 col-md-4">
-<img src="portraits/Andi.png" alt="bild-andi" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center; width: 35%;">Andreas <br>Eichenseher</span><br><br><br>
-
+<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<img src="portraits/max.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Maximilian Held</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 
 </div>
 <div class="row" style="margin-right: 10%;">
-<div class="col-xs-12 col-sm-6 col-md-4" >
-<img src="portraits/michael.png" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center;">Michael <br>Sammler</span><br><br><br>
+
+<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<img src="portraits/Andi.png" alt="bild-andi" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Andreas Eichenseher</b>, Jahrgang ´92, habe einen Abschluss in Medientechnik mit Schwerpunkt Design und studiere derzeit Philosophie und Politikwissenschaften. Für eine zukunftsfähige Entwicklung engagiere ich mich, weil es die einzig langfristige vernünftige Möglichkeit ist, eine gelingende Gemeinschaft alles Lebendigen herbeizuführen.</span><br><br><br>
+
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-4">
-<img src="portraits/julia-schmidt-1.png" alt="bild-julia" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center;">Julia Schmidt</span><br><br><br>
-</div>
-<div class="col-xs-12 col-sm-6 col-md-4">
-<img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center; width: 35%;">Hannah <br>Witzenrath</span><br><br><br>
+
+<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<img src="portraits/michael.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Michael Sammler</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 </div>
+
 <div class="row" style="margin-right: 10%;">
 
+<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<img src="portraits/julia-schmidt-1.png" alt="bild-julia" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Julia Schmidt</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+</div>
 
-<div class="col-xs-12 col-sm-6 col-md-4">
-<img src="" alt="bild-name" style="width: 35%; height: auto; margin-right: 10%; "><br>
-<span style="text-align: center; width: 35%;">Carina Mnich</span><br><br><br>
+
+<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<img src="portraits/hannah-1.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Hannah Witzenrath</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+</div>
+</div>
+
+<div class="row" style="margin-right: 10%;">
+
+<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<img src="" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Elisa Thomaset</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+</div>
+
+
+<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<img src="" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Marie Fath</b>, Jahrgang ´96, und studiere Katholische Theologie, Pädagogik sowie Politikwissenschaften. Nachhaltigkeit ist mir wichtig, weil ich mich für ein gutes Leben für alle auch in Zukunft einsetzen will.</span><br><br><br>
+</div>
+</div>
+
+<div class="row" style="margin-right: 10%;">
+
+<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<img src="" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Carina Mnich</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 
 

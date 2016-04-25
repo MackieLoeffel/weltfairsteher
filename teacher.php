@@ -19,10 +19,11 @@ include "include/chart.php";
 margin-left: 1%;
 float: left;
 width: 100%;
+z-index: 2;
 margin-left: 0%;
 margin-top: -14px;
 margin-right: 0%;
-margin-bottom: 5px;
+margin-bottom: 0px;
 ">
 
 
@@ -32,13 +33,70 @@ margin-bottom: 5px;
         </div>
 
 
+        <div
+            style="margin-left: 1%;
+                   margin-top: 154px;
+                   margin-bottom: 0px;
+                   margin-right: 1%;
+                   position: relative;
+z-index: 3;
+                   background-color:#1BAB3F;
+                   width: 98%;
+                   " >
 
+           <span style="font-size: 18px; text-align: center; color: white; margin-left: 2%;">Allgemeine Hinweise</span>	&#x2003;&#x2003;
+
+           <a href="javascript:void(0)" onclick="return toggleMe('teacherinfo')" style="background-color: white; margin-top: 10px;
+            border: 2px solid white; border-radius: 30px;"
+
+           ><i class="fa fa-arrow-down"></i></a><br>
+ <span id="teacherinfo" style="display:none; margin-left: 2%; margin-right: 2%; font-size: 12px;">
+
+                   <ul style="color: black; text-align: justify; padding: 10px;">
+                   <li>Auf dieser Seite können bestandene <span><a href="#eintragen" class="indexlink" style="color:
+                   white; background-color: #E84B82;"><span data-title="Challenges eingetragen">Challenges eingetragen</span></a></span> werden. Falls sie für mehrere
+                   Klassen verantwortlich sind, muss die entsprechende Klasse zunächst
+                   ausgewählt werden. Alternativ können die Challenges auch
+                   direkt im Menüpunkt <i>Challenges</i> als bestanden eingetragen
+                   werden, nachdem Sie sich als Lehrkraft angemeldet haben. Klicken Sie
+                   dazu einfach auf "Challenge abschließen" unter der jeweiligen
+                   Challenge. </li><br> <li>Nachdem Sie sich als Lehrkraft eingeloggt
+                   haben, können Sie unter <i>Challenges</i> zu manchen Aufgabe auch eine spezielle <span><a href="/challenges.php"
+                   style="color: white; background-color: #E84B82;" class="indexlink"><span data-title="PDF-Datei für Lehrkräfte downloaden">PDF-Datei für Lehrkräfte downloaden</span></a></span>, in der Sie weitere
+                   Informationen zur Umsetzung einer Challenge finden. Falls Sie alle Challenges in einem einzigen
+                   PDF-Dokument zusammengefasst haben möchten, können Sie eine solche <span><a href="#pdf2"  style="color: white; background-color: #E84B82;" class="indexlink"><span data-title="Zusammenfassung">Zusammenfassung</span></a></span> auf dieser Seite herunterladen.
+                  </li><br> <li>Sie können auf dieser Seite
+                   auch <span><a href="#selfmadecha" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="Selfmade-Challenges">Selfmade-Challenges</span></a></span> von einer
+                   Klasse, für die Sie verantwortlich sind, vorschlagen. Füllen Sie dazu
+                   einfach das nebenstehende Formular aus. Die vorgeschlagene Challenge
+                   wird allerdings nicht sofort hinzugefügt, sondern erst einer
+                   Kontrolle unterzogen. Entspricht die vorgeschlagene
+                   Selfmade-Challenge den Kriterien der Nachhaltigkeit, wird sie dem
+                   Challenge-Verzeichnis hinzugefügt und ist öffentlich sichtbar. Auch
+                   der Name der Klasse, die die Aufgabe vorgeschlagen hat, wird dort zu
+                   sehen sein. Wenn die vorgeschlagene Challenge nicht den nachhaltigen
+                   Kriterien entspricht, antworten wir Ihnen per Mail. Das Team hinter
+                   WeltFAIRsteher behält es sich vor, über die Entscheidung bezüglich
+                   der Akzeptanz einer Challenge selbständig zu verfügen. </li><br>
+                   <li>Zudem können Sie hier Ihre <span><a href="#kontaktdaten" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="persönlichen Zugangsdaten">persönlichen
+                   Zugangsdaten</span></a></span> (Passwort und E-Mail-Adresse) ändern. Wenn sich die
+                   Größe einer von Ihnen betreuten Klasse ändert oder Sie anderweitige
+                   Fragen beziehungsweise Probleme haben, schreiben Sie uns einfach eine
+                   E-Mail an   <span><a href="mailto:kontakt@weltfairsteher.jetzt" target="_top" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="kontakt@weltfairsteher.jetzt">kontakt@weltfairsteher.jetzt</span></a></span>. </li><br>
+                   <li id="eintragen">Wenn Sie einzelne Challenges bewerten möchten, können Sie dies ebenfalls auf dieser Seite tun und uns <span><a href="#feedback2" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="Feedback geben">Feedback geben</span></a></span>.
+                   Wir freuen uns über Ihre Einschätzung und Meinung. </li>
+
+
+                   </ul>
+        </span>
+
+                 </div>
 
         <!--Klasse wechseln, Logout
            -->
-        <div class="teacher-challenge-box-inner">
+        <div class="teacher-challenge-box-inner" style="width: 98%;">
             <h4 style="color: white;">Challenge eintragen:</h4>
-            <span style="margin-bottom: 104px; margin-top: 9px; font-size:13px; color: black">
+
                <form id="solveChallenge" action="javascript:void(0);" onsubmit="sendForm(this)">
                     <b>Klasse:</b><br>
                     <select name="class" id="class" size="1">
@@ -60,7 +118,7 @@ GROUP BY c.id)");
                             <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
                         <?php } ?>
                     </select><br>
-                    <b>Challenge:</b><br>
+                    <b id="selfmadecha">Challenge:</b><br>
                     <select name="challenge" id="challenges" size="1"> </select>
                     <br><br>
                     <input type="submit" value="eintragen" style="background-color: green; color: white;"><br><br>
@@ -69,7 +127,7 @@ GROUP BY c.id)");
                  var challenges = <?= json_encode($challenges); ?>;
                 </script>
                 <script src="js/teacher.js"></script>
-            </span>
+
             <!--"Klasse wechseln" nur anzeigen, wenn ein Lehrer für mehrere Klassen verantwortlich ist.
               In der Auswahlliste nur die Klassen anzeigen, die mit dem Konto des Lehrers verbunden sind -->
         </div>
@@ -94,63 +152,13 @@ GROUP BY c.id)");
 <!-- Selfmade-Challenge vorschlagen
      evtl noch insofern ändern, dass nicht eine Beschreibung gefordert ist, sondern jenes formuliert werden muss, was auch wir für eine Challenge ausarbeiten (kategorie, punktzahl, einbettung...... gefahr: zu hohe hürde, eine eigene challenge zu formulieren)
    -->
-<div
-    style="margin-left: 38%;
-           margin-top: 40px;
-           margin-right: 1%;
-           position: relative;
-           float: left;
-           background-color:#1BAB3F;
-           max-width: 61%;
-           height: auto;
 
-           ">
-
-           <h4 style="margin-left: 22px; color: white;">Allgemeine Hinweise</h4>
-
-           <ul style="color: black; text-align: justify; padding: 30px;">
-           <li>Auf dieser Seite können bestandene <b style="color:
-           white;">Challenges eingetragen</b> werden. Falls sie für mehrere
-           Klassen verantwortlich sind, muss die entsprechende Klasse zunächst
-           ausgewählt werden. Achtung: Relevant hierfür ist nicht die Auswahl in
-           der schwarzen Menüleiste. Alternativ können die Challenges auch
-           direkt im Menüpunkt <i>Challenges</i> als bestanden eingetragen
-           werden, nachdem Sie sich als Lehrkraft angemeldet haben. Klicken Sie
-           dazu einfach auf "Challenge abschließen" unter der jeweiligen
-           Challenge. </li><br> <li>Nachdem Sie sich als Lehrkraft eingeloggt
-           haben, können Sie unter <i>Challenges</i> zu jeder Aufgabe eine <b
-           style="color: white;">PDF-Datei downloaden</b>, in der Sie weitere
-           Informationen zur Umsetzung einer Challenge finden, die für Sie als
-           Lehrkraft relevant sind. </li><br> <li>Sie können auf dieser Seite
-           auch <b style="color: white;">Selfmade-Challenges</b> von einer
-           Klasse, für die Sie verantwortlich sind, vorschlagen. Füllen Sie dazu
-           einfach das nebenstehende Formular aus. Die vorgeschlagene Challenge
-           wird allerdings nicht sofort hinzugefügt, sondern erst einer
-           Kontrolle unterzogen. Entspricht die vorgeschlagene
-           Selfmade-Challenge den Kriterien der Nachhaltigkeit, wird sie dem
-           Challenge-Verzeichnis hinzugefügt und ist öffentlich sichtbar. Auch
-           der Name der Klasse, die die Aufgabe vorgeschlagen hat, wird dort zu
-           sehen sein. Wenn die vorgeschlagene Challenge nicht den nachhaltigen
-           Kriterien entspricht, antworten wir Ihnen per Mail. Das Team hinter
-           WeltFAIRsteher behält es sich vor, über die Entscheidung bezüglich
-           der Akzeptanz einer Challenge selbständig zu verfügen. </li><br>
-           <li>Zudem können Sie unten Ihre <b style="color: white;">persönlichen
-           Zugangsdaten </b>(Passwort und E-Mail-Adresse) ändern. Wenn sich die
-           Größe einer von Ihnen betreuten Klasse ändert oder Sie anderweitige
-           Fragen beziehungsweise Probleme haben, schreiben Sie uns einfach eine
-           E-Mail an   <a href="mailto:kontakt@weltfairsteher.jetzt" target="_top">kontakt@weltfairsteher.jetzt</a>. </li>
-
-
-           </ul>
-
-
-         </div>
 
            <div class="teacher-challenge-box-inner"
                style="
                z-index: 1;
-                      margin-top: 235px;
-                      position: absolute;
+width: 98%;
+                      position: relative;
                       float: left;
                       background-color:#1BAB3F;
 padding: 10px;
@@ -197,13 +205,11 @@ padding: 10px;
 </li>
 <li>Bewertungskriterien
 </li>
-<li>Adressierte Dimensionen der Nachhaltigkeit (Ökologie, Ökonomie, Soziales)
+<li>Gruppengröße
 </li>
-<li>Eventuelle Einbettung in den Lehrplan und Gruppengröße
+<li>Geschätzter zeitlicher Arbeitsaufwand
 </li>
-<li>Geschätzter Arbeitsaufwand in Stunden
-</li>
-<li>Benötigte Hilfsmittel und Quellen
+<li id="pdf2">Benötigte Hilfsmittel und Quellen
 </li>
 
 
@@ -216,16 +222,94 @@ padding: 10px;
         </form><br>
 </div>
 
+
+<div     style="
+    z-index: 1; margin-top: 40px; margin-bottom: 10px;
+width: 98%; margin-left: 1%;
+           position: relative;
+           float: left;
+           background-color:#1BAB3F;
+padding: 10px;
+           height: auto;
+           text-align: center">
+<h4 id="feedback2" style="color: white;">Alle Challenges in einer PDF: <span><a href="/challenge-all.pdf" class="indexlink"><span data-title="hier downloaden">hier downloaden</span></a></span></h4>
+
+</div>
+
+<div     style="
+    z-index: 1;
+width: 98%;  margin-top: 30px; margin-bottom: 10px;
+           position: relative;
+           float: left; margin-left: 1%;
+           background-color:#1BAB3F;
+padding: 10px;
+           height: auto;
+           text-align: center">
+<h4 style="color: white;">Feedback: Einzelne Challenges bewerten</h4>
+<a href="javascript:void(0)" onclick="return toggleMe('feedback')" style="background-color: white; margin-top: 10px;
+ border: 2px solid white; border-radius: 30px;"
+
+><i class="fa fa-arrow-down"></i></a><br>
+<span id="feedback" style="display:none; font-size: 12px;">
+Bitte jede Challenge-Bewertung einzeln abschicken.<br><br>
+<form action="mailto:kontakt@weltfairsteher.jetzt" method="post">
+
+  <b>Die Challenge:</b> <select style="color: black;" name="challenge">
+    <?php foreach(fetchAll("SELECT id, name FROM challenge") as $c) {?>
+        <option style="color: black;" value="<?=e($c->id)?>"><?=e($c->name)?></option><br>
+    <?php } ?></select>
+    <br><br>
+    <b>...machte den Schüler*innen Spaß:</b><br>
+Nein:<input class="" type="radio" name="spass" value="1" /><br>
+Kaum:<input class="" type="radio" name="spass" value="2" /><br>
+Teils teils:<input class="" type="radio" name="spass" value="3" /><br>
+Ziemlich:<input class="" type="radio" name="spass" value="4" /><br>
+Sehr:<input class="" type="radio" name="spass" value="5" /><br>
+<br><br>
+<b>...konnte wie beschrieben in den Unterricht oder Schüler*innen-Alltag integriert werden:</b><br>
+Nein:<input class="" type="radio" name="integration" value="1" /><br>
+Kaum:<input class="" type="radio" name="integration" value="2" /><br>
+Teils teils:<input class="" type="radio" name="integration" value="3" /><br>
+Ziemlich:<input class="" type="radio" name="integration" value="4" /><br>
+Voll und ganz:<input class="" type="radio" name="integration" value="5" /><br>
+<br><br>
+<b>...dauerte so lange wie angegeben:</b><br>
+Länger:<input class="" type="radio" name="dauer" value="1" /><br>
+Etwas länger:<input class="" type="radio" name="dauer" value="2" /><br>
+Wie angegeben:<input class="" type="radio" name="dauer" value="3" /><br>
+Etwas kürzer:<input class="" type="radio" name="dauer" value="4" /><br>
+Kürzer:<input class="" type="radio" name="dauer" value="5" /><br>
+<br><br>
+<b>...warf Probleme bei der Durchführung auf:</b><br>
+Keine:<input class="" type="radio" name="problem" value="1" /><br>
+Kaum:<input class="" type="radio" name="problem" value="2" /><br>
+Teils teils:<input class="" type="radio" name="problem" value="3" /><br>
+Manche:<input class="" type="radio" name="problem" value="4" /><br>
+Viele:<input class="" type="radio" name="problem" value="5" /><br>
+<br><br>
+
+
+    Optionale Nachricht:
+    <textarea name="text" value="" cols="39" rows="5"></textarea><br><br>
+    <input type="submit" style="background-color: green; color: white; value="Diese Challenge-Bewertung abschicken"> <input type="reset" value="Zurücksetzen">
+  </form>
+  <span id="kontaktdaten"></span>
+    </span>
+<br/>
+</div>
+
+
 <div class=".abstand teacher-challenge-box"
  style="position: relative;
- margin-top: 20px;
- margin-right: ;
- width: 34.5%;
+ margin-top: 30px;
+ margin-right: 1%;
+ width: 98%;
+ margin-left: ;
  float: right;
 padding: 10px;
  ">
  <form id="changeUser" action="javascript:void(0);" onsubmit="sendForm(this)">
-     <h4 style="color: white;">Daten bearbeiten</h2>
+     <h4 style="color: white;">Daten bearbeiten</h4>
 
      <span style="font-size: 11px;">(Felder leer lassen, um sie nicht zu ändern)<br/></span>
      <input type="hidden" name="user" value="<?= e($_SESSION["user"]) ?>">
@@ -245,10 +329,10 @@ padding: 10px;
 
 <div class=".abstand teacher-challenge-box"
 style="position: relative;
-margin-top: 20px;
+margin-top: 40px;
 margin-right: 1%;
-float: right;
-width: 24.5%;">
+float: left;
+width: 98%;">
 <br>
             <form action="logout.php" method="get">
             <input type="submit" value="Logout" style="background-color: #52150D; font-size: 11px; color: white;">
@@ -267,7 +351,37 @@ width: 24.5%;">
 <br>
 <br>
 <br>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>

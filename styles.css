@@ -392,33 +392,97 @@ border-bottom: 3px solid white;
 
 .teacher-challenge-box {
     background-color:#1BAB3F;
-    width: 24%;
+    width: 98%;
     height: auto;
     float: left;
-    margin-top: 740px;
+    margin-top: 20px;
     margin-right: 1%;
     margin-bottom: ;
     margin-left: 1%;
     text-align:center;
     color: black;
     font-size: 13px;
-    position: absolute;
+    position: relative;
 
 }
 .teacher-challenge-box-inner {
     background-color:#1BAB3F;
     z-index: 1;
-    width:24%;
+    width: 98%;
     height: auto;
     margin-right: 1%;
-    margin-top: 40px;
-    margin-bottom: ;
+    margin-top: 20px;
+    margin-bottom: 0px;
     margin-left: 1%;
     text-align:center;
     color: black;
     font-size: 13px;
-    position: absolute;
+    position: relative;
+
 }
+
+
+.indexlink
+
+span a {
+  color: #a60f9c;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  vertical-align: top;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  perspective: 600px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+ span a:hover span {
+  background: #a60f9c;
+  -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  -moz-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  -ms-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+}
+span a span {
+  display: inline-block;
+  position: relative;
+  padding: 0 3px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+ span a span:after {
+  content: attr(data-title);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 3px;
+  color: #fff;
+  background: #a60f9c;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  -moz-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  -ms-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+}
+
+
 
 .admin-box {
     margin-left: 15%;

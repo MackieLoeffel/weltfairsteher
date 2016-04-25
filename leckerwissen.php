@@ -14,7 +14,7 @@ width: 100%;
 margin-right: 0%;
 margin-top: -56px;
 
-   margin-bottom: 5px;
+
    ">
    <a href="/CHANGEeV_Booklet_der_Alternativen.pdf"
    target="_blank">
@@ -26,7 +26,7 @@ margin-top: -56px;
            </div>
 <br>
 
-<div  style="background-color:#1BAB3F; margin-top: 0px; width: 98%;
+<div  style="background-color:#1BAB3F; width: 98%; margin-top: -20px;
 margin-right: 1%; float: right; height: auto; font-size: 15px; color: white; padding: 10px;">
 <b style="font-size: 18px; float: left;">Neues Leckerwissen hinzufügen</b>	&#x2003;&#x2003;
 

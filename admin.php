@@ -126,6 +126,13 @@ include "include/header.php";
             <option style="color: black;" value="<?= $i?>"><?= $i?></option>
         <?php } ?>
     </select>
+    <br>
+    Durchführungsart:
+    <select style="color: black;" name="location" size="1">
+      <option style="color: black;" value="Zuhause">Zuhause</option>
+            <option style="color: black;" value="Schule">Schule ohne Lehrkraft</option>
+            <option style="color: black;" value="Lehrkraft">Schule mit Lehrkraft</option>
+    </select>
 
     <br>
     Kurzbeschreibung: <textarea rows="7" style="color: black;" name="description"></textarea>
@@ -157,6 +164,12 @@ include "include/header.php";
         <?php for($i = 1; $i <= 10; $i++) {?>
             <option style="color: black;" value="<?= $i?>"><?= $i?></option>
         <?php } ?>
+    </select><br>
+    Durchführungsart:
+    <select style="color: black;" name="location" size="1">
+      <option style="color: black;" value="Zuhause">Zuhause</option>
+            <option style="color: black;" value="Schule">Schule ohne Lehrkraft</option>
+            <option style="color: black;" value="Lehrkraft">Schule mit Lehrkraft</option>
     </select>
 
     <br>
@@ -224,7 +237,7 @@ include "include/header.php";
     <label for="teacher-pdf"> Hinweise für Lehrkraft [PDF] </label>
     <input id="teacher-pdf" type="radio" name="type" value="<?= e(TEACHER_PDF) ?>"></input>
     <br/>
-    <label for="pupil-pdf"> Materialdatei für Schüler_innen [PDF] </label>
+    <label for="pupil-pdf"> Challenge-Beschreibung [PDF] </label>
     <input id="pupil-pdf" type="radio" name="type" value="<?= e(PUPIL_PDF) ?>"></input>
     <br>
     <input type="submit" onclick="sendFile('upload')" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>

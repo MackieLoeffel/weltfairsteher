@@ -53,7 +53,7 @@ include __DIR__."/config.php";
 
                      <![endif]-->
 
-<link href='https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|PT+Sans+Narrow|Titillium+Web|Lobster|Patua+One|Pathway+Gothic+One|Lobster+Two|Amaranth' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|PT+Sans+Narrow|Titillium+Web|Lobster|Patua+One|Bitter|Pathway+Gothic+One|Lobster+Two|Poiret+One|Amaranth|Passion+One|Open+Sans+Condensed' rel='stylesheet' type='text/css'>
 
 
                 <script pagespeed_orig_type="text/javascript" type="text/psajs" orig_index="1">
@@ -127,9 +127,9 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                      ?>
 
                                          <li
-                                             style="font-size: 13pt; text-transform: uppercase;
+                                             style="font-size: 13pt; margin-top: 13px; margin-left: 4px; text-transform: uppercase;
                                                     font-family: Pathway Gothic One;">
-                                             <a href="<?=$link?>"><b style="color: white;"><?=$site?></b></a></li>
+                                             <span><a href="<?=$link?>" class="indexlink" style="color: white;"><span data-title="<?=$site?>"><b><?=$site?></b></span></a></span></li>
                                      <?php } ?>
 
                                      <?php if(in_array(basename($_SERVER['PHP_SELF']), [
