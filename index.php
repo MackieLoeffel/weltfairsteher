@@ -231,66 +231,66 @@ Wir sind ein Team aus Mitgliedern des Max-Weber-Programms Bayern sowie des Verei
 Ob an der Planung, den Challenges, der Webseite oder der Kommunikation -  alles geschieht ehrenamtlich und mit jeder Menge Herzblut.
 <br>
 <br>
-<div class="container">
-<div class="row" style="margin-right: 10%;">
+<div class="container" style="width: 98%;">
+<div class="row">
 
-<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<div class="col-xs-12 col-sm-6 col-md-6">
 <img src="portraits/jana-2.png" alt="bild-jana" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;">Ich bin <b>Jana Costa</b>,  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/max.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;">Ich bin <b>Maximilian Held</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 
 </div>
-<div class="row" style="margin-right: 10%;">
+<div class="row">
 
-<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Andi.png" alt="bild-andi" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Andreas Eichenseher</b>, Jahrgang ´92, habe einen Abschluss in Medientechnik mit Schwerpunkt Design und studiere derzeit Philosophie und Politikwissenschaften. Für eine zukunftsfähige Entwicklung engagiere ich mich, weil es die einzig langfristige vernünftige Möglichkeit ist, eine gelingende Gemeinschaft alles Lebendigen herbeizuführen.</span><br><br><br>
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Andreas Eichenseher</b>, 1992 geboren, habe einen Abschluss in Medientechnik mit Schwerpunkt Design und studiere derzeit Philosophie und Politikwissenschaft. Für eine zukunftsfähige Entwicklung engagiere ich mich, weil es die einzig langfristige vernünftige Möglichkeit ist, eine gelingende Gemeinschaft alles Lebendigen herbeizuführen.</span><br><br><br>
 
 </div>
 
 
-<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/michael.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;">Ich bin <b>Michael Sammler</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 </div>
 
-<div class="row" style="margin-right: 10%;">
+<div class="row">
 
-<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/julia-schmidt-1.png" alt="bild-julia" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;">Ich bin <b>Julia Schmidt</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 
 
-<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/hannah-1.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;">Ich bin <b>Hannah Witzenrath</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 </div>
 
-<div class="row" style="margin-right: 10%;">
+<div class="row">
 
-<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;">Ich bin <b>Elisa Thomaset</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 
 
-<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Marie Fath</b>, Jahrgang ´96, und studiere Katholische Theologie, Pädagogik sowie Politikwissenschaften. Nachhaltigkeit ist mir wichtig, weil ich mich für ein gutes Leben für alle auch in Zukunft einsetzen will.</span><br><br><br>
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Marie Fath</b>, 1996 geboren, und studiere Katholische Theologie, Pädagogik sowie Politikwissenschaften. Nachhaltigkeit ist mir wichtig, weil ich mich für ein gutes Leben für alle auch in Zukunft einsetzen will.</span><br><br><br>
 </div>
 </div>
 
-<div class="row" style="margin-right: 10%;">
+<div class="row">
 
-<div class="col-xs-12 col-sm-6 col-md-6" style="margin-right: 30px; width: 40%;">
+<div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;">Ich bin <b>Carina Mnich</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>

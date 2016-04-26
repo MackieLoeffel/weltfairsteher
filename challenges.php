@@ -22,17 +22,17 @@ margin-bottom: 5px;
           <a href="javascript:void(0)" onclick="return toggleMe('challengeinfo')" style="background-color: white; margin-top: 10px;
            border: 2px solid white; border-radius: 30px;"
 
-          ><i class="fa fa-arrow-down"></i></a><br>
-<span id="challengeinfo" style="display:none; margin-left: 1%; margin-right: 1%; width: 98%; float: left; background-color: #1BAB3F; height: auto;">Aus diesen Challenges könnt ihr wählen. In welcher Reihenfolge ihr dabei versucht, die Aufgaben zu lösen, ist meistens egal.
+          ><i class="fa fa-arrow-down"></i></a><br><br>
+<span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify;">Auf dieser Seite findet ihr alle Challenges, die ihr bei WeltFAIRsteher absolvieren könnt.
+   In welcher Reihenfolge ihr dabei versucht, die Aufgaben zu lösen, ist im Grunde egal.
 Euch fehlt eine Challenge? Wenn ihr selbst eine sinnvolle Idee habt, dann entwickelt daraus doch eine Selfmade-Challenge
 und lasst sie von eurer Lehrkraft im Lehrkraft-Bereich vorschlagen.<br><br>
 Wenn ihr mehr Informationen zu einer Challenge wollt, so klickt auf den Titel und lest am besten auch die dazugehörige PDF-Datei,
 die ihr jeweils herunterladen könnt. Wenn ihr eine Klasse in der Navigationsleiste auswählt, so seht ihr anhand der grünen Titel, welche
 Challenges diese Klasse bereits absolviert hat. Wie viel Punkte ihr für eine
 bestandene Challenge bekommt, könnt ihr an der Zahl neben dem Titel ablesen. Die folgenden Symbole zeigen euch außerdem, wo, beziehungweise mit wem ihr eine Challenge absolviert. <br>
-
 <br>
-<div class="container">
+<div class="container" style="width: 100%;">
   <div class="row">
     <div class="col-xs-4 col-sm-4 col-md-4">
 <img src="symbols/Schule.png" alt="SCHULE" height="45px" width="45px">
@@ -43,7 +43,7 @@ bestandene Challenge bekommt, könnt ihr an der Zahl neben dem Titel ablesen. Di
 <img src="symbols/Haus.png" alt="HAUS" height="45px" width="45px"><br> <i><b>zuhause</b></i> <br></div>
 </div>
 </div>
-        </div></span>
+        </span></div>
 <br>
 <span style="width: auto; height: auto; margin-left: 35%; margin-right: auto; margin-bottom: 0px; background-color: yellow; color: black;">
   Die Challenges sind noch in Bearbeitung.</span>

@@ -68,7 +68,7 @@ z-index: 3;
                   </li><br> <li>Sie können auf dieser Seite
                    auch <span><a href="#selfmadecha" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="Selfmade-Challenges">Selfmade-Challenges</span></a></span> von einer
                    Klasse, für die Sie verantwortlich sind, vorschlagen. Füllen Sie dazu
-                   einfach das nebenstehende Formular aus. Die vorgeschlagene Challenge
+                   einfach das unten sichtbare Formular aus. Die vorgeschlagene Challenge
                    wird allerdings nicht sofort hinzugefügt, sondern erst einer
                    Kontrolle unterzogen. Entspricht die vorgeschlagene
                    Selfmade-Challenge den Kriterien der Nachhaltigkeit, wird sie dem
@@ -232,7 +232,7 @@ width: 98%; margin-left: 1%;
 padding: 10px;
            height: auto;
            text-align: center">
-<h4 id="feedback2" style="color: white;">Alle Challenges in einer PDF: <span><a href="/challenge-all.pdf" class="indexlink"><span data-title="hier downloaden">hier downloaden</span></a></span></h4>
+<h4 id="feedback2" style="color: white;">Alle Challenges in einer PDF: <span><a href="/challenge-all.pdf" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="hier downloaden">hier downloaden</span></a></span></h4>
 
 </div>
 
