@@ -51,8 +51,9 @@
                         </b>
 
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-                        Nachhaltigkeit ist ein sehr vielseitiges Thema, das in fast jeden Lebensbereich dringt. Die wichtigsten Aspekte von Nachhaltigkeit
-                        sind:<ul>
+                        Nachhaltigkeit ist ein sehr vielseitiges Thema, das in fast jeden Lebensbereich dringt.
+                        Kurz zusammengefasst bedeutet es Fairness auf drei gleichwertigen Ebenen, nämlich:
+                        <ul>
                         <li> <b>Ökologie</b>, also die Beziehungen von Organismen wie Menschen, Tieren oder Pflanzen zu ihrer Umwelt,</li>
                       <li>  <b>Soziales</b>, also die Art und Weise, wie Menschen
                         in der Gesellschaft zusammenleben und</li>
@@ -97,19 +98,19 @@ In der <i>Tabelle</i> könnt ihr eure Klasse in der Navigationsleiste wählen, u
 sowie die Gesamtpunktzahl angezeigt. Damit euch niemand vorwerfen kann, ihr hättet für das Punktekonto geschummelt, haltet ihr den Erfolg einer Challenge,
 beispielsweise ein Referat oder den "Coffee-to-go-again"-Aufkleber an der Eingangstüre zu einem Café,
 am besten mit einer Kamera fest. Manche Klassen werden am Ende
-des Schuljahres nämlich kontrolliert.
+des Schuljahres schließlich kontrolliert um einen möglichst fairen Wettbewerb zu gewährleisten.
 
 <br><br>
 Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr eine Idee für eine neue Challenge habt,
 so könnt ihr sie von eurer verantwortlichen Lehrkraft online im <i>Lehrkraft-Bereich</i> vorschlagen lassen. Wenn die vorgeschlagene Challenge den nachhaltigen
-Kriterien entspricht, so schalten wir sie als sogenannte <i>Selfmade-Challenge</i> frei und jede Klasse kann versuchen, die Challenge zu absolvieren.
+Kriterien entspricht, so schalten wir sie als sogenannte <i>Eigenkreation</i> frei und jede Klasse kann versuchen, die Challenge zu absolvieren.
 Was habt ihr als kreative Köpfe hinter der neuen Challenge davon? Zweierlei! Erstens habt ihr einen Beitrag zum Gelingen des Projekts geleistet, weil
 es um eine Idee bereichert wurden. Und zweitens erhaltet ihr darüber hinaus einen Kreativitätsbonus! <br><br>
 Für jede erfolgreich vorgeschlagene Challenge wird euer
 Kreativitätsbonus vom Anfangswert 1 um 0,2 erhöht. Der neue Wert wird dann mit euren Punkten multipliziert. Ein kleines Rechenbeispiel verdeutlicht am besten,
 wie wertvoll dieser Bonus für euch sein kann:
- Angenommen euer Konto weist einen Wert von 30 Punkten auf. Eine erfolgreich eingebrachte Selfmade-Challenge erhöht euren Kreativitätsbonus auf 1,2.
- Euer Punktestand beträgt sodann 30 mal 1,2 = 36 Punkte. Habt ihr stattdessen sogar zwei Selfmade-Challenges erfolgreich eingreicht, so erhöht sich
+ Angenommen euer Konto weist einen Wert von 30 Punkten auf. Eine erfolgreich eingebrachte Eigenkreation erhöht euren Kreativitätsbonus auf 1,2.
+ Euer Punktestand beträgt sodann 30 mal 1,2 = 36 Punkte. Habt ihr stattdessen sogar zwei Eigenkreationen erfolgreich eingreicht, so erhöht sich
  euer Punktestand auf 30 mal 1,4 = 42 Punkte. Und <i>WeltFAIRsteher</i> ist um zwei tolle Aufgaben reicher geworden. Das lohnt sich!
  <br><br>
  Falls ihr dafür auf Ideensuche seid oder einfach mehr über das Thema Nachhaltigkeit erfahren wollt,
@@ -121,7 +122,7 @@ wie wertvoll dieser Bonus für euch sein kann:
  sozusagen eine "Schwarmintelligenz".
  <br><br>
  Unter dem Reiter <i>Challenges</i> findet ihr natürlich alle Aufgaben, die euch zur Auswahl stehen - auch diejenigen, die
- ihr oder eine andere Klasse als Selfmade-Challenge einbringen konnte. Die Challenges sind zwar thematisch nach Kategorien geordnet - ihr
+ ihr oder eine andere Klasse als Eigenkreation einbringen konnte. Die Challenges sind zwar thematisch nach Kategorien geordnet - ihr
  müsst sie aber nicht in einer Reihenfolge absolvieren. Die Zahl, die bei jeder Challenge steht, repräsentiert die Punkte, die ihr bekommt,
  wenn ihr die Challenge erfolgreich abschließt. Wenn ihr eine Challenge gewählt habt, könnt ihr manchmal eigenständig mithilfe der dazugehörigen PDF-Datei loslegen oder die Durchführung
  mit einer Lehrkraft organisieren. Für diese Organisation empfehlen wir euch, ein oder zwei Personen in eurer Klasse auszuwählen, die euch bei WeltFAIRsteher vertreten, um diesbezüglich in
@@ -169,7 +170,7 @@ Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
     <span id="sechs" style="display:none;"><br>
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
 Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrkraft-Bereich</i> gewissenhaft bestandene Challenges
-eintragen oder eine Selfmade-Challenge vorschlagen. Außerdem haben eingeloggte Lehrkräfte Zugang zu
+eintragen oder eine Eigenkreation vorschlagen. Außerdem haben eingeloggte Lehrkräfte Zugang zu
 ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Challenges.
 
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. Ebenso möglich ist, dass eine zweite und dritte Lehrkraft
@@ -236,12 +237,12 @@ Ob an der Planung, den Challenges, der Webseite oder der Kommunikation -  alles 
 
 <div class="col-xs-12 col-sm-6 col-md-6">
 <img src="portraits/jana-2.png" alt="bild-jana" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Jana Costa</b>,  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+<span style="text-align: center; font-size: 12px;">Mein Name ist <b>Jana Costa</b> und ich bin 1992 geboren. Momentan studiere ich an der Universität Bamberg Empirische Bildungsforschung - also eine Mischung aus Soziologie, Pädagogik und Psychologie. Warum ich mich für Nachhaltigkeit engagiere? Weil es auf einer endlichen Erde kein unendliches Wachstum geben kann und ich in einer Welt leben will, in der man sich über mehr Gedanken macht als nur den nächsten Urlaub, das coolere Auto oder das neueste Handy.</span><br><br><br>
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/max.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Maximilian Held</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Maximilian Held</b>, 1992 geboren, und studiere Fahrzeug- und Motorentechnik an der TU München. Nachhaltigkeit darf nicht Verzicht bedeuten. Nachhaltigkeit muss Spaß machen. Mein Ziel: Unserem Nachwuchs Lust auf mehr machen. Mein Motto: „Where attention goes, energy flows. Where energy flows, future goes.“ </span><br><br><br>
 </div>
 
 </div>
@@ -249,22 +250,22 @@ Ob an der Planung, den Challenges, der Webseite oder der Kommunikation -  alles 
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Andi.png" alt="bild-andi" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Andreas Eichenseher</b>, 1992 geboren, habe einen Abschluss in Medientechnik mit Schwerpunkt Design und studiere derzeit Philosophie und Politikwissenschaft. Für eine zukunftsfähige Entwicklung engagiere ich mich, weil es die einzig langfristige vernünftige Möglichkeit ist, eine gelingende Gemeinschaft alles Lebendigen herbeizuführen.</span><br><br><br>
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Andreas Eichenseher</b>, 1992 geboren, habe einen Abschluss in Medientechnik mit Schwerpunkt Design und studiere derzeit Philosophie und Politikwissenschaft in Bamberg. Für eine zukunftsfähige Entwicklung engagiere ich mich, weil es die einzig langfristige vernünftige Möglichkeit ist, eine gelingende Gemeinschaft alles Lebendigen herbeizuführen.</span><br><br><br>
 
 </div>
 
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
-<img src="portraits/michael.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Michael Sammler</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+<img src="portraits/julia-schmidt-1.png" alt="bild-julia" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Julia Schmidt</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 </div>
 
 <div class="row">
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
-<img src="portraits/julia-schmidt-1.png" alt="bild-julia" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Julia Schmidt</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+<img src="portraits/michael.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Michael Sammler</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 
 
@@ -277,14 +278,14 @@ Ob an der Planung, den Challenges, der Webseite oder der Kommunikation -  alles 
 <div class="row">
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
-<img src="" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Elisa Thomaset</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+<img src="portraits/Elisa.png" alt="bild-elisa" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Elisa Thomaset</b>, 1995 geboren, und studiere an der Universität Bamberg Anglistik, Romanistik und Politikwissenschaft. Mein Interesse an einer nachhaltigen Lebensweise wurde vor allem durch meinen Freiwilligendienst in Chile geweckt und geprägt. So ist es mir besonders wichtig, den Aspekt der Gemeinschaft in einer nachhaltigen Gesellschaft zu betonen, denn nur zusammen können wir wirklich etwas erreichen.</span><br><br><br>
 </div>
 
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
-<img src="" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Marie Fath</b>, 1996 geboren, und studiere Katholische Theologie, Pädagogik sowie Politikwissenschaften. Nachhaltigkeit ist mir wichtig, weil ich mich für ein gutes Leben für alle auch in Zukunft einsetzen will.</span><br><br><br>
+<img src="" alt="bild-marie" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 12px;">Ich bin <b>Marie Fath</b>, 1996 geboren, und studiere Katholische Theologie, Pädagogik sowie Politikwissenschaft an der Universität Bamberg. Nachhaltigkeit ist mir wichtig, weil ich mich für ein gutes Leben für alle auch in Zukunft einsetzen will.</span><br><br><br>
 </div>
 </div>
 

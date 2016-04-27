@@ -2,8 +2,8 @@
 include __DIR__."/include.php";
 check_access(ADMIN);
 
-list($c, $name, $desc, $points, $category) = apiCheckParams(
-    "challenge", "name", "description", "points", "category");
+list($c, $name, $desc, $points, $category, $location) = apiCheckParams(
+    "challenge", "name", "description", "points", "category", "location");
 $name = trim($name);
 $desc = trim($desc);
 
@@ -19,7 +19,7 @@ if($category) {
 }
 
 
-apiAction(function() use ($c, $name, $desc, $points, $category) {
+apiAction(function() use ($c, $name, $desc, $points, $category, $location) {
     if($name) {
         dbExecute("UPDATE challenge SET name = :name WHERE id = :id",
                   ["id" => $c, "name" => $name]);
@@ -36,5 +36,8 @@ apiAction(function() use ($c, $name, $desc, $points, $category) {
         dbExecute("UPDATE challenge SET category = :category WHERE id = :id",
                   ["id" => $c, "category" => $category]);
     }
+    if($location) {
+        dbExecute("UPDATE challenge SET location = :location WHERE id = :id",
+                  ["id" => $c, "location" => $location]);
 });
 ?>

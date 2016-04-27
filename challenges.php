@@ -25,7 +25,7 @@ margin-bottom: 5px;
           ><i class="fa fa-arrow-down"></i></a><br><br>
 <span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify;">Auf dieser Seite findet ihr alle Challenges, die ihr bei WeltFAIRsteher absolvieren könnt.
    In welcher Reihenfolge ihr dabei versucht, die Aufgaben zu lösen, ist im Grunde egal.
-Euch fehlt eine Challenge? Wenn ihr selbst eine sinnvolle Idee habt, dann entwickelt daraus doch eine Selfmade-Challenge
+Euch fehlt eine Challenge? Wenn ihr selbst eine sinnvolle Idee habt, dann entwickelt daraus doch eine Eigenkreation
 und lasst sie von eurer Lehrkraft im Lehrkraft-Bereich vorschlagen.<br><br>
 Wenn ihr mehr Informationen zu einer Challenge wollt, so klickt auf den Titel und lest am besten auch die dazugehörige PDF-Datei,
 die ihr jeweils herunterladen könnt. Wenn ihr eine Klasse in der Navigationsleiste auswählt, so seht ihr anhand der grünen Titel, welche
@@ -139,7 +139,7 @@ WHERE category=:category");
 </div>
 
 <div class="selfmade-whole">
-    Selfmade-Challenges
+    Eigenkreationen
 </div>
 <div class="selfmade-box">
   <div class="container" style="width: 100%; margin-right: 1%;">

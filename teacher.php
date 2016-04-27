@@ -66,18 +66,17 @@ z-index: 3;
                    Informationen zur Umsetzung einer Challenge finden. Falls Sie alle Challenges in einem einzigen
                    PDF-Dokument zusammengefasst haben möchten, können Sie eine solche <span><a href="#pdf2"  style="color: white; background-color: #E84B82;" class="indexlink"><span data-title="Zusammenfassung">Zusammenfassung</span></a></span> auf dieser Seite herunterladen.
                   </li><br> <li>Sie können auf dieser Seite
-                   auch <span><a href="#selfmadecha" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="Selfmade-Challenges">Selfmade-Challenges</span></a></span> von einer
+                   auch <span><a href="#selfmadecha" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="Eigenkreationen">Eigenkreationen</span></a></span> von einer
                    Klasse, für die Sie verantwortlich sind, vorschlagen. Füllen Sie dazu
-                   einfach das unten sichtbare Formular aus. Die vorgeschlagene Challenge
+                   einfach das unten sichtbare Formular aus und orientieren Sie sich dabei, beispielsweise bezüglich der Punktzahl, an den Challenge-PDFs der bereits
+                   verfügbaren Challenges. Die vorgeschlagene Challenge
                    wird allerdings nicht sofort hinzugefügt, sondern erst einer
                    Kontrolle unterzogen. Entspricht die vorgeschlagene
-                   Selfmade-Challenge den Kriterien der Nachhaltigkeit, wird sie dem
+                   Eigenkreation den Kriterien der Nachhaltigkeit, wird sie dem
                    Challenge-Verzeichnis hinzugefügt und ist öffentlich sichtbar. Auch
                    der Name der Klasse, die die Aufgabe vorgeschlagen hat, wird dort zu
-                   sehen sein. Wenn die vorgeschlagene Challenge nicht den nachhaltigen
-                   Kriterien entspricht, antworten wir Ihnen per Mail. Das Team hinter
-                   WeltFAIRsteher behält es sich vor, über die Entscheidung bezüglich
-                   der Akzeptanz einer Challenge selbständig zu verfügen. </li><br>
+                   sehen sein. Wenn die vorgeschlagene Challenge unserer Einschätzung nach nicht den nachhaltigen
+                   Kriterien entspricht, antworten wir Ihnen per Mail. </li><br>
                    <li>Zudem können Sie hier Ihre <span><a href="#kontaktdaten" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="persönlichen Zugangsdaten">persönlichen
                    Zugangsdaten</span></a></span> (Passwort und E-Mail-Adresse) ändern. Wenn sich die
                    Größe einer von Ihnen betreuten Klasse ändert oder Sie anderweitige
@@ -168,7 +167,7 @@ padding: 10px;
                <form id="addChallenge" action="javascript:void(0);" onsubmit="sendForm(this)">
                    <input type="hidden" name="suggested" value="yes">
                    <input type="hidden" name="category" value="">
-            <h4 style="color: white;">Selfmade-Challenge vorschlagen</h4>
+            <h4 style="color: white;">Eigenkreation vorschlagen</h4>
             <div >
                 <b>Von:</b>
                 <select name="class" size="1">
@@ -199,7 +198,7 @@ padding: 10px;
                 <span style="font-size: 13px; color: white; ">
                   Die Challenge-Beschreibung sollte Folgendes beinhalten:
 <ul style="color: black; text-align: left;">
-<li>Kurzbeschreibung der zugrundeliegenden Problematik in einem Satz
+<li>Kurzbeschreibung der zugrundeliegenden Problematik in ein bis drei Sätzen
 </li>
 <li>Challenge-Auftrag und Zielvorstellung
 </li>

@@ -177,7 +177,7 @@ include "include/header.php";
     <br>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-<?php }); slideDown("Selfmade-Challenge übernehmen", function() { ?>
+<?php }); slideDown("Eigenkreation übernehmen", function() { ?>
 <form id="acceptSelfmade" class="slide-down-hidden" action="javascript:void(0);" onsubmit="acceptSelfmade()">
     <input type="hidden" name="class" value="-1">
     <input type="hidden" name="suggested" value="">
@@ -208,7 +208,7 @@ include "include/header.php";
         <br>
         Kurzbeschreibung: <textarea rows="7" style="color: black;" name="description"></textarea>
         <br>
-        <input type="button" value="Selfmade-Challenge verwerfen" style="background-color: #52150D; float: right"
+        <input type="button" value="Eigenkreation verwerfen" style="background-color: #52150D; float: right"
                onclick="sendForm('#acceptSelfmade', {'api': 'deleteEntry', 'data': {'table': 'suggested', 'id': $('#selfmadeSelect').val()}})"/>
         <br/>
         <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>

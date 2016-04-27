@@ -2,8 +2,8 @@
 include __DIR__."/include.php";
 check_access(TEACHER);
 
-list($class, $title, $desc, $points, $suggested, $category) = apiCheckParams(
-    "class", "title", "description", "points", "suggested", "category");
+list($class, $title, $desc, $points, $suggested, $category, $location) = apiCheckParams(
+    "class", "title", "description", "points", "suggested", "category", "location");
 $user = $_SESSION["user"];
 $suggested = !!$suggested;
 $title = trim($title);
@@ -17,13 +17,14 @@ apiCheck(!$suggested || dbExists("SELECT id FROM class WHERE id = :id", ["id" =>
 apiCheck(isAdmin() || $suggested, "Keine Berechtigung");
 apiCheck($suggested || $category === "selfmade" || array_filter($categories, function($cat) use ($category) { return $cat->name === $category; }), "Ungültige Kategorie");
 
-apiAction(function() use ($title, $desc, $class, $points, $suggested, $category) {
+apiAction(function() use ($title, $desc, $class, $points, $suggested, $category, $location) {
     if($suggested) {
         dbExecute("INSERT INTO suggested (title, description, class, points) VALUES (:title, :desc, :class, :points)",
                   ["title" => $title,
                    "desc" => $desc,
                    "class" => $class,
-                   "points" => $points]);
+                   "points" => $points,
+                 "location" => $location]);
 
         foreach(fetchAll("SELECT email FROM user WHERE role = :admin", ["admin" => ADMIN]) as $admin) {
             mail($admin->email, "Challenge vorgeschlagen", "Es wurde eine neue Challenge vorgeschlagen.\r\n\r\nTitel: $title\r\nBeschreibung:\r\n$desc\r\n\r\nZum Ablehnen oder Bestätigen bitte auf www.weltfairsteher.de/admin.php gehen.", "FROM: kontakt@weltfairsteher.com");
@@ -39,6 +40,7 @@ apiAction(function() use ($title, $desc, $class, $points, $suggested, $category)
                    "desc" => $desc,
                    "class" => $class,
                    "points" => $points,
+                   "location" => $location,
                    "category" => $category]);
     }
 });
