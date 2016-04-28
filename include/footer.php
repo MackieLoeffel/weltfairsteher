@@ -11,7 +11,7 @@
      </footer>-->
 
 <div>
-    <footer style="
+    <footer id="stickyfooter" style="
                    z-index: 5;
                    width: 100%;
                    height: 45px;
@@ -19,7 +19,7 @@
                    color: #CACCCA;
                    font-size: 14px;
                    text-align: center;
-                   margin-top: 60em;
+                   margin-top: 10em;
                    border-top: 2px solid black;
                    position: static;
                    bottom: 0px;

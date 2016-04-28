@@ -1,28 +1,29 @@
 <?php include "include/header.php"?>
 <br>
 
-<img src="logo_weltfairsteher_transparent_startseite.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
+<img src="weltfairsteher-gestalte2.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
+
 <br>
 <br>
 <span style="font-size: 19.5px;">
-<a href="#was" class="indexlink" style="color: #C5F2B6; background-color: #C9960A; margin-left: 1%;"
+<a href="#was" class="indexlink" style="color: white; background-color: #A27405; margin-left: 1%;"
 ><span data-title="Beschreibung">Beschreibung</span></a>
-    <a href="#worum" class="indexlink" style="color: #C5F2B6; background-color: #3A7EFC; margin-left: 1px;">
+    <a href="#worum" class="indexlink" style="color: white; background-color: #BA070A; margin-left: 1px;">
     <span data-title="Thema">Thema</span></a>
-    <a href="#wer" class="indexlink" style="color: #C5F2B6; background-color: #7761C5; margin-left: 1px;">
+    <a href="#wer" class="indexlink" style="color: white; background-color: #A6BA10; margin-left: 1px;">
     <span data-title="Teilnehmer">Teilnehmer</span></a>
-    <a href="#ablauf" class="indexlink" style="color: #C5F2B6; background-color: #1B5A0A; margin-left: 1px;">
+    <a href="#ablauf" class="indexlink" style="color: white; background-color: #684937; margin-left: 1px;">
     <span data-title="Ablauf">Ablauf</span></a>
 
-    <a href="#gewinn" class="indexlink" style="color: #C5F2B6; background-color: #CC4321; margin-left: 1px;">
+    <a href="#gewinn" class="indexlink" style="color: white; background-color: #D3391F; margin-left: 1px;">
     <span data-title="Gewinne">Gewinne</span></a>
-    <a href="#wie" class="indexlink" style="color: #C5F2B6; background-color: #153896; margin-left: 1px;">
+    <a href="#wie" class="indexlink" style="color: white; background-color: #5F5C53; margin-left: 1px;">
     <span data-title="Anmeldung">Anmeldung</span></a>
-    <a href="#lehrer" class="indexlink" style="color: #C5F2B6; background-color: #00693F; margin-left: 1px;">
+    <a href="#lehrer" class="indexlink" style="color: white; background-color: #95C231; margin-left: 1px;">
     <span data-title="Lehrkraft">Lehrkraft</span></a>
-    <a href="#spenden" class="indexlink" style="color: #C5F2B6; background-color: #E84B82; margin-left: 1px;">
+    <a href="#spenden" class="indexlink" style="color: white; background-color: #953A15; margin-left: 1px;">
     <span data-title="Spenden">Spenden</span></a>
-    <a href="#wir" class="indexlink" style="color: #C5F2B6; background-color: #851023; margin-left: 1px;">
+    <a href="#wir" class="indexlink" style="color: white; background-color: #E0B836; margin-left: 1px;">
     <span data-title="Über uns">Über uns</span></a>
     </span>
 
@@ -36,7 +37,7 @@
                           <br><span id="was"></span>
                         <b>
 
-                        <h3 id="worum"class="abstaende" style="color: #C5F2B6; background-color: #C9960A;">Was ist das?</h3>
+                        <h3 id="worum"class="abstaende" style="color: white; background-color: #A27405;">Was ist das?</h3>
                         </b>
 
                         <div  class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
@@ -47,7 +48,7 @@
 
                             </div><br>
                         <b>
-                        <h3  class="abstaende" id="wer" style=" color: #C5F2B6; background-color: #3A7EFC;">Worum geht´s?</h3>
+                        <h3  class="abstaende" id="wer" style=" color: white; background-color: #BA070A;">Worum geht´s?</h3>
                         </b>
 
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
@@ -72,7 +73,7 @@
                         zur richtigen Zeit und am richtigen Ort die richtigen Erfahrungen zu machen. Und dabei helfen wir euch.
                               </span></div><br>
                         <b>
-                        <h3   class="abstaende" id="ablauf" style="color: #C5F2B6; background-color: #7761C5;">Wer kann mitmachen?</h3>
+                        <h3   class="abstaende" id="ablauf" style="color: white; background-color: #A6BA10;">Wer kann mitmachen?</h3>
                         </b>
 
                         <div class="abstaende"  style="text-align: justify;background-color: #1BAB3F; padding: 20px;">
@@ -83,7 +84,7 @@ Anmelden kann euch aber nur eine Lehrkraft, damit wir eine zentrale Ansprechpers
                         </div><br>
 
                         <b>
-                        <h3  class="abstaende" id="gewinn" style="color: #C5F2B6; background-color: #1B5A0A;">Wie läuft´s ab?</h3>
+                        <h3  class="abstaende" id="gewinn" style="color: white; background-color: #684937;">Wie läuft´s ab?</h3>
                         </b>
 
                         <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
@@ -133,7 +134,7 @@ wie wertvoll dieser Bonus für euch sein kann:
 
                         </div><br>
                         <b>
-                        <h3  class="abstaende" id="wie" style="color: #C5F2B6; background-color: #CC4321;">Was kann man gewinnen?
+                        <h3  class="abstaende" id="wie" style="color: white; background-color: #D3391F;">Was kann man gewinnen?
                         </h3></b>
 
                         <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
@@ -157,7 +158,7 @@ Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
 </span>
 </div><br>
 <b>
-<h3 class="abstaende" id="spenden" style="color: #C5F2B6; background-color: #10B3B3;">Wie meldet man sich an?</h3></b>
+<h3 class="abstaende" id="spenden" style="color: white; background-color: #5F5C53;">Wie meldet man sich an?</h3></b>
 
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
     Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an   <span><a href="mailto:kontakt@weltfairsteher.jetzt" target="_top" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="kontakt@weltfairsteher.jetzt">kontakt@weltfairsteher.jetzt</span></a></span> und teilt uns den kreativen Klassennamen mit,
@@ -181,7 +182,7 @@ ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Chal
 
 
 <b>
-<h3 class="abstaende" id="lehrer" style="color: #C5F2B6; background-color: #00693F;">Was müssen die Lehrer*innen tun?</h3></b>
+<h3 class="abstaende" id="lehrer" style="color: white; background-color: #95C231;">Was müssen die Lehrer*innen tun?</h3></b>
 
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
   Als Lehrkräfte übernehmen Sie zwar die Verantwortung für eine Klasse, können die Challenges aber flexibel in Unterricht und Freizeit der Kinder
@@ -200,7 +201,7 @@ beinhalten die PDF-Dokumente auch benötigtes Material oder hilfreiche Erklärun
 
 
 <b>
-<h3  class="abstaende" id="wir" style="color: #C5F2B6; background-color: #E84B82;">Spenden
+<h3  class="abstaende" id="wir" style="color: white; background-color: #953A15;">Spenden
 </h3></b>
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 <i>WeltFAIRsteher</i> wird rein ehrenamtlich betrieben. Um dennoch die Etappenziele und Preise für die Teilnehmer zu finanzieren,
@@ -223,7 +224,7 @@ Bei Beträgen über 200 Euro gebt bitte eure vollständige Postanschrift an. An 
 </div><br>
 
 <b>
-<h3  class="abstaende"  style="color: #C5F2B6; background-color: #851023;">Über uns
+<h3  class="abstaende"  style="color: white; background-color: #E0B836;">Über uns
 </h3></b>
 
 <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
@@ -237,12 +238,14 @@ Ob an der Planung, den Challenges, der Webseite oder der Kommunikation -  alles 
 
 <div class="col-xs-12 col-sm-6 col-md-6">
 <img src="portraits/jana-2.png" alt="bild-jana" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Mein Name ist <b>Jana Costa</b> und ich bin 1992 geboren. Momentan studiere ich an der Universität Bamberg Empirische Bildungsforschung - also eine Mischung aus Soziologie, Pädagogik und Psychologie. Warum ich mich für Nachhaltigkeit engagiere? Weil es auf einer endlichen Erde kein unendliches Wachstum geben kann und ich in einer Welt leben will, in der man sich über mehr Gedanken macht als nur den nächsten Urlaub, das coolere Auto oder das neueste Handy.</span><br><br><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Jana Costa</span><br>
+Ich bin im Jahr 1992 geboren und studiere an der Universität Bamberg Empirische Bildungsforschung - also eine Mischung aus Soziologie, Pädagogik und Psychologie. Warum ich mich für Nachhaltigkeit engagiere? Weil es auf einer endlichen Erde kein unendliches Wachstum geben kann und ich in einer Welt leben will, in der man sich über mehr Gedanken macht als nur den nächsten Urlaub, das coolere Auto oder das neueste Handy.</span><br><br><br>
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/max.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Maximilian Held</b>, 1992 geboren, und studiere Fahrzeug- und Motorentechnik an der TU München. Nachhaltigkeit darf nicht Verzicht bedeuten. Nachhaltigkeit muss Spaß machen. Mein Ziel: Unserem Nachwuchs Lust auf mehr machen. Mein Motto: „Where attention goes, energy flows. Where energy flows, future goes.“ </span><br><br><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Maximilian Held</span><br>
+Ich bin im Jahr 1992 geboren und studiere Fahrzeug- und Motorentechnik an der TU München. Nachhaltigkeit darf nicht Verzicht bedeuten. Nachhaltigkeit muss Spaß machen. Mein Ziel: Unserem Nachwuchs Lust auf mehr machen. Mein Motto: „Where attention goes, energy flows. Where energy flows, future goes.“ </span><br><br><br>
 </div>
 
 </div>
@@ -250,14 +253,20 @@ Ob an der Planung, den Challenges, der Webseite oder der Kommunikation -  alles 
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Andi.png" alt="bild-andi" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Andreas Eichenseher</b>, 1992 geboren, habe einen Abschluss in Medientechnik mit Schwerpunkt Design und studiere derzeit Philosophie und Politikwissenschaft in Bamberg. Für eine zukunftsfähige Entwicklung engagiere ich mich, weil es die einzig langfristige vernünftige Möglichkeit ist, eine gelingende Gemeinschaft alles Lebendigen herbeizuführen.</span><br><br><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Andreas Eichenseher</span><br>
+Ich bin im Jahr 1992 geboren, habe einen Abschluss in Medientechnik mit Schwerpunkt Design und
+studiere derzeit Philosophie und Politikwissenschaft in Bamberg.
+Für eine zukunftsfähige Entwicklung engagiere ich mich, weil es die einzig langfristige vernünftige Möglichkeit ist,
+eine gelingende Gemeinschaft alles Lebendigen herbeizuführen. Und auch wenn die Beiträge einzelner Personen nur klein
+zu sein scheinen, so sind sie es wert und vollends notwendig.</span><br><br><br>
 
 </div>
 
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/julia-schmidt-1.png" alt="bild-julia" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Julia Schmidt</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Julia Schmidt</span><br>
+Ich bin 1993 geboren und studiere Internationale Wirtschaftspolitik im Masterstudium. Wieso ich mich für Nachhaltigkeit engagiere? Für mich geht es auf dieser Welt nicht um persönlichen Nutzen, uneingeschränkten Konsum und globalen Profit, sondern um eine egalitäre Gesellschaft mit sozialer Verantwortung für sich selbst und für seine Umwelt – und das sollten wir alle gemeinsam leben!</span><br><br><br>
 </div>
 </div>
 
@@ -265,13 +274,15 @@ Ob an der Planung, den Challenges, der Webseite oder der Kommunikation -  alles 
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/michael.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Michael Sammler</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Michael Sammler</span><br>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/hannah-1.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Hannah Witzenrath</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Hannah Witzenrath</span><br>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 </div>
 
@@ -279,27 +290,18 @@ Ob an der Planung, den Challenges, der Webseite oder der Kommunikation -  alles 
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Elisa.png" alt="bild-elisa" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Elisa Thomaset</b>, 1995 geboren, und studiere an der Universität Bamberg Anglistik, Romanistik und Politikwissenschaft. Mein Interesse an einer nachhaltigen Lebensweise wurde vor allem durch meinen Freiwilligendienst in Chile geweckt und geprägt. So ist es mir besonders wichtig, den Aspekt der Gemeinschaft in einer nachhaltigen Gesellschaft zu betonen, denn nur zusammen können wir wirklich etwas erreichen.</span><br><br><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Elisa Thomaset</span><br>
+Ich bin 1995 geboren und studiere an der Universität Bamberg Anglistik, Romanistik und Politikwissenschaft. Mein Interesse an einer nachhaltigen Lebensweise wurde vor allem durch meinen Freiwilligendienst in Chile geweckt und geprägt. So ist es mir besonders wichtig, den Aspekt der Gemeinschaft in einer nachhaltigen Gesellschaft zu betonen, denn nur zusammen können wir wirklich etwas erreichen.</span><br><br><br>
 </div>
 
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="" alt="bild-marie" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Marie Fath</b>, 1996 geboren, und studiere Katholische Theologie, Pädagogik sowie Politikwissenschaft an der Universität Bamberg. Nachhaltigkeit ist mir wichtig, weil ich mich für ein gutes Leben für alle auch in Zukunft einsetzen will.</span><br><br><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Marie Fath</span><br>
+Ich bin 1996 geboren und studiere Katholische Theologie, Pädagogik sowie Politikwissenschaft an der Universität Bamberg. Nachhaltigkeit ist mir wichtig, weil ich mich für ein gutes Leben für alle auch in Zukunft einsetzen will.</span><br><br><br>
 </div>
 </div>
 
-<div class="row">
-
-<div class="col-xs-12 col-sm-6 col-md-6" >
-<img src="" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;">Ich bin <b>Carina Mnich</b>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
-</div>
-
-
-
-
-</div>
 
 </div>
 

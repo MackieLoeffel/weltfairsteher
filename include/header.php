@@ -123,6 +123,9 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                      if(isAdmin()) {
                                          $sites["Admin"] = "admin.php";
                                      }
+                                     if(isAdmin() || isTeacher()) {
+                                         $sites["Logout"] = "logout.php";
+                                     }
                                      foreach ($sites as $site => $link) {
                                      ?>
 
@@ -204,7 +207,7 @@ width: 40%; text-align: center; color: black; background-color: yellow;">
              }
             </script>
 
-            <body style="background-color: #C5F2B6; font-family: Roboto Slab;">
+            <body style="background-color: #C5F2B6; font-family: Roboto Slab; display:flex; min-height:100vh; flex-direction:column">
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstraps/js/bootstrap.min.js"></script>
     <section id="border" class="sectionbg">

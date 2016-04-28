@@ -23,8 +23,9 @@ margin-bottom: 5px;
            border: 2px solid white; border-radius: 30px;"
 
           ><i class="fa fa-arrow-down"></i></a><br><br>
-<span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify;">Auf dieser Seite findet ihr alle Challenges, die ihr bei WeltFAIRsteher absolvieren könnt.
-   In welcher Reihenfolge ihr dabei versucht, die Aufgaben zu lösen, ist im Grunde egal.
+<span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify;">Auf dieser Seite findet ihr alle Challenges,
+  die ihr bei WeltFAIRsteher absolvieren könnt.
+   In welcher Reihenfolge ihr dabei versucht, einen Teil der Aufgaben zu lösen, ist im Grunde egal.
 Euch fehlt eine Challenge? Wenn ihr selbst eine sinnvolle Idee habt, dann entwickelt daraus doch eine Eigenkreation
 und lasst sie von eurer Lehrkraft im Lehrkraft-Bereich vorschlagen.<br><br>
 Wenn ihr mehr Informationen zu einer Challenge wollt, so klickt auf den Titel und lest am besten auch die dazugehörige PDF-Datei,
@@ -177,48 +178,4 @@ WHERE category=:category");
 
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <?php include "include/footer.php" ?>

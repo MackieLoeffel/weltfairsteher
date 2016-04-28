@@ -8,6 +8,30 @@ session_unset();
 <script type="text/javascript">
  setTimeout(function() {window.location = "index.php"}, 5*1000);
 </script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <?php
 include "include/footer.php";
 ?>
