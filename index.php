@@ -275,7 +275,7 @@ Ich bin 1993 geboren und studiere Internationale Wirtschaftspolitik im Masterstu
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/michael.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Michael Sammler</span><br>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+Ich bin 1995 geboren und studiere Informatik an der Universität Erlangen. Nachhaltig handeln ist meiner Meinung nach sehr wichtig, da wir als Gesellschaft die Verantwortung haben, unseren Planeten nicht nur für uns in einem lebenswerten Zustand zu bewahren, sondern auch für unsere Kinder. </span><br><br><br>
 </div>
 
 
