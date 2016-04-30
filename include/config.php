@@ -29,6 +29,11 @@ if(!defined('CONFIG_PHP')) {
         ['name' => 'video', "desc" => "Videos"],
         ['name' => 'other', "desc" => "Sonstiges"]
     ];
+    $locationTypes = [
+        ['name' => "home", "desc" => "Zuhause"],
+        ["name" => "school", "desc" => "Schule ohne Lehrkraft"],
+        ["name" => "teacher", "desc" => "Schule mit Lehrkraft"]
+    ];
 
 
 

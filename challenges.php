@@ -36,12 +36,12 @@ bestandene Challenge bekommt, könnt ihr an der Zahl neben dem Titel ablesen. Di
 <div class="container" style="width: 100%;">
   <div class="row">
     <div class="col-xs-4 col-sm-4 col-md-4">
-<img src="symbols/Schule.png" alt="SCHULE" height="45px" width="45px">
+<img src="symbols/school.png" alt="SCHULE" height="45px" width="45px">
 <br><i><b>in der Schule, <br> aber ohne Lehrkraft</i></b><br></div>
   <div class="col-xs-4 col-sm-4 col-md-4">
-<img src="symbols/Lehrkraft-Symbol2.png" alt="LEHRKRAFT" height="45px" width="45px"> <br><i><b>mit einer <br>Lehrkraft</b></i> <br></div>
+<img src="symbols/teacher.png" alt="LEHRKRAFT" height="45px" width="45px"> <br><i><b>mit einer <br>Lehrkraft</b></i> <br></div>
   <div class="col-xs-4 col-sm-4 col-md-4">
-<img src="symbols/Haus.png" alt="HAUS" height="45px" width="45px"><br> <i><b>zuhause</b></i> <br></div>
+<img src="symbols/home.png" alt="HAUS" height="45px" width="45px"><br> <i><b>zuhause</b></i> <br></div>
 </div>
 </div>
         </span></div>
@@ -67,6 +67,9 @@ WHERE c.id = :id");
 
     <div class="<?= e($row->category) ?> challenge-points" >
         <b style="font-family: Titillium Web;"><?= e($row->points)?></b>
+    </div>
+    <div class=" challenge-location" >
+        <img src="symbols/<?= e($row->location) ?>.png" alt="<?= e($row->location)?>" height="35px" width="35px">
     </div>
     <b><u><a class="<?= $classes ?> challenge-title"
              onclick="return toggleMe('challenge-<?=e($row->id)?>')"
@@ -106,7 +109,7 @@ WHERE c.id = :id");
 <br>
 <div class="container" style="width: 100%; margin-right: 1%;">
     <?php
-$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, cl.name AS author
+$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, c.location, cl.name AS author
 FROM challenge as c
 LEFT JOIN class as cl ON cl.id = c.author
 WHERE category=:category");
