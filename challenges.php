@@ -25,13 +25,15 @@ margin-bottom: 5px;
           ><i class="fa fa-arrow-down"></i></a><br><br>
 <span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify;">Auf dieser Seite findet ihr alle Challenges,
   die ihr bei WeltFAIRsteher absolvieren könnt.
-   In welcher Reihenfolge ihr dabei versucht, einen Teil der Aufgaben zu lösen, ist im Grunde egal.
+   In welcher Reihenfolge ihr dabei versucht, Aufgaben zu lösen, ist im Grunde egal. Ebenso könnt ihr selbst entscheiden, wie viele
+   Challenges ihr in die Tat umsetzt.
 Euch fehlt eine Challenge? Wenn ihr selbst eine sinnvolle Idee habt, dann entwickelt daraus doch eine Eigenkreation
 und lasst sie von eurer Lehrkraft im Lehrkraft-Bereich vorschlagen.<br><br>
 Wenn ihr mehr Informationen zu einer Challenge wollt, so klickt auf den Titel und lest am besten auch die dazugehörige PDF-Datei,
 die ihr jeweils herunterladen könnt. Wenn ihr eine Klasse in der Navigationsleiste auswählt, so seht ihr anhand der grünen Titel, welche
 Challenges diese Klasse bereits absolviert hat. Wie viel Punkte ihr für eine
-bestandene Challenge bekommt, könnt ihr an der Zahl neben dem Titel ablesen. Die folgenden Symbole zeigen euch außerdem, wo, beziehungweise mit wem ihr eine Challenge absolviert. <br>
+bestandene Challenge bekommt, könnt ihr an der Zahl neben dem Titel ablesen. Übrigens: Bei einigen Challenges gibt es eine Zusatzoption, also
+eine kleine Aufgabe, die auf der Challenge aufbaut und mit Zusatzpunkten belohnt wird. Die folgenden Symbole zeigen euch außerdem, wo, beziehungweise mit wem ihr eine Challenge absolviert. <br>
 <br>
 <div class="container" style="width: 100%;">
   <div class="row">
