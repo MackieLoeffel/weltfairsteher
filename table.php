@@ -24,7 +24,7 @@ margin-bottom: 10px;
         </div>
 <br>
 <span style="width: auto; height: auto; margin-left: 33%; margin-right: auto; margin-bottom: 5px; background-color: yellow; color: black;">
-  Die erwähnten Klassen sind lediglich Beispielklassen</span>
+  Die erwähnten Klassen sind Beispielklassen</span>
 
 
 <table class="abstaende" style="color= white; width: 98%;" cellspacing="0" cellpadding="20">
@@ -51,7 +51,7 @@ margin-bottom: 10px;
             return getCurrentPoints($b) - getCurrentPoints($a);
         });
         $rank = 0;
-        $numStmt = $db->prepare("SELECT COALESCE(SUM(c.points), 0) AS count
+        $numStmt = $db->prepare("SELECT COUNT(sc.challenge) AS count
 FROM challenge as c
 JOIN solved_challenge AS sc ON c.id = sc.challenge
 WHERE c.category = :category AND sc.class = :class");

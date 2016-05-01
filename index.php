@@ -32,12 +32,18 @@
 </span>
 
                         <br>
-                        <img src="weltkarte_gewuerze2.jpg" class="abstaende" style="width: 98%; height: auto;" alt="Weltkarte aus Gewuerzen">
+
+
+
+                        <img src="weltkarte_gewuerze2.jpg" style="width: 98%; height: auto; margin-left: 1%; float: left; position: relative; z-index: 2;" alt="Weltkarte mit Würze">
+
+
+<br>
 
                           <br><span id="was"></span>
                         <b>
 
-                        <h3 id="worum"class="abstaende" style="color: white; background-color: #A27405;">Was ist das?</h3>
+                        <h3 id="worum"class="abstaende" style="color: white; background-color: #A27405; margin-top: 20px;">Was ist das?</h3>
                         </b>
 
                         <div  class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
@@ -238,13 +244,13 @@ Ob an der Planung, den Challenges, der Webseite oder der Kommunikation -  alles 
 
 <div class="col-xs-12 col-sm-6 col-md-6">
 <img src="portraits/jana-2.png" alt="bild-jana" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Jana Costa</span><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Jana Costa</span><br>
 Ich bin im Jahr 1992 geboren und studiere an der Universität Bamberg Empirische Bildungsforschung - also eine Mischung aus Soziologie, Pädagogik und Psychologie. Warum ich mich für Nachhaltigkeit engagiere? Weil es auf einer endlichen Erde kein unendliches Wachstum geben kann und ich in einer Welt leben will, in der man sich über mehr Gedanken macht als nur den nächsten Urlaub, das coolere Auto oder das neueste Handy.</span><br><br><br>
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/max.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Maximilian Held</span><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Maximilian Held</span><br>
 Ich bin im Jahr 1992 geboren und studiere Fahrzeug- und Motorentechnik an der TU München. Nachhaltigkeit darf nicht Verzicht bedeuten. Nachhaltigkeit muss Spaß machen. Mein Ziel: Unserem Nachwuchs Lust auf mehr machen. Mein Motto: „Where attention goes, energy flows. Where energy flows, future goes.“ </span><br><br><br>
 </div>
 
@@ -253,7 +259,7 @@ Ich bin im Jahr 1992 geboren und studiere Fahrzeug- und Motorentechnik an der TU
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Andi.png" alt="bild-andi" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Andreas Eichenseher</span><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Andreas Eichenseher</span><br>
 Ich bin im Jahr 1992 geboren, habe einen Abschluss in Medientechnik mit Schwerpunkt Design und
 studiere derzeit Philosophie und Politikwissenschaft in Bamberg.
 Für eine zukunftsfähige Entwicklung engagiere ich mich, weil es die einzig langfristige vernünftige Möglichkeit ist,
@@ -265,7 +271,7 @@ zu sein scheinen, so sind sie es wert und vollends notwendig.</span><br><br><br>
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/julia-schmidt-1.png" alt="bild-julia" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Julia Schmidt</span><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Julia Schmidt</span><br>
 Ich bin 1993 geboren und studiere Internationale Wirtschaftspolitik im Masterstudium. Wieso ich mich für Nachhaltigkeit engagiere? Für mich geht es auf dieser Welt nicht um persönlichen Nutzen, uneingeschränkten Konsum und globalen Profit, sondern um eine egalitäre Gesellschaft mit sozialer Verantwortung für sich selbst und für seine Umwelt – und das sollten wir alle gemeinsam leben!</span><br><br><br>
 </div>
 </div>
@@ -274,14 +280,17 @@ Ich bin 1993 geboren und studiere Internationale Wirtschaftspolitik im Masterstu
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/michael.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Michael Sammler</span><br>
-Ich bin 1995 geboren und studiere Informatik an der Universität Erlangen. Nachhaltig handeln ist meiner Meinung nach sehr wichtig, da wir als Gesellschaft die Verantwortung haben, unseren Planeten nicht nur für uns in einem lebenswerten Zustand zu bewahren, sondern auch für unsere Kinder. </span><br><br><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Michael Sammler</span><br>
+Ich bin 1995 geboren und studiere Informatik an der Universität Erlangen. Nachhaltig handeln ist meiner Meinung nach sehr wichtig,
+da wir als Gesellschaft die Verantwortung haben, unseren Planeten nicht nur für uns in einem lebenswerten Zustand
+zu bewahren, sondern auch für unsere Kinder.  </span><br><br><br>
+
 </div>
 
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/hannah-1.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Hannah Witzenrath</span><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Hannah Witzenrath</span><br>
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
 </div>
 </div>
@@ -290,14 +299,17 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Elisa.png" alt="bild-elisa" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Elisa Thomaset</span><br>
-Ich bin 1995 geboren und studiere an der Universität Bamberg Anglistik, Romanistik und Politikwissenschaft. Mein Interesse an einer nachhaltigen Lebensweise wurde vor allem durch meinen Freiwilligendienst in Chile geweckt und geprägt. So ist es mir besonders wichtig, den Aspekt der Gemeinschaft in einer nachhaltigen Gesellschaft zu betonen, denn nur zusammen können wir wirklich etwas erreichen.</span><br><br><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Elisa Thomaset</span><br>
+Ich bin 1995 geboren und studiere an der Universität Bamberg Anglistik, Romanistik und Politikwissenschaft.
+Mein Interesse an einer nachhaltigen Lebensweise wurde vor allem durch meinen Freiwilligendienst in Chile geweckt
+und geprägt. So ist es mir besonders wichtig, den Aspekt der Gemeinschaft in einer nachhaltigen Gesellschaft zu betonen,
+denn nur zusammen können wir wirklich etwas erreichen.</span><br><br><br>
 </div>
 
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="" alt="bild-marie" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 13px;">Marie Fath</span><br>
+<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Marie Fath</span><br>
 Ich bin 1996 geboren und studiere Katholische Theologie, Pädagogik sowie Politikwissenschaft an der Universität Bamberg. Nachhaltigkeit ist mir wichtig, weil ich mich für ein gutes Leben für alle auch in Zukunft einsetzen will.</span><br><br><br>
 </div>
 </div>
