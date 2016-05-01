@@ -109,21 +109,25 @@ FROM challenge AS c
 JOIN solved_challenge AS sc ON c.id = sc.challenge
 WHERE sc.class = :class
 GROUP BY c.id)");
-                        $challenges = [];
+                        $challengesForClass = [];
                         foreach($allowed_classes as $class) {
                             $challengeStmt->execute(["class" => $class->id]);
-                            $challenges[$class->id] = $challengeStmt->fetchAll(PDO::FETCH_ASSOC);
+                            $challengesForClass[$class->id] = $challengeStmt->fetchAll(PDO::FETCH_ASSOC);
                         ?>
                             <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
                         <?php } ?>
                     </select><br>
                     <b id="selfmadecha">Challenge:</b><br>
-                    <select name="challenge" id="challenges" size="1"> </select>
+                    <select name="challenge" id="challenges" size="1"> </select><br/>
+                    <label id="extra" >
+                        <input type="checkbox" name="extra" value="extra"> Extrapunkte
+                    </label>
                     <br><br>
                     <input type="submit" value="eintragen" style="background-color: green; color: white;"><br><br>
                 </form>
                 <script type="text/javascript">
-                 var challenges = <?= json_encode($challenges); ?>;
+                 var challengesForClass = <?= json_encode($challengesForClass); ?>;
+                 var challenges = <?= json_encode(fetchAll("SELECT id, extrapoints FROM challenge"));?>;
                 </script>
                 <script src="js/teacher.js"></script>
 

@@ -7,11 +7,11 @@ $classStmt->execute();
 $classes = array();
 foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $class) {
     $challengeStmt = $db->prepare("
-SELECT c.points, sc.at, 0 AS creativity FROM solved_challenge AS sc
+SELECT c.points, c.extrapoints, sc.extra, sc.at, 0 AS creativity FROM solved_challenge AS sc
 JOIN challenge AS c ON c.id = sc.challenge
 WHERE sc.class = :id
 UNION
-SELECT 0 AS points, author_time AS at, 1 AS creativity FROM challenge
+SELECT 0 AS points, 0 AS extrapoints, false AS extra, author_time AS at, 1 AS creativity FROM challenge
 WHERE author = :id2
 ORDER BY at
 ");
@@ -23,13 +23,16 @@ ORDER BY at
     $creativity = 1;
     $curday = $startTime;
     foreach(array_merge($challengeStmt->fetchAll(PDO::FETCH_ASSOC),
-                        [["points" => 0, "creativity" => 0, "at" => date("Y-m-d H:i:s", time() + $secondsPerDay)]])
+                        [["points" => 0, "extra" => false, "creativity" => 0, "at" => date("Y-m-d H:i:s", time() + $secondsPerDay)]])
                             as $ch) {
         while(strtotime($ch["at"]) >= $curday) {
             array_push($history, $points * $creativity);
             $curday += $secondsPerDay;
         }
         $points += $ch["points"];
+        if($ch["extra"] && $ch["extrapoints"]) {
+            $points += $ch["extrapoints"];
+        }
         $creativity += $ch["creativity"] * 0.2;
     }
     array_push($classes, ["name" => $class->name,

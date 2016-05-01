@@ -1,3 +1,4 @@
+
 normalColor = "rgba(0,70,224,0.6)"
 highlightColor = "rgba(255,0,85,1)"
 

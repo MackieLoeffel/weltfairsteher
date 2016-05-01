@@ -5,6 +5,7 @@ check_access(TEACHER);
 
 list($class, $challenge) = apiCheckParams("class", "challenge");
 $user = $_SESSION["user"];
+$extra = isset($_POST["extra"]);
 
 apiCheck(dbExists(isTeacher() ?
                   "SELECT id FROM class WHERE id = :class AND teacher = :teacher" :
@@ -17,7 +18,10 @@ apiCheck(dbExists("SELECT id FROM challenge WHERE id = :id",
 apiCheck(!dbExists("SELECT * FROM solved_challenge WHERE class = :class AND challenge = :challenge", ["class" => $class, "challenge" => $challenge]),
          "Challenge wurde von der Klasse schon gelöst");
 
-apiAction(function() use($class, $challenge) {
-    dbExecute("INSERT INTO solved_challenge (class, challenge, at) VALUES (:class, :challenge, NOW())", ["class" => $class, "challenge" => $challenge]);
+apiCheck(!$extra || dbExists("SELECT id FROM challenge WHERE id = :id AND extrapoints IS NOT NULL", ["id" => $challenge]),
+         "Kann keine Extrapunkte für Challenge ohne Extrapunkte setzen!");
+
+apiAction(function() use($class, $challenge, $extra) {
+    dbExecute("INSERT INTO solved_challenge (class, challenge, extra, at) VALUES (:class, :challenge, :extra, NOW())", ["class" => $class, "challenge" => $challenge, "extra" => $extra]);
 });
 ?>
