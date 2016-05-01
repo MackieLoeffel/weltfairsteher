@@ -24,7 +24,7 @@
     ref = ["title", "points", "class", "description", "location", "extrapoints"];
     for (i = 0, len = ref.length; i < len; i++) {
       prop = ref[i];
-      $("#acceptSelfmade >> [name='" + prop + "']").val((ref1 = suggestedChallenges[id][prop]) != null ? ref1 : "");
+      $("#acceptSelfmade [name='" + prop + "']").val((ref1 = suggestedChallenges[id][prop]) != null ? ref1 : "");
     }
     $("#class-name").text(suggestedChallenges[id].name);
     return $("#teacher-email").text(suggestedChallenges[id].email);

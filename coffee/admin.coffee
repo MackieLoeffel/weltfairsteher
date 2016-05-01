@@ -9,7 +9,8 @@ selectSelfmade = ->
   id = $("#selfmadeSelect").val()
   console.log "selected:", id
   for prop in ["title", "points", "class", "description", "location", "extrapoints"]
-    $("#acceptSelfmade >> [name='#{prop}']").val(suggestedChallenges[id][prop] ? "")
+    # space is descendant selector
+    $("#acceptSelfmade [name='#{prop}']").val(suggestedChallenges[id][prop] ? "")
   $("#class-name").text suggestedChallenges[id].name
   $("#teacher-email").text suggestedChallenges[id].email
 
