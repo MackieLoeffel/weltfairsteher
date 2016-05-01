@@ -119,8 +119,8 @@ GROUP BY c.id)");
                     </select><br>
                     <b id="selfmadecha">Challenge:</b><br>
                     <select name="challenge" id="challenges" size="1"> </select><br/>
-                    <label id="extra" >
-                        <input type="checkbox" name="extra" value="extra"> Extrapunkte
+                    <label >
+                        <input id="extra" type="checkbox" name="extra" value="extra"> Extrapunkte
                     </label>
                     <br><br>
                     <input type="submit" value="eintragen" style="background-color: green; color: white;"><br><br>

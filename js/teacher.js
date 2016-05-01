@@ -16,9 +16,14 @@
 
   challengeChange = function() {
     var ref;
-    return $("#extra").toggle(((ref = _.find(challenges, {
+    if (((ref = _.find(challenges, {
       id: +$("#challenges").val()
-    })) != null ? ref.extrapoints : void 0) != null);
+    })) != null ? ref.extrapoints : void 0) != null) {
+      return $("#extra").prop("disabled", false);
+    } else {
+      $("#extra").prop("disabled", true);
+      return $("#extra").prop("checked", false);
+    }
   };
 
   $('document').ready(function() {

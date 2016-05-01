@@ -6,7 +6,12 @@ classChange = ->
       .text(challenge.name))
 
 challengeChange = ->
-    $("#extra").toggle(_.find(challenges, id: +$("#challenges").val())?.extrapoints?)
+  if _.find(challenges, id: +$("#challenges").val())?.extrapoints?
+    $("#extra").prop("disabled", false)
+  else
+    $("#extra").prop("disabled", true)
+    $("#extra").prop("checked", false)
+
 
 $('document').ready ->
   classChange()
