@@ -33,7 +33,8 @@ Wenn ihr mehr Informationen zu einer Challenge wollt, so klickt auf den Titel un
 die ihr jeweils herunterladen könnt. Wenn ihr eine Klasse in der Navigationsleiste auswählt, so seht ihr anhand der grünen Titel, welche
 Challenges diese Klasse bereits absolviert hat. Wie viel Punkte ihr für eine
 bestandene Challenge bekommt, könnt ihr an der Zahl neben dem Titel ablesen. Übrigens: Bei einigen Challenges gibt es eine Zusatzoption, also
-eine kleine Aufgabe, die auf der Challenge aufbaut und mit Zusatzpunkten belohnt wird. Die folgenden Symbole zeigen euch außerdem, wo, beziehungweise mit wem ihr eine Challenge absolviert. <br>
+eine kleine Aufgabe, die auf der Challenge aufbaut und mit Extrapunkten belohnt wird. Mögliche Extrapunkte sind mit einem "+" gekennzeichnet.
+Die folgenden Symbole zeigen euch außerdem, wo, beziehungweise mit wem ihr eine Challenge absolviert. <br>
 <br>
 <div class="container" style="width: 100%;">
   <div class="row">
@@ -68,8 +69,10 @@ WHERE c.id = :id");
 
 
     <div class="<?= e($row->category) ?> challenge-points" >
-        <b style="font-family: Titillium Web;"><?= e($row->points)?><?php if($row->extrapoints) {echo "+" . e($row->extrapoints);}?></b>
+        <b style="font-family: Titillium Web;"><?= e($row->points)?></b>
     </div>
+    <span style="font-family: Titillium Web; font-size: 11px; margin-left: 96.5%; float: left; z-index:2;">
+      <?php if($row->extrapoints) {echo "+" . e($row->extrapoints);}?></span>
     <div class=" challenge-location" >
         <img src="symbols/<?= e($row->location) ?>.png" alt="<?= e($row->location)?>" height="35px" width="35px">
     </div>
@@ -78,6 +81,7 @@ WHERE c.id = :id");
              href="javascript:void(0)"
              style="font-family: Titillium Web;"><?=e($row->name)?></a></u></b><br>
     <div style="display:none;" class="dbox" id="challenge-<?=e($row->id)?>">
+      <br>
         <?= e($row->description) ?>
         <br>
         <?php if($row->author) { ?>
