@@ -123,7 +123,7 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                      if(isAdmin()) {
                                          $sites["Admin"] = "admin.php";
                                      }
-                                     if(isAdmin() || isTeacher()) {
+                                     if(isLoggedIn()) {
                                          $sites["Logout"] = "logout.php";
                                      }
                                      foreach ($sites as $site => $link) {

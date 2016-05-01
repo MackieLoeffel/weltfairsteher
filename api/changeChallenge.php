@@ -17,7 +17,9 @@ if($points) {
 if($category) {
     apiCheck(array_filter($categories, function($cat) use ($category) { return $cat->name === $category; }), "Ungültige Kategorie");
 }
-
+if($location) {
+    apiCheck(array_filter($locationTypes, function($lt) use ($location) { return $lt["name"] === $location; }), "Ungültige Location!");
+}
 
 apiAction(function() use ($c, $name, $desc, $points, $category, $location) {
     if($name) {
@@ -39,5 +41,6 @@ apiAction(function() use ($c, $name, $desc, $points, $category, $location) {
     if($location) {
         dbExecute("UPDATE challenge SET location = :location WHERE id = :id",
                   ["id" => $c, "location" => $location]);
+    }
 });
 ?>

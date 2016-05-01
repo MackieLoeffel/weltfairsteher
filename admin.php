@@ -108,7 +108,7 @@ include "include/header.php";
     </select><br/>
     <input type="submit" value="Bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-<?php }); slideDown("Neue Challenge hinzufügen", function() use ($categories) { ?>
+<?php }); slideDown("Neue Challenge hinzufügen", function() use ($categories, $locationTypes) { ?>
 <form id="addChallenge" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     <input type="hidden" name="class" value="-1">
     <input type="hidden" name="suggested" value="">
@@ -129,9 +129,9 @@ include "include/header.php";
     <br>
     Durchführungsart:
     <select style="color: black;" name="location" size="1">
-      <option style="color: black;" value="Zuhause">Zuhause</option>
-            <option style="color: black;" value="Schule">Schule ohne Lehrkraft</option>
-            <option style="color: black;" value="Lehrkraft">Schule mit Lehrkraft</option>
+        <?php foreach($locationTypes as $lt) {?>
+            <option style="color: black;" value="<?= e($lt["name"])?>"><?= e($lt["desc"]) ?></option>
+        <?php } ?>
     </select>
 
     <br>
@@ -139,7 +139,7 @@ include "include/header.php";
     <br>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-<?php }); slideDown("Challenge bearbeiten", function() use ($categories) { ?>
+<?php }); slideDown("Challenge bearbeiten", function() use ($categories, $locationTypes) { ?>
 <form id="changeChallenge" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     (Felder leer lassen, um sie nicht zu ändern)<br/>
     Challenge: <select style="color: black;" name="challenge">
@@ -167,9 +167,10 @@ include "include/header.php";
     </select><br>
     Durchführungsart:
     <select style="color: black;" name="location" size="1">
-      <option style="color: black;" value="Zuhause">Zuhause</option>
-            <option style="color: black;" value="Schule">Schule ohne Lehrkraft</option>
-            <option style="color: black;" value="Lehrkraft">Schule mit Lehrkraft</option>
+        <option style="color: black;" value=""> Aktueller Ort </option>
+        <?php foreach($locationTypes as $lt) {?>
+            <option style="color: black;" value="<?= e($lt["name"])?>"><?= e($lt["desc"]) ?></option>
+            <?php } ?>
     </select>
 
     <br>
@@ -177,7 +178,7 @@ include "include/header.php";
     <br>
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
-<?php }); slideDown("Eigenkreation übernehmen", function() { ?>
+<?php }); slideDown("Eigenkreation übernehmen", function() use ($locationTypes){ ?>
 <form id="acceptSelfmade" class="slide-down-hidden" action="javascript:void(0);" onsubmit="acceptSelfmade()">
     <input type="hidden" name="class" value="-1">
     <input type="hidden" name="suggested" value="">
@@ -186,7 +187,7 @@ include "include/header.php";
         <select id="selfmadeSelect" style="color: black;" size="10">
             <?php
             $suggestedChallenges = [];
-            foreach(fetchAll("SELECT s.id, s.title, s.description, s.points, s.class, c.name, u.email FROM suggested s JOIN class c ON c.id = s.class JOIN user u ON u.id = c.teacher ") as $c) {
+            foreach(fetchAll("SELECT s.id, s.title, s.description, s.points, s.class, c.name, u.email, s.location FROM suggested s JOIN class c ON c.id = s.class JOIN user u ON u.id = c.teacher ") as $c) {
                 $suggestedChallenges[$c->id] = $c;?>
                 <option style="color: black;" value="<?=e($c->id)?>"> <?=e($c->title)?></option>
             <?php } ?>
@@ -204,6 +205,14 @@ include "include/header.php";
                 <option style="color: black;" value="<?= $i?>"><?= $i?></option>
             <?php } ?>
         </select>
+        <br/>
+        Durchführungsart:
+        <select style="color: black;" name="location" size="1">
+            <?php foreach($locationTypes as $lt) {?>
+                <option style="color: black;" value="<?= e($lt["name"])?>"><?= e($lt["desc"]) ?></option>
+            <?php } ?>
+        </select>
+
 
         <br>
         Kurzbeschreibung: <textarea rows="7" style="color: black;" name="description"></textarea>

@@ -9,9 +9,9 @@
         if (errors.length) {
           return;
         }
-        return callApi("deleteChallenge", {
-          suggested: "1",
-          challenge: $("#selfmadeSelect").val()
+        return callApi("deleteEntry", {
+          table: "suggested",
+          id: $("#selfmadeSelect").val()
         });
       }
     });
@@ -21,7 +21,7 @@
     var i, id, len, prop, ref;
     id = $("#selfmadeSelect").val();
     console.log("selected:", id);
-    ref = ["title", "points", "class", "description"];
+    ref = ["title", "points", "class", "description", "location"];
     for (i = 0, len = ref.length; i < len; i++) {
       prop = ref[i];
       $("#acceptSelfmade >> [name='" + prop + "']").val(suggestedChallenges[id][prop]);

@@ -281,7 +281,10 @@ Ich bin 1993 geboren und studiere Internationale Wirtschaftspolitik im Masterstu
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/michael.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Michael Sammler</span><br>
-Ich bin 1995 geboren und studiere Informatik an der Universität Erlangen. Nachhaltig handeln ist meiner Meinung nach sehr wichtig, da wir als Gesellschaft die Verantwortung haben, unseren Planeten nicht nur für uns in einem lebenswerten Zustand zu bewahren, sondern auch für unsere Kinder.  </span><br><br><br>
+Ich bin 1995 geboren und studiere Informatik an der Universität Erlangen. Nachhaltig handeln ist meiner Meinung nach sehr wichtig,
+da wir als Gesellschaft die Verantwortung haben, unseren Planeten nicht nur für uns in einem lebenswerten Zustand
+zu bewahren, sondern auch für unsere Kinder.  </span><br><br><br>
+
 </div>
 
 
@@ -297,7 +300,10 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Elisa.png" alt="bild-elisa" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Elisa Thomaset</span><br>
-Ich bin 1995 geboren und studiere an der Universität Bamberg Anglistik, Romanistik und Politikwissenschaft. Mein Interesse an einer nachhaltigen Lebensweise wurde vor allem durch meinen Freiwilligendienst in Chile geweckt und geprägt. So ist es mir besonders wichtig, den Aspekt der Gemeinschaft in einer nachhaltigen Gesellschaft zu betonen, denn nur zusammen können wir wirklich etwas erreichen.</span><br><br><br>
+Ich bin 1995 geboren und studiere an der Universität Bamberg Anglistik, Romanistik und Politikwissenschaft.
+Mein Interesse an einer nachhaltigen Lebensweise wurde vor allem durch meinen Freiwilligendienst in Chile geweckt
+und geprägt. So ist es mir besonders wichtig, den Aspekt der Gemeinschaft in einer nachhaltigen Gesellschaft zu betonen,
+denn nur zusammen können wir wirklich etwas erreichen.</span><br><br><br>
 </div>
 
 

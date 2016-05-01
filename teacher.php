@@ -186,11 +186,18 @@ padding: 10px;
                     <?php for($i = 1; $i <= 10; $i++) {?>
                         <option value="<?= $i?>"><?= $i?></option>
                     <?php } ?>
+                </select><br>
+
+                <b>Durchführungsart:</b>
+                <select style="color: black;" name="location" size="1">
+                    <?php foreach($locationTypes as $lt) {?>
+                        <option style="color: black;" value="<?= e($lt["name"])?>"><?= e($lt["desc"]) ?></option>
+                    <?php } ?>
                 </select>
 
             </div>
             <br>
-            <div style="color: white;">
+            <div style="color: black;">
                 <textarea cols="50" row=8" name="description" style="height: 329px; width: 93%;">Challenge-Beschreibung</textarea>
 
                 <br>

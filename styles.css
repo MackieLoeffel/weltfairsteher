@@ -84,6 +84,21 @@ width: 98%;
     float: left;
     color: white;
 }
+.challenge-location {
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    border-radius:20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+    margin-left: 1%;
+    text-align:center;
+    font-size: 14px;
+    font-width: bold;
+    float: left;
+    color: white;
+}
 .challenge-points.selfmade {
     color: black;
 }
