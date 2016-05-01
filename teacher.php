@@ -187,6 +187,13 @@ padding: 10px;
                         <option value="<?= $i?>"><?= $i?></option>
                     <?php } ?>
                 </select><br>
+                <b>Extrapunkte für Challenge:</b>
+                <select name="extrapoints" size="1">
+                    <option value="">Keine</option>
+                    <?php for($i = 1; $i <= 10; $i++) {?>
+                        <option value="<?= $i?>"><?= $i?></option>
+                    <?php } ?>
+                </select><br>
 
                 <b>Durchführungsart:</b>
                 <select style="color: black;" name="location" size="1">

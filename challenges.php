@@ -66,7 +66,7 @@ WHERE c.id = :id");
 
 
     <div class="<?= e($row->category) ?> challenge-points" >
-        <b style="font-family: Titillium Web;"><?= e($row->points)?></b>
+        <b style="font-family: Titillium Web;"><?= e($row->points)?><?php if($row->extrapoints) {echo "+" . e($row->extrapoints);}?></b>
     </div>
     <div class=" challenge-location" >
         <img src="symbols/<?= e($row->location) ?>.png" alt="<?= e($row->location)?>" height="35px" width="35px">
@@ -109,7 +109,7 @@ WHERE c.id = :id");
 <br>
 <div class="container" style="width: 100%; margin-right: 1%;">
     <?php
-$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, c.location, cl.name AS author
+$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, c.location, c.extrapoints, cl.name AS author
 FROM challenge as c
 LEFT JOIN class as cl ON cl.id = c.author
 WHERE category=:category");

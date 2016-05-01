@@ -8,8 +8,8 @@ window.acceptSelfmade = ->
 selectSelfmade = ->
   id = $("#selfmadeSelect").val()
   console.log "selected:", id
-  for prop in ["title", "points", "class", "description", "location"]
-    $("#acceptSelfmade >> [name='#{prop}']").val(suggestedChallenges[id][prop])
+  for prop in ["title", "points", "class", "description", "location", "extrapoints"]
+    $("#acceptSelfmade >> [name='#{prop}']").val(suggestedChallenges[id][prop] ? "")
   $("#class-name").text suggestedChallenges[id].name
   $("#teacher-email").text suggestedChallenges[id].email
 

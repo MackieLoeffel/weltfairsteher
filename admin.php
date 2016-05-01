@@ -127,6 +127,14 @@ include "include/header.php";
         <?php } ?>
     </select>
     <br>
+    Extrapunkte:
+    <select style="color: black;" name="extrapoints" size="1">
+        <option value="">Keine</option>
+        <?php for($i = 1; $i <= 10; $i++) {?>
+            <option style="color: black;" value="<?= $i?>"><?= $i?></option>
+        <?php } ?>
+    </select><br>
+
     Durchführungsart:
     <select style="color: black;" name="location" size="1">
         <?php foreach($locationTypes as $lt) {?>
@@ -165,6 +173,15 @@ include "include/header.php";
             <option style="color: black;" value="<?= $i?>"><?= $i?></option>
         <?php } ?>
     </select><br>
+    Extrapunkte:
+    <select style="color: black;" name="extrapoints" size="1">
+        <option value="nochange">Keine Änderung</option>
+        <option value="">Keine</option>
+        <?php for($i = 1; $i <= 10; $i++) {?>
+            <option style="color: black;" value="<?= $i?>"><?= $i?></option>
+        <?php } ?>
+    </select><br>
+
     Durchführungsart:
     <select style="color: black;" name="location" size="1">
         <option style="color: black;" value=""> Aktueller Ort </option>
@@ -187,7 +204,7 @@ include "include/header.php";
         <select id="selfmadeSelect" style="color: black;" size="10">
             <?php
             $suggestedChallenges = [];
-            foreach(fetchAll("SELECT s.id, s.title, s.description, s.points, s.class, c.name, u.email, s.location FROM suggested s JOIN class c ON c.id = s.class JOIN user u ON u.id = c.teacher ") as $c) {
+            foreach(fetchAll("SELECT s.id, s.title, s.description, s.points, s.class, c.name, u.email, s.location, s.extrapoints FROM suggested s JOIN class c ON c.id = s.class JOIN user u ON u.id = c.teacher ") as $c) {
                 $suggestedChallenges[$c->id] = $c;?>
                 <option style="color: black;" value="<?=e($c->id)?>"> <?=e($c->title)?></option>
             <?php } ?>
@@ -201,6 +218,13 @@ include "include/header.php";
         <br>
         Punkte:
         <select style="color: black;" name="points" size="1">
+            <?php for($i = 1; $i <= 10; $i++) {?>
+                <option style="color: black;" value="<?= $i?>"><?= $i?></option>
+            <?php } ?>
+        </select> <br>
+        Extrapunkte:
+        <select style="color: black;" name="extrapoints" size="1">
+            <option value="">Keine</option>
             <?php for($i = 1; $i <= 10; $i++) {?>
                 <option style="color: black;" value="<?= $i?>"><?= $i?></option>
             <?php } ?>

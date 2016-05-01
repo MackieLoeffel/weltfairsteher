@@ -18,13 +18,13 @@
   };
 
   selectSelfmade = function() {
-    var i, id, len, prop, ref;
+    var i, id, len, prop, ref, ref1;
     id = $("#selfmadeSelect").val();
     console.log("selected:", id);
-    ref = ["title", "points", "class", "description", "location"];
+    ref = ["title", "points", "class", "description", "location", "extrapoints"];
     for (i = 0, len = ref.length; i < len; i++) {
       prop = ref[i];
-      $("#acceptSelfmade >> [name='" + prop + "']").val(suggestedChallenges[id][prop]);
+      $("#acceptSelfmade >> [name='" + prop + "']").val((ref1 = suggestedChallenges[id][prop]) != null ? ref1 : "");
     }
     $("#class-name").text(suggestedChallenges[id].name);
     return $("#teacher-email").text(suggestedChallenges[id].email);
