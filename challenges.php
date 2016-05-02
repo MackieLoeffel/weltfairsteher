@@ -34,8 +34,9 @@ die ihr jeweils herunterladen könnt. Wenn ihr eine Klasse in der Navigationslei
 Challenges diese Klasse bereits absolviert hat. Wie viel Punkte ihr für eine
 bestandene Challenge bekommt, könnt ihr an der Zahl neben dem Titel ablesen. <br><br>Übrigens: Bei einigen Challenges gibt es eine Zusatzoption, also
 eine kleine Aufgabe, die auf der Challenge aufbaut und mit Extrapunkten belohnt wird. Mögliche Extrapunkte sind mit einem "+" gekennzeichnet, also etwa so: <span style="background-color: #0F9C2E; color: white;">+4</span>.
-Eingeloggte Lehrkräfte können auf dieser Seite außerdem jede Challenge als <i>abgeschlossen</i> markieren. Nur wenn die Challenge mitsamt Zusatzaufgabe abgeschlossen wurde,
-so muss die Lehrkraft die Challenge im Lehrkraft-Bereich als <i>abgeschlossen</i> eintragen.
+Eingeloggte Lehrkräfte können auf dieser Seite außerdem jede Challenge als <i>abgeschlossen</i> markieren. Aber Vorsicht: Wenn die Challenge mitsamt Zusatzaufgabe abgeschlossen wurde,
+so muss die Lehrkraft die Challenge im Lehrkraft-Bereich als <i>abgeschlossen</i> eintragen. Nachträglich können keine Extrapunkte mehr für eine Challenge geltend gemacht werden, die bereits
+eingetragen wurde.
 Die folgenden Symbole zeigen euch außerdem, wo, beziehungweise mit wem ihr eine Challenge absolviert. <br>
 <br>
 <div class="container" style="width: 100%;">
