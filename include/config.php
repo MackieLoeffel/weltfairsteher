@@ -118,7 +118,7 @@ if(!defined('CONFIG_PHP')) {
 
     function getPDFPath($challenge, $type) {
         assert($type === TEACHER_PDF || $type === PUPIL_PDF);
-        assert(is_numeric($challenge))
+        assert(is_numeric($challenge));
         return __DIR__."/../uploads/" . $type . "_" . $challenge . ".pdf";
     }
 
