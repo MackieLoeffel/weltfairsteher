@@ -120,6 +120,17 @@ if(!defined('CONFIG_PHP')) {
         assert($type === TEACHER_PDF || $type === PUPIL_PDF);
         return __DIR__."/../uploads/" . $type . "_" . $challenge . ".pdf";
     }
+
+    function own_mail($to, $title, $content) {
+        // für umlaute
+        $headers   = [
+            "MIME-Version: 1.0",
+            "Content-type: text/plain; charset=utf-8",
+            "From: kontakt@weltfairsteher.jetzt",
+            "Reply-To: kontakt@weltfairsteher.jetzt"
+        ];
+        mail($to, $title, $content, implode("\r\n", $headers));
+    }
 }
 
 ?>

@@ -15,13 +15,7 @@ apiAction(function() use($email) {
         dbExecute("INSERT INTO forgot (id, user, created_at) VALUES (:rand, :user, NOW())",
                   ["user" => $user->id, "rand" => $rand]);
 
-        $headers   = array();
-        // für umlaute
-        $headers[] = "MIME-Version: 1.0";
-        $headers[] = "Content-type: text/plain; charset=utf-8";
-        $headers[] = "From: kontakt@weltfairsteher.jetzt";
-        $headers[] = "Reply-To: kontakt@weltfairsteher.jetzt";
-        mail($email, "Passwort vergessen", "Hallo,\r\num dein Passwort zurückzusetzen gehe bitte auf diesen Link: http://www.weltfairsteher.jetzt/resetPassword.php?forgotid=$rand\r\nViele Grüße\r\nDein Weltfairsteher Team", implode("\r\n", $headers));
+        own_mail($email, "Passwort vergessen", "Hallo,\r\num dein Passwort zurückzusetzen gehe bitte auf diesen Link: http://www.weltfairsteher.jetzt/resetPassword.php?forgotid=$rand\r\nViele Grüße\r\nDein Weltfairsteher Team");
     }
 });
 ?>
