@@ -168,7 +168,7 @@ ORDER BY at
                                   "at" => date("Y-m-d H:i:s", time() + $secondsPerDay)]])
                                       as $ch) {
                 while(strtotime($ch["at"]) >= $curday) {
-                    array_push($history, $points * $creativity);
+                    array_push($history, round($points * $creativity, 1));
                     $curday += $secondsPerDay;
                 }
                 $points += $ch["points"];

@@ -51,4 +51,44 @@ function apiAction($action) {
     echo json_encode($errors);
 }
 
+
+function checkMilestone($class, $action) {
+    if(!$class) {
+        $action();
+        return;
+    }
+    $milestones = fetchAll("SELECT points FROM milestone ORDER BY points ASC");
+
+    $startPoints = array_pop(calculatePoints($class)["points"]);
+    $action();
+    $endPoints = array_pop(calculatePoints($class)["points"]);
+
+
+    $achieved = [];
+    foreach($milestones as $stone) {
+        if($stone->points > $endPoints) {
+            break;
+        }
+        if($stone->points > $startPoints) {
+            array_push($achieved, $stone->points);
+        }
+    }
+
+    if(empty($achieved)) {
+        return;
+    }
+
+    $classInfo = fetch("SELECT c.name, u.email FROM class AS c JOIN user AS u ON c.teacher = u.id");
+    $n = "";
+    if(count($achieved) > 1) {
+        $n = "n";
+    }
+
+    foreach(fetchAll("SELECT email FROM user WHERE role = :admin", ["admin" => ADMIN]) as $admin) {
+        own_mail($admin->email, "Etappe$n erreicht", "Guten Tag,\r\nDie Klasse \"$classInfo->name\" hat die Etappe$n " . implode(", ", $achieved) . " erreicht!\r\nDer Lehrer ist: $classInfo->email \r\n\r\nViele Grüße\r\nIhre Weltfairsteher-Website");
+    }
+
+    own_mail($classInfo->email, "Etappe$n erreicht", "Herzlichen Glückwunsch, Ihre  Klasse \"$classInfo->name\" hat bei weltfairsteher die Etappe$n " . implode(", ", $achieved) . " erreicht!\r\n");
+}
+
 ?>

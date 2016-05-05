@@ -42,14 +42,16 @@ apiAction(function() use ($title, $desc, $class, $points, $suggested, $category,
             $class = NULL;
         }
 
-        dbExecute("INSERT INTO challenge (name, description, author, points, category, author_time, location, extrapoints) VALUES (:title, :desc, :class, :points, :category, NOW(), :location, :extrapoints)",
-                  ["title" => $title,
-                   "desc" => $desc,
-                   "class" => $class,
-                   "points" => $points,
-                   "location" => $location,
-                   "category" => $category,
-                   "extrapoints" => $extrapoints]);
+        checkMilestone($class, function() use ($title, $desc, $class, $points, $suggested, $category, $location, $extrapoints) {
+            dbExecute("INSERT INTO challenge (name, description, author, points, category, author_time, location, extrapoints) VALUES (:title, :desc, :class, :points, :category, NOW(), :location, :extrapoints)",
+                      ["title" => $title,
+                       "desc" => $desc,
+                       "class" => $class,
+                       "points" => $points,
+                       "location" => $location,
+                       "category" => $category,
+                       "extrapoints" => $extrapoints]);
+        });
     }
 });
 ?>
