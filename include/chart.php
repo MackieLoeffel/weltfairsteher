@@ -1,44 +1,10 @@
 <?php
-$startTime = mktime(0, 0, 0, 12, 22, 2015);
-$secondsPerDay = 60 * 60 * 24;
-
-$classStmt = $db->prepare("SELECT id, name FROM class");
-$classStmt->execute();
-$classes = array();
-foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $class) {
-    $challengeStmt = $db->prepare("
-SELECT c.points, c.extrapoints, sc.extra, sc.at, 0 AS creativity FROM solved_challenge AS sc
-JOIN challenge AS c ON c.id = sc.challenge
-WHERE sc.class = :id
-UNION
-SELECT 0 AS points, 0 AS extrapoints, false AS extra, author_time AS at, 1 AS creativity FROM challenge
-WHERE author = :id2
-ORDER BY at
-");
-    // php is strange, can't use param multiple times
-    $challengeStmt->execute(['id' => $class->id, 'id2' => $class->id]);
-
-    $history = array();
-    $points = 0;
-    $creativity = 1;
-    $curday = $startTime;
-    foreach(array_merge($challengeStmt->fetchAll(PDO::FETCH_ASSOC),
-                        [["points" => 0, "extra" => false, "creativity" => 0, "at" => date("Y-m-d H:i:s", time() + $secondsPerDay)]])
-                            as $ch) {
-        while(strtotime($ch["at"]) >= $curday) {
-            array_push($history, $points * $creativity);
-            $curday += $secondsPerDay;
-        }
-        $points += $ch["points"];
-        if($ch["extra"] && $ch["extrapoints"]) {
-            $points += $ch["extrapoints"];
-        }
-        $creativity += $ch["creativity"] * 0.2;
-    }
-    array_push($classes, ["name" => $class->name,
-                          "points" => $history,
-                          "creativity" => $creativity,
-                          "id" => $class->id]);
+$sqlClasses = fetchAll("SELECT id, name FROM class");
+$classPoints = calculatePoints(array_map(function($class) { return $class->id;}, $sqlClasses));
+$classes = [];
+foreach($sqlClasses as $class) {
+    $classPoints[$class->id]["name"] = $class->name;
+    array_push($classes, $classPoints[$class->id]);
 }
 
 $milestones = fetchAll("SELECT points FROM milestone ORDER BY points ASC");
