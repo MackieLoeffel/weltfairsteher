@@ -22,6 +22,8 @@ apiCheck(!$extra || dbExists("SELECT id FROM challenge WHERE id = :id AND extrap
          "Kann keine Extrapunkte für Challenge ohne Extrapunkte setzen!");
 
 apiAction(function() use($class, $challenge, $extra) {
-    dbExecute("INSERT INTO solved_challenge (class, challenge, extra, at) VALUES (:class, :challenge, :extra, NOW())", ["class" => $class, "challenge" => $challenge, "extra" => $extra]);
+    checkMilestone($class, function() use($class, $challenge, $extra) {
+        dbExecute("INSERT INTO solved_challenge (class, challenge, extra, at) VALUES (:class, :challenge, :extra, NOW())", ["class" => $class, "challenge" => $challenge, "extra" => $extra]);
+    });
 });
 ?>
