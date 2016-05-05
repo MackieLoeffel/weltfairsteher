@@ -16,14 +16,18 @@ margin-bottom: 5px;
  height="auto">
 
         </div>
-        <div style="margin-left: 1%; margin-right: 1%; width: 98%; margin-top: 15px; background-color: #1BAB3F; height: auto; color: black; font-size: 11px;">
-          <b style="font-size: 18px; float: left; color: white; margin-left: 2%;">Allgemeine Hinweise</b>	&#x2003;&#x2003;
+
+        <div  style="background-color:#1BAB3F; width: 98%; margin-top: 15px;
+        margin-left: 1%; height: auto; font-size: 15px; color: white; padding: 10px;">
+        <b style="font-size: 18px; float: left;">
+
+        Allgemeine Hinweise</b> 	&#x2003;&#x2003;
 
           <a href="javascript:void(0)" onclick="return toggleMe('challengeinfo')" style="background-color: white; margin-top: 10px;
            border: 2px solid white; border-radius: 30px;"
 
           ><i class="fa fa-arrow-down"></i></a><br><br>
-<span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify;">Auf dieser Seite findet ihr alle Challenges,
+<span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify; font-size: 11px; color: black;">Auf dieser Seite findet ihr alle Challenges,
   die ihr bei WeltFAIRsteher absolvieren könnt.
    In welcher Reihenfolge ihr dabei versucht, Aufgaben zu lösen, ist im Grunde egal. Ebenso könnt ihr selbst entscheiden, wie viele
    Challenges ihr in die Tat umsetzt.

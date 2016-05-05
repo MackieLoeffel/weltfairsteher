@@ -268,7 +268,7 @@ padding: 10px;
 
 ><i class="fa fa-arrow-down"></i></a><br>
 <span id="feedback" style="display:none; font-size: 12px;">
-Bitte jede Challenge-Bewertung einzeln abschicken.<br><br>
+Bitte jede Challenge-Bewertung einzeln abschicken. (Die Daten gehen anonym ein.)<br><br>
 <form action="mailto:kontakt@weltfairsteher.jetzt" method="post">
 
   <b>Die Challenge:</b> <select style="color: black;" name="challenge">
@@ -344,6 +344,62 @@ padding: 10px;
  </form>
  </div>
  <br>
+ <br>
+ <br> <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br> <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br> <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br> <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br> <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
  <br>
  <br> <br>
   <br>
