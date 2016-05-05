@@ -85,10 +85,10 @@ function checkMilestone($class, $action) {
     }
 
     foreach(fetchAll("SELECT email FROM user WHERE role = :admin", ["admin" => ADMIN]) as $admin) {
-        own_mail($admin->email, "Etappe$n erreicht", "Guten Tag,\r\nDie Klasse \"$classInfo->name\" hat die Etappe$n " . implode(", ", $achieved) . " erreicht!\r\nDer Lehrer ist: $classInfo->email \r\n\r\nViele Grüße\r\nIhre Weltfairsteher-Website");
+        own_mail($admin->email, "Etappe$n erreicht", "Guten Tag,\r\nDie Klasse \"$classInfo->name\" hat die Etappe$n " . implode(", ", $achieved) . " erreicht!\r\nDie Lehrkraft ist: $classInfo->email \r\n\r\nNachhaltige Grüße\r\nIhre Weltfairsteher-Website");
     }
 
-    own_mail($classInfo->email, "Etappe$n erreicht", "Herzlichen Glückwunsch, Ihre  Klasse \"$classInfo->name\" hat bei weltfairsteher die Etappe$n " . implode(", ", $achieved) . " erreicht!\r\n");
+    own_mail($classInfo->email, "Etappe$n erreicht", "Herzlichen Glückwunsch, Ihre  Klasse \"$classInfo->name\" hat bei WeltFAIRsteher die Etappe$n " . implode(", ", $achieved) . " erreicht!\r\nSie erhalten demnächst eine Überraschung per Post\r\n\r\nNachhaltige Grüße\r\nIhr WeltFAIRsteher-Team");
 }
 
 ?>
