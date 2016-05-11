@@ -5,7 +5,7 @@
 
 <br>
 <br>
-<span style="font-size: 19.5px;">
+<span style="font-size: 22.2px;">
 <a href="#was" class="indexlink" style="color: white; background-color: #A27405; margin-left: 1%;"
 ><span data-title="Beschreibung">Beschreibung</span></a>
     <a href="#worum" class="indexlink" style="color: white; background-color: #BA070A; margin-left: 1px;">
@@ -83,7 +83,7 @@
                         </b>
 
                         <div class="abstaende"  style="text-align: justify;background-color: #1BAB3F; padding: 20px;">
-                            Teilnehmen kann jede 6. oder 7. Klasse einer öffentlichen oder privaten Schule in Bayern - unabhängig von der Schulform.
+                            Teilnehmen kann jede 6. oder 7. Klasse einer öffentlichen oder privaten Schule in Deutschland - unabhängig von der Schulform.
 Besonders vorteilhaft ist es natürlich, eine motivierte Lehrkraft zu haben, mit der man an <i>WeltFAIRsteher</i> teilnimmt.
 Übrigens: Eine Klasse kann natürlich auch mit der Unterstützung mehrerer Lehrkräfte teilnehmen, etwa um sowohl im Erdkunde-, als auch im Biologie-Unterricht an Challenges zu arbeiten.
 Anmelden kann euch aber nur eine Lehrkraft, damit wir eine zentrale Ansprechperson haben.
@@ -182,7 +182,8 @@ ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Chal
 
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. Ebenso möglich ist, dass eine zweite und dritte Lehrkraft
     die Verantwortung für eine Klasse übernimmt und Challenges aus seinem oder ihren Fachbereich betreut sowie online einträgt. Die Voraussetzung hierfür ist, dass
-    alle Lehrkräfte einer Klasse das selbe WeltFAIRsteher-Konto benutzen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
+    alle Lehrkräfte einer Klasse das selbe WeltFAIRsteher-Konto benutzen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b> Beginnen könnt
+    ihr sobald das neue Schuljahr 2016/17 in Eurem Bundesland startet.
 </span>
 </div><br>
 
