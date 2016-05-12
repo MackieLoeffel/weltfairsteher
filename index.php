@@ -47,8 +47,10 @@
                         </b>
 
                         <div  class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-                          WeltFAIRsteher ist ein Projekt für Schulklassen der 6. und 7. Jahrgangsstufe, genauer gesagt: ein Wettbewerb, bei dem es darum geht,
-                        gemeinsam als Klasse Aufgaben zu bewältigen, die mit Nachhaltigkeit zu tun haben. Das kann von kleinen handwerklichen Projekten über
+                        WeltFAIRsteher ist ein deutschlandweites Bildungsprojekt für nachhaltige Entwicklung,
+                        in dem Schüler*innen der 6. und 7. Jahrgangsstufen
+                        aller Schulen während eines Jahres durch zahlreiche Challenges spielerisch zum Nachdenken und Handeln angeregt werden.
+                        Das kann von kleinen handwerklichen Projekten über
                         die Organisation und Verspeisung eines ökologisch nachhaltigen Frühstücks bis hin zu unterhaltsamen Spielen,
                         spannenden Referaten und sozialem Engagement reichen.
 
@@ -292,7 +294,7 @@ zu bewahren, sondern auch für unsere Kinder.  </span><br><br><br>
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/hannah-1.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Hannah Witzenrath</span><br>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span><br><br><br>
+Ich bin 1992 geboren und studiere derzeit Politikwissenschaft an der Otto-Friedrich-Universität in Bamberg. Für mich ist ein verantwortungsvoller Umgang mit unseren Mitmenschen und unserer einzigartigen Natur sehr wichtig.</span><br><br><br>
 </div>
 </div>
 
