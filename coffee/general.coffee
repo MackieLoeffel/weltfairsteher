@@ -22,6 +22,13 @@ window.onClassSelectChanged = (f) ->
   f window.selectedClass if window.selectedClass?
   classSelectChanged.push f
 
+window.toggleArrow = (t, dest) ->
+  $(dest).slideToggle(300)
+  $(t).find(".fa").toggleClass("fa-arrow-down")
+  $(t).find(".fa").toggleClass("fa-arrow-up")
+  return
+
+
 $('document').ready ->
   window.selectedClass = localStorage.getItem('selectedClass')
 

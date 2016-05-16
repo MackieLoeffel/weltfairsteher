@@ -46,7 +46,7 @@ z-index: 3;
 
            <span style="font-size: 18px; text-align: center; color: white; margin-left: 2%;">Allgemeine Hinweise</span>	&#x2003;&#x2003;
 
-           <a href="javascript:void(0)" onclick="return toggleMe('teacherinfo')" style="background-color: white; margin-top: 10px;
+           <a href="javascript:void(0)" onclick="return toggleArrow(this, '#teacherinfo')" style="background-color: white; margin-top: 10px;
             border: 2px solid white; border-radius: 30px;"
 
            ><i class="fa fa-arrow-down"></i></a><br>
@@ -263,7 +263,7 @@ padding: 10px;
            height: auto;
            text-align: center">
 <h4 style="color: white;">Feedback: Einzelne Challenges bewerten</h4>
-<a href="javascript:void(0)" onclick="return toggleMe('feedback')" style="background-color: white; margin-top: 10px;
+<a href="javascript:void(0)" onclick="return toggleArrow(this, '#feedback')" style="background-color: white; margin-top: 10px;
  border: 2px solid white; border-radius: 30px;"
 
 ><i class="fa fa-arrow-down"></i></a><br>

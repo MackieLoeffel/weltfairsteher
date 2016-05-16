@@ -30,7 +30,7 @@ margin-top: -56px;
 margin-right: 1%; float: right; height: auto; font-size: 15px; color: white; padding: 10px;">
 <b style="font-size: 18px; float: left;">Neues Leckerwissen hinzufügen</b>	&#x2003;&#x2003;
 
-<a href="javascript:void(0)" onclick="return toggleMe('addLeckerwissen')" style="background-color: white; margin-top: 10px;
+<a href="javascript:void(0)" onclick="return toggleArrow(this, '#addLeckerwissen')" style="background-color: white; margin-top: 10px;
  border: 2px solid white; border-radius: 30px;"
 
 ><i class="fa fa-arrow-down"></i></a><br>

@@ -25,8 +25,6 @@ $('document').ready ->
   selectSelfmade()
 
   $(".slide-down .slide-down-header").each  ->
-    $(this).click ->
-      $(this).siblings(".slide-down-hidden").slideToggle(300)
-      $(this).find(".fa").toggleClass("fa-arrow-down")
-      $(this).find(".fa").toggleClass("fa-arrow-up")
+    $(this).click -> toggleArrow this, $(this).siblings(".slide-down-hidden")
+
   return

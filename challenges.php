@@ -23,7 +23,7 @@ margin-bottom: 5px;
 
         Allgemeine Hinweise</b> 	&#x2003;&#x2003;
 
-          <a href="javascript:void(0)" onclick="return toggleMe('challengeinfo')" style="background-color: white; margin-top: 10px;
+          <a href="javascript:void(0)" onclick="return toggleArrow(this, '#challengeinfo')" style="background-color: white; margin-top: 10px;
            border: 2px solid white; border-radius: 30px;"
 
           ><i class="fa fa-arrow-down"></i></a><br><br>
