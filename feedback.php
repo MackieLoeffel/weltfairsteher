@@ -5,6 +5,8 @@ check_access(ADMIN);
 include "include/header.php"
 ?>
 <br/><br/><br/><br/><br/><br/><br/>
+<a href="api/exportFeedback.php">Feedback exportieren </a>
+
 <table style="color: white; width:98%;">
     <thead><tr>
         <th class="table-head"> Challenge </th>
@@ -19,7 +21,7 @@ include "include/header.php"
         foreach(fetchAll("SELECT f.*, c.name  FROM feedback f JOIN challenge c ON f.challenge = c.id ") as $feedback) {
         ?>
             <tr>
-                <?php foreach(["name", "fun", "integration", "problems", "duration", "comment"] as $row) { ?>
+                <?php foreach(["name", "fun", "integration", "duration", "problems", "comment"] as $row) { ?>
                     <td style="text-align: center;" class="table-lines"> <?= e($feedback->$row) ?> </td>
                     <?php }?>
             </tr>
