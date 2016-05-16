@@ -269,7 +269,7 @@ padding: 10px;
 ><i class="fa fa-arrow-down"></i></a><br>
 <span id="feedback" style="display:none; font-size: 12px;">
 Bitte jede Challenge-Bewertung einzeln abschicken. (Die Daten gehen anonym ein.)<br><br>
-<form action="mailto:kontakt@weltfairsteher.jetzt" method="post">
+<form id="addFeedback" action="javascript:void(0);" onsubmit="sendForm(this)">
 
   <b>Die Challenge:</b> <select style="color: black;" name="challenge">
     <?php foreach(fetchAll("SELECT id, name FROM challenge") as $c) {?>
@@ -277,11 +277,11 @@ Bitte jede Challenge-Bewertung einzeln abschicken. (Die Daten gehen anonym ein.)
     <?php } ?></select>
     <br><br>
     <b>...machte den Schüler*innen Spaß:</b><br>
-Nein:<input class="" type="radio" name="spass" value="1" /><br>
-Kaum:<input class="" type="radio" name="spass" value="2" /><br>
-Teils teils:<input class="" type="radio" name="spass" value="3" /><br>
-Ziemlich:<input class="" type="radio" name="spass" value="4" /><br>
-Sehr:<input class="" type="radio" name="spass" value="5" /><br>
+Nein:<input class="" type="radio" name="fun" value="1" /><br>
+Kaum:<input class="" type="radio" name="fun" value="2" /><br>
+Teils teils:<input class="" type="radio" name="fun" value="3" /><br>
+Ziemlich:<input class="" type="radio" name="fun" value="4" /><br>
+Sehr:<input class="" type="radio" name="fun" value="5" /><br>
 <br><br>
 <b>...konnte wie beschrieben in den Unterricht oder Schüler*innen-Alltag integriert werden:</b><br>
 Nein:<input class="" type="radio" name="integration" value="1" /><br>
@@ -291,24 +291,25 @@ Ziemlich:<input class="" type="radio" name="integration" value="4" /><br>
 Voll und ganz:<input class="" type="radio" name="integration" value="5" /><br>
 <br><br>
 <b>...dauerte so lange wie angegeben:</b><br>
-Länger:<input class="" type="radio" name="dauer" value="1" /><br>
-Etwas länger:<input class="" type="radio" name="dauer" value="2" /><br>
-Wie angegeben:<input class="" type="radio" name="dauer" value="3" /><br>
-Etwas kürzer:<input class="" type="radio" name="dauer" value="4" /><br>
-Kürzer:<input class="" type="radio" name="dauer" value="5" /><br>
+Länger:<input class="" type="radio" name="duration" value="1" /><br>
+Etwas länger:<input class="" type="radio" name="duration" value="2" /><br>
+Wie angegeben:<input class="" type="radio" name="duration" value="3" /><br>
+Etwas kürzer:<input class="" type="radio" name="duration" value="4" /><br>
+Kürzer:<input class="" type="radio" name="duration" value="5" /><br>
 <br><br>
 <b>...warf Probleme bei der Durchführung auf:</b><br>
-Keine:<input class="" type="radio" name="problem" value="1" /><br>
-Kaum:<input class="" type="radio" name="problem" value="2" /><br>
-Teils teils:<input class="" type="radio" name="problem" value="3" /><br>
-Manche:<input class="" type="radio" name="problem" value="4" /><br>
-Viele:<input class="" type="radio" name="problem" value="5" /><br>
+Keine:<input class="" type="radio" name="problems" value="1" /><br>
+Kaum:<input class="" type="radio" name="problems" value="2" /><br>
+Teils teils:<input class="" type="radio" name="problems" value="3" /><br>
+Manche:<input class="" type="radio" name="problems" value="4" /><br>
+Viele:<input class="" type="radio" name="problems" value="5" /><br>
 <br><br>
 
 
     Optionale Nachricht:
-    <textarea name="text" value="" cols="39" rows="5"></textarea><br><br>
-    <input type="submit" style="background-color: green; color: white; value="Diese Challenge-Bewertung abschicken"> <input type="reset" value="Zurücksetzen">
+    <textarea name="comment" value="" cols="39" rows="5"></textarea><br><br>
+    <input type="submit" style="background-color: green; color: white; value="Diese Challenge-Bewertung abschicken">
+    <input type="reset" value="Zurücksetzen">
   </form>
   <span id="kontaktdaten"></span>
     </span>
@@ -364,7 +365,7 @@ padding: 10px;
    <br>
    <br> <br>
    <br> <br>
-    
+
    <br>
    <br>
    <br>
