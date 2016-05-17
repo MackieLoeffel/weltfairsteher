@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 06, 2016 at 03:21 PM
--- Server version: 10.1.9-MariaDB
--- PHP Version: 5.6.15
+-- Erstellungszeit: 17. Mai 2016 um 06:27
+-- Server-Version: 10.1.9-MariaDB
+-- PHP-Version: 5.6.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `website`
+-- Datenbank: `website`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `challenge`
+-- Tabellenstruktur für Tabelle `challenge`
 --
 
 CREATE TABLE `challenge` (
@@ -33,33 +33,41 @@ CREATE TABLE `challenge` (
   `points` int(11) NOT NULL,
   `category` enum('food','energy','culture','climate-change','production','selfmade','water') COLLATE utf8_bin NOT NULL,
   `author` int(11) DEFAULT NULL,
-  `author_time` datetime DEFAULT CURRENT_TIMESTAMP
+  `author_time` datetime DEFAULT NULL,
+  `location` enum('home','school','teacher') COLLATE utf8_bin NOT NULL,
+  `extrapoints` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `challenge`
+-- Daten für Tabelle `challenge`
 --
 
-INSERT INTO `challenge` (`id`, `name`, `description`, `points`, `category`, `author`, `author_time`) VALUES
-(1, 'Bio-Frühstück', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 4, 'food', NULL, NULL),
-(3, 'Beispielchallenge', 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. ', 2, 'energy', NULL, NULL),
-(4, 'Beispielchallenge', 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. ', 2, 'culture', NULL, NULL),
-(5, 'Beispielchallenge', 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. ', 2, 'climate-change', NULL, NULL),
-(6, 'Beispielchallenge', 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. ', 2, 'production', NULL, NULL),
-(7, 'Bio-Frühstück2', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 7, 'energy', NULL, NULL),
-(8, 'SelfMade-Essen', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 7, 'selfmade', 1, '2016-01-01 12:00:00'),
-(9, 'SelfMade-Essen2', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 2, '2016-01-04 12:17:00'),
-(10, 'SelfMade-Essen3', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2015-12-25 12:26:00'),
-(11, 'SelfMade-Essen4', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2015-12-28 00:00:00'),
-(12, 'SelfMade-Essen5', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2016-01-07 06:00:00'),
-(13, 'SelfMade-Essen6', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 2, '2016-01-05 12:27:00'),
-(14, 'Wasser1', 'Wasser, Wasser, Wasser...', 1, 'water', NULL, '2016-01-30 20:42:40'),
-(15, 'Wasser2', 'gaaaanz viel Wasser!', 2, 'water', NULL, '2016-01-30 20:42:56');
+INSERT INTO `challenge` (`id`, `name`, `description`, `points`, `category`, `author`, `author_time`, `location`, `extrapoints`) VALUES
+(1, 'Bio-Frühstück', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 4, 'food', NULL, NULL, 'teacher', 8),
+(3, 'Beispielchallenge', 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. ', 2, 'energy', NULL, NULL, 'home', NULL),
+(4, 'Beispielchallenge', 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. ', 2, 'culture', NULL, NULL, 'home', NULL),
+(5, 'Beispielchallenge', 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. ', 2, 'climate-change', NULL, NULL, 'home', NULL),
+(6, 'Beispielchallenge', 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. ', 2, 'production', NULL, NULL, 'teacher', NULL),
+(7, 'Bio-Frühstück2', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 7, 'energy', NULL, NULL, 'home', NULL),
+(8, 'SelfMade-Essen', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 7, 'selfmade', 1, '2016-01-01 12:00:00', 'home', NULL),
+(9, 'SelfMade-Essen2', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 2, '2016-01-04 12:17:00', 'home', NULL),
+(10, 'SelfMade-Essen3', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2015-12-25 12:26:00', 'home', NULL),
+(11, 'SelfMade-Essen4', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2015-12-28 00:00:00', 'home', NULL),
+(12, 'SelfMade-Essen5', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2016-01-07 06:00:00', 'home', NULL),
+(13, 'SelfMade-Essen6', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 2, '2016-01-05 12:27:00', 'home', NULL),
+(14, 'Wasser1', 'Wasser, Wasser, Wasser...', 1, 'water', NULL, '2016-01-30 20:42:40', 'school', NULL),
+(15, 'Wasser2', 'gaaaanz viel Wasser!', 2, 'water', NULL, '2016-01-30 20:42:56', 'home', NULL),
+(16, 'dasd', 'Challenge-Beschreibungdasdasdsadas', 1, 'selfmade', NULL, '2016-04-30 21:59:40', 'teacher', NULL),
+(17, 'dasd', 'Challenge-Beschreibungdasdasdsadas', 1, 'selfmade', NULL, '2016-04-30 22:01:26', 'teacher', NULL),
+(18, 'dasd', 'Challenge-Beschreibungdasdasdsadas', 1, 'selfmade', NULL, '2016-04-30 22:03:03', 'teacher', NULL),
+(19, 'oioli', 'Challenge-Beschreibung', 1, 'selfmade', NULL, '2016-05-01 16:01:39', 'home', 6),
+(20, 'aaaaaaaaaa', 'Challenge-Beschreibung', 1, 'selfmade', NULL, '2016-05-01 18:20:46', 'home', NULL),
+(21, 'aaaaaaaaaa', 'Challenge-Beschreibung', 1, 'selfmade', 1, '2016-05-01 18:37:03', 'home', NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `class`
+-- Tabellenstruktur für Tabelle `class`
 --
 
 CREATE TABLE `class` (
@@ -69,7 +77,7 @@ CREATE TABLE `class` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `class`
+-- Daten für Tabelle `class`
 --
 
 INSERT INTO `class` (`id`, `name`, `teacher`) VALUES
@@ -80,7 +88,52 @@ INSERT INTO `class` (`id`, `name`, `teacher`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `leckerwissen`
+-- Tabellenstruktur für Tabelle `feedback`
+--
+
+CREATE TABLE `feedback` (
+  `id` int(11) NOT NULL,
+  `challenge` int(11) NOT NULL,
+  `fun` int(11) NOT NULL,
+  `integration` int(11) NOT NULL,
+  `duration` int(11) NOT NULL,
+  `problems` int(11) NOT NULL,
+  `comment` text COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Daten für Tabelle `feedback`
+--
+
+INSERT INTO `feedback` (`id`, `challenge`, `fun`, `integration`, `duration`, `problems`, `comment`) VALUES
+(1, 1, 1, 3, 1, 5, ''),
+(2, 1, 1, 3, 1, 5, 'dasdsad'),
+(3, 14, 1, 2, 3, 4, 'Hallo!"";"34');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `forgot`
+--
+
+CREATE TABLE `forgot` (
+  `id` varchar(40) COLLATE utf8_bin NOT NULL,
+  `user` int(11) NOT NULL,
+  `created_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Daten für Tabelle `forgot`
+--
+
+INSERT INTO `forgot` (`id`, `user`, `created_at`) VALUES
+('8d451a979817ba96df103ac1e8352484', 3, '2016-05-02 10:51:52'),
+('9b451ea8bd3ff91fd20ad7e661b28bd8', 3, '2016-05-02 10:55:10');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `leckerwissen`
 --
 
 CREATE TABLE `leckerwissen` (
@@ -92,7 +145,7 @@ CREATE TABLE `leckerwissen` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `leckerwissen`
+-- Daten für Tabelle `leckerwissen`
 --
 
 INSERT INTO `leckerwissen` (`id`, `link`, `title`, `category`, `type`) VALUES
@@ -116,12 +169,13 @@ INSERT INTO `leckerwissen` (`id`, `link`, `title`, `category`, `type`) VALUES
 (33, 'http://ec.europa.eu/environment/pubs/pdf/factsheets/water_scarcity/de.pdf', 'Dürre in der EU', 'energy', 'article'),
 (34, 'http://www.biorama.eu/', 'Biorama - Magazin für nachhaltigen Lebensstil', 'other', 'other'),
 (35, 'http://www.degrowth.de/de/?', 'Degrowth - Antiwachstumsbewegung', 'culture', 'other'),
-(36, 'http://www.klimaretter.info/', 'Klimaretter - Magazin zur Klima- und Energiewende', 'other', 'other');
+(36, 'http://www.klimaretter.info/', 'Klimaretter - Magazin zur Klima- und Energiewende', 'other', 'other'),
+(37, 'http://example.de', 'dasd', 'culture', 'video');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `milestone`
+-- Tabellenstruktur für Tabelle `milestone`
 --
 
 CREATE TABLE `milestone` (
@@ -131,7 +185,7 @@ CREATE TABLE `milestone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `milestone`
+-- Daten für Tabelle `milestone`
 --
 
 INSERT INTO `milestone` (`id`, `points`, `description`) VALUES
@@ -141,31 +195,32 @@ INSERT INTO `milestone` (`id`, `points`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `solved_challenge`
+-- Tabellenstruktur für Tabelle `solved_challenge`
 --
 
 CREATE TABLE `solved_challenge` (
   `id` int(11) NOT NULL,
   `at` datetime NOT NULL,
   `class` int(11) NOT NULL,
-  `challenge` int(11) NOT NULL
+  `challenge` int(11) NOT NULL,
+  `extra` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `solved_challenge`
+-- Daten für Tabelle `solved_challenge`
 --
 
-INSERT INTO `solved_challenge` (`id`, `at`, `class`, `challenge`) VALUES
-(1, '2015-12-25 07:28:34', 1, 1),
-(2, '2015-12-24 00:00:00', 1, 11),
-(3, '2015-12-23 20:00:00', 2, 5),
-(4, '2015-12-24 16:00:00', 3, 7),
-(5, '2016-01-31 13:19:45', 2, 15);
+INSERT INTO `solved_challenge` (`id`, `at`, `class`, `challenge`, `extra`) VALUES
+(1, '2015-12-25 07:28:34', 1, 1, 0),
+(2, '2015-12-24 00:00:00', 1, 11, 0),
+(3, '2015-12-23 20:00:00', 2, 5, 0),
+(4, '2015-12-24 16:00:00', 3, 7, 0),
+(5, '2016-01-31 13:19:45', 2, 15, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `suggested`
+-- Tabellenstruktur für Tabelle `suggested`
 --
 
 CREATE TABLE `suggested` (
@@ -173,20 +228,22 @@ CREATE TABLE `suggested` (
   `title` text COLLATE utf8_bin NOT NULL,
   `description` text COLLATE utf8_bin NOT NULL,
   `class` int(11) DEFAULT NULL,
-  `points` int(11) NOT NULL
+  `points` int(11) NOT NULL,
+  `location` enum('home','school','teacher') COLLATE utf8_bin NOT NULL,
+  `extrapoints` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `suggested`
+-- Daten für Tabelle `suggested`
 --
 
-INSERT INTO `suggested` (`id`, `title`, `description`, `class`, `points`) VALUES
-(3, 'Hallo!', 'Challenge-Beschreibung', 2, 7);
+INSERT INTO `suggested` (`id`, `title`, `description`, `class`, `points`, `location`, `extrapoints`) VALUES
+(3, 'Hallo!', 'Challenge-Beschreibung', 2, 7, 'home', NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Tabellenstruktur für Tabelle `user`
 --
 
 CREATE TABLE `user` (
@@ -197,7 +254,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `user`
+-- Daten für Tabelle `user`
 --
 
 INSERT INTO `user` (`id`, `password`, `email`, `role`) VALUES
@@ -205,18 +262,18 @@ INSERT INTO `user` (`id`, `password`, `email`, `role`) VALUES
 (4, '$2y$10$CenkCYnbeP01VK5PMheAnuWC6HaqoukjkldCHCqkzSVmfCj7Av8UG', 'teacher@test.de', 1);
 
 --
--- Indexes for dumped tables
+-- Indizes der exportierten Tabellen
 --
 
 --
--- Indexes for table `challenge`
+-- Indizes für die Tabelle `challenge`
 --
 ALTER TABLE `challenge`
   ADD PRIMARY KEY (`id`),
   ADD KEY `author` (`author`);
 
 --
--- Indexes for table `class`
+-- Indizes für die Tabelle `class`
 --
 ALTER TABLE `class`
   ADD PRIMARY KEY (`id`),
@@ -224,20 +281,33 @@ ALTER TABLE `class`
   ADD KEY `teacher` (`teacher`);
 
 --
--- Indexes for table `leckerwissen`
+-- Indizes für die Tabelle `feedback`
+--
+ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indizes für die Tabelle `forgot`
+--
+ALTER TABLE `forgot`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user` (`user`);
+
+--
+-- Indizes für die Tabelle `leckerwissen`
 --
 ALTER TABLE `leckerwissen`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `milestone`
+-- Indizes für die Tabelle `milestone`
 --
 ALTER TABLE `milestone`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `points` (`points`);
 
 --
--- Indexes for table `solved_challenge`
+-- Indizes für die Tabelle `solved_challenge`
 --
 ALTER TABLE `solved_challenge`
   ADD PRIMARY KEY (`id`),
@@ -246,83 +316,94 @@ ALTER TABLE `solved_challenge`
   ADD KEY `challenge` (`challenge`);
 
 --
--- Indexes for table `suggested`
+-- Indizes für die Tabelle `suggested`
 --
 ALTER TABLE `suggested`
   ADD PRIMARY KEY (`id`),
   ADD KEY `class` (`class`);
 
 --
--- Indexes for table `user`
+-- Indizes für die Tabelle `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT für exportierte Tabellen
 --
 
 --
--- AUTO_INCREMENT for table `challenge`
+-- AUTO_INCREMENT für Tabelle `challenge`
 --
 ALTER TABLE `challenge`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
--- AUTO_INCREMENT for table `class`
+-- AUTO_INCREMENT für Tabelle `class`
 --
 ALTER TABLE `class`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `leckerwissen`
+-- AUTO_INCREMENT für Tabelle `feedback`
 --
-ALTER TABLE `leckerwissen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
---
--- AUTO_INCREMENT for table `milestone`
---
-ALTER TABLE `milestone`
+ALTER TABLE `feedback`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `solved_challenge`
+-- AUTO_INCREMENT für Tabelle `leckerwissen`
+--
+ALTER TABLE `leckerwissen`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+--
+-- AUTO_INCREMENT für Tabelle `milestone`
+--
+ALTER TABLE `milestone`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT für Tabelle `solved_challenge`
 --
 ALTER TABLE `solved_challenge`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT for table `suggested`
+-- AUTO_INCREMENT für Tabelle `suggested`
 --
 ALTER TABLE `suggested`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT für Tabelle `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
--- Constraints for dumped tables
+-- Constraints der exportierten Tabellen
 --
 
 --
--- Constraints for table `challenge`
+-- Constraints der Tabelle `challenge`
 --
 ALTER TABLE `challenge`
   ADD CONSTRAINT `challenge_ibfk_1` FOREIGN KEY (`author`) REFERENCES `class` (`id`) ON DELETE SET NULL;
 
 --
--- Constraints for table `class`
+-- Constraints der Tabelle `class`
 --
 ALTER TABLE `class`
   ADD CONSTRAINT `class_ibfk_1` FOREIGN KEY (`teacher`) REFERENCES `user` (`id`);
 
 --
--- Constraints for table `solved_challenge`
+-- Constraints der Tabelle `forgot`
+--
+ALTER TABLE `forgot`
+  ADD CONSTRAINT `forgot_ibfk_1` FOREIGN KEY (`user`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints der Tabelle `solved_challenge`
 --
 ALTER TABLE `solved_challenge`
   ADD CONSTRAINT `solved_challenge_ibfk_1` FOREIGN KEY (`class`) REFERENCES `class` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `solved_challenge_ibfk_2` FOREIGN KEY (`challenge`) REFERENCES `challenge` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `suggested`
+-- Constraints der Tabelle `suggested`
 --
 ALTER TABLE `suggested`
   ADD CONSTRAINT `suggested_ibfk_1` FOREIGN KEY (`class`) REFERENCES `class` (`id`) ON DELETE SET NULL;
