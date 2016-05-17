@@ -99,7 +99,7 @@ include "include/header.php";
     <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
 </form>
 <?php }); slideDown("Klasse löschen", function() { ?>
-<form id="deleteClassBox" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
+<form id="deleteClass" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     <input type="hidden" name="table" value="class" />
     <select style="color: black;" name="id">
         <?php foreach(fetchAll("SELECT id, name FROM class") as $class) {?>
@@ -248,7 +248,7 @@ include "include/header.php";
     </div>
 </form>
 <?php }); slideDown("Challenge löschen", function() { ?>
-<form id="deleteChallengeBox" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this, {'api': 'deleteEntry'})">
+<form id="deleteChallenge" class="slide-down-hidden" action="javascript:void(0);" onsubmit="sendForm(this)">
     <input type="hidden" name="table" value="challenge" />
     <select style="color: black;" name="id">
         <?php foreach(fetchAll("SELECT id, name FROM challenge") as $challenge) {?>
