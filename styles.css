@@ -444,7 +444,7 @@ border-bottom: 3px solid white;
 .indexlink
 
 span a {
-  color: #a60f9c;
+  color: #12CC94;
   display: inline-block;
   text-decoration: none;
   overflow: hidden;
@@ -459,7 +459,7 @@ span a {
   perspective-origin: 50% 50%;
 }
  span a:hover span {
-  background: #a60f9c;
+  background: #12CC94;
   -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
   -moz-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
   -ms-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
@@ -490,7 +490,7 @@ span a span {
   top: 0;
   padding: 0 3px;
   color: #fff;
-  background: #a60f9c;
+  background: #12CC94;
   -webkit-transform-origin: 50% 0%;
   -moz-transform-origin: 50% 0%;
   -ms-transform-origin: 50% 0%;

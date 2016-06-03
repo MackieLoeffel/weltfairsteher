@@ -5,7 +5,7 @@
 
 <br>
 <br>
-<span style="font-size: 22.2px;">
+<span style="font-size: 22px;">
 <a href="#was" class="indexlink" style="color: white; background-color: #A27405; margin-left: 1%;"
 ><span data-title="Beschreibung">Beschreibung</span></a>
     <a href="#worum" class="indexlink" style="color: white; background-color: #BA070A; margin-left: 1px;">
@@ -52,7 +52,8 @@
                         aller Schulen während eines Jahres durch zahlreiche Challenges spielerisch zum Nachdenken und Handeln angeregt werden.
                         Das kann von kleinen handwerklichen Projekten über
                         die Organisation und Verspeisung eines ökologisch nachhaltigen Frühstücks bis hin zu unterhaltsamen Spielen,
-                        spannenden Referaten und sozialem Engagement reichen.
+                        spannenden Referaten und sozialem Engagement reichen. Die erste WeltFAIRsteher-Saison beginnt am 04. Oktober 2016 und dauert
+                        bis 23. Juni 2017.
 
                             </div><br>
                         <b>
@@ -61,7 +62,7 @@
 
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
                         Nachhaltigkeit ist ein sehr vielseitiges Thema, das in fast jeden Lebensbereich dringt.
-                        Kurz zusammengefasst bedeutet es Fairness auf drei gleichwertigen Ebenen, nämlich:
+                        Kurz zusammengefasst bedeutet es vor allem Fairness auf drei Ebenen, nämlich:
                         <ul>
                         <li> <b>Ökologie</b>, also die Beziehungen von Organismen wie Menschen, Tieren oder Pflanzen zu ihrer Umwelt,</li>
                       <li>  <b>Soziales</b>, also die Art und Weise, wie Menschen
@@ -112,15 +113,16 @@ des Schuljahres schließlich kontrolliert um einen möglichst fairen Wettbewerb 
 <br><br>
 Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr eine Idee für eine neue Challenge habt,
 so könnt ihr sie von eurer verantwortlichen Lehrkraft online im <i>Lehrkraft-Bereich</i> vorschlagen lassen. Wenn die vorgeschlagene Challenge den nachhaltigen
-Kriterien entspricht, so schalten wir sie als sogenannte <i>Eigenkreation</i> frei und jede Klasse kann versuchen, die Challenge zu absolvieren.
+Kriterien entspricht, so schalten wir sie als sogenannte <i>Eigenkreation</i> frei und jede Klasse kann versuchen, die Challenge zu absolvieren. Jede Klasse kann bis zu
+fünf solcher Eigenkreationen erfolgreich einreichen.
 Was habt ihr als kreative Köpfe hinter der neuen Challenge davon? Zweierlei! Erstens habt ihr einen Beitrag zum Gelingen des Projekts geleistet, weil
 es um eine Idee bereichert wurden. Und zweitens erhaltet ihr darüber hinaus einen Kreativitätsbonus! <br><br>
 Für jede erfolgreich vorgeschlagene Challenge wird euer
-Kreativitätsbonus vom Anfangswert 1 um 0,2 erhöht. Der neue Wert wird dann mit euren Punkten multipliziert. Ein kleines Rechenbeispiel verdeutlicht am besten,
+Kreativitätsbonus vom Anfangswert 1 um 0,1 erhöht. Der neue Wert wird dann mit euren Punkten multipliziert. Ein kleines Rechenbeispiel verdeutlicht am besten,
 wie wertvoll dieser Bonus für euch sein kann:
- Angenommen euer Konto weist einen Wert von 30 Punkten auf. Eine erfolgreich eingebrachte Eigenkreation erhöht euren Kreativitätsbonus auf 1,2.
- Euer Punktestand beträgt sodann 30 mal 1,2 = 36 Punkte. Habt ihr stattdessen sogar zwei Eigenkreationen erfolgreich eingreicht, so erhöht sich
- euer Punktestand auf 30 mal 1,4 = 42 Punkte. Und <i>WeltFAIRsteher</i> ist um zwei tolle Aufgaben reicher geworden. Das lohnt sich!
+ Angenommen euer Konto weist einen Wert von 30 Punkten auf. Eine erfolgreich eingebrachte Eigenkreation erhöht euren Kreativitätsbonus auf 1,1.
+ Euer Punktestand beträgt sodann 30 mal 1,1 = 33 Punkte. Habt ihr stattdessen sogar zwei Eigenkreationen erfolgreich eingreicht, so erhöht sich
+ euer Punktestand auf 30 mal 1,2 = 36 Punkte. Und <i>WeltFAIRsteher</i> ist um zwei tolle Aufgaben reicher geworden. Das lohnt sich!
  <br><br>
  Falls ihr dafür auf Ideensuche seid oder einfach mehr über das Thema Nachhaltigkeit erfahren wollt,
  findet ihr im <i>Leckerwissen</i> viele hilfreiche Informationen und Links zu themenverwandten Seiten.
@@ -184,8 +186,8 @@ ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Chal
 
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. Ebenso möglich ist, dass eine zweite und dritte Lehrkraft
     die Verantwortung für eine Klasse übernimmt und Challenges aus seinem oder ihren Fachbereich betreut sowie online einträgt. Die Voraussetzung hierfür ist, dass
-    alle Lehrkräfte einer Klasse das selbe WeltFAIRsteher-Konto benutzen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b> Beginnen könnt
-    ihr sobald das neue Schuljahr 2016/17 in Eurem Bundesland startet.
+    alle Lehrkräfte einer Klasse das selbe WeltFAIRsteher-Konto benutzen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b> Ab dann könnt ihr auch mit den Challenges starten.
+
 </span>
 </div><br>
 
@@ -310,11 +312,7 @@ denn nur zusammen können wir wirklich etwas erreichen.</span><br><br><br>
 </div>
 
 
-<div class="col-xs-12 col-sm-6 col-md-6" >
-<img src="" alt="bild-marie" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Marie Fath</span><br>
-Ich bin 1996 geboren und studiere Katholische Theologie, Pädagogik sowie Politikwissenschaft an der Universität Bamberg. Nachhaltigkeit ist mir wichtig, weil ich mich für ein gutes Leben für alle auch in Zukunft einsetzen will.</span><br><br><br>
-</div>
+
 </div>
 
 
