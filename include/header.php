@@ -122,6 +122,7 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                                'Lehrkraft-Bereich' => "teacher.php"];
                                      if(isAdmin()) {
                                          $sites["Admin"] = "admin.php";
+                                          $sites["Feedback"] = "feedback.php";
                                      }
                                      if(isLoggedIn()) {
                                          $sites["Logout"] = "logout.php";
@@ -212,7 +213,7 @@ width: 40%; text-align: center; color: black; background-color: yellow;">
              }
             </script>
 
-            <body style="background-color: #C5F2B6; font-family: Amaranth; display:flex; min-height:100vh; flex-direction:column">
+            <body style="background-color: #F2F2DA; font-family: Amaranth; display:flex; min-height:100vh; flex-direction:column">
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstraps/js/bootstrap.min.js"></script>
     <div id="fb-root"></div>

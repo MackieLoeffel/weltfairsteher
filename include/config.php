@@ -27,7 +27,7 @@ if(!defined('CONFIG_PHP')) {
     $leckerwissenTypes = [
         ['name' => 'article', "desc" => "Artikel"],
         ['name' => 'video', "desc" => "Videos"],
-        ['name' => 'other', "desc" => "Sonstiges"]
+        ['name' => 'other', "desc" => "Weiteres"]
     ];
     $locationTypes = [
         ['name' => "home", "desc" => "Zuhause"],

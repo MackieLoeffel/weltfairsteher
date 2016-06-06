@@ -30,9 +30,9 @@ margin-bottom: 5px;
 <span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify; font-size: 11px; color: black;">Auf dieser Seite findet ihr alle Challenges,
   die ihr bei WeltFAIRsteher absolvieren könnt.
    In welcher Reihenfolge ihr dabei versucht, Aufgaben zu lösen, ist im Grunde egal. Ebenso könnt ihr selbst entscheiden, wie viele
-   Challenges ihr in die Tat umsetzt.
-Euch fehlt eine Challenge? Wenn ihr selbst eine sinnvolle Idee habt, dann entwickelt daraus doch eine Eigenkreation
-und lasst sie von eurer Lehrkraft im Lehrkraft-Bereich vorschlagen.<br><br>
+   Challenges ihr in die Tat umsetzt.  Die sechs vorgegebenen Kategorien, aus denen ihr wählen könnt, sollen "Nachhaltigkeit" übrigens nicht umfassend abbilden.
+Euch fehlt also eine Challenge? Wenn ihr selbst eine sinnvolle Idee habt, dann entwickelt daraus doch eine Eigenkreation
+und lasst sie von eurer Lehrkraft im Lehrkraft-Bereich vorschlagen. Das geht auch unabhängig von den sechs Kategorien.<br><br>
 Wenn ihr mehr Informationen zu einer Challenge wollt, so klickt auf den Titel und lest am besten auch die dazugehörige PDF-Datei,
 die ihr jeweils herunterladen könnt. Wenn ihr eine Klasse in der Navigationsleiste auswählt, so seht ihr anhand der grünen Titel, welche
 Challenges diese Klasse bereits absolviert hat. Wie viel Punkte ihr für eine

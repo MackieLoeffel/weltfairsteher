@@ -135,7 +135,7 @@ wie wertvoll dieser Bonus für euch sein kann:
  Unter dem Reiter <i>Challenges</i> findet ihr natürlich alle Aufgaben, die euch zur Auswahl stehen - auch diejenigen, die
  ihr oder eine andere Klasse als Eigenkreation einbringen konnte. Die Challenges sind zwar thematisch nach Kategorien geordnet - ihr
  müsst sie aber nicht in einer Reihenfolge absolvieren. Die Zahl, die bei jeder Challenge steht, repräsentiert die Punkte, die ihr bekommt,
- wenn ihr die Challenge erfolgreich abschließt. Wenn ihr eine Challenge gewählt habt, könnt ihr manchmal eigenständig mithilfe der dazugehörigen PDF-Datei loslegen oder die Durchführung
+ wenn ihr die Challenge erfolgreich abschließt. Wenn ihr euch für eine Challenge entschieden habt, könnt ihr entweder eigenständig mithilfe der dazugehörigen PDF-Datei loslegen oder die Durchführung
  mit einer Lehrkraft organisieren. Für diese Organisation empfehlen wir euch, ein oder zwei Personen in eurer Klasse auszuwählen, die euch bei WeltFAIRsteher vertreten, um diesbezüglich in
  engem Kontakt mit den Lehrer*innen zu stehen - Klassensprecher*innen für die Nachhaltigkeitschallenge sozusagen.
 
