@@ -122,7 +122,11 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                                'Lehrkraft-Bereich' => "teacher.php"];
                                      if(isAdmin()) {
                                          $sites["Admin"] = "admin.php";
-                                          $sites["Feedback"] = "feedback.php";
+
+
+
+                                         $sites["Feedback"] = "feedback.php";
+
                                      }
                                      if(isLoggedIn()) {
                                          $sites["Logout"] = "logout.php";

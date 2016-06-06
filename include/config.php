@@ -175,7 +175,7 @@ ORDER BY at
                 if($ch["extra"] && $ch["extrapoints"]) {
                     $points += $ch["extrapoints"];
                 }
-                $creativity += $ch["creativity"] * 0.2;
+                $creativity += $ch["creativity"] * 0.1;
             }
             $ret[$class] = ["points" => $history,
                             "creativity" => $creativity,

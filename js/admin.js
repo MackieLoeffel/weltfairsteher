@@ -45,9 +45,7 @@
     selectSelfmade();
     $(".slide-down .slide-down-header").each(function() {
       return $(this).click(function() {
-        $(this).siblings(".slide-down-hidden").slideToggle(300);
-        $(this).find(".fa").toggleClass("fa-arrow-down");
-        return $(this).find(".fa").toggleClass("fa-arrow-up");
+        return toggleArrow(this, $(this).siblings(".slide-down-hidden"));
       });
     });
   });

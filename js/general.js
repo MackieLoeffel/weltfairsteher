@@ -32,6 +32,12 @@
     return classSelectChanged.push(f);
   };
 
+  window.toggleArrow = function(t, dest) {
+    $(dest).slideToggle(300);
+    $(t).find(".fa").toggleClass("fa-arrow-down");
+    $(t).find(".fa").toggleClass("fa-arrow-up");
+  };
+
   $('document').ready(function() {
     var classSelect, classes;
     window.selectedClass = localStorage.getItem('selectedClass');

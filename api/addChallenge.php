@@ -2,6 +2,8 @@
 include __DIR__."/include.php";
 check_access(TEACHER);
 
+define("MAX_SELFMADE_PER_CLASS", 5);
+
 list($class, $title, $desc, $points, $suggested, $category, $location, $extrapoints) = apiCheckParams(
     "class", "title", "description", "points", "suggested", "category", "location", "extrapoints");
 $user = $_SESSION["user"];
@@ -22,6 +24,9 @@ apiCheck(!$suggested || dbExists("SELECT id FROM class WHERE id = :id", ["id" =>
 apiCheck(isAdmin() || $suggested, "Keine Berechtigung");
 apiCheck($suggested || $category === "selfmade" || array_filter($categories, function($cat) use ($category) { return $cat->name === $category; }), "Ungültige Kategorie");
 apiCheck(array_filter($locationTypes, function($lt) use ($location) { return $lt["name"] === $location; }), "Ungültige Location!");
+
+apiCheck(!$suggested || fetch("SELECT COUNT(*) AS count FROM (SELECT class FROM suggested UNION ALL SELECT author AS class FROM challenge) AS c WHERE c.class = :id", ["id" => $class])->count < MAX_SELFMADE_PER_CLASS,
+         "Es sind maximal " . MAX_SELFMADE_PER_CLASS . " Eigenkreationen pro Klasse erlaubt.");
 
 apiAction(function() use ($title, $desc, $class, $points, $suggested, $category, $location, $extrapoints) {
     if($suggested) {

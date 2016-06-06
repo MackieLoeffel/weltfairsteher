@@ -2,10 +2,17 @@
 -- version 3.4.11.1deb2+deb7u2
 -- http://www.phpmyadmin.net
 --
+<<<<<<< HEAD
 -- Host: wp221.webpack.hosteurope.de
 -- Erstellungszeit: 30. Apr 2016 um 22:30
 -- Server Version: 5.5.46
 -- PHP-Version: 5.4.45-0+deb7u2
+=======
+-- Host: 127.0.0.1
+-- Erstellungszeit: 17. Mai 2016 um 06:27
+-- Server-Version: 10.1.9-MariaDB
+-- PHP-Version: 5.6.15
+>>>>>>> efd16b9c33d022f3ec54c8cef120f4b1475ec5fd
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,7 +24,11 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
+<<<<<<< HEAD
 -- Datenbank: `db10460403-weltfairsteher`
+=======
+-- Datenbank: `website`
+>>>>>>> efd16b9c33d022f3ec54c8cef120f4b1475ec5fd
 --
 
 -- --------------------------------------------------------
@@ -34,15 +45,22 @@ CREATE TABLE IF NOT EXISTS `challenge` (
   `category` enum('food','energy','culture','climate-change','production','selfmade','water') COLLATE utf8_bin NOT NULL,
   `author` int(11) DEFAULT NULL,
   `author_time` datetime DEFAULT NULL,
+<<<<<<< HEAD
   `location` enum('home','teacher','school') COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`),
   KEY `author` (`author`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=54 ;
+=======
+  `location` enum('home','school','teacher') COLLATE utf8_bin NOT NULL,
+  `extrapoints` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+>>>>>>> efd16b9c33d022f3ec54c8cef120f4b1475ec5fd
 
 --
 -- Daten für Tabelle `challenge`
 --
 
+<<<<<<< HEAD
 INSERT INTO `challenge` (`id`, `name`, `description`, `points`, `category`, `author`, `author_time`, `location`) VALUES
 (16, 'Barnga', 'Spielt angeleitet von eurer Lehrkraft das spannende Kartenspiel Barnga, um eine ganz besondere Erfahrung zu machen. Teilnehmen kann dabei die gesamte Klasse.', 2, 'culture', NULL, '2016-03-01 17:05:58', 'home'),
 (17, 'Stop the plastic', 'Was schwimmt eigentlich in unseren Ozeanen? Ihr würdet jetzt bestimmt verschiedene Fische und andere Getiere aufzählen – doch habt ihr auch an den vielen Müll und Dreck gedacht? \r\nPlastik braucht nicht nur 500 Jahre bis es verrottet, sondern verschmutzt und vergiftet darüber hinaus massiv die Ozeane. Überlegt euch mindestens zehn Dinge, wo ihr im Alltag Plastikmüll vermeiden könnt!', 2, 'water', NULL, '2016-03-01 17:09:22', 'home'),
@@ -78,6 +96,29 @@ INSERT INTO `challenge` (`id`, `name`, `description`, `points`, `category`, `aut
 (50, 'Wear fair', 'Habt ihr euch schon mal Gedanken darüber gemacht, wie es eigentlich möglich ist, dass eure Kleidung teilweise so günstig ist? Können diejenigen, die die Kleidung herstellen, damit überhaupt richtig bezahlt werden? Wer näht eigentlich eure Kleidung? Oft heißt die Antwort darauf: Von Kindern, für Kinder – dem soll ein Ende gesetzt werden. Jeder einzelne kann etwas dagegen tun.\r\nMacht unter Anleitung eures Lehrers/ eurer Lehrerin mindestens 3 der 5 Lernspiele zum Thema nachhaltige Kleidung!', 5, 'water', NULL, NULL, 'home'),
 (51, 'Be responsible', 'Habt ihr euch schon einmal ehrenamtlich engagiert oder tut es immer noch? In dieser Challenge habt ihr die Möglichkeit eure Tätigkeiten euren Mitschüler*innen vorzustellen. Listet alle ehrenamtlichen Tätigkeiten auf und findet heraus, welche Möglichkeiten es noch gibt sich sozial zu engagieren!', 2, 'culture', NULL, NULL, 'home'),
 (52, 'Dienstleistungs-Liste', 'Was kann ich selbst zu einer gelingenden Gemeinschaft beitragen? Eine einfache Frage, die selten gestellt wird, jedoch weitreichende Implikationen haben kann. Der eine ist gut in Mathe und der andere gut in Deutsch, der eine kann gut Fußball spielen und der andere hat ein Talent zum Tanzen . Jeder Mensch hat etwas, dass er gut kann oder aber gerne können würde.\r\nDurch die Gestaltung einer Dienstleistungsliste könnt ihr eure Stärken und Wünsche zusammenbringen und daraus eine Plattform für einen regen Austausch von Dienstleistungen schaffen.', 5, 'culture', NULL, NULL, 'home');
+=======
+INSERT INTO `challenge` (`id`, `name`, `description`, `points`, `category`, `author`, `author_time`, `location`, `extrapoints`) VALUES
+(1, 'Bio-Frühstück', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 4, 'food', NULL, NULL, 'teacher', 8),
+(3, 'Beispielchallenge', 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. ', 2, 'energy', NULL, NULL, 'home', NULL),
+(4, 'Beispielchallenge', 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. ', 2, 'culture', NULL, NULL, 'home', NULL),
+(5, 'Beispielchallenge', 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. ', 2, 'climate-change', NULL, NULL, 'home', NULL),
+(6, 'Beispielchallenge', 'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. ', 2, 'production', NULL, NULL, 'teacher', NULL),
+(7, 'Bio-Frühstück2', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 7, 'energy', NULL, NULL, 'home', NULL),
+(8, 'SelfMade-Essen', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 7, 'selfmade', 1, '2016-01-01 12:00:00', 'home', NULL),
+(9, 'SelfMade-Essen2', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 2, '2016-01-04 12:17:00', 'home', NULL),
+(10, 'SelfMade-Essen3', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2015-12-25 12:26:00', 'home', NULL),
+(11, 'SelfMade-Essen4', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2015-12-28 00:00:00', 'home', NULL),
+(12, 'SelfMade-Essen5', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 1, '2016-01-07 06:00:00', 'home', NULL),
+(13, 'SelfMade-Essen6', 'Organisiert ein Frühstück für die Klasse, das ausschließlich aus Bio- und, wenn möglich, Fairtrade-Produkten besteht. Präsentiert der Klasse anschließend einen Vergleich der Inhaltsstoffe und Preise mit den konventionellen Nicht-Bio-Produkten.', 1, 'selfmade', 2, '2016-01-05 12:27:00', 'home', NULL),
+(14, 'Wasser1', 'Wasser, Wasser, Wasser...', 1, 'water', NULL, '2016-01-30 20:42:40', 'school', NULL),
+(15, 'Wasser2', 'gaaaanz viel Wasser!', 2, 'water', NULL, '2016-01-30 20:42:56', 'home', NULL),
+(16, 'dasd', 'Challenge-Beschreibungdasdasdsadas', 1, 'selfmade', NULL, '2016-04-30 21:59:40', 'teacher', NULL),
+(17, 'dasd', 'Challenge-Beschreibungdasdasdsadas', 1, 'selfmade', NULL, '2016-04-30 22:01:26', 'teacher', NULL),
+(18, 'dasd', 'Challenge-Beschreibungdasdasdsadas', 1, 'selfmade', NULL, '2016-04-30 22:03:03', 'teacher', NULL),
+(19, 'oioli', 'Challenge-Beschreibung', 1, 'selfmade', NULL, '2016-05-01 16:01:39', 'home', 6),
+(20, 'aaaaaaaaaa', 'Challenge-Beschreibung', 1, 'selfmade', NULL, '2016-05-01 18:20:46', 'home', NULL),
+(21, 'aaaaaaaaaa', 'Challenge-Beschreibung', 1, 'selfmade', 1, '2016-05-01 18:37:03', 'home', NULL);
+>>>>>>> efd16b9c33d022f3ec54c8cef120f4b1475ec5fd
 
 -- --------------------------------------------------------
 
@@ -106,6 +147,7 @@ INSERT INTO `class` (`id`, `name`, `teacher`) VALUES
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Tabellenstruktur für Tabelle `forgot`
 --
 
@@ -116,13 +158,53 @@ CREATE TABLE IF NOT EXISTS `forgot` (
   PRIMARY KEY (`id`),
   KEY `user` (`user`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+=======
+-- Tabellenstruktur für Tabelle `feedback`
+--
+
+CREATE TABLE `feedback` (
+  `id` int(11) NOT NULL,
+  `challenge` int(11) NOT NULL,
+  `fun` int(11) NOT NULL,
+  `integration` int(11) NOT NULL,
+  `duration` int(11) NOT NULL,
+  `problems` int(11) NOT NULL,
+  `comment` text COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Daten für Tabelle `feedback`
+--
+
+INSERT INTO `feedback` (`id`, `challenge`, `fun`, `integration`, `duration`, `problems`, `comment`) VALUES
+(1, 1, 1, 3, 1, 5, ''),
+(2, 1, 1, 3, 1, 5, 'dasdsad'),
+(3, 14, 1, 2, 3, 4, 'Hallo!"";"34');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `forgot`
+--
+
+CREATE TABLE `forgot` (
+  `id` varchar(40) COLLATE utf8_bin NOT NULL,
+  `user` int(11) NOT NULL,
+  `created_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+>>>>>>> efd16b9c33d022f3ec54c8cef120f4b1475ec5fd
 
 --
 -- Daten für Tabelle `forgot`
 --
 
 INSERT INTO `forgot` (`id`, `user`, `created_at`) VALUES
+<<<<<<< HEAD
 ('9ce6975f2a1379b78e72b3573f7e5d7f', 6, '2016-04-17 21:41:27');
+=======
+('8d451a979817ba96df103ac1e8352484', 3, '2016-05-02 10:51:52'),
+('9b451ea8bd3ff91fd20ad7e661b28bd8', 3, '2016-05-02 10:55:10');
+>>>>>>> efd16b9c33d022f3ec54c8cef120f4b1475ec5fd
 
 -- --------------------------------------------------------
 
@@ -165,6 +247,7 @@ INSERT INTO `leckerwissen` (`id`, `link`, `title`, `category`, `type`) VALUES
 (34, 'http://www.biorama.eu/', 'Biorama - Magazin für nachhaltigen Lebensstil', 'other', 'other'),
 (35, 'http://www.degrowth.de/de/?', 'Degrowth - Antiwachstumsbewegung', 'culture', 'other'),
 (36, 'http://www.klimaretter.info/', 'Klimaretter - Magazin zur Klima- und Energiewende', 'other', 'other'),
+
 (37, 'http://gizmodo.com/here-what-we-ll-be-eating-in-2050-and-what-we-won-t-1762636132', 'Was wir 2050 noch essen werden können', 'food', 'article'),
 (38, 'http://www.feelgreen.de/leibspeise-plastik-forscher-entdecken-recycling-bakterium/id_77222778/index', 'Dieses Bakterium frisst Plastik', 'water', 'article'),
 (40, 'http://www.love-green.de/facts/warum-wir-geduld-haben-sollten-id12898.html', 'Spannende Umwelt-Fakten', 'climate-change', 'other'),
@@ -177,6 +260,7 @@ INSERT INTO `leckerwissen` (`id`, `link`, `title`, `category`, `type`) VALUES
 (47, 'https://de.serlo.org/35106/uebersicht', 'Anleitung für eine Kräuterspirale', 'food', 'other'),
 (48, 'http://www.feelgreen.de/-frau-ohne-plastik-verraet-ihre-besten-haushaltstipps/id_77584836/index', 'Tipps für einen Haushalt ohne Plastik', 'water', 'article'),
 (49, 'https://de.serlo.org/permakultur', 'Permakultur', 'water', 'other');
+
 
 -- --------------------------------------------------------
 
@@ -211,16 +295,22 @@ CREATE TABLE IF NOT EXISTS `solved_challenge` (
   `at` datetime NOT NULL,
   `class` int(11) NOT NULL,
   `challenge` int(11) NOT NULL,
+<<<<<<< HEAD
   PRIMARY KEY (`id`),
   UNIQUE KEY `class_2` (`class`,`challenge`),
   KEY `class` (`class`),
   KEY `challenge` (`challenge`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=12 ;
+=======
+  `extra` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+>>>>>>> efd16b9c33d022f3ec54c8cef120f4b1475ec5fd
 
 --
 -- Daten für Tabelle `solved_challenge`
 --
 
+<<<<<<< HEAD
 INSERT INTO `solved_challenge` (`id`, `at`, `class`, `challenge`) VALUES
 (4, '2016-03-10 23:05:51', 1, 20),
 (5, '2016-03-10 23:05:54', 1, 26),
@@ -230,6 +320,14 @@ INSERT INTO `solved_challenge` (`id`, `at`, `class`, `challenge`) VALUES
 (9, '2016-03-12 23:22:50', 3, 38),
 (10, '2016-03-19 19:23:49', 2, 16),
 (11, '2016-04-26 19:34:59', 2, 37);
+=======
+INSERT INTO `solved_challenge` (`id`, `at`, `class`, `challenge`, `extra`) VALUES
+(1, '2015-12-25 07:28:34', 1, 1, 0),
+(2, '2015-12-24 00:00:00', 1, 11, 0),
+(3, '2015-12-23 20:00:00', 2, 5, 0),
+(4, '2015-12-24 16:00:00', 3, 7, 0),
+(5, '2016-01-31 13:19:45', 2, 15, 0);
+>>>>>>> efd16b9c33d022f3ec54c8cef120f4b1475ec5fd
 
 -- --------------------------------------------------------
 
@@ -243,17 +341,28 @@ CREATE TABLE IF NOT EXISTS `suggested` (
   `description` text COLLATE utf8_bin NOT NULL,
   `class` int(11) DEFAULT NULL,
   `points` int(11) NOT NULL,
+<<<<<<< HEAD
   `location` enum('home','teacher','school') COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`),
   KEY `class` (`class`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=4 ;
+=======
+  `location` enum('home','school','teacher') COLLATE utf8_bin NOT NULL,
+  `extrapoints` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+>>>>>>> efd16b9c33d022f3ec54c8cef120f4b1475ec5fd
 
 --
 -- Daten für Tabelle `suggested`
 --
 
+<<<<<<< HEAD
 INSERT INTO `suggested` (`id`, `title`, `description`, `class`, `points`, `location`) VALUES
 (3, 'Hallo!', 'Challenge-Beschreibung', 2, 7, 'home');
+=======
+INSERT INTO `suggested` (`id`, `title`, `description`, `class`, `points`, `location`, `extrapoints`) VALUES
+(3, 'Hallo!', 'Challenge-Beschreibung', 2, 7, 'home', NULL);
+>>>>>>> efd16b9c33d022f3ec54c8cef120f4b1475ec5fd
 
 -- --------------------------------------------------------
 
@@ -275,10 +384,162 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`id`, `password`, `email`, `role`) VALUES
+<<<<<<< HEAD
 (3, '$2y$10$WDN.6j.TlEIWUd40fhovoe4wAdjJyvaB2dJtdY7CFqk38FWmzcP6i', 'a@b.de', 2),
 (4, '$2y$10$CenkCYnbeP01VK5PMheAnuWC6HaqoukjkldCHCqkzSVmfCj7Av8UG', 'teacher@test.de', 1),
 (5, '$2y$10$qwO4uyYVYBiWu7bpzf5cV.kB7G6TYIoNVEMe8IG4Wvw7hwoeShjFK', 'andreas-eichenseher@web.de', 2),
 (6, '$2y$10$UcFJjRR39AZnE2WG3x.6bOeAPz19GNueDZkAY1ad4SVr4b3NpNYou', 'mackie.loeffel@web.de', 1);
+=======
+(3, '$2y$10$u6F8pbGlu8.VQ2lcBwH4XeYKp1tsO.81Tj511n91Nat6.R.tsPZOO', 'a@b.de', 2),
+(4, '$2y$10$CenkCYnbeP01VK5PMheAnuWC6HaqoukjkldCHCqkzSVmfCj7Av8UG', 'teacher@test.de', 1);
+
+--
+-- Indizes der exportierten Tabellen
+--
+
+--
+-- Indizes für die Tabelle `challenge`
+--
+ALTER TABLE `challenge`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `author` (`author`);
+
+--
+-- Indizes für die Tabelle `class`
+--
+ALTER TABLE `class`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `name` (`name`),
+  ADD KEY `teacher` (`teacher`);
+
+--
+-- Indizes für die Tabelle `feedback`
+--
+ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indizes für die Tabelle `forgot`
+--
+ALTER TABLE `forgot`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user` (`user`);
+
+--
+-- Indizes für die Tabelle `leckerwissen`
+--
+ALTER TABLE `leckerwissen`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indizes für die Tabelle `milestone`
+--
+ALTER TABLE `milestone`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `points` (`points`);
+
+--
+-- Indizes für die Tabelle `solved_challenge`
+--
+ALTER TABLE `solved_challenge`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `class_2` (`class`,`challenge`),
+  ADD KEY `class` (`class`),
+  ADD KEY `challenge` (`challenge`);
+
+--
+-- Indizes für die Tabelle `suggested`
+--
+ALTER TABLE `suggested`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `class` (`class`);
+
+--
+-- Indizes für die Tabelle `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- AUTO_INCREMENT für exportierte Tabellen
+--
+
+--
+-- AUTO_INCREMENT für Tabelle `challenge`
+--
+ALTER TABLE `challenge`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+--
+-- AUTO_INCREMENT für Tabelle `class`
+--
+ALTER TABLE `class`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT für Tabelle `feedback`
+--
+ALTER TABLE `feedback`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT für Tabelle `leckerwissen`
+--
+ALTER TABLE `leckerwissen`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+--
+-- AUTO_INCREMENT für Tabelle `milestone`
+--
+ALTER TABLE `milestone`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT für Tabelle `solved_challenge`
+--
+ALTER TABLE `solved_challenge`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT für Tabelle `suggested`
+--
+ALTER TABLE `suggested`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT für Tabelle `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- Constraints der exportierten Tabellen
+--
+
+--
+-- Constraints der Tabelle `challenge`
+--
+ALTER TABLE `challenge`
+  ADD CONSTRAINT `challenge_ibfk_1` FOREIGN KEY (`author`) REFERENCES `class` (`id`) ON DELETE SET NULL;
+
+--
+-- Constraints der Tabelle `class`
+--
+ALTER TABLE `class`
+  ADD CONSTRAINT `class_ibfk_1` FOREIGN KEY (`teacher`) REFERENCES `user` (`id`);
+
+--
+-- Constraints der Tabelle `forgot`
+--
+ALTER TABLE `forgot`
+  ADD CONSTRAINT `forgot_ibfk_1` FOREIGN KEY (`user`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints der Tabelle `solved_challenge`
+--
+ALTER TABLE `solved_challenge`
+  ADD CONSTRAINT `solved_challenge_ibfk_1` FOREIGN KEY (`class`) REFERENCES `class` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `solved_challenge_ibfk_2` FOREIGN KEY (`challenge`) REFERENCES `challenge` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints der Tabelle `suggested`
+--
+ALTER TABLE `suggested`
+  ADD CONSTRAINT `suggested_ibfk_1` FOREIGN KEY (`class`) REFERENCES `class` (`id`) ON DELETE SET NULL;
+>>>>>>> efd16b9c33d022f3ec54c8cef120f4b1475ec5fd
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
