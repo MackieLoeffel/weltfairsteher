@@ -101,13 +101,13 @@ WHERE c.id = :id");
         // pdfs
         if(file_exists(getPDFPath($row->id, PUPIL_PDF))) {?>
             <div>
-                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="color: black; font-family: Titillium Web;"><b>Download:</b> Challenge-Beschreibung [PDF]</a>
+                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="color: black; font-family: Titillium Web; background-color: #12CC94"><b>Download:Challenge-Beschreibung [PDF]</b> </a>
             </div>
         <?php
         }
         if(isLoggedIn() && file_exists(getPDFPath($row->id, TEACHER_PDF))) {?>
             <div>
-                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black; font-family: Titillium Web;"><b>Download:</b> Hinweise für Lehrkräfte [PDF]</a>
+                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black; font-family: Titillium Web; background-color: #33F2B9"><b>Download: Hinweise für Lehrkräfte [PDF]</b></a>
             </div>
         <?php } ?>
     </div>
