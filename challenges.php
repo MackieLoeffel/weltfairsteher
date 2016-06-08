@@ -56,8 +56,7 @@ Die folgenden Symbole zeigen euch außerdem, wo, beziehungweise mit wem ihr eine
 </div>
         </span></div>
 <br>
-<span style="width: auto; height: auto; margin-left: 35%; margin-right: auto; margin-bottom: 0px; background-color: yellow; color: black;">
-  Die Challenges sind noch in Bearbeitung.</span>
+
 <?php
 function printChallenge($row) {
     global $db;
@@ -101,13 +100,13 @@ WHERE c.id = :id");
         // pdfs
         if(file_exists(getPDFPath($row->id, PUPIL_PDF))) {?>
             <div>
-                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="color: black; font-family: Titillium Web; background-color: #12CC94"><b>Download:Challenge-Beschreibung [PDF]</b> </a>
+                <span><a href="#" class="indexlink" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="color: black; font-family: Titillium Web; font-size: 13px; background-color: #12CC94"><span data-title="Mehr Infos zur Aufgabe [PDF]"><b>Challenge-Beschreibung [PDF]</b> </span></a></span>
             </div>
         <?php
         }
         if(isLoggedIn() && file_exists(getPDFPath($row->id, TEACHER_PDF))) {?>
             <div>
-                <a href="#" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black; font-family: Titillium Web; background-color: #33F2B9"><b>Download: Hinweise für Lehrkräfte [PDF]</b></a>
+                <span><a href="#" class="indexlink" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black; font-family: Titillium Web; font-size: 13px; background-color: #33F2B9"><span data-title="Mehr Infos zur Aufgabe [PDF]"><b>Hinweise für Lehrkräfte [PDF]</b></span></a></span>
             </div>
         <?php } ?>
     </div>
