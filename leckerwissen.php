@@ -87,7 +87,7 @@ margin-right: 1%; float: right; height: auto; font-size: 15px; color: white; pad
   </form>
 
 
-<span style="font-size: 12px; color: black; text-align: justify; float: right; font-family: Titillium Web; margin-top: 10px;">
+<span style="font-size: 13px; color: black; text-align: justify; float: right; font-family: Titillium Web; margin-top: 10px;">
   Hier könnt ihr Links zu Artikel, Videos oder Sonstigem posten, die zum Thema <i>Nachhaltigkeit</i> passen. Öffnet dazu das Eingabefeld,
   indem ihr auf den Pfeil klickt.
   Bitte achtet darauf, <b>Werbung zu vermeiden</b>. Unpassende oder unangemessene Einträge sowie offensichtliche Werbung für konkrete Produkte oder

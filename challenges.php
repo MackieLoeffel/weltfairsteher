@@ -27,7 +27,7 @@ margin-bottom: 5px;
            border: 2px solid white; border-radius: 30px;"
 
           ><i class="fa fa-arrow-down"></i></a><br><br>
-<span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify; font-size: 11px; color: black;">Auf dieser Seite findet ihr alle Challenges,
+<span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify; font-size: 13px; color: black;">Auf dieser Seite findet ihr alle Challenges,
   die ihr bei WeltFAIRsteher absolvieren könnt.
    In welcher Reihenfolge ihr dabei versucht, Aufgaben zu lösen, ist im Grunde egal. Ebenso könnt ihr selbst entscheiden, wie viele
    Challenges ihr in die Tat umsetzt.  Die sechs vorgegebenen Kategorien, aus denen ihr wählen könnt, sollen "Nachhaltigkeit" übrigens nicht umfassend abbilden.

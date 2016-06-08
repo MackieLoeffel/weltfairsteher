@@ -249,13 +249,13 @@ Ob an der Planung, den Challenges, der Webseite oder der Kommunikation -  alles 
 
 <div class="col-xs-12 col-sm-6 col-md-6">
 <img src="portraits/jana-2.png" alt="bild-jana" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Jana Costa</span><br>
+<span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Jana Costa</span><br>
 Ich bin im Jahr 1992 geboren und studiere an der Universität Bamberg Empirische Bildungsforschung - also eine Mischung aus Soziologie, Pädagogik und Psychologie. Warum ich mich für Nachhaltigkeit engagiere? Weil es auf einer endlichen Erde kein unendliches Wachstum geben kann und ich in einer Welt leben will, in der man sich über mehr Gedanken macht als nur den nächsten Urlaub, das coolere Auto oder das neueste Handy.</span><br><br><br>
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/max.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Maximilian Held</span><br>
+<span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Maximilian Held</span><br>
 Ich bin im Jahr 1992 geboren und studiere Fahrzeug- und Motorentechnik an der TU München. Nachhaltigkeit darf nicht Verzicht bedeuten. Nachhaltigkeit muss Spaß machen. Mein Ziel: Unserem Nachwuchs Lust auf mehr machen. Mein Motto: „Where attention goes, energy flows. Where energy flows, future goes.“ </span><br><br><br>
 </div>
 
@@ -264,7 +264,7 @@ Ich bin im Jahr 1992 geboren und studiere Fahrzeug- und Motorentechnik an der TU
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Andi.png" alt="bild-andi" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Andreas Eichenseher</span><br>
+<span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Andreas Eichenseher</span><br>
 Ich bin im Jahr 1992 geboren, habe einen Abschluss in Medientechnik mit Schwerpunkt Design und
 studiere derzeit Philosophie und Politikwissenschaft in Bamberg.
 Für eine zukunftsfähige Entwicklung engagiere ich mich, weil es die einzig langfristige vernünftige Möglichkeit ist,
@@ -285,7 +285,7 @@ Ich bin 1993 geboren und studiere Internationale Wirtschaftspolitik im Masterstu
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/michael.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Michael Sammler</span><br>
+<span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Michael Sammler</span><br>
 Ich bin 1995 geboren und studiere Informatik an der Universität Erlangen. Nachhaltig handeln ist meiner Meinung nach sehr wichtig,
 da wir als Gesellschaft die Verantwortung haben, unseren Planeten nicht nur für uns in einem lebenswerten Zustand
 zu bewahren, sondern auch für unsere Kinder.  </span><br><br><br>
@@ -304,7 +304,7 @@ Ich bin 1992 geboren und studiere derzeit Politikwissenschaft an der Otto-Friedr
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Elisa.png" alt="bild-elisa" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Elisa Thomaset</span><br>
+<span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Elisa Thomaset</span><br>
 Ich bin 1995 geboren und studiere an der Universität Bamberg Anglistik, Romanistik und Politikwissenschaft.
 Mein Interesse an einer nachhaltigen Lebensweise wurde vor allem durch meinen Freiwilligendienst in Chile geweckt
 und geprägt. So ist es mir besonders wichtig, den Aspekt der Gemeinschaft in einer nachhaltigen Gesellschaft zu betonen,
