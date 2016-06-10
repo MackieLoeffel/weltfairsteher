@@ -55,7 +55,7 @@ Die folgenden Symbole zeigen euch außerdem, wo, beziehungweise mit wem ihr eine
 </div>
 </div>
         </span></div>
-<br>
+
 
 <?php
 function printChallenge($row) {
@@ -81,10 +81,10 @@ WHERE c.id = :id");
     </div>
 
 
-    <b><u><a class="<?= $classes ?> challenge-title"
+    <b><u><span><a class="<?= $classes ?> challenge-title indexlink"
              onclick="return toggleMe('challenge-<?=e($row->id)?>')"
              href="javascript:void(0)"
-             style="font-family: Titillium Web;"><?=e($row->name)?></a></u></b>
+             style="font-family: Titillium Web; background-color: #12CC94;"><span data-title="Weiterlesen"><?=e($row->name)?></span></a></span></u></b>
              <div style="font-family: Titillium Web; font-size: 11px; margin-left: 94%; margin-top: 3px; float: left; position: relative; background-color: #0F9C2E;">
                <?php if($row->extrapoints) {echo "+" . e($row->extrapoints);}?></div>
 

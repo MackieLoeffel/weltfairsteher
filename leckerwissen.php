@@ -125,9 +125,9 @@ foreach($categories as $c) {
             ?>
             <b style="font-family: Titillium Web;"><?= e($t["desc"]) ?></b><br>
             <?php foreach($leckerStmt->fetchAll(PDO::FETCH_OBJ) as $entry) {?>
-                <a href="<?= e($entry->link) ?>" target="_blank">
-                    <font color="#00301B"><?= e($entry->title) ?></font>
-                </a><br>
+              <span>  <a href="<?= e($entry->link) ?>" target="_blank" class="indexlink">
+                    <font color="#00301B"><span data-title="<?= e($entry->title)?>"><?= e($entry->title) ?></span></font>
+                </a><span><br>
             <?php } ?>
 <?php } ?>
         </div>
