@@ -27,7 +27,7 @@ margin-bottom: 5px;
            border: 2px solid white; border-radius: 30px;"
 
           ><i class="fa fa-arrow-down"></i></a><br><br>
-<span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify; font-size: 13px; color: black;">Auf dieser Seite findet ihr alle Challenges,
+<span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify; font-size: 13px; font-family: Amaranth; color: black;">Auf dieser Seite findet ihr alle Challenges,
   die ihr bei WeltFAIRsteher absolvieren könnt.
    In welcher Reihenfolge ihr dabei versucht, Aufgaben zu lösen, ist im Grunde egal. Ebenso könnt ihr selbst entscheiden, wie viele
    Challenges ihr in die Tat umsetzt.  Die sechs vorgegebenen Kategorien, aus denen ihr wählen könnt, sollen "Nachhaltigkeit" übrigens nicht umfassend abbilden.
@@ -81,10 +81,10 @@ WHERE c.id = :id");
     </div>
 
 
-    <b><u><span><a class="<?= $classes ?> challenge-title indexlink"
+    <u><span><a class="<?= $classes ?> challenge-title indexlink"
              onclick="return toggleMe('challenge-<?=e($row->id)?>')"
              href="javascript:void(0)"
-             style="font-family: Titillium Web; background-color: #12CC94;"><span data-title="Weiterlesen"><?=e($row->name)?></span></a></span></u></b>
+             style="font-family: Lobster; font-size: 15pt; background-color: #12CC94;"><span data-title="Weiterlesen"><?=e($row->name)?></span></a></span></u>
              <div style="font-family: Titillium Web; font-size: 11px; margin-left: 94%; margin-top: 3px; float: left; position: relative; background-color: #0F9C2E;">
                <?php if($row->extrapoints) {echo "+" . e($row->extrapoints);}?></div>
 
