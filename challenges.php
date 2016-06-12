@@ -81,10 +81,10 @@ WHERE c.id = :id");
     </div>
 
 
-    <u><span><a class="<?= $classes ?> challenge-title indexlink"
+    <u></b><span><a class="<?= $classes ?> challenge-title greenindexlink"
              onclick="return toggleMe('challenge-<?=e($row->id)?>')"
              href="javascript:void(0)"
-             style="font-family: Lobster; font-size: 15pt; background-color: #12CC94;"><span data-title="Weiterlesen"><?=e($row->name)?></span></a></span></u>
+             style="font-family: Lobster; font-size: 18px; background-color: #17A33A;"><span data-title="Weiterlesen"><?=e($row->name)?></span></a></span></u></b>
              <div style="font-family: Titillium Web; font-size: 11px; margin-left: 94%; margin-top: 3px; float: left; position: relative; background-color: #0F9C2E;">
                <?php if($row->extrapoints) {echo "+" . e($row->extrapoints);}?></div>
 
@@ -100,13 +100,13 @@ WHERE c.id = :id");
         // pdfs
         if(file_exists(getPDFPath($row->id, PUPIL_PDF))) {?>
             <div>
-                <span><a href="#" class="indexlink" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="color: black; font-family: Titillium Web; font-size: 13px; background-color: #12CC94"><span data-title="Mehr Infos zur Aufgabe [PDF]"><b>Challenge-Beschreibung [PDF]</b> </span></a></span>
+                <span><a href="#" class="indexlink" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="color: black; font-family: Titillium Web; font-size: 13px; background-color: #17A33A"><span data-title="Mehr Infos zur Aufgabe [PDF]"><b>Challenge-Beschreibung [PDF]</b> </span></a></span>
             </div>
         <?php
         }
         if(isLoggedIn() && file_exists(getPDFPath($row->id, TEACHER_PDF))) {?>
             <div>
-                <span><a href="#" class="indexlink" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black; font-family: Titillium Web; font-size: 13px; background-color: #33F2B9"><span data-title="Mehr Infos zur Aufgabe [PDF]"><b>Hinweise für Lehrkräfte [PDF]</b></span></a></span>
+                <span><a href="#" class="indexlink" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="color: black; font-family: Titillium Web; font-size: 13px; background-color: #17A33A"><span data-title="Mehr Infos zur Aufgabe [PDF]"><b>Hinweise für Lehrkräfte [PDF]</b></span></a></span>
             </div>
         <?php } ?>
     </div>
