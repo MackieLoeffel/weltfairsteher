@@ -26,22 +26,52 @@ margin-bottom: 5px;
           <a href="javascript:void(0)" onclick="return toggleArrow(this, '#challengeinfo')" style="background-color: white; margin-top: 10px;
            border: 2px solid white; border-radius: 30px;"
 
-          ><i class="fa fa-arrow-down"></i></a><br><br>
-<span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; text-align: justify; font-size: 13px; font-family: Amaranth; color: black;">Auf dieser Seite findet ihr alle Challenges,
-  die ihr bei WeltFAIRsteher absolvieren könnt.
-   In welcher Reihenfolge ihr dabei versucht, Aufgaben zu lösen, ist im Grunde egal. Ebenso könnt ihr selbst entscheiden, wie viele
-   Challenges ihr in die Tat umsetzt.  Die sechs vorgegebenen Kategorien, aus denen ihr wählen könnt, sollen "Nachhaltigkeit" übrigens nicht umfassend abbilden.
-Euch fehlt also eine Challenge? Wenn ihr selbst eine sinnvolle Idee habt, dann entwickelt daraus doch eine Eigenkreation
-und lasst sie von eurer Lehrkraft im Lehrkraft-Bereich vorschlagen. Das geht auch unabhängig von den sechs Kategorien.<br><br>
+          ><i class="fa fa-arrow-down"></i></a><br>
+<span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; font-size: 13px; font-family: Amaranth; color: black;">
+  <br><br>
+
+  <span><a href="javascript:void(0)" onclick="return toggleArrow(this, '#workflowchallenge')" class="indexlink" style="color: white; font-size: 14px; background-color: #48BD73"><span data-title="Ablauf">Ablauf</span></a></span>
+  <br>
+  <span id="workflowchallenge" style="display:none;">
+    Auf dieser Seite findet ihr alle Challenges,
+    die ihr bei WeltFAIRsteher absolvieren könnt. In welcher Reihenfolge ihr versucht, Aufgaben zu lösen, ist im Grunde egal. Ebenso könnt ihr selbst entscheiden, wie viele
+   Challenges ihr in die Tat umsetzt. Am besten klären eure Klassensprecher*innen mit euren Lehrkräften, welche Challenges in euren Unterricht integriert werden können.
+   Außerdem könnt ihr selbst entscheiden, welche Challenges ihr eigenständig und zuhause erledigt.
+</span><br>
+
+<span><a href="javascript:void(0)" onclick="return toggleArrow(this, '#darstellungchallenge')" class="indexlink" style="color: white; font-size: 14px; background-color: #48BD73"><span data-title="Challenge-Handling">Challenge-Handling</span></a></span>
+<br>
+<span id="darstellungchallenge" style="display:none;">
 Wenn ihr mehr Informationen zu einer Challenge wollt, so klickt auf den Titel und lest am besten auch die dazugehörige PDF-Datei,
-die ihr jeweils herunterladen könnt. Wenn ihr eine Klasse in der Navigationsleiste auswählt, so seht ihr anhand der grünen Titel, welche
-Challenges diese Klasse bereits absolviert hat. Wie viel Punkte ihr für eine
-bestandene Challenge bekommt, könnt ihr an der Zahl neben dem Titel ablesen. <br><br>Übrigens: Bei einigen Challenges gibt es eine Zusatzoption, also
+die ihr jeweils herunterladen könnt. Wie viel Punkte ihr für eine
+bestandene Challenge bekommt, könnt ihr an der Zahl neben dem Titel ablesen. Bei einigen Challenges gibt es eine Zusatzoption, also
 eine kleine Aufgabe, die auf der Challenge aufbaut und mit Extrapunkten belohnt wird. Mögliche Extrapunkte sind mit einem "+" gekennzeichnet, also etwa so: <span style="background-color: #0F9C2E; color: white;">+4</span>.
+Die sechs vorgegebenen Kategorien, aus denen ihr wählen könnt, sollen "Nachhaltigkeit" übrigens nicht umfassend abbilden. Wenn ihr eine Klasse in der Navigationsleiste auswählt, so seht ihr anhand der grünen Titel, welche
+Challenges diese Klasse bereits absolviert hat.</span><br>
+
+<span><a href="javascript:void(0)" onclick="return toggleArrow(this, '#kreativchallenge')" class="indexlink" style="color: white; font-size: 14px; background-color: #48BD73"><span data-title="Eigenkreationen">Eigenkreationen</span></a></span>
+<br>
+<span id="kreativchallenge" style="display:none;">Euch fehlt also eine Challenge? Wenn ihr selbst eine sinnvolle Idee habt, dann entwickelt daraus doch eine Eigenkreation
+und lasst sie von eurer Lehrkraft im Lehrkraft-Bereich vorschlagen. Das geht auch unabhängig von den sechs Kategorien.</span><br>
+
+
+<span><a href="javascript:void(0)" onclick="return toggleArrow(this, '#allpdfchallenge')" class="indexlink" style="color: white; font-size: 14px; background-color: #48BD73;"><span data-title="Alle PDFs auf einmal">Alle PDFs auf einmal</span></a></span>
+<br>
+<span id="allpdfchallenge" style="display:none;">
+Möchtest du alle Challenge-PDFs in einem ZIP-Dokument herunterladen? <span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82;">
+  <span data-title="hier downloaden">hier downloaden</span></a></span>
+</span><br>
+
+<span><a href="javascript:void(0)" onclick="return toggleArrow(this, '#teacherchallenge')" class="indexlink" style="color: white; font-size: 14px; background-color: #48BD73""><span data-title="Für Lehrkräfte">Für Lehrkräfte</span></a></span>
+<span id="teacherchallenge" style="display:none;"><br>
 Eingeloggte Lehrkräfte können auf dieser Seite außerdem jede Challenge als <i>abgeschlossen</i> markieren. Aber Vorsicht: Wenn die Challenge mitsamt Zusatzaufgabe abgeschlossen wurde,
 so muss die Lehrkraft die Challenge im Lehrkraft-Bereich als <i>abgeschlossen</i> eintragen. Nachträglich können keine Extrapunkte mehr für eine Challenge geltend gemacht werden, die bereits
-eingetragen wurde.
-Die folgenden Symbole zeigen euch außerdem, wo, beziehungweise mit wem ihr eine Challenge absolviert. <br>
+eingetragen wurde.</span><br><br>
+
+<span><a href="javascript:void(0)" onclick="return toggleArrow(this, '#symbolchallenge')" class="indexlink" style="color: white; font-size: 14px; background-color: #48BD73""><span data-title="Ortssymbol - Schule oder zuhause?">Ortssymbol - Schule oder zuhause?</span></a></span>
+<br>
+<span id="symbolchallenge" style="display:none;">
+Die folgenden Symbole zeigen euch, wo, beziehungweise mit wem ihr eine Challenge absolviert. <br>
 <br>
 <div class="container" style="width: 100%;">
   <div class="row">
@@ -53,7 +83,7 @@ Die folgenden Symbole zeigen euch außerdem, wo, beziehungweise mit wem ihr eine
   <div class="col-xs-4 col-sm-4 col-md-4">
 <img src="symbols/home.png" alt="HAUS" height="45px" width="45px"><br> <i><b>zuhause</b></i> <br></div>
 </div>
-</div>
+</div></span>
         </span></div>
 
 
@@ -84,7 +114,7 @@ WHERE c.id = :id");
     <u></b><span><a class="<?= $classes ?> challenge-title greenindexlink"
              onclick="return toggleMe('challenge-<?=e($row->id)?>')"
              href="javascript:void(0)"
-             style="font-family: Lobster; font-size: 18px; background-color: #17A33A;"><span data-title="Weiterlesen"><?=e($row->name)?></span></a></span></u></b>
+             style="font-family: Lobster; font-size: 18px; background-color: #17A33A;"><span data-title="<?=e($row->name)?>"><?=e($row->name)?></span></a></span></u></b>
              <div style="font-family: Titillium Web; font-size: 11px; margin-left: 94%; margin-top: 3px; float: left; position: relative; background-color: #0F9C2E;">
                <?php if($row->extrapoints) {echo "+" . e($row->extrapoints);}?></div>
 

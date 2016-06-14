@@ -84,7 +84,7 @@ margin-right: 1%; float: right; height: auto; font-size: 15px; color: white; pad
     <input type="submit" value="Hinzufügen"
     style="background-color: green; font-size: 12px;  float: right; width: auto;">
     <!--<input type="button" value="Letzten Eintrag löschen" style="background-color: #52150D; font-size: 12px" onClick="()"> -->
-  </form>
+
 
 
 <span style="font-size: 13px; color: black; text-align: justify; float: right; font-family: Titillium Web; margin-top: 10px;">
@@ -93,7 +93,7 @@ margin-right: 1%; float: right; height: auto; font-size: 15px; color: white; pad
   Bitte achtet darauf, <b>Werbung zu vermeiden</b>. Unpassende oder unangemessene Einträge sowie offensichtliche Werbung für konkrete Produkte oder
   Unternehmen werden unangekündigt entfernt.
   </span>
-
+</form>
     </div>
 <div class="container" style="width: 100%; margin-right: 1%; ">
 

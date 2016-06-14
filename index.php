@@ -108,7 +108,7 @@ In der <i>Tabelle</i> könnt ihr eure Klasse in der Navigationsleiste wählen, u
 sowie die Gesamtpunktzahl angezeigt. Damit euch niemand vorwerfen kann, ihr hättet für das Punktekonto geschummelt, haltet ihr den Erfolg einer Challenge,
 beispielsweise ein Referat oder den "Coffee-to-go-again"-Aufkleber an der Eingangstüre zu einem Café,
 am besten mit einer Kamera fest. Manche Klassen werden am Ende
-des Schuljahres schließlich kontrolliert um einen möglichst fairen Wettbewerb zu gewährleisten.
+des Schuljahres voraussichtlich kontrolliert um einen möglichst fairen Wettbewerb zu gewährleisten.
 
 <br><br>
 Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr eine Idee für eine neue Challenge habt,
@@ -149,20 +149,18 @@ wie wertvoll dieser Bonus für euch sein kann:
 
                         <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 
-Keine Sorge, mit leeren Händen geht am Ende keine Klasse nach Hause. Ganz im Gegenteil: Schon während des Schuljahres verfolgt ihr Etappenziele.
-Jede Klasse sieht in der Tabelle, wie viele Punkte sie noch von der nächsten Etappe entfernt ist. Habt ihr eine Etappe erreicht, so schicken
-wir euch zur Belohnung eine kleine Überraschung per Post. Außerdem werdet ihr über die Zeit der Teilnahme hinweg
-so manche Errungenschaft feiern, die
-wortwörtlich nachhaltig ist - für´s Leben lernen also. <br>
+Schon während des Schuljahres verfolgt ihr Etappenziele.
+Jede Klasse sieht in der Tabelle, wie viele Punkte sie noch von der nächsten Etappe entfernt ist.
+Habt ihr eine Etappe erreicht, so schicken
+wir euch zur Belohnung eine kleine Überraschung per Post.<br>
 <span><a href="javascript:void(0)" class="indexlink" onclick="readOn('fuenf', this)" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
 <span id="fuenf" style="display:none;"><br>
-Ob ihr in der Tabelle gerade unten oder oben steht, ist demzufolge nur zweitrangig.
+Ob ihr in der Tabelle gerade unten oder oben steht, ist aber nur zweitrangig.
 Letztendlich spielen nämlich alle Klassen gemeinsam für eine lebenswerte Zukunft, die fair, also gerecht, gestaltet ist.
-Na gut, ein paar Überraschungen haben wir für die Klassen mit den meisten Punkten trotzdem parat - als zusätzlicher
-Ansporn sozusagen.
+Die ersten drei Plätze der WeltFAIRsteher-Teilnehmenden erhalten zum Ende der Saison trotzdem eine größere Überraschung.
 <br><br>
-Und wenn ihr am Ende nicht einen der drei ersten Plätze belegen solltet, so werdet ihr trotzdem
-einen kleinen Preis samt Urkunde erhalten. Denn selbst wer am Tabellenende steht ist deshalb nicht "un-nachhaltig"
+Und wenn ihr am Ende nicht einen der drei ersten Plätze belegen solltet, so werdet ihr dennoch mindestens eine Urkunde erhalten.
+ Denn selbst wer am Tabellenende steht ist deshalb nicht "un-nachhaltig"
 beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit!
 Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
 </span>
@@ -181,8 +179,7 @@ Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
     <span id="sechs" style="display:none;"><br>
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
 Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrkraft-Bereich</i> gewissenhaft bestandene Challenges
-eintragen oder eine Eigenkreation vorschlagen. Außerdem haben eingeloggte Lehrkräfte Zugang zu
-ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Challenges.
+eintragen oder eine Eigenkreation vorschlagen. Außerdem können eingeloggte Lehrkräfte gezielt Feedback zu einzelnen Challenges abgeben.
 
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. Ebenso möglich ist, dass eine zweite und dritte Lehrkraft
     die Verantwortung für eine Klasse übernimmt und Challenges aus seinem oder ihren Fachbereich betreut sowie online einträgt. Die Voraussetzung hierfür ist, dass
@@ -206,7 +203,7 @@ ausführlichen Beschreibungen und Unterrichtsmaterialien für die einzelnen Chal
 Ziel des Projektes ist es dabei, Bildung für nachhaltige Entwicklung strukturell in den Schulalltag zu verankern. WeltFAIRsteher verfolgt deshalb einen ganzheitlichen
 und integrierenden Ansatz und versteht sich nicht als rein additives Angebot. Damit es den Schüler*innen möglichst einfach gemacht wird, auch eigenständig Challenges nachvollziehen und durchführen zu können, ist für jede Challenge auch eine PDF
 verfügbar, in welcher eine genauere Beschreibung, die zeitlichen und materiellen Anforderungen sowie die Bewertungskriterien und mehr aufgelistet wird. Gegebenenfalls
-beinhalten die PDF-Dokumente auch benötigtes Material oder hilfreiche Erklärungen. [Bis alle Challenges mit einer entsprechenden PDF ausgestattet sind, dauert es aber noch ein wenig.]
+beinhalten die PDF-Dokumente auch benötigtes Material oder hilfreiche Erklärungen.
 </span>
 </div><br>
 
