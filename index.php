@@ -137,7 +137,7 @@ wie wertvoll dieser Bonus für euch sein kann:
  müsst sie aber nicht in einer Reihenfolge absolvieren. Die Zahl, die bei jeder Challenge steht, repräsentiert die Punkte, die ihr bekommt,
  wenn ihr die Challenge erfolgreich abschließt. Wenn ihr euch für eine Challenge entschieden habt, könnt ihr entweder eigenständig mithilfe der dazugehörigen PDF-Datei loslegen oder die Durchführung
  mit einer Lehrkraft organisieren. Für diese Organisation empfehlen wir euch, ein oder zwei Personen in eurer Klasse auszuwählen, die euch bei WeltFAIRsteher vertreten, um diesbezüglich in
- engem Kontakt mit den Lehrer*innen zu stehen - Klassensprecher*innen für die Nachhaltigkeitschallenge sozusagen.
+ engem Kontakt mit den Lehrer*innen zu stehen - Klassen- bzw. Umweltsprecher*innen für die Nachhaltigkeitschallenge sozusagen.
 
 </span>
 
@@ -152,15 +152,15 @@ wie wertvoll dieser Bonus für euch sein kann:
 Schon während des Schuljahres verfolgt ihr Etappenziele.
 Jede Klasse sieht in der Tabelle, wie viele Punkte sie noch von der nächsten Etappe entfernt ist.
 Habt ihr eine Etappe erreicht, so schicken
-wir euch zur Belohnung eine kleine Überraschung per Post.<br>
+wir euch zur Belohnung eine nachhaltige Überraschung per Post.<br>
 <span><a href="javascript:void(0)" class="indexlink" onclick="readOn('fuenf', this)" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
 <span id="fuenf" style="display:none;"><br>
-Ob ihr in der Tabelle gerade unten oder oben steht, ist aber nur zweitrangig.
-Letztendlich spielen nämlich alle Klassen gemeinsam für eine lebenswerte Zukunft, die fair, also gerecht, gestaltet ist.
-Die ersten drei Plätze der WeltFAIRsteher-Teilnehmenden erhalten zum Ende der Saison trotzdem eine größere Überraschung.
-<br><br>
+Ob ihr in der Tabelle gerade unten oder oben steht ist also gar nicht so wichtig - die Etappenüberraschungen erarbeitet ihr euch unabhängig
+von den anderen Klassen. Erst am Ende des Schuljahres erhalten die ersten drei Klassen besondere Preise.
 Und wenn ihr am Ende nicht einen der drei ersten Plätze belegen solltet, so werdet ihr dennoch mindestens eine Urkunde erhalten.
- Denn selbst wer am Tabellenende steht ist deshalb nicht "un-nachhaltig"
+<br><br>
+Letztendlich spielen aber alle Klassen gemeinsam für eine lebenswerte Zukunft, die fair, also gerecht, gestaltet ist.
+Und selbst wer am Tabellenende steht ist deshalb nicht "un-nachhaltig"
 beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit!
 Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
 </span>
@@ -194,7 +194,7 @@ eintragen oder eine Eigenkreation vorschlagen. Außerdem können eingeloggte Leh
 
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
   Als Lehrkräfte übernehmen Sie zwar die Verantwortung für eine Klasse, können die Challenges aber flexibel in Unterricht und Freizeit der Kinder
-  einbinden. Auch die Verantwortung muss nicht nur auf Ihren Schultern lasten. So können Sie spezielle Klassensprecher*innen für WeltFAIRsteher ernennen,
+  einbinden. Auch die Verantwortung muss nicht nur auf Ihren Schultern lasten. So können Sie spezielle Klassen- bzw. Umweltsprecher*innen für WeltFAIRsteher ernennen,
   die gerne Projektmanagement beitreiben möchten und sich um die Koordination von Challenges, den Schüler*innen-Gruppen, welche die Challenges bearbeiten könnten
   sowie darum kümmern, dass andere Lehrkräfte passende Challenges in deren Unterricht integrieren.
     <br>
