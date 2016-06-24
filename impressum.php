@@ -42,28 +42,26 @@
                   Der Anbieter weist ausdrücklich darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen und nicht lückenlos vor dem Zugriff durch Dritte geschützt werden kann.<br>
                   Die Verwendung der Kontaktdaten des Impressums zur gewerblichen Werbung ist ausdrücklich nicht erwünscht, es sei denn der Anbieter hatte zuvor seine schriftliche Einwilligung erteilt oder es besteht bereits eine Geschäftsbeziehung. Der Anbieter und alle auf dieser Website genannten Personen widersprechen hiermit jeder kommerziellen Verwendung und Weitergabe ihrer Daten.<br><br>
 <b>4. Lizenz</b><br>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/de/"><img alt="Creative Commons Lizenzvertrag"
-style="border-width:0" src="https://i.creativecommons.org/l/by-nc/3.0/de/88x31.png" /></a><br />
-Dieses Werk ist lizenziert unter einer
-<span><a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/de/" class="indexlink"><span data-title="Creative Commons Namensnennung-Nicht kommerziell 3.0 Deutschland Lizenz">
-Creative Commons Namensnennung-Nicht kommerziell 3.0 Deutschland Lizenz</span></a></span>.<br>
-<br>Sie dürfen:<br>
+
+<br>Sie dürfen die Inhalte dieser Seite sowie herunterladbare Dokumente <b style="background-color: white;">in Schulen</b>:<br>
 <span style="color: white;">Teilen</span> — das Material in jedwedem Format oder Medium vervielfältigen und weiterverbreiten<br>
 <span style="color: white;">Bearbeiten</span> — das Material remixen, verändern und darauf aufbauen<br><br>
-Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die Lizenzbedingungen halten.<br><br>
+
 Unter folgenden Bedingungen:<br>
 
-<span style="color: white;">Namensnennung</span> — Sie müssen angemessene Urheber- und Rechteangaben machen,
-einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden.
+<span style="color: white;">Namensnennung</span> — Sie müssen angemessene Urheber- und Rechteangaben machen, ob Änderungen vorgenommen wurden.
 Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so,
 dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie oder Ihre Nutzung besonders.<br>
 <span style="color: white;">Nicht kommerziell</span> — Sie dürfen das Material nicht für kommerzielle Zwecke nutzen.<br>
 <span style="color: white;">Keine weiteren Einschränkungen</span> — Sie dürfen keine zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen rechtlich irgendetwas untersagen, was die Lizenz erlaubt.<br>
-
+<br>
+Wenn Sie eine über den Schulgebrauch hinausgehende Nutzung unserer Materialien anstreben, bitte wir Sie um Kontaktaufnahme per Mail. Wir sind für
+Vorschläge Ihrerseits offen.<br>
 
 <br>
                   <b>5. Besondere Nutzungsbedingungen<br></b>
-                  Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Nummern 1. bis 4. abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.<br><br>
+                  Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Nummern 1. bis 4. abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen.
+                  In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.<br><br>
                   <br>
 <br>
 
