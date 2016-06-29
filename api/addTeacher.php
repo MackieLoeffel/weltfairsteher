@@ -5,6 +5,8 @@ check_access(ADMIN);
 
 list($email, $password, $password2) = apiCheckParams("email", "password", "password2");
 
+apiCheck(strlen($email) != 0, "Die Emailadresse darf nicht leer sein.");
+apiCheck(strlen($email) < 150, "Die Emailadresse ist zu lang.");
 apiCheck(filter_var($email, FILTER_VALIDATE_EMAIL), "Bitte eine gültige Email angeben.");
 apiCheck(strlen($password) != 0, "Bitte ein Passwort angeben.");
 apiCheck($password == $password2, "Die Passwörter müssen übereinstimmen.");
