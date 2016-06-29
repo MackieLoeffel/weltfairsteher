@@ -1,4 +1,4 @@
-ja<?php include "include/header.php"?>
+<?php include "include/header.php"?>
 <br>
 
 <img src="weltfairsteher-gestalte2.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
