@@ -1,4 +1,4 @@
-<?php include "include/header.php"?>
+ja<?php include "include/header.php"?>
 <br>
 
 <img src="weltfairsteher-gestalte2.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
@@ -236,9 +236,9 @@ Bei Beträgen über 200 Euro gebt bitte eure vollständige Postanschrift an. An 
 </h3></b>
 
 <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-Wir sind ein Team aus Mitgliedern des Max-Weber-Programms Bayern sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
+Wir sind ein Team aus Mitgliedern des Max Weber-Programms Bayern sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
 Über ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
-Ob an der Planung, den Challenges, der Webseite oder der Kommunikation -  alles geschieht ehrenamtlich und mit jeder Menge Herzblut.
+Ob Planung, Gestaltung der Challenges, Programmierung der Website oder Kommunikation -  alles geschieht ehrenamtlich und mit jeder Menge Herzblut.
 <br>
 <br>
 <div class="container" style="width: 98%;">
