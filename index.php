@@ -152,10 +152,7 @@ wie wertvoll dieser Bonus für euch sein kann:
 Schon während des Schuljahres verfolgt ihr Etappenziele.
 Jede Klasse sieht in der Tabelle, wie viele Punkte sie noch von der nächsten Etappe entfernt ist.
 Habt ihr eine Etappe erreicht, so schicken
-wir euch zur Belohnung eine tolle, nachhaltige Überraschung per Post.<br>
-<span><a href="javascript:void(0)" class="indexlink" onclick="readOn('fuenf', this)" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
-<span id="fuenf" style="display:none;"><br>
-Ob ihr in der Tabelle gerade unten oder oben steht ist also gar nicht <i>so</i> wichtig - die Etappenüberraschungen erarbeitet ihr euch ja unabhängig
+wir euch zur Belohnung eine tolle, nachhaltige Überraschung per Post. Ob ihr in der Tabelle gerade unten oder oben steht ist also gar nicht <i>so</i> wichtig - die Etappenüberraschungen erarbeitet ihr euch ja unabhängig
 von den anderen Klassen. Erst am Ende des Schuljahres erhalten die ersten drei Klassen besondere Preise.
 </span>
 </div><br>
