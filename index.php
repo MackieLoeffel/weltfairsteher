@@ -152,17 +152,11 @@ wie wertvoll dieser Bonus für euch sein kann:
 Schon während des Schuljahres verfolgt ihr Etappenziele.
 Jede Klasse sieht in der Tabelle, wie viele Punkte sie noch von der nächsten Etappe entfernt ist.
 Habt ihr eine Etappe erreicht, so schicken
-wir euch zur Belohnung eine nachhaltige Überraschung per Post.<br>
+wir euch zur Belohnung eine tolle, nachhaltige Überraschung per Post.<br>
 <span><a href="javascript:void(0)" class="indexlink" onclick="readOn('fuenf', this)" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
 <span id="fuenf" style="display:none;"><br>
-Ob ihr in der Tabelle gerade unten oder oben steht ist also gar nicht so wichtig - die Etappenüberraschungen erarbeitet ihr euch unabhängig
+Ob ihr in der Tabelle gerade unten oder oben steht ist also gar nicht <i>so</i> wichtig - die Etappenüberraschungen erarbeitet ihr euch ja unabhängig
 von den anderen Klassen. Erst am Ende des Schuljahres erhalten die ersten drei Klassen besondere Preise.
-Und wenn ihr am Ende nicht einen der drei ersten Plätze belegen solltet, so werdet ihr dennoch mindestens eine Urkunde erhalten.
-<br><br>
-Letztendlich spielen aber alle Klassen gemeinsam für eine lebenswerte Zukunft, die fair, also gerecht, gestaltet ist.
-Und selbst wer am Tabellenende steht ist deshalb nicht "un-nachhaltig"
-beziehungsweise zu schlecht oder ungeeignet für Nachhaltigkeit!
-Am wichtigsten ist der erste Schritt. Und dafür müsst ihr euch nur anmelden.
 </span>
 </div><br>
 <b>
