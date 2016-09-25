@@ -27,10 +27,10 @@
                    ">
 
         <br>
-        <span> <a href="http://www.weltfairsteher.jetzt/impressum.php" class="indexlink" alt="impressum" style="color: white; background-color: #B50D3C;"><span data-title="Impressum">Impressum</a></span>
+        <span> <a href="http://www.weltfairsteher.de/impressum.php" class="indexlink" alt="impressum" style="color: white; background-color: #B50D3C;"><span data-title="Impressum">Impressum</a></span>
 
       &#xA0;|&#xA0;  <span><a style="background-color: #E84B82; color: white;" class="indexlink" href="mailto:kontakt@weltfairsteher.jetzt"><span data-title="kontakt@weltfairsteher.jetzt">kontakt@weltfairsteher.jetzt</span></a></span>
-      
+
   &#xA0;|&#xA0; <span style="background-color: #B50D3C; color: white;"> &copy; 2016 WeltFAIRsteher</span>
 
         <a href="#" class="scrollbutton-top" style="color: white; float: right; margin-right: 1%;">↑</a>

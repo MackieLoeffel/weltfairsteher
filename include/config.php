@@ -5,8 +5,9 @@ if(!defined('CONFIG_PHP')) {
     session_start();
 
     // database connection
-    $db = new PDO('mysql:host=localhost;dbname=website;charset=utf8', 'root', '', array(PDO::ATTR_EMULATE_PREPARES => false,
+    $db = new PDO('mysql:host=localhost:3306;dbname=chanceng_weltfairsteher;charset=utf8', 'chanceng', 'u<Z"T.QgL!;y6KJ58Dku', array(PDO::ATTR_EMULATE_PREPARES => false,
                                                                                         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+
 
     // categories
     class Category {
@@ -175,7 +176,7 @@ ORDER BY at
                 if($ch["extra"] && $ch["extrapoints"]) {
                     $points += $ch["extrapoints"];
                 }
-                $creativity += $ch["creativity"] * 0.1;
+                $creativity += $ch["creativity"] * 0.2;
             }
             $ret[$class] = ["points" => $history,
                             "creativity" => $creativity,

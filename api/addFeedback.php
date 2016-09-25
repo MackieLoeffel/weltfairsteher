@@ -18,6 +18,6 @@ apiAction(function() use($challenge, $fun, $integration, $duration, $problems, $
                "problems" => $problems,
                "comment" => $comment]);
 
-    own_mail("kontakt@weltfairsteher.jetzt", "Neues Feedback", "Es ist ein neues Feedback für die Challenge " . e($challengeRow->name) . " eingegangen.\r\nGehe auf www.weltfairsteher.jetzt/feedback.php zu anzeigen!");
+    own_mail("kontakt@weltfairsteher.jetzt", "Neues Feedback", "Es ist ein neues Feedback für die Challenge " . e($challengeRow->name) . " eingegangen.\r\nGehe auf www.weltfairsteher.de/feedback.php zu anzeigen!");
 });
 ?>

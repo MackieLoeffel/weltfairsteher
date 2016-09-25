@@ -15,7 +15,7 @@ apiAction(function() use($email) {
         dbExecute("INSERT INTO forgot (id, user, created_at) VALUES (:rand, :user, NOW())",
                   ["user" => $user->id, "rand" => $rand]);
 
-        own_mail($email, "Passwort vergessen", "Hallo,\r\num dein Passwort zurückzusetzen gehe bitte auf diesen Link: http://www.weltfairsteher.jetzt/resetPassword.php?forgotid=$rand\r\nViele Grüße\r\nDein Weltfairsteher Team");
+        own_mail($email, "Passwort vergessen", "Hallo,\r\num dein Passwort zurückzusetzen gehe bitte auf diesen Link: http://www.weltfairsteher.de/resetPassword.php?forgotid=$rand\r\nViele Grüße\r\nDein Weltfairsteher Team");
     }
 });
 ?>

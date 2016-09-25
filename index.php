@@ -68,8 +68,8 @@
                       <li>  <b>Soziales</b>, also die Art und Weise, wie Menschen
                         in der Gesellschaft zusammenleben und</li>
                         <li> <b>Wirtschaft</b>, also Bereiche wie Warenproduktion, Einkauf und Verkauf.</li></ul>
-                        <span><a href="javascript:void(0)" class="indexlink" onclick="readOn('zwei', this);" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
-                        <span id="zwei" style="display:none;"> <br> Mit all diesen Dingen
+                        <a href="javascript:void(0)" onclick="readOn('zwei', this);" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
+                        <span id="zwei" style="display:none;"> Mit all diesen Dingen
                         habt ihr - ohne es vielleicht zu bemerken - tagtäglich zu tun. Selbst hinter kleinen Handlungen steckt dabei häufig ein riesiger Prozess, der zuvor stattfand.
                         Wusstet ihr zum Beispiel, dass
                         vor dem Kauf einer einfachen elektrischen Zahnbürste viele Rohstoffe wie Metalle oder Öle über mehrere Kontinente transportiert werden? Schiffe, Züge

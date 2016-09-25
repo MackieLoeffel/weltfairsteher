@@ -23,8 +23,6 @@ margin-bottom: 10px;
 
         </div>
 <br>
-<span style="width: auto; height: auto; margin-left: 33%; margin-right: auto; margin-bottom: 5px; background-color: yellow; color: black;">
-  Die erwähnten Klassen sind Beispielklassen</span>
 
 
 <table class="abstaende" style="color= white; width: 98%;" cellspacing="0" cellpadding="20">

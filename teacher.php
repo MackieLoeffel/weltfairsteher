@@ -49,44 +49,27 @@ z-index: 3;
            <a href="javascript:void(0)" onclick="return toggleArrow(this, '#teacherinfo')" style="background-color: white; margin-top: 10px;
             border: 2px solid white; border-radius: 30px;"
 
-           ><i class="fa fa-arrow-down"></i></a><br>
+           ><i class="fa fa-arrow-down"></i></a>
+           <span style="float: right;"><b>Alle Challenge-PDFs in einem ZIP-File?</b> <span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82;">
+             <span data-title="hier downloaden!">hier downloaden!</span></a></span></span>
+           <br>
  <span id="teacherinfo" style="display:none; margin-left: 2%; margin-right: 2%; font-size: 12px;">
 
-                   <ul style="color: black; text-align: justify; padding: 10px;">
-                   <li>Auf dieser Seite können bestandene <span><a href="#eintragen" class="indexlink" style="color:
-                   white; background-color: #E84B82;"><span data-title="Challenges eingetragen">Challenges eingetragen</span></a></span> werden. Falls sie für mehrere
-                   Klassen verantwortlich sind, muss die entsprechende Klasse zunächst
-                   ausgewählt werden. Alternativ können die Challenges auch
-                   direkt im Menüpunkt <i>Challenges</i> als bestanden eingetragen
-                   werden, nachdem Sie sich als Lehrkraft angemeldet haben. Klicken Sie
-                   dazu einfach auf "Challenge abschließen" unter der jeweiligen
-                   Challenge. </li><br> <li>Nachdem Sie sich als Lehrkraft eingeloggt
-                   haben, können Sie unter <i>Challenges</i> zu manchen Aufgabe auch eine spezielle <span><a href="/challenges.php"
-                   style="color: white; background-color: #E84B82;" class="indexlink"><span data-title="PDF-Datei für Lehrkräfte downloaden">PDF-Datei für Lehrkräfte downloaden</span></a></span>, in der Sie weitere
-                   Informationen zur Umsetzung einer Challenge finden. Falls Sie alle Challenges in einem einzigen
-                   PDF-Dokument zusammengefasst haben möchten, können Sie eine solche <span><a href="#pdf2"  style="color: white; background-color: #E84B82;" class="indexlink"><span data-title="Zusammenfassung">Zusammenfassung</span></a></span> auf dieser Seite herunterladen.
-                  </li><br> <li>Sie können auf dieser Seite
-                   auch <span><a href="#selfmadecha" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="Eigenkreationen">Eigenkreationen</span></a></span> von einer
-                   Klasse, für die Sie verantwortlich sind, vorschlagen. Füllen Sie dazu
-                   einfach das unten sichtbare Formular aus und orientieren Sie sich dabei, beispielsweise bezüglich der Punktzahl, an den Challenge-PDFs der bereits
-                   verfügbaren Challenges. Die vorgeschlagene Challenge
-                   wird allerdings nicht sofort hinzugefügt, sondern erst einer
+                   <span style="color: black; text-align: justify; padding: 10px;">
+
+              Vorgeschlagene Eigenkreationen werden nicht sofort hinzugefügt, sondern erst einer
                    Kontrolle unterzogen. Entspricht die vorgeschlagene
                    Eigenkreation den Kriterien der Nachhaltigkeit, wird sie dem
-                   Challenge-Verzeichnis hinzugefügt und ist öffentlich sichtbar. Auch
-                   der Name der Klasse, die die Aufgabe vorgeschlagen hat, wird dort zu
-                   sehen sein. Wenn die vorgeschlagene Challenge unserer Einschätzung nach nicht den nachhaltigen
-                   Kriterien entspricht, antworten wir Ihnen per Mail. </li><br>
-                   <li>Zudem können Sie hier Ihre <span><a href="#kontaktdaten" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="persönlichen Zugangsdaten">persönlichen
-                   Zugangsdaten</span></a></span> (Passwort und E-Mail-Adresse) ändern. Wenn sich die
-                   Größe einer von Ihnen betreuten Klasse ändert oder Sie anderweitige
+                   Challenge-Verzeichnis hinzugefügt und ist öffentlich mit Klassennamen sichtbar.
+                   Wenn die vorgeschlagene Challenge unserer Einschätzung nach nicht den nachhaltigen
+                   Kriterien entspricht, antworten wir Ihnen per Mail. <br><br>
+                   Die Challenge-PDF zur Aufgabe "Barnga" ist nur für Lehrkräfte sichtbar. Sie können sie nach dem Login unter <i>Challenges</i> aufrufen.
+  Wenn sich die
+                   Größe Ihrer Klasse ändert oder Sie anderweitige
                    Fragen beziehungsweise Probleme haben, schreiben Sie uns einfach eine
-                   E-Mail an   <span><a href="mailto:kontakt@weltfairsteher.jetzt" target="_top" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="kontakt@weltfairsteher.jetzt">kontakt@weltfairsteher.jetzt</span></a></span>. </li><br>
-                   <li id="eintragen">Wenn Sie einzelne Challenges bewerten möchten, können Sie dies ebenfalls auf dieser Seite tun und uns <span><a href="#feedback2" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="Feedback geben">Feedback geben</span></a></span>.
-                   Wir freuen uns über Ihre Einschätzung und Meinung. </li>
+                   E-Mail an   <span><a href="mailto:kontakt@weltfairsteher.jetzt" target="_top" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="kontakt@weltfairsteher.jetzt">kontakt@weltfairsteher.jetzt</span></a></span>. <br>
 
-
-                   </ul>
+                 </span>
         </span>
 
                  </div>
@@ -136,6 +119,69 @@ GROUP BY c.id)");
         </div>
 
 
+
+        <div     style="
+            z-index: 1;
+        width: 98%;  margin-top: 30px; margin-bottom: 10px;
+                   position: relative;
+                   float: left; margin-left: 1%;
+                   background-color:#1BAB3F;
+        padding: 10px;
+                   height: auto;
+                   text-align: center">
+        <h4 style="color: white;">Feedback: Einzelne Challenges bewerten</h4>
+        <a href="javascript:void(0)" onclick="return toggleArrow(this, '#feedback')" style="background-color: white; margin-top: 10px;
+         border: 2px solid white; border-radius: 30px;"
+
+        ><i class="fa fa-arrow-down"></i></a><br>
+        <span id="feedback" style="display:none; font-size: 12px;">
+        Bitte jede Challenge-Bewertung einzeln abschicken. Die Daten gehen anonym ein.<br><br>
+        <form id="addFeedback" action="javascript:void(0);" onsubmit="sendForm(this)">
+
+          <b>Die Challenge:</b> <select style="color: black;" name="challenge">
+            <?php foreach(fetchAll("SELECT id, name FROM challenge") as $c) {?>
+                <option style="color: black;" value="<?=e($c->id)?>"><?=e($c->name)?></option><br>
+            <?php } ?></select>
+            <br><br>
+            <b>...machte den Schüler*innen Spaß:</b><br>
+        Nein:<input class="" type="radio" name="fun" value="1" /><br>
+        Kaum:<input class="" type="radio" name="fun" value="2" /><br>
+        Teils teils:<input class="" type="radio" name="fun" value="3" /><br>
+        Ziemlich:<input class="" type="radio" name="fun" value="4" /><br>
+        Sehr:<input class="" type="radio" name="fun" value="5" /><br>
+        <br><br>
+        <b>...konnte wie beschrieben in den Unterricht oder Schüler*innen-Alltag integriert werden:</b><br>
+        Nein:<input class="" type="radio" name="integration" value="1" /><br>
+        Kaum:<input class="" type="radio" name="integration" value="2" /><br>
+        Teils teils:<input class="" type="radio" name="integration" value="3" /><br>
+        Ziemlich:<input class="" type="radio" name="integration" value="4" /><br>
+        Voll und ganz:<input class="" type="radio" name="integration" value="5" /><br>
+        <br><br>
+        <b>...dauerte so lange wie angegeben:</b><br>
+        Länger:<input class="" type="radio" name="duration" value="1" /><br>
+        Etwas länger:<input class="" type="radio" name="duration" value="2" /><br>
+        Wie angegeben:<input class="" type="radio" name="duration" value="3" /><br>
+        Etwas kürzer:<input class="" type="radio" name="duration" value="4" /><br>
+        Kürzer:<input class="" type="radio" name="duration" value="5" /><br>
+        <br><br>
+        <b>...warf Probleme bei der Durchführung auf:</b><br>
+        Keine:<input class="" type="radio" name="problems" value="1" /><br>
+        Kaum:<input class="" type="radio" name="problems" value="2" /><br>
+        Teils teils:<input class="" type="radio" name="problems" value="3" /><br>
+        Manche:<input class="" type="radio" name="problems" value="4" /><br>
+        Viele:<input class="" type="radio" name="problems" value="5" /><br>
+        <br><br>
+
+
+            Optionale Nachricht:
+            <textarea name="comment" value="" cols="39" rows="5"></textarea><br><br>
+            <input type="submit" style="background-color: green; color: white; value="Diese Challenge-Bewertung abschicken">
+            <input type="reset" value="Zurücksetzen">
+          </form>
+          <span id="kontaktdaten"></span>
+            </span>
+        <br/>
+        </div>
 
 
 
@@ -234,87 +280,11 @@ padding: 10px;
 
 
                 <input type="submit" value="Abschicken"
-                style="background-color: green; margin-left: auto; margin-right: auto;">
+                style="background-color: green; color: white; margin-left: auto; margin-right: auto;">
             </div>
         </form><br>
 </div>
 
-
-<div     style="
-    z-index: 1; margin-top: 40px; margin-bottom: 10px;
-width: 98%; margin-left: 1%;
-           position: relative;
-           float: left;
-           background-color:#1BAB3F;
-padding: 10px;
-           height: auto;
-           text-align: center">
-<h4 id="feedback2" style="color: white;">Alle Challenges in einer PDF: <span><a href="/challenge-all.pdf" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="hier downloaden">hier downloaden</span></a></span></h4>
-
-</div>
-
-<div     style="
-    z-index: 1;
-width: 98%;  margin-top: 30px; margin-bottom: 10px;
-           position: relative;
-           float: left; margin-left: 1%;
-           background-color:#1BAB3F;
-padding: 10px;
-           height: auto;
-           text-align: center">
-<h4 style="color: white;">Feedback: Einzelne Challenges bewerten</h4>
-<a href="javascript:void(0)" onclick="return toggleArrow(this, '#feedback')" style="background-color: white; margin-top: 10px;
- border: 2px solid white; border-radius: 30px;"
-
-><i class="fa fa-arrow-down"></i></a><br>
-<span id="feedback" style="display:none; font-size: 12px;">
-Bitte jede Challenge-Bewertung einzeln abschicken. (Die Daten gehen anonym ein.)<br><br>
-<form id="addFeedback" action="javascript:void(0);" onsubmit="sendForm(this)">
-
-  <b>Die Challenge:</b> <select style="color: black;" name="challenge">
-    <?php foreach(fetchAll("SELECT id, name FROM challenge") as $c) {?>
-        <option style="color: black;" value="<?=e($c->id)?>"><?=e($c->name)?></option><br>
-    <?php } ?></select>
-    <br><br>
-    <b>...machte den Schüler*innen Spaß:</b><br>
-Nein:<input class="" type="radio" name="fun" value="1" /><br>
-Kaum:<input class="" type="radio" name="fun" value="2" /><br>
-Teils teils:<input class="" type="radio" name="fun" value="3" /><br>
-Ziemlich:<input class="" type="radio" name="fun" value="4" /><br>
-Sehr:<input class="" type="radio" name="fun" value="5" /><br>
-<br><br>
-<b>...konnte wie beschrieben in den Unterricht oder Schüler*innen-Alltag integriert werden:</b><br>
-Nein:<input class="" type="radio" name="integration" value="1" /><br>
-Kaum:<input class="" type="radio" name="integration" value="2" /><br>
-Teils teils:<input class="" type="radio" name="integration" value="3" /><br>
-Ziemlich:<input class="" type="radio" name="integration" value="4" /><br>
-Voll und ganz:<input class="" type="radio" name="integration" value="5" /><br>
-<br><br>
-<b>...dauerte so lange wie angegeben:</b><br>
-Länger:<input class="" type="radio" name="duration" value="1" /><br>
-Etwas länger:<input class="" type="radio" name="duration" value="2" /><br>
-Wie angegeben:<input class="" type="radio" name="duration" value="3" /><br>
-Etwas kürzer:<input class="" type="radio" name="duration" value="4" /><br>
-Kürzer:<input class="" type="radio" name="duration" value="5" /><br>
-<br><br>
-<b>...warf Probleme bei der Durchführung auf:</b><br>
-Keine:<input class="" type="radio" name="problems" value="1" /><br>
-Kaum:<input class="" type="radio" name="problems" value="2" /><br>
-Teils teils:<input class="" type="radio" name="problems" value="3" /><br>
-Manche:<input class="" type="radio" name="problems" value="4" /><br>
-Viele:<input class="" type="radio" name="problems" value="5" /><br>
-<br><br>
-
-
-    Optionale Nachricht:
-    <textarea name="comment" value="" cols="39" rows="5"></textarea><br><br>
-    <input type="submit" style="background-color: green; color: white; value="Diese Challenge-Bewertung abschicken">
-    <input type="reset" value="Zurücksetzen">
-  </form>
-  <span id="kontaktdaten"></span>
-    </span>
-<br/>
-</div>
 
 
 <div class=".abstand teacher-challenge-box"
