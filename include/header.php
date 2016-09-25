@@ -141,7 +141,10 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                      <?php } ?>
 
 
-                                     <li><a><img src="symbols/facebook-symbol.png" alt="facebook" max-height="60%" max-width="60%" position="fixed" onclick="return toggleMe('fb-display');"></a>
+                                     <li><a href="https://www.facebook.com/weltfairsteher/" target="_blank">
+                                         <img src="symbols/facebook-symbol.png" alt="facebook" max-height="60%" max-width="60%" position="fixed">
+                                                 <!-- onclick="return toggleMe('fb-display');" -->
+                                     </a>
 
                                    </li>
 
@@ -221,13 +224,13 @@ width: 40%; text-align: center; color: black; background-color: yellow;">
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstraps/js/bootstrap.min.js"></script>
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<!-- <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.6";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));</script> -->
     <section id="border" class="sectionbg">
       <div style="display: none; z-index: 1000; float: right; margin-top: 48px; margin-right: 100px; position: fixed;" id="fb-display" class="fb-page" data-href="https://www.facebook.com/weltfairsteher/"
       data-tabs="timeline" data-width="280" data-height="380" data-small-header="false"
