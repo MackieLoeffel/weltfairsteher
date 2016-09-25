@@ -3,10 +3,12 @@ if(!defined('CONFIG_PHP')) {
     define('CONFIG_PHP', true);
 
     session_start();
+    include __DIR__."/secrets.php";
 
     // database connection
-    $db = new PDO('mysql:host=localhost:3306;dbname=chanceng_weltfairsteher;charset=utf8', 'chanceng', 'u<Z"T.QgL!;y6KJ58Dku', array(PDO::ATTR_EMULATE_PREPARES => false,
-                                                                                        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $db = new PDO(DB_CONNECTION_NAME, DB_CONNECTION_USER, DB_CONNECTION_PW,
+                  array(PDO::ATTR_EMULATE_PREPARES => false,
+                        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 
     // categories
