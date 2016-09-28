@@ -62,7 +62,7 @@
 
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
                         Nachhaltigkeit ist ein sehr vielseitiges Thema, das in fast jeden Lebensbereich dringt.
-                        Kurz zusammengefasst bedeutet es vor allem Fairness auf drei Ebenen, nämlich:
+                        Kurz zusammengefasst bedeutet es vor allem generationenübergreifende Fairness auf drei Ebenen, nämlich:
                         <ul>
                         <li> <b>Ökologie</b>, also die Beziehungen von Organismen wie Menschen, Tieren oder Pflanzen zu ihrer Umwelt,</li>
                       <li>  <b>Soziales</b>, also die Art und Weise, wie Menschen
@@ -73,21 +73,19 @@
                         habt ihr - ohne es vielleicht zu bemerken - tagtäglich zu tun. Selbst hinter kleinen Handlungen steckt dabei häufig ein riesiger Prozess, der zuvor stattfand.
                         Wusstet ihr zum Beispiel, dass
                         vor dem Kauf einer einfachen elektrischen Zahnbürste viele Rohstoffe wie Metalle oder Öle über mehrere Kontinente transportiert werden? Schiffe, Züge
-                        und Lastwägen legen also tausende Kilometer zurück, damit so eine elektrische Zahnbürste für einen möglichst niedrigen Preis im Geschäft steht.
+                        und Lastwägen legen also tausende Kilometer zurück, damit eine elektrische Zahnbürste für einen möglichst niedrigen Preis im Geschäft steht.
                         <br><br>
                         Das bringt aber viele Probleme mit sich. Eines davon sind beispielsweise die vielen Schadstoffe, die die Schiffe und Lastwägen ausstoßen.
                         Das ist schlecht für die Umwelt
                         und beschleunigt die Erderwärmung. Solche Probleme gibt es an vielen Orten unserer Welt. Als Teilnehmende an WeltFAIRsteher lernt ihr einige davon kennen und
-                        erfahrt viele Lösungsvorschläge, wie die Probleme beseitigt werden könnten. Nachhaltigkeit kann nämlich jeder. Man muss nur das Glück haben,
-                        zur richtigen Zeit und am richtigen Ort die richtigen Erfahrungen zu machen. Und dabei helfen wir euch.
+                        erfahrt viele Hinweise, um den Problemen entgegenzuwirken.
                               </span></div><br>
                         <b>
                         <h3   class="abstaende" id="ablauf" style="color: white; background-color: #A6BA10;">Wer kann mitmachen?</h3>
                         </b>
 
                         <div class="abstaende"  style="text-align: justify;background-color: #1BAB3F; padding: 20px;">
-                            Teilnehmen kann jede 6. oder 7. Klasse einer öffentlichen oder privaten Schule in Deutschland - unabhängig von der Schulform.
-Besonders vorteilhaft ist es natürlich, eine motivierte Lehrkraft zu haben, mit der man an <i>WeltFAIRsteher</i> teilnimmt.
+                            Teilnehmen kann jede 6. oder 7. Klasse einer öffentlichen oder privaten Schule in Deutschland - unabhängig von der Schulform, aber gemeinsam mit einer hauptverantwortlichen Lehrkraft.
 Übrigens: Eine Klasse kann natürlich auch mit der Unterstützung mehrerer Lehrkräfte teilnehmen, etwa um sowohl im Erdkunde-, als auch im Biologie-Unterricht an Challenges zu arbeiten.
 Anmelden kann euch aber nur eine Lehrkraft, damit wir eine zentrale Ansprechperson haben.
                         </div><br>
@@ -105,39 +103,37 @@ kann eure Lehrkraft die Challenge im <i>Lehrkraft-Bereich</i> eintragen. Den akt
 <span id="vier" style="display:none;"><br>
 
 In der <i>Tabelle</i> könnt ihr eure Klasse in der Navigationsleiste wählen, um sie im Diagramm zu sehen. Außerdem wird euch die Punktzahl der bestandenen Challenges je Kategorie
-sowie die Gesamtpunktzahl angezeigt. Damit euch niemand vorwerfen kann, ihr hättet für das Punktekonto geschummelt, haltet ihr den Erfolg einer Challenge,
-beispielsweise ein Referat oder den "Coffee-to-go-again"-Aufkleber an der Eingangstüre zu einem Café,
-am besten mit einer Kamera fest. Manche Klassen werden am Ende
-des Schuljahres voraussichtlich kontrolliert um einen möglichst fairen Wettbewerb zu gewährleisten.
-
-<br><br>
-Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr eine Idee für eine neue Challenge habt,
+sowie die Gesamtpunktzahl angezeigt. Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr eine Idee für eine neue Challenge habt,
 so könnt ihr sie von eurer verantwortlichen Lehrkraft online im <i>Lehrkraft-Bereich</i> vorschlagen lassen. Wenn die vorgeschlagene Challenge den nachhaltigen
-Kriterien entspricht, so schalten wir sie als sogenannte <i>Eigenkreation</i> frei und jede Klasse kann versuchen, die Challenge zu absolvieren. Jede Klasse kann bis zu
+Kriterien entspricht, so schalten wir sie als sogenannte <i>Eigenkreation</i> frei und jede Klasse kann versuchen, die Challenge zu absolvieren.
+<br><br>
+Jede Klasse kann bis zu
 fünf solcher Eigenkreationen erfolgreich einreichen.
 Was habt ihr als kreative Köpfe hinter der neuen Challenge davon? Zweierlei! Erstens habt ihr einen Beitrag zum Gelingen des Projekts geleistet, weil
-es um eine Idee bereichert wurden. Und zweitens erhaltet ihr darüber hinaus einen Kreativitätsbonus! <br><br>
+es um eine Idee bereichert wurden. Und zweitens erhaltet ihr darüber hinaus einen Kreativitätsbonus.
 Für jede erfolgreich vorgeschlagene Challenge wird euer
 Kreativitätsbonus vom Anfangswert 1 um 0,1 erhöht. Der neue Wert wird dann mit euren Punkten multipliziert. Ein kleines Rechenbeispiel verdeutlicht am besten,
-wie wertvoll dieser Bonus für euch sein kann:
+was das konkret bedeutet:
  Angenommen euer Konto weist einen Wert von 30 Punkten auf. Eine erfolgreich eingebrachte Eigenkreation erhöht euren Kreativitätsbonus auf 1,1.
  Euer Punktestand beträgt sodann 30 mal 1,1 = 33 Punkte. Habt ihr stattdessen sogar zwei Eigenkreationen erfolgreich eingreicht, so erhöht sich
- euer Punktestand auf 30 mal 1,2 = 36 Punkte. Und <i>WeltFAIRsteher</i> ist um zwei tolle Aufgaben reicher geworden. Das lohnt sich!
+ euer Punktestand auf 30 mal 1,2 = 36 Punkte. Und <i>WeltFAIRsteher</i> ist um zwei tolle Aufgaben reicher geworden.
  <br><br>
  Falls ihr dafür auf Ideensuche seid oder einfach mehr über das Thema Nachhaltigkeit erfahren wollt,
  findet ihr im <i>Leckerwissen</i> viele hilfreiche Informationen und Links zu themenverwandten Seiten.
- „Leckerwissen“ sammelt im wahrsten Sinne des Wortes alle Leckerbissen zum Thema Nachhaltigkeit, die euer Wissen erweitern.
  Stoßt ihr im Internet selbst auf Artikel,
  Videos oder
- Sonstiges, was in das <i>Leckerwissen</i> passen würde, so könnt ihr es dort einfach hinzufügen. Auch dadurch profitieren alle Teilnehmer voneinander und bilden
+ Sonstiges, was in das <i>Leckerwissen</i> passen würde, so könnt ihr es dort einfach hinzufügen.
+ Auch dadurch profitieren alle Teilnehmer*innen voneinander und bilden
  sozusagen eine "Schwarmintelligenz".
  <br><br>
- Unter dem Reiter <i>Challenges</i> findet ihr natürlich alle Aufgaben, die euch zur Auswahl stehen - auch diejenigen, die
+ Unter dem Reiter <i>Challenges</i> findet ihr alle Aufgaben, die euch zur Auswahl stehen - auch diejenigen, die
  ihr oder eine andere Klasse als Eigenkreation einbringen konnte. Die Challenges sind zwar thematisch nach Kategorien geordnet - ihr
  müsst sie aber nicht in einer Reihenfolge absolvieren. Die Zahl, die bei jeder Challenge steht, repräsentiert die Punkte, die ihr bekommt,
- wenn ihr die Challenge erfolgreich abschließt. Wenn ihr euch für eine Challenge entschieden habt, könnt ihr entweder eigenständig mithilfe der dazugehörigen PDF-Datei loslegen oder die Durchführung
- mit einer Lehrkraft organisieren. Für diese Organisation empfehlen wir euch, ein oder zwei Personen in eurer Klasse auszuwählen, die euch bei WeltFAIRsteher vertreten, um diesbezüglich in
- engem Kontakt mit den Lehrer*innen zu stehen - Klassen- bzw. Umweltsprecher*innen für die Nachhaltigkeitschallenge sozusagen.
+ wenn ihr die Challenge erfolgreich abschließt. Wenn ihr euch für eine Challenge entschieden habt, könnt ihr entweder eigenständig
+ mithilfe der dazugehörigen PDF-Datei loslegen oder die Durchführung
+ mit einer Lehrkraft organisieren. Für diese Organisation empfehlen wir, ein oder zwei Klassen- bzw. Umweltsprecher*innen zu wählen,
+ die in
+ engem Kontakt mit den Lehrer*innen stehen und die Abstimmung von Unterricht und WeltFAIRsteher organisieren helfen.
 
 </span>
 
@@ -149,20 +145,23 @@ wie wertvoll dieser Bonus für euch sein kann:
 
                         <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 
-Schon während des Schuljahres verfolgt ihr Etappenziele.
-Jede Klasse sieht in der Tabelle, wie viele Punkte sie noch von der nächsten Etappe entfernt ist.
+Jede Klasse verfolgt eigenständig Etappenziele. Wie weit diese entfernt sind,
+kann in der Tabelle nachgesehen werden.
 Habt ihr eine Etappe erreicht, so schicken
-wir euch zur Belohnung eine tolle, nachhaltige Überraschung per Post. Ob ihr in der Tabelle gerade unten oder oben steht ist also gar nicht <i>so</i> wichtig - die Etappenüberraschungen erarbeitet ihr euch ja unabhängig
-von den anderen Klassen. Erst am Ende des Schuljahres erhalten die ersten drei Klassen besondere Preise.
+wir euch eine nachhaltige Überraschung per Post, die zu einer weiteren Auseinandersetzung mit der Thematik anregt.
+Am Ende des Schuljahres erhalten alle Klassen eine Urkunde und die ersten Klassen eine weitere Überraschung.
 </span>
 </div><br>
 <b>
 <h3 class="abstaende" id="spenden" style="color: white; background-color: #5F5C53;">Wie meldet man sich an?</h3></b>
 
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-    Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an   <span><a href="mailto:kontakt@weltfairsteher.jetzt" target="_top" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="kontakt@weltfairsteher.jetzt">kontakt@weltfairsteher.jetzt</span></a></span> und teilt uns den kreativen Klassennamen mit,
+    Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an
+     <span><a href="mailto:kontakt@weltfairsteher.jetzt" target="_top" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="kontakt@weltfairsteher.jetzt">kontakt@weltfairsteher.jetzt</span></a></span>
+      und teilt uns den kreativen Klassennamen mit,
     den ihr euch selbst ausdenken könnt.
-    Wenn ihr uns verratet, von welcher Schule ihr kommt, können wir euch auch eure Etappen-Überraschungen zusenden. Dafür solltet ihr uns auch mitteilen, wie viele Schüler*innen unter
+    Wenn ihr uns verratet, von welcher Schule ihr kommt, können wir euch auch eure Etappen-Überraschungen zusenden.
+    Dafür solltet ihr uns auch mitteilen, wie viele Schüler*innen unter
     eurem Klassennamen teilnehmen.
     Keine Sorge: Eure Schuldaten werden nicht veröffentlicht und vertraulich behandelt.
     <br>
@@ -172,9 +171,12 @@ Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit de
 Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrkraft-Bereich</i> gewissenhaft bestandene Challenges
 eintragen oder eine Eigenkreation vorschlagen. Außerdem können eingeloggte Lehrkräfte gezielt Feedback zu einzelnen Challenges abgeben.
 
-    Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. Ebenso möglich ist, dass eine zweite und dritte Lehrkraft
-    die Verantwortung für eine Klasse übernimmt und Challenges aus seinem oder ihren Fachbereich betreut sowie online einträgt. Die Voraussetzung hierfür ist, dass
-    alle Lehrkräfte einer Klasse das selbe WeltFAIRsteher-Konto benutzen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b> Ab dann könnt ihr auch mit den Challenges starten.
+    Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. Ebenso möglich ist,
+    dass eine zweite und dritte Lehrkraft
+    die Verantwortung für eine Klasse übernimmt und Challenges aus seinem oder ihren Fachbereich betreut sowie online einträgt.
+    Die Voraussetzung hierfür ist, dass
+    alle Lehrkräfte einer Klasse das selbe WeltFAIRsteher-Konto benutzen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
+    Ab dann könnt ihr auch mit den Challenges starten.
 
 </span>
 </div><br>
@@ -184,16 +186,22 @@ eintragen oder eine Eigenkreation vorschlagen. Außerdem können eingeloggte Leh
 <h3 class="abstaende" id="lehrer" style="color: white; background-color: #95C231;">Was müssen die Lehrer*innen tun?</h3></b>
 
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-  Als Lehrkräfte übernehmen Sie zwar die Verantwortung für eine Klasse, können die Challenges aber flexibel in Unterricht und Freizeit der Kinder
-  einbinden. Auch die Verantwortung muss nicht nur auf Ihren Schultern lasten. So können Sie spezielle Klassen- bzw. Umweltsprecher*innen für WeltFAIRsteher ernennen,
-  die gerne Projektmanagement beitreiben möchten und sich um die Koordination von Challenges, den Schüler*innen-Gruppen, welche die Challenges bearbeiten könnten
+  Als Lehrkräfte übernehmen Sie zwar die Verantwortung für eine Klasse, können die Challenges aber flexibel
+  in Unterricht und Freizeit der Kinder
+  einbinden. Auch die Verantwortung muss nicht nur auf Ihren Schultern lasten.
+  So können Sie spezielle Klassen- bzw. Umweltsprecher*innen für WeltFAIRsteher ernennen,
+  die gerne organisieren und sich um die Koordination von Challenges, den Schüler*innen-Gruppen, welche die Challenges bearbeiten könnten
   sowie darum kümmern, dass andere Lehrkräfte passende Challenges in deren Unterricht integrieren.
     <br>
   <span><a href="javascript:void(0)" onclick="readOn('sechseins', this)" class="indexlink" style="text-align: center; color: #C5F2B6; background-color: #108542">  <span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
     <span id="sechseins" style="display:none;"><br>
-Ziel des Projektes ist es dabei, Bildung für nachhaltige Entwicklung strukturell in den Schulalltag zu verankern. WeltFAIRsteher verfolgt deshalb einen ganzheitlichen
-und integrierenden Ansatz und versteht sich nicht als rein additives Angebot. Damit es den Schüler*innen möglichst einfach gemacht wird, auch eigenständig Challenges nachvollziehen und durchführen zu können, ist für jede Challenge auch eine PDF
-verfügbar, in welcher eine genauere Beschreibung, die zeitlichen und materiellen Anforderungen sowie die Bewertungskriterien und mehr aufgelistet wird. Gegebenenfalls
+Ziel des Projektes ist es dabei, Bildung für nachhaltige Entwicklung strukturell in den Schulalltag zu verankern.
+WeltFAIRsteher verfolgt deshalb einen ganzheitlichen
+und integrierenden Ansatz und versteht sich langfristig nicht als rein additives Angebot.
+Damit es den Schüler*innen möglichst einfach gemacht wird, auch eigenständig Challenges nachvollziehen und durchführen zu können,
+ist für jede Challenge auch eine PDF
+verfügbar, in welcher eine genauere Beschreibung, die zeitlichen und materiellen Anforderungen sowie die Bewertungskriterien und mehr
+aufgelistet wird. Gegebenenfalls
 beinhalten die PDF-Dokumente auch benötigtes Material oder hilfreiche Erklärungen.
 </span>
 </div><br>
@@ -203,9 +211,9 @@ beinhalten die PDF-Dokumente auch benötigtes Material oder hilfreiche Erklärun
 <h3  class="abstaende" id="wir" style="color: white; background-color: #953A15;">Spenden
 </h3></b>
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-<i>WeltFAIRsteher</i> wird rein ehrenamtlich betrieben. Um dennoch die Etappenziele und Preise für die Teilnehmer zu finanzieren,
-sind wir auf freiwillige Spenden angewiesen. Wenn ihr also eine Person kennt, die jemanden kennt, die ihr Geld sinnvoll investieren möchte, oder ihr selbst einen kleinen (oder gerne auch großen) Beitrag zu diesem nachhaltigen Bildungsprojekt leisten wollt, dann überweist
-einfach einen Betrag eurer Wahl auf das Konto des gemeinnützigen Vereins<br>
+<i>WeltFAIRsteher</i> wird rein ehrenamtlich betrieben. Um dennoch die Überraschungen für die teilnehmenden Klassen zu finanzieren,
+sind wir auf freiwillige Spenden angewiesen. Wir freuen uns sehr über jede Unterstützung - ideel wie finanziell.
+<br><br>
 
 <b> CHANGE - Chancen.Nachhaltig.Gestalten<br>
 IBAN: DE35 7705 0000 0302 2593 95<br>

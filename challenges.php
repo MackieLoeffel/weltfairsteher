@@ -29,7 +29,7 @@ margin-bottom: 5px;
           ><i class="fa fa-arrow-down"></i></a>
 
           <span style="float: right;">Alle Challenge-PDFs in einem ZIP-File? <span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82;">
-            <span data-title="hier downloaden">hier downloaden!</span></a></span></span>
+            <span data-title="hier downloaden!">hier downloaden!</span></a></span></span>
           <br>
 <span id="challengeinfo" style="display:none; margin-left: 2%; margin-right: 2%; font-size: 13px; font-family: Amaranth; color: black;">
 
