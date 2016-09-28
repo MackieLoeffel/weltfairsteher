@@ -37,12 +37,11 @@
       first = id;
       break;
     }
-    if (first == null) {
-      return;
+    if (first != null) {
+      $("#selfmadeSelect").val(first);
+      $("#selfmadeSelect").change(selectSelfmade);
+      selectSelfmade();
     }
-    $("#selfmadeSelect").val(first);
-    $("#selfmadeSelect").change(selectSelfmade);
-    selectSelfmade();
     $(".slide-down .slide-down-header").each(function() {
       return $(this).click(function() {
         return toggleArrow(this, $(this).siblings(".slide-down-hidden"));

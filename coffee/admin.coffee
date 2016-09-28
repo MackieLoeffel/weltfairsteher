@@ -19,10 +19,10 @@ $('document').ready ->
   for id of suggestedChallenges
     first = id
     break
-  return unless first?
-  $("#selfmadeSelect").val first
-  $("#selfmadeSelect").change selectSelfmade
-  selectSelfmade()
+  if first?
+    $("#selfmadeSelect").val first
+    $("#selfmadeSelect").change selectSelfmade
+    selectSelfmade()
 
   $(".slide-down .slide-down-header").each  ->
     $(this).click -> toggleArrow this, $(this).siblings(".slide-down-hidden")
