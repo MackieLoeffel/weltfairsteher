@@ -138,7 +138,7 @@ if(!defined('CONFIG_PHP')) {
 
     function calculatePoints($classes) {
         global $db;
-        $startTime = mktime(0, 0, 0, 12, 22, 2015);
+        $startTime = mktime(0, 0, 0, 10, 1, 2016);
         $secondsPerDay = 60 * 60 * 24;
 
         $wasArray = is_array($classes);
