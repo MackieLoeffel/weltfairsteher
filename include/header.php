@@ -19,7 +19,6 @@ include __DIR__."/config.php";
                 <title>WeltFAIRsteher</title>
 
                 <meta name="description" content="WeltFAIRsteher"/>
-                <link rel="canonical" href="http://link"/>
 <link href="bootstraps/css/bootstrap.min.css" rel="stylesheet">
 <!-- Favicon einbinden
 -->
