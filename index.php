@@ -35,7 +35,7 @@
 
 
 
-                        <img src="weltkarte_gewuerze2.png" style="width: 98%; height: auto; margin-left: 1%; float: left; position: relative; z-index: 2;" alt="Weltkarte mit Würze">
+                        <img src="weltkarte_gewuerze2.jpg" style="width: 98%; height: auto; margin-left: 1%; float: left; position: relative; z-index: 2;" alt="Weltkarte mit Würze">
 
 
 <br>
