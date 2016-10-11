@@ -14,5 +14,5 @@ $milestones = fetchAll("SELECT points FROM milestone ORDER BY points ASC");
  var classes = <?= json_encode($classes) ?>;
  var milestones = <?= json_encode($milestones) ?>;
 </script>
-<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="js/chart.js"></script>

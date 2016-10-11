@@ -32,6 +32,8 @@ margin-bottom: 10px;
         usort($classes, function($a, $b) {
             return getCurrentPoints($b) - getCurrentPoints($a);
         });
+        
+<!--
 
         $numStmt = $db->prepare("SELECT COUNT(sc.challenge) AS count
       FROM challenge as c
@@ -41,6 +43,55 @@ margin-bottom: 10px;
         ?>
 <br>
 <br>
+=======
+        $rank = 0;
+        $lastRank = 0;
+        $lastPoints = -12345;
+        $numStmt = $db->prepare("SELECT COUNT(sc.challenge) AS count
+FROM challenge as c
+JOIN solved_challenge AS sc ON c.id = sc.challenge
+WHERE c.category = :category AND sc.class = :class");
+        foreach($classes as $class) {
+            $rank += 1;
+            if(getCurrentPoints($class) != $lastPoints) {
+                $lastRank = $rank;
+                $lastPoints = getCurrentPoints($class);
+            }
+        ?>
+        <tr class="table-row class-<?= e($class["id"])?>" >
+            <td class="table-lines" style="color: white; text-align: center; font-family: Titillium Web;"><b><?= e($lastRank) ?></b></td>
+            <td class="table-lines" style="text-align: center"><?= e($class["name"]) ?></td>
+            <td  class="table-lines visible-lg" >
+                <div class="table-box"  style="text-align: center; margin-left: 10%; margin-top: 18px; font-family: Titillium Web;">
+                    <br>
+                    <?php
+                    $index = 0;
+                    foreach($categories as $c) {
+                        $numStmt->execute(["category" => $c->name,
+                                           "class" => $class["id"]]);
+                    ?>
+                    <span class="table-number <?= e($c->name) ?>"
+                          style="margin-left: <?= $index * 20 ?>px;">
+                        <b><?= $numStmt->fetch(PDO::FETCH_OBJ)->count ?></b>
+                    </span>
+                  <?php $index += 1; } ?>
+                </div>
+
+            </td>
+            <td class="table-lines" style="text-align: center;"><?= e($class["creativity"]) ?></td>
+            <td class="table-lines" style="text-align: center"><b><?= e(getCurrentPoints($class))?></b></td>
+            <td  class="table-lines" class="milestone-box" style="text-align: center">
+                <?php
+                // min defaults to 0, if there is no row
+                $mstone = fetch("SELECT MIN(points) as p FROM milestone WHERE points > :points", ["points" => getCurrentPoints($class)])->p - getCurrentPoints($class);
+                echo e($mstone > 0 ? $mstone : "---");
+                ?></td>
+        </tr>
+        <?php } ?>
+    </tbody>
+</table>
+
+-->
 <!--
 Wenn noch keine Klasse gewählt wurde, dann folgenden Text anzeigen: "Alle Klassen haben gemeinsam xxx Challenges absolviert. <br>
 Wähle eine Klasse in der Navigationsleiste." << wenn Klasse gewählt wurde, dann diese Sätze ausblenden
