@@ -130,8 +130,8 @@ if(!defined('CONFIG_PHP')) {
         $headers   = [
             "MIME-Version: 1.0",
             "Content-type: text/plain; charset=utf-8",
-            "From: kontakt@weltfairsteher.jetzt",
-            "Reply-To: kontakt@weltfairsteher.jetzt"
+            "From: kontakt@weltfairsteher.de",
+            "Reply-To: kontakt@weltfairsteher.de"
         ];
         mail($to, $title, $content, implode("\r\n", $headers));
     }

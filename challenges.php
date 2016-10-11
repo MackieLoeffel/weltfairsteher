@@ -101,7 +101,7 @@ WHERE c.id = :id");
         <?= e($row->description) ?>
         <br>
         <?php if($row->author) { ?>
-            <div style="color: black; font-family: Titillium Web;">Von:<b><?=e($row->author)?></b></div>
+            <div style="color: black; font-family: Titillium Web;">Von: <b><?=e($row->author)?></b></div>
         <?php
         }
         // pdfs
@@ -207,5 +207,15 @@ WHERE category=:category");
 </div>
 
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <?php include "include/footer.php" ?>

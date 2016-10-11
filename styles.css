@@ -205,6 +205,43 @@ z-index: 1;
     background-color: white;
 }
 
+
+
+.ernaehrung-fortschritt {
+background:rgba(252,193,86,0.3);
+
+}
+
+.water-fortschritt{
+background: rgba(58,126,252,0.3);
+
+}
+
+.social-fortschritt {
+
+background: rgba(119,97,197,0.3);
+}
+
+.climate-fortschritt {
+  background: rgba(27,90,10,0.3);
+}
+
+
+.production-fortschritt {
+  background: rgba(204,67,33,0.3);
+}
+
+.energy-fortschritt {
+  background: rgba(16,179,179,0.3);
+}
+
+.selfmade-fortschritt {
+  background: rgba(255,255,255,0.3);
+}
+
+
+
+
 .challenge-title.class-selected {
     color: #0B6C2E
 }
