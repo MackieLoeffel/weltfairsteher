@@ -32,71 +32,18 @@ margin-bottom: 10px;
         usort($classes, function($a, $b) {
             return getCurrentPoints($b) - getCurrentPoints($a);
         });
-        
+
+
+?>
+
+
 <!--
-
-        $numStmt = $db->prepare("SELECT COUNT(sc.challenge) AS count
-      FROM challenge as c
-      JOIN solved_challenge AS sc ON c.id = sc.challenge
-      WHERE c.category = :category AND sc.class = :class");
-//array_push($classes, $class);
-        ?>
-<br>
-<br>
-=======
-        $rank = 0;
-        $lastRank = 0;
-        $lastPoints = -12345;
-        $numStmt = $db->prepare("SELECT COUNT(sc.challenge) AS count
-FROM challenge as c
-JOIN solved_challenge AS sc ON c.id = sc.challenge
-WHERE c.category = :category AND sc.class = :class");
-        foreach($classes as $class) {
-            $rank += 1;
-            if(getCurrentPoints($class) != $lastPoints) {
-                $lastRank = $rank;
-                $lastPoints = getCurrentPoints($class);
-            }
-        ?>
-        <tr class="table-row class-<?= e($class["id"])?>" >
-            <td class="table-lines" style="color: white; text-align: center; font-family: Titillium Web;"><b><?= e($lastRank) ?></b></td>
-            <td class="table-lines" style="text-align: center"><?= e($class["name"]) ?></td>
-            <td  class="table-lines visible-lg" >
-                <div class="table-box"  style="text-align: center; margin-left: 10%; margin-top: 18px; font-family: Titillium Web;">
-                    <br>
-                    <?php
-                    $index = 0;
-                    foreach($categories as $c) {
-                        $numStmt->execute(["category" => $c->name,
-                                           "class" => $class["id"]]);
-                    ?>
-                    <span class="table-number <?= e($c->name) ?>"
-                          style="margin-left: <?= $index * 20 ?>px;">
-                        <b><?= $numStmt->fetch(PDO::FETCH_OBJ)->count ?></b>
-                    </span>
-                  <?php $index += 1; } ?>
-                </div>
-
-            </td>
-            <td class="table-lines" style="text-align: center;"><?= e($class["creativity"]) ?></td>
-            <td class="table-lines" style="text-align: center"><b><?= e(getCurrentPoints($class))?></b></td>
-            <td  class="table-lines" class="milestone-box" style="text-align: center">
-                <?php
-                // min defaults to 0, if there is no row
-                $mstone = fetch("SELECT MIN(points) as p FROM milestone WHERE points > :points", ["points" => getCurrentPoints($class)])->p - getCurrentPoints($class);
-                echo e($mstone > 0 ? $mstone : "---");
-                ?></td>
-        </tr>
-        <?php } ?>
-    </tbody>
-</table>
-
--->
-<!--
-Wenn noch keine Klasse gewählt wurde, dann folgenden Text anzeigen: "Alle Klassen haben gemeinsam xxx Challenges absolviert. <br>
+<<AB HIER NEU >>
+Wenn noch KEINE Klasse gewählt wurde, dann folgenden Text anzeigen: "Alle Klassen haben gemeinsam xxx Challenges absolviert. <br>
 Wähle eine Klasse in der Navigationsleiste." << wenn Klasse gewählt wurde, dann diese Sätze ausblenden
-
 -->
+
+
 <div class="container" style="width: 98%;">
   <div class="row">
 
@@ -211,9 +158,10 @@ müssen automatisch erstellt werden, sodass auf Änderungen selbständig reagier
 
 
 <div title="Eigenkreationen"><img alt="Eigenkreationen" src="symbols/symbol-eigenkreation.png" style="margin-right: 5%; margin-top: -8px; float: left;" width="10%;" height="auto;" tag="selfmade;"/>
-<div class="selfmade-fortschritt" style="position: relative; height: 30px; margin-left: 11%; width:12%;">
-  <!--Minimum-Breite, wenn nur eine Challenge existiert: 12%
-  -->
+<div class="selfmade-fortschritt" style="position: relative; height: 30px; margin-left: 11%; width:13%;">
+  <!--
+  Minimum-Breite, wenn nur eine Challenge existiert: 13%
+-->
   <span style="float: right; font-size: 21px; color: white;">0/1</span>
 
 <div style="position: absolute; height: 30px; background-color: white; width: 1%;">
@@ -240,8 +188,20 @@ müssen automatisch erstellt werden, sodass auf Änderungen selbständig reagier
 
   <span title="Anzahl der Eigenkreationen"><b> Kreativität</b></span><br>
 
+<div style="width: 40px;
+height: 40px;
+border-radius:40px;
+margin-right: 5%;
+margin-bottom: 0px;
+margin-left: 0px;
+text-align:center;
+font-width: bold;
+float: left;
+color: white;
+background-color: #05661D; margin-top: 40px; font-size: 21px;">5/5</div>
 <div title="Fünf Eigenkreationen"><img alt="Kreativität" src="symbols/creativity-5.png" tag="creativity"
-  style="float: left; margin-left: 15%;"/></div>
+  style="float: left;"/></div>
+
 
   <div style="clear: left;"></div><br><br>
 

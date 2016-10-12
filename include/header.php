@@ -115,7 +115,7 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
 
 
                                      <?php
-                                     $sites = ["Tabelle" => "table.php",
+                                     $sites = ["Fortschritt" => "table.php",
                                                "Challenges" => "challenges.php",
                                                "Leckerwissen" => 'leckerwissen.php',
                                                'Lehrkraft-Bereich' => "teacher.php"];

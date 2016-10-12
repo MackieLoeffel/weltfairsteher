@@ -97,19 +97,21 @@ Anmelden kann euch aber nur eine Lehrkraft, damit wir eine zentrale Ansprechpers
                         <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Jede Klasse kann sich an den Aufgaben, die ihr unter dem Reiter <i>Challenges</i> findet, versuchen. Mit welcher Challenge ihr dabei beginnt ist
 genauso gleichgültig wie die Anzahl der Schüler*innen, die sich an einer Challenge beteiligen. Sobald ihr eine Challenge erfolgreich abgeschlossen habt,
-kann eure Lehrkraft die Challenge im <i>Lehrkraft-Bereich</i> eintragen. Den aktuellen Punktestand eurer Klasse findet ihr unter dem Reiter <i>Tabelle</i><br>
+kann eure Lehrkraft die Challenge im <i>Lehrkraft-Bereich</i> eintragen. Den aktuellen Punktestand eurer Klasse findet ihr unter dem Reiter <i>Fortschritt</i>. <br>
 <span><a href="javascript:void(0)" class="indexlink" onclick="readOn('vier', this)" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
 
 <span id="vier" style="display:none;"><br>
 
-In der <i>Tabelle</i> könnt ihr eure Klasse in der Navigationsleiste wählen, um sie im Diagramm zu sehen. Außerdem wird euch die Punktzahl der bestandenen Challenges je Kategorie
-sowie die Gesamtpunktzahl angezeigt. Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr eine Idee für eine neue Challenge habt,
-so könnt ihr sie von eurer verantwortlichen Lehrkraft online im <i>Lehrkraft-Bereich</i> vorschlagen lassen. Wenn die vorgeschlagene Challenge den nachhaltigen
-Kriterien entspricht, so schalten wir sie als sogenannte <i>Eigenkreation</i> frei und jede Klasse kann versuchen, die Challenge zu absolvieren.
+Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr eine Idee für eine neue Challenge habt,
+so könnt ihr sie von eurer verantwortlichen Lehrkraft online im <i>Lehrkraft-Bereich</i> vorschlagen lassen.
+Wenn die vorgeschlagene Challenge den nachhaltigen
+Kriterien entspricht, so schalten wir sie als sogenannte <i>Eigenkreation</i> frei und jede Klasse kann versuchen,
+die Challenge zu absolvieren.
 <br><br>
 Jede Klasse kann bis zu
 fünf solcher Eigenkreationen erfolgreich einreichen.
-Was habt ihr als kreative Köpfe hinter der neuen Challenge davon? Zweierlei! Erstens habt ihr einen Beitrag zum Gelingen des Projekts geleistet, weil
+Was habt ihr als kreative Köpfe hinter der neuen Challenge davon? Zweierlei!
+Erstens habt ihr einen Beitrag zum Gelingen des Projekts geleistet, weil
 es um eine Idee bereichert wurden. Und zweitens erhaltet ihr darüber hinaus einen Kreativitätsbonus.
 Für jede erfolgreich vorgeschlagene Challenge wird euer
 Kreativitätsbonus vom Anfangswert 1 um 0,1 erhöht. Der neue Wert wird dann mit euren Punkten multipliziert. Ein kleines Rechenbeispiel verdeutlicht am besten,
@@ -146,7 +148,7 @@ was das konkret bedeutet:
                         <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 
 Jede Klasse verfolgt eigenständig Etappenziele. Wie weit diese entfernt sind,
-kann in der Tabelle nachgesehen werden.
+kann unter <i>Fortschritt</i> nachgesehen werden.
 Habt ihr eine Etappe erreicht, so schicken
 wir euch eine nachhaltige Überraschung per Post, die zu einer weiteren Auseinandersetzung mit der Thematik anregt.
 Am Ende des Schuljahres erhalten alle Klassen eine Urkunde und die ersten Klassen eine weitere Überraschung.
