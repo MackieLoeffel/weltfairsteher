@@ -239,7 +239,13 @@ background: rgba(119,97,197,0.3);
   background: rgba(255,255,255,0.3);
 }
 
+#fortschritt-content.class-selected {
+    display: none
+}
 
+#fortschritt-message:not(.class-selected) {
+    display: none
+}
 
 
 .challenge-title.class-selected {
