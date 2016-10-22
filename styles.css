@@ -207,46 +207,78 @@ z-index: 1;
 
 
 
-.ernaehrung-fortschritt {
-background:rgba(252,193,86,0.3);
-
+.food-fortschritt-bg {
+    background:rgba(252,193,86,0.3);
 }
 
-.water-fortschritt{
-background: rgba(58,126,252,0.3);
-
+.water-fortschritt-bg{
+    background: rgba(58,126,252,0.3);
 }
 
-.social-fortschritt {
-
-background: rgba(119,97,197,0.3);
+.culture-fortschritt-bg {
+    background: rgba(119,97,197,0.3);
 }
 
-.climate-fortschritt {
-  background: rgba(27,90,10,0.3);
+.climate-change-fortschritt-bg {
+    background: rgba(27,90,10,0.3);
+}
+
+.production-fortschritt-bg {
+    background: rgba(204,67,33,0.3);
+}
+
+.energy-fortschritt-bg {
+    background: rgba(16,179,179,0.3);
+}
+
+.selfmade-fortschritt-bg {
+    background: rgba(255,255,255,0.3);
 }
 
 
-.production-fortschritt {
-  background: rgba(204,67,33,0.3);
+.food-fortschritt-fg {
+    background: #FCC156;
 }
 
-.energy-fortschritt {
-  background: rgba(16,179,179,0.3);
+.water-fortschritt-fg{
+    background: #3A7EFC;
 }
 
-.selfmade-fortschritt {
-  background: rgba(255,255,255,0.3);
+.culture-fortschritt-fg {
+    background: #7761C5;
 }
 
-#fortschritt-content.class-selected {
-    display: none
+.climate-change-fortschritt-fg {
+    background: #1B5A0A;
 }
 
-#fortschritt-message:not(.class-selected) {
-    display: none
+.production-fortschritt-fg {
+    background: #CC4321;
 }
 
+.energy-fortschritt-fg {
+    background: #10B3B3;
+}
+
+.selfmade-fortschritt-fg {
+    background: white;
+}
+
+.fortschritt-circle {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius:40px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    text-align:center;
+    font-width: bold;
+    float: left;
+    color: white;
+    background-color: #05661D;
+}
 
 .challenge-title.class-selected {
     color: #0B6C2E
