@@ -23,7 +23,7 @@ apiCheck(!$extra || dbExists("SELECT id FROM challenge WHERE id = :id AND extrap
 
 apiAction(function() use($class, $challenge, $extra) {
     checkMilestone($class, function() use($class, $challenge, $extra) {
-        dbExecute("INSERT INTO solved_challenge (class, challenge, extra, at) VALUES (:class, :challenge, :extra, NOW())", ["class" => $class, "challenge" => $challenge, "extra" => $extra]);
+        dbExecute("INSERT INTO solved_challenge (class, challenge, extra, at) VALUES (:class, :challenge, :extra, NOW())", ["class" => $class, "challenge" => $challenge, "extra" => $extra ? 1 : 0]);
     });
 });
 ?>
