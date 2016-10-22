@@ -2,8 +2,6 @@
 include __DIR__."/include.php";
 check_access(TEACHER);
 
-define("MAX_SELFMADE_PER_CLASS", 5);
-
 list($class, $title, $desc, $points, $suggested, $category, $location, $extrapoints) = apiCheckParams(
     "class", "title", "description", "points", "suggested", "category", "location", "extrapoints");
 $user = $_SESSION["user"];

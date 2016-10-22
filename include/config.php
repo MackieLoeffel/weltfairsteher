@@ -38,7 +38,7 @@ if(!defined('CONFIG_PHP')) {
         ["name" => "teacher", "desc" => "Schule mit Lehrkraft"]
     ];
 
-
+    define("MAX_SELFMADE_PER_CLASS", 5);
 
     // from http://stackoverflow.com/questions/1243418/php-how-to-resolve-a-relative-url
     function rel2abs($rel, $base)
@@ -163,6 +163,7 @@ ORDER BY at
             $history = array();
             $points = 0;
             $creativity = 1;
+            $numCreativity = 0;
             $curday = $startTime;
             foreach(array_merge($challengeStmt->fetchAll(PDO::FETCH_ASSOC),
                                 [["points" => 0,
@@ -179,9 +180,11 @@ ORDER BY at
                     $points += $ch["extrapoints"];
                 }
                 $creativity += $ch["creativity"] * 0.1;
+                $numCreativity += $ch["creativity"];
             }
             $ret[$class] = ["points" => $history,
                             "creativity" => $creativity,
+                            "numCreativity" => $numCreativity,
                             "id" => $class];
         }
 

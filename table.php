@@ -2,6 +2,7 @@
 include "include/header.php";
 include "include/chart.php";
 ?>
+<script src="js/table.js"></script>
 
 <br>
 <br>
@@ -23,7 +24,6 @@ margin-bottom: 10px;
 
 </div>
 <?php
-array_push($categories, new Category("selfmade", ""));
 
 function getCurrentPoints($c) {
     return end(array_values($c["points"]));
@@ -118,7 +118,7 @@ usort($classes, function($a, $b) {
         </div>
 
         <div class="col-xs-12 col-sm-4 col-md-4" >
-            <b><h2 style="color: white; float: left;"><?= e($class->name) ?></h2></b>
+            <b><h2 id="class-name" style="color: white; float: left;">???</h2></b>
             <br><br><br><br>
 
             <span title="Anzahl der Eigenkreationen"><b> Kreativität</b></span><br>
@@ -133,7 +133,7 @@ usort($classes, function($a, $b) {
                         font-width: bold;
                         float: left;
                         color: white;
-                        background-color: #05661D; margin-top: 40px; font-size: 21px;">5/5</div>
+                        background-color: #05661D; margin-top: 40px; font-size: 21px;">5/<?= e(MAX_SELFMADE_PER_CLASS)?></div>
             <div title="Fünf Eigenkreationen"><img alt="Kreativität" src="symbols/creativity-5.png" tag="creativity"
                                                    style="float: left;"/></div>
 
