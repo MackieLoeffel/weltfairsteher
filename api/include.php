@@ -78,7 +78,8 @@ function checkMilestone($class, $action) {
         return;
     }
 
-    $classInfo = fetch("SELECT c.name, u.email FROM class AS c JOIN user AS u ON c.teacher = u.id");
+    $classInfo = fetch("SELECT c.name, u.email FROM class AS c JOIN user AS u ON c.teacher = u.id WHERE c.id = :class",
+                       ["class" => $class]);
     $n = "";
     if(count($achieved) > 1) {
         $n = "n";
