@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `challenge` (
   `id` int(11) NOT NULL,
   `name` varchar(100) COLLATE utf8_bin NOT NULL,
-  `description` varchar(2000) COLLATE utf8_bin NOT NULL,
+  `description` varchar(10000) COLLATE utf8_bin NOT NULL,
   `points` int(11) NOT NULL,
   `category` enum('food','energy','culture','climate-change','production','selfmade','water') COLLATE utf8_bin NOT NULL,
   `author` int(11) DEFAULT NULL,
