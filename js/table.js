@@ -14,7 +14,7 @@
           }));
         },
         currentPoints: function() {
-          return _.last(this.cclass.points);
+          return Math.round(_.last(this.cclass.points) * 10) / 10;
         },
         nextMilestone: function() {
           var bigger;
@@ -26,9 +26,9 @@
           if (bigger.length === 0) {
             return "--";
           }
-          return _.min(bigger.map(function(b) {
+          return Math.round((_.min(bigger.map(function(b) {
             return b.points;
-          })) - this.currentPoints;
+          })) - this.currentPoints) * 10) / 10;
         }
       },
       methods: {
