@@ -1,30 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  _width: 70%;
-  color: #888;
-  font: 14px/20px Helvetica, Arial, sans-serif;
-  margin: 20px auto 0;
-  max-width: 800px;
-  text-align: center;
-  text-shadow: 0 -2px 1px #000;
-  -webkit-font-smoothing: antialiased;
-  }
-
-#wrapper {
-  padding: 20px;
-  }
-
-a {
-  color: #fff;
-  text-decoration: none;
-  }
-
 .callbacks_container {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   position: relative;
   float: left;
   width: 100%;
@@ -96,13 +71,4 @@ a {
   left: auto;
   background-position: right top;
   right: 0;
-  }
-
-@media screen and (max-width: 600px) {
-  h1 {
-    font: 24px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-  .callbacks_nav {
-    top: 47%;
-    }
   }
