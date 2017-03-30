@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `challenge` (
   `id` int(11) NOT NULL,
-  `name` varchar(100) COLLATE utf8_bin NOT NULL,
-  `description` varchar(10000) COLLATE utf8_bin NOT NULL,
+  `name` text COLLATE utf8_bin NOT NULL,
+  `description` text COLLATE utf8_bin NOT NULL,
   `points` int(11) NOT NULL,
   `category` enum('food','energy','culture','climate-change','production','selfmade','water') COLLATE utf8_bin NOT NULL,
   `author` int(11) DEFAULT NULL,
@@ -252,7 +252,7 @@ INSERT INTO `suggested` (`id`, `title`, `description`, `class`, `points`, `locat
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `password` varchar(200) COLLATE utf8_bin NOT NULL,
-  `email` varchar(30) COLLATE utf8_bin NOT NULL,
+  `email` varchar(200) COLLATE utf8_bin NOT NULL,
   `role` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
