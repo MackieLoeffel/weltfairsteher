@@ -15,6 +15,7 @@ margin-bottom: 5px;
    <img src="challenge-banner.png" tag="world" width="100%" alt="world"
  height="auto">
 
+
 <!--
  <img src="weihnachts-challenges-banner.png" tag="x-mas" width="100%" alt="weihnachts-challenges"
 height="auto">

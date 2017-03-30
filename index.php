@@ -34,16 +34,23 @@
                         <br>
 
 
-
+<!--
                         <img src="weltkarte_gewuerze2.jpg" style="width: 98%; height: auto; margin-left: 1%; float: left; position: relative; z-index: 2;" alt="Weltkarte mit Würze">
+-->
 
 
-<br>
+<div class="abstaende" style="margin-top: 0px; width: 98%; height: auto; float: left; position: relative; z-index: 2; padding: 0px;">
+<?php include "index_gallery.php" ?>
+</div>
 
-                          <br><span id="was"></span>
-                        <b>
+<div id="separator" style="margin-top: 0px; margin-bottom: 0px; visibility: hidden;">.</div>
 
-                        <h3 id="worum"class="abstaende" style="color: white; background-color: #A27405; margin-top: 20px;">Was ist das?</h3>
+<span id="was"></span>
+
+                        <b>                 
+    
+                        <h3 id="worum" class="abstaende" style="color: white; background-color: #A27405; margin-top: 0px;">Was ist das?</h3>
+    
                         </b>
 
                         <div  class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
