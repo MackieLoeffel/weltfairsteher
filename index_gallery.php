@@ -41,8 +41,8 @@
                 <li>
                   <img src="index_gallery/images/Slide7.svg" alt="">
                 </li>
-                <li>
-                  <img src="index_gallery/images/Slide8.svg" alt="">
+                <li><a href="https://www.facebook.com/weltfairsteher/" alt="facebook" target="_blank">
+                  <img src="index_gallery/images/Slide8.svg" alt=""></a>
                 </li>
             </ul>
         </div>
