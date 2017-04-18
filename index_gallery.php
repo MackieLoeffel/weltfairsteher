@@ -21,28 +21,28 @@
         <div class="callbacks_container">
             <ul class="rslides">
                 <li>
-                  <img src="index_gallery/images/Slide1.SVG" alt="">
+                  <img src="index_gallery/images/Slide1.svg" alt="">
                 </li>
                 <li>
-                  <img src="index_gallery/images/Slide2.SVG" alt="">
+                  <img src="index_gallery/images/Slide2.svg" alt="">
                 </li>
                 <li>
-                  <img src="index_gallery/images/Slide3.SVG" alt="">
+                  <img src="index_gallery/images/Slide3.svg" alt="">
                 </li>
                 <li>
-                  <img src="index_gallery/images/Slide4.SVG" alt="">
+                  <img src="index_gallery/images/Slide4.svg" alt="">
                 </li>
                 <li>
-                  <img src="index_gallery/images/Slide5.SVG" alt="">
+                  <img src="index_gallery/images/Slide5.svg" alt="">
                 </li>
                 <li>
-                  <img src="index_gallery/images/Slide6.SVG" alt="">
+                  <img src="index_gallery/images/Slide6.svg" alt="">
                 </li>
                 <li>
-                  <img src="index_gallery/images/Slide7.SVG" alt="">
+                  <img src="index_gallery/images/Slide7.svg" alt="">
                 </li>
                 <li>
-                  <img src="index_gallery/images/Slide8.SVG" alt="">
+                  <img src="index_gallery/images/Slide8.svg" alt="">
                 </li>
             </ul>
         </div>
