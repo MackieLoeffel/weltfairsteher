@@ -1,9 +1,9 @@
-  
+
         <link rel="stylesheet" type="text/css" href="index_gallery/css/rslides_layout.css">
         <link rel="stylesheet" type="text/css" href="index_gallery/css/index_gallery_layout.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
         <script src="index_gallery/js/responsiveslides.min.js"></script>
-        
+
         <script>
           $(function() {
             $(".rslides").responsiveSlides({
@@ -41,8 +41,8 @@
                 <li>
                   <img src="index_gallery/images/Slide7.svg" alt="">
                 </li>
-                <li>
-                  <img src="index_gallery/images/Slide8.svg" alt="">
+                <li><a href="https://www.facebook.com/weltfairsteher/" alt="facebook" target="_blank">
+                  <img src="index_gallery/images/Slide8.svg" alt=""></a>
                 </li>
             </ul>
         </div>
