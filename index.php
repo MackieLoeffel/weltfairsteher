@@ -5,8 +5,9 @@
 
 <br>
 <br>
+<div align="center">
 <span style="font-size: 22px;">
-<a href="#was" class="indexlink" style="color: white; background-color: #A27405; margin-left: 1%;"
+<a href="#was" class="indexlink" style="color: white; background-color: #A27405;"
 ><span data-title="Beschreibung">Beschreibung</span></a>
     <a href="#worum" class="indexlink" style="color: white; background-color: #BA070A; margin-left: 1px;">
     <span data-title="Thema">Thema</span></a>
@@ -26,6 +27,7 @@
     <a href="#wir" class="indexlink" style="color: white; background-color: #E0B836; margin-left: 1px;">
     <span data-title="Über uns">Über uns</span></a>
     </span>
+    </div>
 
 
                         <br>
