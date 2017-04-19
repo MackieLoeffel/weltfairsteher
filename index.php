@@ -47,10 +47,10 @@
 
 <span id="was"></span>
 
-                        <b>                 
-    
+                        <b>
+
                         <h3 id="worum" class="abstaende" style="color: white; background-color: #A27405; margin-top: 0px;">Was ist das?</h3>
-    
+
                         </b>
 
                         <div  class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
@@ -184,7 +184,7 @@ eintragen oder eine Eigenkreation vorschlagen. Außerdem können eingeloggte Leh
     dass eine zweite und dritte Lehrkraft
     die Verantwortung für eine Klasse übernimmt und Challenges aus seinem oder ihren Fachbereich betreut sowie online einträgt.
     Die Voraussetzung hierfür ist, dass
-    alle Lehrkräfte einer Klasse das selbe WeltFAIRsteher-Konto benutzen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endet am 04. Oktober 2016.</b>
+    alle Lehrkräfte einer Klasse das selbe WeltFAIRsteher-Konto benutzen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endete am 04. Oktober 2016.</b>
     Ab dann könnt ihr auch mit den Challenges starten.
 
 </span>
@@ -220,23 +220,13 @@ beinhalten die PDF-Dokumente auch benötigtes Material oder hilfreiche Erklärun
 <h3  class="abstaende" id="wir" style="color: white; background-color: #953A15;">Spenden
 </h3></b>
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-<i>WeltFAIRsteher</i> wird rein ehrenamtlich betrieben. Um dennoch die Überraschungen für die teilnehmenden Klassen zu finanzieren,
-sind wir auf freiwillige Spenden angewiesen. Wir freuen uns sehr über jede Unterstützung - ideel wie finanziell.
-<br><br>
-
-<b> CHANGE - Chancen.Nachhaltig.Gestalten<br>
-IBAN: DE35 7705 0000 0302 2593 95<br>
-Bic-/Swift Code: BYLADEM1SKB<br>
-Sparkasse Bamberg<br>
-Betreff/Zweck/Purpose: “WeltFAIRsteher”</b><br>
-Bei Beträgen über 200 Euro gebt bitte eure vollständige Postanschrift an. An diese schicken wir nämlich eine Spendenbescheinigung.  Alternativ lässt sich über <a style="color: green;" href="http://www.chancengestalten.de/unterstutzen/spende/online-spende/" target="_blank"
->diesen Link </a> auch direkt Online spenden. Und zu guter Letzt: Wer einen PayPal Account besitzt, kann auch komfortabel hierüber spenden:
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_s-xclick" />
-  <input type="hidden" name="hosted_button_id" value="8274KCREHG8KA" />
-  <input type="image" name="submit" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif"
-  alt="PayPal - The safer, easier way to pay online!" />
-   <img src="https://www.paypal.com/de_DE/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></form>
+<i>WeltFAIRsteher</i> wird rein ehrenamtlich betrieben. Um dennoch die Überraschungen für die teilnehmenden Klassen
+zu finanzieren,sind wir auf freiwillige Spenden angewiesen. Wir freuen uns sehr über jede Unterstützung. Bitte nutzt dazu
+folgenden Link: <a href="https://www.chancengestalten.de/unterstuetzen/" alt="spende">https://www.chancengestalten.de/unterstuetzen/</a>.
+Dort könnt ihr unter "3. Etwas spenden" einen Betrag eurer Wahl eingeben, als Betreff bzw. Zweck "WeltFAIRsteher" angeben
+ und das Bildungsprojekt auch in Zukunft möglich machen.
+Bei Beträgen über 200 Euro gebt bitte eure vollständige Postanschrift an.
+An diese schicken wir nämlich eine Spendenbescheinigung.
 </div><br>
 
 <b>
@@ -255,7 +245,8 @@ Ob Planung, Gestaltung der Challenges, Programmierung der Website oder Kommunika
 <div class="col-xs-12 col-sm-6 col-md-6">
 <img src="portraits/jana-2.png" alt="bild-jana" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Jana Costa</span><br>
-Ich bin im Jahr 1992 geboren und studiere an der Universität Bamberg Empirische Bildungsforschung - also eine Mischung aus Soziologie, Pädagogik und Psychologie. Warum ich mich für Nachhaltigkeit engagiere? Weil es auf einer endlichen Erde kein unendliches Wachstum geben kann und ich in einer Welt leben will, in der man sich über mehr Gedanken macht als nur den nächsten Urlaub, das coolere Auto oder das neueste Handy.</span><br><br><br>
+Ich bin im Jahr 1992 geboren und studiere an der Universität Bamberg Empirische Bildungsforschung - also eine Mischung aus Soziologie,
+Pädagogik und Psychologie. Warum ich mich für Nachhaltigkeit engagiere? Weil es auf einer endlichen Erde kein unendliches Wachstum geben kann und ich in einer Welt leben will, in der man sich über mehr Gedanken macht als nur den nächsten Urlaub, das coolere Auto oder das neueste Handy.</span><br><br><br>
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
@@ -308,15 +299,24 @@ Ich bin 1992 geboren und studiere derzeit Politikwissenschaft an der Otto-Friedr
 <div class="row">
 
 <div class="col-xs-12 col-sm-6 col-md-6" >
-<img src="portraits/Elisa.png" alt="bild-elisa" style="width: 45%; height: auto; margin-right: 10%; ">
-<span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Elisa Thomaset</span><br>
-Ich bin 1995 geboren und studiere an der Universität Bamberg Anglistik, Romanistik und Politikwissenschaft.
-Mein Interesse an einer nachhaltigen Lebensweise wurde vor allem durch meinen Freiwilligendienst in Chile geweckt
-und geprägt. So ist es mir besonders wichtig, den Aspekt der Gemeinschaft in einer nachhaltigen Gesellschaft zu betonen,
-denn nur zusammen können wir wirklich etwas erreichen.</span><br><br><br>
+<img src="portraits/Basti.png" alt="bild-sebastian" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Sebastian Franz</span><br>
+Ich bin im Jahr 1990 geboren und studiere derzeit an der Universität Bamberg den Masterstudiengang Empirische Bildungsforschung.
+Vorher habe ich meinen Bachelorstudium an der Universität Mainz erfolgreich beendet.
+Warum ich mich für Nachhaltigkeit engagiere? Es geht mir vor allem darum, ein Bewusstsein dafür zu schaffen,
+dass wir eine Verantwortung für die Zukunft haben. Die Welt von morgen wird nie die von heute sein, aber wir können versuchen,
+sie so gut wie möglich zu gestalten und zwar nachhaltig!</span><br><br><br>
 </div>
 
-
+<div class="col-xs-12 col-sm-6 col-md-6" >
+<img src="portraits/Alex.png" alt="bild-alexander" style="width: 45%; height: auto; margin-right: 10%; ">
+<span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Alexander Reisach</span><br>
+Ich bin 1995 geboren und studiere Betriebswirtschaft in München. Nachhaltigkeit bedeutet für mich, zu verstehen,
+dass wir unsere Zukunft selbst in der Hand haben und dafür Verantwortung zu übernehmen.
+Für unsere Gesellschaft und Wirtschaft benötigen wir ein System das echtes Wachstum erlaubt und sich nicht selbst verbraucht.
+Dazu ist es wichtig ein Bewusstsein dafür zu schaffen, wie unser Handeln unsere Umwelt beeinflusst und wie wir Ressourcen nutzen und
+nicht nur verbrauchen können.</span><br><br><br>
+</div>
 
 </div>
 
