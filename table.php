@@ -9,6 +9,7 @@ include "include/chart.php";
 <br>
 <br>
 <div  style="
+z-index: 5;
 margin-left: 0%;
 float: left;
 width: 100%;
@@ -34,8 +35,8 @@ usort($classes, function($a, $b) {
 
 <div class="container" style="width: 98%;" id="vue-root">
     <div id="fortschritt-message" class="row" v-if="!cclass">
-        <h3>
-            Alle Klassen haben gemeinsam <?= e($numSolvedChallenges) ?> Challenges absolviert. <br>
+        <h3 style="color: white;">
+            Alle Klassen haben gemeinsam <b style="font-size: 24pt;"><?= e($numSolvedChallenges) ?></b> Challenges absolviert. <br>
             Wähle eine Klasse in der Navigationsleiste.
         </h3>
     </div>
@@ -101,6 +102,9 @@ usort($classes, function($a, $b) {
     </div>
 </div>
 <br><br><br>
+
+
+
 
 <span class="indexlink" style="color: white; background-color: #05661D; margin-left: auto; margin-right: auto; display: block; text-align: center;" > <a onclick="return toggleMe('chart')"
 href="javascript:void(0)" style="color: white;"><span data-title="Zeitlichen Verlauf anzeigen">
