@@ -34,10 +34,10 @@ margin-bottom: 5px;
     <span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82;">
         <span data-title="Alle PDF´s ↓">Alle PDF´s ↓</span></a></span>
 </span>
-        <!--
-         <img src="weihnachts-challenges-banner.png" tag="x-mas" width="100%" alt="weihnachts-challenges"
-        height="auto">
-        -->
+<!--
+     <img src="weihnachts-challenges-banner.png" tag="x-mas" width="100%" alt="weihnachts-challenges"
+     height="auto">
+   -->
 <br><br><br><br>
 <script type="text/javascript">
  function openDiv(id) {
@@ -54,6 +54,11 @@ JOIN solved_challenge as sc ON c.id=sc.challenge
 JOIN class as cl ON cl.id = sc.class
 WHERE c.id = :id");
 
+    $challengeImage = "challenge-bilder/challenge-" . $row->id . ".png";
+    if (!file_exists($challengeImage)) {
+        $challengeImage = "challenge-bilder/challenge-fallback.jpg";
+    }
+
     $classStmt->execute(['id' => $row->id]);
     $classes = "";
     foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $classRow) {
@@ -64,16 +69,12 @@ WHERE c.id = :id");
 <div class="<?= e($row->category) ?>" style="height: 240px; width: 15px; float: left; z-index: 7; position: absolute;"></div>
 
 <a href="javascript:void(0)" >
-    <img src="challenge-1.jpg" onClick="javascript:openDiv ('challenge-overlay-<?=e($row->id)?>')"  tag="challenge-1" width="97%" alt="world" height="240px" style="position: relative;  z-index: 5; margin-left: 15px; margin-bottom: 25px;">
+    <img src="<?=e($challengeImage)?>" onClick="javascript:openDiv ('challenge-overlay-<?=e($row->id)?>')"  tag="challenge-1" width="97%" alt="world" height="240px" style="position: relative;  z-index: 5; margin-left: 15px; margin-bottom: 25px;">
   </img>
 </a>
 
-
-
-
-
 <div id="challenge-overlay-<?=e($row->id)?>" hidden="true" >
-    <img src="/challenge-bilder/challenge-bild-overlay2.png" alt="challenge-inhalt-background" style="position: absolute; width: 95%; height: 240px; z-index: 6; margin-top: -5px;"></img>
+    <img src="challenge-bilder/challenge-bild-overlay2.png" alt="challenge-inhalt-background" style="position: absolute; width: 95%; height: 240px; z-index: 6; margin-top: -5px;"></img>
 
   <div style="width: 97%; height: 260px; margin-top: -260px; position: relative; z-index: 8;">
       <div style="display: inline; float: left; height: 25x; margin-left: 35px; marign-top: 5px;">
