@@ -94,7 +94,7 @@ WHERE c.id = :id");
               }
           ?>
           <img src="<?= e($flower_image) ?>" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"
-               onclick="callApi('rateChallenge', {'challenge': <?= e($row->id)?>, 'rating': <?= e($i + 1) ?>})"></img>
+               onclick="callApi('rateChallenge', {'challenge': <?= e($row->id)?>, 'rating': <?= e($i + 1) ?>}); alert('Die Challenge wurde mit <?= e($i + 1)?> Blumen bewertet.');"></img>
           <?php } ?>
       </div>
 
