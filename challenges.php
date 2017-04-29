@@ -78,11 +78,24 @@ WHERE c.id = :id");
 
   <div style="width: 97%; height: 260px; margin-top: -260px; position: relative; z-index: 8;">
       <div style="display: inline; float: left; height: 25x; margin-left: 35px; marign-top: 5px;">
-          <img src="sonnenblume-bewertung.png" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"></img>
-          <img src="sonnenblume-bewertung.png" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"></img>
-          <img src="sonnenblume-bewertung.png" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"></img>
-          <img src="sonnenblume-bewertung.png" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"></img>
-          <img src="sonnenblume-bewertung-grau.png" tag="bewertungGrau" title="Gib eine Bewertung ab"  width="25px" alt="BewertungGrau" height="auto" style="clear: left;"></img>
+          <?php
+          $flowers = 2.5;
+          if ($row->flower_count > 0) {
+              $flowers = $row->flower_sum / $row->flower_count;
+          }
+
+          for($i = 0; $i < 5; $i++) {
+              if ($flowers < $i + 0.25) {
+                  $flower_image = "sonnenblume-bewertung-grau.png";
+              } else if($flowers < $i + 0.75) {
+                  $flower_image = "sonnenblume-bewertung-halb.png";
+              } else {
+                  $flower_image = "sonnenblume-bewertung.png";
+              }
+          ?>
+          <img src="<?= e($flower_image) ?>" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"
+               onclick="callApi('rateChallenge', {'challenge': <?= e($row->id)?>, 'rating': <?= e($i + 1) ?>})"></img>
+          <?php } ?>
       </div>
 
       <div style="display: inline; float: right;  margin-top: 5px; margin-right: 25px;">
@@ -176,7 +189,7 @@ Bsp.: Tolle Challenge! Funktioniert am besten in 2er-Teams. Grüße aus dem Spes
 <br>
 <div class="container" style="width: 100%; margin-right: 1%;">
     <?php
-$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, c.location, c.extrapoints, cl.name AS author
+$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, c.location, c.extrapoints, c.flower_count, c.flower_sum, cl.name AS author
 FROM challenge as c
 LEFT JOIN class as cl ON cl.id = c.author
 WHERE category=:category");
