@@ -125,6 +125,14 @@ if(!defined('CONFIG_PHP')) {
         return __DIR__."/../uploads/" . $type . "_" . $challenge . ".pdf";
     }
 
+    function getPicturePath($challenge) {
+        assert(is_numeric($challenge));
+        # remember to also change challenge.php, when changing this
+        return __DIR__. "/../challenge-bilder/challenge-" . $challenge . ".png";
+    }
+
+
+
     function own_mail($to, $title, $content) {
         // für umlaute
         $headers   = [
@@ -170,7 +178,7 @@ ORDER BY at
                                   "extra" => false,
                                   "creativity" => 0,
                                   "at" => date("Y-m-d H:i:s", time() + $secondsPerDay)]])
-                                      as $ch) {
+                as $ch) {
                 while(strtotime($ch["at"]) >= $curday) {
                     array_push($history, round($points * $creativity, 1));
                     $curday += $secondsPerDay;

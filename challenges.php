@@ -22,47 +22,28 @@ margin-bottom: 5px;
         </div>
       -->
 
-        <span id="challenge-nav" style="width: 100%; font-size: 15.5pt; align: center; position: fixed; z-index: 9999; margin-top: -5px;">
-        <a href="#foodaa" class="indexlink" style="color: white; margin-left: 1%; background-color: #FCC156;"><span data-title="Ernährung">Ernährung</span></a>
-        <a href="#wateraa" class="indexlink" style="color: white; background-color: #3A7EFC; margin-left: -0.3%"><span data-title="Wasser&Ressourcen">Wasser&Ressourcen</span></a>
-        <a href="#cultureaa" class="indexlink" style="color: white; background-color: #7761C5;margin-left: -0.3%"><span data-title="Soziale Verantwortung">Soziale Verantwortung</span></a>
-        <a href="#climate-changeaa" class="indexlink" style="color: white; background-color: #1B5A0A; margin-left: -0.3%"><span data-title="Klimawandel">Klimawandel</span></a>
-        <a href="#productionaa" class="indexlink" style="color: white; background-color: #CC4321; margin-left: -0.3%"><span data-title="Produktion&Konsum">Produktion&Konsum</span></a>
-        <a href="#energyaa" class="indexlink" style="color: white; background-color: #10B3B3; margin-left: -0.3%"><span data-title="Energie&Mobilität">Energie&Mobilität</span></a>
-        <a href="#selfmadeaa" class="indexlink" title="Entwickelt eigene Challenges und lasst sie von der Lehrkraft vorschlagen - auch unabhängig von den Kategorien."
-         style="color: black; background-color: white; margin-left: -0.3%"><span data-title="Eigenkreationen">Eigenkreationen</span></a>
-        <span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82;">
-          <span data-title="Alle PDF´s ↓">Alle PDF´s ↓</span></a></span>
-
-
-        </span>
-
-        <!--
-         <img src="weihnachts-challenges-banner.png" tag="x-mas" width="100%" alt="weihnachts-challenges"
-        height="auto">
-        -->
-        <br><br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-        <script type="text/javascript">
-        function openDiv(<?=e($row->name)?>)
-        {
-            document.getElementById(<?=e($row->name)?>).hidden = false;
-        }
-
-
-
-
-        </script>
+<span id="challenge-nav" style="width: 100%; font-size: 15.5pt; align: center; position: fixed; z-index: 9999; margin-top: -5px;">
+    <a href="#foodaa" class="indexlink" style="color: white; margin-left: 1%; background-color: #FCC156;"><span data-title="Ernährung">Ernährung</span></a>
+    <a href="#wateraa" class="indexlink" style="color: white; background-color: #3A7EFC; margin-left: -0.3%"><span data-title="Wasser&Ressourcen">Wasser&Ressourcen</span></a>
+    <a href="#cultureaa" class="indexlink" style="color: white; background-color: #7761C5;margin-left: -0.3%"><span data-title="Soziale Verantwortung">Soziale Verantwortung</span></a>
+    <a href="#climate-changeaa" class="indexlink" style="color: white; background-color: #1B5A0A; margin-left: -0.3%"><span data-title="Klimawandel">Klimawandel</span></a>
+    <a href="#productionaa" class="indexlink" style="color: white; background-color: #CC4321; margin-left: -0.3%"><span data-title="Produktion&Konsum">Produktion&Konsum</span></a>
+    <a href="#energyaa" class="indexlink" style="color: white; background-color: #10B3B3; margin-left: -0.3%"><span data-title="Energie&Mobilität">Energie&Mobilität</span></a>
+    <a href="#selfmadeaa" class="indexlink" title="Entwickelt eigene Challenges und lasst sie von der Lehrkraft vorschlagen - auch unabhängig von den Kategorien."
+       style="color: black; background-color: white; margin-left: -0.3%"><span data-title="Eigenkreationen">Eigenkreationen</span></a>
+    <span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82;">
+        <span data-title="Alle PDF´s ↓">Alle PDF´s ↓</span></a></span>
+</span>
+<!--
+     <img src="weihnachts-challenges-banner.png" tag="x-mas" width="100%" alt="weihnachts-challenges"
+     height="auto">
+   -->
+<br><br><br><br>
+<script type="text/javascript">
+ function openDiv(id) {
+     document.getElementById(id).hidden = false;
+ }
+</script>
 
 <?php
 function printChallenge($row) {
@@ -73,6 +54,11 @@ JOIN solved_challenge as sc ON c.id=sc.challenge
 JOIN class as cl ON cl.id = sc.class
 WHERE c.id = :id");
 
+    $challengeImage = "challenge-bilder/challenge-" . $row->id . ".png";
+    if (!file_exists($challengeImage)) {
+        $challengeImage = "challenge-bilder/challenge-fallback.jpg";
+    }
+
     $classStmt->execute(['id' => $row->id]);
     $classes = "";
     foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $classRow) {
@@ -80,9 +66,8 @@ WHERE c.id = :id");
     }
 ?>
 
-
-
 <div class="<?= e($row->category) ?>" style="height: 240px; width: 15px; float: left; z-index: 7; position: absolute;"></div>
+
 
 
 
@@ -109,109 +94,109 @@ WHERE c.id = :id");
 <img src="/challenge-bilder/challenge-bild-overlay2.png" id="<?=e($row->name)?>"
  alt="challenge-inhalt-background" style="position: absolute; width: 95%; height: 240px; z-index: 6; margin-top: -5px;"></img>
 
+<a href="javascript:void(0)" >
+    <img src="<?=e($challengeImage)?>" onClick="javascript:openDiv ('challenge-overlay-<?=e($row->id)?>')"  tag="challenge-1" width="97%" alt="world" height="240px" style="position: relative;  z-index: 5; margin-left: 15px; margin-bottom: 25px;">
+  </img>
+</a>
+
+<div id="challenge-overlay-<?=e($row->id)?>" hidden="true" >
+    <img src="challenge-bilder/challenge-bild-overlay2.png" alt="challenge-inhalt-background" style="position: absolute; width: 95%; height: 240px; z-index: 6; margin-top: -5px;"></img>
+
+
 
   <div style="width: 97%; height: 260px; margin-top: -260px; position: relative; z-index: 8;">
+      <div style="display: inline; float: left; height: 25x; margin-left: 35px; marign-top: 5px;">
+          <?php
+          $flowers = 2.5;
+          if ($row->flower_count > 0) {
+              $flowers = $row->flower_sum / $row->flower_count;
+          }
 
+          for($i = 0; $i < 5; $i++) {
+              if ($flowers < $i + 0.25) {
+                  $flower_image = "sonnenblume-bewertung-grau.png";
+              } else if($flowers < $i + 0.75) {
+                  $flower_image = "sonnenblume-bewertung-halb.png";
+              } else {
+                  $flower_image = "sonnenblume-bewertung.png";
+              }
+          ?>
+          <img src="<?= e($flower_image) ?>" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"
+               onclick="callApi('rateChallenge', {'challenge': <?= e($row->id)?>, 'rating': <?= e($i + 1) ?>}); alert('Die Challenge wurde mit <?= e($i + 1)?> Blumen bewertet.');"></img>
+          <?php } ?>
+      </div>
 
-  <div style="display: inline; float: left; height: 25x; margin-left: 35px; marign-top: 5px;">
-  <img src="sonnenblume-bewertung.png" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"></img>
-  <img src="sonnenblume-bewertung.png" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"></img>
-  <img src="sonnenblume-bewertung.png" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"></img>
-  <img src="sonnenblume-bewertung.png" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"></img>
-  <img src="sonnenblume-bewertung-grau.png" tag="bewertungGrau" title="Gib eine Bewertung ab"  width="25px" alt="BewertungGrau" height="auto" style="clear: left;"></img>
-  </div>
-
-
-    <div style="display: inline; float: right;  margin-top: 5px; margin-right: 25px;">
-    <div class="<?= e($row->category) ?> challenge-points" >
+      <div style="display: inline; float: right;  margin-top: 5px; margin-right: 25px;">
+          <div class="<?= e($row->category) ?> challenge-points" >
               <span title="Punktzahl"><b style="font-family: Titillium Web; display:inline;"><?= e($row->points)?></b></span>
           </div>
 
      <?php if($row->extrapoints) { ?>
-      <div title="Extrapunkte für Zusatzaufgabe" class="<?= e($row->category) ?> challenge-points" style="display: inline; margin-top: -5px; float: right; margin-right: -31px;">
-    <?php
-       echo "+" . e($row->extrapoints);?>
-    </div>
-    <?php }?>
+         <div title="Extrapunkte für Zusatzaufgabe" class="<?= e($row->category) ?> challenge-points" style="display: inline; margin-top: -5px; float: right; margin-right: -31px;">
+             <?php
+             echo "+" . e($row->extrapoints);?>
+         </div>
+     <?php }?>
 
     <?php if($row->extrapoints) { ?>
-    <div class=" challenge-location" >
-        <img src="symbols/<?= e($row->location) ?>.png" alt="<?= e($row->location)?>" height="30px" width="30px" title="<?= e($row->location)?>"
-        style="display: inline; margin-top: -5px; margin-left: -10px;">
-    </div><br><br>
+        <div class=" challenge-location" >
+            <img src="symbols/<?= e($row->location) ?>.png"
+                 alt="<?= e($row->location)?>"
+                 height="30px" width="30px"
+                 title="<?= e($row->location)?>"
+                 style="display: inline; margin-top: -5px; margin-left: -10px;">
+        </div><br><br>
     <?php }
     else {
     ?>
-    <img src="symbols/<?= e($row->location) ?>.png" alt="<?= e($row->location)?>" height="30px" width="30px" title="<?= e($row->location)?>"
-    style="display: inline; margin-top: -5px; "></img><br><br>
+        <img src="symbols/<?= e($row->location) ?>.png"
+             alt="<?= e($row->location)?>"
+             height="30px" width="30px"
+             title="<?= e($row->location)?>"
+             style="display: inline; margin-top: -5px; "></img><br><br>
     <?php } ?>
-
-    </div>
-
-
-    <div class="dbox" style="color: white; font-size: 12pt; clear: right; text-align: center; font-family: Verdana;  margin-left: 25px; position: relative; max-height: 40%; overflow: auto;">
-          <?= e($row->description) ?>
-
-        </div>
-
-
-    <div class="dbox" style="color: white; font-size: 12pt; clear: right; text-align: center; font-family: Verdana;  margin-left: 25px; position: relative;">
-
-
-    <div style="z-index: 15; margin-bottom: 5px;">
-
-      <?php if($row->author) { ?>
-          <div style="color: white; font-family: Titillium Web;">Von: <b><?=e($row->author)?></b></div>
-      <?php
-      }
-      // pdfs
-      if(file_exists(getPDFPath($row->id, PUPIL_PDF))) {?>
-
-            <br>  <span><a href="#" class="indexlinkB" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="display: inline; color: white; float: left; margin-left: 10px; font-family: Titillium Web; font-size: 13px;   background-color: black"><span data-title="Mehr Infos"><b>Beschreibung [PDF]</b> </span></a></span>
-
-      <?php
-      }
-      if(isLoggedIn() && file_exists(getPDFPath($row->id, TEACHER_PDF))) {?>
-
-              <span><a href="#" class="indexlinkB" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="display: inline; color: white; float: left; margin-left: -10px; font-family: Titillium Web; font-size: 13px;  background-color: black"><span data-title="für Lehrkräfte"><b>Beschreibung [PDF]</b></span></a></span>
-
-      <?php } ?>
       </div>
-      <?php if(isLoggedIn()) {?>
-      <div class="solve-link <?= $classes ?>" >
-        <span>  <a href="#" class="indexlinkG" onclick="if(classNames[selectedClass] && confirm('Challenge \'<?=e($row->name)?>\' für Klasse \'' + classNames[selectedClass] + '\' abschließen (keine Extrapunkte)?'))callApi('solveChallenge', {'class': selectedClass, 'challenge': <?= e($row->id)?>})"
-          style="display: inline; color: white; float: left; font-family: Titillium Web; margin-left: 15px; margin-top: -5px; background-color: #44B365; font-size: 10pt;">
-          <span data-title="ohne Extrapunkte">Abschließen ✔</span></a>
-    </span>  </div>
 
 
+      <div class="dbox" style="color: white; font-size: 12pt; clear: right; text-align: center; font-family: Verdana;  margin-left: 25px; position: relative; max-height: 40%; overflow: auto;">
+          <?= e($row->description) ?>
+      </div>
+
+      <div class="dbox" style="color: white; font-size: 12pt; clear: right; text-align: center; font-family: Verdana;  margin-left: 25px; position: relative;">
+          <div style="z-index: 15; margin-bottom: 5px;">
+
+              <?php if($row->author) { ?>
+                  <div style="color: white; font-family: Titillium Web;">Von: <b><?=e($row->author)?></b></div>
+              <?php
+              }
+              // pdfs
+              if(file_exists(getPDFPath($row->id, PUPIL_PDF))) {?>
+
+                  <br>  <span><a href="#" class="indexlinkB" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="display: inline; color: white; float: left; margin-left: 10px; font-family: Titillium Web; font-size: 13px;   background-color: black"><span data-title="Mehr Infos"><b>Beschreibung [PDF]</b> </span></a></span>
+
+              <?php
+              }
+              if(isLoggedIn() && file_exists(getPDFPath($row->id, TEACHER_PDF))) {?>
+                  <span><a href="#" class="indexlinkB" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(TEACHER_PDF)?>')" style="display: inline; color: white; float: left; margin-left: -10px; font-family: Titillium Web; font-size: 13px;  background-color: black"><span data-title="für Lehrkräfte"><b>Beschreibung [PDF]</b></span></a></span>
+              <?php } ?>
+          </div>
+          <?php if(isLoggedIn()) {?>
+              <div class="solve-link <?= $classes ?>" >
+                  <span>  <a href="#" class="indexlinkG" onclick="if(classNames[selectedClass] && confirm('Challenge \'<?=e($row->name)?>\' für Klasse \'' + classNames[selectedClass] + '\' abschließen (keine Extrapunkte)?'))callApi('solveChallenge', {'class': selectedClass, 'challenge': <?= e($row->id)?>})"
+                             style="display: inline; color: white; float: left; font-family: Titillium Web; margin-left: 15px; margin-top: -5px; background-color: #44B365; font-size: 10pt;">
+                      <span data-title="ohne Extrapunkte">Abschließen ✔</span></a>
+                  </span>  </div>
       <?php } ?>
 
       <span><a href="#" class="indexlinkB" style="display: inline; color: white; font-family: Titillium Web; font-size: 13px; background-color: black; margin-top: -5px; float: right;">
-        <span data-title="einblenden"><b>Kommentare</b> </span></a></span>
-
-
-
-
+          <span data-title="einblenden"><b>Kommentare</b> </span></a></span>
         </div>
   </div>
-
-  </div>
-  <!--
-  END CHALLENGE-Inhalt
-  -->
-
-
-
+</div>
 
 <div class="<?= $classes ?> challenge-title " style="color: white; float: right; text-align: right; font-size: 16pt; font-family: Lobster; position: absolute;
   margin-top: -55px; height: 30px;  width: 95%; margin-right: 25px; z-index: 9; margin-bottom: 25px;"><?=e($row->name)?>&nbsp;&nbsp;
 </div>
-
-
-
-
-
 
 <!--
 <div style="margin-top: 2px; margin-bottom: 1px; color: #828282; background-color: #DEDEDE; height: 150px;">
@@ -232,7 +217,7 @@ Bsp.: Tolle Challenge! Funktioniert am besten in 2er-Teams. Grüße aus dem Spes
 <br>
 <div class="container" style="width: 100%; margin-right: 1%;">
     <?php
-$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, c.location, c.extrapoints, cl.name AS author
+$challengeStmt = $db->prepare("SELECT c.id, c.name, c.description, c.points, c.category, c.location, c.extrapoints, c.flower_count, c.flower_sum, cl.name AS author
 FROM challenge as c
 LEFT JOIN class as cl ON cl.id = c.author
 WHERE category=:category");
@@ -264,8 +249,6 @@ WHERE category=:category");
     $i++;
     } ?>
 </div>
-
-
 
 
   <span title="Entwickelt eigene Challenges und lasst sie von der Lehrkraft vorschlagen - auch unabhängig von den Kategorien.">
@@ -304,7 +287,7 @@ WHERE category=:category");
 
 
 
-</div>
+  </div>
 </div>
 
 
@@ -313,51 +296,6 @@ WHERE category=:category");
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 <?php include "include/footer.php" ?>
