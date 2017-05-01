@@ -88,8 +88,16 @@ WHERE c.id = :id");
 
 
   <a href="javascript:void(0)" >
-  <img src="challenge-1.jpg" onClick="javascript:openDiv ('<?=e($row->name)?>')"  tag="challenge-1" width="97%" alt="world" height="240px" style="position: relative;  z-index: 5; margin-left: 15px; margin-bottom: 25px;">
+    <?php if($row->picture) { ?>
+  <img src="/challenge-bilder/<?=e($row->name)?>.jpg" onClick="javascript:openDiv ('<?=e($row->name)?>')"  tag="challenge-1" width="97%" alt="world" height="240px" style="position: relative;  z-index: 5; margin-left: 15px; margin-bottom: 25px;">
   </img>
+  <?php }
+  else {
+    ?>
+    <img src="challenge-1.jpg" onClick="javascript:openDiv ('<?=e($row->name)?>')"  tag="challenge-1" width="97%" alt="world" height="240px" style="position: relative;  z-index: 5; margin-left: 15px; margin-bottom: 25px;">
+    </img>
+
+ <?php } ?>
   </a>
 
 
@@ -97,8 +105,10 @@ WHERE c.id = :id");
 
 
   <div id="<?=e($row->name)?>" hidden="true" >
+
 <img src="/challenge-bilder/challenge-bild-overlay2.png" id="<?=e($row->name)?>"
  alt="challenge-inhalt-background" style="position: absolute; width: 95%; height: 240px; z-index: 6; margin-top: -5px;"></img>
+
 
   <div style="width: 97%; height: 260px; margin-top: -260px; position: relative; z-index: 8;">
 
