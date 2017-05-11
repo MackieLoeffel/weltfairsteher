@@ -46,14 +46,16 @@ apiAction(function() use ($title, $desc, $class, $points, $suggested, $category,
         }
 
         checkMilestone($class, function() use ($title, $desc, $class, $points, $suggested, $category, $location, $extrapoints) {
-            dbExecute("INSERT INTO challenge (name, description, author, points, category, author_time, location, extrapoints) VALUES (:title, :desc, :class, :points, :category, NOW(), :location, :extrapoints)",
+            dbExecute("INSERT INTO challenge (name, description, author, points, category, author_time, location, extrapoints, flower_sum, flower_count) VALUES (:title, :desc, :class, :points, :category, NOW(), :location, :extrapoints, :flower_sum, :flower_count)",
                       ["title" => $title,
                        "desc" => $desc,
                        "class" => $class,
                        "points" => $points,
                        "location" => $location,
                        "category" => $category,
-                       "extrapoints" => $extrapoints]);
+                       "extrapoints" => $extrapoints,
+                       "flower_sum" => 0,
+                       "flower_count" => 0]);
         });
     }
 });
