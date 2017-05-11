@@ -1,6 +1,9 @@
 <?php
 include "include/header.php";
 include "include/chart.php";
+
+include "include/config.php";
+
 ?>
 <script src="libs/vue.js"></script>
 <script src="js/table.js"></script>
@@ -37,7 +40,22 @@ usort($classes, function($a, $b) {
     <div id="fortschritt-message" class="row" v-if="!cclass">
         <h3 style="color: white;">
             Alle Klassen haben gemeinsam <b style="font-size: 24pt;"><?= e($numSolvedChallenges) ?></b> Challenges absolviert. <br>
-            Wähle eine Klasse in der Navigationsleiste.
+
+
+
+                <form method="POST" v-if="!cclass">
+                    <select id="class-select" name="klasse" size="1" style="color: black;">
+                        <option value="default">Wähle eine Klasse</option>
+                        <?php
+                        $classStmt = $db->prepare("SELECT id, name FROM class");
+                        $classStmt->execute();
+                        foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
+                        ?>
+                            <option value="<?= e($row->id) ?>"><?= e($row->name) ?></option>
+                        <?php } ?>
+                    </select>
+                </form>
+
         </h3>
     </div>
 
