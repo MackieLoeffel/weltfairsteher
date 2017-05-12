@@ -1,6 +1,7 @@
 <?php include "include/header.php"?>
 <br>
-/*
+<h1 class="abstaende" style="color: white; text-align: center;">Die Nachhaltigkeits-Challenge für Schulklassen</h1>
+<!--
 <img src="weltfairsteher-gestalte2.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
 
 <br>
@@ -36,10 +37,10 @@
                         <br>
 
 
-<!--
+
                         <img src="weltkarte_gewuerze2.jpg" style="width: 98%; height: auto; margin-left: 1%; float: left; position: relative; z-index: 2;" alt="Weltkarte mit Würze">
+
 -->
-*/
 
 <div class="abstaende" style="margin-top: 0px; width: 98%; height: auto; float: left; position: relative; z-index: 2; padding: 0px;">
 <?php include "index_gallery.php" ?>
@@ -47,63 +48,64 @@
 
 <div id="separator" style="margin-top: 0px; margin-bottom: 0px; visibility: hidden;">.</div>
 
-<h2 style="color: white; background-color: #108542;">Unterstützer und Kooperationspartner</h2>
+<h2 class="abstaende" style="color: white; background-color: #108542;">Unterstützer und Kooperationspartner</h2>
 
 <div class="container">
 <div class="row">
-<div class="col-xs-6 col-sm-4 col-md-4">
-<img src="/symbols/changeev.png" alt="Logo_CHANGE" style="width: 500px; height: auto;"></img>
+<div class="col-xs-12 col-sm-4 col-md-4">
+<a href="https://chancengestalten.de/" alt="CHANGE-Chancen.Nachhaltig.Gestalten">
+<img src="/symbols/changeev.PNG" alt="Logo_CHANGE" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
 
 </div>
 
-<div class="col-xs-6 col-sm-4 col-md-4">
-<img src="/symbols/LMU.png" alt="Logo_LMU" style="width: 500px; height: auto;"></img>
+<div class="col-xs-12 col-sm-4 col-md-4">
+<img src="/symbols/LMU.png" alt="Logo_LMU" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img>
 
 </div>
 
-<div class="col-xs-6 col-sm-4 col-md-4">
-<img src="/symbols/Netzwerk21.png" alt="Logo_ZeitZeichen" style="width: 500px; height: auto;"></img>
+<div class="col-xs-12 col-sm-4 col-md-4">
+<img src="/symbols/Netzwerk21.png" alt="Logo_ZeitZeichen" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img>
 
 </div>
 
 </div>
 
 <div class="row" style="text-align: justify; background-color: #1BAB3F;">
-  <div class="col-xs-12 col-sm-6 col-md-6">
+  <div class="col-xs-12 col-sm-4 col-md-4">
 <h2 style="color: white; background-color: #108542;">Das Projekt</h2>
-<div class="abstaende">
+<div class="abstaende" style="font-size: 14pt;">
 
 <ul>
   <li>WeltFAIRsteher ist ein deutschlandweites Bildungsprojekt für nachhaltige Entwicklung. Nachhaltigkeit ist ein sehr vielseitiges Thema, das in fast jeden Lebensbereich dringt.</li>
 <li>Mit Nachhaltigkeit habt ihr - ohne es vielleicht zu bemerken - tagtäglich zu tun. Als Teilnehmende von WeltFAIRsteher lernt ihr zahlreiche Aspekte davon kennen und erarbeitet Wege, um aktuellen Problemen entgegenzuwirken.</li>
 <li>Grundsätzlich können alle Schüler*innen ab der 5. Jahrgangsstufe teilnehmen. Zur Betreuung wird eine hauptverantwortliche Lehrkraft empfohlen - die individuelle Ausgestaltung des Projekts ist flexibel.
-  Anmeldungen nehmen wir bis zum 1. Oktober 2017 über unser <a href="/#anmelden">Anmeldeformular</a> entgegen.</li>
+  Anmeldungen nehmen wir bis zum 1. Oktober 2017 über unten stehendes <a href="/#anmelden" alt="Anmelden" style="color: white;">Anmeldeformular</a> entgegen.</li>
 </ul>
 
 </div></div>
 
-<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="col-xs-12 col-sm-8 col-md-8">
 
 <h2 style="color: white; background-color: #108542;">So funktioniert´s</h2>
 
 
 
-<div class="col-xs-12 col-sm-3 col-md-3">
-<h3 style="color: white; background-color: #108542;">Schüler*innen<h3>
-<ul>
+<div class="col-xs-12 col-sm-6 col-md-6" >
+<h3 style="color: white; background-color: #108542;">Schüler*innen</h3>
+<ul style="font-size: 14pt;">
   <li>Sucht euch eine Lehrkraft, die motiviert ist, euch zu unterstützen. Überlegt euch einen Namen für euer Team und meldet euch für die nächste WeltFAIRsteher-Saison an.</li>
-  <li>Klickt in der Kopfzeile auf „Challenges“ und lasst euch inspirieren. Jede Klasse verfolgt eigenständig Etappenziele. Habt ihr eine gewisse Punktzahl erreicht, gibt es eine Überraschung.</li>
+  <li>Klickt in der Kopfzeile auf <a href="https://weltfairsteher.de/challenges.php" alt="Challenges" style="color: white;">Challenges</a> und lasst euch inspirieren. Jede Klasse verfolgt eigenständig Etappenziele. Habt ihr eine gewisse Punktzahl erreicht, gibt es eine Überraschung.</li>
   <li>Wenn ihr noch schneller lernen wollt, werdet selbst kreativ: Jede Klasse darf bis zu 5 Eigenkreationen einreichen und Kreativitätsboni sammeln. Über das Formular im Lehrkraft-Bereich nehmen wir jederzeit Eigenkreationen entgegen.</li>
 </ul>
 </div>
 
-<div class="col-xs-12 col-sm-3 col-md-3">
+<div class="col-xs-12 col-sm-6 col-md-6">
 <h3 style="color: white; background-color: #108542;">Lehrkräfte</h3>
 
-<ul>
+<ul style="font-size: 14pt;">
   <li>Bearbeiten Sie mit Ihrer Klasse Challenges im Unterricht. Zu jeder Aufgabe finden Sie ausführliche Materialien und Hilfestellungen als PDF-Dokument.</li>
   <li>Tragen Sie die bestandenen Challenges Ihrer Klasse online ein. Hat Ihre Klasse ein Etappenziel erreicht, schicken wir Ihnen eine Überraschung für die Schüler*innen zu.</li>
-  <li>Als hauptverantwortliche Lehrkraft melden Sie Ihre Klasse bis zum 1. Oktober über unser <a href="/#anmelden">Anmeldeformular</a> an.</li>
+  <li>Als hauptverantwortliche Lehrkraft melden Sie Ihre Klasse bis zum 1. Oktober über unten stehendes <a href="/#anmelden" alt="Anmelden" style="color: white;">Anmeldeformular</a> an.</li>
 </ul>
 
 </div>
@@ -114,16 +116,17 @@
   <div class="col-xs-12 col-sm-6 col-md-6">
 
 <h2 style="color: white; background-color: #108542;">Unterstützt uns</h2>
-<div class="abstaende" style="text-align: justify; background-color: #1BAB3F;">
+<div class="abstaende" style="text-align: justify; background-color: #1BAB3F; font-size: 14pt;">
 WeltFAIRsteher ist ein non-kommerzielles, ehrenamtliches Projekt, in dem viel Herzblut und Leidenschaft steckt. Jede Unterstützung trägt dazu bei, dass immer mehr Schüler*innen die Chance haben, WeltFAIRsteher zu werden.
-Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIRsteher“ unter https://www.chancengestalten.de/unterstuetzen/ (etwas runterscrollen).
+Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIRsteher“ unter <a href="https://www.chancengestalten.de/unterstuetzen/" alt="Online-Spende" style="color: white;">chancengestalten.de</a> (dort nach unten scrollen).
 
 </div>
 </div>
 
 <div class="col-xs-12 col-sm-6 col-md-6">
 <h2 id="anmelden" style="color: white; background-color: #108542;">Anmeldeformular</h2>
-//include anmeldeformular
+//noch in Arbeit
+//Anmeldungen für das kommende Schuljahr bitte vorübergehend per Mail an kontakt@weltfairsteher.de
 
 </div>
 </div>
