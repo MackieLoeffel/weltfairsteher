@@ -1,7 +1,7 @@
 <?php include "include/header.php";
 array_push($categories, new Category("other", "Weiteres"));
 ?>
-
+  <section  class="sectionbg">
 <br>
 <br>
 
@@ -141,5 +141,5 @@ foreach($categories as $c) {
 ?>
 </div>
 
-
+</section>
 <?php include "include/footer.php"?>

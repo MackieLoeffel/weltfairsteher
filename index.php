@@ -1,5 +1,4 @@
 <?php include "include/header.php"?>
-<br>
 
 <div class="container indexcontent">
 
@@ -79,24 +78,25 @@
 
 
 <div class="row">
-<div class="col-xs-12 col-sm-12 col-md-4">
+<div class="col-xs-12 col-sm-12 col-md-6">
 <a href="https://chancengestalten.de/" alt="CHANGE-Chancen.Nachhaltig.Gestalten">
 <img src="/symbols/changeev.PNG" alt="Logo_CHANGE" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
 
 </div>
 
-<div class="col-xs-12 col-sm-12 col-md-4">
+<div class="col-xs-12 col-sm-12 col-md-6">
     <a href="http://www.edu.lmu.de/apb/dokumente-und-materialien/dokumente-master/ausschreibung_ma_diskurs_arena.pdf" alt="LMU Diskursarena">
 <img src="/symbols/LMU.png" alt="Logo_LMU" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
 
 </div>
-
+<!--
 <div class="col-xs-12 col-sm-12 col-md-4">
   <a href="https://www.netzwerk21kongress.de/zeitzeichen/detail/16_zz_jugend.asp?bURL=de/16_zeitzeichen.asp" alt="ZeitzeicheN-Preis 2016">
 <img src="/symbols/Netzwerk21.png" alt="Logo_ZeitZeichen" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
 
 
 </div>
+-->
 
 </div>
 
@@ -127,7 +127,7 @@ Hier behandelt ihr Themen wie umweltschonende Ernährung, fairen Handel oder ern
 <h3 style="color: white; background-color: #108542;">Schüler*innen</h3>
 <ul style="font-size: 14pt;">
   <li>Sucht euch eine Lehrkraft, die motiviert ist, euch zu unterstützen. Überlegt euch einen Namen für euer Team und meldet euch für die nächste WeltFAIRsteher-Saison an.</li>
-  <li>Klickt in der Kopfzeile auf <a href="https://weltfairsteher.de/challenges.php" alt="Challenges" style="color: white;">Challenges</a> und lasst euch inspirieren. Jede Klasse verfolgt eigenständig Etappenziele. Habt ihr eine gewisse Punktzahl erreicht, gibt es eine Überraschung.</li>
+  <li>Klickt in der Kopfzeile auf <a href="https://weltfairsteher.de/challenges.php" alt="Challenges" style="color: green;">Challenges</a> und lasst euch inspirieren. Jede Klasse verfolgt eigenständig Etappenziele. Habt ihr eine gewisse Punktzahl erreicht, gibt es eine Überraschung.</li>
   <li>Wenn ihr noch schneller lernen wollt, werdet selbst kreativ: Jede Klasse darf bis zu fünf Eigenkreationen einreichen und Kreativitätsboni sammeln. Über das Formular im Lehrkraft-Bereich nehmen wir jederzeit Eigenkreationen entgegen.</li>
 </ul>
 </div>
@@ -138,7 +138,7 @@ Hier behandelt ihr Themen wie umweltschonende Ernährung, fairen Handel oder ern
 <ul style="font-size: 14pt;">
   <li>Bearbeiten Sie mit Ihrer Klasse Challenges im Unterricht. Zu jeder Aufgabe finden Sie ausführliche Materialien und Hilfestellungen als PDF-Dokument.</li>
   <li>Tragen Sie die bestandenen Challenges Ihrer Klasse online ein. Hat Ihre Klasse ein Etappenziel erreicht, schicken wir Ihnen eine Überraschung für die Schüler*innen zu.</li>
-  <li>Als hauptverantwortliche Lehrkraft melden Sie Ihre Klasse bis zum 1. Oktober über unten stehendes <a href="/#anmelden" alt="Anmelden" style="color: white;">Anmeldeformular</a> an.</li>
+  <li>Als hauptverantwortliche Lehrkraft melden Sie Ihre Klasse bis zum 1. Oktober über unten stehendes <a href="/#anmelden" alt="Anmelden" style="color: green;">Anmeldeformular</a> an.</li>
 </ul>
 
 </div>
@@ -151,7 +151,7 @@ Hier behandelt ihr Themen wie umweltschonende Ernährung, fairen Handel oder ern
 <h2 style="color: white; background-color: #108542;">Unterstützt uns</h2>
 <div class="abstaende" style="text-align: justify;  font-size: 14pt;">
 WeltFAIRsteher ist ein non-kommerzielles, ehrenamtliches Projekt von rund zwanzig Studierenden verschiedenster Fachrichtungen. Jede Unterstützung trägt dazu bei, dass immer mehr Schüler*innen die Chance haben, WeltFAIRsteher zu werden.
-Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIRsteher“ unter <a href="https://www.chancengestalten.de/unterstuetzen/" alt="Online-Spende" style="color: white;">chancengestalten.de</a> (dort nach unten scrollen).
+Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIRsteher“ unter <a href="https://www.chancengestalten.de/unterstuetzen/" alt="Online-Spende" style="color: green;">chancengestalten.de</a> (dort nach unten scrollen).
 
 </div>
 </div>

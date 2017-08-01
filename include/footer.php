@@ -35,7 +35,7 @@
 
         <a href="#" class="scrollbutton-top" style="color: white; float: right; margin-right: 1%;">↑</a>
     </footer> </div>
-</section>
+
      </div>
     </body>
     </html>

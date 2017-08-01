@@ -1,5 +1,6 @@
 <?php
 include "include/header.php";
+
 include "include/chart.php";
 
 include "include/config.php";
@@ -7,7 +8,7 @@ include "include/config.php";
 ?>
 <script src="libs/vue.js"></script>
 <script src="js/table.js"></script>
-
+  <section  class="sectionbg" style="background-color: #F2F2DA;">
 <br>
 <br>
 <br>
@@ -38,7 +39,7 @@ usort($classes, function($a, $b) {
 
 <div class="container" style="width: 98%;" id="vue-root">
     <div id="fortschritt-message" class="row" v-if="!cclass">
-        <h3 style="color: white;">
+        <h3 style="color: black;">
             Alle Klassen haben gemeinsam <b style="font-size: 24pt;"><?= e($numSolvedChallenges) ?></b> Challenges absolviert. <br>
 
 
@@ -120,9 +121,13 @@ usort($classes, function($a, $b) {
     </div>
 </div>
 <br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
-
-
+<!--
 
 <span class="indexlink" style="color: white; background-color: #05661D; margin-left: auto; margin-right: auto; display: block; text-align: center;" > <a onclick="return toggleMe('chart')"
 href="javascript:void(0)" style="color: white;"><span data-title="Zeitlichen Verlauf anzeigen">
@@ -135,7 +140,11 @@ Zeitlichen Verlauf anzeigen
      var chart = new LineChart("chart");
  });
 </script></div>
-<!--Liniendiagramm einfügen, das die gewählte Klasse highlighted: abszisse: 1. Tag bis heute  -  ordinate: punkte (0 bis max) -->
 
 
+Liniendiagramm einfügen, das die gewählte Klasse highlighted: abszisse: 1. Tag bis heute  -  ordinate: punkte (0 bis max) -->
+
+
+
+</section>
 <?php include "include/footer.php" ?>
