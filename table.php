@@ -3,8 +3,6 @@ include "include/header.php";
 
 include "include/chart.php";
 
-include "include/config.php";
-
 ?>
 <script src="libs/vue.js"></script>
 <script src="js/table.js"></script>
