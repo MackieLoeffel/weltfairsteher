@@ -36,7 +36,7 @@ usort($classes, function($a, $b) {
 ?>
 
 <form method="POST">
-    <select id="class-select" name="klasse" size="1" style="color: black;">
+    <select id="class-select" name="klasse" size="1" style="color: black; margin-left: 1%;">
         <option value="default">Wähle eine Klasse</option>
         <?php
         $classStmt = $db->prepare("SELECT id, name FROM class");
@@ -47,11 +47,12 @@ usort($classes, function($a, $b) {
         <?php } ?>
     </select>
 </form>
+<br>
 <div class="container" style="width: 98%;" id="vue-root">
     <div id="fortschritt-message" class="row" v-if="!cclass">
         <h3 style="color: black;">
             Alle Klassen haben gemeinsam <b style="font-size: 24pt;"><?= e($numSolvedChallenges) ?></b> Challenges absolviert. <br>
-            Bitte eine Klasse auswählen, um genauere Informationen zur ihr zu erhalten.
+            Wähle eine Klasse, um mehr zu erfahren.
         </h3>
     </div>
 
@@ -59,55 +60,55 @@ usort($classes, function($a, $b) {
 
         <div class="col-xs-12 col-sm-8 col-md-8" >
 
-            <b>Bestandene Challenges je Kategorie</b><br><br>
+            <b style="font-size: 18px;">Bestandene Challenges je Kategorie</b><br><br>
             <!--Je Kategorie: Symbol -> Teil-transparenter Balken, dessen Breite die Anzahl der möglichen Challenges repräsentiert und darin ein
                  nicht transparenter Balken (Kategorie-Farbe), dessen Breite die Anzahl der bestandenen Challenges der Klasse repräsentiert. Ganz rechts im
                  teil-transparenten Balken steht bspw 5/9 für "5 von 9 Challenges dieser Kategorie bestanden". Beide Balken besitzen die gleiche Höhe von 30px.
                  Die Breite beträgt die Anzahl der Challenges der Kategorie mal 8%, bei Ernährung also 4 mal 8% = 32%. Diese Werte (Breite der Balken und Zahlen)
                  müssen automatisch erstellt werden, sodass auf Änderungen selbständig reagiert wird (v.a. bei den Eigenkreationen und der Kreativität von Vorteil)
                -->
-
+<br>
             <div v-for="c in categories">
                 <div :title="c.title">
-                    <img :src="'symbols/symbol-' + c.name + '.png'"
-                         style="margin-right: 5%; margin-top: -8px; float: left;" width="10%;" height="auto;" />
-                    <div :class="c.name + '-fortschritt-bg'" style="position: relative; height: 30px; margin-left: 11%;"
-                         :style="{width: calcBgWidth(c.num) + '%'}">
-                    <span style="float: right; font-size: 21px; color: white;">{{cclass.solved[c.name]}}/{{c.num}}</span>
+                    <img :src="'symbols/symbol-' + c.name + '2.png'"
+                         style="margin-right: 5%; margin-top: -21px; float: left;" width="15%;" height="auto;" />
+                    <div :class="c.name + '-fortschritt-bg'" style="position: relative; height: 40px; margin-left: 18%;"
+                         :style="{width: calcBgWidth(c.num)*0.7 + '%'}">
+                    <span style="float: right; margin-right: 5px; font-size: 28px; color: white;">{{cclass.solved[c.name]}}/{{c.num}}</span>
                     <div :class="c.name + '-fortschritt-fg'"
-                         style="height: 30px;"
+                         style="height: 40px;"
                          :style="{width: (cclass.solved[c.name] / c.num * 100) + '%'}"></div>
                     </div>
                 </div>
-                <br><br>
+                <br><br><br><br>
             </div>
 
 
         </div>
 
         <div class="col-xs-12 col-sm-4 col-md-4" >
-            <b><h2 id="class-name" style="color: white; float: left;">{{cclass.name}}</h2></b>
+            <b><h2 id="class-name" style="color: #595959; float: left; margin-top: -6px;">{{cclass.name}}</h2></b>
             <br><br><br><br>
 
-            <span title="Anzahl der Eigenkreationen"><b> Kreativität</b></span><br>
+            <span title="Anzahl der Eigenkreationen"><b style="font-size: 18px;">Eigenkreationen</b></span><br><br>
 
-            <div class="fortschritt-circle" style="margin-top: 40px; margin-right: 5%; font-size: 21px;">
+            <div class="fortschritt-circle" style="margin-top: 50px; margin-right: 5%; font-size: 21px;">
                 {{cclass.numCreativity}}/<?= e(MAX_SELFMADE_PER_CLASS)?>
             </div>
             <div title="Eigenkreationen">
                 <img alt="Kreativität" :src="'symbols/creativity-' + cclass.numCreativity + '.png'" tag="creativity" style="float: left;"/>
             </div>
 
-            <div style="clear: left;"></div><br><br>
+            <div style="clear: left;"></div><br><br><br><br>
 
-            <b> Punkte bis zur nächsten Etappe </b><br><br>
+            <b style="font-size: 18px; margin-top: 5px;"> Punkte bis zur nächsten Etappe </b><br><br><br>
             <span class="fortschritt-circle">
                 {{nextMilestone}}
             </span>
-            <br><br><br><br>
+            <br><br><br><br><br><br>
 
             <span>
-                <b>  Gesamtpunktzahl </b><br><br>
+                <b style="font-size: 18px; margin-top: 5px;">  Gesamtpunktzahl </b><br><br><br>
                 <span class="fortschritt-circle">
                     {{currentPoints}}
                 </span>
