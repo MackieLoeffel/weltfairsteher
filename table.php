@@ -11,16 +11,16 @@ include "include/chart.php";
 <br>
 <br>
 <div  style="
-z-index: 5;
-margin-left: 0%;
-float: left;
-width: 100%;
-margin-right: 0%;
+             z-index: 5;
+             margin-left: 0%;
+             float: left;
+             width: 100%;
+             margin-right: 0%;
 
-margin-top: -75px;
+             margin-top: -75px;
 
-margin-bottom: 10px;
-">
+             margin-bottom: 10px;
+             ">
 
 
     <img src="table-banner.png" tag="kompass" width="100%" alt="kompass"
@@ -35,26 +35,23 @@ usort($classes, function($a, $b) {
 });
 ?>
 
+<form method="POST">
+    <select id="class-select" name="klasse" size="1" style="color: black;">
+        <option value="default">Wähle eine Klasse</option>
+        <?php
+        $classStmt = $db->prepare("SELECT id, name FROM class");
+        $classStmt->execute();
+        foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
+        ?>
+            <option value="<?= e($row->id) ?>"><?= e($row->name) ?></option>
+        <?php } ?>
+    </select>
+</form>
 <div class="container" style="width: 98%;" id="vue-root">
     <div id="fortschritt-message" class="row" v-if="!cclass">
         <h3 style="color: black;">
             Alle Klassen haben gemeinsam <b style="font-size: 24pt;"><?= e($numSolvedChallenges) ?></b> Challenges absolviert. <br>
-
-
-
-                <form method="POST" v-if="!cclass">
-                    <select id="class-select" name="klasse" size="1" style="color: black;">
-                        <option value="default">Wähle eine Klasse</option>
-                        <?php
-                        $classStmt = $db->prepare("SELECT id, name FROM class");
-                        $classStmt->execute();
-                        foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
-                        ?>
-                            <option value="<?= e($row->id) ?>"><?= e($row->name) ?></option>
-                        <?php } ?>
-                    </select>
-                </form>
-
+            Bitte eine Klasse auswählen, um genauere Informationen zur ihr zu erhalten.
         </h3>
     </div>
 
