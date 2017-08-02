@@ -4,19 +4,19 @@
 
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-4">
-<img src="/symbols/start1.jpg" alt="Startbild" style="width: 98%; height: auto; margin-top: 10px; margin-bottom: 10px;"></img>
+<img src="symbols/start1.jpg" alt="Startbild" style="width: 98%; height: auto; margin-top: 10px; margin-bottom: 10px;"></img>
 
 </div>
 
 <div class="col-xs-12 col-sm-12 col-md-4">
 
-<img src="/symbols/start3.jpg" alt="Startbild" style="width: 98%; height: auto; margin-top: 15px; margin-bottom: 15px;"></img>
+<img src="symbols/start3.jpg" alt="Startbild" style="width: 98%; height: auto; margin-top: 15px; margin-bottom: 15px;"></img>
 
 </div>
 
 <div class="col-xs-12 col-sm-12 col-md-4">
 <a href="#anmelden" alt="Anmeldeformular">
-<img src="/symbols/start2.jpg" alt="Anmeldebild" style="width: 98%; height: auto; margin-top: 15px; margin-bottom: 25px;"></img></a>
+<img src="symbols/start2.jpg" alt="Anmeldebild" style="width: 98%; height: auto; margin-top: 15px; margin-bottom: 25px;"></img></a>
 
 
 </div>
@@ -80,19 +80,19 @@
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-6">
 <a href="https://chancengestalten.de/" alt="CHANGE-Chancen.Nachhaltig.Gestalten">
-<img src="/symbols/changeev.PNG" alt="Logo_CHANGE" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
+<img src="symbols/changeev.PNG" alt="Logo_CHANGE" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
 
 </div>
 
 <div class="col-xs-12 col-sm-12 col-md-6">
     <a href="http://www.edu.lmu.de/apb/dokumente-und-materialien/dokumente-master/ausschreibung_ma_diskurs_arena.pdf" alt="LMU Diskursarena">
-<img src="/symbols/LMU.png" alt="Logo_LMU" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
+<img src="symbols/LMU.png" alt="Logo_LMU" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
 
 </div>
 <!--
 <div class="col-xs-12 col-sm-12 col-md-4">
   <a href="https://www.netzwerk21kongress.de/zeitzeichen/detail/16_zz_jugend.asp?bURL=de/16_zeitzeichen.asp" alt="ZeitzeicheN-Preis 2016">
-<img src="/symbols/Netzwerk21.png" alt="Logo_ZeitZeichen" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
+<img src="symbols/Netzwerk21.png" alt="Logo_ZeitZeichen" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
 
 
 </div>
