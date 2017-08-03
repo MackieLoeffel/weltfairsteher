@@ -1,7 +1,6 @@
-<?php include "include/header.php";
-?>
+<?php include "include/header.php";?>
 
-
+<section  class="sectionbg" style="background-color: #F2F2DA;">
 <!--
 <div  style="
 margin-left: 1%;
@@ -39,6 +38,7 @@ margin-bottom: 5px;
      height="auto">
    -->
 <br><br><br><br>
+<div style="color: black;">Aufgrund von Wartungsarbeiten sind die Challenges kurzzeitig nicht abrufbar. Wir bitten dies zu entschuldigen.</div>
 <script type="text/javascript">
  function openDiv(id) {
      document.getElementById(id).hidden = false;
@@ -297,5 +297,5 @@ WHERE category=:category");
 <br>
 <br>
 
-
+</section>
 <?php include "include/footer.php" ?>
