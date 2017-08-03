@@ -71,7 +71,7 @@ usort($classes, function($a, $b) {
             <div v-for="c in categories">
                 <div :title="c.title">
                     <img :src="'symbols/symbol-' + c.name + '2.png'"
-                         style="margin-right: 5%; margin-top: -21px; float: left;" width="15%;" height="auto;" />
+                         style="margin-right: 5%; margin-top: -24px; float: left;" width="15%;" height="auto;" />
                     <div :class="c.name + '-fortschritt-bg'" style="position: relative; height: 40px; margin-left: 18%;"
                          :style="{width: calcBgWidth(c.num)*0.7 + '%'}">
                     <span style="float: right; margin-right: 5px; font-size: 28px; color: white;">{{cclass.solved[c.name]}}/{{c.num}}</span>

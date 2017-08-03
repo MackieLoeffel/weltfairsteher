@@ -4,19 +4,19 @@
 
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-4">
-<img src="symbols/start1.jpg" alt="Startbild" style="width: 98%; height: auto; margin-top: 10px; margin-bottom: 10px;"></img>
+<img src="symbols/start1.jpg" alt="Startbild" style="width: 98%; height: auto; margin-top: 5px;"></img>
 
 </div>
 
 <div class="col-xs-12 col-sm-12 col-md-4">
 
-<img src="symbols/start3.jpg" alt="Startbild" style="width: 98%; height: auto; margin-top: 15px; margin-bottom: 15px;"></img>
+<img src="symbols/start3.jpg" alt="Startbild" style="width: 98%; height: auto; margin-top: 5px; margin-bottom: 5px;"></img>
 
 </div>
 
 <div class="col-xs-12 col-sm-12 col-md-4">
 <a href="#anmelden" alt="Anmeldeformular">
-<img src="symbols/start2.jpg" alt="Anmeldebild" style="width: 98%; height: auto; margin-top: 15px; margin-bottom: 25px;"></img></a>
+<img src="symbols/start2.jpg" alt="Anmeldebild" style="width: 98%; height: auto; margin-top: 5px; margin-bottom: 25px;"></img></a>
 
 
 </div>
@@ -163,6 +163,43 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
 
 </div>
 </div>
+
+<br>
+
+<div class="row">
+  <h2 style="color: white; background-color: #108542; width: 98%; margin-left: 1%;">Rückmeldungen</h2>
+
+  <div class="col-xs-12 col-sm-12 col-md-6">
+
+    <img src="symbols/tut-to-green-gruppenbild.png" alt="Gruppenfoto" style="width: 98%; height: auto;"></img>
+
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-6">
+
+  <img src="symbols/sus-statements-1.png" alt="Zitate" style="width: 98%; height: auto;"></img>
+
+
+</div>
+</div>
+<br>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-6">
+
+    <img src="symbols/sus-statements-2.png" alt="Zitate" style="width: 98%; height: auto;"></img>
+
+</div>
+
+
+<div class="col-xs-12 col-sm-12 col-md-6">
+
+  <img src="symbols/tut-to-green-gruppenbild2.png" alt="Gruppenfoto" style="width: 98%; height: auto;"></img>
+
+
+</div>
+</div>
+
 </div>
 
 <!--
