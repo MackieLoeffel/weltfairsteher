@@ -14,7 +14,7 @@ include "include/header.php"
 </ul><br/><br/>
 <span><a href="api/exportFeedback.php" style="background-color: white; margin-left: 5%; margin-bottom: 20px;" class="indexlink"><span data-title="Feedback exportieren">Feedback exportieren </span></a></span>
 
-<table style="color: white; width:98%;">
+<table style="color: black; width:98%;">
     <thead><tr>
         <th class="table-head"> Challenge </th>
         <th class="table-head"> Spass </th>
