@@ -20,12 +20,12 @@ before_script:
   - sudo a2ensite default
   - sudo service apache2 restart
 
-  - ls -l /etc/apache2/conf-available/
-  - ls -l /etc/apache2/sites-available/
-  - ls -l .
-  - ls -l ..
-  - ls -l ../..
-  - ls -l ../../..
+  #- ls -l /etc/apache2/conf-available/
+  #- ls -l /etc/apache2/sites-available/
+  #- ls -l .
+  #- ls -l ..
+  #- ls -l ../..
+  #- ls -l ../../..
 
   - curl -k http://localhost/index.php || true
   - curl -k http://localhost/weltfairsteher/index.php || true
@@ -33,6 +33,10 @@ before_script:
   - curl -k https://localhost/index.php || true
   - curl -k https://localhost/weltfairsteher/index.php || true
   - curl -k https://localhost/weltfairsteher/login.php || true
+
+  - ls -l /var/log/apache2/
+  - cat /var/log/apache2/access.log
+  - cat /var/log/apache2/error.log
 
   - sudo apt-get install -y firefox
   - mysql -e 'CREATE DATABASE website;'
