@@ -1,3 +1,4 @@
+language: php
 services:
   - mysql
 before_script:
