@@ -6,8 +6,8 @@
   SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt
   SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
 
-  DocumentRoot %TRAVIS_BUILD_DIR%
-  Alias /weltfairsteher %TRAVIS_BUILD_DIR%
+  DocumentRoot %TRAVIS_BUILD_DIR%/..
+  #Alias /weltfairsteher %TRAVIS_BUILD_DIR%
 
   <Directory "%TRAVIS_BUILD_DIR%">
     Options FollowSymLinks MultiViews ExecCGI
@@ -16,12 +16,12 @@
     Allow from all
   </Directory>
 
-  <Directory "%TRAVIS_BUILD_DIR%/weltfairsteher">
-    Options FollowSymLinks MultiViews ExecCGI
-    AllowOverride All
-    Order deny,allow
-    Allow from all
-  </Directory>
+  #<Directory "%TRAVIS_BUILD_DIR%/weltfairsteher">
+  #  Options FollowSymLinks MultiViews ExecCGI
+  #  AllowOverride All
+  #  Order deny,allow
+  #  Allow from all
+  #</Directory>
 
   # Wire up Apache to use Travis CI's php-fpm.
   <IfModule mod_fastcgi.c>
