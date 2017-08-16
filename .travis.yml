@@ -34,9 +34,9 @@ before_script:
   - curl -k https://localhost/weltfairsteher/index.php || true
   - curl -k https://localhost/weltfairsteher/login.php || true
 
-  - ls -l /var/log/apache2/
-  - cat /var/log/apache2/access.log
-  - cat /var/log/apache2/error.log
+  - sudo ls -l /var/log/apache2/
+  - sudo cat /var/log/apache2/access.log
+  - sudo cat /var/log/apache2/error.log
 
   - sudo apt-get install -y firefox
   - mysql -e 'CREATE DATABASE website;'
