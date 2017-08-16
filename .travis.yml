@@ -15,6 +15,7 @@ before_script:
   # configure apache virtual hosts
   - sudo cp -f build/travis-ci-apache /etc/apache2/sites-available/default.conf
   - sudo sed -e "s?%TRAVIS_BUILD_DIR%?$(pwd)?g" --in-place /etc/apache2/sites-available/default.conf
+  - cat /etc/apache2/sites-available/default.conf
   - echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/servername.conf
   - sudo a2enconf servername
   - sudo a2ensite default
