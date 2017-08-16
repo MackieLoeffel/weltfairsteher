@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 
@@ -33,7 +34,11 @@ public class TestBase {
 
         System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver/" + geckodriverName);
 
-        DesiredCapabilities caps = DesiredCapabilities.firefox();
+        FirefoxOptions opts = new FirefoxOptions();
+        // workaround for https://github.com/mozilla/geckodriver/issues/858
+        // TODO: remove, when fixed
+        opts.addPreference("dom.file.createInChild", true);
+        DesiredCapabilities caps = opts.addTo(DesiredCapabilities.firefox());
         caps.setAcceptInsecureCerts(true);
         if(System.getenv("CI") != null) {
             caps.setCapability(FirefoxDriver.BINARY, "/usr/bin/firefox");
