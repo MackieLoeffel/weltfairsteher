@@ -1,6 +1,4 @@
 Listen 443
-NameVirtualHost *:80
-NameVirtualHost *:443
 
 <VirtualHost *:80>
   ServerName localhost
@@ -29,7 +27,7 @@ NameVirtualHost *:443
 
   SSLEngine on
 
-  SSLCertificateFile    /etc/ssl/certs/apache-selfsigned.crt
+  SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt
   SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
 
   DocumentRoot %TRAVIS_BUILD_DIR%
