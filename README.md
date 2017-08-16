@@ -1,6 +1,8 @@
 # WeltFAIRsteher
 
-See it live at: http://www.weltfairsteher.jetzt
+[![Build Status](https://travis-ci.org/MackieLoeffel/weltfairsteher.svg?branch=master)](https://travis-ci.org/MackieLoeffel/weltfairsteher)
+
+See it live at: https://www.weltfairsteher.de
 
 Website for a project by [CHANGE](http://www.chancengestalten.de/)
 
