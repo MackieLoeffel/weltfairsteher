@@ -34,6 +34,10 @@ public class TestBase {
 
         DesiredCapabilities caps = DesiredCapabilities.firefox();
         caps.setAcceptInsecureCerts(true);
+        if(System.getenv("CI") != null) {
+            caps.setCapability(FirefoxDriver.MARIONETTE, false);
+        }
+
         driver = new FirefoxDriver(caps);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
