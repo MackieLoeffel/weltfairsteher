@@ -241,7 +241,7 @@ span.symbol
 
 input.text
 {
-	background:#fff url(../../../images/shadow.gif) repeat-x top;
+	#background:#fff url(../../../images/shadow.gif) repeat-x top;
 	border-bottom:1px solid #ddd;
 	border-left:1px solid #c3c3c3;
 	border-right:1px solid #c3c3c3;
@@ -262,13 +262,13 @@ input.file
 
 textarea.textarea
 {
-	background:#fff url(../../../images/shadow.gif) repeat-x top;
+	#background:#fff url(../../../images/shadow.gif) repeat-x top;
 	border-bottom:1px solid #ddd;
 	border-left:1px solid #c3c3c3;
 	border-right:1px solid #c3c3c3;
 	border-top:1px solid #7c7c7c;
 	color:#333;
-	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	#font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
 	font-size:100%;
 	margin:0;
 	width:99%;
@@ -280,7 +280,7 @@ select.select
 	font-size:100%;
 	margin:1px 0;
 	padding:1px 0 0;
-	background:#fff url(../../../images/shadow.gif) repeat-x top;
+	#background:#fff url(../../../images/shadow.gif) repeat-x top;
 	border-bottom:1px solid #ddd;
 	border-left:1px solid #c3c3c3;
 	border-right:1px solid #c3c3c3;
@@ -591,7 +591,7 @@ border:1px solid #ccc;
 font-size: 11px;
 color: #000;
 background: #fff;
-font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+#font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
 }
 
 .calendar .button { 
@@ -783,10 +783,11 @@ font-weight: bold;
 	 
 <div id="form_container">
 	
-		<form id="form_45741" class="appnitro"  method="post" action="changeuser.php">
+		<form id="register" onsubmit="return validateForm();" method="post" action="changeuser.php">
 					<div class="form_description">
 			<h2>Mitmachen</h2>
-			<p>Bitte teilen Sie uns folgende Informationen mit.</p>
+			<p>Bitte teilen Sie uns folgende Informationen mit. Die mit * gekennzeichneten Felder sind Pflichtangaben. Alle anderen Informationen können zu einem späteren Zeitpunkt nachgeliefert werden.</p>
+			<b><div id="errmsg0" style="color:red;margin:10px"></div></b>
 		</div>						
 			<ul >
 			
@@ -798,12 +799,12 @@ font-weight: bold;
 		</li>		<li id="li_2" >
 		<label class="description" for="password">Passwort* </label>
 		<div>
-			<input id="password" name="password" class="element text medium" type="text" maxlength="255" value=""/> 
+			<input id="password" name="password" class="element text medium" type="password" maxlength="255" value=""/> 
 		</div><p class="guidelines" id="guide_2"><small>Wählen Sie ein Passwort.</small></p> 
 		</li>		<li id="li_4" >
 		<label class="description" for="password_r">Passwort wiederholen* </label>
 		<div>
-			<input id="password_r" name="password_r" class="element text medium" type="text" maxlength="255" value=""/> 
+			<input id="password_r" name="password_r" class="element text medium" type="password" maxlength="255" value=""/> 
 		</div> 
 		</li>		<li id="li_3" >
 		<label class="description" for="realname">Name* </label>
@@ -826,9 +827,9 @@ font-weight: bold;
 			<textarea id="schooladress" name="schooladress" class="element textarea small"></textarea> 
 		</div> 
 		</li>		<li id="li_7" >
-		<label class="description" for="totalstudents">Anzahl der Schüler </label>
+		<label class="description" for="studentstotal">Anzahl der Schüler </label>
 		<div>
-			<input id="totalstudents" name="totalstudents" class="element text small" type="text" maxlength="255" value=""/> 
+			<input id="studentstotal" name="studentstotal" class="element text small" type="text" maxlength="255" value=""/> 
 		</div> 
 		</li>		<li id="li_8" >
 		<label class="description" for="studentsyear">Jahrgangsstufe </label>
@@ -849,13 +850,21 @@ font-weight: bold;
 		</select>
 		</div> 
 		</li>
+		
+	<li id="li_x" >
+		<label class="description" for="teamname">Teamname </label>
+		<div>
+			<input id="teamname" name="teamname" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>
 			
 					<li class="buttons">
-			    <input type="hidden" name="mode" value="ADD" />
+			    <input type="hidden" name="mode" id="mode" value="ADD" />
 			    
 				<input id="saveForm" class="button_text" type="submit" name="submit" value="Abschicken" />
 		</li>
 			</ul>
+			<b><div id="errmsg" style="color:red;margin:10px"></div></b>
 		</form>	
 	</div>
 
@@ -863,6 +872,71 @@ font-weight: bold;
 <br>
 <br>
 <br>
+
+
 <?php
 include "include/footer.php";
 ?>
+
+
+	<script>
+		
+
+function isNumber(n) { return /^-?[\d.]+(?:e-?\d+)?$/.test(n); } 
+
+
+function validateForm() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var password_r = document.getElementById("password_r").value;
+    var firstname = document.getElementById("realname_1").value;
+    var lastname = document.getElementById("realname_2").value;
+    var schoolname = document.getElementById("schoolname").value;
+    var schooladress = document.getElementById("schooladress").value;
+    var studentstotal = document.getElementById("studentstotal").value;
+    var studentsyear = document.getElementById("studentsyear").value;
+    var teamname = document.getElementById("teamname").value;
+    validRegEx = /^[^\\\/&]*$/;
+    var errormsg = "";
+    var good = true;
+    if (!((email.match(validRegEx) == email) && (email))) {
+        errormsg += "Bitte geben Sie eine Email-Adresse an.<br>";
+        good = false;
+    }
+    if (!(password)) {
+        errormsg += "Bitte wählen Sie ein Passwort.<br>";
+        good = false;
+    }
+    if (!(password_r)) {
+        errormsg += "Bitte wiederholen Sie Ihr Passwort.<br>";
+        good = false;
+    }
+    if (!(password_r == password)) {
+        errormsg += "Die Passwörter stimmen nicht überein.<br>";
+        good = false;
+    }
+    if (!(firstname)) {
+        errormsg += "Bitte geben Sie einen Vornamen an.<br>";
+        good = false;
+    }
+    if (!(lastname)) {
+        errormsg += "Bitte geben Sie einen Nachnamen an.<br>";
+        good = false;
+    }
+    if (!(schoolname)) {
+        errormsg += "Bitte geben Sie den Namen Ihrer Schule an.<br>";
+        good = false;
+    }
+    if (!(schooladress)) {
+        errormsg += "Bitte geben Sie die Adresse Ihrer Schule an.<br>";
+        good = false;
+    }
+    
+    document.getElementById("errmsg").innerHTML = errormsg;
+    document.getElementById("errmsg0").innerHTML = "Einige Pflichtfelder sind noch nicht ausgefüllt.";
+    
+    return good;
+}
+	
+	
+	</script>
