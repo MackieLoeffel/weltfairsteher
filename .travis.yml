@@ -40,3 +40,6 @@ script:
 after_failure:
   - sudo cat /var/log/apache2/access.log
   - sudo cat /var/log/apache2/error.log
+  - ls -l /home/travis/build/MackieLoeffel/weltfairsteher/selenium/src/test/resources/
+  - ls -l /home/travis/build/MackieLoeffel/weltfairsteher/selenium/src/test/resources/test.pdf
+  - ls -l /home/travis/build/MackieLoeffel/weltfairsteher/selenium/src/test/resources/challenge-pic.png

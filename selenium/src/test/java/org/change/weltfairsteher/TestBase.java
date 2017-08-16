@@ -36,7 +36,6 @@ public class TestBase {
         DesiredCapabilities caps = DesiredCapabilities.firefox();
         caps.setAcceptInsecureCerts(true);
         if(System.getenv("CI") != null) {
-//            caps.setCapability(FirefoxDriver.MARIONETTE, false);
             caps.setCapability(FirefoxDriver.BINARY, "/usr/bin/firefox");
         }
 
