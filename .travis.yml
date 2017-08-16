@@ -18,6 +18,8 @@ before_script:
   - sudo service apache2 restart
 
   - curl -k http://localhost/index.php || true
+  - curl -k http://localhost/weltfairsteher/index.php || true
+  - curl -k http://localhost/weltfairsteher/login.php || true
   - curl -k https://localhost/index.php || true
   - curl -k https://localhost/weltfairsteher/index.php || true
   - curl -k https://localhost/weltfairsteher/login.php || true
