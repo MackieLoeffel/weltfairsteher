@@ -43,18 +43,24 @@ $studentstotal = $_REQUEST["studentstotal"];
 $studentsyear = $_REQUEST["studentsyear"];
 $mode = $_REQUEST["mode"];
 $teamname = $_REQUEST["teamname"];
+$new_teamname = $_REQUEST["new_teamname"];
+$newname= $_REQUEST["newname"];
+$user = $_REQUEST["user"];
+$class = $_REQUEST["class"];
+$action = $_REQUEST["action"];
 
 $password_hashed = password_hash($password, PASSWORD_BCRYPT); //hash password
 
-##################### 2. MODE 'ADD': CREATE USER #######################
+##################### 2. MODE 'ADD': CREATE USER / CLASS #######################
 
 ## 2a Create user
-
+$teacherid = -1;
 if ($mode == "ADD"){
 	$sql = $db->prepare("INSERT INTO `user` (`password`, `email`, `role`) VALUES (?, ?, ?)");
 	
 	$output = $sql->execute(array($password_hashed, $email, 1));
-	
+	$teacherid = $db->lastInsertId();
+
 	if ($output == true) {
 		
 		flogb("<div>Herzlich Willkommen, $firstname $lastname!<br>Die Anmeldung war erfolgreich. Sie können sich nun in den Lehrkraft-Bereich einloggen.</div>");
@@ -66,20 +72,24 @@ if ($mode == "ADD"){
 	}
 
 ## 2b If teamname given, create class
-	if ($teammate != "") {
-		$sql = $db->prepare("INSERT INTO `user` (`password`, `email`, `role`) VALUES (?, ?, ?)");
+	if ($teamname!= "" && $teacherid != -1) {
+		$sql = $db->prepare("INSERT INTO `class` (`name`, `teacher`) VALUES (?, ?)");
 	
-		$output = $sql->execute(array($password_hashed, $email, 1));
+		$output = $sql->execute(array($teamname, $teacherid));
 		
 		if ($output == true) {
 			
-			flogb("<div>Herzlich Willkommen, $firstname $lastname!<br>Die Anmeldung war erfolgreich. Sie können sich nun in den Lehrkraft-Bereich einloggen.</div>");
+			flogb("Das Team $teamname kann nun mit den Challenges beginnen.");
 			
 		}
 		else {
-			flogerror("<div>Die Anmeldung ist fehlgeschlagen. Versuchen Sie es später erneut oder kontaktieren Sie das Weltfairsteher-Team.</div>");
+			flogerror("<div>Fehler beim Erstellen des Teams.</div>");
 			
 		}
+		
+	}
+	elseif ($teamname == "" && $teacherid != -1){
+		flogb("Bitte denken Sie daran, im Lehrkraft-Bereich vor dem Bearbeiten von Challenges einen Teamnamen einzutragen.");
 		
 	}
 
@@ -87,9 +97,87 @@ if ($mode == "ADD"){
 
 }
 
+##################### 2. MODE 'CHANGE': MODIFY USER / CLASS #######################
+## 2a Modify class
+if ($mode == "CHANGE"){
+	if ($action == "Namen ändern") {
+		
+		if ($newname == "") {
+			flogerror("<div>Bitte geben Sie einen gültigen Teamnamen ein.</div><br><a href='javascript:history.back()'>Zurück</a>");
+			exit();
+		}
+		if ($class == "") {
+			flogerror("<div>Sie müssen eine Klasse auswählen.</div><br><a href='javascript:history.back()'>Zurück</a>");
+			exit();
+		}
+		
+		$sql = $db->prepare("UPDATE `class` SET name = ? WHERE id = ?");
+		
+		$output = $sql->execute(array($newname, $class));
+	
+		if ($output == true) {
+			//echo $class;
+			flogb("<div>Name geändert.</div>");
+			
+		}
+		else {
+			flogerror("<div>Fehler beim Ändern des Namens.</div>");
+			
+		}
+	
+	}
+	else { #Klick auf "Klase löschen"
+
+## 2b remove class
+		if ($class == "") {
+			flogerror("<div>Sie müssen eine Klasse auswählen.</div><br><a href='javascript:history.back()'>Zurück</a>");
+			exit();
+		}
+		
+		$sql = $db->prepare("DELETE FROM `class` WHERE id = ?");
+	
+		$output = $sql->execute(array($class));
+		
+		if ($output == true) {
+			
+			flogb("Das Team wurde gelöscht.");
+			
+		}
+		else {
+			flogerror("<div>Fehler beim Löschen des Teams.</div>");
+			
+		}
+	}
+}
+
+
+##################### 2. MODE 'NEW': ADD CLASS  #######################
+if ($mode == "NEW"){
+	if ($new_teamname!= "") {
+		$sql = $db->prepare("INSERT INTO `class` (`name`, `teacher`) VALUES (?, ?)");
+	
+		$output = $sql->execute(array($new_teamname, $user));
+		
+		if ($output == true) {
+			
+			flogb("Das Team $new_teamname kann nun mit den Challenges beginnen.");
+			
+		}
+		else {
+			flogerror("<div>Fehler beim Erstellen des Teams.</div>");
+			
+		}
+		
+	}
+	else{
+		flogerror("Bitte geben Sie einen gültigen Teamnamen ein.");
+		
+	}
+}
 ?>
 
 </div>
+<div style="text-align: center"><a href="javascript:history.back()">Zurück</a></div>
 <?php
 include "include/footer.php";
 ?>
