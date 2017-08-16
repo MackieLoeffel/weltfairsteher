@@ -21,15 +21,6 @@ before_script:
   - sudo a2ensite default
   - sudo service apache2 restart
 
-  - cat ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf
-  #- ls -l /etc/apache2/conf-available/
-  #- ls -l /etc/apache2/sites-available/
-  # - pwd
-  # - ls -l .
-  # - ls -l ..
-  # - ls -l ../..
-  # - ls -l ../../..
-  # - ls -l ../../../..
   - chmod a+x /home/travis
 
   - cp include/secrets.php.default include/secrets.php
@@ -37,13 +28,13 @@ before_script:
   # - curl -k http://localhost/index.php || true
   # - curl -k http://localhost/weltfairsteher/index.php || true
   # - curl -k http://localhost/weltfairsteher/login.php || true
-  - curl -k https://localhost/index.php || true
-  - curl -k https://localhost/weltfairsteher/index.php || true
-  - curl -k https://localhost/weltfairsteher/login.php || true
+  # - curl -k https://localhost/index.php || true
+  # - curl -k https://localhost/weltfairsteher/index.php || true
+  # - curl -k https://localhost/weltfairsteher/login.php || true
 
-  - sudo ls -l /var/log/apache2/
-  - sudo cat /var/log/apache2/access.log
-  - sudo cat /var/log/apache2/error.log
+  # - sudo ls -l /var/log/apache2/
+  # - sudo cat /var/log/apache2/access.log
+  # - sudo cat /var/log/apache2/error.log
 
   - sudo apt-get install -y firefox
   - mysql -e 'CREATE DATABASE website;'
@@ -53,3 +44,6 @@ before_script:
   - sleep 3 # give xvfb some time to start
 script:
   - cd selenium && mvn clean install
+after_failure:
+  - sudo cat /var/log/apache2/access.log
+  - sudo cat /var/log/apache2/error.log
