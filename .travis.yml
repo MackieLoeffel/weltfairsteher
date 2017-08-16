@@ -16,7 +16,12 @@ before_script:
   - sudo cp -f build/travis-ci-apache /etc/apache2/sites-available/default
   - sudo sed -e "s?%TRAVIS_BUILD_DIR%?$(pwd)?g" --in-place /etc/apache2/sites-available/default
   - echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/servername.conf
+  - sudo a2enconf servername
+  - sudo a2ensite default
   - sudo service apache2 restart
+
+  - ls -l /etc/apache2/conf-available/
+  - ls -l /etc/apache2/sites-available/
 
   - curl -k http://localhost/index.php || true
   - curl -k http://localhost/weltfairsteher/index.php || true
