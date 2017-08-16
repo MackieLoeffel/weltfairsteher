@@ -1,7 +1,7 @@
 <?php include "include/header.php";
 ?>
 
-  <section  class="sectionbg" style="background-color: #F2F2DA;">
+  <section  class="sectionbg-challenge" style="background-color: #F2F2DA;">
 <!--
 <div  style="
 margin-left: 1%;
@@ -43,7 +43,7 @@ margin-bottom: 5px;
    -->
 
 
-<section style="position: fixed; width: 8%;">
+<section style="position: fixed; width: 10%; z-index: 9999;">
 <br>  <div  style="margin-top: 20px;">
   <!--  <span>Wechsle zwischen den Kategorien
   </span>  -->
@@ -64,7 +64,7 @@ margin-bottom: 5px;
 
 </section>
 
-<section style="position: static; width: 92%; margin-left: 8%;">
+<section style="position: static; width: 90%; margin-left: 10%;">
 
 <script type="text/javascript">
  function openDiv(id) {
@@ -227,27 +227,35 @@ LEFT JOIN class as cl ON cl.id = c.author
 WHERE category=:category");
 
     $i = 0;
-    define("NUM_COLS", 2);
-    foreach($categories as $c) {
-        if($i % NUM_COLS == 0 ) { ?>
+    define("NUM_COLS", 1);
+    foreach($categories as $c) { ?>
+
           <div id="<?= e($c->name) ?>aa" class="challenge-header <?= e($c->name) ?>" style="width: 100%; height:30px; margin-left: -0.1%; font-size: 18pt; font-family: Amaranth;">
           <?= e($c->title) ?>
           </div>
-        <div class="row">
-    <?php } ?>
-    <div class="col-xs-12 col-md-12 col-lg-6">
+
+          <?php    if($i % NUM_COLS == 0 ) {?>
+    <div class="row">
+<?php } ?>
+
 
 
             <?php
-            $challengeStmt->execute(['category' => $c->name]);
-            foreach($challengeStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
-                printChallenge($row);
-            }
+              $challengeStmt->execute(['category' => $c->name]);
+              foreach($challengeStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
+                ?>
+                <div class="col-xs-12 col-md-12 col-lg-6">
+                  <?php
+                  printChallenge($row);
             ?>
+            </div>
+          <?php  }
+              ?>
 
-    </div>
+
+
     <?php
-    if($i % NUM_COLS == NUM_COLS-1 || $i == count($categories)-1) { ?>
+    if($i % NUM_COLS == NUM_COLS-1 || $i == count($row)-1) { ?>
     </div>
     <?php
     }
@@ -265,13 +273,15 @@ WHERE category=:category");
   <div class="container" style="width: 100%; margin-right: 1%;">
 
     <?php
+      define("NUM_COLS2", 2);
+
     $challengeStmt->execute(['category' => "selfmade"]);
 
     $i = 0;
 
     $cols = $challengeStmt->fetchAll(PDO::FETCH_OBJ);
     foreach($cols as $col) {
-        if($i % NUM_COLS == 0 ) {
+        if($i % NUM_COLS2 == 0 ) {
     ?>
         <div class="row">
     <?php } ?>
@@ -283,7 +293,7 @@ WHERE category=:category");
         </div>
     </div>
     <?php
-    if($i % NUM_COLS == NUM_COLS-1 || $i == count($cols)-1) { ?>
+    if($i % NUM_COLS2 == NUM_COLS2-1 || $i == count($cols)-1) { ?>
         </div>
     <?php
     }
