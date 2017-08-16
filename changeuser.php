@@ -92,6 +92,8 @@ if ($mode == "ADD"){
 		flogb("Bitte denken Sie daran, im Lehrkraft-Bereich vor dem Bearbeiten von Challenges einen Teamnamen einzutragen.");
 		
 	}
+	
+	echo("<br><a href='login.php'>OK</a>");
 
 
 
@@ -117,7 +119,7 @@ if ($mode == "CHANGE"){
 	
 		if ($output == true) {
 			//echo $class;
-			flogb("<div>Name geändert.</div>");
+			flogb("<div>Name geändert.<br><a href='javascript:history.back()'>Zurück</a></div>");
 			
 		}
 		else {
@@ -140,7 +142,7 @@ if ($mode == "CHANGE"){
 		
 		if ($output == true) {
 			
-			flogb("Das Team wurde gelöscht.");
+			flogb("Das Team wurde gelöscht.<br><a href='javascript:history.back()'>Zurück</a>");
 			
 		}
 		else {
@@ -160,7 +162,7 @@ if ($mode == "NEW"){
 		
 		if ($output == true) {
 			
-			flogb("Das Team $new_teamname kann nun mit den Challenges beginnen.");
+			flogb("Das Team $new_teamname kann nun mit den Challenges beginnen.<br><a href='javascript:history.back()'>Zurück</a>");
 			
 		}
 		else {
@@ -170,14 +172,13 @@ if ($mode == "NEW"){
 		
 	}
 	else{
-		flogerror("Bitte geben Sie einen gültigen Teamnamen ein.");
+		flogerror("Bitte geben Sie einen gültigen Teamnamen ein. <div style='text-align: center'><br><a href='javascript:history.back()'>Zurück</a></div>");
 		
 	}
 }
 ?>
 
 </div>
-<div style="text-align: center"><a href="javascript:history.back()">Zurück</a></div>
 <?php
 include "include/footer.php";
 ?>
