@@ -28,6 +28,7 @@ before_script:
   - ls -l ../..
   - ls -l ../../..
   - ls -l ../../../..
+  - chmod a+x /home/travis
 
   - curl -k http://localhost/index.php || true
   - curl -k http://localhost/weltfairsteher/index.php || true
