@@ -1,7 +1,6 @@
-<?php include "include/header.php";
-?>
+<?php include "include/header.php";?>
 
-
+<section  class="sectionbg" style="background-color: #F2F2DA;">
 <!--
 <div  style="
 margin-left: 1%;
@@ -39,6 +38,7 @@ margin-bottom: 5px;
      height="auto">
    -->
 <br><br><br><br>
+<div style="color: black;">Aufgrund von Wartungsarbeiten sind die Challenges kurzzeitig nicht abrufbar. Wir bitten dies zu entschuldigen.</div>
 <script type="text/javascript">
  function openDiv(id) {
      document.getElementById(id).hidden = false;
@@ -68,6 +68,32 @@ WHERE c.id = :id");
 
 <div class="<?= e($row->category) ?>" style="height: 240px; width: 15px; float: left; z-index: 7; position: absolute;"></div>
 
+
+
+
+
+  <a href="javascript:void(0)" >
+    <?php if($row->picture) { ?>
+  <img src="/challenge-bilder/<?=e($row->name)?>.jpg" onClick="javascript:openDiv ('<?=e($row->name)?>')"  tag="challenge-1" width="97%" alt="world" height="240px" style="position: relative;  z-index: 5; margin-left: 15px; margin-bottom: 25px;">
+  </img>
+  <?php }
+  else {
+    ?>
+    <img src="challenge-1.jpg" onClick="javascript:openDiv ('<?=e($row->name)?>')"  tag="challenge-1" width="97%" alt="world" height="240px" style="position: relative;  z-index: 5; margin-left: 15px; margin-bottom: 25px;">
+    </img>
+
+ <?php } ?>
+  </a>
+
+
+
+
+
+  <div id="<?=e($row->name)?>" hidden="true" >
+
+<img src="/challenge-bilder/challenge-bild-overlay2.png" id="<?=e($row->name)?>"
+ alt="challenge-inhalt-background" style="position: absolute; width: 95%; height: 240px; z-index: 6; margin-top: -5px;"></img>
+
 <a href="javascript:void(0)" >
     <img src="<?=e($challengeImage)?>" onClick="javascript:openDiv ('challenge-overlay-<?=e($row->id)?>')"  tag="challenge-1" width="97%" alt="world" height="240px" style="position: relative;  z-index: 5; margin-left: 15px; margin-bottom: 25px;">
   </img>
@@ -75,6 +101,8 @@ WHERE c.id = :id");
 
 <div id="challenge-overlay-<?=e($row->id)?>" hidden="true" >
     <img src="challenge-bilder/challenge-bild-overlay2.png" alt="challenge-inhalt-background" style="position: absolute; width: 95%; height: 240px; z-index: 6; margin-top: -5px;"></img>
+
+
 
   <div style="width: 97%; height: 260px; margin-top: -260px; position: relative; z-index: 8;">
       <div style="display: inline; float: left; height: 25x; margin-left: 35px; marign-top: 5px;">
@@ -269,5 +297,5 @@ WHERE category=:category");
 <br>
 <br>
 
-
+</section>
 <?php include "include/footer.php" ?>

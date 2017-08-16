@@ -1,5 +1,9 @@
 <?php
-include "include/header.php";
+include "include/header.php"; ?>
+
+  <section  class="sectionbg" style="background-color: #F2F2DA;">
+
+  <?php
 
 $showForm = true;
 if(isset($_SESSION["user"])) {
@@ -49,6 +53,7 @@ if($showForm) {
 <?php
 }
 ?>
+</section>
 <br>
 <br>
 <br>

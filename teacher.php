@@ -15,6 +15,9 @@ $allowed_classes = $classStmt->fetchAll(PDO::FETCH_OBJ);
 include "include/chart.php";
 ?>
 
+
+<section  class="sectionbg" style="background-color: #F2F2DA;">
+
 <div  style="
 margin-left: 1%;
 float: left;
@@ -439,4 +442,5 @@ padding: 10px;
 <br>
 <br>
 <br>
+</section>
 <?php include "include/footer.php"?>

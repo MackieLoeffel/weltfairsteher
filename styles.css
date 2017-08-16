@@ -232,7 +232,7 @@ z-index: 1;
 }
 
 .selfmade-fortschritt-bg {
-    background: rgba(255,255,255,0.3);
+    background: rgba(89,89,89,0.3);
 }
 
 
@@ -261,14 +261,14 @@ z-index: 1;
 }
 
 .selfmade-fortschritt-fg {
-    background: white;
+    background: #595959;
 }
 
 .fortschritt-circle {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    border-radius:40px;
+    font-size: 21px;
+    width: 60px;
+    height: 60px;
+    border-radius:60px;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -334,13 +334,9 @@ color: #00662A;
     background-color: #68E395;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1199px) {
 
-.sectionbg {
-width: 100%;
-background-color: #0F9C2E;
-margin-top: -110px;
-}
+
 .nav-img-logo {
 margin-left: 1%;
 height: 35px;
@@ -353,19 +349,22 @@ margin-top: -2px;
 
 }
 
+.indexcontent {
+max-width: 70%;
 
 }
+}
 
-
-
-@media screen and (min-width: 961px) {
 .sectionbg {
 margin-left: 13%;
 margin-right: 17%;
-background-color: #0F9C2E;
+background-color: #F2F2DA;
 
 margin-top: -110px;
 }
+
+@media screen and (min-width: 1200px) {
+
 
 .nav-img-logo {
 margin-left: 13.5%;
@@ -374,6 +373,8 @@ margin-top: -3.3px;
 
 
 }
+
+
 
 
 .text-nav-head {

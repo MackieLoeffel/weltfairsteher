@@ -146,7 +146,7 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                      </a>
 
                                    </li>
-                                   
+
 
                                     </ul>
 
@@ -213,8 +213,8 @@ width: 40%; text-align: center; color: black; background-color: yellow;">
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.6";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script> -->
-    <section id="border" class="sectionbg">
+}(document, 'script', 'facebook-jssdk'));</script>
+    <section id="border" class="sectionbg">   -->
       <div style="display: none; z-index: 1000; float: right; margin-top: 48px; margin-right: 100px; position: fixed;" id="fb-display" class="fb-page" data-href="https://www.facebook.com/weltfairsteher/"
       data-tabs="timeline" data-width="280" data-height="380" data-small-header="false"
       data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
