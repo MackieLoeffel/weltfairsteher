@@ -22,10 +22,12 @@ before_script:
 
   #- ls -l /etc/apache2/conf-available/
   #- ls -l /etc/apache2/sites-available/
-  #- ls -l .
-  #- ls -l ..
-  #- ls -l ../..
-  #- ls -l ../../..
+  - pwd
+  - ls -l .
+  - ls -l ..
+  - ls -l ../..
+  - ls -l ../../..
+  - ls -l ../../../..
 
   - curl -k http://localhost/index.php || true
   - curl -k http://localhost/weltfairsteher/index.php || true
