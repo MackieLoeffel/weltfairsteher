@@ -27,16 +27,7 @@ before_script:
 
   - cp include/secrets.php.default include/secrets.php
 
-  # - curl -k http://localhost/index.php || true
-  # - curl -k http://localhost/weltfairsteher/index.php || true
-  # - curl -k http://localhost/weltfairsteher/login.php || true
-  # - curl -k https://localhost/index.php || true
-  # - curl -k https://localhost/weltfairsteher/index.php || true
-  # - curl -k https://localhost/weltfairsteher/login.php || true
-
-  # - sudo ls -l /var/log/apache2/
-  # - sudo cat /var/log/apache2/access.log
-  # - sudo cat /var/log/apache2/error.log
+  - ls -l /home/travis/build/MackieLoeffel/weltfairsteher/selenium/src/test/resources/
 
   - sudo apt-get install -y firefox
   - mysql -e 'CREATE DATABASE website;'
