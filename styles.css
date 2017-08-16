@@ -336,6 +336,10 @@ color: #00662A;
 
 @media screen and (max-width: 1199px) {
 
+  .overlay-width {
+  width: 95%;  
+  }
+
 
 .nav-img-logo {
 margin-left: 1%;
@@ -364,6 +368,10 @@ margin-top: -110px;
 }
 
 @media screen and (min-width: 1200px) {
+
+.overlay-width {
+width: 94%;
+}
 
 
 .nav-img-logo {
@@ -704,6 +712,11 @@ span a span {
 
 
 
+
+
+
+
+
 .greenindexlink
 
 span a {
@@ -808,4 +821,9 @@ background-color: rgba(255, 255, 255, 0.4);
 
   background: url('/challenge-bilder/challenge-bild-overlay2.png');
 z-index: 20;
+}
+
+.sonnenblume:hover {
+transform: scale(1.5, 1.5);
+
 }

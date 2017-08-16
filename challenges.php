@@ -1,6 +1,7 @@
-<?php include "include/header.php";?>
+<?php include "include/header.php";
+?>
 
-<section  class="sectionbg" style="background-color: #F2F2DA;">
+  <section  class="sectionbg" style="background-color: #F2F2DA;">
 <!--
 <div  style="
 margin-left: 1%;
@@ -21,24 +22,50 @@ margin-bottom: 5px;
         </div>
       -->
 
-<span id="challenge-nav" style="width: 100%; font-size: 15.5pt; align: center; position: fixed; z-index: 9999; margin-top: -5px;">
-    <a href="#foodaa" class="indexlink" style="color: white; margin-left: 1%; background-color: #FCC156;"><span data-title="Ernährung">Ernährung</span></a>
-    <a href="#wateraa" class="indexlink" style="color: white; background-color: #3A7EFC; margin-left: -0.3%"><span data-title="Wasser&Ressourcen">Wasser&Ressourcen</span></a>
-    <a href="#cultureaa" class="indexlink" style="color: white; background-color: #7761C5;margin-left: -0.3%"><span data-title="Soziale Verantwortung">Soziale Verantwortung</span></a>
-    <a href="#climate-changeaa" class="indexlink" style="color: white; background-color: #1B5A0A; margin-left: -0.3%"><span data-title="Klimawandel">Klimawandel</span></a>
-    <a href="#productionaa" class="indexlink" style="color: white; background-color: #CC4321; margin-left: -0.3%"><span data-title="Produktion&Konsum">Produktion&Konsum</span></a>
-    <a href="#energyaa" class="indexlink" style="color: white; background-color: #10B3B3; margin-left: -0.3%"><span data-title="Energie&Mobilität">Energie&Mobilität</span></a>
-    <a href="#selfmadeaa" class="indexlink" title="Entwickelt eigene Challenges und lasst sie von der Lehrkraft vorschlagen - auch unabhängig von den Kategorien."
-       style="color: black; background-color: white; margin-left: -0.3%"><span data-title="Eigenkreationen">Eigenkreationen</span></a>
-    <span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82;">
-        <span data-title="Alle PDF´s ↓">Alle PDF´s ↓</span></a></span>
-</span>
+
 <!--
+<div  style="font-size: 15.5pt;  align: center; width: 100%; z-index: 9999; margin-top: 20px;">
+    <a href="#foodaa" style="color: white; margin-left: 5px;"><img src="symbols/symbol-food2.png" alt="Ernährung" title="Ernährung" width="70px" class="sonnenblume"></a>
+    <a href="#wateraa" style="color: white; margin-left: 5px; "><img src="symbols/symbol-water2.png" alt="Wasser&Ressourcen" title="Wasser&Ressourcen" width="70px" class="sonnenblume"></a>
+    <a href="#cultureaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-culture2.png" alt="Soziale Verantwortung" title="Soziale Verantwortung" width="70px" class="sonnenblume"></a>
+    <a href="#climate-changeaa" style="color: white; margin-left: 13px"><img src="symbols/symbol-climate-change2.png" alt="Klimawandel" title="Klimawandel" width="70px" class="sonnenblume"></a>
+    <a href="#productionaa" style="color: white; margin-left: 17px"><img src="symbols/symbol-production2.png" alt="Produktion&Konsum" title="Produktion&Konsum" width="70px" class="sonnenblume"></a>
+    <a href="#energyaa" style="color: white; margin-left: 16px"><img src="symbols/symbol-energy2.png" alt="Energie&Mobilität" title="Energie&Mobilität" width="70px" class="sonnenblume"></a>
+    <a href="#selfmadeaa"  title="Entwickelt eigene Challenges und lasst sie von der Lehrkraft vorschlagen - auch unabhängig von den Kategorien."
+       style="margin-left: 5px"><img src="symbols/symbol-selfmade2.png" alt="Eigenkreationen" title="Eigenkreationen" width="70px" class="sonnenblume"></a>
+    <span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82; margin-left: 20px;">
+        <span data-title="Alle PDF´s ↓">Alle PDF´s ↓</span></a></span>
+
+</div>
+
      <img src="weihnachts-challenges-banner.png" tag="x-mas" width="100%" alt="weihnachts-challenges"
      height="auto">
    -->
-<br><br><br><br>
-<div style="color: black;">Aufgrund von Wartungsarbeiten sind die Challenges kurzzeitig nicht abrufbar. Wir bitten dies zu entschuldigen.</div>
+
+
+<section style="position: fixed; width: 8%;">
+<br>  <div  style="margin-top: 20px;">
+  <!--  <span>Wechsle zwischen den Kategorien
+  </span>  -->
+      <a href="#foodaa" style="color: white; margin-left: 5px;">
+        <img src="symbols/symbol-food2.png" alt="Ernährung" title="Ernährung" width="70px" class="sonnenblume"></a><br>
+      <a href="#wateraa" style="color: white; margin-left: 5px;"><img src="symbols/symbol-water2.png" alt="Wasser&Ressourcen" title="Wasser&Ressourcen" width="70px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#cultureaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-culture2.png" alt="Soziale Verantwortung" title="Soziale Verantwortung" width="70px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#climate-changeaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-climate-change2.png" alt="Klimawandel" title="Klimawandel" width="70px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#productionaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-production2.png" alt="Produktion&Konsum" title="Produktion&Konsum" width="70px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#energyaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-energy2.png" alt="Energie&Mobilität" title="Energie&Mobilität" width="70px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#selfmadeaa"  title="Entwickelt eigene Challenges und lasst sie von der Lehrkraft vorschlagen - auch unabhängig von den Kategorien."
+         style="margin-left: 5px"><img src="symbols/symbol-selfmade2.png" alt="Eigenkreationen" title="Eigenkreationen" width="70px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <br><span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82; font-size: 11pt; margin-left: 5px; margin-top: 45px;">
+          <span data-title="Alle PDF´s ↓">Alle PDF´s ↓</span></a></span>
+
+    </div>
+
+
+</section>
+
+<section style="position: static; width: 92%; margin-left: 8%;">
+
 <script type="text/javascript">
  function openDiv(id) {
      document.getElementById(id).hidden = false;
@@ -68,41 +95,13 @@ WHERE c.id = :id");
 
 <div class="<?= e($row->category) ?>" style="height: 240px; width: 15px; float: left; z-index: 7; position: absolute;"></div>
 
-
-
-
-
-  <a href="javascript:void(0)" >
-    <?php if($row->picture) { ?>
-  <img src="/challenge-bilder/<?=e($row->name)?>.jpg" onClick="javascript:openDiv ('<?=e($row->name)?>')"  tag="challenge-1" width="97%" alt="world" height="240px" style="position: relative;  z-index: 5; margin-left: 15px; margin-bottom: 25px;">
-  </img>
-  <?php }
-  else {
-    ?>
-    <img src="challenge-1.jpg" onClick="javascript:openDiv ('<?=e($row->name)?>')"  tag="challenge-1" width="97%" alt="world" height="240px" style="position: relative;  z-index: 5; margin-left: 15px; margin-bottom: 25px;">
-    </img>
-
- <?php } ?>
-  </a>
-
-
-
-
-
-  <div id="<?=e($row->name)?>" hidden="true" >
-
-<img src="/challenge-bilder/challenge-bild-overlay2.png" id="<?=e($row->name)?>"
- alt="challenge-inhalt-background" style="position: absolute; width: 95%; height: 240px; z-index: 6; margin-top: -5px;"></img>
-
 <a href="javascript:void(0)" >
     <img src="<?=e($challengeImage)?>" onClick="javascript:openDiv ('challenge-overlay-<?=e($row->id)?>')"  tag="challenge-1" width="97%" alt="world" height="240px" style="position: relative;  z-index: 5; margin-left: 15px; margin-bottom: 25px;">
   </img>
 </a>
 
 <div id="challenge-overlay-<?=e($row->id)?>" hidden="true" >
-    <img src="challenge-bilder/challenge-bild-overlay2.png" alt="challenge-inhalt-background" style="position: absolute; width: 95%; height: 240px; z-index: 6; margin-top: -5px;"></img>
-
-
+    <img src="challenge-bilder/challenge-bild-overlay2.png" alt="challenge-inhalt-background" class="overlay-width" style="position: absolute; height: 240px; z-index: 6; margin-top: -5px;"></img>
 
   <div style="width: 97%; height: 260px; margin-top: -260px; position: relative; z-index: 8;">
       <div style="display: inline; float: left; height: 25x; margin-left: 35px; marign-top: 5px;">
@@ -121,7 +120,7 @@ WHERE c.id = :id");
                   $flower_image = "sonnenblume-bewertung.png";
               }
           ?>
-          <img src="<?= e($flower_image) ?>" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"
+          <img src="<?= e($flower_image) ?>" class="sonnenblume" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"
                onclick="callApi('rateChallenge', {'challenge': <?= e($row->id)?>, 'rating': <?= e($i + 1) ?>}); alert('Die Challenge wurde mit <?= e($i + 1)?> Blumen bewertet.');"></img>
           <?php } ?>
       </div>
@@ -158,7 +157,7 @@ WHERE c.id = :id");
       </div>
 
 
-      <div class="dbox" style="color: white; font-size: 12pt; clear: right; text-align: center; font-family: Verdana;  margin-left: 25px; position: relative; max-height: 40%; overflow: auto;">
+      <div class="dbox" style="color: white; font-size: 12pt; clear: right; text-align: center; font-family: Verdana;  margin-left: 25px; position: relative; max-height: 45%; overflow: auto;">
           <?= e($row->description) ?>
       </div>
 
@@ -172,7 +171,7 @@ WHERE c.id = :id");
               // pdfs
               if(file_exists(getPDFPath($row->id, PUPIL_PDF))) {?>
 
-                  <br>  <span><a href="#" class="indexlinkB" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="display: inline; color: white; float: left; margin-left: 10px; font-family: Titillium Web; font-size: 13px;   background-color: black"><span data-title="Mehr Infos"><b>Beschreibung [PDF]</b> </span></a></span>
+                  <br>  <span><a href="#" class="indexlinkB" onclick="downloadPDF(<?= e($row->id)?>, '<?=e(PUPIL_PDF)?>')" style="display: inline; color: white; float: left; margin-left: 10px; font-family: Titillium Web; font-size: 13px;   background-color: black"><span data-title="Mehr Infos zum Download"><b>Beschreibung [PDF]</b> </span></a></span>
 
               <?php
               }
@@ -188,8 +187,13 @@ WHERE c.id = :id");
                   </span>  </div>
       <?php } ?>
 
+
+<!--
       <span><a href="#" class="indexlinkB" style="display: inline; color: white; font-family: Titillium Web; font-size: 13px; background-color: black; margin-top: -5px; float: right;">
           <span data-title="einblenden"><b>Kommentare</b> </span></a></span>
+
+        -->
+
         </div>
   </div>
 </div>
@@ -226,12 +230,13 @@ WHERE category=:category");
     define("NUM_COLS", 2);
     foreach($categories as $c) {
         if($i % NUM_COLS == 0 ) { ?>
+          <div id="<?= e($c->name) ?>aa" class="challenge-header <?= e($c->name) ?>" style="width: 100%; height:30px; margin-left: -0.1%; font-size: 18pt; font-family: Amaranth;">
+          <?= e($c->title) ?>
+          </div>
         <div class="row">
     <?php } ?>
     <div class="col-xs-12 col-md-12 col-lg-6">
-      <div id="<?= e($c->name) ?>aa" class="challenge-header <?= e($c->name) ?>" style="width: 100%; height:30px; margin-left: -0.1%; font-size: 18pt; font-family: Amaranth;">
-    <?= e($c->title) ?>
-</div>
+
 
             <?php
             $challengeStmt->execute(['category' => $c->name]);
@@ -263,6 +268,7 @@ WHERE category=:category");
     $challengeStmt->execute(['category' => "selfmade"]);
 
     $i = 0;
+
     $cols = $challengeStmt->fetchAll(PDO::FETCH_OBJ);
     foreach($cols as $col) {
         if($i % NUM_COLS == 0 ) {
@@ -298,4 +304,6 @@ WHERE category=:category");
 <br>
 
 </section>
+</section>
+
 <?php include "include/footer.php" ?>
