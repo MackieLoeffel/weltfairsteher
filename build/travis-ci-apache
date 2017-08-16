@@ -1,4 +1,6 @@
 Listen 443
+NameVirtualHost *:80
+NameVirtualHost *:443
 
 <VirtualHost *:80>
   ServerName localhost
