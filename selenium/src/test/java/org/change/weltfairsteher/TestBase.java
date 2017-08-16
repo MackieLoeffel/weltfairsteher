@@ -7,6 +7,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
@@ -34,9 +35,10 @@ public class TestBase {
 
         DesiredCapabilities caps = DesiredCapabilities.firefox();
         caps.setAcceptInsecureCerts(true);
-//        if(System.getenv("CI") != null) {
+        if(System.getenv("CI") != null) {
 //            caps.setCapability(FirefoxDriver.MARIONETTE, false);
-//        }
+            caps.setCapability(FirefoxDriver.BINARY, "/usr/bin/firefox");
+        }
 
         driver = new FirefoxDriver(caps);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
