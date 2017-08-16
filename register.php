@@ -933,7 +933,7 @@ function validateForm() {
     }
     
     document.getElementById("errmsg").innerHTML = errormsg;
-    document.getElementById("errmsg0").innerHTML = "Einige Pflichtfelder sind noch nicht ausgefüllt.";
+    document.getElementById("errmsg0").innerHTML = "Mindestens eine Eingabe ist noch unvollständig oder ungültig.";
     
     return good;
 }

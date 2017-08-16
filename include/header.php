@@ -130,6 +130,9 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                      if(isLoggedIn()) {
                                          $sites["Logout"] = "logout.php";
                                      }
+                                     else {
+										 $sites["Mitmachen"] = "register.php";
+									 }
                                      foreach ($sites as $site => $link) {
                                      ?>
 
