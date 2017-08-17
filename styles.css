@@ -358,7 +358,7 @@ max-width: 70%;
 
 }
 
-.sectionbg-challenge {
+.sectionbgc {
 margin-left: 1%;
 margin-right: 1%;
 background-color: #F2F2DA;
@@ -377,10 +377,9 @@ margin-top: -110px;
 
 
 
-
 @media screen and (min-width: 1200px) {
 
-  .sectionbg-challenge {
+  .sectionbgc {
   margin-left: 13%;
   margin-right: 17%;
   background-color: #F2F2DA;
@@ -431,6 +430,7 @@ float: right;
 	line-height: 3rem;
 	font-size: 1.7rem;
 	color: #fff;
+  z-index: 9999;
 	background-color: rgba(0,0,0,0.3);
 	text-decoration: none;
 	border-radius: 3.2rem;

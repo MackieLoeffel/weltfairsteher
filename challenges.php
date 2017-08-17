@@ -1,7 +1,7 @@
 <?php include "include/header.php";
 ?>
 
-  <section  class="sectionbg-challenge" style="background-color: #F2F2DA;">
+  <section  class="sectionbgc" style="background-color: #F2F2DA;">
 <!--
 <div  style="
 margin-left: 1%;
@@ -43,21 +43,21 @@ margin-bottom: 5px;
    -->
 
 
-<section style="position: fixed; width: 10%; z-index: 9999;">
-<br>  <div  style="margin-top: 20px;">
+<section style="position: fixed; width: 10%; z-index: 9999; margin-left: 10px;" class="challenge-sidebar">
+<br>  <div  style="margin-top: -10px;">
   <!--  <span>Wechsle zwischen den Kategorien
   </span>  -->
       <a href="#foodaa" style="color: white; margin-left: 5px;">
-        <img src="symbols/symbol-food2.png" alt="Ernährung" title="Ernährung" width="70px" class="sonnenblume"></a><br>
-      <a href="#wateraa" style="color: white; margin-left: 5px;"><img src="symbols/symbol-water2.png" alt="Wasser&Ressourcen" title="Wasser&Ressourcen" width="70px" style="margin-top: 5px;" class="sonnenblume"></a><br>
-      <a href="#cultureaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-culture2.png" alt="Soziale Verantwortung" title="Soziale Verantwortung" width="70px" style="margin-top: 5px;" class="sonnenblume"></a><br>
-      <a href="#climate-changeaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-climate-change2.png" alt="Klimawandel" title="Klimawandel" width="70px" style="margin-top: 5px;" class="sonnenblume"></a><br>
-      <a href="#productionaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-production2.png" alt="Produktion&Konsum" title="Produktion&Konsum" width="70px" style="margin-top: 5px;" class="sonnenblume"></a><br>
-      <a href="#energyaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-energy2.png" alt="Energie&Mobilität" title="Energie&Mobilität" width="70px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+        <img src="symbols/symbol-food2.png" alt="Ernährung" title="Ernährung" width="60px" class="sonnenblume"></a><br>
+      <a href="#wateraa" style="color: white; margin-left: 5px;"><img src="symbols/symbol-water2.png" alt="Wasser&Ressourcen" title="Wasser&Ressourcen" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#cultureaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-culture2.png" alt="Soziale Verantwortung" title="Soziale Verantwortung" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#climate-changeaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-climate-change2.png" alt="Klimawandel" title="Klimawandel" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#productionaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-production2.png" alt="Produktion&Konsum" title="Produktion&Konsum" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#energyaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-energy2.png" alt="Energie&Mobilität" title="Energie&Mobilität" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
       <a href="#selfmadeaa"  title="Entwickelt eigene Challenges und lasst sie von der Lehrkraft vorschlagen - auch unabhängig von den Kategorien."
-         style="margin-left: 5px"><img src="symbols/symbol-selfmade2.png" alt="Eigenkreationen" title="Eigenkreationen" width="70px" style="margin-top: 5px;" class="sonnenblume"></a><br>
-      <br><span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82; font-size: 11pt; margin-left: 5px; margin-top: 45px;">
-          <span data-title="Alle PDF´s ↓">Alle PDF´s ↓</span></a></span>
+         style="margin-left: 5px"><img src="symbols/symbol-selfmade2.png" alt="Eigenkreationen" title="Eigenkreationen" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <br><span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82; font-size: 9pt; margin-left: 5px; margin-top: 30px;">
+          <span data-title="↓">Alle PDF</span></a></span>
 
     </div>
 
@@ -101,12 +101,12 @@ WHERE c.id = :id");
 </a>
 
 <div id="challenge-overlay-<?=e($row->id)?>" hidden="true" >
-    <img src="challenge-bilder/challenge-bild-overlay2.png" alt="challenge-inhalt-background" class="overlay-width" style="position: absolute; height: 240px; z-index: 6; margin-top: -5px;"></img>
+    <img src="challenge-bilder/challenge-bild-overlay2.png" alt="challenge-inhalt-background" class="overlay-width" style="position: absolute; height: 240px; z-index: 6; margin-top: -5px; max-width: 97%;"></img>
 
   <div style="width: 97%; height: 260px; margin-top: -260px; position: relative; z-index: 8;">
       <div style="display: inline; float: left; height: 25x; margin-left: 35px; marign-top: 5px;">
           <?php
-          $flowers = 2.5;
+          $flowers = 0;
           if ($row->flower_count > 0) {
               $flowers = $row->flower_sum / $row->flower_count;
           }
@@ -244,7 +244,7 @@ WHERE category=:category");
               $challengeStmt->execute(['category' => $c->name]);
               foreach($challengeStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
                 ?>
-                <div class="col-xs-12 col-md-12 col-lg-6">
+                <div class="col-xs-12 col-md-6 col-lg-6">
                   <?php
                   printChallenge($row);
             ?>
@@ -285,7 +285,7 @@ WHERE category=:category");
     ?>
         <div class="row">
     <?php } ?>
-    <div class="col-xs-12 col-md-12 col-lg-6">
+    <div class="col-xs-12 col-md-6 col-lg-6">
         <div >
             <?php
             printChallenge($col);
