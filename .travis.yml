@@ -1,0 +1,45 @@
+language: php
+php:
+  - '5.6'
+services:
+  - mysql
+before_script:
+  - sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt -subj "/C=DE/ST=BY/O=CHANGE/localityName=Berlin/commonName=localhost/organizationalUnitName=Weltfairsteher/emailAddress=admin@weltfairsteher.de"
+
+  # see https://docs.travis-ci.com/user/languages/php#Apache-%2B-PHP
+  - sudo apt-get update
+  - sudo apt-get install apache2 libapache2-mod-fastcgi
+  # enable php-fpm
+  - sudo cp ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf.default ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf
+  - sudo a2enmod rewrite actions fastcgi alias ssl
+  - echo "cgi.fix_pathinfo = 1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  - ~/.phpenv/versions/$(phpenv version-name)/sbin/php-fpm
+  # configure apache virtual hosts
+  - sudo cp -f build/travis-ci-apache /etc/apache2/sites-available/default.conf
+  - sudo sed -e "s?%TRAVIS_BUILD_DIR%?$(pwd)?g" --in-place /etc/apache2/sites-available/default.conf
+  - cat /etc/apache2/sites-available/default.conf
+  - echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/servername.conf
+  - sudo a2enconf servername
+  - sudo a2ensite default
+  - sudo service apache2 restart
+
+  - chmod a+x /home/travis
+
+  - cp include/secrets.php.default include/secrets.php
+
+  - ls -l /home/travis/build/MackieLoeffel/weltfairsteher/selenium/src/test/resources/
+
+  - sudo apt-get install -y firefox
+  - mysql -e 'CREATE DATABASE website;'
+  # see https://docs.travis-ci.com/user/gui-and-headless-browsers/#Using-xvfb-to-Run-Tests-That-Require-a-GUI
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3 # give xvfb some time to start
+script:
+  - cd selenium && mvn clean install
+after_failure:
+  - sudo cat /var/log/apache2/access.log
+  - sudo cat /var/log/apache2/error.log
+  - ls -l /home/travis/build/MackieLoeffel/weltfairsteher/selenium/src/test/resources/
+  - ls -l /home/travis/build/MackieLoeffel/weltfairsteher/selenium/src/test/resources/test.pdf
+  - ls -l /home/travis/build/MackieLoeffel/weltfairsteher/selenium/src/test/resources/challenge-pic.png

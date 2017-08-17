@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 public class LoginPage {
 
     public static final String URL = TestBase.BASE_URL + "login.php";
+    private static final String ADMIN_EMAIL = "a@b.de";
+    private static final String ADMIN_PASSWORD = "a";
 
     public static void login(String user, String password) {
         TestBase.getDriver().get(URL);
@@ -16,6 +18,6 @@ public class LoginPage {
     }
 
     public static void loginAsAdmin() {
-        login("a@b.de", "a");
+        login(ADMIN_EMAIL, ADMIN_PASSWORD);
     }
 }
