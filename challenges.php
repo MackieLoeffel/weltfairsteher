@@ -1,5 +1,6 @@
 <?php include "include/header.php";
 ?>
+<script src="js/challenges.js"></script>
 
   <section  class="sectionbgc" style="background-color: #F2F2DA;">
 <!--
@@ -93,6 +94,11 @@ WHERE c.id = :id");
     }
 ?>
 
+<script>window.flower_values[ <?= e($row->id) ?> ] = {
+     count: <?= e($row->flower_count) ?>,
+     sum: <?= e($row->flower_sum) ?>,
+ }</script>
+
 <div class="<?= e($row->category) ?>" style="height: 240px; width: 15px; float: left; z-index: 7; position: absolute;"></div>
 
 <a href="javascript:void(0)" >
@@ -106,22 +112,15 @@ WHERE c.id = :id");
   <div style="width: 97%; height: 260px; margin-top: -260px; position: relative; z-index: 8;">
       <div style="display: inline; float: left; height: 25x; margin-left: 35px; marign-top: 5px;">
           <?php
-          $flowers = 0;
-          if ($row->flower_count > 0) {
-              $flowers = $row->flower_sum / $row->flower_count;
-          }
-
           for($i = 0; $i < 5; $i++) {
-              if ($flowers < $i + 0.25) {
-                  $flower_image = "sonnenblume-bewertung-grau.png";
-              } else if($flowers < $i + 0.75) {
-                  $flower_image = "sonnenblume-bewertung-halb.png";
-              } else {
-                  $flower_image = "sonnenblume-bewertung.png";
-              }
           ?>
-          <img src="<?= e($flower_image) ?>" class="sonnenblume" tag="bewertung" title="Gib eine Bewertung ab" width="25px" alt="Bewertung" height="auto" style="display:inline;"
-               onclick="callApi('rateChallenge', {'challenge': <?= e($row->id)?>, 'rating': <?= e($i + 1) ?>}); alert('Die Challenge wurde mit <?= e($i + 1)?> Blumen bewertet.');"></img>
+          <img id="sonnenblume-<?= e($row->id)?>-<?= e($i) ?>"
+               src="sonnenblume-bewertung-grau.png"
+               class="sonnenblume sonnenblume-<?= e($row->id)?>"
+               tag="bewertung"
+               title="Gib eine Bewertung ab"
+               width="25px" alt="Bewertung" height="auto" style="display:inline;"
+               onclick="rateChallenge(<?= e($row->id)?>, <?= e($i + 1) ?>)"></img>
           <?php } ?>
       </div>
 
