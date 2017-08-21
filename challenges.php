@@ -59,8 +59,22 @@ margin-bottom: 5px;
          style="margin-left: 5px"><img src="symbols/symbol-selfmade2.png" alt="Eigenkreationen" title="Eigenkreationen" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
       <br><span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82; font-size: 9pt; margin-left: 5px; margin-top: 30px;">
           <span data-title="↓">Alle PDF</span></a></span>
+          <br>
+          <br>
+          <form method="POST">
+              <select id="class-select" name="klasse" size="1" style="color: black; margin-left: 1%;">
+                  <option value="default">Wähle eine Klasse</option>
+                  <?php
+                  $classStmt = $db->prepare("SELECT id, name FROM class");
+                  $classStmt->execute();
+                  foreach($classStmt->fetchAll(PDO::FETCH_OBJ) as $row) {
+                  ?>
+                      <option value="<?= e($row->id) ?>"><?= e($row->name) ?></option>
+                  <?php } ?>
+              </select>
+          </form>
 
-    </div>
+</div>
 
 
 </section>
@@ -197,7 +211,7 @@ WHERE c.id = :id");
   </div>
 </div>
 
-<div class="<?= $classes ?> challenge-title " style="color: white; float: right; text-align: right; font-size: 16pt; font-family: Lobster; position: absolute;
+<div class="<?= $classes ?> challenge-title " style="float: right; text-align: right; font-size: 16pt; font-family: Lobster; position: absolute;
   margin-top: -55px; height: 30px;  width: 95%; margin-right: 25px; z-index: 9; margin-bottom: 25px;"><?=e($row->name)?>&nbsp;&nbsp;
 </div>
 
