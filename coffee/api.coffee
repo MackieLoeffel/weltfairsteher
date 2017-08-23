@@ -33,6 +33,9 @@ window.callApi = (api, data, cb) ->
       console.log errors
       errors = JSON.parse(errors)
       cb? errors
+    error: (xhr) ->
+      console.log "Error status code", xhr.status
+      cb? null, xhr.status
   if data instanceof FormData
     request.contentType = false
     request.processData = false

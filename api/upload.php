@@ -1,7 +1,7 @@
 <?php
 include __DIR__."/include.php";
 
-check_access(ADMIN);
+check_access_api(ADMIN);
 
 list($challenge, $type) = apiCheckParams("challenge", "type");
 $file = $_FILES["file"];

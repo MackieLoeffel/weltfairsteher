@@ -1,7 +1,7 @@
 <?php
 include __DIR__."/include.php";
 
-check_access(TEACHER);
+check_access_api(TEACHER);
 
 list($user, $email, $password, $password2) = apiCheckParams(
     "user", "email", "password", "password2");

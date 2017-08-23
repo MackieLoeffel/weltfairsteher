@@ -1,7 +1,7 @@
 <?php
 include __DIR__."/include.php";
 
-//check_access(TEACHER);
+//check_access_api(TEACHER);
 
 list($link, $title, $type, $category, $captcha) = apiCheckParams(
     "link", "title", "type", "category", "captcha_code");

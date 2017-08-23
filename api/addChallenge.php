@@ -1,6 +1,6 @@
 <?php
 include __DIR__."/include.php";
-check_access(TEACHER);
+check_access_api(TEACHER);
 
 list($class, $title, $desc, $points, $suggested, $category, $location, $extrapoints) = apiCheckParams(
     "class", "title", "description", "points", "suggested", "category", "location", "extrapoints");

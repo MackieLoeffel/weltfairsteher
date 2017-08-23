@@ -1,7 +1,7 @@
 <?php
 include __DIR__."/include.php";
 
-check_access(TEACHER);
+check_access_api(TEACHER);
 
 list($class, $challenge) = apiCheckParams("class", "challenge");
 $user = $_SESSION["user"];

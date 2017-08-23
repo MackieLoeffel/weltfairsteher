@@ -5,14 +5,19 @@
   window.flower_values = {};
 
   window.rateChallenge = function(id, rating) {
-    callApi('rateChallenge', {
+    return callApi('rateChallenge', {
       'challenge': id,
       'rating': rating
+    }, function(errors, errcode) {
+      if (errcode === 401) {
+        alert('Bewerten von Challenges ist nur für eingeloggte Lehrer erlaubt.');
+        return;
+      }
+      alert('Die Challenge wurde mit ' + rating + ' Blumen bewertet.');
+      flower_values[id].count += 1;
+      flower_values[id].sum += rating;
+      return updateFlowerDisplay(id);
     });
-    alert('Die Challenge wurde mit ' + rating + ' Blumen bewertet.');
-    flower_values[id].count += 1;
-    flower_values[id].sum += rating;
-    return updateFlowerDisplay(id);
   };
 
   $('document').ready(function() {

@@ -50,6 +50,10 @@
         console.log(errors);
         errors = JSON.parse(errors);
         return typeof cb === "function" ? cb(errors) : void 0;
+      },
+      error: function(xhr) {
+        console.log("Error status code", xhr.status);
+        return typeof cb === "function" ? cb(null, xhr.status) : void 0;
       }
     };
     if (data instanceof FormData) {

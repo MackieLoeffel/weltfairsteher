@@ -1,11 +1,17 @@
 window.flower_values = {}
 
 window.rateChallenge = (id, rating) ->
-  callApi('rateChallenge', {'challenge': id, 'rating': rating})
-  alert('Die Challenge wurde mit ' + rating + ' Blumen bewertet.')
-  flower_values[id].count += 1
-  flower_values[id].sum += rating
-  updateFlowerDisplay(id)
+  callApi 'rateChallenge',
+    {'challenge': id, 'rating': rating},
+    (errors, errcode) ->
+      if errcode == 401
+        alert('Bewerten von Challenges ist nur für eingeloggte Lehrer erlaubt.')
+        return
+
+      alert('Die Challenge wurde mit ' + rating + ' Blumen bewertet.')
+      flower_values[id].count += 1
+      flower_values[id].sum += rating
+      updateFlowerDisplay(id)
 
 $('document').ready ->
   for key of flower_values

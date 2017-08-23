@@ -1,6 +1,6 @@
 <?php
 include __DIR__."/include.php";
-check_access(ADMIN);
+check_access_api(ADMIN);
 
 list($c, $name, $desc, $points, $category, $location, $extrapoints) = apiCheckParams(
     "challenge", "name", "description", "points", "category", "location", "extrapoints");

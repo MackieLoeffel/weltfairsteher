@@ -1,7 +1,7 @@
 <?php
 include __DIR__."/include.php";
 
-check_access(ADMIN);
+check_access_api(ADMIN);
 
 list($email, $password, $password2) = apiCheckParams("email", "password", "password2");
 
