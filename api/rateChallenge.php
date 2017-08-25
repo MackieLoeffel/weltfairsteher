@@ -1,7 +1,7 @@
 <?php
 include __DIR__."/include.php";
 
-check_access_api(TEACHER);
+// check_access_api(TEACHER);
 
 list($rating, $challenge) = apiCheckParams("rating", "challenge");
 
