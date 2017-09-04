@@ -16,6 +16,7 @@ include __DIR__."/config.php";
                 <meta charset="UTF-8">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="Keywords" content=„WeltFAIRsteher,weltfairsteher,nachhaltig,Entwicklung,Nachhaltigkeit,Schulen,Nachhaltigkeitsprojekt,Klassen,Bildungsprojekt,Bildung,sustainability,BNE,Schulprojekt,“>
                 <title>WeltFAIRsteher</title>
 
                 <meta name="description" content="WeltFAIRsteher"/>
