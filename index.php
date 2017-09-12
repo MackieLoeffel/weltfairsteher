@@ -206,7 +206,7 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
 <h2 id="faq" style="color: white; background-color: #108542; width: 98%; margin-left: 1%;">FAQs - Fragen zum Ablauf und zum Projekt</h2>
 
 <span><a href="javascript:void(0)" onclick="readOn('faq1')" class="indexlink"
-  style="text-align: center; color: white; background-color: #108542; width: 98%; margin-left: 1%; font-size: 18px;">
+  style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
   <span data-title="Was soll mit WeltFAIRsteher erreicht werden?">Was soll mit WeltFAIRsteher erreicht werden?</span></a></span>
   <span id="faq1" style="display:none; margin-left: 1%;"><br>
     Als deutschlandweites Bildungsprojekt wird Schüler*innen ab der 5. Klasse ermöglicht,
@@ -216,7 +216,7 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
 
 <br><br>
 <span><a href="javascript:void(0)" onclick="readOn('faq2')" class="indexlink"
-  style="text-align: center; color: white; background-color: #108542; width: 98%; margin-left: 1%; font-size: 18px;">
+  style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
   <span data-title="Was ist meine Rolle als Lehrkraft?">Was ist meine Rolle als Lehrkraft?</span></a></span>
   <span id="faq2" style="display:none; margin-left: 1%;"><br>
     Als hauptverantwortliche Lehrkraft motivieren Sie die Schüler*innen und unterstützen sie bei der Bearbeitung der Challenges.
@@ -226,7 +226,7 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
 
 <br><br>
 <span><a href="javascript:void(0)" onclick="readOn('faq3')" class="indexlink"
-  style="text-align: center; color: white; background-color: #108542; width: 98%; margin-left: 1%; font-size: 18px;">
+  style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
   <span data-title="Was passiert vor dem Start?">Was passiert vor dem Start?</span></a></span>
   <span id="faq3" style="display:none; margin-left: 1%;"><br>
 <ul>
@@ -240,40 +240,50 @@ Lehrkräfte sichtbar, da der Inhalt von den Schüler*innen erst erarbeitet werde
 
     <br><br>
     <span><a href="javascript:void(0)" onclick="readOn('faq4')" class="indexlink"
-      style="text-align: center; color: white; background-color: #108542; width: 98%; margin-left: 1%; font-size: 18px;">
+      style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wie läuft das Projekt während des Schuljahres ab?">Wie läuft das Projekt während des Schuljahres ab?</span></a></span>
       <span id="faq4" style="display:none; margin-left: 1%;"><br>
-        ...text... kreislauf-symbol
+      Das Projekt besteht aus dem Bearbeiten einzelner Challenges. Diese Bearbeitung kann folgendermaßen ablaufen:
+      <ul>
+        <li>1. Auswählen einer Challenge, die die Klasse, ein*e Schüler*in oder eine Gruppe absolvieren möchte.</li>
+          <li>2. Vorbereiten der Challenge durch Recherche, Sammlung von Material, etc.</li>
+            <li>3. Durchführen der Challenge, bspw. durch einen Ausflug, ein Referat, ein Spiel, etc.</li>
+              <li>4. Erfolgreich bearbeitete Challenge von der Lehrkraft online als bestanden markieren lassen.</li>
+                <li>5. Bearbeitete Challenge evaluieren bzw. online Feedback geben.</li>
+            </ul>
+            Hat eine Klasse mit erfolgreich bearbeiteten Challenges genügend Punkte gesammelt, erreicht sie eine Etappe und erhält
+            eine Etappenüberraschung per Post.
     </span>
 
     <br><br>
     <span><a href="javascript:void(0)" onclick="readOn('faq5')" class="indexlink"
-      style="text-align: center; color: white; background-color: #108542; width: 98%; margin-left: 1%; font-size: 18px;">
+      style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Was passiert nach dem Schuljahr?">Was passiert nach dem Schuljahr?</span></a></span>
       <span id="faq5" style="display:none; margin-left: 1%;"><br>
-        ,....
-        urkunden
-        kurzzusammenfassung (überblick)
-        evaluation, feedback
+        Nach Ende der WeltFAIRsteher-Saison erhalten alle Teilnehmer*innen eine Urkunde und jede Klasse eine Kurzzusammenfassung
+        zu den Themen. Außerdem bitten wir alle Teilnehmer*innen, WeltFAIRsteher in einer kurzen Online-Umfrage zu bewerten, damit
+        wir das Angebot auf Basis des Feedbacks weiterentwickeln können. Und natürlich können Sie als Lehrkraft auch im darauffolgenden Schuljahr wieder teilnehmen.
+        Sofern unsere finanziellen und personellen Mittel ausreichen, können auch Klassen teilnehmen, die bereits bei WeltFAIRsteher mitgemacht haben.
+
     </span>
 
     <br><br>
     <span><a href="javascript:void(0)" onclick="readOn('faq6')" class="indexlink"
-      style="text-align: center; color: white; background-color: #108542; width: 98%; margin-left: 1%; font-size: 18px;">
+      style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wie trage ich eine Challenge als bestanden ein?">Wie trage ich eine Challenge als bestanden ein?</span></a></span>
       <span id="faq6" style="display:none; margin-left: 1%;"><br>
-Bestandene Challenges können online eingetragen werden. Dazu muss sich die hauptverantwortliche Lehrkraft einloggen und klickt unter Challenges anschließend auf die
+Bestandene Challenges können online eingetragen werden. Dazu loggt sich die hauptverantwortliche Lehrkraft im <a href="https://weltfairsteher.de/login.php">Lehrkraft-Bereich</a> (siehe Leiste am oberen Rand) ein und klickt im Menü-Punkt <a href="https://weltfairsteher.de/challenges.php">Challenges</a> anschließend auf die
 bestandene Aufgabe. Erfolgreich absolvierte Challenges können auch im Lehrkraft-Bereich eingetragen werden. Dort lässt sich auch angeben, ob eine Challenge mit
-Zusatzaufgabe bearbeitet wurde. In dem Fall gibt es auch Zusatzpunkte (Achtung: die Zusatzaufgaben können nicht nachträglich eingetragen werden, sondern nur gemeinsam mit der Hauptaufgabe).
+Zusatzaufgabe bearbeitet wurde. In dem Fall gibt es auch Zusatzpunkte. Achtung: die Zusatzaufgaben können nicht nachträglich eingetragen werden, sondern nur gemeinsam mit der Hauptaufgabe. Das heißt, Challenges, die mit Zusatzaufgabe absolviert wurden, müssen im Lehrkraft-Bereich eingetragen werden.
 <br><br>
-Zu jeder eingetragenen Challenge kann im Lehrkraft-Bereich auch ein kurzes Feedback gegeben werden. Wenn Sie sich nicht mehr sicher sind, welche Challenge Ihre Klasse eigentlich
+Zu jeder eingetragenen Challenge kann im Lehrkraft-Bereich auch ein kurzes Feedback gegeben werden. Und wenn Sie sich nicht mehr sicher sind, welche Challenge Ihre Klasse eigentlich
 schon absolviert hat, können Sie einfach Ihre Klasse unter Challenges wählen und erkennen absolvierte Aufgaben anhand der grünen Farbe.
 
     </span>
 
     <br><br>
     <span><a href="javascript:void(0)" onclick="readOn('faq7')" class="indexlink"
-      style="text-align: center; color: white; background-color: #108542; width: 98%; margin-left: 1%; font-size: 18px;">
+      style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Was ist eine Eigenkreation und wie schlage ich sie vor?">Was ist eine Eigenkreation und wie schlage ich sie vor?</span></a></span>
       <span id="faq7" style="display:none; margin-left: 1%;"><br>
       Jede Klasse kann kreativ werden und eigene Challenges kreieren. Bis zu fünf solcher Eigenkreationen können im Lehrkraftbereich
@@ -284,58 +294,59 @@ Zusätzlich wird die Klasse für Ihre Kreativität durch einen Bonus belohnt:
 mit jeder Eigenkreation wird die während des Projekts erreichte Punktzahl um einen Faktor von 0,1 erhöht.
 Beginnend bei einem Wert von 1 kann der Faktor also maximal den Wert 1,5 annehmen. <br><br>
 Bsp.: <br>
-Eine Klasse erreicht durch das Absolvieren der Challenges 50 Punkte und reicht zusätzlich 4 Eigenkreationen ein: <br>
-		50 x 1,4 = 70<br>
-Informationen zu den Angaben, die Sie für eine Eigenkreation machen müssen, finden Sie im <a href="https://weltfairsteher.de/login.php">Lehrkraft-Bereich</a>.
+Eine Klasse erreicht durch das Absolvieren der Challenges 50 Punkte und reicht zusätzlich 4 Eigenkreationen erfolgreich ein: <br>
+		50 Punkte x 1,4 = 70 Punkte<br>
+Weitere Informationen zu den Angaben, die Sie für eine Eigenkreation machen müssen, finden Sie im <a href="https://weltfairsteher.de/login.php">Lehrkraft-Bereich</a>.
 
 
     </span>
 
     <br><br>
     <span><a href="javascript:void(0)" onclick="readOn('faq8')" class="indexlink"
-      style="text-align: center; color: white; background-color: #108542; width: 98%; margin-left: 1%; font-size: 18px;">
+      style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wie sollten Challenges ausgewählt werden?">Wie sollten Challenges ausgewählt werden?</span></a></span>
       <span id="faq8" style="display:none; margin-left: 1%;"><br>
         Jede Klasse kann die Challenges absolvieren, für die sie sich interessiert. Es gibt keine feste Reihenfolge oder Mindestanzahl.
 
-        Die Informationen zu den Challenges sind ausführlich in den dazugehörigen PDF-Dokumenten. Im Lehrkraft-Bereich sowie auf der Challenges-Seite können auch alle PDF-Dokumente auf einmal heruntergeladen werden.
+        Die Informationen zu den Challenges sind ausführlich in den dazugehörigen PDF-Dokumenten beschrieben. Im Lehrkraft-Bereich sowie auf der Challenges-Seite können auch alle PDF-Dokumente auf einmal heruntergeladen werden.
+
+<br><br>
+      Die Schüler*innen können Challenges aus sechs verschiedenen Themenbereichen sowie aus den Eigenkreationen wählen:<br>
+<ul>
+        <li><img src="symbols/symbol-food2.png" alt="Ernährung" style="width: 4%; height: auto; margin-top: 0px;"></img>
+ Ernährung</li>
+        <li><img src="symbols/symbol-water2.png" alt="Wasser & Ressourcen" style="width: 4%; height: auto; margin-top: 0px;"></img>Wasser und Ressourcen</li>
+        <li><img src="symbols/symbol-culture2.png" alt="Soziale Verantwortung" style="width: 4%; height: auto; margin-top: 0px;"></img>Soziale Verantwortung</li>
+        <li> <img src="symbols/symbol-climate-change2.png" alt="Klimawandel" style="width: 4%; height: auto; margin-top: 0px;"></img>Klimawandel</li>
+      <li>  <img src="symbols/symbol-production2.png" alt="Produktion & Konsum" style="width: 4%; height: auto; margin-top: 0px;"></img>Produktion und Konsum</li>
+      <li> <img src="symbols/symbol-energy2.png" alt="Energie & Mobilität" style="width: 4%; height: auto; margin-top: 0px;"></img> Energie und Mobilität</li>
+</ul>
 
 
-      Die Schüler*innen können Challenges aus sechs verschiedenen Themenbereichen wählen:
+        Durch das Anklicken einer Challenge erhält man folgende Informationen:<br>
+<ul>
+      <li>  1. Wie viele Punkte erhält man für die erfolgreiche Bearbeitung und gibt es Zusatzpunkte für eine Zusatzaufgabe?</li>
 
-         Ernährung
-        Wasser und Ressourcen
-        Soziale Gerechtigkeit
-         Klimawandel
-        Produktion und Konsum
-        Energie und Mobilität
+    <li>    2. Wo soll sie durchgeführt werden:
+        zu Hause, 		im Unterricht mit der Lehrkraft oder in Eigenarbeit in der Schule?</li>
 
+    <li>    3. Wie wurde sie bisher von anderen Klassen bewertet?</li>
 
+    <li>    4. Wie lautet die Kurzbeschreibung und wie die ausführliche Beschreibung (PDF)?</li>
 
-        Durch das Anklicken einer Challenge erhält man folgende Informationen:
-
-        1. Wie viele Punkte erhält man für die erfolgreiche Bearbeitung und gibt es Zusatzpunkte für eine Zusatzaufgabe?
-
-        2. Wo soll sie durchgeführt werden?
-        zu Hause 		im Unterricht mit der Lehrkraft 		in Eigenarbeit in der Schule
-
-        3. Wie wurde sie bisher von anderen Klassen bewertet?
-
-        4. Wie lautet die Kurzbeschreibung und wie die ausführliche Beschreibung (PDF)?
-
-        5. Was sagen andere Lehrkräfte zu der Challenge im Kommentar-Bereich? (Funktion noch nicht verfügbar)
-
+    <li>    5. Was sagen andere Lehrkräfte zu der Challenge im Kommentar-Bereich? (Funktion noch nicht verfügbar)</li>
+</ul>
     </span>
 
 
     <br><br>
     <span><a href="javascript:void(0)" onclick="readOn('faq9')" class="indexlink"
-      style="text-align: center; color: white; background-color: #108542; width: 98%; margin-left: 1%; font-size: 18px;">
+      style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Was ist eine Etappenüberraschung?">Was ist eine Etappenüberraschung?</span></a></span>
       <span id="faq9" style="display:none; margin-left: 1%;"><br>
         Im Laufe des Projekts sammeln Sie mit Ihrer Klasse für jede erfolgreiche absolvierte Challenge Punkte.
         Wurde eine bestimmte Anzahl an Punkten erarbeitet, erreicht Ihre Klasse die nächste Etappe.
-        Sobald dies der Fall ist, erhalten Sie automatisch eine Hinweismail sowie anschließend eine kleine Überraschung für die Sie und die Schüler*innen per Post.
+        Sobald dies der Fall ist, erhalten Sie automatisch eine Hinweismail sowie anschließend eine kleine Überraschung für Sie und die Schüler*innen per Post.
         Die Überraschungen dienen der weiteren Auseinandersetzung mit der Thematik und erhöhen zusätzlich die Motivation.
   Wann die nächste Etappe erreicht wird, können Sie ganz einfach unter <a href="https://weltfairsteher.de/table.php">Fortschritt</a> sehen, indem sie dort Ihre Klasse auswählen.
 
@@ -343,15 +354,29 @@ Informationen zu den Angaben, die Sie für eine Eigenkreation machen müssen, fi
 
     <br><br>
     <span><a href="javascript:void(0)" onclick="readOn('faq10')" class="indexlink"
-      style="text-align: center; color: white; background-color: #108542; width: 98%; margin-left: 1%; font-size: 18px;">
+      style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wozu werden die Daten gebraucht, die zu Beginn erhoben werden?">Wozu werden die Daten gebraucht, die zu Beginn erhoben werden?</span></a></span>
       <span id="faq10" style="display:none; margin-left: 1%;"><br>
         Bei Ihrer Anmeldung werden Sie gebeten, eine Adresse sowie die Anzahl der teilnehmenden Schüler*innen anzugeben.
         Diese Informationen werden benötigt, da die Schüler*innen im Laufe des Schuljahres kleine Etappenüberraschungen erhalten.
         Zum Ende des Schuljahres schickt WeltFAIRsteher außerdem der ganzen Klasse Urkunden.
-Die angegebenen Daten werden nicht verkauft und ausschließlich für die Durchführung des Projektes verwendet. Es werden keine Informationen an Dritte weitergegeben, sofern es nicht für die Durchführung des Projekts, beispielweise den Versand mancher Etappenüberraschungen, nötig ist.
+Die angegebenen Daten werden nicht verkauft und ausschließlich für die Durchführung des Projektes verwendet.
+Es werden keine Informationen an Dritte weitergegeben, sofern es nicht für die Durchführung des Projekts, also den Versand mancher Etappenüberraschungen, nötig ist.
 
     </span>
+
+    <br><br>
+    <span><a href="javascript:void(0)" onclick="readOn('faq11')" class="indexlink"
+      style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
+      <span data-title="Wie finanziert sich WeltFAIRsteher?">Wie finanziert sich WeltFAIRsteher?</span></a></span>
+      <span id="faq11" style="display:none; margin-left: 1%;"><br>
+        Da WeltFAIRsteher bislang ausschließlich ehrenamtlich entwickelt und betrieben wird, fallen in erster Linie Kosten für die Etappenüberraschungen an.
+   WeltFAIRsteher finanziert sich dafür bislang aus privaten Spenden und den Mitteln des Vereins CHANGE-Chancen.Nachhaltig.Gestalten in Bamberg.
+        Weitere Förderer werden zur langfristigen Durchführung des Projekts laufend gesucht. Möglich sind einmalige Spenden, aber auch eine regelmäßige Förderung.
+        In Zukunft sollen Personen, Schulen oder andere Einrichtungen auch Partnerschaften übernehmen können, um WeltFAIRsteher mit einem jährlichen Beitrag zu unterstützen.
+         Bei Interesse kontaktieren Sie uns einfach unter kontakt@weltfairsteher.de - Vielen Dank!
+
+          </span>
 
 
 
