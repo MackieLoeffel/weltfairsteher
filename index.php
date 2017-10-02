@@ -78,15 +78,20 @@
 
 
 <div class="row">
-<div class="col-xs-12 col-sm-12 col-md-6">
+<div class="col-xs-12 col-sm-12 col-md-4">
 <a href="https://chancengestalten.de/" alt="CHANGE-Chancen.Nachhaltig.Gestalten">
-<img src="symbols/changeev.PNG" alt="Logo_CHANGE" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
+<img src="symbols/changeev.PNG" alt="Logo_CHANGE" style="max-width: 230px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
 
 </div>
 
-<div class="col-xs-12 col-sm-12 col-md-6">
+<div class="col-xs-12 col-sm-12 col-md-4">
     <a href="http://www.edu.lmu.de/apb/dokumente-und-materialien/dokumente-master/ausschreibung_ma_diskurs_arena.pdf" alt="LMU Diskursarena">
-<img src="symbols/LMU.png" alt="Logo_LMU" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
+<img src="symbols/LMU.png" alt="Logo_LMU" style="max-width: 230px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
+
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a href="https://www.studienstiftung.de/" alt="CHANGE-Chancen.Nachhaltig.Gestalten">
+<img src="symbols/starterpreis-2018.jpg" alt="Logo_Starterpreis" style="max-width: 230px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
 
 </div>
 <!--
