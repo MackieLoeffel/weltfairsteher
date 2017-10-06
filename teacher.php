@@ -221,7 +221,18 @@ padding: 10px;
                    <input type="hidden" name="suggested" value="yes">
                    <input type="hidden" name="category" value="">
             <h4 style="color: white;">Eigenkreation vorschlagen</h4>
-            <div >
+
+            <a href="javascript:void(0)" onclick="return toggleArrow(this, '#eigenkreation')"
+            style="background-color: white; margin-top: 10px;
+             border: 2px solid white; border-radius: 30px;"
+
+            ><i class="fa fa-arrow-down"></i></a><br>
+            <span id="eigenkreation" style="display:none; font-size: 12px;">
+
+            Damit die Eigenkreationen langfristig in das WeltFAIRsteher-Challenge-Angebot aufgenommen werden,
+            bitten wir Sie beim Ausfüllen der folgenden Felder die Hinweise und hinterlegten Richtwerte zu berücksichtigen.
+            Wir freuen uns auf die Ideen Ihrer Klasse!
+            <div ><br>
                 <b>Von:</b>
                 <select name="class" size="1">
                     <?php
@@ -229,24 +240,36 @@ padding: 10px;
                     ?>
                         <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
                     <?php } ?>
-                </select><br>
+                </select><br><br>
+
+
 
                 <b>Titel:</b>
-                <input type="text" name="title" size="20" max="200"><br>
+                <input type="text" name="title" size="30" max="200" value="Maximal 200 Zeichen"></input><br><br>
+
+
+
+                <b>Themenbereich:</b>
+                <select style="color: black;" name="thema" size="1">
+                    <?php foreach($categories as $c) {?>
+                        <option style="color: black;" value="<?= e($c->name)?>"><?= e($c->title)?> </option>
+                    <?php } ?>
+                </select><br><br>
 
                 <b>Punkte für Challenge:</b>
                 <select name="points" size="1">
                     <?php for($i = 1; $i <= 10; $i++) {?>
                         <option value="<?= $i?>"><?= $i?></option>
                     <?php } ?>
-                </select><br>
+                </select><br><br>
+
                 <b>Extrapunkte für Challenge:</b>
                 <select name="extrapoints" size="1">
                     <option value="">Keine</option>
                     <?php for($i = 1; $i <= 10; $i++) {?>
                         <option value="<?= $i?>"><?= $i?></option>
                     <?php } ?>
-                </select><br>
+                </select><br><br>
 
                 <b>Durchführungsart:</b>
                 <select style="color: black;" name="location" size="1">
@@ -258,39 +281,68 @@ padding: 10px;
             </div>
             <br>
             <div style="color: black;">
-                <textarea cols="50" row=8" name="description" style="height: 329px; width: 93%;">Challenge-Beschreibung</textarea>
+                <textarea cols="40" row="8" name="description" style="height: 320px; width: 93%;" >
+                  Hinführung zum Thema bzw. zugrundeliegenden Problem (circa 200 - 300 Zeichen).
 
-                <br>
+                  Beschreibung der Aufgabe (Ablauf, Organisation, Ziele, Gruppengröße, etc. - circa 700 - 1.000 Zeichen)</textarea>
 
-                <span style="font-size: 13px; color: white; ">
-                  Die Challenge-Beschreibung sollte Folgendes beinhalten:
-<ul style="color: black; text-align: left;">
-<li>Kurzbeschreibung der zugrundeliegenden Problematik in ein bis drei Sätzen
-</li>
-<li>Challenge-Auftrag und Zielvorstellung
-</li>
-<li>Bewertungskriterien
-</li>
-<li>Gruppengröße
-</li>
-<li>Geschätzter zeitlicher Arbeitsaufwand
-</li>
-<li id="pdf2">Benötigte Hilfsmittel und Quellen
-</li>
+                <br><br>
+
+                <b>Dimensionen der Nachhaltigkeit (mehrere möglich):</b>
+                <fieldset style="color: black;">
+
+                        <label>
+                            <input type="checkbox" name="dimension" value="Ökologie">
+                            Ökologie
+                          </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label>
+                            <input type="checkbox" name="dimension" value="Soziales">
+                            Soziales
+                          </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label>
+                            <input type="checkbox" name="dimension" value="Ökonomie">
+                            Ökonomie
+                          </label>
 
 
-</ul>                  </span><br>
+              </fieldset><br>
+
+              <b>Die Challenge gilt als bestanden, wenn...</b><textarea cols="10" row="3" name="ziele" style="height: 80px; width: 93%;" >
+            Kurze und prägnante Beschreibung der Minimalziele der Challenge, die erreicht werden müssen (circa 100 - 200 Zeichen)</textarea>
+
+              <br><br>
+
+              <b>Aufwand/Geschätzte Dauer</b><textarea cols="10" row="3" name="dauer" style="height: 80px; width: 93%;" >
+              Geschätzte Dauer einzelner voraussichtlicher Teilaufgaben der Challenge</textarea>
+              <br><br>
+
+              <b>Benötigte Hilfsmittel/Quellen</b><textarea cols="10" row="3" name="hilfen" style="height: 80px; width: 93%;" >
+              Materialien, Links, etc.</textarea>
+              <br><br>
+
+              <b>Die Eigenkreation darf über dieses Schuljahr hinaus öffentlich verfügbar sein:</b>
+              <fieldset style="color: black;">
+
+                      <label>
+                          <input type="checkbox" name="zustimmung" value="">
+
+                        </label>
+
+            </fieldset><br>
+                 <br>
 
 
                 <input type="submit" value="Abschicken"
                 style="background-color: green; color: white; margin-left: auto; margin-right: auto;">
-            </div>
+          </span>  </div>
         </form><br>
+
 </div>
 
 
 
 <div class=".abstand teacher-challenge-box"
+id="pdf2"
  style="position: relative;
  margin-top: 30px;
  margin-right: 1%;

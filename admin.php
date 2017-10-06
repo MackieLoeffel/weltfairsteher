@@ -216,6 +216,13 @@ include "include/header.php";
             Lehrkraft: <b style="color: black;" id="teacher-email"> </b> <br/>
             Titel: <input type="text" style="color: black;" value="" size="25" name="title"> </input>
             <br>
+            Themenbereich:                 <select style="color: black;" name="thema" size="1">
+                    <?php foreach($categories as $c) {?>
+                        <option style="color: black;" value="<?= e($c->name)?>"><?= e($c->title)?> </option>
+                    <?php } ?>
+                </select>
+
+            <br>
             Punkte:
             <select style="color: black;" name="points" size="1">
                 <?php for($i = 1; $i <= 10; $i++) {?>
@@ -239,8 +246,45 @@ include "include/header.php";
 
 
             <br>
-            Kurzbeschreibung: <textarea rows="7" style="color: black;" name="description"></textarea>
+            Beschreibung: <textarea rows="7" style="color: black;" name="description"></textarea>
             <br>
+
+Dimensionen: <label>
+                            <input type="checkbox" name="dimension" value="Ökologie">
+                            Ökologie
+                          </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label>
+                            <input type="checkbox" name="dimension" value="Soziales">
+                            Soziales
+                          </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label>
+                            <input type="checkbox" name="dimension" value="Ökonomie">
+                            Ökonomie
+                          </label>
+<br>
+
+Die Challenge gilt als bestanden, wenn...:<textarea cols="10" row="3" name="ziele" style="height: 80px; width: 93%;" >
+      </textarea>
+
+        <br>
+
+        Aufwand/Geschätzte Dauer<textarea cols="10" row="3" name="dauer" style="height: 80px; width: 93%;" >
+      </textarea>
+        <br>
+
+      Benötigte Hilfsmittel/Quellen<textarea cols="10" row="3" name="hilfen" style="height: 80px; width: 93%;" >
+        </textarea>
+        <br>
+
+        Die Eigenkreation darf über dieses Schuljahr hinaus öffentlich verfügbar sein:
+                        <label>
+                    <input type="checkbox" name="zustimmung" value="">
+
+                  </label>
+<br>
+           <br>
+
+
             <input type="button" value="Eigenkreation verwerfen" style="background-color: #52150D; float: right"
                    onclick="sendForm('#acceptSelfmade', {'api': 'deleteEntry', 'data': {'table': 'suggested', 'id': $('#selfmadeSelect').val()}})"/>
             <br/>
