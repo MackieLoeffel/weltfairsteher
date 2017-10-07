@@ -369,6 +369,73 @@ padding: 10px;
      <input type="submit" value="Bestätigen" style="background-color: green; color: white;"> </input>
  </form>
  </div>
+ 
+ 
+ <div class=".abstand teacher-challenge-box"
+ style="position: relative;
+ margin-top: 30px;
+ margin-right: 1%;
+ width: 98%;
+ margin-left: ;
+ float: right;
+padding: 10px;
+ ">
+ <form id="changeClasses" action="changeuser.php" method="post">
+     <h4 style="color: white;">Klassen bearbeiten</h4>
+	<b>Klasse:</b><br>
+                    <select name="class" id="class" size="1">
+                        <?php
+                        // select all unsolved challenges by this class
+                        $challengeStmt = $db->prepare("
+SELECT id, name FROM challenge
+WHERE id NOT IN (
+SELECT c.id
+FROM challenge AS c
+JOIN solved_challenge AS sc ON c.id = sc.challenge
+WHERE sc.class = :class
+GROUP BY c.id)");
+                        $challengesForClass = [];
+                        foreach($allowed_classes as $class) {
+                            $challengeStmt->execute(["class" => $class->id]);
+                            $challengesForClass[$class->id] = $challengeStmt->fetchAll(PDO::FETCH_ASSOC);
+                        ?>
+                            <option value="<?=e($class->id)?>"><?=e($class->name)?></option>
+                        <?php } ?>
+                    </select><br>
+    <!--- <span style="font-size: 11px;">(Felder leer lassen, um sie nicht zu ändern)<br/></span>--->
+     <input type="hidden" name="user" value="<?= e($_SESSION["user"]) ?>">
+     <input type="hidden" name="mode" value="CHANGE">
+     Neuer Name: <br>
+      <input type="text" name="newname" id="newname" value="">
+     </input><br>
+
+ <br>
+     <input name="action" type="submit" value="Namen ändern" style="background-color: green; color: white;"> </input> <br>
+        <br> <input name="action" type="submit" value="Klasse löschen" style="background-color: red; color: white;"> </input> 
+ </form>
+ </div>
+ 
+ <div class=".abstand teacher-challenge-box"
+ style="position: relative;
+ margin-top: 30px;
+ margin-right: 1%;
+ width: 98%;
+ margin-left: ;
+ float: right;
+padding: 10px;
+ ">
+ <form id="newClass" action="changeuser.php" method="post">
+     <h4 style="color: white;">Neue Klasse</h4>
+     <input type="hidden" name="user" value="<?= e($_SESSION["user"]) ?>">
+     Teamname: <br>
+      <input type="text" name="new_teamname" id="new_teamname" value="">
+     </input>
+ <br><br>
+ <input type="hidden" name="mode" id="mode" value="NEW">
+     <input type="submit" value="Neue Klasse erstellen" style="background-color: green; color: white;"> </input>
+ </form>
+ </div>
+ 
  <br>
  <br>
  <br> <br>

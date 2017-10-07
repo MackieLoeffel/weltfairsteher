@@ -15,7 +15,7 @@
 </div>
 
 <div class="col-xs-12 col-sm-12 col-md-4">
-<a href="#anmelden" alt="Anmeldeformular">
+<a href="register.php" alt="Anmeldeformular">
 <img src="symbols/start2.jpg" alt="Anmeldebild" style="width: 98%; height: auto; margin-top: 5px; margin-bottom: 25px;"></img></a>
 
 
@@ -143,7 +143,7 @@ Hier behandelt ihr Themen wie umweltschonende Ernährung, fairen Handel oder ern
 <ul style="font-size: 14pt;">
   <li>Bearbeiten Sie mit Ihrer Klasse Challenges im Unterricht. Zu jeder Aufgabe finden Sie ausführliche Materialien und Hilfestellungen als PDF-Dokument.</li>
   <li>Tragen Sie die bestandenen Challenges Ihrer Klasse online ein. Hat Ihre Klasse ein Etappenziel erreicht, schicken wir Ihnen eine Überraschung für die Schüler*innen zu.</li>
-  <li>Als hauptverantwortliche Lehrkraft melden Sie Ihre Klasse bis zum 1. Oktober über unten stehendes <a href="/#anmelden" alt="Anmelden" style="color: green;">Anmeldeformular</a> an.</li>
+  <li>Als hauptverantwortliche Lehrkraft melden Sie Ihre Klasse bis zum 1. Oktober über unten stehendes <a href="register.php" alt="Anmelden" style="color: green;">Anmeldeformular</a> an.</li>
 </ul>
 
 </div>
