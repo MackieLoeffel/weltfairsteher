@@ -18,7 +18,7 @@
   };
 
   selectSelfmade = function() {
-    var i, id, len, prop, ref, ref1;
+    var i, id, j, len, len1, prop, ref, ref1, ref2, ref3;
     id = $("#selfmadeSelect").val();
     console.log("selected:", id);
     ref = ["title", "points", "class", "description", "location", "extrapoints"];
@@ -27,7 +27,14 @@
       $("#acceptSelfmade [name='" + prop + "']").val((ref1 = suggestedChallenges[id][prop]) != null ? ref1 : "");
     }
     $("#class-name").text(suggestedChallenges[id].name);
-    return $("#teacher-email").text(suggestedChallenges[id].email);
+    $("#teacher-email").text(suggestedChallenges[id].email);
+    $("#allow_continuous_use").text(suggestedChallenges[id].allow_continuous_use ? "Ja" : "Nein");
+    $("#dimensions").text(suggestedChallenges[id].dimensions.join(", "));
+    ref2 = ["suggested_category", "goals", "duration", "aid"];
+    for (j = 0, len1 = ref2.length; j < len1; j++) {
+      prop = ref2[j];
+      $("#" + prop).text((ref3 = suggestedChallenges[id][prop]) != null ? ref3 : "");
+    }
   };
 
   $('document').ready(function() {
