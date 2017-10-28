@@ -13,6 +13,23 @@ if(!$extrapoints) {
     $extrapoints = null;
 }
 
+if($suggested) {
+    list($suggested_category, $goals, $duration, $aid) = apiCheckParams("suggested_category", "goals", "duration", "aid");
+    $allow_continuous_use = isset($_POST["allow_continuous_use"]);
+    $dimensions = [];
+    if(isset($_POST["dimensions"])) {
+        $dimensions = $_POST["dimensions"];
+    }
+} else {
+    $suggested_category = null;
+    $goals = null;
+    $duration = null;
+    $aid = null;
+    $allow_continuous_use = null;
+    $dimensions = null;
+}
+
+
 apiCheck(ctype_digit($points), "Punkte müssen eine Zahl sein");
 apiCheck(!$extrapoints || ctype_digit($extrapoints), "Extrapunkte müssen eine Zahl sein");
 apiCheck(strlen($title) !== 0, "Titel darf nicht leer sein");
@@ -26,15 +43,30 @@ apiCheck(array_filter($locationTypes, function($lt) use ($location) { return $lt
 apiCheck(!$suggested || fetch("SELECT COUNT(*) AS count FROM (SELECT class FROM suggested UNION ALL SELECT author AS class FROM challenge) AS c WHERE c.class = :id", ["id" => $class])->count < MAX_SELFMADE_PER_CLASS,
          "Es sind maximal " . MAX_SELFMADE_PER_CLASS . " Eigenkreationen pro Klasse erlaubt.");
 
-apiAction(function() use ($title, $desc, $class, $points, $suggested, $category, $location, $extrapoints) {
+apiAction(function() use ($title, $desc, $class, $points, $suggested, $category, $location, $extrapoints, $suggested_category, $goals, $duration, $aid, $allow_continuous_use, $dimensions) {
+    global $db;
     if($suggested) {
-        dbExecute("INSERT INTO suggested (title, description, class, points, location, extrapoints) VALUES (:title, :desc, :class, :points, :location, :extrapoints)",
+        dbExecute("INSERT INTO suggested (title, description, class, points, location, extrapoints, suggested_category, goals, duration, aid, allow_continuous_use) VALUES (:title, :desc, :class, :points, :location, :extrapoints, :suggested_category, :goals, :duration, :aid, :allow_continuous_use)",
                   ["title" => $title,
                    "desc" => $desc,
                    "class" => $class,
                    "points" => $points,
                    "location" => $location,
-                   "extrapoints" => $extrapoints]);
+                   "extrapoints" => $extrapoints,
+                   "suggested_category" => $suggested_category,
+                   "goals" => $goals,
+                   "duration" => $duration,
+                   "aid" => $aid,
+                   "allow_continuous_use" => $allow_continuous_use
+                  ]);
+        $id = $db->lastInsertId();
+
+        foreach($dimensions as $dim) {
+            dbExecute("INSERT INTO suggested_dimension (suggested_id, dimension) VALUES (:id, :dimension)",
+                      ["id" => $id,
+                       "dimension" => $dim,
+                      ]);
+        }
 
         foreach(fetchAll("SELECT email FROM user WHERE role = :admin", ["admin" => ADMIN]) as $admin) {
             own_mail($admin->email, "Challenge vorgeschlagen", "Es wurde eine neue Challenge vorgeschlagen.\r\n\r\nTitel: $title\r\nBeschreibung:\r\n$desc\r\n\r\nZum Ablehnen oder Bestätigen bitte auf www.weltfairsteher.de/admin.php gehen.");

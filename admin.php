@@ -195,7 +195,7 @@ include "include/header.php";
         <br>
         <input type="submit" value="Gesamteingabe bestätigen" style="background-color: green; float: right;"> </input>
     </form>
-<?php }); slideDown("Eigenkreation übernehmen", function() use ($locationTypes){ ?>
+<?php }); slideDown("Eigenkreation übernehmen", function() use ($locationTypes, $categories){ ?>
     <form id="acceptSelfmade" class="slide-down-hidden" action="javascript:void(0);" onsubmit="acceptSelfmade()">
         <input type="hidden" name="class" value="-1">
         <input type="hidden" name="suggested" value="">
@@ -204,8 +204,14 @@ include "include/header.php";
             <select id="selfmadeSelect" style="color: black;" size="10">
                 <?php
                 $suggestedChallenges = [];
-                foreach(fetchAll("SELECT s.id, s.title, s.description, s.points, s.class, c.name, u.email, s.location, s.extrapoints FROM suggested s JOIN class c ON c.id = s.class JOIN user u ON u.id = c.teacher ") as $c) {
-                    $suggestedChallenges[$c->id] = $c;?>
+                foreach(fetchAll("SELECT s.id, s.title, s.description, s.points, s.class, c.name, u.email, s.location, s.extrapoints, s.suggested_category, s.goals, s.aid, s.allow_continuous_use, s.duration, 0 as dimensions FROM suggested s JOIN class c ON c.id = s.class JOIN user u ON u.id = c.teacher ") as $c) {
+                    $c->dimensions = [];
+                    $c->suggested_category = array_pop(array_filter($categories, function($cat) use ($c) { return $cat->name === $c->suggested_category; }))->title;
+                    foreach(fetchAll("SELECT dimension FROM suggested_dimension WHERE suggested_id = :id", ["id" => $c->id]) as $d) {
+                        array_push($c->dimensions, $d->dimension);
+                    }
+                    $suggestedChallenges[$c->id] = $c;
+                ?>
                     <option style="color: black;" value="<?=e($c->id)?>"> <?=e($c->title)?></option>
                 <?php } ?>
             </select>
@@ -216,12 +222,7 @@ include "include/header.php";
             Lehrkraft: <b style="color: black;" id="teacher-email"> </b> <br/>
             Titel: <input type="text" style="color: black;" value="" size="25" name="title"> </input>
             <br>
-            Themenbereich:                 <select style="color: black;" name="thema" size="1">
-                    <?php foreach($categories as $c) {?>
-                        <option style="color: black;" value="<?= e($c->name)?>"><?= e($c->title)?> </option>
-                    <?php } ?>
-                </select>
-
+            Vorgeschlagener Themenbereich: <b style="color: black;" id="suggested_category"></b>
             <br>
             Punkte:
             <select style="color: black;" name="points" size="1">
@@ -249,38 +250,18 @@ include "include/header.php";
             Beschreibung: <textarea rows="7" style="color: black;" name="description"></textarea>
             <br>
 
-Dimensionen: <label>
-                            <input type="checkbox" name="dimension" value="Ökologie">
-                            Ökologie
-                          </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <label>
-                            <input type="checkbox" name="dimension" value="Soziales">
-                            Soziales
-                          </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <label>
-                            <input type="checkbox" name="dimension" value="Ökonomie">
-                            Ökonomie
-                          </label>
-<br>
+            Dimensionen: <b style="color: black;" id="dimensions" ></b><br>
 
-Die Challenge gilt als bestanden, wenn...:<textarea cols="10" row="3" name="ziele" style="height: 80px; width: 93%;" >
-      </textarea>
+            Die Challenge gilt als bestanden, wenn...:
+            <b style="color: black;" id="goals"></b>
+            <br>
 
-        <br>
+            Aufwand/Geschätzte Dauer: <b style="color: black;" id="duration" ></b>
+            <br>
 
-        Aufwand/Geschätzte Dauer<textarea cols="10" row="3" name="dauer" style="height: 80px; width: 93%;" >
-      </textarea>
-        <br>
+            Benötigte Hilfsmittel/Quellen  <b style="color: black;" id="aid"></b> <br>
 
-      Benötigte Hilfsmittel/Quellen<textarea cols="10" row="3" name="hilfen" style="height: 80px; width: 93%;" >
-        </textarea>
-        <br>
-
-        Die Eigenkreation darf über dieses Schuljahr hinaus öffentlich verfügbar sein:
-                        <label>
-                    <input type="checkbox" name="zustimmung" value="">
-
-                  </label>
+            Die Eigenkreation darf über dieses Schuljahr hinaus öffentlich verfügbar sein:  <b style="color: black;" id="allow_continuous_use"></b>
 <br>
            <br>
 

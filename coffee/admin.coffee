@@ -13,6 +13,12 @@ selectSelfmade = ->
     $("#acceptSelfmade [name='#{prop}']").val(suggestedChallenges[id][prop] ? "")
   $("#class-name").text suggestedChallenges[id].name
   $("#teacher-email").text suggestedChallenges[id].email
+  $("#allow_continuous_use").text if suggestedChallenges[id].allow_continuous_use then "Ja" else "Nein"
+  $("#dimensions").text suggestedChallenges[id].dimensions.join ", "
+  for prop in ["suggested_category", "goals", "duration", "aid"]
+    $("##{prop}").text suggestedChallenges[id][prop] ? ""
+  return
+
 
 $('document').ready ->
   first = null

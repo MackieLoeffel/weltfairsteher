@@ -250,7 +250,7 @@ padding: 10px;
 
 
                 <b>Themenbereich:</b>
-                <select style="color: black;" name="thema" size="1">
+                <select style="color: black;" name="suggested_category" size="1">
                     <?php foreach($categories as $c) {?>
                         <option style="color: black;" value="<?= e($c->name)?>"><?= e($c->title)?> </option>
                     <?php } ?>
@@ -292,39 +292,39 @@ padding: 10px;
                 <fieldset style="color: black;">
 
                         <label>
-                            <input type="checkbox" name="dimension" value="Ökologie">
+                            <input type="checkbox" name="dimensions[]" value="Ökologie">
                             Ökologie
                           </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           <label>
-                            <input type="checkbox" name="dimension" value="Soziales">
+                            <input type="checkbox" name="dimensions[]" value="Soziales">
                             Soziales
                           </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           <label>
-                            <input type="checkbox" name="dimension" value="Ökonomie">
+                            <input type="checkbox" name="dimensions[]" value="Ökonomie">
                             Ökonomie
                           </label>
 
 
               </fieldset><br>
 
-              <b>Die Challenge gilt als bestanden, wenn...</b><textarea cols="10" row="3" name="ziele" style="height: 80px; width: 93%;" >
+              <b>Die Challenge gilt als bestanden, wenn...</b><textarea cols="10" row="3" name="goals" style="height: 80px; width: 93%;" >
             Kurze und prägnante Beschreibung der Minimalziele der Challenge, die erreicht werden müssen (circa 100 - 200 Zeichen)</textarea>
 
               <br><br>
 
-              <b>Aufwand/Geschätzte Dauer</b><textarea cols="10" row="3" name="dauer" style="height: 80px; width: 93%;" >
+              <b>Aufwand/Geschätzte Dauer</b><textarea cols="10" row="3" name="duration" style="height: 80px; width: 93%;" >
               Geschätzte Dauer einzelner voraussichtlicher Teilaufgaben der Challenge</textarea>
               <br><br>
 
-              <b>Benötigte Hilfsmittel/Quellen</b><textarea cols="10" row="3" name="hilfen" style="height: 80px; width: 93%;" >
+              <b>Benötigte Hilfsmittel/Quellen</b><textarea cols="10" row="3" name="aid" style="height: 80px; width: 93%;" >
               Materialien, Links, etc.</textarea>
               <br><br>
 
               <b>Die Eigenkreation darf über dieses Schuljahr hinaus öffentlich verfügbar sein:</b>
               <fieldset style="color: black;">
 
-                      <label>
-                          <input type="checkbox" name="zustimmung" value="">
+                  <label>
+                      <input type="checkbox" name="allow_continuous_use" value="zustimmung">
 
                         </label>
 
