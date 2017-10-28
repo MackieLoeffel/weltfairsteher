@@ -2,7 +2,7 @@
 include "include/header.php"; ?>
 
   <section  class="sectionbg" style="background-color: #F2F2DA;">
-
+<br><br><br><br><br>
   <?php
 
 $showForm = true;
@@ -47,12 +47,22 @@ if($showForm) {
                   margin-bottom: 5px; margin-left: 37%; margin-right: 37%;
                   text-align: center;"><input type="submit" name="commit"
                   value="Login"></p>  </form>
-                  <span style="width: 26%; text-align: center; margin-left: 39%; margin-top:-17px;">
-                    <a href="forgotPassword.php" alt="pw reset" style="color: grey; font-size: 9px;">Passwort vergessen?</a></span>
+                  <span style="width: 26%; margin-top:-17px;">
+                    <a href="forgotPassword.php" alt="pw reset" style="color: grey; font-size: 10px;">Passwort vergessen?</a></span>
                 </div>
 <?php
 }
 ?>
+<br><br><br><br><br>
+<div style="width: auto;
+margin-left: 25%;
+margin-right: 25%;
+margin-top: 0px;
+height: 45px;
+background-color: #6EDB95; text-align: center;"><br>
+Sie sind Lehrkraft und haben noch kein Konto? Schreiben Sie uns eine Mail an kontakt@weltfairsteher.de
+</div>
+
 </section>
 <br>
 <br>

@@ -74,26 +74,6 @@
 
 <div id="separator" style="margin-top: 0px; margin-bottom: 0px; visibility: hidden;">.</div>
 
-<h2 class="abstaende" style="color: white; background-color: #108542;">Unterstützer und Kooperationspartner</h2>
-
-
-<div class="row">
-<div class="col-xs-12 col-sm-12 col-md-4">
-<a href="https://chancengestalten.de/" alt="CHANGE-Chancen.Nachhaltig.Gestalten">
-<img src="symbols/changeev.PNG" alt="Logo_CHANGE" style="max-width: 230px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
-
-</div>
-
-<div class="col-xs-12 col-sm-12 col-md-4">
-    <a href="http://www.edu.lmu.de/apb/dokumente-und-materialien/dokumente-master/ausschreibung_ma_diskurs_arena.pdf" alt="LMU Diskursarena">
-<img src="symbols/LMU.png" alt="Logo_LMU" style="max-width: 230px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
-
-</div>
-<div class="col-xs-12 col-sm-12 col-md-4">
-<a href="https://www.studienstiftung.de/" alt="CHANGE-Chancen.Nachhaltig.Gestalten">
-<img src="symbols/starterpreis-2018.jpg" alt="Logo_Starterpreis" style="max-width: 230px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
-
-</div>
 <!--
 <div class="col-xs-12 col-sm-12 col-md-4">
   <a href="https://www.netzwerk21kongress.de/zeitzeichen/detail/16_zz_jugend.asp?bURL=de/16_zeitzeichen.asp" alt="ZeitzeicheN-Preis 2016">
@@ -103,7 +83,7 @@
 </div>
 -->
 
-</div>
+
 
 <div  style="text-align: justify;">
 
@@ -133,7 +113,7 @@ Hier behandelt ihr Themen wie umweltschonende Ernährung, fairen Handel oder ern
 <ul style="font-size: 14pt;">
   <li>Sucht euch eine Lehrkraft, die motiviert ist, euch zu unterstützen. Überlegt euch einen Namen für euer Team und meldet euch für die nächste WeltFAIRsteher-Saison an.</li>
   <li>Klickt in der Kopfzeile auf <a href="https://weltfairsteher.de/challenges.php" alt="Challenges" style="color: green;">Challenges</a> und lasst euch inspirieren. Jede Klasse verfolgt eigenständig Etappenziele. Habt ihr eine gewisse Punktzahl erreicht, gibt es eine Überraschung.</li>
-  <li>Wenn ihr noch schneller lernen wollt, werdet selbst kreativ: Jede Klasse darf bis zu fünf Eigenkreationen einreichen und Kreativitätsboni sammeln. Über das Formular im Lehrkraft-Bereich nehmen wir jederzeit Eigenkreationen entgegen.</li>
+  <li>Wenn ihr noch schneller lernen wollt, werdet selbst kreativ: Jede Klasse darf bis zu fünf Eigenkreationen einreichen und Kreativitätsboni sammeln. Lehrkräfte müssen sich anmelden, um eine Eigenkreation einzureichen.</li>
 </ul>
 </div>
 
@@ -203,10 +183,42 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
 
 
 </div>
+
+
+
+
 </div>
 
 
 <br>
+
+
+
+<h2 class="abstaende" style="color: white; background-color: #108542;">Unterstützer und Kooperationspartner</h2>
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a href="https://chancengestalten.de/" alt="CHANGE-Chancen.Nachhaltig.Gestalten">
+<img src="symbols/changeev.PNG" alt="Logo_CHANGE" style="max-width: 230px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
+
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-4">
+    <a href="http://www.edu.lmu.de/apb/dokumente-und-materialien/dokumente-master/ausschreibung_ma_diskurs_arena.pdf" alt="LMU Diskursarena">
+<img src="symbols/LMU.png" alt="Logo_LMU" style="max-width: 230px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
+
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a href="https://www.studienstiftung.de/" alt="CHANGE-Chancen.Nachhaltig.Gestalten">
+<img src="symbols/starterpreis-2018.jpg" alt="Logo_Starterpreis" style="max-width: 230px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
+
+</div>
+</div>
+
+
+
+
 
 <h2 id="faq" style="color: white; background-color: #108542; width: 98%; margin-left: 1%;">FAQs - Fragen zum Ablauf und zum Projekt</h2>
 
@@ -226,7 +238,7 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
   <span id="faq2" style="display:none; margin-left: 1%;"><br>
     Als hauptverantwortliche Lehrkraft motivieren Sie die Schüler*innen und unterstützen sie bei der Bearbeitung der Challenges.
     Sie geben dem Projekt über das Schuljahr hinweg Struktur und sind Anlaufstelle bei Unklarheiten.
-    Bestandene Challenges tragen Sie online ein, entwickelte Eigenkreationen schlagen Sie im Lehrkraft-Bereich vor. Weiter unten finden Sie dazu jeweils weitere Informationen.
+    Bestandene Challenges tragen Sie online ein, entwickelte Eigenkreationen schlagen Sie unter <a href="https://weltfairsteher.de/login.php">Anmelden</a> vor. Weiter unten finden Sie dazu jeweils weitere Informationen.
 </span>
 
 <br><br>
@@ -277,11 +289,11 @@ Lehrkräfte sichtbar, da der Inhalt von den Schüler*innen erst erarbeitet werde
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wie trage ich eine Challenge als bestanden ein?">Wie trage ich eine Challenge als bestanden ein?</span></a></span>
       <span id="faq6" style="display:none; margin-left: 1%;"><br>
-Bestandene Challenges können online eingetragen werden. Dazu loggt sich die hauptverantwortliche Lehrkraft im <a href="https://weltfairsteher.de/login.php">Lehrkraft-Bereich</a> (siehe Leiste am oberen Rand) ein und klickt im Menü-Punkt <a href="https://weltfairsteher.de/challenges.php">Challenges</a> anschließend auf die
-bestandene Aufgabe. Erfolgreich absolvierte Challenges können auch im Lehrkraft-Bereich eingetragen werden. Dort lässt sich auch angeben, ob eine Challenge mit
-Zusatzaufgabe bearbeitet wurde. In dem Fall gibt es auch Zusatzpunkte. Achtung: die Zusatzaufgaben können nicht nachträglich eingetragen werden, sondern nur gemeinsam mit der Hauptaufgabe. Das heißt, Challenges, die mit Zusatzaufgabe absolviert wurden, müssen im Lehrkraft-Bereich eingetragen werden.
+Bestandene Challenges können online eingetragen werden. Dazu loggt sich die hauptverantwortliche <a href="https://weltfairsteher.de/login.php">Lehrkraft</a> ein und klickt im Menü-Punkt <a href="https://weltfairsteher.de/challenges.php">Challenges</a> anschließend auf die
+bestandene Aufgabe. Erfolgreich absolvierte Challenges können unter <a href="https://weltfairsteher.de/login.php">Anmelden</a> ebenfalls eingetragen werden. Dort lässt sich auch angeben, ob eine Challenge mit
+Zusatzaufgabe bearbeitet wurde. In dem Fall gibt es auch Zusatzpunkte. Achtung: die Zusatzaufgaben können nicht nachträglich eingetragen werden, sondern nur gemeinsam mit der Hauptaufgabe. Das heißt, Challenges, die mit Zusatzaufgabe absolviert wurden, müssen unter Anmelden eingetragen werden.
 <br><br>
-Zu jeder eingetragenen Challenge kann im Lehrkraft-Bereich auch ein kurzes Feedback gegeben werden. Und wenn Sie sich nicht mehr sicher sind, welche Challenge Ihre Klasse eigentlich
+Zu jeder eingetragenen Challenge kann unter <a href="https://weltfairsteher.de/login.php">Anmelden</a> auch ein kurzes Feedback gegeben werden. Und wenn Sie sich nicht mehr sicher sind, welche Challenge Ihre Klasse eigentlich
 schon absolviert hat, können Sie einfach Ihre Klasse unter Challenges wählen und erkennen absolvierte Aufgaben anhand der grünen Farbe.
 
     </span>
@@ -291,7 +303,7 @@ schon absolviert hat, können Sie einfach Ihre Klasse unter Challenges wählen u
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Was ist eine Eigenkreation und wie schlage ich sie vor?">Was ist eine Eigenkreation und wie schlage ich sie vor?</span></a></span>
       <span id="faq7" style="display:none; margin-left: 1%;"><br>
-      Jede Klasse kann kreativ werden und eigene Challenges kreieren. Bis zu fünf solcher Eigenkreationen können im Lehrkraftbereich
+      Jede Klasse kann kreativ werden und eigene Challenges kreieren. Bis zu fünf solcher Eigenkreationen können unter <a href="https://weltfairsteher.de/login.php">Anmelden</a>
       vorgeschlagen werden. Nach der Einreichung wird jede Eigenkreation von einer Evaluationsgruppe besprochen und etwaige Anmerkungen rückgemeldet.
       Sobald der Eigenkreation zugestimmt wird, erscheint sie für alle sichtbar auf der Website und kann von
       allen anderen Klassen ebenfalls absolviert werden.
@@ -301,7 +313,7 @@ Beginnend bei einem Wert von 1 kann der Faktor also maximal den Wert 1,5 annehme
 Bsp.: <br>
 Eine Klasse erreicht durch das Absolvieren der Challenges 50 Punkte und reicht zusätzlich 4 Eigenkreationen erfolgreich ein: <br>
 		50 Punkte x 1,4 = 70 Punkte<br>
-Weitere Informationen zu den Angaben, die Sie für eine Eigenkreation machen müssen, finden Sie im <a href="https://weltfairsteher.de/login.php">Lehrkraft-Bereich</a>.
+Weitere Informationen zu den Angaben, die Sie für eine Eigenkreation machen müssen, finden Sie unter <a href="https://weltfairsteher.de/login.php">Anmelden</a>.
 
 
     </span>
@@ -313,7 +325,7 @@ Weitere Informationen zu den Angaben, die Sie für eine Eigenkreation machen mü
       <span id="faq8" style="display:none; margin-left: 1%;"><br>
         Jede Klasse kann die Challenges absolvieren, für die sie sich interessiert. Es gibt keine feste Reihenfolge oder Mindestanzahl.
 
-        Die Informationen zu den Challenges sind ausführlich in den dazugehörigen PDF-Dokumenten beschrieben. Im Lehrkraft-Bereich sowie auf der Challenges-Seite können auch alle PDF-Dokumente auf einmal heruntergeladen werden.
+        Die Informationen zu den Challenges sind ausführlich in den dazugehörigen PDF-Dokumenten beschrieben. Unter <a href="https://weltfairsteher.de/login.php">Anmelden</a> sowie auf der Challenges-Seite können auch alle PDF-Dokumente auf einmal heruntergeladen werden.
 
 <br><br>
       Die Schüler*innen können Challenges aus sechs verschiedenen Themenbereichen sowie aus den Eigenkreationen wählen:<br>
@@ -386,6 +398,11 @@ Es werden keine Informationen an Dritte weitergegeben, sofern es nicht für die 
 
 
 </div>
+
+
+
+
+
 <!--
                         <b>
 

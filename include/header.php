@@ -119,7 +119,7 @@ border-color: green; font-color: white; position: fixed; z-index: 999; margin-bo
                                      $sites = ["Fortschritt" => "table.php",
                                                "Challenges" => "challenges.php",
                                                "Leckerwissen" => 'leckerwissen.php',
-                                               'Lehrkraft-Bereich' => "teacher.php"];
+                                               'Anmelden' => "teacher.php"];
                                      if(isAdmin()) {
                                          $sites["Admin"] = "admin.php";
 
