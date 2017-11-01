@@ -215,7 +215,8 @@ width: 98%;
                       background-color:#1BAB3F;
 padding: 10px;
                       height: auto;
-                      text-align: center">
+                      text-align: center;
+                      font-size: 16px;">
 
                <form id="addChallenge" action="javascript:void(0);" onsubmit="sendForm(this)">
                    <input type="hidden" name="suggested" value="yes">
@@ -227,10 +228,10 @@ padding: 10px;
              border: 2px solid white; border-radius: 30px;"
 
             ><i class="fa fa-arrow-down"></i></a><br>
-            <span id="eigenkreation" style="display:none; font-size: 12px;">
+            <span id="eigenkreation" style="display:none; font-size: 13px;">
 
-            Damit die Eigenkreationen langfristig in das WeltFAIRsteher-Challenge-Angebot aufgenommen werden,
-            bitten wir Sie beim Ausfüllen der folgenden Felder die Hinweise und hinterlegten Richtwerte zu berücksichtigen.
+            Damit die Eigenkreationen langfristig in das WeltFAIRsteher-Challenge-Angebot aufgenommen werden,<br>
+            bitten wir Sie beim Ausfüllen der folgenden Felder die Hinweise und hinterlegten Richtwerte zu berücksichtigen.<br>
             Wir freuen uns auf die Ideen Ihrer Klasse!
             <div ><br>
                 <b>Von:</b>
