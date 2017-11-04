@@ -218,7 +218,7 @@ padding: 10px;
                       text-align: center;
                       font-size: 16px;">
 
-               <form id="addChallenge" action="javascript:void(0);" onsubmit="sendForm(this)">
+               <form id="addChallenge" action="javascript:void(0);" onsubmit="sendForm(this, {'cb': function(errors) { if(!errors.length) alert('Eigenkreation erfolgreich eingereicht. Der Vorschlag Ihrer Klasse wird zeitnah besprochen.');}})">
                    <input type="hidden" name="suggested" value="yes">
                    <input type="hidden" name="category" value="">
             <h4 style="color: white;">Eigenkreation vorschlagen</h4>
