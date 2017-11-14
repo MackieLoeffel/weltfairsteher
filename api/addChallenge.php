@@ -43,6 +43,15 @@ apiCheck(array_filter($locationTypes, function($lt) use ($location) { return $lt
 apiCheck(!$suggested || fetch("SELECT COUNT(*) AS count FROM (SELECT class FROM suggested UNION ALL SELECT author AS class FROM challenge) AS c WHERE c.class = :id", ["id" => $class])->count < MAX_SELFMADE_PER_CLASS,
          "Es sind maximal " . MAX_SELFMADE_PER_CLASS . " Eigenkreationen pro Klasse erlaubt.");
 
+if($suggested) {
+    apiCheckStringLength($desc, "Beschreibung", MIN_SELFMADE_DESCRIPTION_LENGTH, MAX_SELFMADE_DESCRIPTION_LENGTH);
+    apiCheckStringLength($goals, "Die Challenge gilt als bestanden, wenn...", MIN_SELFMADE_GOALS_LENGTH, MAX_SELFMADE_GOALS_LENGTH);
+    apiCheckStringLength($duration, "Aufwand/Geschätze Dauer", MIN_SELFMADE_DURATION_LENGTH, MAX_SELFMADE_DURATION_LENGTH);
+    apiCheckStringLength($aid, "Benötigte Hilfsmittel/Quellen", MIN_SELFMADE_AID_LENGTH, MAX_SELFMADE_AID_LENGTH);
+    apiCheck(count($dimensions) >= 1, "Es muss mindestens eine Dimension ausgewählt werden.");
+}
+
+
 apiAction(function() use ($title, $desc, $class, $points, $suggested, $category, $location, $extrapoints, $suggested_category, $goals, $duration, $aid, $allow_continuous_use, $dimensions) {
     global $db;
     if($suggested) {

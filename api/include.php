@@ -51,6 +51,9 @@ function apiAction($action) {
     echo json_encode($errors);
 }
 
+function apiCheckStringLength($field, $fieldname, $minlen, $maxlen) {
+    apiCheck(strlen($field) >= $minlen && strlen($field) <= $maxlen, $fieldname. " muss zwischen " . $minlen . " und " . $maxlen . " Zeichen beinhalten (waren " . strlen($field) . " Zeichen)");
+}
 
 function checkMilestone($class, $action) {
     if(!$class) {

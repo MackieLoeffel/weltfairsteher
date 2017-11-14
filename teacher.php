@@ -282,6 +282,7 @@ padding: 10px;
             </div>
             <br>
             <div style="color: black;">
+                <b>Beschreibung (<?= e(MIN_SELFMADE_DESCRIPTION_LENGTH) ?> - <?= e(MAX_SELFMADE_DESCRIPTION_LENGTH) ?> Zeichen):</b>
                 <textarea cols="40" row="8" name="description" style="height: 320px; width: 93%;" >
                   Hinführung zum Thema bzw. zugrundeliegenden Problem (circa 200 - 300 Zeichen).
 
@@ -289,35 +290,35 @@ padding: 10px;
 
                 <br><br>
 
-                <b>Dimensionen der Nachhaltigkeit (mehrere möglich):</b>
+                <b>Dimensionen der Nachhaltigkeit (mindestens eine, mehrere möglich):</b>
                 <fieldset style="color: black;">
 
-                        <label>
-                            <input type="checkbox" name="dimensions[]" value="Ökologie">
-                            Ökologie
-                          </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <label>
-                            <input type="checkbox" name="dimensions[]" value="Soziales">
-                            Soziales
-                          </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <label>
-                            <input type="checkbox" name="dimensions[]" value="Ökonomie">
-                            Ökonomie
-                          </label>
+                    <label>
+                        <input type="checkbox" name="dimensions[]" value="Ökologie">
+                        Ökologie
+                    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>
+                        <input type="checkbox" name="dimensions[]" value="Soziales">
+                        Soziales
+                    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>
+                        <input type="checkbox" name="dimensions[]" value="Ökonomie">
+                        Ökonomie
+                    </label>
 
 
-              </fieldset><br>
+                </fieldset><br>
 
-              <b>Die Challenge gilt als bestanden, wenn...</b><textarea cols="10" row="3" name="goals" style="height: 80px; width: 93%;" >
+                <b>Die Challenge gilt als bestanden, wenn... (<?= e(MIN_SELFMADE_GOALS_LENGTH) ?> - <?= e(MAX_SELFMADE_GOALS_LENGTH) ?> Zeichen)</b><textarea cols="10" row="3" name="goals" style="height: 80px; width: 93%;" >
             Kurze und prägnante Beschreibung der Minimalziele der Challenge, die erreicht werden müssen (circa 100 - 200 Zeichen)</textarea>
 
-              <br><br>
+                <br><br>
 
-              <b>Aufwand/Geschätzte Dauer</b><textarea cols="10" row="3" name="duration" style="height: 80px; width: 93%;" >
+                <b>Aufwand/Geschätzte Dauer (<?= e(MIN_SELFMADE_DURATION_LENGTH) ?> - <?= e(MAX_SELFMADE_DURATION_LENGTH) ?> Zeichen)</b><textarea cols="10" row="3" name="duration" style="height: 80px; width: 93%;" >
               Geschätzte Dauer einzelner voraussichtlicher Teilaufgaben der Challenge</textarea>
-              <br><br>
+                <br><br>
 
-              <b>Benötigte Hilfsmittel/Quellen</b><textarea cols="10" row="3" name="aid" style="height: 80px; width: 93%;" >
+                <b>Benötigte Hilfsmittel/Quellen (<?= e(MIN_SELFMADE_AID_LENGTH) ?> - <?= e(MAX_SELFMADE_AID_LENGTH) ?> Zeichen)</b><textarea cols="10" row="3" name="aid" style="height: 80px; width: 93%;" >
               Materialien, Links, etc.</textarea>
               <br><br>
 

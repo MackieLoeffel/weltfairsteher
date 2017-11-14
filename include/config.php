@@ -39,6 +39,14 @@ if(!defined('CONFIG_PHP')) {
     ];
 
     define("MAX_SELFMADE_PER_CLASS", 5);
+    define("MIN_SELFMADE_DESCRIPTION_LENGTH", 900);
+    define("MAX_SELFMADE_DESCRIPTION_LENGTH", 3000);
+    define("MIN_SELFMADE_GOALS_LENGTH", 50);
+    define("MAX_SELFMADE_GOALS_LENGTH", 500);
+    define("MIN_SELFMADE_DURATION_LENGTH", 30);
+    define("MAX_SELFMADE_DURATION_LENGTH", 500);
+    define("MIN_SELFMADE_AID_LENGTH", 30);
+    define("MAX_SELFMADE_AID_LENGTH", 1000);
 
     // from http://stackoverflow.com/questions/1243418/php-how-to-resolve-a-relative-url
     function rel2abs($rel, $base)
