@@ -280,12 +280,14 @@ z-index: 1;
     background-color: #05661D;
 }
 
-.challenge-title.class-selected {
-    color: #0B6C2E
+
+.challenge-class.class-selected {
+    visibility: visible
 }
-.challenge-title:not(.class-selected) {
-    color: white
+.challenge-class:not(.class-selected) {
+    visibility: hidden
 }
+
 
 .milestone-box {
 

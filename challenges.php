@@ -211,9 +211,10 @@ WHERE c.id = :id");
   </div>
 </div>
 
-<div class="<?= $classes ?> challenge-title " style="float: right; text-align: right; font-size: 16pt; font-family: Lobster; position: absolute;
+<div class="<?= $classes ?> " style="float: right; color: white; text-align: right; font-size: 16pt; font-family: Lobster; position: absolute;
   margin-top: -55px; height: 30px;  width: 95%; margin-right: 25px; z-index: 9; margin-bottom: 25px;"><?=e($row->name)?>&nbsp;&nbsp;
 </div>
+<img class="challenge-class" alt="erfolgreich absolviert" title="erfolgreich absolviert" src="symbols/haken.png" style="position: absolute; margin-top: 5px; margin-left: -35px; z-index: 99; width: 50px; height: 50px;"></img>
 
 <!--
 <div style="margin-top: 2px; margin-bottom: 1px; color: #828282; background-color: #DEDEDE; height: 150px;">

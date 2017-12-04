@@ -21,6 +21,7 @@ function slideDown($name, $func) {
 }
 
 include "include/header.php";
+include "include/chart.php";
 ?>
 <script src="js/admin.js"></script>
 <br>
@@ -399,7 +400,17 @@ include "include/header.php";
     </form>
 </div>
 <br>
-<br>
+<span class="indexlink" style="color: white; background-color: #05661D; margin-left: auto; margin-right: auto; display: block; text-align: center;" > <a onclick="return toggleMe('chart')"
+href="javascript:void(0)" style="color: white;"><span data-title="Zeitlichen Verlauf anzeigen">
+Zeitlichen Verlauf anzeigen
+</span></a></span>
+
+<div id="chart" class="abstaende" style="width: 68%; margin-top: 25px; position: relative; display: none;"></canvas>
+<script type="text/javascript">
+ $('document').ready(function() {
+     var chart = new LineChart("chart");
+ });
+</script></div>
 <br>
 <br>
 <br>
