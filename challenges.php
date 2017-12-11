@@ -45,7 +45,7 @@ margin-bottom: 5px;
 
 
 <section style="position: fixed; width: 10%; z-index: 9999; margin-left: 10px;" class="challenge-sidebar">
-<br>  <div  style="margin-top: -10px;">
+<br>  <div  style="margin-top: 30px;">
   <!--  <span>Wechsle zwischen den Kategorien
   </span>  -->
       <a href="#foodaa" style="color: white; margin-left: 5px;">
@@ -57,12 +57,12 @@ margin-bottom: 5px;
       <a href="#energyaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-energy2.png" alt="Energie&Mobilität" title="Energie&Mobilität" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
       <a href="#selfmadeaa"  title="Entwickelt eigene Challenges und lasst sie von der Lehrkraft vorschlagen - auch unabhängig von den Kategorien."
          style="margin-left: 5px"><img src="symbols/symbol-selfmade2.png" alt="Eigenkreationen" title="Eigenkreationen" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
-      <br><span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82; font-size: 9pt; margin-left: 5px; margin-top: 30px;">
-          <span data-title="↓">Alle PDF</span></a></span>
+      <br><span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82; font-size: 15pt; margin-left: 5px; margin-top: 30px;">
+          <span data-title="speichern">Alle PDF</span></a></span>
           <br>
           <br>
           <form method="POST">
-              <select id="class-select" name="klasse" size="1" style="color: black; margin-left: 1%;">
+              <select id="class-select" name="klasse" size="1" style="color: black; margin-left: -65px; font-size: 12pt;">
                   <option value="default">Wähle eine Klasse</option>
                   <?php
                   $classStmt = $db->prepare("SELECT id, name FROM class");
@@ -214,8 +214,10 @@ WHERE c.id = :id");
 <div class=" " style="float: right; color: white; text-align: right; font-size: 16pt; font-family: Lobster; position: absolute;
   margin-top: -55px; height: 30px;  width: 95%; margin-right: 25px; z-index: 9; margin-bottom: 25px;"><?=e($row->name)?>&nbsp;&nbsp;
 </div>
-<img class="<?= e($classes) ?> challenge-class" alt="erfolgreich absolviert" title="erfolgreich absolviert" src="symbols/haken.png" style="position: absolute; margin-top: 5px; margin-left: -35px; z-index: 99; width: 50px; height: 50px;"></img>
-
+<!--
+<img class="<?= e($classes) ?> challenge-class" alt="erfolgreich absolviert" title="erfolgreich absolviert"
+src="symbols/haken.png" style="position: absolute; margin-top: 5px; margin-left: -35px; z-index: 99; width: 50px; height: 50px;"></img>
+-->
 <!--
 <div style="margin-top: 2px; margin-bottom: 1px; color: #828282; background-color: #DEDEDE; height: 150px;">
 
