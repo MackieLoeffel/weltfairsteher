@@ -45,7 +45,7 @@ include __DIR__."/config.php";
 
                 <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
                 <link rel='stylesheet' href='styles/styles.css' type='text/css' />
-                <link rel='stylesheet' href=styles/challenges.css type='text/css'>
+                <link rel='stylesheet' href=styles/challenges.css type='text/css' />
               <script src="libs/lodash.js"></script>
               <script src="libs/jquery.js"></script>
                 <script src="js/general.js"></script>
