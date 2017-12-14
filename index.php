@@ -1,34 +1,26 @@
 <?php include "include/header.php"?>
-
 <div class="container indexcontent">
-
 <div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+  <a href="https://www.betterplace.org/de/projects/57213-nachhaltigeres-denken-und-handeln-durch-bildungsprojekte-an-schulen" target="_blank" title="Unterstütze WeltFAIRsteher">
+    <img src="spenden-banner.jpg" alt="Spendenaufruf" style="width: 100%; margin-top: -55px; display: block; text-align: center;"></img></a>
+  </div>
+</div>
+<div class="row" style="margin-top: 25px;">
 <div class="col-xs-12 col-sm-12 col-md-4">
 <img src="symbols/start1.jpg" alt="Startbild" style="width: 100%; height: auto; margin-top: 5px;"></img>
-
 </div>
-
 <div class="col-xs-12 col-sm-12 col-md-4">
-
 <img src="symbols/start3.jpg" alt="Startbild" style="width: 100%; height: auto; margin-top: 5px; margin-bottom: 5px;"></img>
-
 </div>
-
 <div class="col-xs-12 col-sm-12 col-md-4">
 <a href="#anmelden" alt="Anmeldeformular">
 <img src="symbols/start2.jpg" alt="Anmeldebild" style="width: 100%; height: auto; margin-top: 5px; margin-bottom: 25px;"></img></a>
-
-
 </div>
-
 </div>
-
-
 <!--
 <img src="weltfairsteher-gestalte2.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
-
 <br>
-
 <div align="center">
 <span style="font-size: 22px;">
 <a href="#was" class="indexlink" style="color: white; background-color: #A27405;"
@@ -39,7 +31,6 @@
     <span data-title="Teilnehmer">Teilnehmer</span></a>
     <a href="#ablauf" class="indexlink" style="color: white; background-color: #684937; margin-left: 1px;">
     <span data-title="Ablauf">Ablauf</span></a>
-
     <a href="#gewinn" class="indexlink" style="color: white; background-color: #D3391F; margin-left: 1px;">
     <span data-title="Gewinne">Gewinne</span></a>
     <a href="#wie" class="indexlink" style="color: white; background-color: #5F5C53; margin-left: 1px;">
@@ -52,19 +43,11 @@
     <span data-title="Über uns">Über uns</span></a>
     </span>
     </div>
-
-
                         <br>
 </span>
-
                         <br>
-
-
-
                         <img src="weltkarte_gewuerze2.jpg" style="width: 98%; height: auto; margin-left: 1%; float: left; position: relative; z-index: 2;" alt="Weltkarte mit Würze">
-
 -->
-
 <div style="margin-top: 0px; width: 100%; height: auto; float: left; position: relative; z-index: 2; padding: 0px;">
 <?php include "index_gallery.php" ?>
 </div>
@@ -75,8 +58,6 @@
 <div class="col-xs-12 col-sm-12 col-md-4">
   <a href="https://www.netzwerk21kongress.de/zeitzeichen/detail/16_zz_jugend.asp?bURL=de/16_zeitzeichen.asp" alt="ZeitzeicheN-Preis 2016">
 <img src="symbols/Netzwerk21.png" alt="Logo_ZeitZeichen" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
-
-
 </div>
 -->
 
@@ -128,17 +109,17 @@ Hier behandelt ihr Themen wie umweltschonende Ernährung, fairen Handel oder ern
 </div>
 
 <div class="row">
+  <!--
   <div class="col-xs-12 col-sm-12 col-md-6">
-
 <h2 style="color: white; background-color: #108542;">Unterstützt uns</h2>
 <div class="abstaende" style="text-align: justify;  font-size: 14pt;">
 WeltFAIRsteher ist ein non-kommerzielles, ehrenamtliches Projekt von rund zwanzig Studierenden verschiedenster Fachrichtungen. Jede Unterstützung trägt dazu bei, dass immer mehr Schüler*innen die Chance haben, WeltFAIRsteher zu werden.
 Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIRsteher“ unter <a href="https://www.chancengestalten.de/unterstuetzen/" alt="Online-Spende" style="color: green;">chancengestalten.de</a> (dort nach unten scrollen).
-
 </div>
 </div>
+-->
 
-<div class="col-xs-12 col-sm-12 col-md-6">
+<div class="col-xs-12 col-sm-12 col-md-12">
 <h2 id="anmelden" style="color: white; background-color: #108542;">Anmeldeformular</h2>
 //noch in Arbeit
 //Anmeldungen für das kommende Schuljahr bitte vorübergehend per Mail an kontakt@weltfairsteher.de
@@ -222,7 +203,7 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
 <span><a href="javascript:void(0)" onclick="readOn('faq1')" class="indexlink"
   style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
   <span data-title="Was soll mit WeltFAIRsteher erreicht werden?">Was soll mit WeltFAIRsteher erreicht werden?</span></a></span>
-  <span id="faq1" style="display:none; margin-left: 1%;"><br>
+  <span id="faq1" style="display:none; margin-left: 1%; font-size: 16px;"><br>
     Als deutschlandweites Bildungsprojekt wird Schüler*innen ab der 5. Klasse ermöglicht,
     sich aktiv und kreativ mit Aspekten nachhaltiger Entwicklung auseinanderzusetzen. Hierbei soll Bewusstsein für Nachhaltigkeit geschaffen, zu eigenständigem und kritischem Nachdenken angeregt und
      eine Übertragung der Themen in den Alltag verwirklicht werden.
@@ -232,7 +213,7 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
 <span><a href="javascript:void(0)" onclick="readOn('faq2')" class="indexlink"
   style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
   <span data-title="Was ist meine Rolle als Lehrkraft?">Was ist meine Rolle als Lehrkraft?</span></a></span>
-  <span id="faq2" style="display:none; margin-left: 1%;"><br>
+  <span id="faq2" style="display:none; margin-left: 1%; font-size: 16px;"><br>
     Als hauptverantwortliche Lehrkraft motivieren Sie die Schüler*innen und unterstützen sie bei der Bearbeitung der Challenges.
     Sie geben dem Projekt über das Schuljahr hinweg Struktur und sind Anlaufstelle bei Unklarheiten.
     Bestandene Challenges tragen Sie online ein, entwickelte Eigenkreationen schlagen Sie unter <a href="https://weltfairsteher.de/login.php">Anmelden</a> vor. Weiter unten finden Sie dazu jeweils weitere Informationen.
@@ -242,7 +223,7 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
 <span><a href="javascript:void(0)" onclick="readOn('faq3')" class="indexlink"
   style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
   <span data-title="Was passiert vor dem Start?">Was passiert vor dem Start?</span></a></span>
-  <span id="faq3" style="display:none; margin-left: 1%;"><br>
+  <span id="faq3" style="display:none; margin-left: 1%; font-size: 16px;"><br>
 <ul>
   <li>Bis zum 01. Oktober eines Kalenderjahres kann die jeweils hauptverantwortliche Lehrkraft eine Klasse online anmelden. Jede Klasse gibt sich (ggf. auch nachträglich) einen individuellen Teamnamen.</li>
 <li>Schon vorab kann man sich einen Überblick über die verschiedenen Challenges verschaffen. Zu einzelnen Challenges ist das dazugehörige PDF-Dokument nur für eingeloggte
@@ -256,7 +237,7 @@ Lehrkräfte sichtbar, da der Inhalt von den Schüler*innen erst erarbeitet werde
     <span><a href="javascript:void(0)" onclick="readOn('faq4')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wie läuft das Projekt während des Schuljahres ab?">Wie läuft das Projekt während des Schuljahres ab?</span></a></span>
-      <span id="faq4" style="display:none; margin-left: 1%;"><br>
+      <span id="faq4" style="display:none; margin-left: 1%; font-size: 16px;"><br>
       Das Projekt besteht aus dem Bearbeiten einzelner Challenges. Diese Bearbeitung kann folgendermaßen ablaufen:
       <ul>
         <li>1. Auswählen einer Challenge, die die Klasse, ein*e Schüler*in oder eine Gruppe absolvieren möchte.</li>
@@ -273,7 +254,7 @@ Lehrkräfte sichtbar, da der Inhalt von den Schüler*innen erst erarbeitet werde
     <span><a href="javascript:void(0)" onclick="readOn('faq5')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Was passiert nach dem Schuljahr?">Was passiert nach dem Schuljahr?</span></a></span>
-      <span id="faq5" style="display:none; margin-left: 1%;"><br>
+      <span id="faq5" style="display:none; margin-left: 1%; font-size: 16px;"><br>
         Nach Ende der WeltFAIRsteher-Saison erhalten alle Teilnehmer*innen eine Urkunde und jede Klasse eine Kurzzusammenfassung
         zu den Themen. Außerdem bitten wir alle Teilnehmer*innen, WeltFAIRsteher in einer kurzen Online-Umfrage zu bewerten, damit
         wir das Angebot auf Basis des Feedbacks weiterentwickeln können. Und natürlich können Sie als Lehrkraft auch im darauffolgenden Schuljahr wieder teilnehmen.
@@ -285,7 +266,7 @@ Lehrkräfte sichtbar, da der Inhalt von den Schüler*innen erst erarbeitet werde
     <span><a href="javascript:void(0)" onclick="readOn('faq6')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wie trage ich eine Challenge als bestanden ein?">Wie trage ich eine Challenge als bestanden ein?</span></a></span>
-      <span id="faq6" style="display:none; margin-left: 1%;"><br>
+      <span id="faq6" style="display:none; margin-left: 1%; font-size: 16px;"><br>
 Bestandene Challenges können online eingetragen werden. Dazu loggt sich die hauptverantwortliche <a href="https://weltfairsteher.de/login.php">Lehrkraft</a> ein und klickt im Menü-Punkt <a href="https://weltfairsteher.de/challenges.php">Challenges</a> anschließend auf die
 bestandene Aufgabe. Erfolgreich absolvierte Challenges können unter <a href="https://weltfairsteher.de/login.php">Anmelden</a> ebenfalls eingetragen werden. Dort lässt sich auch angeben, ob eine Challenge mit
 Zusatzaufgabe bearbeitet wurde. In dem Fall gibt es auch Zusatzpunkte. Achtung: die Zusatzaufgaben können nicht nachträglich eingetragen werden, sondern nur gemeinsam mit der Hauptaufgabe. Das heißt, Challenges, die mit Zusatzaufgabe absolviert wurden, müssen unter Anmelden eingetragen werden.
@@ -299,7 +280,7 @@ schon absolviert hat, können Sie einfach Ihre Klasse unter Challenges wählen u
     <span><a href="javascript:void(0)" onclick="readOn('faq7')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Was ist eine Eigenkreation und wie schlage ich sie vor?">Was ist eine Eigenkreation und wie schlage ich sie vor?</span></a></span>
-      <span id="faq7" style="display:none; margin-left: 1%;"><br>
+      <span id="faq7" style="display:none; margin-left: 1%; font-size: 16px;"><br>
       Jede Klasse kann kreativ werden und eigene Challenges kreieren. Bis zu fünf solcher Eigenkreationen können unter <a href="https://weltfairsteher.de/login.php">Anmelden</a>
       vorgeschlagen werden. Nach der Einreichung wird jede Eigenkreation von einer Evaluationsgruppe besprochen und etwaige Anmerkungen rückgemeldet.
       Sobald der Eigenkreation zugestimmt wird, erscheint sie für alle sichtbar auf der Website und kann von
@@ -319,7 +300,7 @@ Weitere Informationen zu den Angaben, die Sie für eine Eigenkreation machen mü
     <span><a href="javascript:void(0)" onclick="readOn('faq8')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wie sollten Challenges ausgewählt werden?">Wie sollten Challenges ausgewählt werden?</span></a></span>
-      <span id="faq8" style="display:none; margin-left: 1%;"><br>
+      <span id="faq8" style="display:none; margin-left: 1%; font-size: 16px;"><br>
         Jede Klasse kann die Challenges absolvieren, für die sie sich interessiert. Es gibt keine feste Reihenfolge oder Mindestanzahl.
 
         Die Informationen zu den Challenges sind ausführlich in den dazugehörigen PDF-Dokumenten beschrieben. Unter <a href="https://weltfairsteher.de/login.php">Anmelden</a> sowie auf der Challenges-Seite können auch alle PDF-Dokumente auf einmal heruntergeladen werden.
@@ -357,7 +338,7 @@ Weitere Informationen zu den Angaben, die Sie für eine Eigenkreation machen mü
     <span><a href="javascript:void(0)" onclick="readOn('faq9')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Was ist eine Etappenüberraschung?">Was ist eine Etappenüberraschung?</span></a></span>
-      <span id="faq9" style="display:none; margin-left: 1%;"><br>
+      <span id="faq9" style="display:none; margin-left: 1%; font-size: 16px;"><br>
         Im Laufe des Projekts sammeln Sie mit Ihrer Klasse für jede erfolgreiche absolvierte Challenge Punkte.
         Wurde eine bestimmte Anzahl an Punkten erarbeitet, erreicht Ihre Klasse die nächste Etappe.
         Sobald dies der Fall ist, erhalten Sie automatisch eine Hinweismail sowie anschließend eine kleine Überraschung für Sie und die Schüler*innen per Post.
@@ -370,7 +351,7 @@ Weitere Informationen zu den Angaben, die Sie für eine Eigenkreation machen mü
     <span><a href="javascript:void(0)" onclick="readOn('faq10')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wozu werden die Daten gebraucht, die zu Beginn erhoben werden?">Wozu werden die Daten gebraucht, die zu Beginn erhoben werden?</span></a></span>
-      <span id="faq10" style="display:none; margin-left: 1%;"><br>
+      <span id="faq10" style="display:none; margin-left: 1%; font-size: 16px;"><br>
         Bei Ihrer Anmeldung werden Sie gebeten, eine Adresse sowie die Anzahl der teilnehmenden Schüler*innen anzugeben.
         Diese Informationen werden benötigt, da die Schüler*innen im Laufe des Schuljahres kleine Etappenüberraschungen erhalten.
         Zum Ende des Schuljahres schickt WeltFAIRsteher außerdem der ganzen Klasse Urkunden.
@@ -383,7 +364,7 @@ Es werden keine Informationen an Dritte weitergegeben, sofern es nicht für die 
     <span><a href="javascript:void(0)" onclick="readOn('faq11')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wie finanziert sich WeltFAIRsteher?">Wie finanziert sich WeltFAIRsteher?</span></a></span>
-      <span id="faq11" style="display:none; margin-left: 1%;"><br>
+      <span id="faq11" style="display:none; margin-left: 1%; font-size: 16px;"><br>
         Da WeltFAIRsteher bislang ausschließlich ehrenamtlich entwickelt und betrieben wird, fallen in erster Linie Kosten für die Etappenüberraschungen an.
    WeltFAIRsteher finanziert sich dafür bislang aus privaten Spenden und den Mitteln des Vereins CHANGE-Chancen.Nachhaltig.Gestalten in Bamberg.
         Weitere Förderer werden zur langfristigen Durchführung des Projekts laufend gesucht. Möglich sind einmalige Spenden, aber auch eine regelmäßige Förderung.
@@ -402,11 +383,8 @@ Es werden keine Informationen an Dritte weitergegeben, sofern es nicht für die 
 
 <!--
                         <b>
-
                         <h3 id="worum" class="abstaende" style="color: white; background-color: #A27405; margin-top: 0px;">Was ist das?</h3>
-
                         </b>
-
                         <div  class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
                         WeltFAIRsteher ist ein deutschlandweites Bildungsprojekt für nachhaltige Entwicklung,
                         in dem Schüler*innen der 6. und 7. Jahrgangsstufen
@@ -415,12 +393,10 @@ Es werden keine Informationen an Dritte weitergegeben, sofern es nicht für die 
                         die Organisation und Verspeisung eines ökologisch nachhaltigen Frühstücks bis hin zu unterhaltsamen Spielen,
                         spannenden Referaten und sozialem Engagement reichen. Die erste WeltFAIRsteher-Saison beginnt am 04. Oktober 2016 und dauert
                         bis 23. Juni 2017.
-
                             </div><br>
                         <b>
                         <h3  class="abstaende" id="wer" style=" color: white; background-color: #BA070A;">Worum geht´s?</h3>
                         </b>
-
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
                         Nachhaltigkeit ist ein sehr vielseitiges Thema, das in fast jeden Lebensbereich dringt.
                         Kurz zusammengefasst bedeutet es vor allem generationenübergreifende Fairness auf drei Ebenen, nämlich:
@@ -444,25 +420,20 @@ Es werden keine Informationen an Dritte weitergegeben, sofern es nicht für die 
                         <b>
                         <h3   class="abstaende" id="ablauf" style="color: white; background-color: #A6BA10;">Wer kann mitmachen?</h3>
                         </b>
-
                         <div class="abstaende"  style="text-align: justify;background-color: #1BAB3F; padding: 20px;">
                             Teilnehmen kann jede 6. oder 7. Klasse einer öffentlichen oder privaten Schule in Deutschland - unabhängig von der Schulform, aber gemeinsam mit einer hauptverantwortlichen Lehrkraft.
 Übrigens: Eine Klasse kann natürlich auch mit der Unterstützung mehrerer Lehrkräfte teilnehmen, etwa um sowohl im Erdkunde-, als auch im Biologie-Unterricht an Challenges zu arbeiten.
 Anmelden kann euch aber nur eine Lehrkraft, damit wir eine zentrale Ansprechperson haben.
                         </div><br>
-
                         <b>
                         <h3  class="abstaende" id="gewinn" style="color: white; background-color: #684937;">Wie läuft´s ab?</h3>
                         </b>
-
                         <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Jede Klasse kann sich an den Aufgaben, die ihr unter dem Reiter <i>Challenges</i> findet, versuchen. Mit welcher Challenge ihr dabei beginnt ist
 genauso gleichgültig wie die Anzahl der Schüler*innen, die sich an einer Challenge beteiligen. Sobald ihr eine Challenge erfolgreich abgeschlossen habt,
 kann eure Lehrkraft die Challenge im <i>Lehrkraft-Bereich</i> eintragen. Den aktuellen Punktestand eurer Klasse findet ihr unter dem Reiter <i>Fortschritt</i>. <br>
 <span><a href="javascript:void(0)" class="indexlink" onclick="readOn('vier', this)" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
-
 <span id="vier" style="display:none;"><br>
-
 Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr eine Idee für eine neue Challenge habt,
 so könnt ihr sie von eurer verantwortlichen Lehrkraft online im <i>Lehrkraft-Bereich</i> vorschlagen lassen.
 Wenn die vorgeschlagene Challenge den nachhaltigen
@@ -497,17 +468,12 @@ was das konkret bedeutet:
  mit einer Lehrkraft organisieren. Für diese Organisation empfehlen wir, ein oder zwei Klassen- bzw. Umweltsprecher*innen zu wählen,
  die in
  engem Kontakt mit den Lehrer*innen stehen und die Abstimmung von Unterricht und WeltFAIRsteher organisieren helfen.
-
 </span>
-
-
                         </div><br>
                         <b>
                         <h3  class="abstaende" id="wie" style="color: white; background-color: #D3391F;">Was kann man gewinnen?
                         </h3></b>
-
                         <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-
 Jede Klasse verfolgt eigenständig Etappenziele. Wie weit diese entfernt sind,
 kann unter <i>Fortschritt</i> nachgesehen werden.
 Habt ihr eine Etappe erreicht, so schicken
@@ -517,7 +483,6 @@ Am Ende des Schuljahres erhalten alle Klassen eine Urkunde und die ersten Klasse
 </div><br>
 <b>
 <h3 class="abstaende" id="spenden" style="color: white; background-color: #5F5C53;">Wie meldet man sich an?</h3></b>
-
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
     Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an
      <span><a href="mailto:kontakt@weltfairsteher.jetzt" target="_top" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="kontakt@weltfairsteher.jetzt">kontakt@weltfairsteher.jetzt</span></a></span>
@@ -533,21 +498,16 @@ Am Ende des Schuljahres erhalten alle Klassen eine Urkunde und die ersten Klasse
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
 Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrkraft-Bereich</i> gewissenhaft bestandene Challenges
 eintragen oder eine Eigenkreation vorschlagen. Außerdem können eingeloggte Lehrkräfte gezielt Feedback zu einzelnen Challenges abgeben.
-
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. Ebenso möglich ist,
     dass eine zweite und dritte Lehrkraft
     die Verantwortung für eine Klasse übernimmt und Challenges aus seinem oder ihren Fachbereich betreut sowie online einträgt.
     Die Voraussetzung hierfür ist, dass
     alle Lehrkräfte einer Klasse das selbe WeltFAIRsteher-Konto benutzen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endete am 04. Oktober 2016.</b>
     Ab dann könnt ihr auch mit den Challenges starten.
-
 </span>
 </div><br>
-
-
 <b>
 <h3 class="abstaende" id="lehrer" style="color: white; background-color: #95C231;">Was müssen die Lehrer*innen tun?</h3></b>
-
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
   Als Lehrkräfte übernehmen Sie zwar die Verantwortung für eine Klasse, können die Challenges aber flexibel
   in Unterricht und Freizeit der Kinder
@@ -568,8 +528,6 @@ aufgelistet wird. Gegebenenfalls
 beinhalten die PDF-Dokumente auch benötigtes Material oder hilfreiche Erklärungen.
 </span>
 </div><br>
-
-
 <b>
 <h3  class="abstaende" id="wir" style="color: white; background-color: #953A15;">Spenden
 </h3></b>
@@ -582,11 +540,9 @@ Dort könnt ihr unter "3. Etwas spenden" einen Betrag eurer Wahl eingeben, als B
 Bei Beträgen über 200 Euro gebt bitte eure vollständige Postanschrift an.
 An diese schicken wir nämlich eine Spendenbescheinigung.
 </div><br>
-
 <b>
 <h3  class="abstaende"  style="color: white; background-color: #E0B836;">Über uns
 </h3></b>
-
 <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Wir sind ein Team aus Mitgliedern des Max Weber-Programms Bayern sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
 Über ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
@@ -595,23 +551,19 @@ Ob Planung, Gestaltung der Challenges, Programmierung der Website oder Kommunika
 <br>
 <div class="container" style="width: 98%;">
 <div class="row">
-
 <div class="col-xs-12 col-sm-6 col-md-6">
 <img src="portraits/jana-2.png" alt="bild-jana" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Jana Costa</span><br>
 Ich bin im Jahr 1992 geboren und studiere an der Universität Bamberg Empirische Bildungsforschung - also eine Mischung aus Soziologie,
 Pädagogik und Psychologie. Warum ich mich für Nachhaltigkeit engagiere? Weil es auf einer endlichen Erde kein unendliches Wachstum geben kann und ich in einer Welt leben will, in der man sich über mehr Gedanken macht als nur den nächsten Urlaub, das coolere Auto oder das neueste Handy.</span><br><br><br>
 </div>
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/max.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Maximilian Held</span><br>
 Ich bin im Jahr 1992 geboren und studiere Fahrzeug- und Motorentechnik an der TU München. Nachhaltigkeit darf nicht Verzicht bedeuten. Nachhaltigkeit muss Spaß machen. Mein Ziel: Unserem Nachwuchs Lust auf mehr machen. Mein Motto: „Where attention goes, energy flows. Where energy flows, future goes.“ </span><br><br><br>
 </div>
-
 </div>
 <div class="row">
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Andi.png" alt="bild-andi" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Andreas Eichenseher</span><br>
@@ -620,38 +572,28 @@ studiere derzeit Philosophie und Politikwissenschaft in Bamberg.
 Für eine zukunftsfähige Entwicklung engagiere ich mich, weil es die einzig langfristige vernünftige Möglichkeit ist,
 eine gelingende Gemeinschaft alles Lebendigen herbeizuführen. Und auch wenn die Beiträge einzelner Personen nur klein
 zu sein scheinen, so sind sie es wert und vollends notwendig.</span><br><br><br>
-
 </div>
-
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/julia-schmidt-1.png" alt="bild-julia" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Julia Schmidt</span><br>
 Ich bin 1993 geboren und studiere Internationale Wirtschaftspolitik im Masterstudium. Wieso ich mich für Nachhaltigkeit engagiere? Für mich geht es auf dieser Welt nicht um persönlichen Nutzen, uneingeschränkten Konsum und globalen Profit, sondern um eine egalitäre Gesellschaft mit sozialer Verantwortung für sich selbst und für seine Umwelt – und das sollten wir alle gemeinsam leben!</span><br><br><br>
 </div>
 </div>
-
 <div class="row">
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/michael.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Michael Sammler</span><br>
 Ich bin 1995 geboren und studiere Informatik an der Universität Erlangen. Nachhaltig handeln ist meiner Meinung nach sehr wichtig,
 da wir als Gesellschaft die Verantwortung haben, unseren Planeten nicht nur für uns in einem lebenswerten Zustand
 zu bewahren, sondern auch für unsere Kinder.  </span><br><br><br>
-
 </div>
-
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/hannah-1.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Hannah Witzenrath</span><br>
 Ich bin 1992 geboren und studiere derzeit Politikwissenschaft an der Otto-Friedrich-Universität in Bamberg. Für mich ist ein verantwortungsvoller Umgang mit unseren Mitmenschen und unserer einzigartigen Natur sehr wichtig.</span><br><br><br>
 </div>
 </div>
-
 <div class="row">
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Basti.png" alt="bild-sebastian" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Sebastian Franz</span><br>
@@ -661,7 +603,6 @@ Warum ich mich für Nachhaltigkeit engagiere? Es geht mir vor allem darum, ein B
 dass wir eine Verantwortung für die Zukunft haben. Die Welt von morgen wird nie die von heute sein, aber wir können versuchen,
 sie so gut wie möglich zu gestalten und zwar nachhaltig!</span><br><br><br>
 </div>
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Alex.png" alt="bild-alexander" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Alexander Reisach</span><br>
@@ -671,17 +612,9 @@ Für unsere Gesellschaft und Wirtschaft benötigen wir ein System das echtes Wac
 Dazu ist es wichtig ein Bewusstsein dafür zu schaffen, wie unser Handeln unsere Umwelt beeinflusst und wie wir Ressourcen nutzen und
 nicht nur verbrauchen können.</span><br><br><br>
 </div>
-
 </div>
-
-
 </div>
-
-
-
 </div>
-
-
 -->
 
 <br>
