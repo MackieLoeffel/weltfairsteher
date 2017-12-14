@@ -44,7 +44,8 @@ include __DIR__."/config.php";
 
 
                 <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-                <link rel='stylesheet' href='styles.css' type='text/css' />
+                <link rel='stylesheet' href='styles/styles.css' type='text/css' />
+                <link rel='stylesheet' href=styles/challenges.css type='text/css'>
               <script src="libs/lodash.js"></script>
               <script src="libs/jquery.js"></script>
                 <script src="js/general.js"></script>
@@ -204,7 +205,7 @@ width: 40%; text-align: center; color: black; background-color: yellow;">
              }
             </script>
 
-            <body style="background-color: #F2F2DA; font-family: Amaranth; display:flex; min-height:100vh; flex-direction:column">
+            <body style="background-color: #A2A2A2; font-family: Amaranth; display:flex; min-height:100vh; flex-direction:column">
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstraps/js/bootstrap.min.js"></script>
     <div id="fb-root"></div>

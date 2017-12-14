@@ -3,36 +3,25 @@
 <div class="container indexcontent">
 
 <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12">
-  <a href="https://www.betterplace.org/de/projects/57213-nachhaltigeres-denken-und-handeln-durch-bildungsprojekte-an-schulen" target="_blank" title="Unterstütze WeltFAIRsteher">
-    <img src="spenden-banner.jpg" alt="Spendenaufruf" style="width: 99%; margin-top: -55px; display: block; text-align: center;"></img></a>
-  </div>
-</div>
-
-
-<div class="row" style="margin-top: 25px;">
 <div class="col-xs-12 col-sm-12 col-md-4">
-<img src="symbols/start1.jpg" alt="Startbild" style="width: 98%; height: auto; margin-top: 5px;"></img>
+<img src="symbols/start1.jpg" alt="Startbild" style="width: 100%; height: auto; margin-top: 5px;"></img>
 
 </div>
 
 <div class="col-xs-12 col-sm-12 col-md-4">
 
-<img src="symbols/start3.jpg" alt="Startbild" style="width: 98%; height: auto; margin-top: 5px; margin-bottom: 5px;"></img>
+<img src="symbols/start3.jpg" alt="Startbild" style="width: 100%; height: auto; margin-top: 5px; margin-bottom: 5px;"></img>
 
 </div>
 
 <div class="col-xs-12 col-sm-12 col-md-4">
 <a href="#anmelden" alt="Anmeldeformular">
-<img src="symbols/start2.jpg" alt="Anmeldebild" style="width: 98%; height: auto; margin-top: 5px; margin-bottom: 25px;"></img></a>
+<img src="symbols/start2.jpg" alt="Anmeldebild" style="width: 100%; height: auto; margin-top: 5px; margin-bottom: 25px;"></img></a>
 
 
 </div>
 
 </div>
-
-
-
 
 
 <!--
@@ -76,7 +65,7 @@
 
 -->
 
-<div class="abstaende" style="margin-top: 0px; width: 98%; height: auto; float: left; position: relative; z-index: 2; padding: 0px;">
+<div style="margin-top: 0px; width: 100%; height: auto; float: left; position: relative; z-index: 2; padding: 0px;">
 <?php include "index_gallery.php" ?>
 </div>
 
@@ -139,7 +128,6 @@ Hier behandelt ihr Themen wie umweltschonende Ernährung, fairen Handel oder ern
 </div>
 
 <div class="row">
-  <!--
   <div class="col-xs-12 col-sm-12 col-md-6">
 
 <h2 style="color: white; background-color: #108542;">Unterstützt uns</h2>
@@ -149,9 +137,8 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
 
 </div>
 </div>
--->
 
-<div class="col-xs-12 col-sm-12 col-md-12">
+<div class="col-xs-12 col-sm-12 col-md-6">
 <h2 id="anmelden" style="color: white; background-color: #108542;">Anmeldeformular</h2>
 //noch in Arbeit
 //Anmeldungen für das kommende Schuljahr bitte vorübergehend per Mail an kontakt@weltfairsteher.de
@@ -235,7 +222,7 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
 <span><a href="javascript:void(0)" onclick="readOn('faq1')" class="indexlink"
   style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
   <span data-title="Was soll mit WeltFAIRsteher erreicht werden?">Was soll mit WeltFAIRsteher erreicht werden?</span></a></span>
-  <span id="faq1" style="display:none; margin-left: 1%; font-size: 16px;"><br>
+  <span id="faq1" style="display:none; margin-left: 1%;"><br>
     Als deutschlandweites Bildungsprojekt wird Schüler*innen ab der 5. Klasse ermöglicht,
     sich aktiv und kreativ mit Aspekten nachhaltiger Entwicklung auseinanderzusetzen. Hierbei soll Bewusstsein für Nachhaltigkeit geschaffen, zu eigenständigem und kritischem Nachdenken angeregt und
      eine Übertragung der Themen in den Alltag verwirklicht werden.
@@ -245,7 +232,7 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
 <span><a href="javascript:void(0)" onclick="readOn('faq2')" class="indexlink"
   style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
   <span data-title="Was ist meine Rolle als Lehrkraft?">Was ist meine Rolle als Lehrkraft?</span></a></span>
-  <span id="faq2" style="display:none; margin-left: 1%; font-size: 16px;"><br>
+  <span id="faq2" style="display:none; margin-left: 1%;"><br>
     Als hauptverantwortliche Lehrkraft motivieren Sie die Schüler*innen und unterstützen sie bei der Bearbeitung der Challenges.
     Sie geben dem Projekt über das Schuljahr hinweg Struktur und sind Anlaufstelle bei Unklarheiten.
     Bestandene Challenges tragen Sie online ein, entwickelte Eigenkreationen schlagen Sie unter <a href="https://weltfairsteher.de/login.php">Anmelden</a> vor. Weiter unten finden Sie dazu jeweils weitere Informationen.
@@ -255,7 +242,7 @@ Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIR
 <span><a href="javascript:void(0)" onclick="readOn('faq3')" class="indexlink"
   style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
   <span data-title="Was passiert vor dem Start?">Was passiert vor dem Start?</span></a></span>
-  <span id="faq3" style="display:none; margin-left: 1%; font-size: 16px;"><br>
+  <span id="faq3" style="display:none; margin-left: 1%;"><br>
 <ul>
   <li>Bis zum 01. Oktober eines Kalenderjahres kann die jeweils hauptverantwortliche Lehrkraft eine Klasse online anmelden. Jede Klasse gibt sich (ggf. auch nachträglich) einen individuellen Teamnamen.</li>
 <li>Schon vorab kann man sich einen Überblick über die verschiedenen Challenges verschaffen. Zu einzelnen Challenges ist das dazugehörige PDF-Dokument nur für eingeloggte
@@ -269,7 +256,7 @@ Lehrkräfte sichtbar, da der Inhalt von den Schüler*innen erst erarbeitet werde
     <span><a href="javascript:void(0)" onclick="readOn('faq4')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wie läuft das Projekt während des Schuljahres ab?">Wie läuft das Projekt während des Schuljahres ab?</span></a></span>
-      <span id="faq4" style="display:none; margin-left: 1%; font-size: 16px;"><br>
+      <span id="faq4" style="display:none; margin-left: 1%;"><br>
       Das Projekt besteht aus dem Bearbeiten einzelner Challenges. Diese Bearbeitung kann folgendermaßen ablaufen:
       <ul>
         <li>1. Auswählen einer Challenge, die die Klasse, ein*e Schüler*in oder eine Gruppe absolvieren möchte.</li>
@@ -286,7 +273,7 @@ Lehrkräfte sichtbar, da der Inhalt von den Schüler*innen erst erarbeitet werde
     <span><a href="javascript:void(0)" onclick="readOn('faq5')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Was passiert nach dem Schuljahr?">Was passiert nach dem Schuljahr?</span></a></span>
-      <span id="faq5" style="display:none; margin-left: 1%; font-size: 16px;"><br>
+      <span id="faq5" style="display:none; margin-left: 1%;"><br>
         Nach Ende der WeltFAIRsteher-Saison erhalten alle Teilnehmer*innen eine Urkunde und jede Klasse eine Kurzzusammenfassung
         zu den Themen. Außerdem bitten wir alle Teilnehmer*innen, WeltFAIRsteher in einer kurzen Online-Umfrage zu bewerten, damit
         wir das Angebot auf Basis des Feedbacks weiterentwickeln können. Und natürlich können Sie als Lehrkraft auch im darauffolgenden Schuljahr wieder teilnehmen.
@@ -298,7 +285,7 @@ Lehrkräfte sichtbar, da der Inhalt von den Schüler*innen erst erarbeitet werde
     <span><a href="javascript:void(0)" onclick="readOn('faq6')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wie trage ich eine Challenge als bestanden ein?">Wie trage ich eine Challenge als bestanden ein?</span></a></span>
-      <span id="faq6" style="display:none; margin-left: 1%; font-size: 16px;"><br>
+      <span id="faq6" style="display:none; margin-left: 1%;"><br>
 Bestandene Challenges können online eingetragen werden. Dazu loggt sich die hauptverantwortliche <a href="https://weltfairsteher.de/login.php">Lehrkraft</a> ein und klickt im Menü-Punkt <a href="https://weltfairsteher.de/challenges.php">Challenges</a> anschließend auf die
 bestandene Aufgabe. Erfolgreich absolvierte Challenges können unter <a href="https://weltfairsteher.de/login.php">Anmelden</a> ebenfalls eingetragen werden. Dort lässt sich auch angeben, ob eine Challenge mit
 Zusatzaufgabe bearbeitet wurde. In dem Fall gibt es auch Zusatzpunkte. Achtung: die Zusatzaufgaben können nicht nachträglich eingetragen werden, sondern nur gemeinsam mit der Hauptaufgabe. Das heißt, Challenges, die mit Zusatzaufgabe absolviert wurden, müssen unter Anmelden eingetragen werden.
@@ -312,7 +299,7 @@ schon absolviert hat, können Sie einfach Ihre Klasse unter Challenges wählen u
     <span><a href="javascript:void(0)" onclick="readOn('faq7')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Was ist eine Eigenkreation und wie schlage ich sie vor?">Was ist eine Eigenkreation und wie schlage ich sie vor?</span></a></span>
-      <span id="faq7" style="display:none; margin-left: 1%; font-size: 16px;"><br>
+      <span id="faq7" style="display:none; margin-left: 1%;"><br>
       Jede Klasse kann kreativ werden und eigene Challenges kreieren. Bis zu fünf solcher Eigenkreationen können unter <a href="https://weltfairsteher.de/login.php">Anmelden</a>
       vorgeschlagen werden. Nach der Einreichung wird jede Eigenkreation von einer Evaluationsgruppe besprochen und etwaige Anmerkungen rückgemeldet.
       Sobald der Eigenkreation zugestimmt wird, erscheint sie für alle sichtbar auf der Website und kann von
@@ -332,7 +319,7 @@ Weitere Informationen zu den Angaben, die Sie für eine Eigenkreation machen mü
     <span><a href="javascript:void(0)" onclick="readOn('faq8')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wie sollten Challenges ausgewählt werden?">Wie sollten Challenges ausgewählt werden?</span></a></span>
-      <span id="faq8" style="display:none; margin-left: 1%; font-size: 16px;"><br>
+      <span id="faq8" style="display:none; margin-left: 1%;"><br>
         Jede Klasse kann die Challenges absolvieren, für die sie sich interessiert. Es gibt keine feste Reihenfolge oder Mindestanzahl.
 
         Die Informationen zu den Challenges sind ausführlich in den dazugehörigen PDF-Dokumenten beschrieben. Unter <a href="https://weltfairsteher.de/login.php">Anmelden</a> sowie auf der Challenges-Seite können auch alle PDF-Dokumente auf einmal heruntergeladen werden.
@@ -370,7 +357,7 @@ Weitere Informationen zu den Angaben, die Sie für eine Eigenkreation machen mü
     <span><a href="javascript:void(0)" onclick="readOn('faq9')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Was ist eine Etappenüberraschung?">Was ist eine Etappenüberraschung?</span></a></span>
-      <span id="faq9" style="display:none; margin-left: 1%; font-size: 16px;"><br>
+      <span id="faq9" style="display:none; margin-left: 1%;"><br>
         Im Laufe des Projekts sammeln Sie mit Ihrer Klasse für jede erfolgreiche absolvierte Challenge Punkte.
         Wurde eine bestimmte Anzahl an Punkten erarbeitet, erreicht Ihre Klasse die nächste Etappe.
         Sobald dies der Fall ist, erhalten Sie automatisch eine Hinweismail sowie anschließend eine kleine Überraschung für Sie und die Schüler*innen per Post.
@@ -383,7 +370,7 @@ Weitere Informationen zu den Angaben, die Sie für eine Eigenkreation machen mü
     <span><a href="javascript:void(0)" onclick="readOn('faq10')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wozu werden die Daten gebraucht, die zu Beginn erhoben werden?">Wozu werden die Daten gebraucht, die zu Beginn erhoben werden?</span></a></span>
-      <span id="faq10" style="display:none; margin-left: 1%; font-size: 16px;"><br>
+      <span id="faq10" style="display:none; margin-left: 1%;"><br>
         Bei Ihrer Anmeldung werden Sie gebeten, eine Adresse sowie die Anzahl der teilnehmenden Schüler*innen anzugeben.
         Diese Informationen werden benötigt, da die Schüler*innen im Laufe des Schuljahres kleine Etappenüberraschungen erhalten.
         Zum Ende des Schuljahres schickt WeltFAIRsteher außerdem der ganzen Klasse Urkunden.
@@ -396,7 +383,7 @@ Es werden keine Informationen an Dritte weitergegeben, sofern es nicht für die 
     <span><a href="javascript:void(0)" onclick="readOn('faq11')" class="indexlink"
       style="text-align: center; color: white; background-color: #16B55A; width: 98%; margin-left: 1%; font-size: 18px;">
       <span data-title="Wie finanziert sich WeltFAIRsteher?">Wie finanziert sich WeltFAIRsteher?</span></a></span>
-      <span id="faq11" style="display:none; margin-left: 1%; font-size: 16px;"><br>
+      <span id="faq11" style="display:none; margin-left: 1%;"><br>
         Da WeltFAIRsteher bislang ausschließlich ehrenamtlich entwickelt und betrieben wird, fallen in erster Linie Kosten für die Etappenüberraschungen an.
    WeltFAIRsteher finanziert sich dafür bislang aus privaten Spenden und den Mitteln des Vereins CHANGE-Chancen.Nachhaltig.Gestalten in Bamberg.
         Weitere Förderer werden zur langfristigen Durchführung des Projekts laufend gesucht. Möglich sind einmalige Spenden, aber auch eine regelmäßige Förderung.
