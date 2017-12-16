@@ -50,17 +50,17 @@ margin-bottom: 5px;
   <!--  <span>Wechsle zwischen den Kategorien
   </span>  -->
       <a href="#foodaa">
-        <img src="symbols/Icons/Ernährung.png" alt="Ernährung" title="Ernährung" width="60px" class="sonnenblume"></a><br>
+        <img src="symbols/Icons/Ernährung_color.png" alt="Ernährung" title="Ernährung" width="60px" class="sonnenblume"></a><br>
       <a href="#wateraa">
-        <img src="symbols/Icons/Wasser_Ressourcen.png" alt="Wasser&Ressourcen" title="Wasser&Ressourcen" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+        <img src="symbols/Icons/Wasser_Ressourcen_color.png" alt="Wasser&Ressourcen" title="Wasser&Ressourcen" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
       <a href="#cultureaa">
-        <img src="symbols/Icons/Soziale_Verantwortung.png" alt="Soziale Verantwortung" title="Soziale Verantwortung" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+        <img src="symbols/Icons/Soziale_Verantwortung_color.png" alt="Soziale Verantwortung" title="Soziale Verantwortung" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
       <a href="#climate-changeaa">
-        <img src="symbols/Icons/Klimawandel.png" alt="Klimawandel" title="Klimawandel" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+        <img src="symbols/Icons/Klimawandel_color.png" alt="Klimawandel" title="Klimawandel" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
       <a href="#productionaa">
-        <img src="symbols/Icons/Produktion_Konsum.png" alt="Produktion&Konsum" title="Produktion&Konsum" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+        <img src="symbols/Icons/Produktion_Konsum_color.png" alt="Produktion&Konsum" title="Produktion&Konsum" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
       <a href="#energyaa">
-        <img src="symbols/Icons/Energie_Mobilität.png" alt="Energie&Mobilität" title="Energie&Mobilität" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+        <img src="symbols/Icons/Energie_Mobilität_color.png" alt="Energie&Mobilität" title="Energie&Mobilität" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
       <a href="#selfmadeaa"  title="Entwickelt eigene Challenges und lasst sie von der Lehrkraft vorschlagen - auch unabhängig von den Kategorien.">
          <img src="symbols/symbol-selfmade2.png" alt="Eigenkreationen" title="Eigenkreationen" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
       <br><span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82; font-size: 15pt; margin-left: 5px; margin-top: 30px;">
