@@ -45,18 +45,24 @@ margin-bottom: 5px;
 
 
 <section style="position: fixed; width: 10%; z-index: 9999; margin-left: 10px;" class="challenge-sidebar">
-<br>  <div  style="margin-top: 30px;">
+<br>
+<div class="icon-container">
   <!--  <span>Wechsle zwischen den Kategorien
   </span>  -->
-      <a href="#foodaa" style="color: white; margin-left: 5px;">
-        <img src="symbols/symbol-food2.png" alt="Ernährung" title="Ernährung" width="60px" class="sonnenblume"></a><br>
-      <a href="#wateraa" style="color: white; margin-left: 5px;"><img src="symbols/symbol-water2.png" alt="Wasser&Ressourcen" title="Wasser&Ressourcen" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
-      <a href="#cultureaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-culture2.png" alt="Soziale Verantwortung" title="Soziale Verantwortung" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
-      <a href="#climate-changeaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-climate-change2.png" alt="Klimawandel" title="Klimawandel" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
-      <a href="#productionaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-production2.png" alt="Produktion&Konsum" title="Produktion&Konsum" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
-      <a href="#energyaa" style="color: white; margin-left: 5px"><img src="symbols/symbol-energy2.png" alt="Energie&Mobilität" title="Energie&Mobilität" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
-      <a href="#selfmadeaa"  title="Entwickelt eigene Challenges und lasst sie von der Lehrkraft vorschlagen - auch unabhängig von den Kategorien."
-         style="margin-left: 5px"><img src="symbols/symbol-selfmade2.png" alt="Eigenkreationen" title="Eigenkreationen" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#foodaa">
+        <img src="symbols/Icons/Ernährung_color.png" alt="Ernährung" title="Ernährung" width="60px" class="sonnenblume"></a><br>
+      <a href="#wateraa">
+        <img src="symbols/Icons/Wasser_Ressourcen_color.png" alt="Wasser&Ressourcen" title="Wasser&Ressourcen" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#cultureaa">
+        <img src="symbols/Icons/Soziale_Verantwortung_color.png" alt="Soziale Verantwortung" title="Soziale Verantwortung" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#climate-changeaa">
+        <img src="symbols/Icons/Klimawandel_color.png" alt="Klimawandel" title="Klimawandel" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#productionaa">
+        <img src="symbols/Icons/Produktion_Konsum_color.png" alt="Produktion&Konsum" title="Produktion&Konsum" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#energyaa">
+        <img src="symbols/Icons/Energie_Mobilität_color.png" alt="Energie&Mobilität" title="Energie&Mobilität" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
+      <a href="#selfmadeaa"  title="Entwickelt eigene Challenges und lasst sie von der Lehrkraft vorschlagen - auch unabhängig von den Kategorien.">
+         <img src="symbols/symbol-selfmade2.png" alt="Eigenkreationen" title="Eigenkreationen" width="60px" style="margin-top: 5px;" class="sonnenblume"></a><br>
       <br><span><a href="/challenge-all.zip" class="indexlink" style="color: white; background-color: #E84B82; font-size: 15pt; margin-left: 5px; margin-top: 30px;">
           <span data-title="speichern">Alle PDF</span></a></span>
           <br>

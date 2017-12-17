@@ -1,45 +1,26 @@
 <?php include "include/header.php"?>
-
 <div class="container indexcontent">
-
 <div class="row">
   <div class="col-xs-12 col-sm-12 col-md-12">
   <a href="https://www.betterplace.org/de/projects/57213-nachhaltigeres-denken-und-handeln-durch-bildungsprojekte-an-schulen" target="_blank" title="Unterstütze WeltFAIRsteher">
-    <img src="spenden-banner.jpg" alt="Spendenaufruf" style="width: 99%; margin-top: -55px; display: block; text-align: center;"></img></a>
+    <img src="spenden-banner.jpg" alt="Spendenaufruf" style="width: 100%; margin-top: -55px; display: block; text-align: center;"></img></a>
   </div>
 </div>
-
-
 <div class="row" style="margin-top: 25px;">
 <div class="col-xs-12 col-sm-12 col-md-4">
-<img src="symbols/start1.jpg" alt="Startbild" style="width: 98%; height: auto; margin-top: 5px;"></img>
-
+<img src="symbols/start1.jpg" alt="Startbild" style="width: 100%; height: auto; margin-top: 5px;"></img>
 </div>
-
 <div class="col-xs-12 col-sm-12 col-md-4">
-
-<img src="symbols/start3.jpg" alt="Startbild" style="width: 98%; height: auto; margin-top: 5px; margin-bottom: 5px;"></img>
-
+<img src="symbols/start3.jpg" alt="Startbild" style="width: 100%; height: auto; margin-top: 5px; margin-bottom: 5px;"></img>
 </div>
-
 <div class="col-xs-12 col-sm-12 col-md-4">
 <a href="#anmelden" alt="Anmeldeformular">
-<img src="symbols/start2.jpg" alt="Anmeldebild" style="width: 98%; height: auto; margin-top: 5px; margin-bottom: 25px;"></img></a>
-
-
+<img src="symbols/start2.jpg" alt="Anmeldebild" style="width: 100%; height: auto; margin-top: 5px; margin-bottom: 25px;"></img></a>
 </div>
-
 </div>
-
-
-
-
-
 <!--
 <img src="weltfairsteher-gestalte2.png" class="abstaende" style="width: 98%; height: auto;" alt="WeltFAIRsteher-Logo-Gross">
-
 <br>
-
 <div align="center">
 <span style="font-size: 22px;">
 <a href="#was" class="indexlink" style="color: white; background-color: #A27405;"
@@ -50,7 +31,6 @@
     <span data-title="Teilnehmer">Teilnehmer</span></a>
     <a href="#ablauf" class="indexlink" style="color: white; background-color: #684937; margin-left: 1px;">
     <span data-title="Ablauf">Ablauf</span></a>
-
     <a href="#gewinn" class="indexlink" style="color: white; background-color: #D3391F; margin-left: 1px;">
     <span data-title="Gewinne">Gewinne</span></a>
     <a href="#wie" class="indexlink" style="color: white; background-color: #5F5C53; margin-left: 1px;">
@@ -63,20 +43,12 @@
     <span data-title="Über uns">Über uns</span></a>
     </span>
     </div>
-
-
                         <br>
 </span>
-
                         <br>
-
-
-
                         <img src="weltkarte_gewuerze2.jpg" style="width: 98%; height: auto; margin-left: 1%; float: left; position: relative; z-index: 2;" alt="Weltkarte mit Würze">
-
 -->
-
-<div class="abstaende" style="margin-top: 0px; width: 98%; height: auto; float: left; position: relative; z-index: 2; padding: 0px;">
+<div style="margin-top: 0px; width: 100%; height: auto; float: left; position: relative; z-index: 2; padding: 0px;">
 <?php include "index_gallery.php" ?>
 </div>
 
@@ -86,8 +58,6 @@
 <div class="col-xs-12 col-sm-12 col-md-4">
   <a href="https://www.netzwerk21kongress.de/zeitzeichen/detail/16_zz_jugend.asp?bURL=de/16_zeitzeichen.asp" alt="ZeitzeicheN-Preis 2016">
 <img src="symbols/Netzwerk21.png" alt="Logo_ZeitZeichen" style="max-width: 300px; height: auto; margin-top: 15px; margin-bottom: 15px;"></img></a>
-
-
 </div>
 -->
 
@@ -141,12 +111,10 @@ Hier behandelt ihr Themen wie umweltschonende Ernährung, fairen Handel oder ern
 <div class="row">
   <!--
   <div class="col-xs-12 col-sm-12 col-md-6">
-
 <h2 style="color: white; background-color: #108542;">Unterstützt uns</h2>
 <div class="abstaende" style="text-align: justify;  font-size: 14pt;">
 WeltFAIRsteher ist ein non-kommerzielles, ehrenamtliches Projekt von rund zwanzig Studierenden verschiedenster Fachrichtungen. Jede Unterstützung trägt dazu bei, dass immer mehr Schüler*innen die Chance haben, WeltFAIRsteher zu werden.
 Wir freuen uns sehr über finanzielle Unterstützung mit dem Betreff „WeltFAIRsteher“ unter <a href="https://www.chancengestalten.de/unterstuetzen/" alt="Online-Spende" style="color: green;">chancengestalten.de</a> (dort nach unten scrollen).
-
 </div>
 </div>
 -->
@@ -415,11 +383,8 @@ Es werden keine Informationen an Dritte weitergegeben, sofern es nicht für die 
 
 <!--
                         <b>
-
                         <h3 id="worum" class="abstaende" style="color: white; background-color: #A27405; margin-top: 0px;">Was ist das?</h3>
-
                         </b>
-
                         <div  class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
                         WeltFAIRsteher ist ein deutschlandweites Bildungsprojekt für nachhaltige Entwicklung,
                         in dem Schüler*innen der 6. und 7. Jahrgangsstufen
@@ -428,12 +393,10 @@ Es werden keine Informationen an Dritte weitergegeben, sofern es nicht für die 
                         die Organisation und Verspeisung eines ökologisch nachhaltigen Frühstücks bis hin zu unterhaltsamen Spielen,
                         spannenden Referaten und sozialem Engagement reichen. Die erste WeltFAIRsteher-Saison beginnt am 04. Oktober 2016 und dauert
                         bis 23. Juni 2017.
-
                             </div><br>
                         <b>
                         <h3  class="abstaende" id="wer" style=" color: white; background-color: #BA070A;">Worum geht´s?</h3>
                         </b>
-
                         <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
                         Nachhaltigkeit ist ein sehr vielseitiges Thema, das in fast jeden Lebensbereich dringt.
                         Kurz zusammengefasst bedeutet es vor allem generationenübergreifende Fairness auf drei Ebenen, nämlich:
@@ -457,25 +420,20 @@ Es werden keine Informationen an Dritte weitergegeben, sofern es nicht für die 
                         <b>
                         <h3   class="abstaende" id="ablauf" style="color: white; background-color: #A6BA10;">Wer kann mitmachen?</h3>
                         </b>
-
                         <div class="abstaende"  style="text-align: justify;background-color: #1BAB3F; padding: 20px;">
                             Teilnehmen kann jede 6. oder 7. Klasse einer öffentlichen oder privaten Schule in Deutschland - unabhängig von der Schulform, aber gemeinsam mit einer hauptverantwortlichen Lehrkraft.
 Übrigens: Eine Klasse kann natürlich auch mit der Unterstützung mehrerer Lehrkräfte teilnehmen, etwa um sowohl im Erdkunde-, als auch im Biologie-Unterricht an Challenges zu arbeiten.
 Anmelden kann euch aber nur eine Lehrkraft, damit wir eine zentrale Ansprechperson haben.
                         </div><br>
-
                         <b>
                         <h3  class="abstaende" id="gewinn" style="color: white; background-color: #684937;">Wie läuft´s ab?</h3>
                         </b>
-
                         <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Jede Klasse kann sich an den Aufgaben, die ihr unter dem Reiter <i>Challenges</i> findet, versuchen. Mit welcher Challenge ihr dabei beginnt ist
 genauso gleichgültig wie die Anzahl der Schüler*innen, die sich an einer Challenge beteiligen. Sobald ihr eine Challenge erfolgreich abgeschlossen habt,
 kann eure Lehrkraft die Challenge im <i>Lehrkraft-Bereich</i> eintragen. Den aktuellen Punktestand eurer Klasse findet ihr unter dem Reiter <i>Fortschritt</i>. <br>
 <span><a href="javascript:void(0)" class="indexlink" onclick="readOn('vier', this)" style="text-align: center; color: #C5F2B6; background-color: #108542"><span data-title="Weiterlesen...">Weiterlesen...</span></a></span>
-
 <span id="vier" style="display:none;"><br>
-
 Übrigens: Bei WeltFAIRsteher ist auch Kreativität gefragt. Wenn ihr eine Idee für eine neue Challenge habt,
 so könnt ihr sie von eurer verantwortlichen Lehrkraft online im <i>Lehrkraft-Bereich</i> vorschlagen lassen.
 Wenn die vorgeschlagene Challenge den nachhaltigen
@@ -510,17 +468,12 @@ was das konkret bedeutet:
  mit einer Lehrkraft organisieren. Für diese Organisation empfehlen wir, ein oder zwei Klassen- bzw. Umweltsprecher*innen zu wählen,
  die in
  engem Kontakt mit den Lehrer*innen stehen und die Abstimmung von Unterricht und WeltFAIRsteher organisieren helfen.
-
 </span>
-
-
                         </div><br>
                         <b>
                         <h3  class="abstaende" id="wie" style="color: white; background-color: #D3391F;">Was kann man gewinnen?
                         </h3></b>
-
                         <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
-
 Jede Klasse verfolgt eigenständig Etappenziele. Wie weit diese entfernt sind,
 kann unter <i>Fortschritt</i> nachgesehen werden.
 Habt ihr eine Etappe erreicht, so schicken
@@ -530,7 +483,6 @@ Am Ende des Schuljahres erhalten alle Klassen eine Urkunde und die ersten Klasse
 </div><br>
 <b>
 <h3 class="abstaende" id="spenden" style="color: white; background-color: #5F5C53;">Wie meldet man sich an?</h3></b>
-
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
     Die hauptverantwortliche Lehrkraft schickt einfach eine E-Mail an
      <span><a href="mailto:kontakt@weltfairsteher.jetzt" target="_top" class="indexlink" style="color: white; background-color: #E84B82;"><span data-title="kontakt@weltfairsteher.jetzt">kontakt@weltfairsteher.jetzt</span></a></span>
@@ -546,21 +498,16 @@ Am Ende des Schuljahres erhalten alle Klassen eine Urkunde und die ersten Klasse
 Die Lehrkraft, die die Klasse anmeldet, erhält anschließend eine E-Mail mit den persönlichen Zugangsdaten.
 Damit kann die Lehrerin beziehungsweise der Lehrer über den Reiter <i>Lehrkraft-Bereich</i> gewissenhaft bestandene Challenges
 eintragen oder eine Eigenkreation vorschlagen. Außerdem können eingeloggte Lehrkräfte gezielt Feedback zu einzelnen Challenges abgeben.
-
     Übrigens: Eine Lehrkraft kann auch die Verantwortung für zwei Klassen übernehmen. Ebenso möglich ist,
     dass eine zweite und dritte Lehrkraft
     die Verantwortung für eine Klasse übernimmt und Challenges aus seinem oder ihren Fachbereich betreut sowie online einträgt.
     Die Voraussetzung hierfür ist, dass
     alle Lehrkräfte einer Klasse das selbe WeltFAIRsteher-Konto benutzen. <b>Die Anmeldefrist für das Schuljahr 2016/17 endete am 04. Oktober 2016.</b>
     Ab dann könnt ihr auch mit den Challenges starten.
-
 </span>
 </div><br>
-
-
 <b>
 <h3 class="abstaende" id="lehrer" style="color: white; background-color: #95C231;">Was müssen die Lehrer*innen tun?</h3></b>
-
 <div class="abstaende"  style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
   Als Lehrkräfte übernehmen Sie zwar die Verantwortung für eine Klasse, können die Challenges aber flexibel
   in Unterricht und Freizeit der Kinder
@@ -581,8 +528,6 @@ aufgelistet wird. Gegebenenfalls
 beinhalten die PDF-Dokumente auch benötigtes Material oder hilfreiche Erklärungen.
 </span>
 </div><br>
-
-
 <b>
 <h3  class="abstaende" id="wir" style="color: white; background-color: #953A15;">Spenden
 </h3></b>
@@ -595,11 +540,9 @@ Dort könnt ihr unter "3. Etwas spenden" einen Betrag eurer Wahl eingeben, als B
 Bei Beträgen über 200 Euro gebt bitte eure vollständige Postanschrift an.
 An diese schicken wir nämlich eine Spendenbescheinigung.
 </div><br>
-
 <b>
 <h3  class="abstaende"  style="color: white; background-color: #E0B836;">Über uns
 </h3></b>
-
 <div class="abstaende" style="text-align: justify; background-color: #1BAB3F; padding: 20px;">
 Wir sind ein Team aus Mitgliedern des Max Weber-Programms Bayern sowie des Vereins CHANGE - Chancen.Nachhaltig.Gestalten e.V. in Bamberg.
 Über ein halbes Dutzend kreative Personen arbeiten in ihrer Freizeit am Projekt <i>WeltFAIRsteher</i>.
@@ -608,23 +551,19 @@ Ob Planung, Gestaltung der Challenges, Programmierung der Website oder Kommunika
 <br>
 <div class="container" style="width: 98%;">
 <div class="row">
-
 <div class="col-xs-12 col-sm-6 col-md-6">
 <img src="portraits/jana-2.png" alt="bild-jana" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Jana Costa</span><br>
 Ich bin im Jahr 1992 geboren und studiere an der Universität Bamberg Empirische Bildungsforschung - also eine Mischung aus Soziologie,
 Pädagogik und Psychologie. Warum ich mich für Nachhaltigkeit engagiere? Weil es auf einer endlichen Erde kein unendliches Wachstum geben kann und ich in einer Welt leben will, in der man sich über mehr Gedanken macht als nur den nächsten Urlaub, das coolere Auto oder das neueste Handy.</span><br><br><br>
 </div>
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/max.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Maximilian Held</span><br>
 Ich bin im Jahr 1992 geboren und studiere Fahrzeug- und Motorentechnik an der TU München. Nachhaltigkeit darf nicht Verzicht bedeuten. Nachhaltigkeit muss Spaß machen. Mein Ziel: Unserem Nachwuchs Lust auf mehr machen. Mein Motto: „Where attention goes, energy flows. Where energy flows, future goes.“ </span><br><br><br>
 </div>
-
 </div>
 <div class="row">
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Andi.png" alt="bild-andi" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Andreas Eichenseher</span><br>
@@ -633,38 +572,28 @@ studiere derzeit Philosophie und Politikwissenschaft in Bamberg.
 Für eine zukunftsfähige Entwicklung engagiere ich mich, weil es die einzig langfristige vernünftige Möglichkeit ist,
 eine gelingende Gemeinschaft alles Lebendigen herbeizuführen. Und auch wenn die Beiträge einzelner Personen nur klein
 zu sein scheinen, so sind sie es wert und vollends notwendig.</span><br><br><br>
-
 </div>
-
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/julia-schmidt-1.png" alt="bild-julia" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Julia Schmidt</span><br>
 Ich bin 1993 geboren und studiere Internationale Wirtschaftspolitik im Masterstudium. Wieso ich mich für Nachhaltigkeit engagiere? Für mich geht es auf dieser Welt nicht um persönlichen Nutzen, uneingeschränkten Konsum und globalen Profit, sondern um eine egalitäre Gesellschaft mit sozialer Verantwortung für sich selbst und für seine Umwelt – und das sollten wir alle gemeinsam leben!</span><br><br><br>
 </div>
 </div>
-
 <div class="row">
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/michael.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Michael Sammler</span><br>
 Ich bin 1995 geboren und studiere Informatik an der Universität Erlangen. Nachhaltig handeln ist meiner Meinung nach sehr wichtig,
 da wir als Gesellschaft die Verantwortung haben, unseren Planeten nicht nur für uns in einem lebenswerten Zustand
 zu bewahren, sondern auch für unsere Kinder.  </span><br><br><br>
-
 </div>
-
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/hannah-1.png" alt="bild-name" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 12px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Hannah Witzenrath</span><br>
 Ich bin 1992 geboren und studiere derzeit Politikwissenschaft an der Otto-Friedrich-Universität in Bamberg. Für mich ist ein verantwortungsvoller Umgang mit unseren Mitmenschen und unserer einzigartigen Natur sehr wichtig.</span><br><br><br>
 </div>
 </div>
-
 <div class="row">
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Basti.png" alt="bild-sebastian" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Sebastian Franz</span><br>
@@ -674,7 +603,6 @@ Warum ich mich für Nachhaltigkeit engagiere? Es geht mir vor allem darum, ein B
 dass wir eine Verantwortung für die Zukunft haben. Die Welt von morgen wird nie die von heute sein, aber wir können versuchen,
 sie so gut wie möglich zu gestalten und zwar nachhaltig!</span><br><br><br>
 </div>
-
 <div class="col-xs-12 col-sm-6 col-md-6" >
 <img src="portraits/Alex.png" alt="bild-alexander" style="width: 45%; height: auto; margin-right: 10%; ">
 <span style="text-align: center; font-size: 14px;"><span style="color: white; background-color: #108542; font-size: 16px; font-family: Lobster;">Alexander Reisach</span><br>
@@ -684,17 +612,9 @@ Für unsere Gesellschaft und Wirtschaft benötigen wir ein System das echtes Wac
 Dazu ist es wichtig ein Bewusstsein dafür zu schaffen, wie unser Handeln unsere Umwelt beeinflusst und wie wir Ressourcen nutzen und
 nicht nur verbrauchen können.</span><br><br><br>
 </div>
-
 </div>
-
-
 </div>
-
-
-
 </div>
-
-
 -->
 
 <br>
