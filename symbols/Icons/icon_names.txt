@@ -1,0 +1,7 @@
+symbol-water
+symbol-food
+symbol-production
+symbol-climate-change
+symbol-energy
+symbol-selfmade
+symbol-culture
