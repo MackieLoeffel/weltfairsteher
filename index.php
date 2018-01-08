@@ -308,13 +308,13 @@ Weitere Informationen zu den Angaben, die Sie für eine Eigenkreation machen mü
 <br><br>
       Die Schüler*innen können Challenges aus sechs verschiedenen Themenbereichen sowie aus den Eigenkreationen wählen:<br>
 <ul>
-        <li><img src="symbols/symbol-food2.png" alt="Ernährung" style="width: 4%; height: auto; margin-top: 0px;"></img>
+        <li><img src="symbols/Icons/symbol-food.png" alt="Ernährung" style="width: 4%; height: auto; margin-top: 0px;"></img>
  Ernährung</li>
-        <li><img src="symbols/symbol-water2.png" alt="Wasser & Ressourcen" style="width: 4%; height: auto; margin-top: 0px;"></img>Wasser und Ressourcen</li>
-        <li><img src="symbols/symbol-culture2.png" alt="Soziale Verantwortung" style="width: 4%; height: auto; margin-top: 0px;"></img>Soziale Verantwortung</li>
-        <li> <img src="symbols/symbol-climate-change2.png" alt="Klimawandel" style="width: 4%; height: auto; margin-top: 0px;"></img>Klimawandel</li>
-      <li>  <img src="symbols/symbol-production2.png" alt="Produktion & Konsum" style="width: 4%; height: auto; margin-top: 0px;"></img>Produktion und Konsum</li>
-      <li> <img src="symbols/symbol-energy2.png" alt="Energie & Mobilität" style="width: 4%; height: auto; margin-top: 0px;"></img> Energie und Mobilität</li>
+        <li><img src="symbols/Icons/symbol-water.png" alt="Wasser & Ressourcen" style="width: 4%; height: auto; margin-top: 0px;"></img>Wasser und Ressourcen</li>
+        <li><img src="symbols/Icons/symbol-culture.png" alt="Soziale Verantwortung" style="width: 4%; height: auto; margin-top: 0px;"></img>Soziale Verantwortung</li>
+        <li> <img src="symbols/Icons/symbol-climate-change.png" alt="Klimawandel" style="width: 4%; height: auto; margin-top: 0px;"></img>Klimawandel</li>
+      <li>  <img src="symbols/Icons/symbol-production.png" alt="Produktion & Konsum" style="width: 4%; height: auto; margin-top: 0px;"></img>Produktion und Konsum</li>
+      <li> <img src="symbols/Icons/symbol-energy.png" alt="Energie & Mobilität" style="width: 4%; height: auto; margin-top: 0px;"></img> Energie und Mobilität</li>
 </ul>
 
 
